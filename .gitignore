@@ -1,0 +1,22 @@
+# KiCad local state, automatic backups, and editor history
+*.kicad_prl
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.bak
+*-backups/
+_autosave-*
+~*.lck
+*.lck
+.history/
+fp-info-cache
+
+# Generated checks and manufacturing exports
+/build/
+
+# OS and Python caches
+.DS_Store
+Thumbs.db
+Desktop.ini
+__pycache__/
+*.pyc
+.venv/

@@ -1,0 +1,10 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Hack_Chips")(type "KiCad")(uri "${KIPRJMOD}/../libraries/Hack_Chips.kicad_sym")(options "")(descr "HackerFab project library"))
+  (lib (name "Hack_Connector")(type "KiCad")(uri "${KIPRJMOD}/../libraries/Hack_Connector.kicad_sym")(options "")(descr "HackerFab project library"))
+  (lib (name "Hack_Diodes")(type "KiCad")(uri "${KIPRJMOD}/../libraries/Hack_Diodes.kicad_sym")(options "")(descr "HackerFab project library"))
+  (lib (name "Hack_Electromechanical")(type "KiCad")(uri "${KIPRJMOD}/../libraries/Hack_Electromechanical.kicad_sym")(options "")(descr "HackerFab project library"))
+  (lib (name "Hack_Opto")(type "KiCad")(uri "${KIPRJMOD}/../libraries/Hack_Opto.kicad_sym")(options "")(descr "HackerFab project library"))
+  (lib (name "Hack_Oscillators")(type "KiCad")(uri "${KIPRJMOD}/../libraries/Hack_Oscillators.kicad_sym")(options "")(descr "HackerFab project library"))
+  (lib (name "Hack_Passives")(type "KiCad")(uri "${KIPRJMOD}/../libraries/Hack_Passives.kicad_sym")(options "")(descr "HackerFab project library"))
+)
