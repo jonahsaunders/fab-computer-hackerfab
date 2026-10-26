@@ -10,6 +10,16 @@ The initial repository import was prepared on 2026-10-21 from:
 
 The report describes early requirements and plans. The supplied KiCad files are the source for the repository's hardware inventory and validation baseline; the report's milestone statuses are not presented as current test results.
 
+## 2026-10-26 source update
+
+Replacement `Backplane.zip` and `LibraryHackerfab.zip` archives were supplied on 2026-10-26 and imported into the same repository locations. The update includes nine backplane design files (project, PCB, and seven schematic sheets) and 29 library files (seven symbol libraries and 22 footprints).
+
+The root schematic and project now include `Protection.kicad_sch`; the libraries add protection components, connectors, and seven footprints. The PCB and the five pre-existing subsheets match the initial import after line-ending normalization.
+
+The repository's portable `fp-lib-table` and `sym-lib-table` were retained. The replacement footprint table still contains absolute desktop paths and the unused `Hack_Osicllators` typo. The new fuse reference named an absent `Hack_Passives_Power` library, so it was corrected to `Hack_Passives:Fuse_Littelfuse-NANO2-451_453` in the library symbol and both cached/placed symbol properties in `Protection.kicad_sch`. The footprint itself was supplied in `Hack_Passives.pretty`. These reference corrections and line-ending normalization are the only changes to the imported design contents; circuit connections were preserved.
+
+Schematic previews, the board image, and validation notes were refreshed with KiCad 10.0.6. The new schematic has 109 components, while the unchanged PCB has 93 footprints; see the [current validation results](validation.md).
+
 ## Import mapping
 
 | Original location | Repository location |
@@ -17,7 +27,7 @@ The report describes early requirements and plans. The supplied KiCad files are 
 | `Backplane/HackerfabBackplane/` | `hardware/backplane/` |
 | `LibraryHackerfab/` | `hardware/libraries/` |
 
-Eight backplane design files (project, PCB, and six schematic sheets) and 22 library files (seven symbol libraries and 15 footprints) were retained. Source filenames, component identifiers, embedded models, and electrical connections were preserved. Git normalizes text line endings.
+The initial 2026-10-21 import retained eight backplane design files (project, PCB, and six schematic sheets) and 22 library files (seven symbol libraries and 15 footprints). Source filenames, component identifiers, embedded models, and electrical connections were preserved. Git normalizes text line endings.
 
 The original footprint table used absolute desktop paths. It was replaced with relative `${KIPRJMOD}/../libraries/` entries, and a matching project-local symbol table was added. An unused `Hack_Osicllators` typo entry was removed; references use the supplied `Hack_Oscillators` library.
 
@@ -31,7 +41,16 @@ The original archives are unchanged. They are not committed as duplicate project
 
 ## Archive fingerprints
 
-SHA-256 identifies the exact supplied archives used for this import:
+SHA-256 identifies the exact supplied archives used for each import.
+
+### Current update: 2026-10-26
+
+| Input | SHA-256 |
+| --- | --- |
+| `Backplane.zip` | `cb402ce35c35c4ca89653b3e4fa78799b7c20a86cc4a859fcf68cb515b5bb651` |
+| `LibraryHackerfab.zip` | `fae4f7f1eb39ee0c3e7f227d90205d20042f0cc822c55a51ffbe870fe86c5a20` |
+
+### Initial import: 2026-10-21
 
 | Input | SHA-256 |
 | --- | --- |

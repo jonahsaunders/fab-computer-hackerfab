@@ -28,7 +28,8 @@ The diagram is a functional overview, not a wiring diagram. Use the KiCad schema
 | Expansion | Three DIN 41612 connectors (`J1`–`J3`, `9001-12961C00A`) |
 | 12 V and 5 V rails | Two TPS5450DDAR regulators (`U1`, `U2`) |
 | 3.3 V rail | AP2112K-3.3TRG1 (`U3`) |
-| USB-related circuitry | USBLC6-2SC6 protection (`U4`) and TPS2116DRL power selection (`U6`); external connectivity still requires review |
+| Input protection | Fuse (`F1`), DMP6023LE-13 MOSFET (`Q1`), TVS2700DRVR (`D7`), and BZT52C12 (`D8`) on `Protection.kicad_sch` |
+| USB-related circuitry | USB-C receptacle (`J7`), USBLC6-2SC6 protection (`U4`), and TPS2116DRL power selection (`U6`); connectivity still requires review |
 | Communication | Named nets for I²C0/1, SPI0/1 with slot chip selects, UART, and AUX signals |
 
 The report specifies UART on the first slot only. The current exported netlist instead connects `/UART_RX` to both `J1:C22` and `J3:C22`, while `/UART_TX` connects to `J1:A22`. This discrepancy needs design review. Do not assume every signal is available on every slot or that the preliminary connector pinout is frozen. Review the current schematic and connector numbering before designing a mating board.
@@ -46,6 +47,7 @@ RS-485, RS-232, and 0–10 V analog interfaces are system requirements intended 
 
 - Complete schematic connectivity and resolve ERC findings.
 - Review the connector pinout, component symbols, and footprints.
+- Synchronize the 93-footprint PCB with the updated 109-component schematic; the current parity report contains 59 findings.
 - Finish the PCB outline, placement, routing, and design review.
 - Prepare manufacturing outputs from a reviewed revision.
 - Add daughter-board and firmware sources, then record bench validation.

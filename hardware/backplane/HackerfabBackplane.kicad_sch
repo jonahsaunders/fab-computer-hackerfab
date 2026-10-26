@@ -1926,6 +1926,198 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Hack_Connector:KF128-5.08-2P-AA"
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "KF128-5.08-2P-AA"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Hack_Connector:KF128-5.08-2P-AA"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://jlcpcb.com/partdetail/C474952"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "2-position 5.08 mm screw terminal; pin 1 positive, pin 2 return"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "KF128-5.08-2P-AA"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "Cixi Kefa Elec"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C474952"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Cixi Kefa Elec KF128-5.08-2P-AA"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "KF128?5.08?2P?AA"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "KF128-5.08-2P-AA_0_1"
+				(rectangle
+					(start -2.54 2.54)
+					(end 2.54 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 1.016)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -5.08)
+					(radius 1.016)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "KF128-5.08-2P-AA_1_1"
+				(pin passive line
+					(at 7.62 0 180)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -5.08 180)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Hack_Connector:MountingHole_M3_Grounded_Corner"
 			(pin_names
 				(offset 0)
@@ -2049,6 +2241,1014 @@
 						(effects
 							(font
 								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Hack_Connector:TYPE-C-31-M-12"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 30.48 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TYPE-C-31-M-12"
+				(at 0 27.94 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Hack_Connector:USB_C_Receptacle_HRO_TYPE-C-31-M-12"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2205251630_Korean-Hroparts-Elec-TYPE-C-31-M-12_C165948.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "USB 2.0 Type-C receptacle, 16 contacts; 5 V sink interface"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "TYPE-C-31-M-12"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "Korean Hroparts Elec"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C165948"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Korean Hroparts Elec TYPE-C-31-M-12"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "USB?C?Receptacle?HRO?TYPE?C?31?M?12"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TYPE-C-31-M-12_0_1"
+				(rectangle
+					(start -10.16 22.86)
+					(end 10.16 -20.32)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -8.89 7.62) (xy -8.89 15.24)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -7.62 7.62)
+					(end -6.35 15.24)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(arc
+					(start -7.62 15.24)
+					(mid -6.985 15.8723)
+					(end -6.35 15.24)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -7.62 15.24)
+					(mid -6.985 15.8723)
+					(end -6.35 15.24)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(arc
+					(start -8.89 15.24)
+					(mid -6.985 17.1367)
+					(end -5.08 15.24)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -5.08 7.62)
+					(mid -6.985 5.7233)
+					(end -8.89 7.62)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -6.35 7.62)
+					(mid -6.985 6.9877)
+					(end -7.62 7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -6.35 7.62)
+					(mid -6.985 6.9877)
+					(end -7.62 7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 15.24) (xy -5.08 7.62)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -2.54 12.573)
+					(radius 0.635)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 15.748) (xy 0 18.288) (xy 1.27 15.748) (xy -1.27 15.748)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 9.398) (xy 2.54 11.938) (xy 2.54 13.208)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 8.128) (xy -2.54 10.668) (xy -2.54 11.938)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 5.588)
+					(radius 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 5.588) (xy 0 15.748)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 1.905 13.208)
+					(end 3.175 14.478)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(text "USB-C"
+					(at -2.54 21 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+							(bold yes)
+						)
+					)
+				)
+			)
+			(symbol "TYPE-C-31-M-12_1_1"
+				(pin passive line
+					(at -15.24 0 0)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 20.32 180)
+					(length 5.08)
+					(name "VBUS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 7.62 180)
+					(length 5.08)
+					(name "CC1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 -7.62 180)
+					(length 5.08)
+					(name "D+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 0 180)
+					(length 5.08)
+					(name "D-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 -15.24 180)
+					(length 5.08)
+					(name "SBU1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 17.78 180)
+					(length 5.08)
+					(name "VBUS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -15.24 -2.54 0)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -15.24 -5.08 0)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 15.24 180)
+					(length 5.08)
+					(name "VBUS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 5.08 180)
+					(length 5.08)
+					(name "CC2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 -10.16 180)
+					(length 5.08)
+					(name "D+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 -2.54 180)
+					(length 5.08)
+					(name "D-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 -17.78 180)
+					(length 5.08)
+					(name "SBU2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 12.7 180)
+					(length 5.08)
+					(name "VBUS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -15.24 -7.62 0)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -15.24 -15.24 0)
+					(length 5.08)
+					(name "SHIELD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "SH"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Hack_Connector:ZX-SH1.0-3PWT"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 1.27 12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "ZX-SH1.0-3PWT"
+				(at 1.27 10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Hack_Connector:Megastar_ZX-SH1.0-3PWT_1x03_P1.00mm_Horizontal"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://jlcpcb.com/partdetail/Megastar-ZX_SH1_03PWT/C7430445"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "3-pin SH 1mm right-angle debug connector; Raspberry Pi target pinout: 1 SWCLK, 2 GND, 3 SWDIO; two isolated mechanical solder tabs"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "ZX-SH1.0-3PWT"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "Megastar"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C7430445"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "SWD debug Raspberry Pi RP2040 RP2350 RP2354 SH 1mm"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Megastar?ZX?SH1.0?3PWT*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "ZX-SH1.0-3PWT_0_1"
+				(rectangle
+					(start -5.08 7.62)
+					(end 7.62 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "ZX-SH1.0-3PWT_1_1"
+				(pin passive line
+					(at 12.7 5.08 180)
+					(length 5.08)
+					(name "SWCLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 0 180)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 -5.08 180)
+					(length 5.08)
+					(name "SWDIO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Hack_Passives:RMEF0603JT5K10"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "5k1"
+				(at -2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+				(at 1.016 -0.254 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "5.1 kOhms ±5% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "RMEF0603JT5K10_0_1"
+				(polyline
+					(pts
+						(xy 0 2.286) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.762) (xy 1.016 0.381) (xy 0 0) (xy -1.016 -0.381) (xy 0 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.286) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "RMEF0603JT5K10_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
 							)
 						)
 					)
@@ -2450,36 +3650,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Add main power+secondary power connectors\n"
-		(exclude_from_sim no)
-		(at 217.424 203.962 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "9fa4a2e9-5eaf-498e-a0dd-6a7806832692")
-	)
-	(text "Add USB-C\n"
-		(exclude_from_sim no)
-		(at 217.17 210.312 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "b5edad44-f74b-44b7-9fac-a3d513b7a8fd")
-	)
-	(text "Add fuse circuit\n"
-		(exclude_from_sim no)
-		(at 216.916 207.01 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "ce49f498-cb09-4422-bcc9-2ad50dac3e4d")
-	)
 	(junction
 		(at 119.38 223.52)
 		(diameter 0)
@@ -2511,6 +3681,12 @@
 		(uuid "07787959-7c5d-4bfa-bcb8-8c767e0d86ca")
 	)
 	(junction
+		(at 187.96 217.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "094f5f97-4f51-4616-8723-34fe8ddb936e")
+	)
+	(junction
 		(at 119.38 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2535,6 +3711,12 @@
 		(uuid "1134d5d8-acf2-4868-84bd-2943de04dcaa")
 	)
 	(junction
+		(at 247.65 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "12f1b609-1ccc-49c9-8248-090a509f37e7")
+	)
+	(junction
 		(at 73.66 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2553,6 +3735,12 @@
 		(uuid "165876cd-c8b3-46a8-b0c5-f1105dd48ec2")
 	)
 	(junction
+		(at 187.96 219.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "176919cb-5784-40bb-81f5-6a3d48f0bf6e")
+	)
+	(junction
 		(at 119.38 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2569,6 +3757,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1fb61b71-fbbf-4f9d-8e44-c6fa6f60b238")
+	)
+	(junction
+		(at 187.96 222.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2110a696-5b1e-45fa-ab12-87751e0f9a0b")
 	)
 	(junction
 		(at 119.38 130.81)
@@ -2623,6 +3817,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "29b1914b-9e94-4b7a-b9a0-d4c3e59be024")
+	)
+	(junction
+		(at 227.33 194.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2bddea0e-0d52-49a4-82d9-2f3a7df100ed")
 	)
 	(junction
 		(at 72.39 118.11)
@@ -2847,6 +4047,12 @@
 		(uuid "7c018a9a-88da-44c6-8697-d65e8a565627")
 	)
 	(junction
+		(at 243.84 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7f39ea62-3f7a-4e6e-a1e5-6270325a3adb")
+	)
+	(junction
 		(at 176.53 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2973,10 +4179,22 @@
 		(uuid "a8250c3c-8631-40ce-bf08-d79b83d15106")
 	)
 	(junction
+		(at 187.96 229.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a95524fa-bc13-4f5a-a845-db9f492e3fbb")
+	)
+	(junction
 		(at 73.66 259.08)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a9d483ad-7e9f-4edc-83d4-0baed2ae491f")
+	)
+	(junction
+		(at 222.25 222.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aa6931c2-b5cd-4288-bd37-ddd2c832945f")
 	)
 	(junction
 		(at 66.04 22.86)
@@ -2991,10 +4209,22 @@
 		(uuid "ad3ddde2-1d4e-4c9a-b099-def17aa1386b")
 	)
 	(junction
+		(at 222.25 217.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aec8eec9-4a85-4f2d-b414-06c50b30a940")
+	)
+	(junction
 		(at 119.38 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b0446360-a82f-4078-abab-f0f33b53b52a")
+	)
+	(junction
+		(at 227.33 196.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b09a053a-920a-43f1-b314-d9f5067ad4b6")
 	)
 	(junction
 		(at 119.38 123.19)
@@ -3165,6 +4395,12 @@
 		(uuid "d477981d-405f-42b7-b82d-405019c61a8d")
 	)
 	(junction
+		(at 351.79 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "da79509e-3caa-4f5a-9c83-214406860d35")
+	)
+	(junction
 		(at 119.38 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3211,6 +4447,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e9f91490-ea81-4c89-89bf-ce1cb74f61b2")
+	)
+	(junction
+		(at 227.33 199.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f1272462-cf7e-42b0-9ec3-41e38c9ea7a3")
 	)
 	(junction
 		(at 181.61 274.32)
@@ -3281,6 +4523,10 @@
 		(uuid "410d54e2-cfb1-4a9c-a90b-b621ea60db89")
 	)
 	(no_connect
+		(at 220.98 232.41)
+		(uuid "4311b037-904a-412a-86de-57a822ca23fd")
+	)
+	(no_connect
 		(at 168.91 246.38)
 		(uuid "4757488d-aade-404c-b69f-97ff7828f856")
 	)
@@ -3311,6 +4557,10 @@
 	(no_connect
 		(at 71.12 248.92)
 		(uuid "b67cc987-0e25-41e1-841e-c46764180c2e")
+	)
+	(no_connect
+		(at 220.98 229.87)
+		(uuid "b69724b4-88cc-41b0-9d56-64be451f73d1")
 	)
 	(no_connect
 		(at 71.12 151.13)
@@ -3361,6 +4611,16 @@
 			(type default)
 		)
 		(uuid "00a7f72f-e266-4e3a-a2fc-c080ba6fa485")
+	)
+	(wire
+		(pts
+			(xy 222.25 217.17) (xy 229.87 217.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "011a2aab-6044-4169-abbb-84f50547403a")
 	)
 	(wire
 		(pts
@@ -3494,6 +4754,16 @@
 	)
 	(wire
 		(pts
+			(xy 351.79 107.95) (xy 356.87 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a36529c-51cc-4b1d-90d9-c5a1beb5c26b")
+	)
+	(wire
+		(pts
 			(xy 158.75 138.43) (xy 168.91 138.43)
 		)
 		(stroke
@@ -3524,6 +4794,16 @@
 	)
 	(wire
 		(pts
+			(xy 215.9 135.89) (xy 215.9 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0db13944-f45a-4fbf-b240-bef64cf7e88d")
+	)
+	(wire
+		(pts
 			(xy 158.75 248.92) (xy 168.91 248.92)
 		)
 		(stroke
@@ -3531,6 +4811,16 @@
 			(type default)
 		)
 		(uuid "0eae2ad7-c6dd-4ef1-94d4-be0833b967f3")
+	)
+	(wire
+		(pts
+			(xy 351.79 95.25) (xy 351.79 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "101f2f50-6c7f-42a8-bbe6-92b1c1b29d1b")
 	)
 	(wire
 		(pts
@@ -3704,6 +4994,16 @@
 	)
 	(wire
 		(pts
+			(xy 187.96 229.87) (xy 187.96 234.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "170f31e7-de36-4dd5-9dbe-dbf621b956ae")
+	)
+	(wire
+		(pts
 			(xy 116.84 256.54) (xy 119.38 256.54)
 		)
 		(stroke
@@ -3711,6 +5011,16 @@
 			(type default)
 		)
 		(uuid "174e68d2-012f-4942-ba80-6d7c0c65cc89")
+	)
+	(wire
+		(pts
+			(xy 208.28 166.37) (xy 215.9 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17d66b4b-3998-4ef8-a963-2967bbdece77")
 	)
 	(wire
 		(pts
@@ -3731,6 +5041,16 @@
 			(type default)
 		)
 		(uuid "185ded33-9918-4528-aca3-5baddfb0c025")
+	)
+	(wire
+		(pts
+			(xy 349.25 128.27) (xy 356.87 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18b43437-90a7-47a4-af0b-5015b79b8b10")
 	)
 	(wire
 		(pts
@@ -3844,6 +5164,16 @@
 	)
 	(wire
 		(pts
+			(xy 187.96 222.25) (xy 187.96 229.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f5be869-77a0-476d-9d10-acca6c121564")
+	)
+	(wire
+		(pts
 			(xy 60.96 148.59) (xy 71.12 148.59)
 		)
 		(stroke
@@ -3864,6 +5194,16 @@
 	)
 	(wire
 		(pts
+			(xy 229.87 68.58) (xy 247.65 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "209bcebe-b644-4324-8c24-7b658479ddff")
+	)
+	(wire
+		(pts
 			(xy 60.96 88.9) (xy 66.04 88.9)
 		)
 		(stroke
@@ -3881,6 +5221,16 @@
 			(type default)
 		)
 		(uuid "20ef5339-a4ee-41da-b3f9-0ccae9571199")
+	)
+	(wire
+		(pts
+			(xy 187.96 214.63) (xy 187.96 217.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21197f4e-1c7d-4191-a5eb-5fe37bd4ca13")
 	)
 	(wire
 		(pts
@@ -3951,6 +5301,16 @@
 			(type default)
 		)
 		(uuid "23c793cd-8e7e-435b-a693-25296126a614")
+	)
+	(wire
+		(pts
+			(xy 201.93 68.58) (xy 191.77 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23cd6e7b-7079-4821-8eb7-8377d8da705c")
 	)
 	(wire
 		(pts
@@ -4051,6 +5411,16 @@
 			(type default)
 		)
 		(uuid "2aaa00b8-655e-46ee-8278-851ea24329e7")
+	)
+	(wire
+		(pts
+			(xy 349.25 135.89) (xy 356.87 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ac57ddd-59c5-4010-9c11-ba2c948c3bd0")
 	)
 	(wire
 		(pts
@@ -4184,7 +5554,7 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 68.58) (xy 247.65 63.5)
+			(xy 243.84 68.58) (xy 243.84 49.53)
 		)
 		(stroke
 			(width 0)
@@ -4281,6 +5651,16 @@
 			(type default)
 		)
 		(uuid "335f5bec-0f72-4634-921e-dabc50b090ac")
+	)
+	(wire
+		(pts
+			(xy 349.25 130.81) (xy 356.87 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3372ca37-9594-4a30-a50e-96054840cf84")
 	)
 	(wire
 		(pts
@@ -4444,6 +5824,16 @@
 	)
 	(wire
 		(pts
+			(xy 226.06 259.08) (xy 226.06 269.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a27c14c-db91-49c3-b9f6-a20a5907988e")
+	)
+	(wire
+		(pts
 			(xy 119.38 153.67) (xy 119.38 156.21)
 		)
 		(stroke
@@ -4481,6 +5871,16 @@
 			(type default)
 		)
 		(uuid "3bcf9aed-625d-41d2-9741-407b04504a7a")
+	)
+	(wire
+		(pts
+			(xy 269.24 123.19) (xy 269.24 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c8ecc9c-b3d7-4bd6-8c92-44607aafd284")
 	)
 	(wire
 		(pts
@@ -4531,6 +5931,16 @@
 			(type default)
 		)
 		(uuid "3de77096-f7c3-48f5-9be9-dbba1d17bc64")
+	)
+	(wire
+		(pts
+			(xy 220.98 222.25) (xy 222.25 222.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e0142fd-f206-485d-9c20-8ec952a7dacc")
 	)
 	(wire
 		(pts
@@ -4654,6 +6064,16 @@
 	)
 	(wire
 		(pts
+			(xy 220.98 199.39) (xy 227.33 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44856b0a-c20d-4051-abaf-41296eb6e952")
+	)
+	(wire
+		(pts
 			(xy 171.45 261.62) (xy 171.45 259.08)
 		)
 		(stroke
@@ -4671,6 +6091,16 @@
 			(type default)
 		)
 		(uuid "464017dc-e528-481f-82f9-2635e075702e")
+	)
+	(wire
+		(pts
+			(xy 190.5 219.71) (xy 187.96 219.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "470124ff-7a40-4e61-be5a-ab2bca89b3af")
 	)
 	(wire
 		(pts
@@ -4701,6 +6131,16 @@
 			(type default)
 		)
 		(uuid "4785e07d-4bea-484f-8cf5-db41bb331ae7")
+	)
+	(wire
+		(pts
+			(xy 215.9 114.3) (xy 215.9 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4904ba27-23df-4340-9026-c91ee133e6b1")
 	)
 	(wire
 		(pts
@@ -4774,6 +6214,16 @@
 	)
 	(wire
 		(pts
+			(xy 220.98 196.85) (xy 227.33 196.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c2d89d6-2e02-4db5-8d9a-ba4b122076c9")
+	)
+	(wire
+		(pts
 			(xy 116.84 115.57) (xy 119.38 115.57)
 		)
 		(stroke
@@ -4801,6 +6251,16 @@
 			(type default)
 		)
 		(uuid "4d725122-f5fb-43ab-9fca-30b2da4dedce")
+	)
+	(wire
+		(pts
+			(xy 215.9 175.26) (xy 215.9 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d958f4a-68ac-4659-84c6-66e3b59b5bec")
 	)
 	(wire
 		(pts
@@ -4861,6 +6321,16 @@
 			(type default)
 		)
 		(uuid "50370d83-259f-4913-9fca-a8c3e22add51")
+	)
+	(wire
+		(pts
+			(xy 220.98 207.01) (xy 247.65 207.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50afe33c-0a27-42f7-bca8-36534bb4f5df")
 	)
 	(wire
 		(pts
@@ -5054,6 +6524,16 @@
 	)
 	(wire
 		(pts
+			(xy 190.5 222.25) (xy 187.96 222.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a5ddc68-471d-4d5d-83a8-a57186eb0205")
+	)
+	(wire
+		(pts
 			(xy 60.96 38.1) (xy 78.74 38.1)
 		)
 		(stroke
@@ -5081,16 +6561,6 @@
 			(type default)
 		)
 		(uuid "5c67e04a-2df1-4fa4-8e51-c737ac4a6424")
-	)
-	(wire
-		(pts
-			(xy 256.54 68.58) (xy 247.65 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5d76d7c8-024a-4df0-aa52-511f785c0ed9")
 	)
 	(wire
 		(pts
@@ -5204,6 +6674,16 @@
 	)
 	(wire
 		(pts
+			(xy 187.96 229.87) (xy 190.5 229.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61f91468-657c-474b-96e6-c14b76be6a63")
+	)
+	(wire
+		(pts
 			(xy 60.96 246.38) (xy 71.12 246.38)
 		)
 		(stroke
@@ -5284,6 +6764,16 @@
 	)
 	(wire
 		(pts
+			(xy 215.9 144.78) (xy 215.9 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67657c3d-ccde-441d-8c9d-7001b6012787")
+	)
+	(wire
+		(pts
 			(xy 158.75 271.78) (xy 163.83 271.78)
 		)
 		(stroke
@@ -5321,6 +6811,16 @@
 			(type default)
 		)
 		(uuid "6a2f0636-ea36-420b-b40f-ece43d8a454c")
+	)
+	(wire
+		(pts
+			(xy 220.98 194.31) (xy 227.33 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a68eb9d-9b37-4a1a-84c4-8da8b544f39d")
 	)
 	(wire
 		(pts
@@ -5401,6 +6901,16 @@
 			(type default)
 		)
 		(uuid "6e15587a-2240-4a96-9fca-58c57a566626")
+	)
+	(wire
+		(pts
+			(xy 227.33 194.31) (xy 227.33 191.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e233af8-2c1c-47b3-a1d2-1a2e0c08e6fe")
 	)
 	(wire
 		(pts
@@ -5604,6 +7114,16 @@
 	)
 	(wire
 		(pts
+			(xy 227.33 201.93) (xy 227.33 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7aa94fb3-0745-4e1f-96a2-b2c1d1e8b647")
+	)
+	(wire
+		(pts
 			(xy 158.75 254) (xy 168.91 254)
 		)
 		(stroke
@@ -5664,6 +7184,16 @@
 	)
 	(wire
 		(pts
+			(xy 215.9 140.97) (xy 208.28 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "815f3f54-7061-4ad1-8874-eef418a676c6")
+	)
+	(wire
+		(pts
 			(xy 119.38 78.74) (xy 119.38 81.28)
 		)
 		(stroke
@@ -5714,6 +7244,16 @@
 	)
 	(wire
 		(pts
+			(xy 227.33 199.39) (xy 227.33 196.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82869dda-eec5-4a1d-a6f2-3cff6387cc2d")
+	)
+	(wire
+		(pts
 			(xy 158.75 238.76) (xy 168.91 238.76)
 		)
 		(stroke
@@ -5734,7 +7274,17 @@
 	)
 	(wire
 		(pts
-			(xy 346.71 107.95) (xy 356.87 107.95)
+			(xy 247.65 68.58) (xy 256.54 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83cd65f7-7b3f-48db-b67b-984e59687927")
+	)
+	(wire
+		(pts
+			(xy 346.71 107.95) (xy 351.79 107.95)
 		)
 		(stroke
 			(width 0)
@@ -5801,6 +7351,16 @@
 			(type default)
 		)
 		(uuid "876e49d6-5a6f-46ee-b38e-7899c3ab1d2f")
+	)
+	(wire
+		(pts
+			(xy 213.36 259.08) (xy 226.06 259.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87ebd9ac-d67b-4db3-98f4-91253a4c531c")
 	)
 	(wire
 		(pts
@@ -5974,6 +7534,16 @@
 	)
 	(wire
 		(pts
+			(xy 215.9 105.41) (xy 215.9 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8edac6d4-000c-4ff7-b869-6646549ffa7f")
+	)
+	(wire
+		(pts
 			(xy 60.96 58.42) (xy 71.12 58.42)
 		)
 		(stroke
@@ -6114,6 +7684,16 @@
 	)
 	(wire
 		(pts
+			(xy 190.5 214.63) (xy 187.96 214.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "976f2ec3-8791-47d0-a8e8-e0c42578aa24")
+	)
+	(wire
+		(pts
 			(xy 158.75 153.67) (xy 168.91 153.67)
 		)
 		(stroke
@@ -6141,6 +7721,16 @@
 			(type default)
 		)
 		(uuid "98c13a88-d57d-4a8c-956f-c85050479eb3")
+	)
+	(wire
+		(pts
+			(xy 215.9 171.45) (xy 208.28 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98d0690a-e7ab-4464-9e86-76e904033e3a")
 	)
 	(wire
 		(pts
@@ -6284,6 +7874,16 @@
 	)
 	(wire
 		(pts
+			(xy 220.98 214.63) (xy 222.25 214.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9cf6b15c-8599-4378-9b17-abd39ed995c4")
+	)
+	(wire
+		(pts
 			(xy 176.53 215.9) (xy 176.53 213.36)
 		)
 		(stroke
@@ -6384,6 +7984,16 @@
 	)
 	(wire
 		(pts
+			(xy 247.65 222.25) (xy 247.65 234.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a39a4a5c-c26d-44b9-9573-2b4eb7c4a778")
+	)
+	(wire
+		(pts
 			(xy 73.66 259.08) (xy 73.66 257.81)
 		)
 		(stroke
@@ -6434,6 +8044,26 @@
 	)
 	(wire
 		(pts
+			(xy 240.03 214.63) (xy 240.03 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a89534fd-eb61-4644-9213-d098bad4e8a2")
+	)
+	(wire
+		(pts
+			(xy 213.36 264.16) (xy 219.71 264.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9315fbc-eedd-4d01-bafc-d5d0fc6a01a2")
+	)
+	(wire
+		(pts
 			(xy 119.38 128.27) (xy 119.38 130.81)
 		)
 		(stroke
@@ -6441,6 +8071,16 @@
 			(type default)
 		)
 		(uuid "a939c9e9-f6c3-4f43-b8be-71da2c1cfdb4")
+	)
+	(wire
+		(pts
+			(xy 247.65 207.01) (xy 247.65 214.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a980bf96-6f45-4286-b4f9-918e8fdb911a")
 	)
 	(wire
 		(pts
@@ -6744,6 +8384,16 @@
 	)
 	(wire
 		(pts
+			(xy 187.96 219.71) (xy 187.96 222.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba928a98-0880-4e27-980c-47bbae6bd030")
+	)
+	(wire
+		(pts
 			(xy 119.38 228.6) (xy 119.38 231.14)
 		)
 		(stroke
@@ -6874,6 +8524,16 @@
 	)
 	(wire
 		(pts
+			(xy 215.9 166.37) (xy 215.9 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c46e4af3-c1f6-45fd-90ce-d64cdbdbf622")
+	)
+	(wire
+		(pts
 			(xy 119.38 259.08) (xy 119.38 261.62)
 		)
 		(stroke
@@ -6881,6 +8541,16 @@
 			(type default)
 		)
 		(uuid "c4863284-c447-4deb-aaf0-b3e9f721b748")
+	)
+	(wire
+		(pts
+			(xy 191.77 68.58) (xy 191.77 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4c00f21-4843-49c5-97b3-2f50b4c44e1e")
 	)
 	(wire
 		(pts
@@ -6944,6 +8614,16 @@
 	)
 	(wire
 		(pts
+			(xy 190.5 217.17) (xy 187.96 217.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c735b3a3-aef8-47fe-a037-c4a59142d0b1")
+	)
+	(wire
+		(pts
 			(xy 158.75 88.9) (xy 163.83 88.9)
 		)
 		(stroke
@@ -6991,6 +8671,26 @@
 			(type default)
 		)
 		(uuid "c815fc34-9a5d-42bf-b329-140853b7afcf")
+	)
+	(wire
+		(pts
+			(xy 222.25 222.25) (xy 229.87 222.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c832de27-14fb-4da2-8937-fccfd5cf08b7")
+	)
+	(wire
+		(pts
+			(xy 208.28 105.41) (xy 215.9 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8657667-e766-4bca-b44c-c5a4b29e351c")
 	)
 	(wire
 		(pts
@@ -7144,6 +8844,16 @@
 	)
 	(wire
 		(pts
+			(xy 349.25 138.43) (xy 356.87 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ccfc2fdb-3a92-4dbe-97ea-f13135726b02")
+	)
+	(wire
+		(pts
 			(xy 158.75 223.52) (xy 168.91 223.52)
 		)
 		(stroke
@@ -7171,6 +8881,16 @@
 			(type default)
 		)
 		(uuid "cdbb6dae-f014-4281-bf40-331224b155ba")
+	)
+	(wire
+		(pts
+			(xy 215.9 110.49) (xy 208.28 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cfc0ff82-7e65-4368-a50d-3c81610887c8")
 	)
 	(wire
 		(pts
@@ -7224,6 +8944,16 @@
 	)
 	(wire
 		(pts
+			(xy 227.33 196.85) (xy 227.33 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5078de2-5e29-4887-8a65-3339b0fe28af")
+	)
+	(wire
+		(pts
 			(xy 158.75 176.53) (xy 163.83 176.53)
 		)
 		(stroke
@@ -7231,6 +8961,16 @@
 			(type default)
 		)
 		(uuid "d5e972f9-3729-4539-ade5-fee632e148bf")
+	)
+	(wire
+		(pts
+			(xy 295.91 107.95) (xy 289.56 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6bccf71-0486-494c-bec2-e0f0347ce8b8")
 	)
 	(wire
 		(pts
@@ -7324,16 +9064,6 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 95.25) (xy 247.65 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "da99be9a-331a-40c1-abab-880a19b95633")
-	)
-	(wire
-		(pts
 			(xy 119.38 158.75) (xy 119.38 161.29)
 		)
 		(stroke
@@ -7351,6 +9081,16 @@
 			(type default)
 		)
 		(uuid "db3abd74-71fc-450f-88c4-e7c758328a61")
+	)
+	(wire
+		(pts
+			(xy 247.65 68.58) (xy 247.65 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc3daab0-646c-4f02-a3df-d5af7e8b9cac")
 	)
 	(wire
 		(pts
@@ -7411,6 +9151,16 @@
 			(type default)
 		)
 		(uuid "e20789ed-1f24-462d-af9a-710dbc6d83dc")
+	)
+	(wire
+		(pts
+			(xy 240.03 209.55) (xy 220.98 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e22bd0ef-aacb-4886-bb01-1131a2f6aa6c")
 	)
 	(wire
 		(pts
@@ -7484,6 +9234,16 @@
 	)
 	(wire
 		(pts
+			(xy 222.25 214.63) (xy 222.25 217.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4b4aaf9-557d-4107-aa68-9aa82ab6b1fe")
+	)
+	(wire
+		(pts
 			(xy 119.38 73.66) (xy 119.38 76.2)
 		)
 		(stroke
@@ -7511,6 +9271,16 @@
 			(type default)
 		)
 		(uuid "e7879e86-c01b-4c11-8ec3-21fb9a8a186d")
+	)
+	(wire
+		(pts
+			(xy 220.98 201.93) (xy 227.33 201.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7f291e9-b938-4af0-aea7-4628db2fd4b3")
 	)
 	(wire
 		(pts
@@ -7554,6 +9324,16 @@
 	)
 	(wire
 		(pts
+			(xy 289.56 107.95) (xy 289.56 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea0052a0-dfa5-4558-b923-597262d516b8")
+	)
+	(wire
+		(pts
 			(xy 119.38 191.77) (xy 119.38 189.23)
 		)
 		(stroke
@@ -7574,6 +9354,16 @@
 	)
 	(wire
 		(pts
+			(xy 220.98 217.17) (xy 222.25 217.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eafe6e17-095e-4b06-916a-b1fe284b5a77")
+	)
+	(wire
+		(pts
 			(xy 119.38 48.26) (xy 119.38 50.8)
 		)
 		(stroke
@@ -7591,6 +9381,16 @@
 			(type default)
 		)
 		(uuid "ec50a8cf-1fba-429f-b97e-10a384882b39")
+	)
+	(wire
+		(pts
+			(xy 187.96 217.17) (xy 187.96 219.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed0acdce-8a61-48fd-974f-211691215984")
 	)
 	(wire
 		(pts
@@ -7684,6 +9484,16 @@
 	)
 	(wire
 		(pts
+			(xy 222.25 224.79) (xy 222.25 222.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efd33ffe-01ad-4782-8d70-f63b49695810")
+	)
+	(wire
+		(pts
 			(xy 116.84 168.91) (xy 119.38 168.91)
 		)
 		(stroke
@@ -7764,6 +9574,26 @@
 	)
 	(wire
 		(pts
+			(xy 240.03 222.25) (xy 240.03 234.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3bd1b04-e596-4f47-a5d7-826986beba07")
+	)
+	(wire
+		(pts
+			(xy 208.28 135.89) (xy 215.9 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f44c0279-29ee-4e1e-8fe0-75a318e8fbbb")
+	)
+	(wire
+		(pts
 			(xy 60.96 68.58) (xy 71.12 68.58)
 		)
 		(stroke
@@ -7824,6 +9654,16 @@
 	)
 	(wire
 		(pts
+			(xy 269.24 123.19) (xy 289.56 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f61b9e85-ff9d-44b2-aff0-0ed9385bb9c6")
+	)
+	(wire
+		(pts
 			(xy 119.38 123.19) (xy 119.38 125.73)
 		)
 		(stroke
@@ -7841,6 +9681,16 @@
 			(type default)
 		)
 		(uuid "f885a218-f14d-4bd4-b349-6d7c8ba8f8f0")
+	)
+	(wire
+		(pts
+			(xy 220.98 224.79) (xy 222.25 224.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f893a346-70ff-4d6d-89b7-f28364a1c607")
 	)
 	(wire
 		(pts
@@ -7921,6 +9771,16 @@
 			(type default)
 		)
 		(uuid "faa2bfdf-6cb4-4d89-b268-2cc624d07f33")
+	)
+	(wire
+		(pts
+			(xy 213.36 254) (xy 219.71 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "faefcbfa-c03b-4f04-91de-6a6740ef03fe")
 	)
 	(wire
 		(pts
@@ -8182,6 +10042,16 @@
 		)
 		(uuid "271c17c5-1592-4382-8d29-35b6c4481158")
 	)
+	(label "SWDIO"
+		(at 219.71 264.16 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "29558483-f110-4b51-aba2-490abacf18db")
+	)
 	(label "GND"
 		(at 163.83 27.94 180)
 		(effects
@@ -8301,6 +10171,16 @@
 			(justify right bottom)
 		)
 		(uuid "3fcdc55d-249b-4f18-9e6d-5dd7499baf43")
+	)
+	(label "SWCLK"
+		(at 349.25 128.27 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "44d5eb38-7ee3-4e6b-981d-466b78b2fcb5")
 	)
 	(label "SPI1_MISO"
 		(at 71.12 55.88 180)
@@ -8472,6 +10352,16 @@
 		)
 		(uuid "69aa4dc0-aa0d-49b8-8611-b256674f459b")
 	)
+	(label "SWCLK"
+		(at 219.71 254 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6b280427-c058-416e-b374-b10fe00265fd")
+	)
 	(label "I2C0_SCL"
 		(at 168.91 78.74 180)
 		(effects
@@ -8481,6 +10371,16 @@
 			(justify right bottom)
 		)
 		(uuid "6c66994a-3667-4eed-a9c1-53bd00c67fa2")
+	)
+	(label "USB_D+"
+		(at 349.25 135.89 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6f9919b1-7c38-4e97-8330-96864532afa6")
 	)
 	(label "SPI0_CS2"
 		(at 168.91 138.43 180)
@@ -8511,6 +10411,16 @@
 			(justify right bottom)
 		)
 		(uuid "74159c70-b3c2-4502-9eaa-e413adf00507")
+	)
+	(label "USB_D-"
+		(at 229.87 217.17 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "74dbf5fe-139e-4720-830e-af128f9077ba")
 	)
 	(label "SPI1_MOSI"
 		(at 71.12 146.05 180)
@@ -8952,6 +10862,16 @@
 		)
 		(uuid "f5192e6e-3604-4992-9615-d42281a5f769")
 	)
+	(label "USB_D+"
+		(at 229.87 222.25 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f5773665-1953-4fad-8793-6128a79685b4")
+	)
 	(label "SPI1_CS1"
 		(at 168.91 55.88 180)
 		(effects
@@ -9011,6 +10931,26 @@
 			(justify right bottom)
 		)
 		(uuid "fa572d00-e643-4219-a11b-c372df9affc3")
+	)
+	(label "SWDIO"
+		(at 349.25 130.81 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "feed29f2-7b07-495a-9909-9b866b87ab74")
+	)
+	(label "USB_D-"
+		(at 349.25 138.43 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fffbf82c-9518-4e35-97e7-7127eb3056b6")
 	)
 	(symbol
 		(lib_id "power:+12V")
@@ -9091,8 +11031,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 251.46 236.22 0)
+		(lib_id "Hack_Passives:RMEF0603JT5K10")
+		(at 247.65 218.44 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9101,30 +11041,31 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "1457f929-de28-4e4b-b7ac-152ccefec9f2")
-		(property "Reference" "#PWR044"
-			(at 251.46 242.57 0)
-			(hide yes)
+		(uuid "0e5107d7-7736-4bd0-8119-5b44aa773d72")
+		(property "Reference" "R23"
+			(at 250.19 217.1699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "GND"
-			(at 251.46 241.3 0)
+		(property "Value" "5k1"
+			(at 250.19 219.7099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 251.46 236.22 0)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 248.666 218.694 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9135,7 +11076,166 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 251.46 236.22 0)
+			(at 247.65 218.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "5.1 kOhms ±5% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+			(at 247.65 218.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "484059b0-a073-4f29-a06d-b29bbc689e01")
+		)
+		(pin "1"
+			(uuid "55cdba49-556d-4dc1-aa01-bccc1990763a")
+		)
+		(instances
+			(project "HackerfabBackplane"
+				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d"
+					(reference "R23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+24V")
+		(at 215.9 160.02 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1291b998-19b3-497c-9a63-321ed4cc05f1")
+		(property "Reference" "#PWR0117"
+			(at 215.9 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 215.9 154.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 215.9 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.9 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+24V\""
+			(at 215.9 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "921ebf0d-b51c-49d0-9bfd-7b8b64efddf3")
+		)
+		(instances
+			(project "HackerfabBackplane"
+				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d"
+					(reference "#PWR0117")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 341.63 209.55 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1457f929-de28-4e4b-b7ac-152ccefec9f2")
+		(property "Reference" "#PWR044"
+			(at 341.63 215.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 341.63 214.63 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 341.63 209.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 341.63 209.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9146,7 +11246,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 251.46 236.22 0)
+			(at 341.63 209.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9403,6 +11503,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 240.03 234.95 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1ef48956-5fd9-4008-9264-37053eb0547a")
+		(property "Reference" "#PWR0122"
+			(at 240.03 241.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 240.03 240.03 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 240.03 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 240.03 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 240.03 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "40bc8ad8-d779-4de5-9ed5-62404d8d8ca7")
+		)
+		(instances
+			(project "HackerfabBackplane"
+				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d"
+					(reference "#PWR0122")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+24V")
 		(at 163.83 196.85 0)
 		(unit 1)
@@ -9425,7 +11603,7 @@
 				)
 			)
 		)
-		(property "Value" "+24V"
+		(property "Value" "+24V_P"
 			(at 163.83 191.77 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9475,6 +11653,84 @@
 			(project "HackerfabBackplane"
 				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d"
 					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 227.33 191.77 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "215d6a87-7088-4e38-b2bb-8c94bca26d34")
+		(property "Reference" "#PWR0120"
+			(at 227.33 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V_USB"
+			(at 227.33 186.69 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 227.33 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 227.33 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 227.33 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "43345b54-cd1c-4abf-8ff1-c46fb09798d3")
+		)
+		(instances
+			(project "HackerfabBackplane"
+				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d"
+					(reference "#PWR0120")
 					(unit 1)
 				)
 			)
@@ -9637,6 +11893,166 @@
 		)
 	)
 	(symbol
+		(lib_id "Hack_Passives:RMEF0603JT5K10")
+		(at 240.03 218.44 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "24d4469f-5b01-4b29-bb7f-cca6b59c627a")
+		(property "Reference" "R22"
+			(at 242.57 217.1699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5k1"
+			(at 242.57 219.7099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 241.046 218.694 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 240.03 218.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "5.1 kOhms ±5% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+			(at 240.03 218.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "4c231633-5ca3-42b2-96b4-043d68fa7122")
+		)
+		(pin "1"
+			(uuid "347b7e1e-5e82-4909-a66d-a212fb1bc137")
+		)
+		(instances
+			(project "HackerfabBackplane"
+				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d"
+					(reference "R22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 215.9 129.54 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "25873824-01a6-4ff7-a195-19a4a70a916b")
+		(property "Reference" "#PWR0115"
+			(at 215.9 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+12V"
+			(at 215.9 124.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 215.9 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.9 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 215.9 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ab1f9c24-538d-4fbf-9a60-1d7f17d2963c")
+		)
+		(instances
+			(project "HackerfabBackplane"
+				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d"
+					(reference "#PWR0115")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+12V")
 		(at 176.53 172.72 0)
 		(unit 1)
@@ -9793,6 +12209,200 @@
 		)
 	)
 	(symbol
+		(lib_id "Hack_Connector:ZX-SH1.0-3PWT")
+		(at 200.66 259.08 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3387205f-875a-454e-a9e9-55d3aee9db6c")
+		(property "Reference" "J9"
+			(at 201.93 246.38 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ZX-SH1.0-3PWT"
+			(at 201.93 248.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Hack_Connector:Megastar_ZX-SH1.0-3PWT_1x03_P1.00mm_Horizontal"
+			(at 200.66 259.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/partdetail/Megastar-ZX_SH1_03PWT/C7430445"
+			(at 200.66 259.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "3-pin SH 1mm right-angle debug connector; Raspberry Pi target pinout: 1 SWCLK, 2 GND, 3 SWDIO; two isolated mechanical solder tabs"
+			(at 200.66 259.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "ZX-SH1.0-3PWT"
+			(at 200.66 259.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Megastar"
+			(at 200.66 259.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C7430445"
+			(at 200.66 259.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "e4308b10-4226-47b6-b1ec-9de4d9ee62c3")
+		)
+		(pin "1"
+			(uuid "be529ae3-0bda-427b-84ab-45328eeb0255")
+		)
+		(pin "3"
+			(uuid "1d42b74a-14d6-4407-93e8-c42886c1a6fd")
+		)
+		(instances
+			(project "HackerfabBackplane"
+				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d"
+					(reference "J9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+24V")
+		(at 215.9 99.06 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "35c3b857-842c-419a-9419-b29e71fc0092")
+		(property "Reference" "#PWR043"
+			(at 215.9 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+24V"
+			(at 215.9 93.98 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 215.9 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.9 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+24V\""
+			(at 215.9 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dbe00822-c616-49d4-9950-5d68bb723da2")
+		)
+		(instances
+			(project "HackerfabBackplane"
+				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d"
+					(reference "#PWR043")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+12V")
 		(at 170.18 21.59 0)
 		(unit 1)
@@ -9871,8 +12481,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 251.46 250.19 0)
+		(lib_id "power:+12V")
+		(at 269.24 118.11 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9881,9 +12491,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "3d037cf6-6220-419a-bcc3-be91905b4067")
-		(property "Reference" "#PWR045"
-			(at 251.46 256.54 0)
+		(uuid "38ec0a5d-fd4d-44b4-89d0-bc041fff2433")
+		(property "Reference" "#PWR0119"
+			(at 269.24 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9893,8 +12503,8 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 251.46 255.27 0)
+		(property "Value" "+5V_USB"
+			(at 269.24 113.03 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9904,7 +12514,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 251.46 250.19 0)
+			(at 269.24 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9915,7 +12525,243 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 251.46 250.19 0)
+			(at 269.24 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 269.24 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0f741375-1a07-4af1-9458-dc4b39962545")
+		)
+		(instances
+			(project "HackerfabBackplane"
+				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d"
+					(reference "#PWR0119")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Hack_Connector:TYPE-C-31-M-12")
+		(at 205.74 214.63 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3aad8476-4fda-48d5-8219-a97a544fb2d8")
+		(property "Reference" "J7"
+			(at 205.74 186.69 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TYPE-C-31-M-12"
+			(at 205.74 189.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Hack_Connector:USB_C_Receptacle_HRO_TYPE-C-31-M-12"
+			(at 205.74 214.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2205251630_Korean-Hroparts-Elec-TYPE-C-31-M-12_C165948.pdf"
+			(at 205.74 214.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "USB 2.0 Type-C receptacle, 16 contacts; 5 V sink interface"
+			(at 205.74 214.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "TYPE-C-31-M-12"
+			(at 205.74 214.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Korean Hroparts Elec"
+			(at 205.74 214.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C165948"
+			(at 205.74 214.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "A6"
+			(uuid "1bfe7040-c675-4db0-8901-4fcccbb8e5f1")
+		)
+		(pin "A4"
+			(uuid "ea9285e7-6d19-404e-a6cc-0b1eac033083")
+		)
+		(pin "A9"
+			(uuid "85150aff-178e-485f-8c91-545ebf473e78")
+		)
+		(pin "A8"
+			(uuid "911ac5f6-62c6-444e-a72f-c9a41112816e")
+		)
+		(pin "B5"
+			(uuid "7e8a236f-9d52-4389-9184-5391dc8360ad")
+		)
+		(pin "A1"
+			(uuid "2eec6f26-5aa9-467e-b6c9-7b5b74f46a1a")
+		)
+		(pin "A7"
+			(uuid "52f50162-519d-4e1c-887c-3a9dc8eeeaf8")
+		)
+		(pin "B4"
+			(uuid "53365158-d567-48b1-8d91-ef43f5e396e4")
+		)
+		(pin "A5"
+			(uuid "f70b2d92-4172-4704-bc3e-515abfcceba7")
+		)
+		(pin "B6"
+			(uuid "ac02abe9-6b56-414f-8465-0bd40e9f2ad8")
+		)
+		(pin "A12"
+			(uuid "409482b8-4da4-4382-85f7-760a48bb8678")
+		)
+		(pin "B1"
+			(uuid "c5106783-1571-4f2b-9317-e4b1a7bc86fe")
+		)
+		(pin "SH"
+			(uuid "c5ac2ce1-b5e8-4b6c-83e9-f7410a2405f7")
+		)
+		(pin "B8"
+			(uuid "10a07683-ef25-4e79-84a4-279fcf0b4dfb")
+		)
+		(pin "B7"
+			(uuid "ba6ba85e-ac97-4e62-98dd-c4d7a1794871")
+		)
+		(pin "B9"
+			(uuid "9f9e96fc-d8aa-4ca8-b458-51edc3a3714b")
+		)
+		(pin "B12"
+			(uuid "3b6f4186-9e66-4329-9a60-0b47da292390")
+		)
+		(instances
+			(project "HackerfabBackplane"
+				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d"
+					(reference "J7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 341.63 223.52 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3d037cf6-6220-419a-bcc3-be91905b4067")
+		(property "Reference" "#PWR045"
+			(at 341.63 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 341.63 228.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 341.63 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 341.63 223.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9926,7 +12772,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 251.46 250.19 0)
+			(at 341.63 223.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10049,7 +12895,7 @@
 				)
 			)
 		)
-		(property "Value" "+24V"
+		(property "Value" "+24V_P"
 			(at 163.83 16.51 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10099,6 +12945,84 @@
 			(project "HackerfabBackplane"
 				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d"
 					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 215.9 175.26 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "41d77621-2d42-42dc-882b-c7b6a3603fbf")
+		(property "Reference" "#PWR0118"
+			(at 215.9 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 215.9 180.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 215.9 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.9 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 215.9 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "65b4312b-bdf0-4a84-9243-083ea9ceea86")
+		)
+		(instances
+			(project "HackerfabBackplane"
+				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d"
+					(reference "#PWR0118")
 					(unit 1)
 				)
 			)
@@ -10177,6 +13101,240 @@
 			(project "HackerfabBackplane"
 				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d"
 					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 187.96 234.95 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "45e35fde-e078-4885-ab5d-4b7229452c41")
+		(property "Reference" "#PWR0121"
+			(at 187.96 241.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 187.96 240.03 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 187.96 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 187.96 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 187.96 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2f3bc923-99f5-4e95-9c0b-b55a8ec9f288")
+		)
+		(instances
+			(project "HackerfabBackplane"
+				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d"
+					(reference "#PWR0121")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+24V")
+		(at 191.77 48.26 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "484ff5dc-5731-401d-8fdd-27c3f046760d")
+		(property "Reference" "#PWR0110"
+			(at 191.77 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+24V"
+			(at 191.77 43.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 191.77 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 191.77 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+24V\""
+			(at 191.77 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d01c9b64-451a-46fa-8d33-2b27d832ddea")
+		)
+		(instances
+			(project "HackerfabBackplane"
+				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d"
+					(reference "#PWR0110")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 226.06 269.24 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "51cf693d-c28c-4870-b8a8-7303856b1413")
+		(property "Reference" "#PWR0124"
+			(at 226.06 275.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 226.06 274.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 226.06 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 226.06 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 226.06 269.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "17610dfe-deed-43c1-b83a-4748aa948a62")
+		)
+		(instances
+			(project "HackerfabBackplane"
+				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d"
+					(reference "#PWR0124")
 					(unit 1)
 				)
 			)
@@ -10283,7 +13441,7 @@
 				)
 			)
 		)
-		(property "Value" "+24V"
+		(property "Value" "+24V_P"
 			(at 66.04 104.14 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10439,7 +13597,7 @@
 				)
 			)
 		)
-		(property "Value" "+24V"
+		(property "Value" "+24V_P"
 			(at 83.82 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10489,6 +13647,197 @@
 			(project "HackerfabBackplane"
 				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d"
 					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 351.79 95.25 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "61dcab2d-fd86-41a8-91f6-b16c78bc99b4")
+		(property "Reference" "#PWR0111"
+			(at 351.79 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 351.79 90.17 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 351.79 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 351.79 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 351.79 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e0c28015-2817-4a48-aedf-8f3f7d2e4415")
+		)
+		(instances
+			(project "HackerfabBackplane"
+				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d"
+					(reference "#PWR0111")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Hack_Connector:KF128-5.08-2P-AA")
+		(at 200.66 135.89 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6698a993-bc4c-4ff8-a8e9-b99670c9d765")
+		(property "Reference" "J5"
+			(at 200.66 128.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "KF128-5.08-2P-AA"
+			(at 200.66 130.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Hack_Connector:KF128-5.08-2P-AA"
+			(at 200.66 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/partdetail/C474952"
+			(at 200.66 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "2-position 5.08 mm screw terminal; pin 1 positive, pin 2 return"
+			(at 200.66 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "KF128-5.08-2P-AA"
+			(at 200.66 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Cixi Kefa Elec"
+			(at 200.66 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C474952"
+			(at 200.66 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "89f69d7f-55ea-4cdd-a6d5-785da89662ab")
+		)
+		(pin "2"
+			(uuid "217c3f77-43ac-4fe7-99d6-11f6c9ab7007")
+		)
+		(instances
+			(project "HackerfabBackplane"
+				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d"
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -10595,7 +13944,7 @@
 				)
 			)
 		)
-		(property "Value" "+24V"
+		(property "Value" "+24V_P"
 			(at 83.82 173.99 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11070,7 +14419,7 @@
 				)
 			)
 		)
-		(property "Value" "+24V"
+		(property "Value" "+24V_P"
 			(at 163.83 104.14 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11205,7 +14554,7 @@
 	)
 	(symbol
 		(lib_id "Hack_Connector:MountingHole_M3_Grounded_Corner")
-		(at 251.46 231.14 0)
+		(at 341.63 204.47 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim yes)
@@ -11216,7 +14565,7 @@
 		(fields_autoplaced yes)
 		(uuid "764ad1c7-ff61-407a-b516-e4f40284eedb")
 		(property "Reference" "H3"
-			(at 254 229.8699 0)
+			(at 344.17 203.1999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11227,7 +14576,7 @@
 			)
 		)
 		(property "Value" "M3 GND Corner"
-			(at 254 232.4099 0)
+			(at 344.17 205.7399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11238,7 +14587,7 @@
 			)
 		)
 		(property "Footprint" "Hack_Connector:MountingHole_3.2mm_M3_Grounded_Corner"
-			(at 251.46 231.14 0)
+			(at 341.63 204.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11249,7 +14598,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 251.46 231.14 0)
+			(at 341.63 204.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11260,7 +14609,7 @@
 			)
 		)
 		(property "Description" "M3 corner mounting hole; 3.2 mm PTH, 6.4 mm copper pad; passive pin 1 for an explicit ground connection"
-			(at 251.46 231.14 0)
+			(at 341.63 204.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11271,7 +14620,7 @@
 			)
 		)
 		(property "License" "CC0-1.0"
-			(at 251.46 231.14 0)
+			(at 341.63 204.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11472,7 +14821,7 @@
 				)
 			)
 		)
-		(property "Value" "+24V"
+		(property "Value" "+24V_P"
 			(at 181.61 261.62 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11945,7 +15294,7 @@
 				)
 			)
 		)
-		(property "Value" "+24V"
+		(property "Value" "+24V_P"
 			(at 66.04 191.77 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12080,7 +15429,7 @@
 	)
 	(symbol
 		(lib_id "Hack_Connector:MountingHole_M3_Grounded_Corner")
-		(at 251.46 245.11 0)
+		(at 341.63 218.44 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim yes)
@@ -12091,7 +15440,7 @@
 		(fields_autoplaced yes)
 		(uuid "937245bd-7eba-4e1d-bb3d-03661625f6aa")
 		(property "Reference" "H4"
-			(at 254 243.8399 0)
+			(at 344.17 217.1699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12102,7 +15451,7 @@
 			)
 		)
 		(property "Value" "M3 GND Corner"
-			(at 254 246.3799 0)
+			(at 344.17 219.7099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12113,7 +15462,7 @@
 			)
 		)
 		(property "Footprint" "Hack_Connector:MountingHole_3.2mm_M3_Grounded_Corner"
-			(at 251.46 245.11 0)
+			(at 341.63 218.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12124,7 +15473,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 251.46 245.11 0)
+			(at 341.63 218.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12135,7 +15484,7 @@
 			)
 		)
 		(property "Description" "M3 corner mounting hole; 3.2 mm PTH, 6.4 mm copper pad; passive pin 1 for an explicit ground connection"
-			(at 251.46 245.11 0)
+			(at 341.63 218.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12146,7 +15495,7 @@
 			)
 		)
 		(property "License" "CC0-1.0"
-			(at 251.46 245.11 0)
+			(at 341.63 218.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12269,7 +15618,7 @@
 				)
 			)
 		)
-		(property "Value" "+24V"
+		(property "Value" "+24V_P"
 			(at 181.61 173.99 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12319,6 +15668,84 @@
 			(project "HackerfabBackplane"
 				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d"
 					(reference "#PWR038")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 247.65 234.95 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "96a3b585-220b-4c64-838c-b6689685942b")
+		(property "Reference" "#PWR0123"
+			(at 247.65 241.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 247.65 240.03 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 247.65 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 247.65 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 247.65 234.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c87df763-614a-4578-ab70-7ca9d1894637")
+		)
+		(instances
+			(project "HackerfabBackplane"
+				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d"
+					(reference "#PWR0123")
 					(unit 1)
 				)
 			)
@@ -12425,7 +15852,7 @@
 				)
 			)
 		)
-		(property "Value" "+24V"
+		(property "Value" "+24V_P"
 			(at 181.61 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12638,7 +16065,7 @@
 	)
 	(symbol
 		(lib_id "Hack_Connector:MountingHole_M3_Grounded_Corner")
-		(at 229.87 231.14 0)
+		(at 320.04 204.47 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim yes)
@@ -12649,7 +16076,7 @@
 		(fields_autoplaced yes)
 		(uuid "a4e98aaf-c6d2-4c7b-b080-e00912e6c512")
 		(property "Reference" "H1"
-			(at 232.41 229.8699 0)
+			(at 322.58 203.1999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12660,7 +16087,7 @@
 			)
 		)
 		(property "Value" "M3 GND Corner"
-			(at 232.41 232.4099 0)
+			(at 322.58 205.7399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12671,7 +16098,7 @@
 			)
 		)
 		(property "Footprint" "Hack_Connector:MountingHole_3.2mm_M3_Grounded_Corner"
-			(at 229.87 231.14 0)
+			(at 320.04 204.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12682,7 +16109,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 229.87 231.14 0)
+			(at 320.04 204.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12693,7 +16120,7 @@
 			)
 		)
 		(property "Description" "M3 corner mounting hole; 3.2 mm PTH, 6.4 mm copper pad; passive pin 1 for an explicit ground connection"
-			(at 229.87 231.14 0)
+			(at 320.04 204.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12704,7 +16131,7 @@
 			)
 		)
 		(property "License" "CC0-1.0"
-			(at 229.87 231.14 0)
+			(at 320.04 204.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13280,8 +16707,121 @@
 		)
 	)
 	(symbol
+		(lib_id "Hack_Connector:KF128-5.08-2P-AA")
+		(at 200.66 166.37 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b4626cd4-ef6d-4701-8fa2-58a51e04be37")
+		(property "Reference" "J6"
+			(at 200.66 158.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "KF128-5.08-2P-AA"
+			(at 200.66 161.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Hack_Connector:KF128-5.08-2P-AA"
+			(at 200.66 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/partdetail/C474952"
+			(at 200.66 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "2-position 5.08 mm screw terminal; pin 1 positive, pin 2 return"
+			(at 200.66 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "KF128-5.08-2P-AA"
+			(at 200.66 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Cixi Kefa Elec"
+			(at 200.66 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C474952"
+			(at 200.66 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ba95c519-75a0-45bc-b948-45d19ef3c119")
+		)
+		(pin "2"
+			(uuid "0500c9e2-87dd-4dc8-bf75-39b979756cec")
+		)
+		(instances
+			(project "HackerfabBackplane"
+				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d"
+					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 229.87 250.19 0)
+		(at 320.04 223.52 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13292,7 +16832,7 @@
 		(fields_autoplaced yes)
 		(uuid "b4b17fad-0912-4e9b-b2cd-c586814b56c1")
 		(property "Reference" "#PWR041"
-			(at 229.87 256.54 0)
+			(at 320.04 229.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13303,7 +16843,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 229.87 255.27 0)
+			(at 320.04 228.6 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13313,7 +16853,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 229.87 250.19 0)
+			(at 320.04 223.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13324,7 +16864,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 229.87 250.19 0)
+			(at 320.04 223.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13335,7 +16875,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 229.87 250.19 0)
+			(at 320.04 223.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14307,6 +17847,119 @@
 		)
 	)
 	(symbol
+		(lib_id "Hack_Connector:KF128-5.08-2P-AA")
+		(at 200.66 105.41 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ca22c8a4-7d21-49c9-84b8-c45af177c07d")
+		(property "Reference" "J4"
+			(at 200.66 97.79 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "KF128-5.08-2P-AA"
+			(at 200.66 100.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Hack_Connector:KF128-5.08-2P-AA"
+			(at 200.66 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/partdetail/C474952"
+			(at 200.66 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "2-position 5.08 mm screw terminal; pin 1 positive, pin 2 return"
+			(at 200.66 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "KF128-5.08-2P-AA"
+			(at 200.66 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Cixi Kefa Elec"
+			(at 200.66 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C474952"
+			(at 200.66 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "247996eb-8352-40dc-86df-5953b137bf80")
+		)
+		(pin "2"
+			(uuid "cbfdc0fb-82cd-4ebf-96d3-ebd5e637cdce")
+		)
+		(instances
+			(project "HackerfabBackplane"
+				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Hack_Connector:9001-12961C00A")
 		(at 148.59 62.23 0)
 		(mirror y)
@@ -15199,7 +18852,7 @@
 				)
 			)
 		)
-		(property "Value" "+24V"
+		(property "Value" "+24V_P"
 			(at 66.04 16.51 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16128,7 +19781,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 229.87 236.22 0)
+		(at 215.9 114.3 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16137,9 +19790,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "d9369f21-a9f3-4889-89fc-f2d447fb7978")
-		(property "Reference" "#PWR040"
-			(at 229.87 242.57 0)
+		(uuid "d87a757c-48dd-402d-a326-59f913adfef0")
+		(property "Reference" "#PWR0114"
+			(at 215.9 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16150,7 +19803,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 229.87 241.3 0)
+			(at 215.9 119.38 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16160,7 +19813,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 229.87 236.22 0)
+			(at 215.9 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16171,7 +19824,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 229.87 236.22 0)
+			(at 215.9 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16182,7 +19835,85 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 229.87 236.22 0)
+			(at 215.9 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a7617a2e-bd36-4e8e-9b2d-bffa8500fba3")
+		)
+		(instances
+			(project "HackerfabBackplane"
+				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d"
+					(reference "#PWR0114")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 320.04 209.55 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d9369f21-a9f3-4889-89fc-f2d447fb7978")
+		(property "Reference" "#PWR040"
+			(at 320.04 215.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 320.04 214.63 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 320.04 209.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 320.04 209.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 320.04 209.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16305,7 +20036,7 @@
 				)
 			)
 		)
-		(property "Value" "+24V"
+		(property "Value" "+24V_P"
 			(at 83.82 261.62 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16362,7 +20093,7 @@
 	)
 	(symbol
 		(lib_id "power:+24V")
-		(at 247.65 63.5 0)
+		(at 243.84 49.53 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16373,7 +20104,7 @@
 		(fields_autoplaced yes)
 		(uuid "e9e4aaae-2349-45e3-8621-51c23136ce51")
 		(property "Reference" "#PWR042"
-			(at 247.65 67.31 0)
+			(at 243.84 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16383,8 +20114,8 @@
 				)
 			)
 		)
-		(property "Value" "+24V"
-			(at 247.65 58.42 0)
+		(property "Value" "+24V_P"
+			(at 243.84 44.45 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16394,7 +20125,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 247.65 63.5 0)
+			(at 243.84 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16405,7 +20136,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 247.65 63.5 0)
+			(at 243.84 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16416,7 +20147,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+24V\""
-			(at 247.65 63.5 0)
+			(at 243.84 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16439,8 +20170,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+24V")
-		(at 247.65 90.17 0)
+		(lib_id "power:GND")
+		(at 215.9 144.78 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16449,9 +20180,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "f07befb9-0c6e-474c-8bde-9c0348b5f2b7")
-		(property "Reference" "#PWR043"
-			(at 247.65 93.98 0)
+		(uuid "f316a807-0a93-46b4-b4b2-2fd80c320f51")
+		(property "Reference" "#PWR0116"
+			(at 215.9 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16461,8 +20192,8 @@
 				)
 			)
 		)
-		(property "Value" "+24V"
-			(at 247.65 85.09 0)
+		(property "Value" "GND"
+			(at 215.9 149.86 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16472,7 +20203,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 247.65 90.17 0)
+			(at 215.9 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16483,7 +20214,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 247.65 90.17 0)
+			(at 215.9 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16493,8 +20224,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+24V\""
-			(at 247.65 90.17 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 215.9 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16505,12 +20236,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "8371910c-d409-4c82-8922-f90f2dbd8595")
+			(uuid "86e27095-ec1c-4aeb-ab52-57e5af99f17d")
 		)
 		(instances
 			(project "HackerfabBackplane"
 				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d"
-					(reference "#PWR043")
+					(reference "#PWR0116")
 					(unit 1)
 				)
 			)
@@ -16518,7 +20249,7 @@
 	)
 	(symbol
 		(lib_id "Hack_Connector:MountingHole_M3_Grounded_Corner")
-		(at 229.87 245.11 0)
+		(at 320.04 218.44 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim yes)
@@ -16529,7 +20260,7 @@
 		(fields_autoplaced yes)
 		(uuid "fa29c02c-c0f0-4f9e-b951-1c28f0585965")
 		(property "Reference" "H2"
-			(at 232.41 243.8399 0)
+			(at 322.58 217.1699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16540,7 +20271,7 @@
 			)
 		)
 		(property "Value" "M3 GND Corner"
-			(at 232.41 246.3799 0)
+			(at 322.58 219.7099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16551,7 +20282,7 @@
 			)
 		)
 		(property "Footprint" "Hack_Connector:MountingHole_3.2mm_M3_Grounded_Corner"
-			(at 229.87 245.11 0)
+			(at 320.04 218.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16562,7 +20293,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 229.87 245.11 0)
+			(at 320.04 218.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16573,7 +20304,7 @@
 			)
 		)
 		(property "Description" "M3 corner mounting hole; 3.2 mm PTH, 6.4 mm copper pad; passive pin 1 for an explicit ground connection"
-			(at 229.87 245.11 0)
+			(at 320.04 218.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16584,7 +20315,7 @@
 			)
 		)
 		(property "License" "CC0-1.0"
-			(at 229.87 245.11 0)
+			(at 320.04 218.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16876,6 +20607,72 @@
 			(project "HackerfabBackplane"
 				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d"
 					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 201.93 57.15)
+		(size 27.94 22.86)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "74051324-e9a8-4f76-9ed9-7f1cbd3b913d")
+		(property "Sheetname" "Protection"
+			(at 201.93 56.4384 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Protection.kicad_sch"
+			(at 201.93 80.5946 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "24V" input
+			(at 201.93 68.58 180)
+			(uuid "182528f0-279b-421b-b5fd-bde1e5768218")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "24V_Prot" input
+			(at 229.87 68.58 0)
+			(uuid "9dc2c50d-2639-4b05-87b2-3043301bd343")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "HackerfabBackplane"
+				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d"
+					(page "7")
 				)
 			)
 		)

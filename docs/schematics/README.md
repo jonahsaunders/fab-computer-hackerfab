@@ -1,6 +1,6 @@
 # Schematic previews
 
-SVG exports of the current KiCad source, generated with KiCad 10.0.6. Open an image to zoom in, or use the editable [KiCad project](../../hardware/backplane/HackerfabBackplane.kicad_pro).
+Seven SVG exports of the current KiCad source, generated on 2026-10-26 with KiCad 10.0.6. Open an image to zoom in, or use the editable [KiCad project](../../hardware/backplane/HackerfabBackplane.kicad_pro).
 
 | Sheet | Preview |
 | --- | --- |
@@ -10,6 +10,7 @@ SVG exports of the current KiCad source, generated with KiCad 10.0.6. Open an im
 | 3.3 V LDO | [3.3 V supply](HackerfabBackplane-3V3%20LDO.svg) |
 | Microcontroller | [RP2354B](HackerfabBackplane-Microcontroller.svg) |
 | USB voltage mux | [USB power selection](HackerfabBackplane-USB%20Voltage%20MUX.svg) |
+| Input protection | [Protection](HackerfabBackplane-Protection.svg) |
 
 ![Root schematic](HackerfabBackplane.svg)
 

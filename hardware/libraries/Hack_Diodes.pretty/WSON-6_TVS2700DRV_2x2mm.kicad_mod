@@ -1,0 +1,208 @@
+(footprint "WSON-6_TVS2700DRV_2x2mm"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "TI TVS2700 DRV0006A recommended land pattern: 0.45x0.30mm leads at +/-0.975mm, 0.65mm pitch, 1.0x1.6mm grounded EP7; two 1.0x0.7mm paste apertures. https://www.ti.com/lit/ds/symlink/tvs2700.pdf")
+	(tags "WSON NoLead")
+	(property "Reference" "REF**"
+		(at 0 -1.95 0)
+		(layer "F.SilkS")
+		(uuid "c5b519ad-93b9-48b9-94e5-0855cfe0bd85")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "WSON-6_TVS2700DRV_2x2mm"
+		(at 0 1.95 0)
+		(layer "F.Fab")
+		(uuid "2591f568-bac5-4413-ae15-d3077c94af07")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d9c9379d-e329-43cc-926b-1635dcc7faa3")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a0bf1aef-849a-4929-88f7-74f78bd39785")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "KiLib_Generator" "package/no_lead"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "dc64c2ee-2a30-4db6-9eab-d49568052150")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -0.699252 -1.11)
+		(end 1.11 -1.11)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "cb7d6a6a-52a9-49ed-b3f7-64bca5bdc346")
+	)
+	(fp_line
+		(start 1.11 1.11)
+		(end -1.11 1.11)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f3495783-a977-49f9-b23b-62b8755867cb")
+	)
+	(fp_poly
+		(pts
+			(xy -0.99 -1.12) (xy -1.13 -1.31) (xy -0.85 -1.31)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "924413e6-cee0-4d98-8233-4467cad1e81e")
+	)
+	(fp_rect
+		(start -1.45 -1.25)
+		(end 1.45 1.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "7f7205e2-08c3-470d-9112-aece4b808d05")
+	)
+	(fp_poly
+		(pts
+			(xy -0.5 -1) (xy 1 -1) (xy 1 1) (xy -1 1) (xy -1 -0.5)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "4fd20866-abad-4a4f-a6fc-f0a407f9ffa1")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "3a416e2b-007f-4fa7-a8d3-b237bbc2995e")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.08)
+			)
+		)
+	)
+	(pad "" smd roundrect
+		(at 0 -0.45)
+		(size 1 0.7)
+		(layers "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "fff8c49d-1870-4313-b481-ddd29183181e")
+	)
+	(pad "" smd roundrect
+		(at 0 0.45)
+		(size 1 0.7)
+		(layers "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "ce75ad15-a569-4753-9494-f51b9c0de12c")
+	)
+	(pad "1" smd roundrect
+		(at -0.975 -0.65)
+		(size 0.45 0.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "63ad4594-2acb-4764-9cc8-4ec64e2be04a")
+	)
+	(pad "2" smd roundrect
+		(at -0.975 0)
+		(size 0.45 0.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "a9d3c7fe-c2d9-47e0-8a14-1274709ef380")
+	)
+	(pad "3" smd roundrect
+		(at -0.975 0.65)
+		(size 0.45 0.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "e9c7c131-a09d-44f3-b542-245550a1cca5")
+	)
+	(pad "4" smd roundrect
+		(at 0.975 0.65)
+		(size 0.45 0.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "d3296c15-ac1f-48f7-8ff7-07856a725ee6")
+	)
+	(pad "5" smd roundrect
+		(at 0.975 0)
+		(size 0.45 0.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "48c7f6b2-b7bf-4bdf-b853-5406fb3bbf42")
+	)
+	(pad "6" smd roundrect
+		(at 0.975 -0.65)
+		(size 0.45 0.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "706b7a8f-d38e-4200-8a07-46dae4ae27b2")
+	)
+	(pad "7" smd rect
+		(at 0 0)
+		(size 1 1.6)
+		(property pad_prop_heatsink)
+		(layers "F.Cu" "F.Mask")
+		(zone_connect 2)
+		(uuid "4799189e-9dba-4311-9d88-4f1b1ea5ac6c")
+	)
+	(embedded_fonts no)
+	(model "${KICAD10_3DMODEL_DIR}/Package_SON.3dshapes/WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

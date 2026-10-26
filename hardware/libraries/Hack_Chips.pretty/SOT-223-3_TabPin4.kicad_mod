@@ -1,0 +1,296 @@
+(footprint "SOT-223-3_TabPin4"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Standard SOT-223 land pattern; DMP6023LE drain lead 2 and drain tab 4; G=1, S=3; tab is fused INPUT, not ground. https://www.diodes.com/datasheet/download/DMP6023LE.pdf")
+	(tags "CMS SOT")
+	(property "Reference" "REF**"
+		(at 0 -4.5 0)
+		(layer "F.SilkS")
+		(uuid "a1258180-3031-42be-86dd-eee6a41a516d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "SOT-223-3_TabPin4"
+		(at 0 4.5 0)
+		(layer "F.Fab")
+		(uuid "cc2c386a-4321-48d3-ad77-5c00242e5fc3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8c43f7c5-bb13-470b-9eea-7c034299723b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d63a0b50-bd5d-48e0-9f8e-4091fa1725a0")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.85 -3.41)
+		(end 1.91 -3.41)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "65b29bb8-650c-4afe-9c19-ad102a9d4c14")
+	)
+	(fp_line
+		(start -1.85 3.41)
+		(end 1.91 3.41)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "bf0dc68b-7099-4067-bfc6-aa5f9e5f8aab")
+	)
+	(fp_line
+		(start 1.91 -3.41)
+		(end 1.91 -2.15)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "bd00e113-d44a-45db-8377-8396ed57b74c")
+	)
+	(fp_line
+		(start 1.91 3.41)
+		(end 1.91 2.15)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5e5c0888-c9fd-45b6-ac4c-d4c41842f261")
+	)
+	(fp_poly
+		(pts
+			(xy -3.13 -3.31) (xy -3.37 -3.64) (xy -2.89 -3.64) (xy -3.13 -3.31)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "7e8b11b3-2b51-4974-b1e0-89600194f9a2")
+	)
+	(fp_line
+		(start -4.4 -3.6)
+		(end -4.4 3.6)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "5a79ea94-e1b0-4fed-bcf7-868e2e8b60f0")
+	)
+	(fp_line
+		(start -4.4 3.6)
+		(end 4.4 3.6)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "f220111f-84ca-44f3-b05a-c4453496ef98")
+	)
+	(fp_line
+		(start 4.4 -3.6)
+		(end -4.4 -3.6)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "ba4ebeb7-e855-4795-a7fa-796c22f2cb0e")
+	)
+	(fp_line
+		(start 4.4 3.6)
+		(end 4.4 -3.6)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "994282af-bce0-4b20-bf39-1408f4044fd8")
+	)
+	(fp_line
+		(start -1.85 -2.35)
+		(end -1.85 3.35)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b18fc443-c1e1-44a6-836e-a0e7a5ed7b65")
+	)
+	(fp_line
+		(start -1.85 -2.35)
+		(end -0.85 -3.35)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "fc486021-997f-4601-b6b9-0772fcb6d2c2")
+	)
+	(fp_line
+		(start -1.85 3.35)
+		(end 1.85 3.35)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0b175c68-ec3d-4ef4-ba5d-18615cb4a1a4")
+	)
+	(fp_line
+		(start -0.85 -3.35)
+		(end 1.85 -3.35)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "8c5d60dd-300f-4b8f-8b88-20c305ad8434")
+	)
+	(fp_line
+		(start 1.85 -3.35)
+		(end 1.85 3.35)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "32a8cb38-5fd7-4c1b-8dea-40d681d40944")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 90)
+		(layer "F.Fab")
+		(uuid "87927ef9-22bd-4f89-92bb-597762a2d0de")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -3.15 -2.3)
+		(size 2 1.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "82cceee8-d321-4bd4-942b-565e3702f911")
+	)
+	(pad "2" smd roundrect
+		(at -3.15 0)
+		(size 2 1.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "83703ffe-f4c4-497e-815e-e03fc33c030e")
+	)
+	(pad "3" smd roundrect
+		(at -3.15 2.3)
+		(size 2 1.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "b7ad9cbf-46f5-4e79-989d-bda370632df2")
+	)
+	(pad "4" smd roundrect
+		(at 3.15 0)
+		(size 2 3.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "74ad27d2-4bc5-454e-82e9-29b8edc8ab8d")
+	)
+	(embedded_fonts no)
+	(embedded_files
+		(file
+			(name "SOT-223-3_TabPin4.kicad_mod")
+			(type other)
+			(data |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
+				WQiOrpiD7FID|
+			)
+			(checksum "D89EAF44489F6935D0E250EA098900FF")
+		)
+	)
+	(model "kicad-embed://SOT-223-3_TabPin4.kicad_mod"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+	(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-223.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

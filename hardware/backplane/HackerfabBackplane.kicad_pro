@@ -663,7 +663,7 @@
         "uuid": "7bc90960-5b90-438f-952d-a3f83f7f283d"
       }
     ],
-    "used_designators": "U1-6,L1-3,D1-6,#PWR1-109,C1-40,R1-19,X1,Y1,SW1-2,H1-4,TP1-9,J1-6",
+    "used_designators": "U1-6,L1-3,D1-8,#PWR1-124,C1-40,R1-23,X1,Y1,SW1-2,H1-4,TP1-12,J1-9,Q1,F1",
     "variants": []
   },
   "sheets": [
@@ -690,6 +690,10 @@
     [
       "69f9e47b-f6fa-41f7-aad7-aae8138c8f46",
       "USB Voltage MUX"
+    ],
+    [
+      "74051324-e9a8-4f76-9ed9-7f1cbd3b913d",
+      "Protection"
     ]
   ],
   "text_variables": {},
