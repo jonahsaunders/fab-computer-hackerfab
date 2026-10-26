@@ -8,12 +8,6 @@ A modular control platform for HackerFab equipment: one backplane for power and 
 
 *Placement preview of the imported PCB. Routing is unfinished; this is not a manufacturing release.*
 
-## Schematic preview
-
-![Microcontroller schematic](docs/schematics/HackerfabBackplane-Microcontroller.svg)
-
-*Microcontroller sheet from the updated KiCad design. Open the [full-size preview](docs/schematics/HackerfabBackplane-Microcontroller.svg) or browse [all schematic sheets](docs/schematics/README.md).*
-
 ## The idea
 
 Keep the microcontroller, power supplies, and common interfaces on a reusable backplane. Put tool-specific electronics on daughter boards so future teams can extend a system without redesigning its core. Initial applications described in the project report are nanopositioning and sputtering equipment.
@@ -45,6 +39,38 @@ For a browser-only look, start with the [schematic previews](docs/schematics/REA
 | [`docs/validation.md`](docs/validation.md) | Import checks, existing ERC/DRC findings, and next steps |
 | [`docs/provenance.md`](docs/provenance.md) | Source archives, background reference, and cleanup details |
 | [`scripts/`](scripts/) | Repository checks and reproducible preview/check exports |
+
+## Design images
+
+These previews are exported from the current KiCad files. Select a schematic image to open it at full size.
+
+### Backplane schematic
+
+[![Backplane root schematic](docs/schematics/HackerfabBackplane.svg)](docs/schematics/HackerfabBackplane.svg)
+
+### Microcontroller
+
+[![Microcontroller schematic](docs/schematics/HackerfabBackplane-Microcontroller.svg)](docs/schematics/HackerfabBackplane-Microcontroller.svg)
+
+### 12 V buck regulator
+
+[![12 V buck regulator schematic](docs/schematics/HackerfabBackplane-12V%20Buck%20Regulator.svg)](docs/schematics/HackerfabBackplane-12V%20Buck%20Regulator.svg)
+
+### 5 V buck regulator
+
+[![5 V buck regulator schematic](docs/schematics/HackerfabBackplane-5V%20Buck%20Regulator.svg)](docs/schematics/HackerfabBackplane-5V%20Buck%20Regulator.svg)
+
+### 3.3 V LDO
+
+[![3.3 V LDO schematic](docs/schematics/HackerfabBackplane-3V3%20LDO.svg)](docs/schematics/HackerfabBackplane-3V3%20LDO.svg)
+
+### USB voltage mux
+
+[![USB voltage mux schematic](docs/schematics/HackerfabBackplane-USB%20Voltage%20MUX.svg)](docs/schematics/HackerfabBackplane-USB%20Voltage%20MUX.svg)
+
+### Input protection
+
+[![Input protection schematic](docs/schematics/HackerfabBackplane-Protection.svg)](docs/schematics/HackerfabBackplane-Protection.svg)
 
 ## Current state
 
