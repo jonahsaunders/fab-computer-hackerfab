@@ -10,7 +10,18 @@ The initial repository import was prepared on 2026-10-21 from:
 
 The report describes early requirements and plans. The supplied KiCad files are the source for the repository's hardware inventory and validation baseline; the report's milestone statuses are not presented as current test results.
 
-## 2026-10-26 source update
+## Latest 2026-10-26 source update
+
+The latest supplied archives were imported into the same locations. The PCB, project, microcontroller sheet, 12 V and 5 V sheets, and passive symbol library changed. Other active source files match the previous import after line-ending normalization and the documented fuse reference correction. The portable library tables remain in place. The archives also contain local history, personal settings, and backup files, which are omitted as described below. The library archive contains another copy of the backplane; the dedicated backplane archive is the source for the project.
+
+| Input | SHA-256 |
+| --- | --- |
+| `Backplane.zip` | `5d5989b9b181786cb4872330af4dc332807218ec35e0b4a389b25ffbf5ee654a` |
+| `LibraryHackerfab.zip` | `67145490204cabcd166149f126d37eebc9a72dfa01b24410629074def56f428e` |
+
+Previews and validation were regenerated with KiCad 10.0.6; see [validation](validation.md).
+
+## Earlier 2026-10-26 source update
 
 Replacement `Backplane.zip` and `LibraryHackerfab.zip` archives were supplied on 2026-10-26 and imported into the same repository locations. The update includes nine backplane design files (project, PCB, and seven schematic sheets) and 29 library files (seven symbol libraries and 22 footprints).
 
@@ -43,7 +54,7 @@ The original archives are unchanged. They are not committed as duplicate project
 
 SHA-256 identifies the exact supplied archives used for each import.
 
-### Current update: 2026-10-26
+### Earlier update: 2026-10-26
 
 | Input | SHA-256 |
 | --- | --- |

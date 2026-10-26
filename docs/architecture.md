@@ -47,8 +47,8 @@ RS-485, RS-232, and 0–10 V analog interfaces are system requirements intended 
 
 - Complete schematic connectivity and resolve ERC findings.
 - Review the connector pinout, component symbols, and footprints.
-- Synchronize the 93-footprint PCB with the updated 109-component schematic; the current parity report contains 59 findings.
-- Finish the PCB outline, placement, routing, and design review.
+- Review the updated 142-footprint PCB and 142-component schematic; KiCad reports zero parity findings.
+- Finish placement, routing, and design review.
 - Prepare manufacturing outputs from a reviewed revision.
 - Add daughter-board and firmware sources, then record bench validation.
 

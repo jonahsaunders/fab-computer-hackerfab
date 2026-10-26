@@ -6,7 +6,13 @@ A modular control platform for HackerFab equipment: one backplane for power and 
 
 ![KiCad preview of the FAB Computer backplane](docs/images/backplane.png)
 
-*Placement preview of the imported PCB. Routing and the board outline are unfinished; this is not a manufacturing release.*
+*Placement preview of the imported PCB. Routing is unfinished; this is not a manufacturing release.*
+
+## Schematic preview
+
+![Microcontroller schematic](docs/schematics/HackerfabBackplane-Microcontroller.svg)
+
+*Microcontroller sheet from the updated KiCad design. Open the [full-size preview](docs/schematics/HackerfabBackplane-Microcontroller.svg) or browse [all schematic sheets](docs/schematics/README.md).*
 
 ## The idea
 
@@ -44,7 +50,7 @@ For a browser-only look, start with the [schematic previews](docs/schematics/REA
 
 The repository includes the **backplane hardware and its libraries**. Firmware, daughter-board designs, fabrication outputs, and bench-test results were not present in the supplied archives.
 
-The sources were updated from the supplied archives on **2026-10-26**. The schematic hierarchy and netlist export successfully, with **109 schematic components**. The supplied PCB remains at **93 footprints** and has no routed track segments. KiCad reports **74 ERC findings**, **151 DRC findings**, **413 unconnected PCB items**, and **59 schematic/PCB parity findings**. The PCB needs to be synchronized with the updated schematic. See the [validation notes](docs/validation.md) for the breakdown and commands.
+The latest supplied archives were imported on **2026-10-26**. The schematic netlist contains **142 components**, and the PCB contains **142 footprints** with no routed track segments. KiCad reports **80 ERC findings**, **18 DRC findings**, **491 unconnected PCB items**, and **zero schematic/PCB parity findings**. The design requires routing and review before fabrication. See the [validation notes](docs/validation.md) for the breakdown and commands.
 
 ## Working on the project
 
