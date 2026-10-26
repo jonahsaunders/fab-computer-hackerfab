@@ -4,7 +4,7 @@ A modular control platform for HackerFab equipment: one backplane for power and 
 
 **Status: hardware in development · KiCad 10 · three expansion slots**
 
-![KiCad preview of the FAB Computer backplane](docs/images/backplane.png)
+![KiCad preview of the FAB Computer backplane](docs/images/backplane-2026-10-26.png)
 
 *Placement preview of the imported PCB. Routing is unfinished; this is not a manufacturing release.*
 
