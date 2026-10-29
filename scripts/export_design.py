@@ -28,7 +28,7 @@ def main():
         ["sch", "erc", "--format", "json", "--output", "build/erc.json", PROJECT + ".kicad_sch"],
         ["pcb", "drc", "--schematic-parity", "--format", "json", "--output", "build/drc.json", PROJECT + ".kicad_pcb"],
         ["pcb", "render", "--width", "1800", "--height", "1400", "--background", "opaque",
-         "--quality", "basic", "--rotate", "0,0,0", "--output", "docs/images/backplane-2026-10-26.png", PROJECT + ".kicad_pcb"],
+         "--quality", "basic", "--rotate", "0,0,0", "--output", "docs/images/backplane-2026-10-29.png", PROJECT + ".kicad_pcb"],
     ]
     for command in commands:
         print("Running:", " ".join(command), flush=True)

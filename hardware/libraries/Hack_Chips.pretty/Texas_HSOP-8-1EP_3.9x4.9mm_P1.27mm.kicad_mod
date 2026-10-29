@@ -8,7 +8,7 @@
 	(property "Reference" "REF**"
 		(at 0 -3.5 0)
 		(layer "F.SilkS")
-		(uuid "8f8bd876-2322-409f-b9ec-b5c978ba69d9")
+		(uuid "0b0019b9-c813-4d35-88df-357bb18205c3")
 		(effects
 			(font
 				(size 1 1)
@@ -19,7 +19,7 @@
 	(property "Value" "Texas_HSOP-8-1EP_3.9x4.9mm_P1.27mm"
 		(at 0 3.5 0)
 		(layer "F.Fab")
-		(uuid "9eb19355-1ea1-4d59-ba79-516915bd976e")
+		(uuid "5149bfd3-f390-4070-bfa8-5d4cee581e05")
 		(effects
 			(font
 				(size 1 1)
@@ -32,7 +32,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "3439fd89-6270-448d-a855-dd3a772d4bf8")
+		(uuid "a83732da-8611-4c20-bd7a-a2dad1cbeda5")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -45,10 +45,22 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "855a36a9-ab6a-4b3a-8729-a855a859a333")
+		(uuid "c6173e9e-15c8-4448-9ee9-02b0d9188640")
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "ThermalViaProcess" "JLCPCB: epoxy filled and copper capped; ENIG; 0.30 mm holes"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "aa8c2661-4080-4029-9263-a9cabf0080f0")
+		(effects
+			(font
+				(size 1 1)
 				(thickness 0.15)
 			)
 		)
@@ -248,11 +260,60 @@
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "bc135ba5-31c1-49b1-a0a7-92611015c135")
 	)
+	(pad "9" thru_hole circle
+		(at -0.65 -0.65)
+		(size 0.8 0.8)
+		(drill 0.3)
+		(property pad_prop_heatsink)
+		(layers "*.Cu")
+		(remove_unused_layers no)
+		(zone_connect 2)
+		(uuid "45003578-efb0-4671-bda8-bb5ef7656119")
+	)
+	(pad "9" thru_hole circle
+		(at -0.65 0.65)
+		(size 0.8 0.8)
+		(drill 0.3)
+		(property pad_prop_heatsink)
+		(layers "*.Cu")
+		(remove_unused_layers no)
+		(zone_connect 2)
+		(uuid "ddc43422-1e22-4629-aee3-4efabf143b5c")
+	)
 	(pad "9" smd rect
 		(at 0 0)
 		(size 2.95 4.9)
 		(layers "F.Cu")
+		(zone_connect 2)
 		(uuid "8706d36c-70a8-445d-bfa0-e87d1fd03505")
+	)
+	(pad "9" smd rect
+		(at 0 0)
+		(size 3.1 3.1)
+		(property pad_prop_heatsink)
+		(layers "B.Cu")
+		(zone_connect 2)
+		(uuid "7fa55075-7634-4e3b-b1b7-4f9f4be6293e")
+	)
+	(pad "9" thru_hole circle
+		(at 0.65 -0.65)
+		(size 0.8 0.8)
+		(drill 0.3)
+		(property pad_prop_heatsink)
+		(layers "*.Cu")
+		(remove_unused_layers no)
+		(zone_connect 2)
+		(uuid "c02da8c6-5627-4b34-bcc7-175739f05a43")
+	)
+	(pad "9" thru_hole circle
+		(at 0.65 0.65)
+		(size 0.8 0.8)
+		(drill 0.3)
+		(property pad_prop_heatsink)
+		(layers "*.Cu")
+		(remove_unused_layers no)
+		(zone_connect 2)
+		(uuid "4e075c1c-3463-413d-a4ac-35caa22aa6ee")
 	)
 	(embedded_fonts no)
 	(embedded_files

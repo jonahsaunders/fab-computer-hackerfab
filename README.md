@@ -4,9 +4,9 @@ A modular control platform for HackerFab equipment: one backplane for power and 
 
 **Status: hardware in development · KiCad 10 · three expansion slots**
 
-![KiCad preview of the FAB Computer backplane](docs/images/backplane-2026-10-26.png)
+![KiCad preview of the FAB Computer backplane](docs/images/backplane-2026-10-29.png)
 
-*Placement preview of the imported PCB. Routing is unfinished; this is not a manufacturing release.*
+*Preview of the imported PCB with routing in progress; this is not a manufacturing release.*
 
 ## The idea
 
@@ -33,7 +33,7 @@ For a browser-only look, start with the [schematic previews](docs/schematics/REA
 | Location | Contents |
 | --- | --- |
 | [`hardware/backplane/`](hardware/backplane/) | KiCad project, root schematic, six subsheets, PCB, and project library tables |
-| [`hardware/libraries/`](hardware/libraries/) | Seven custom symbol libraries and 22 custom footprints, including embedded models where supplied |
+| [`hardware/libraries/`](hardware/libraries/) | Seven custom symbol libraries and 24 custom footprints, including embedded models where supplied |
 | [`docs/architecture.md`](docs/architecture.md) | System concept, circuit blocks, and scope of future daughter boards |
 | [`docs/schematics/`](docs/schematics/) | Seven SVG schematic previews exported from the source |
 | [`docs/validation.md`](docs/validation.md) | Import checks, existing ERC/DRC findings, and next steps |
@@ -76,7 +76,7 @@ These previews are exported from the current KiCad files. Select a schematic ima
 
 The repository includes the **backplane hardware and its libraries**. Firmware, daughter-board designs, fabrication outputs, and bench-test results were not present in the supplied archives.
 
-The latest supplied archives were imported on **2026-10-26**. The schematic netlist contains **142 components**, and the PCB contains **142 footprints** with no routed track segments. KiCad reports **80 ERC findings**, **18 DRC findings**, **491 unconnected PCB items**, and **zero schematic/PCB parity findings**. The design requires routing and review before fabrication. See the [validation notes](docs/validation.md) for the breakdown and commands.
+The latest supplied archives were imported on **2026-10-29**. This revision adds a W25Q128JVSIQ flash memory and updates schematic connectivity and PCB routing. The schematic netlist contains **144 components**, and the PCB contains **144 footprints**, **518 routed track segments**, and **131 vias**. KiCad reports **16 ERC findings**, **97 DRC findings**, **107 unconnected PCB items**, and **zero schematic/PCB parity findings**. The design requires further routing and review before fabrication. See the [validation notes](docs/validation.md) for the breakdown and commands.
 
 ## Working on the project
 
