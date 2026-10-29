@@ -10,7 +10,20 @@ The initial repository import was prepared on 2026-10-21 from:
 
 The report describes early requirements and plans. The supplied KiCad files are the source for the repository's hardware inventory and validation baseline; the report's milestone statuses are not presented as current test results.
 
-## Latest 2026-10-26 source update
+## Latest 2026-10-29 source update
+
+The supplied archives were imported into the existing repository locations: nine backplane design files and 31 library files (seven symbol libraries and 24 footprints). Compared with the previous import, the PCB, project, root schematic, and microcontroller sheet changed. The library update adds W25Q128JVSIQ flash-memory and DFE252012F-3R3M=P2 inductor symbols and their footprints, and revises the QFN-80 and Texas HSOP-8 footprints. The other active files match after line-ending normalization.
+
+The repository's portable `fp-lib-table` and `sym-lib-table` were retained. The archive's footprint table still contains absolute desktop paths and an unused `Hack_Osicllators` entry. All 40 imported design and library files match the supplied active sources after line-ending normalization; no electrical or footprint changes were made during import. The supplied sources already contain the earlier fuse reference correction. Local history, backup files, personal settings, and editor lock files were omitted.
+
+| Input | SHA-256 |
+| --- | --- |
+| `Backplane.zip` | `2831c1ed387e02acf5ddecc946eb71cafc70bb48188b46764c5f6404acc80a21` |
+| `LibraryHackerfab.zip` | `db5c3d66d2a99bcd8b0e6b4c48f858e088cf05453cb7b19b771d245ed7039d63` |
+
+All seven schematic previews and the board image were regenerated with KiCad 10.0.6. The design has 144 schematic components and 144 PCB footprints, with partial routing. See [validation](validation.md) for the current ERC/DRC results.
+
+## Later 2026-10-26 source update
 
 The latest supplied archives were imported into the same locations. The PCB, project, microcontroller sheet, 12 V and 5 V sheets, and passive symbol library changed. Other active source files match the previous import after line-ending normalization and the documented fuse reference correction. The portable library tables remain in place. The archives also contain local history, personal settings, and backup files, which are omitted as described below. The library archive contains another copy of the backplane; the dedicated backplane archive is the source for the project.
 
@@ -46,6 +59,7 @@ The original footprint table used absolute desktop paths. It was replaced with r
 
 - The backplane's `.history/` directory, including its nested Git database and save snapshots.
 - The personal `.kicad_prl` settings file.
+- Editor `.lck` files.
 - Seven `.bak` library copies. Some differ from current library files; they remain available in the original archive rather than being treated as active source.
 
 The original archives are unchanged. They are not committed as duplicate project copies. Generated schematic SVGs and the board PNG come directly from KiCad and can be refreshed using `scripts/export_design.py`.

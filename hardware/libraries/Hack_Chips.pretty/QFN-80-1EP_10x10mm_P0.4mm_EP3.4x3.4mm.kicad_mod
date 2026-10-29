@@ -8,7 +8,7 @@
 	(property "Reference" "REF**"
 		(at 0 -6.3 0)
 		(layer "F.SilkS")
-		(uuid "fa48698f-544d-4aa6-81cd-2215c9e6ce3e")
+		(uuid "4dc59969-1081-477f-9487-ec88523bef43")
 		(effects
 			(font
 				(size 1 1)
@@ -19,7 +19,7 @@
 	(property "Value" "QFN-80-1EP_10x10mm_P0.4mm_EP3.4x3.4mm"
 		(at 0 6.3 0)
 		(layer "F.Fab")
-		(uuid "82f47cb1-174f-486f-8530-a4af0cf417c3")
+		(uuid "c96a0648-43dc-4a54-8114-4e6f2e5997c8")
 		(effects
 			(font
 				(size 1 1)
@@ -31,7 +31,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "c965b87f-c6d5-4c92-85ec-d0cf3d6bae56")
+		(uuid "dc8b602a-a594-4342-8c83-3b2142749348")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -42,7 +42,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "96ab73e1-5281-4b81-9cae-226f3e4a3e45")
+		(uuid "2a33a88f-4afa-4fdd-bb07-70373094b2e0")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -54,6 +54,18 @@
 		(layer "F.SilkS")
 		(hide yes)
 		(uuid "9c838ea5-e9e2-4330-8743-29df25dec86b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "ThermalViaProcess" "JLCPCB: epoxy filled and copper capped; ENIG; 0.30 mm holes"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "41360598-9ff5-4e9b-809c-2ba2229e16e9")
 		(effects
 			(font
 				(size 1 1)
@@ -1001,6 +1013,56 @@
 		(roundrect_rratio 0.25)
 		(uuid "bb34812c-2290-4df0-a89e-699bee14a767")
 	)
+	(pad "81" thru_hole circle
+		(at -1.1 -1.1)
+		(size 0.8 0.8)
+		(drill 0.3)
+		(property pad_prop_heatsink)
+		(layers "*.Cu")
+		(remove_unused_layers no)
+		(zone_connect 2)
+		(uuid "b9974e14-314f-43b7-81ec-2e9e38546258")
+	)
+	(pad "81" thru_hole circle
+		(at -1.1 0)
+		(size 0.8 0.8)
+		(drill 0.3)
+		(property pad_prop_heatsink)
+		(layers "*.Cu")
+		(remove_unused_layers no)
+		(zone_connect 2)
+		(uuid "11fbfac6-e382-4457-bef9-e0dadf9347de")
+	)
+	(pad "81" thru_hole circle
+		(at -1.1 1.1)
+		(size 0.8 0.8)
+		(drill 0.3)
+		(property pad_prop_heatsink)
+		(layers "*.Cu")
+		(remove_unused_layers no)
+		(zone_connect 2)
+		(uuid "d2b83295-2060-4181-ad29-7115dfe03480")
+	)
+	(pad "81" thru_hole circle
+		(at 0 -1.1)
+		(size 0.8 0.8)
+		(drill 0.3)
+		(property pad_prop_heatsink)
+		(layers "*.Cu")
+		(remove_unused_layers no)
+		(zone_connect 2)
+		(uuid "e103f485-670b-41b8-b9bd-5515067c0f8d")
+	)
+	(pad "81" thru_hole circle
+		(at 0 0)
+		(size 0.8 0.8)
+		(drill 0.3)
+		(property pad_prop_heatsink)
+		(layers "*.Cu")
+		(remove_unused_layers no)
+		(zone_connect 2)
+		(uuid "3bffb76c-8430-43f4-82b0-5363e636642b")
+	)
 	(pad "81" smd rect
 		(at 0 0)
 		(size 3.4 3.4)
@@ -1008,6 +1070,54 @@
 		(layers "F.Cu" "F.Mask")
 		(zone_connect 2)
 		(uuid "e845c3e4-2267-4409-b8a0-a6476cf517e8")
+	)
+	(pad "81" smd rect
+		(at 0 0)
+		(size 4 4)
+		(property pad_prop_heatsink)
+		(layers "B.Cu")
+		(zone_connect 2)
+		(uuid "7da7a3cd-41de-4254-9f4c-1c522c5285e3")
+	)
+	(pad "81" thru_hole circle
+		(at 0 1.1)
+		(size 0.8 0.8)
+		(drill 0.3)
+		(property pad_prop_heatsink)
+		(layers "*.Cu")
+		(remove_unused_layers no)
+		(zone_connect 2)
+		(uuid "46fba42c-e102-4d80-bf6a-afcd92a0fd5a")
+	)
+	(pad "81" thru_hole circle
+		(at 1.1 -1.1)
+		(size 0.8 0.8)
+		(drill 0.3)
+		(property pad_prop_heatsink)
+		(layers "*.Cu")
+		(remove_unused_layers no)
+		(zone_connect 2)
+		(uuid "b842575c-8447-4a23-8962-8aacdfba1089")
+	)
+	(pad "81" thru_hole circle
+		(at 1.1 0)
+		(size 0.8 0.8)
+		(drill 0.3)
+		(property pad_prop_heatsink)
+		(layers "*.Cu")
+		(remove_unused_layers no)
+		(zone_connect 2)
+		(uuid "09a8c2a3-e8af-4d14-9c98-f3e2d3f9fad1")
+	)
+	(pad "81" thru_hole circle
+		(at 1.1 1.1)
+		(size 0.8 0.8)
+		(drill 0.3)
+		(property pad_prop_heatsink)
+		(layers "*.Cu")
+		(remove_unused_layers no)
+		(zone_connect 2)
+		(uuid "5b546022-863e-4232-8df4-9ae94a457c39")
 	)
 	(embedded_fonts no)
 	(embedded_files

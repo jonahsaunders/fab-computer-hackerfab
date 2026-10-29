@@ -1574,6 +1574,268 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Hack_Chips:W25Q128JVSIQ"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 17.145 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "W25Q128JVSIQ"
+				(at 0 14.605 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Hack_Chips:W25Q128JVSIQ_SOIC-8_5.3x5.3mm_P1.27mm"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.winbond.com/resource-files/w25q128jv%20revf%2003272018%20plus.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "128 Mbit / 16 MiB, 2.7-3.6 V SPI/Dual/Quad NOR flash, SOIC-8 208 mil, QE fixed to 1; IO3 HOLD function disabled"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "Winbond"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "W25Q128JVSIQ"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flash memory QSPI SPI NOR 128Mbit 16MiB"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "*SOIC*5.3x5.3mm*P1.27mm*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "W25Q128JVSIQ_1_1"
+				(rectangle
+					(start -7.62 10.16)
+					(end 7.62 -12.7)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -10.16 5.08 0)
+					(length 2.54)
+					(name "~{CS}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "IO1/DO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -10.16 -5.08 0)
+					(length 2.54)
+					(name "IO2/~{WP}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -10.16 -10.16 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "IO0/DI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "CLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -10.16 -7.62 0)
+					(length 2.54)
+					(name "IO3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -10.16 7.62 0)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Hack_Connector:TP_small"
 			(pin_numbers
 				(hide yes)
@@ -3656,6 +3918,268 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Hack_Passives:DFE252012F-3R3M=P2"
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "L"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "3.3uH"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Hack_Passives:L_Murata_DFE252012F_2.5x2.0mm"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.murata.com/~/media/webrenewal/products/inductor/chip/tokoproducts/wirewoundmetalalloychiptype/m_dfe252012f.ashx"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "3.3uH +/-20%, 135mOhm max DCR, 2.5A Isat, 1.8A heating current, 2.5x2.0x1.2mm; no manufacturer winding mark; library pin numbering is arbitrary."
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "Murata"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "DFE252012F-3R3M=P2"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C2041573"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "JLCPCB Part #" "C2041573"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Tolerance" "20%"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "DCR Max" "135mOhm"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Isat" "2.5A (30% inductance drop)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Irms" "1.8A (40C rise)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "inductor shielded Murata DFE252012F 3.3uH C2041573"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "L_Murata_DFE252012F*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "DFE252012F-3R3M=P2_0_1"
+				(arc
+					(start -2.54 0)
+					(mid -1.905 0.6323)
+					(end -1.27 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.27 0)
+					(mid -0.635 0.6323)
+					(end 0 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid 0.635 0.6323)
+					(end 1.27 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.27 0)
+					(mid 1.905 0.6323)
+					(end 2.54 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "DFE252012F-3R3M=P2_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Hack_Passives:GRT188C80J475ME01D"
 			(pin_numbers
 				(hide yes)
@@ -3793,263 +4317,6 @@
 				(pin passive line
 					(at 0 -3.81 90)
 					(length 2.794)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Hack_Passives:LPS4018-332MRC_Evaluation"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "L"
-				(at 0.762 2.032 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "3.3u"
-				(at 0.762 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Hack_Passives:coilcraft_lps4018_dot1"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://www.coilcraft.com/getmedia/31b05c96-4c4c-4498-8dbb-fe092de76bad/lps4018.pdf"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "3.3uH +/-20%, DCR 80mOhm max; Isat 1.9A at 10% drop, 2.0A at 20% drop (25C). Pad 1 is the dotted side; winding direction documented. RP2354B evaluation only: new layout and validation required."
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "manufacturer" "Coilcraft"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "manufacturer_pn" "LPS4018-332MRC"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "status" "EVALUATION - NOT QUALIFIED FOR RP2354B"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "JLCPCB Unit Price USD" "1.0254 at quantity 1; 0.6466 at quantity 100, checked 2026-10-19; component only"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "lcsc_pn" "C5350136"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC Part #" "C5350136"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "JLCPCB Stock Checked" "2026-10-19"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "JLCPCB Link" "https://jlcpcb.com/partdetail/Coilcraft-LPS4018332MRC/C5350136"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "LPS4018-332MRC_Evaluation_0_1"
-				(arc
-					(start 0 2.032)
-					(mid 0.5058 1.524)
-					(end 0 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 1.016)
-					(mid 0.5058 0.508)
-					(end 0 0)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 0)
-					(mid 0.5058 -0.508)
-					(end 0 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -1.016)
-					(mid 0.5058 -1.524)
-					(end 0 -2.032)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "LPS4018-332MRC_Evaluation_1_1"
-				(circle
-					(center -0.254 1.524)
-					(radius 0.254)
-					(stroke
-						(width -0.0001)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(pin passive line
-					(at 0 2.54 270)
-					(length 0.508)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 0.508)
 					(name ""
 						(effects
 							(font
@@ -5291,6 +5558,12 @@
 		(uuid "45d44d06-f211-44fa-bb80-8aaf4f5178e4")
 	)
 	(junction
+		(at 236.22 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4db5829e-4fe2-4c36-ba80-2aad87395e9d")
+	)
+	(junction
 		(at 53.34 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5333,6 +5606,12 @@
 		(uuid "8acbdca5-9362-47f8-9bb2-2be21c5eaa7b")
 	)
 	(junction
+		(at 116.84 138.43)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8c5b71b4-b490-4061-996b-c23264248a21")
+	)
+	(junction
 		(at 208.28 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5355,12 +5634,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a40f0331-0daa-4471-a588-9e17d1d43c64")
-	)
-	(junction
-		(at 236.22 110.49)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a62bcabf-12dd-4c3e-900b-0b6c027ef994")
 	)
 	(junction
 		(at 241.3 76.2)
@@ -5461,10 +5734,6 @@
 		(uuid "16ac8bba-9cac-48f7-b909-2edbb4c7c07e")
 	)
 	(no_connect
-		(at 294.64 166.37)
-		(uuid "2749f788-2704-4a62-9dc6-30db868a4cd1")
-	)
-	(no_connect
 		(at 294.64 77.47)
 		(uuid "2cd463fd-5c79-415f-a25d-17a6cbbf2e4a")
 	)
@@ -5477,16 +5746,12 @@
 		(uuid "5f468103-9476-4750-a933-018abd4383c9")
 	)
 	(no_connect
-		(at 294.64 168.91)
-		(uuid "60a6f7bc-9837-4974-8c64-564e7b1449e0")
-	)
-	(no_connect
 		(at 294.64 67.31)
 		(uuid "6695386a-8c2d-473c-bd2b-f75272f2d105")
 	)
 	(no_connect
-		(at 243.84 139.7)
-		(uuid "6cae39af-e909-4d3a-8f6a-c5b51653a377")
+		(at 294.64 156.21)
+		(uuid "6c8adee9-f9b9-430b-9ccb-5fb6bff40000")
 	)
 	(no_connect
 		(at 294.64 161.29)
@@ -5501,20 +5766,16 @@
 		(uuid "89301621-12fc-4801-953b-041e7fe7076d")
 	)
 	(no_connect
+		(at 294.64 153.67)
+		(uuid "8a25f24f-2018-4203-9dc3-b9a39d9817fa")
+	)
+	(no_connect
 		(at 294.64 179.07)
 		(uuid "8cd76f54-03d8-409c-941c-c5dbb7ef7eb5")
 	)
 	(no_connect
-		(at 243.84 147.32)
-		(uuid "91978c5f-62a8-4b4b-aaa8-9dcc74c60eae")
-	)
-	(no_connect
 		(at 294.64 181.61)
 		(uuid "9266eb51-651d-4847-ac04-d0351204397b")
-	)
-	(no_connect
-		(at 243.84 142.24)
-		(uuid "98d2c05b-c078-4a09-9623-f66c7f1856ae")
 	)
 	(no_connect
 		(at 294.64 74.93)
@@ -5531,14 +5792,6 @@
 	(no_connect
 		(at 294.64 158.75)
 		(uuid "d422f1b8-9362-42bf-9b11-9c9a8888c8ae")
-	)
-	(no_connect
-		(at 243.84 144.78)
-		(uuid "d6a6e059-0014-45bc-b5bb-97d4a6a6137f")
-	)
-	(no_connect
-		(at 243.84 149.86)
-		(uuid "dada3346-09d2-49a2-b2e3-e659e1b94a88")
 	)
 	(no_connect
 		(at 294.64 173.99)
@@ -5780,16 +6033,6 @@
 	)
 	(wire
 		(pts
-			(xy 306.07 156.21) (xy 294.64 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "202d3f0d-cb12-4564-ada8-224b77fdc22f")
-	)
-	(wire
-		(pts
 			(xy 294.64 138.43) (xy 303.53 138.43)
 		)
 		(stroke
@@ -5797,6 +6040,16 @@
 			(type default)
 		)
 		(uuid "2305af37-d291-4b00-98b5-6125187465fd")
+	)
+	(wire
+		(pts
+			(xy 231.14 142.24) (xy 243.84 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2329e86f-b101-4727-a1b8-5201fdc1a254")
 	)
 	(wire
 		(pts
@@ -5840,6 +6093,16 @@
 	)
 	(wire
 		(pts
+			(xy 236.22 107.95) (xy 236.22 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "267bd34b-a741-44c6-a741-d103588c72a5")
+	)
+	(wire
+		(pts
 			(xy 165.1 135.89) (xy 165.1 133.35)
 		)
 		(stroke
@@ -5877,16 +6140,6 @@
 			(type default)
 		)
 		(uuid "2e038c03-7f49-4807-93f4-5986470a240e")
-	)
-	(wire
-		(pts
-			(xy 236.22 111.76) (xy 236.22 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2fc3b9c2-5a5a-49fa-8f25-7bf299519a1f")
 	)
 	(wire
 		(pts
@@ -5940,13 +6193,13 @@
 	)
 	(wire
 		(pts
-			(xy 323.85 153.67) (xy 294.64 153.67)
+			(xy 181.61 137.16) (xy 243.84 137.16)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "374772de-8f9b-4bcc-ae57-1886aa5dd097")
+		(uuid "37535af6-cf63-499f-9647-daee393adebf")
 	)
 	(wire
 		(pts
@@ -6060,6 +6313,16 @@
 	)
 	(wire
 		(pts
+			(xy 231.14 149.86) (xy 243.84 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42ced8f3-a16a-41c4-92d1-254dd2463dda")
+	)
+	(wire
+		(pts
 			(xy 43.18 53.34) (xy 53.34 53.34)
 		)
 		(stroke
@@ -6140,6 +6403,16 @@
 	)
 	(wire
 		(pts
+			(xy 111.76 156.21) (xy 116.84 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53060e63-ef25-42a9-bdef-f466141ca5d0")
+	)
+	(wire
+		(pts
 			(xy 241.3 60.96) (xy 241.3 58.42)
 		)
 		(stroke
@@ -6147,6 +6420,16 @@
 			(type default)
 		)
 		(uuid "5345446f-e203-4258-90bb-fb69b78e3818")
+	)
+	(wire
+		(pts
+			(xy 304.8 168.91) (xy 294.64 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5554b2dd-60c9-4fc6-95cd-3d4dd0aa2942")
 	)
 	(wire
 		(pts
@@ -6180,7 +6463,7 @@
 	)
 	(wire
 		(pts
-			(xy 323.85 160.02) (xy 323.85 153.67)
+			(xy 322.58 166.37) (xy 322.58 177.8)
 		)
 		(stroke
 			(width 0)
@@ -6197,6 +6480,16 @@
 			(type default)
 		)
 		(uuid "5ac314d8-3d2c-42d5-af94-23f0badb5439")
+	)
+	(wire
+		(pts
+			(xy 231.14 144.78) (xy 243.84 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5bb05689-ba87-4494-86c7-8b06503a91da")
 	)
 	(wire
 		(pts
@@ -6287,6 +6580,16 @@
 			(type default)
 		)
 		(uuid "6565f6c1-1efa-46fd-81ae-0850ebd0822d")
+	)
+	(wire
+		(pts
+			(xy 116.84 176.53) (xy 116.84 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67f38fc9-bbbe-4fa3-bcf1-bff5bd920dfd")
 	)
 	(wire
 		(pts
@@ -6390,6 +6693,16 @@
 	)
 	(wire
 		(pts
+			(xy 233.68 107.95) (xy 236.22 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71ab2fc7-2607-4c97-91cc-0c7f55c95de1")
+	)
+	(wire
+		(pts
 			(xy 294.64 82.55) (xy 303.53 82.55)
 		)
 		(stroke
@@ -6397,6 +6710,16 @@
 			(type default)
 		)
 		(uuid "721b2e78-198f-4a12-b7b3-3ffcc904369c")
+	)
+	(wire
+		(pts
+			(xy 111.76 171.45) (xy 121.92 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "745939ce-afd2-4ff5-b6d9-fbab5ff0fb17")
 	)
 	(wire
 		(pts
@@ -6440,6 +6763,26 @@
 	)
 	(wire
 		(pts
+			(xy 116.84 137.16) (xy 116.84 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b889e36-c9e7-435e-a25b-e750339729df")
+	)
+	(wire
+		(pts
+			(xy 128.27 147.32) (xy 128.27 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7bf86ebd-cf63-4e98-818c-05ce2a0617f0")
+	)
+	(wire
+		(pts
 			(xy 243.84 58.42) (xy 241.3 58.42)
 		)
 		(stroke
@@ -6480,6 +6823,16 @@
 	)
 	(wire
 		(pts
+			(xy 322.58 166.37) (xy 294.64 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "827178c1-94df-4579-986b-05eae30e77a8")
+	)
+	(wire
+		(pts
 			(xy 204.47 163.83) (xy 204.47 166.37)
 		)
 		(stroke
@@ -6490,7 +6843,7 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 110.49) (xy 236.22 105.41)
+			(xy 236.22 110.49) (xy 236.22 107.95)
 		)
 		(stroke
 			(width 0)
@@ -6630,16 +6983,6 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 118.11) (xy 236.22 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8d844c40-762f-4c5d-853e-979c0bebd939")
-	)
-	(wire
-		(pts
 			(xy 196.85 85.09) (xy 196.85 87.63)
 		)
 		(stroke
@@ -6760,7 +7103,7 @@
 	)
 	(wire
 		(pts
-			(xy 306.07 158.75) (xy 306.07 156.21)
+			(xy 304.8 168.91) (xy 304.8 176.53)
 		)
 		(stroke
 			(width 0)
@@ -6890,7 +7233,7 @@
 	)
 	(wire
 		(pts
-			(xy 323.85 167.64) (xy 323.85 170.18)
+			(xy 322.58 185.42) (xy 322.58 187.96)
 		)
 		(stroke
 			(width 0)
@@ -6917,16 +7260,6 @@
 			(type default)
 		)
 		(uuid "b23d79e6-987a-4475-9df0-eb1af2ba56c4")
-	)
-	(wire
-		(pts
-			(xy 236.22 118.11) (xy 243.84 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b424107a-cb7d-4f12-9682-0107df6401c4")
 	)
 	(wire
 		(pts
@@ -6977,6 +7310,16 @@
 			(type default)
 		)
 		(uuid "b92f05e5-c347-4e83-ac60-55dca8a33e4f")
+	)
+	(wire
+		(pts
+			(xy 233.68 118.11) (xy 243.84 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bdc392b3-872d-4c94-8733-c708cd125d4f")
 	)
 	(wire
 		(pts
@@ -7050,13 +7393,13 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 137.16) (xy 181.61 137.16)
+			(xy 231.14 147.32) (xy 243.84 147.32)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c4efba99-bcb5-4451-b467-4d2f4028eb36")
+		(uuid "c3d6697c-04ee-4865-a5a3-2b7947ee76a7")
 	)
 	(wire
 		(pts
@@ -7150,6 +7493,16 @@
 	)
 	(wire
 		(pts
+			(xy 111.76 158.75) (xy 121.92 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5722b08-d387-476a-a0d9-549808b93fe3")
+	)
+	(wire
+		(pts
 			(xy 311.15 92.71) (xy 321.31 92.71)
 		)
 		(stroke
@@ -7170,13 +7523,23 @@
 	)
 	(wire
 		(pts
-			(xy 306.07 166.37) (xy 306.07 168.91)
+			(xy 304.8 184.15) (xy 304.8 186.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "d9904186-b063-4144-8c56-cd88c5500b49")
+	)
+	(wire
+		(pts
+			(xy 111.76 168.91) (xy 121.92 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9987967-2e2c-4839-ae90-eab743e552cd")
 	)
 	(wire
 		(pts
@@ -7290,13 +7653,23 @@
 	)
 	(wire
 		(pts
-			(xy 323.85 177.8) (xy 323.85 179.07)
+			(xy 322.58 195.58) (xy 322.58 196.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "e5b2ad04-66f6-4e27-a650-d2ef5e22d3ff")
+	)
+	(wire
+		(pts
+			(xy 231.14 139.7) (xy 243.84 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7130a88-31e2-407d-92a1-98fe26c9e72e")
 	)
 	(wire
 		(pts
@@ -7340,6 +7713,26 @@
 	)
 	(wire
 		(pts
+			(xy 111.76 163.83) (xy 121.92 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9629e54-ffa3-414f-b037-205c2205c985")
+	)
+	(wire
+		(pts
+			(xy 111.76 166.37) (xy 121.92 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eaad3a73-adf7-4002-9f3c-3bcc0b4b3b75")
+	)
+	(wire
+		(pts
 			(xy 213.36 76.2) (xy 227.33 76.2)
 		)
 		(stroke
@@ -7370,6 +7763,16 @@
 	)
 	(wire
 		(pts
+			(xy 111.76 161.29) (xy 121.92 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f14184db-9d23-4258-afa2-addd51782eb8")
+	)
+	(wire
+		(pts
 			(xy 294.64 135.89) (xy 303.53 135.89)
 		)
 		(stroke
@@ -7380,13 +7783,33 @@
 	)
 	(wire
 		(pts
-			(xy 306.07 176.53) (xy 306.07 177.8)
+			(xy 128.27 139.7) (xy 128.27 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f423e8cc-4ee5-4ece-8c80-3baea0cb26b0")
+	)
+	(wire
+		(pts
+			(xy 304.8 194.31) (xy 304.8 195.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "f4f7a182-f43b-4bd4-9a2e-d07e6c6416bd")
+	)
+	(wire
+		(pts
+			(xy 116.84 138.43) (xy 128.27 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f50fa333-9bb5-4245-a8c3-707a68117e82")
 	)
 	(wire
 		(pts
@@ -7460,6 +7883,16 @@
 	)
 	(wire
 		(pts
+			(xy 116.84 173.99) (xy 111.76 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fef1f598-55e3-462c-af38-e1923ad511d4")
+	)
+	(wire
+		(pts
 			(xy 294.64 143.51) (xy 303.53 143.51)
 		)
 		(stroke
@@ -7467,6 +7900,126 @@
 			(type default)
 		)
 		(uuid "ff6c64b0-979e-4456-a117-0f218845a8f3")
+	)
+	(label "QSPI_SD2"
+		(at 121.92 168.91 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "043ed91a-bfce-4d7e-8bef-78bfe0458a3b")
+	)
+	(label "QSPI_SD1"
+		(at 231.14 144.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0c4dad05-71ec-4fea-90d9-3e4104a6bdb9")
+	)
+	(label "QSPI_SCLK"
+		(at 121.92 161.29 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "12ddf74e-5367-4dd4-9033-b1ecfc40d4b6")
+	)
+	(label "QSPI_SD1"
+		(at 121.92 166.37 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4ace112c-7deb-49e1-9a86-0c65ce4c07b1")
+	)
+	(label "~{QSPI_SS}"
+		(at 121.92 158.75 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6e899f50-bab2-46e0-9eb3-b52819f5ca3c")
+	)
+	(label "QSPI_SD0"
+		(at 121.92 163.83 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "710432a0-4abe-4d89-b710-90ed070b89fe")
+	)
+	(label "QSPI_SD3"
+		(at 121.92 171.45 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7728f83e-c95c-48e0-b2cf-0717da3f56c9")
+	)
+	(label "QSPI_SCLK"
+		(at 231.14 139.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "93bba900-ef96-4b97-91bd-ee1c55a8f025")
+	)
+	(label "~{QSPI_SS}"
+		(at 231.14 137.16 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "baf510d5-e140-468e-9381-18584805ad5d")
+	)
+	(label "QSPI_SD0"
+		(at 231.14 142.24 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cebae176-b008-48cd-9fba-a92d03e89bbb")
+	)
+	(label "QSPI_SD3"
+		(at 231.14 149.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "de2239ea-f725-4c41-9f12-0306a296594a")
+	)
+	(label "QSPI_SD2"
+		(at 231.14 147.32 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ea001079-ee42-463a-ba75-968b29d4a410")
 	)
 	(hierarchical_label "3V3"
 		(shape input)
@@ -8618,6 +9171,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Hack_Passives:0402B104K500HI")
+		(at 128.27 143.51 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1907e8fd-13d0-4fe0-8646-275785bffb41")
+		(property "Reference" "C41"
+			(at 132.08 142.2399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n 50V"
+			(at 132.08 144.7799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 129.2352 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 128.27 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100 nF ±10% 50V Ceramic Capacitor X7R 0402 (1005 Metric)"
+			(at 128.27 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ab645244-904e-40d2-890b-5626f9125b98")
+		)
+		(pin "2"
+			(uuid "f6236591-2100-414b-b473-e7c2a0049116")
+		)
+		(instances
+			(project "HackerfabBackplane"
+				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d/905380e0-3eaa-45fe-b654-1e2b12266968"
+					(reference "C41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 222.25 114.3 0)
 		(unit 1)
@@ -9691,6 +10326,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 116.84 176.53 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3eab93ff-e159-4046-96cd-cadfbc946c7f")
+		(property "Reference" "#PWR0127"
+			(at 116.84 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 116.84 181.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 116.84 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 116.84 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 116.84 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cdff6da2-6b0a-47a8-8e6a-b977d6c0825a")
+		)
+		(instances
+			(project "HackerfabBackplane"
+				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d/905380e0-3eaa-45fe-b654-1e2b12266968"
+					(reference "#PWR0127")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Hack_Passives:AA0402JR-070RL")
 		(at 307.34 97.79 270)
 		(unit 1)
@@ -10638,7 +11351,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 323.85 179.07 0)
+		(at 322.58 196.85 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10649,7 +11362,7 @@
 		(fields_autoplaced yes)
 		(uuid "687e57ef-fe36-4931-b0f0-43b6d57f5928")
 		(property "Reference" "#PWR0126"
-			(at 323.85 185.42 0)
+			(at 322.58 203.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10660,7 +11373,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 323.85 184.15 0)
+			(at 322.58 201.93 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10670,7 +11383,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 323.85 179.07 0)
+			(at 322.58 196.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10681,7 +11394,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 323.85 179.07 0)
+			(at 322.58 196.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10692,7 +11405,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 323.85 179.07 0)
+			(at 322.58 196.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11210,8 +11923,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Hack_Passives:LPS4018-332MRC_Evaluation")
-		(at 236.22 114.3 0)
+		(lib_id "power:GND")
+		(at 128.27 149.86 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11220,31 +11933,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "765fb3a7-df1a-49ae-bcf1-6caaae27a693")
-		(property "Reference" "L3"
-			(at 237.49 113.0299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "3.3u"
-			(at 237.49 115.5699 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Hack_Passives:coilcraft_lps4018_dot1"
-			(at 236.22 114.3 0)
+		(uuid "76b8775a-faa9-4d9e-afc3-6785d5335d6e")
+		(property "Reference" "#PWR0129"
+			(at 128.27 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11254,9 +11945,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.coilcraft.com/getmedia/31b05c96-4c4c-4498-8dbb-fe092de76bad/lps4018.pdf"
-			(at 236.22 114.3 0)
-			(hide yes)
+		(property "Value" "GND"
+			(at 128.27 154.94 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11265,156 +11955,8 @@
 				)
 			)
 		)
-		(property "Description" "3.3uH +/-20%, DCR 80mOhm max; Isat 1.9A at 10% drop, 2.0A at 20% drop (25C). Pad 1 is the dotted side; winding direction documented. RP2354B evaluation only: new layout and validation required."
-			(at 236.22 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "manufacturer" "Coilcraft"
-			(at 236.22 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "manufacturer_pn" "LPS4018-332MRC"
-			(at 236.22 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "status" "EVALUATION - NOT QUALIFIED FOR RP2354B"
-			(at 236.22 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "JLCPCB Unit Price USD" "1.0254 at quantity 1; 0.6466 at quantity 100, checked 2026-10-19; component only"
-			(at 236.22 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "lcsc_pn" "C5350136"
-			(at 236.22 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part #" "C5350136"
-			(at 236.22 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "JLCPCB Stock Checked" "2026-10-19"
-			(at 236.22 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "JLCPCB Link" "https://jlcpcb.com/partdetail/Coilcraft-LPS4018332MRC/C5350136"
-			(at 236.22 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "0b6265db-a72f-4322-ba73-08af15ed587c")
-		)
-		(pin "1"
-			(uuid "03ffce5d-9ad8-47ed-a068-21406518296f")
-		)
-		(instances
-			(project "HackerfabBackplane"
-				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d/905380e0-3eaa-45fe-b654-1e2b12266968"
-					(reference "L3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Hack_Passives:RT0603FRE071K13L")
-		(at 323.85 163.83 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "773d1bde-5042-4869-9243-8835a3e0c0c4")
-		(property "Reference" "R54"
-			(at 326.39 162.5599 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1k13"
-			(at 326.39 165.0999 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 324.866 164.084 90)
+		(property "Footprint" ""
+			(at 128.27 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11425,7 +11967,86 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 323.85 163.83 0)
+			(at 128.27 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 128.27 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2563a84b-7123-4c4f-8062-788257474cf6")
+		)
+		(instances
+			(project "HackerfabBackplane"
+				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d/905380e0-3eaa-45fe-b654-1e2b12266968"
+					(reference "#PWR0129")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Hack_Passives:RT0603FRE071K13L")
+		(at 322.58 181.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "773d1bde-5042-4869-9243-8835a3e0c0c4")
+		(property "Reference" "R54"
+			(at 325.12 180.3399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1k13"
+			(at 325.12 182.8799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 323.596 181.864 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 322.58 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11436,7 +12057,7 @@
 			)
 		)
 		(property "Description" "1.13 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Thin Film"
-			(at 323.85 163.83 0)
+			(at 322.58 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11545,7 +12166,7 @@
 	)
 	(symbol
 		(lib_id "Hack_Opto:KT-0603R")
-		(at 306.07 172.72 90)
+		(at 304.8 190.5 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11556,7 +12177,7 @@
 		(fields_autoplaced yes)
 		(uuid "7ac685dd-2794-4c06-a4d4-08aa23a26075")
 		(property "Reference" "D9"
-			(at 309.88 173.0374 90)
+			(at 308.61 190.8174 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11567,7 +12188,7 @@
 			)
 		)
 		(property "Value" "KT-0603R"
-			(at 309.88 175.5774 90)
+			(at 308.61 193.3574 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11578,7 +12199,7 @@
 			)
 		)
 		(property "Footprint" "Hack_Opto:LED_0603_1608Metric"
-			(at 306.07 172.72 0)
+			(at 304.8 190.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11589,7 +12210,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/datasheet/lcsc_datasheet_Hubei-KENTO-Elec-KT-0603R_C2286.pdf"
-			(at 306.07 172.72 0)
+			(at 304.8 190.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11600,7 +12221,7 @@
 			)
 		)
 		(property "Description" "KT-0603R red LED, 0603 (1608 metric), LCSC C2286"
-			(at 306.07 172.72 0)
+			(at 304.8 190.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11611,7 +12232,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 306.07 172.72 0)
+			(at 304.8 190.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11622,7 +12243,7 @@
 			)
 		)
 		(property "Manufacturer" "Hubei KENTO Elec"
-			(at 306.07 172.72 0)
+			(at 304.8 190.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11633,7 +12254,7 @@
 			)
 		)
 		(property "MPN" "KT-0603R"
-			(at 306.07 172.72 0)
+			(at 304.8 190.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11644,7 +12265,7 @@
 			)
 		)
 		(property "LCSC" "C2286"
-			(at 306.07 172.72 0)
+			(at 304.8 190.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11742,6 +12363,84 @@
 			(project "HackerfabBackplane"
 				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d/905380e0-3eaa-45fe-b654-1e2b12266968"
 					(reference "TP5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 116.84 137.16 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8147f8d4-ffe6-4c3b-877a-01a4a63502be")
+		(property "Reference" "#PWR0128"
+			(at 116.84 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 116.84 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 116.84 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 116.84 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 116.84 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "de31b5fc-54ce-4670-8b2a-de62cab629b0")
+		)
+		(instances
+			(project "HackerfabBackplane"
+				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d/905380e0-3eaa-45fe-b654-1e2b12266968"
+					(reference "#PWR0128")
 					(unit 1)
 				)
 			)
@@ -14698,6 +15397,127 @@
 		)
 	)
 	(symbol
+		(lib_id "Hack_Chips:W25Q128JVSIQ")
+		(at 101.6 163.83 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d525ba75-3adb-4d63-b3d0-c5727cb01b18")
+		(property "Reference" "U7"
+			(at 101.6 148.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "W25Q128JVSIQ"
+			(at 101.6 151.13 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Hack_Chips:W25Q128JVSIQ_SOIC-8_5.3x5.3mm_P1.27mm"
+			(at 101.6 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.winbond.com/resource-files/w25q128jv%20revf%2003272018%20plus.pdf"
+			(at 101.6 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "128 Mbit / 16 MiB, 2.7-3.6 V SPI/Dual/Quad NOR flash, SOIC-8 208 mil, QE fixed to 1; IO3 HOLD function disabled"
+			(at 101.6 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Winbond"
+			(at 101.6 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "W25Q128JVSIQ"
+			(at 101.6 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "760b6ed8-3e8c-44e8-a280-56f09e5c189e")
+		)
+		(pin "5"
+			(uuid "07fadb3a-4ea7-4fc5-a5df-4c9f6e7e5493")
+		)
+		(pin "7"
+			(uuid "bf1477f4-32b2-4b36-817c-be2b20981b50")
+		)
+		(pin "4"
+			(uuid "d7ae756f-e4b0-497a-b3a9-030f2ad4b9d5")
+		)
+		(pin "1"
+			(uuid "c59ab450-9dfb-4bab-a482-e78601961d09")
+		)
+		(pin "6"
+			(uuid "93b8c656-02be-4bd1-b889-aca8b448a857")
+		)
+		(pin "2"
+			(uuid "e92651b5-1645-4012-b5d2-52f69dad9052")
+		)
+		(pin "8"
+			(uuid "68eb8721-bd3f-4173-9bc6-b90c000cb868")
+		)
+		(instances
+			(project "HackerfabBackplane"
+				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d/905380e0-3eaa-45fe-b654-1e2b12266968"
+					(reference "U7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Hack_Passives:AA0402JR-070RL")
 		(at 307.34 135.89 270)
 		(unit 1)
@@ -14778,7 +15598,7 @@
 	)
 	(symbol
 		(lib_id "Hack_Passives:RT0603FRE071K13L")
-		(at 306.07 162.56 0)
+		(at 304.8 180.34 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14789,7 +15609,7 @@
 		(fields_autoplaced yes)
 		(uuid "d937ebf5-238e-4e8a-bb0c-921a0d6684a7")
 		(property "Reference" "R53"
-			(at 308.61 161.2899 0)
+			(at 307.34 179.0699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14800,7 +15620,7 @@
 			)
 		)
 		(property "Value" "1k13"
-			(at 308.61 163.8299 0)
+			(at 307.34 181.6099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14811,7 +15631,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 307.086 162.814 90)
+			(at 305.816 180.594 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14822,7 +15642,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 306.07 162.56 0)
+			(at 304.8 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14833,7 +15653,7 @@
 			)
 		)
 		(property "Description" "1.13 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Thin Film"
-			(at 306.07 162.56 0)
+			(at 304.8 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14853,6 +15673,175 @@
 			(project "HackerfabBackplane"
 				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d/905380e0-3eaa-45fe-b654-1e2b12266968"
 					(reference "R53")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Hack_Passives:DFE252012F-3R3M=P2")
+		(at 233.68 113.03 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d98e60c0-80a9-42b3-9248-8274ce444f70")
+		(property "Reference" "L3"
+			(at 230.124 106.934 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "3.3uH"
+			(at 236.22 114.2999 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Hack_Passives:L_Murata_DFE252012F_2.5x2.0mm"
+			(at 233.68 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.murata.com/~/media/webrenewal/products/inductor/chip/tokoproducts/wirewoundmetalalloychiptype/m_dfe252012f.ashx"
+			(at 233.68 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "3.3uH +/-20%, 135mOhm max DCR, 2.5A Isat, 1.8A heating current, 2.5x2.0x1.2mm; no manufacturer winding mark; library pin numbering is arbitrary."
+			(at 233.68 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 233.68 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "DFE252012F-3R3M=P2"
+			(at 233.68 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C2041573"
+			(at 233.68 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C2041573"
+			(at 233.68 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "20%"
+			(at 233.68 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DCR Max" "135mOhm"
+			(at 233.68 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Isat" "2.5A (30% inductance drop)"
+			(at 233.68 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Irms" "1.8A (40C rise)"
+			(at 233.68 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "0bd77541-a29f-4da9-9655-18da957a1ad3")
+		)
+		(pin "1"
+			(uuid "f93bbdba-a2b2-48bf-b764-4ed20082b78f")
+		)
+		(instances
+			(project "HackerfabBackplane"
+				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d/905380e0-3eaa-45fe-b654-1e2b12266968"
+					(reference "L3")
 					(unit 1)
 				)
 			)
@@ -15104,10 +16093,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "e0f2b2f6-802b-4102-ad07-8bb420feedd0")
 		(property "Reference" "C36"
-			(at 226.06 109.2199 0)
+			(at 223.012 108.458 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15118,7 +16106,7 @@
 			)
 		)
 		(property "Value" "4uF 6V3"
-			(at 226.06 111.7599 0)
+			(at 223.012 113.538 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15260,7 +16248,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 306.07 177.8 0)
+		(at 304.8 195.58 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15271,7 +16259,7 @@
 		(fields_autoplaced yes)
 		(uuid "e2d42be2-b17b-415a-a8f8-d1775443e6c8")
 		(property "Reference" "#PWR0125"
-			(at 306.07 184.15 0)
+			(at 304.8 201.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15282,7 +16270,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 306.07 182.88 0)
+			(at 304.8 200.66 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15292,7 +16280,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 306.07 177.8 0)
+			(at 304.8 195.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15303,7 +16291,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 306.07 177.8 0)
+			(at 304.8 195.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15314,7 +16302,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 306.07 177.8 0)
+			(at 304.8 195.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16211,7 +17199,7 @@
 	)
 	(symbol
 		(lib_id "Hack_Opto:KT-0603R")
-		(at 323.85 173.99 90)
+		(at 322.58 191.77 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16222,7 +17210,7 @@
 		(fields_autoplaced yes)
 		(uuid "f92391d8-a61d-4271-b68e-3616788d87cf")
 		(property "Reference" "D10"
-			(at 327.66 174.3074 90)
+			(at 326.39 192.0874 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16233,7 +17221,7 @@
 			)
 		)
 		(property "Value" "KT-0603R"
-			(at 327.66 176.8474 90)
+			(at 326.39 194.6274 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16244,7 +17232,7 @@
 			)
 		)
 		(property "Footprint" "Hack_Opto:LED_0603_1608Metric"
-			(at 323.85 173.99 0)
+			(at 322.58 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16255,7 +17243,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/datasheet/lcsc_datasheet_Hubei-KENTO-Elec-KT-0603R_C2286.pdf"
-			(at 323.85 173.99 0)
+			(at 322.58 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16266,7 +17254,7 @@
 			)
 		)
 		(property "Description" "KT-0603R red LED, 0603 (1608 metric), LCSC C2286"
-			(at 323.85 173.99 0)
+			(at 322.58 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16277,7 +17265,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 323.85 173.99 0)
+			(at 322.58 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16288,7 +17276,7 @@
 			)
 		)
 		(property "Manufacturer" "Hubei KENTO Elec"
-			(at 323.85 173.99 0)
+			(at 322.58 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16299,7 +17287,7 @@
 			)
 		)
 		(property "MPN" "KT-0603R"
-			(at 323.85 173.99 0)
+			(at 322.58 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16310,7 +17298,7 @@
 			)
 		)
 		(property "LCSC" "C2286"
-			(at 323.85 173.99 0)
+			(at 322.58 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
