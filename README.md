@@ -35,6 +35,7 @@ For a browser-only look, start with the [schematic previews](docs/schematics/REA
 | [`hardware/backplane/`](hardware/backplane/) | KiCad project, root schematic, six subsheets, PCB, and project library tables |
 | [`hardware/libraries/`](hardware/libraries/) | Seven custom symbol libraries and 24 custom footprints, including embedded models where supplied |
 | [`docs/architecture.md`](docs/architecture.md) | System concept, circuit blocks, and scope of future daughter boards |
+| [`docs/connector-pinout.md`](docs/connector-pinout.md) | Jumper-based signal order, paired protocols, pin table, and routing guide |
 | [`docs/schematics/`](docs/schematics/) | Seven SVG schematic previews exported from the source |
 | [`docs/validation.md`](docs/validation.md) | Import checks, existing ERC/DRC findings, and next steps |
 | [`docs/provenance.md`](docs/provenance.md) | Source archives, background reference, and cleanup details |
@@ -79,6 +80,8 @@ The repository includes the **backplane hardware and its libraries**. Firmware, 
 The latest supplied archives were imported on **2026-10-29**. This revision adds a W25Q128JVSIQ flash memory and updates schematic connectivity and PCB routing. The schematic netlist contains **144 components**, and the PCB contains **144 footprints**, **518 routed track segments**, and **131 vias**. KiCad reports **16 ERC findings**, **97 DRC findings**, **107 unconnected PCB items**, and **zero schematic/PCB parity findings**. The design requires further routing and review before fabrication. See the [validation notes](docs/validation.md) for the breakdown and commands.
 
 ## Working on the project
+
+The connector signal assignments have been reorganized to follow the MCU's existing 0 Ω jumper banks while retaining paired A/C protocol groups and keeping UART RX/TX adjacent. Power and ground assignments are unchanged. See the [signal arrangement and diagrams](docs/connector-pinout.md) before routing or designing daughter boards; this is a changed connector pinout, and routing remains unfinished.
 
 Read [CONTRIBUTING.md](CONTRIBUTING.md) before changing hardware. Run the lightweight repository checks with Python 3.10 or newer:
 

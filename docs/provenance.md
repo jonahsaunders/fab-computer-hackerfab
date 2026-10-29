@@ -10,6 +10,12 @@ The initial repository import was prepared on 2026-10-21 from:
 
 The report describes early requirements and plans. The supplied KiCad files are the source for the repository's hardware inventory and validation baseline; the report's milestone statuses are not presented as current test results.
 
+## 2026-10-29 connector signal arrangement
+
+After the archive import, the root schematic and PCB were edited to reorder signal contacts on J1–J3 around the existing MCU jumper banks. This is a design change beyond the supplied archives. The arrangement preserves all signals, fixed power/ground contacts, and the original A/C protocol grouping, with UART RX/TX kept together. See the [pinout and routing guide](connector-pinout.md) for the resulting mapping and its limits.
+
+The update changes 84 signal/NC pad assignments and their matching schematic terminals. All other PCB content, including copper, vias, zones, and footprint positions, is unchanged. Nonconnector schematic connectivity is unchanged. The root schematic preview and validation were refreshed with KiCad 10.0.6.
+
 ## Latest 2026-10-29 source update
 
 The supplied archives were imported into the existing repository locations: nine backplane design files and 31 library files (seven symbol libraries and 24 footprints). Compared with the previous import, the PCB, project, root schematic, and microcontroller sheet changed. The library update adds W25Q128JVSIQ flash-memory and DFE252012F-3R3M=P2 inductor symbols and their footprints, and revises the QFN-80 and Texas HSOP-8 footprints. The other active files match after line-ending normalization.

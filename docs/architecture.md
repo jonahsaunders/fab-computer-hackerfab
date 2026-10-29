@@ -32,7 +32,7 @@ The diagram is a functional overview, not a wiring diagram. Use the KiCad schema
 | USB-related circuitry | USB-C receptacle (`J7`), USBLC6-2SC6 protection (`U4`), and TPS2116DRL power selection (`U6`); connectivity still requires review |
 | Communication | Named nets for I²C0/1, SPI0/1 with slot chip selects, UART, and AUX signals |
 
-The report specifies UART on the first slot only. The current exported netlist instead connects `/UART_RX` to both `J1:C22` and `J3:C22`, while `/UART_TX` connects to `J1:A22`. This discrepancy needs design review. Do not assume every signal is available on every slot or that the preliminary connector pinout is frozen. Review the current schematic and connector numbering before designing a mating board.
+The report specifies UART on the first slot only. The current exported netlist instead connects `/UART_RX` to both `J1:A23` and `J3:A23`, while `/UART_TX` connects to `J1:C23`. This discrepancy needs design review. The [connector signal arrangement](connector-pinout.md) preserves each port's original signal set while changing its physical signal contacts to follow the jumper banks. Do not assume every signal is available on every slot or that the preliminary connector pinout is frozen. Review the current schematic and connector numbering before designing a mating board.
 
 ## Daughter-board scope
 

@@ -2,7 +2,10 @@
 
 Checked on **2026-10-29** with **KiCad 10.0.6** after importing the latest supplied archives. The portable library tables were retained; the active sources already include the earlier fuse footprint reference correction.
 
+Rechecked after the [connector signal reordering](connector-pinout.md). All 84 signal/NC pad assignments and their schematic terminals changed. All fixed power/ground pins, nonconnector pin-to-net assignments, MCU/jumper placement, tracks, vias, and zones are unchanged. ERC and DRC finding counts, types, severities, and descriptions match the import baseline. The existing AUX10 warning follows its moved label, and KiCad selects a different existing +3V3 power symbol as the location for the multiple-net-name warning. Schematic/PCB parity remains clean.
+
 - Repository checks pass for all **40 design and library files**, seven custom symbol libraries, project library paths, custom references, and local Markdown links.
+- Connector checks pass for **288 pads**, fixed power/ground assignments, paired A/C protocols and adjacent UART contacts, signal inventory, and jumper outputs.
 - All six hierarchical subsheets resolve, and all seven schematic SVGs, the board image, and the XML netlist export successfully.
 - The netlist contains **144 components**; the PCB contains **144 footprints**, **518 routed track segments**, and **131 vias**.
 - Schematic/PCB parity reports **zero findings**.
