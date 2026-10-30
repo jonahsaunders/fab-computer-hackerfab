@@ -1,59 +1,72 @@
 # Validation baseline
 
-Checked on **2026-10-29** with **KiCad 10.0.6** after importing the latest supplied archives. The portable library tables were retained; the active sources already include the earlier fuse footprint reference correction.
+Checked on **2026-10-30** with **KiCad 10.0.6** after importing the corrected supplied archives. The import preserves active design/library files with normalized line endings and retains portable project library tables.
 
-Rechecked after the [connector signal reordering](connector-pinout.md). All 84 signal/NC pad assignments and their schematic terminals changed. All fixed power/ground pins, nonconnector pin-to-net assignments, MCU/jumper placement, tracks, vias, and zones are unchanged. ERC and DRC finding counts, types, severities, and descriptions match the import baseline. The existing AUX10 warning follows its moved label, and KiCad selects a different existing +3V3 power symbol as the location for the multiple-net-name warning. Schematic/PCB parity remains clean.
+- All **40 active design/library files** match their archive contents after line-ending normalization. Seven custom symbol libraries and 24 custom footprints are bundled.
+- All **288 connector pins** match the V6 reference in both schematic and PCB: fixed power/ground, SPI blocks 10–12 and 21–23, I²C columns 16–17, UART only on J1, and per-port AUX assignments.
+- J1 is nearest the MCU, J2 is middle, and J3 is farthest.
+- **144 schematic components**, **144 PCB footprints**, **788 track segments**, and **193 vias**.
+- **16 ERC findings** (10 errors, 6 warnings).
+- **134 DRC findings** (109 errors, 25 warnings), plus **41 unconnected PCB items**.
+- **Zero schematic/PCB parity findings**. All seven schematic previews, board image, and XML netlist export successfully.
 
-- Repository checks pass for all **40 design and library files**, seven custom symbol libraries, project library paths, custom references, and local Markdown links.
-- Connector checks pass for **288 pads**, fixed power/ground assignments, paired A/C protocols and adjacent UART contacts, signal inventory, and jumper outputs.
-- All six hierarchical subsheets resolve, and all seven schematic SVGs, the board image, and the XML netlist export successfully.
-- The netlist contains **144 components**; the PCB contains **144 footprints**, **518 routed track segments**, and **131 vias**.
-- Schematic/PCB parity reports **zero findings**.
-- ERC reports **16 findings**: 10 errors and six warnings. These comprise eight undriven power pins, four library symbol mismatches, one isolated pin label, one unconnected pin, one multiple-net-name finding, and one pin conflict.
-- DRC reports **97 findings**: 75 errors and 22 warnings, plus **107 unconnected items** reported separately.
+A second DRC run on a temporary copy with the same libraries and freshly refilled zones reports **122 violations** and **41 unconnected items**. Refilling removes nine copper-clearance and nine hole-clearance findings from the saved fills, and exposes six additional dangling-via findings, for twelve fewer findings overall. The source PCB is preserved byte-for-byte after line-ending normalization; the temporary refill is not saved over it.
 
-## Change from the previous import
+Five vias beside the AUX jumper banks are currently assigned to GND. Their net-update settings and nearby AUX nets are listed in the [via assignment notes](connector-pinout.md#assigning-aux-via-nets-in-kicad). Connector pinout agreement does not mean the remaining routes or via assignments are complete.
 
-| Measure | 2026-10-26 | 2026-10-29 |
+## Change from the prior main-branch import
+
+| Measure | 2026-10-29 | 2026-10-30 |
 | --- | ---: | ---: |
-| Schematic components / PCB footprints | 142 / 142 | 144 / 144 |
-| Routed track segments | 0 | 518 |
-| ERC findings | 80 | 16 |
-| DRC findings, excluding unconnected items | 18 | 97 |
-| Unconnected PCB items | 491 | 107 |
+| Schematic components / PCB footprints | 144 / 144 | 144 / 144 |
+| Track segments / vias | 518 / 131 | 788 / 193 |
+| ERC findings | 16 | 16 |
+| DRC findings | 97 | 134 |
+| Unconnected PCB items | 107 | 41 |
 | Schematic/PCB parity findings | 0 | 0 |
 
-Routing has progressed and fewer connections remain open. The new routed layout also exposes track-width, via-size, clearance, and thermal-connection findings that need review. ERC no longer reports hierarchical label mismatches; the remaining unconnected microcontroller pin is `U5:61` (`VREG_AVDD`). The four symbol mismatches affect `Q1`, `C6`, `C12`, and `C13`.
+The new source includes additional routing and vias. Its existing design findings are preserved and documented; this import does not suppress them or alter the supplied copper. The separate V6 routing-study results are not the validation baseline for this user-routed PCB.
 
 ## DRC breakdown
 
 | Finding | Count |
 | --- | ---: |
-| Track width | 21 |
-| Drill out of range | 15 |
-| Via diameter | 15 |
-| Starved thermal | 9 |
-| Silkscreen overlap | 7 |
-| Copper-edge clearance | 6 |
-| Silkscreen over copper | 5 |
-| Copper clearance | 4 |
-| Hole clearance | 4 |
-| Library footprint mismatch | 4 |
-| Dangling via | 2 |
-| Silkscreen-edge clearance | 2 |
-| Courtyard overlap | 1 |
-| Isolated copper | 1 |
-| Text height | 1 |
+| `track_width` | 21 |
+| `drill_out_of_range` | 20 |
+| `via_diameter` | 20 |
+| `clearance` | 15 |
+| `hole_clearance` | 13 |
+| `starved_thermal` | 12 |
+| `silk_overlap` | 8 |
+| `copper_edge_clearance` | 6 |
+| `silk_over_copper` | 6 |
+| `lib_footprint_mismatch` | 4 |
+| `via_dangling` | 3 |
+| `silk_edge_clearance` | 2 |
+| `zones_intersect` | 1 |
+| `courtyards_overlap` | 1 |
+| `isolated_copper` | 1 |
+| `text_height` | 1 |
 
-These are tool findings requiring design review, not a manufacturing certification. The board is partially routed. No bench testing, power-up, or firmware validation is implied. The supplied design and check settings were preserved during import; findings were not suppressed or repaired as part of the source update.
+## ERC breakdown
+
+| Finding | Count |
+| --- | ---: |
+| `power_pin_not_driven` | 8 |
+| `lib_symbol_mismatch` | 4 |
+| `isolated_pin_label` | 1 |
+| `pin_not_connected` | 1 |
+| `multiple_net_names` | 1 |
+| `pin_to_pin` | 1 |
+
+The board remains partially routed and requires review before fabrication. No bench, firmware, power-up, or crosstalk validation is implied.
 
 ## Reproduce
-
-With KiCad 10 and Python 3.10 or newer, run from the repository root:
 
 ```sh
 python scripts/check_repo.py
 python scripts/export_design.py
+python scripts/check_connector_pinout.py --netlist build/backplane.xml
 ```
 
-The export script refreshes previews and writes JSON reports and an XML netlist under ignored `build/`. It does not save or refill the PCB. KiCad can return success while reporting violations; inspect the reports.
+The export script refreshes previews and writes reports under ignored `build/`. It does not save or refill the PCB. KiCad can return success while reporting violations; inspect the reports.

@@ -16,8 +16,8 @@ Open [`HackerfabBackplane.kicad_pro`](HackerfabBackplane.kicad_pro) with KiCad 1
 
 Keep this directory and `../libraries/` together when copying the project. Standard KiCad libraries are also required. Standard 3D models are optional for circuit editing but needed for a complete 3D preview.
 
-The 2026-10-29 update contains 144 schematic components and 144 PCB footprints, with 518 routed track segments and 131 vias. KiCad reports zero schematic/PCB parity findings and 107 unconnected PCB items; the layout still needs further routing and review.
+The 2026-10-30 update contains 144 schematic components and 144 PCB footprints, with 788 track segments and 193 vias. KiCad reports zero schematic/PCB parity findings and 41 unconnected PCB items; routing and design review remain.
 
 See the [schematic previews](../../docs/schematics/README.md) and [validation baseline](../../docs/validation.md).
 
-The [connector signal arrangement](../../docs/connector-pinout.md) follows the existing 0 Ω jumper placement and preserves the original paired A/C protocol grouping, with UART RX/TX adjacent. Use the [per-port pin table](../../docs/connector-pinout.csv) for actual signal/NC assignments. The MCU fan-out, fixed power/ground contacts, and existing copper have not moved.
+The [connector signal arrangement](../../docs/connector-pinout.md) uses the V6 layout, with SPI at opposite ends and UART only on J1, nearest the MCU. Use the [per-port pin table](../../docs/connector-pinout.csv) for exact signal/NC assignments.

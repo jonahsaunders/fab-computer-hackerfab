@@ -4,7 +4,7 @@ A modular control platform for HackerFab equipment: one backplane for power and 
 
 **Status: hardware in development · KiCad 10 · three expansion slots**
 
-![KiCad preview of the FAB Computer backplane](docs/images/backplane-2026-10-29.png)
+![KiCad preview of the FAB Computer backplane](docs/images/backplane-2026-10-30.png)
 
 *Preview of the imported PCB with routing in progress; this is not a manufacturing release.*
 
@@ -77,11 +77,11 @@ These previews are exported from the current KiCad files. Select a schematic ima
 
 The repository includes the **backplane hardware and its libraries**. Firmware, daughter-board designs, fabrication outputs, and bench-test results were not present in the supplied archives.
 
-The latest supplied archives were imported on **2026-10-29**. This revision adds a W25Q128JVSIQ flash memory and updates schematic connectivity and PCB routing. The schematic netlist contains **144 components**, and the PCB contains **144 footprints**, **518 routed track segments**, and **131 vias**. KiCad reports **16 ERC findings**, **97 DRC findings**, **107 unconnected PCB items**, and **zero schematic/PCB parity findings**. The design requires further routing and review before fabrication. See the [validation notes](docs/validation.md) for the breakdown and commands.
+The latest supplied archives were imported on **2026-10-30**. The connector assignments match the V6 arrangement: SPI0 in columns 10–12, SPI1 in 21–23, I²C centered in 16–17, and UART only on J1 in column 20. All **288 connector pins** agree between the V6 pin table, schematic, and PCB. J1 is nearest the MCU. The design contains **144 schematic components**, **144 PCB footprints**, **788 track segments**, and **193 vias**. KiCad reports **16 ERC findings**, **134 DRC findings**, **41 unconnected PCB items**, and **zero schematic/PCB parity findings**. Further routing and design review remain; see the [validation notes](docs/validation.md).
 
 ## Working on the project
 
-The connector signal assignments have been reorganized to follow the MCU's existing 0 Ω jumper banks while retaining paired A/C protocol groups and keeping UART RX/TX adjacent. Power and ground assignments are unchanged. See the [signal arrangement and diagrams](docs/connector-pinout.md) before routing or designing daughter boards; this is a changed connector pinout, and routing remains unfinished.
+The connector signal assignments use the V6 layout, with SPI buses at opposite ends and matching protocol groups across rows A/C. J1 is nearest the MCU and carries AUX1–3 plus UART; J2 carries AUX4–6; J3 carries AUX7–10. Use the [current pin table and diagrams](docs/connector-pinout.md) when routing or designing daughter boards. Power and ground assignments are preserved.
 
 Read [CONTRIBUTING.md](CONTRIBUTING.md) before changing hardware. Run the lightweight repository checks with Python 3.10 or newer:
 

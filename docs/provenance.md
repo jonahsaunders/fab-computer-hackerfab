@@ -10,13 +10,18 @@ The initial repository import was prepared on 2026-10-21 from:
 
 The report describes early requirements and plans. The supplied KiCad files are the source for the repository's hardware inventory and validation baseline; the report's milestone statuses are not presented as current test results.
 
-## 2026-10-29 connector signal arrangement
+## Latest 2026-10-30 source update
 
-After the archive import, the root schematic and PCB were edited to reorder signal contacts on J1–J3 around the existing MCU jumper banks. This is a design change beyond the supplied archives. The arrangement preserves all signals, fixed power/ground contacts, and the original A/C protocol grouping, with UART RX/TX kept together. See the [pinout and routing guide](connector-pinout.md) for the resulting mapping and its limits.
+The corrected supplied archives were imported: nine backplane design files and 31 custom-library files. The root schematic and PCB implement the V6 pin order, with J1 nearest the MCU and UART only on J1. The libraries are unchanged from the October 29 archive. All 40 active source files match the archives after line-ending normalization; the repository retains its portable library tables. History, backups, personal settings, and lock files are omitted.
 
-The update changes 84 signal/NC pad assignments and their matching schematic terminals. All other PCB content, including copper, vias, zones, and footprint positions, is unchanged. Nonconnector schematic connectivity is unchanged. The root schematic preview and validation were refreshed with KiCad 10.0.6.
+All 288 connector pad assignments were compared with V6 in the schematic and PCB. Updated schematic/board previews and current ERC/DRC results accompany the import; see [validation](validation.md). The PCB contains the author’s routing progress.
 
-## Latest 2026-10-29 source update
+| Input | SHA-256 |
+| --- | --- |
+| `Backplane.zip` | `e90955123a6e66318d26df3ff379cbae10a63ccf3329a530b0bd17e33bcbb435` |
+| `LibraryHackerfab.zip` | `db5c3d66d2a99bcd8b0e6b4c48f858e088cf05453cb7b19b771d245ed7039d63` |
+
+## Previous 2026-10-29 source update
 
 The supplied archives were imported into the existing repository locations: nine backplane design files and 31 library files (seven symbol libraries and 24 footprints). Compared with the previous import, the PCB, project, root schematic, and microcontroller sheet changed. The library update adds W25Q128JVSIQ flash-memory and DFE252012F-3R3M=P2 inductor symbols and their footprints, and revises the QFN-80 and Texas HSOP-8 footprints. The other active files match after line-ending normalization.
 
