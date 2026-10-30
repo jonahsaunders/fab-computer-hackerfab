@@ -10,7 +10,18 @@ The initial repository import was prepared on 2026-10-21 from:
 
 The report describes early requirements and plans. The supplied KiCad files are the source for the repository's hardware inventory and validation baseline; the report's milestone statuses are not presented as current test results.
 
-## Latest 2026-10-29 source update
+## Latest 2026-10-30 source update
+
+The corrected supplied archives were imported: nine backplane design files and 31 custom-library files. The root schematic and PCB implement the V6 pin order, with J1 nearest the MCU and UART only on J1. The libraries are unchanged from the October 29 archive. All 40 active source files match the archives after line-ending normalization; the repository retains its portable library tables. History, backups, personal settings, and lock files are omitted.
+
+All 288 connector pad assignments were compared with V6 in the schematic and PCB. Updated schematic/board previews and current ERC/DRC results accompany the import; see [validation](validation.md). The PCB contains the author’s routing progress.
+
+| Input | SHA-256 |
+| --- | --- |
+| `Backplane.zip` | `e90955123a6e66318d26df3ff379cbae10a63ccf3329a530b0bd17e33bcbb435` |
+| `LibraryHackerfab.zip` | `db5c3d66d2a99bcd8b0e6b4c48f858e088cf05453cb7b19b771d245ed7039d63` |
+
+## Previous 2026-10-29 source update
 
 The supplied archives were imported into the existing repository locations: nine backplane design files and 31 library files (seven symbol libraries and 24 footprints). Compared with the previous import, the PCB, project, root schematic, and microcontroller sheet changed. The library update adds W25Q128JVSIQ flash-memory and DFE252012F-3R3M=P2 inductor symbols and their footprints, and revises the QFN-80 and Texas HSOP-8 footprints. The other active files match after line-ending normalization.
 

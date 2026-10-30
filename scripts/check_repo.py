@@ -5,6 +5,7 @@ from pathlib import Path
 import re
 import sys
 from urllib.parse import unquote, urlsplit
+from check_connector_pinout import check as check_connector_pinout
 
 ROOT = Path(__file__).resolve().parents[1]
 BOARD = ROOT / "hardware/backplane"
@@ -74,9 +75,12 @@ for path in markdown:
         require(target.is_relative_to(ROOT) and target.exists(),
                 f"Broken local link in {path.relative_to(ROOT)}: {raw}")
 
+errors.extend(check_connector_pinout())
+
 if errors:
     print("Repository checks failed:\n" + "\n".join(f"- {e}" for e in sorted(set(errors))))
     sys.exit(1)
 print(f"OK: {len(design_files)} design files, {len(symbols)} custom symbol libraries, "
       f"project library paths, custom references, and local Markdown links.")
 print("Electrical design correctness is checked separately with KiCad ERC/DRC.")
+print("Connector checks: fixed power/ground, paired A/C protocols, adjacent UART, signal inventory, and jumper outputs.")
