@@ -38,6 +38,7 @@ For a browser-only look, start with the [schematic previews](docs/schematics/REA
 | [`docs/connector-pinout.md`](docs/connector-pinout.md) | Jumper-based signal order, paired protocols, pin table, and routing guide |
 | [`docs/schematics/`](docs/schematics/) | Seven SVG schematic previews exported from the source |
 | [`docs/validation.md`](docs/validation.md) | Import checks, existing ERC/DRC findings, and next steps |
+| [`docs/thermal-relief.md`](docs/thermal-relief.md) | Copper-pour diagnosis, affected pads, and temporary-copy experiments |
 | [`docs/provenance.md`](docs/provenance.md) | Source archives, background reference, and cleanup details |
 | [`scripts/`](scripts/) | Repository checks and reproducible preview/check exports |
 
@@ -77,7 +78,7 @@ These previews are exported from the current KiCad files. Select a schematic ima
 
 The repository includes the **backplane hardware and its libraries**. Firmware, daughter-board designs, fabrication outputs, and bench-test results were not present in the supplied archives.
 
-The latest supplied archives were imported on **2026-11-01**. This later update changes the PCB and project net colors and adds the supplied custom design rules; the schematics and shared libraries match the earlier import. The connector assignments match the V6 arrangement: SPI0 in columns 10–12, SPI1 in 21–23, I²C centered in 16–17, and UART only on J1 in column 20. All **288 connector pins** agree between the V6 pin table, schematic, and PCB. J1 is nearest the MCU. The design contains **144 schematic components**, **144 PCB footprints**, **1,052 track segments**, and **248 vias**. KiCad reports **16 ERC findings**, **376 DRC findings**, **four unconnected PCB items**, and **zero schematic/PCB parity findings**. Design-rule cleanup and review remain; see the [validation notes](docs/validation.md).
+The latest supplied archives were imported on **2026-11-01**. This latest update changes the PCB and mounting-hole footprint, allowing the inner ground plane to connect to the mounting holes. The schematics, project settings, custom rules, and other shared libraries match the previous import. The connector assignments match the V6 arrangement: SPI0 in columns 10–12, SPI1 in 21–23, I²C centered in 16–17, and UART only on J1 in column 20. All **288 connector pins** agree between the V6 pin table, schematic, and PCB. J1 is nearest the MCU. The design contains **144 schematic components**, **144 PCB footprints**, **1,063 track segments**, and **248 vias**. KiCad reports **16 ERC findings**, **368 DRC findings**, **zero unconnected PCB items**, and **zero schematic/PCB parity findings**. The remaining findings include 11 thermal-relief errors; see the [illustrated diagnosis and tested adjustments](docs/thermal-relief.md) and [validation notes](docs/validation.md).
 
 ## Working on the project
 

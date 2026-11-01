@@ -12,6 +12,19 @@ The report describes early requirements and plans. The supplied KiCad files are 
 
 ## Latest 2026-11-01 source update
 
+The latest supplied archives update the PCB and `MountingHole_3.2mm_M3_Grounded_Corner.kicad_mod`. The mounting-hole keepout now applies to F.Cu and B.Cu only, and the four board instances match the revised library footprint. Schematics, project settings, custom design rules, and other library files are unchanged after line-ending normalization. All 41 active design/library/rule files match the supplied archives after line-ending normalization; portable project library tables are retained.
+
+The supplied board has 1,063 track segments and 248 vias. KiCad 10.0.6 reports 16 ERC findings, 368 DRC findings, zero unconnected items, and zero schematic/PCB parity findings. All 288 connector contacts match V6 and the schematic netlist. Previews and validation notes are refreshed. Local history, nested Git databases, backups, personal settings, and locks are omitted.
+
+| Input | SHA-256 |
+| --- | --- |
+| `Backplane.zip` | `c4310f27035583245b53562eee915fbbe0ef82bcd50d26c63653c69d538759a9` |
+| `LibraryHackerfab.zip` | `22608c5caa803a6a3686a7baa2d7d8bc543e443ffc02595fb5ca283fdfc0c1fa` |
+
+The requested copper-pour investigation is documented in [thermal-relief findings](thermal-relief.md), including an illustration generated from the saved copper geometry. Temporary copies were used to test thermal-gap/spoke settings. Those experimental design changes are not included in the import.
+
+## Previous 2026-11-01 source update (custom rules)
+
 The later supplied archives were imported into the existing locations: ten backplane design files and 31 custom-library files. Compared with the earlier November 1 import, the PCB changes, the project adds net colors for `+1V1` and `+3V3`, and `HackerfabBackplane.kicad_dru` is new. The seven schematic sheets and all shared-library files are unchanged after line-ending normalization. All 41 active source files match the supplied archives after line-ending normalization; the repository retains its portable library tables. No circuit, footprint, routing, or custom-rule edits were made during import.
 
 The board contains 1,052 track segments and 248 vias. All 288 connector pins still match V6 in the schematic and PCB. KiCad 10.0.6 reports 16 ERC findings, 376 DRC findings, four unconnected PCB items, and zero schematic/PCB parity findings. The supplied custom rules are included in this baseline, so the DRC totals are not a comparison under identical rules. See [validation](validation.md) for details. The board image and all seven schematic exports were refreshed.

@@ -8,7 +8,7 @@
 	(property "Reference" "REF**"
 		(at 0 -4.4 0)
 		(layer "F.SilkS")
-		(uuid "692a5df6-d0e8-4d1f-84eb-d0d3d5dd58d2")
+		(uuid "02a7d09e-963a-4f7a-aec3-05d578c4d855")
 		(effects
 			(font
 				(size 1 1)
@@ -20,7 +20,7 @@
 		(at 0 4.4 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "8cabd04b-d8a0-41eb-a290-572df90857ab")
+		(uuid "3796a868-92d3-457b-a5ca-c551af237d37")
 		(effects
 			(font
 				(size 1 1)
@@ -32,7 +32,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "2e994117-0037-4055-8c14-3d9eb65a3acd")
+		(uuid "959827ec-75a6-47b5-bb05-e8c5000cf73e")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -43,7 +43,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "3e65f1c8-c577-4d4b-8472-93a170fffbf8")
+		(uuid "1fcfb5a4-ef35-4b6d-bd29-a37f725ea86b")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -54,7 +54,7 @@
 		(at 0 0 0)
 		(layer "F.SilkS")
 		(hide yes)
-		(uuid "a117cd09-c643-4ac2-ab0f-45f7c59ab92d")
+		(uuid "7c6555ec-57b8-4b2d-9793-3ff43340d7ee")
 		(effects
 			(font
 				(size 1 1)
@@ -79,7 +79,7 @@
 		)
 		(fill yes)
 		(layer "F.Mask")
-		(uuid "55ea84b4-35cf-4b3a-9dd2-2bf493780d61")
+		(uuid "8853517b-5ad9-4163-aad2-0cc6e956bd06")
 	)
 	(fp_poly
 		(pts
@@ -96,7 +96,7 @@
 		)
 		(fill yes)
 		(layer "B.Mask")
-		(uuid "565177ac-8cf0-411b-8995-861778d6d9f3")
+		(uuid "72c34054-e1bb-40a4-9ede-aa463a97cd74")
 	)
 	(fp_poly
 		(pts
@@ -113,7 +113,7 @@
 		)
 		(fill no)
 		(layer "Cmts.User")
-		(uuid "a528cda9-4124-4b4d-a82b-fbc0768c62ad")
+		(uuid "c6608228-4241-49ee-9f99-4168cdee4eb4")
 	)
 	(fp_poly
 		(pts
@@ -130,12 +130,12 @@
 		)
 		(fill no)
 		(layer "F.CrtYd")
-		(uuid "d96365cc-5386-42b7-833e-3f955f18d2b5")
+		(uuid "8caf9835-7c2a-49b6-a3bc-730bafecccf0")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 0 0)
 		(layer "F.Fab")
-		(uuid "f4b2f5bb-d469-4e8c-834c-f668799a0202")
+		(uuid "7c597753-add6-4bd8-adfb-e1f02318b017")
 		(effects
 			(font
 				(size 1 1)
@@ -150,11 +150,11 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(zone_connect 2)
-		(uuid "0be66441-227b-4bbf-b6a1-d82e518e9584")
+		(uuid "47149d92-9c0f-4176-b713-87b1076f1839")
 	)
 	(zone
-		(layers "F.Cu" "B.Cu" "In1.Cu")
-		(uuid "4cb2e027-1d60-418b-b4ab-111474fbc105")
+		(layers "F.Cu" "B.Cu")
+		(uuid "71875cbc-e7c3-47ab-aa5e-ac3875b27a7d")
 		(name "Copper keepout extension")
 		(hatch edge 0.5)
 		(connect_pads

@@ -20,4 +20,6 @@ The supplied fuse symbol now references `Hack_Passives:Fuse_Littelfuse-NANO2-451
 
 Custom embedded 3D models are retained inside the supplied KiCad files. Other models use KiCad's standard `${KICAD10_3DMODEL_DIR}` variable. Install the standard KiCad 10 symbols, footprints, and (for rendering) 3D model packages.
 
+The latest 2026-11-01 update changes `MountingHole_3.2mm_M3_Grounded_Corner`: its copper keepout applies to F.Cu and B.Cu only, allowing the inner ground plane to reach its GND pad. The matching four board footprints are updated in the supplied PCB.
+
 Library filenames and component identifiers are preserved from the supplied archive. An unused misspelled `Hack_Osicllators` registration in the original footprint table was removed; the actual library is `Hack_Oscillators`.
