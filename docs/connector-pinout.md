@@ -1,6 +1,6 @@
 # Connector signal arrangement
 
-The supplied 2026-10-30 schematic and PCB implement the V6 pin arrangement. SPI0 and SPI1 occupy opposite ends of the signal region, with I²C in the center and AUX contacts between the communication groups. UART RX/TX stay together in column 20 on J1 only.
+The supplied 2026-11-01 schematic and PCB implement the V6 pin arrangement. SPI0 and SPI1 occupy opposite ends of the signal region, with I²C in the center and AUX contacts between the communication groups. UART RX/TX stay together in column 20 on J1 only.
 
 ![Exact signal pin assignments on all three connectors](images/connector-signal-plan.png)
 
@@ -41,27 +41,27 @@ AUX10 is a connector-only net with no MCU jumper in the supplied design; its iso
 
 ## Routing status
 
-The tracked PCB is the supplied partial layout: 788 track segments, 193 vias, and 41 unconnected items. The earlier V6 routing study established a possible route for the pin order; the imported board preserves the user’s own routing progress.
+The tracked PCB is the supplied layout: 1,045 track segments, 248 vias, and zero unconnected items. The imported board preserves the user’s routing. KiCad still reports 137 DRC findings requiring review.
 
 The connector pitch is 2.54 mm and signal pad diameter is 1.80 mm, leaving a 0.74 mm gap. One 0.20 mm trace with 0.20 mm clearance on each side fits that local gap. Complete routes still need to satisfy the board’s clearance, return-path, and signal-integrity requirements.
 
 ## Assigning AUX via nets in KiCad
 
-The imported board contains five vias beside the AUX jumper banks that are currently assigned to `GND`. The two top-bank vias have automatic net updates enabled; the three left-bank vias have that option disabled already.
+The five vias documented as `GND` in the October 30 import now carry their respective AUX nets. The November 1 source moves the two top-bank vias and disables automatic net updates on all five. The table shows their current positions and assignments.
 
 | Via position (X, Y), mm | Current net | Automatic net update | Nearby jumper output |
 | --- | --- | --- | --- |
-| 130.00, 139.75 | GND | Enabled | R52 pad 1: `/AUX9` |
-| 131.00, 138.00 | GND | Enabled | R51 pad 1: `/AUX8` |
-| 116.50, 160.50 | GND | Disabled | R44 pad 1: `/AUX1` |
-| 116.50, 162.00 | GND | Disabled | R45 pad 1: `/AUX4` |
-| 116.50, 163.50 | GND | Disabled | R46 pad 1: `/AUX7` |
+| 126.75, 136.50 | `/AUX9` | Disabled | R52 pad 1: `/AUX9` |
+| 128.25, 136.25 | `/AUX8` | Disabled | R51 pad 1: `/AUX8` |
+| 116.50, 160.50 | `/AUX1` | Disabled | R44 pad 1: `/AUX1` |
+| 116.50, 162.00 | `/AUX4` | Disabled | R45 pad 1: `/AUX4` |
+| 116.50, 163.50 | `/AUX7` | Disabled | R46 pad 1: `/AUX7` |
 
-To assign a net manually, select the via, open its properties with **E**, clear **Automatically update via nets**, and select the intended `/AUX…` net. The nearby-jumper column identifies the adjacent signal; the via still needs a trace connecting it to the correct pad.
+To assign a net manually, select the via, open its properties with **E**, clear **Automatically update via nets**, and select the intended `/AUX…` net. A manually assigned net also needs a physical copper connection to the correct pad.
 
 For a new signal via, start routing from the connector-side AUX jumper pad with **X**, then press **V**. The via inherits the routed signal's net. After editing the net or routing, refill zones with **B** and run DRC. A free-standing via placed over a copper zone can initially take that zone's net. See the [KiCad 10 routing and via-property documentation](https://docs.kicad.org/10.0/en/pcbnew/pcbnew.html).
 
-The import preserves these vias as supplied. The routing and via-net assignments remain work in progress.
+The import preserves these vias as supplied. Zero unconnected items does not resolve the remaining design-rule findings.
 
 ## Validation
 

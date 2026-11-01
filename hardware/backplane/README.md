@@ -11,12 +11,12 @@ Open [`HackerfabBackplane.kicad_pro`](HackerfabBackplane.kicad_pro) with KiCad 1
 | `Microcontroller.kicad_sch` | RP2354B, W25Q128JVSIQ flash memory, and supporting circuitry |
 | `USB_Voltage_MUX.kicad_sch` | USB/supply selection using TPS2116DRL |
 | `Protection.kicad_sch` | Input protection with a fuse, DMP6023LE-13 MOSFET, TVS2700DRVR, and BZT52C12 |
-| `HackerfabBackplane.kicad_pcb` | Component placement, board outline, and partial routing |
+| `HackerfabBackplane.kicad_pcb` | Component placement, board outline, and routing |
 | `fp-lib-table`, `sym-lib-table` | Project-local registration of the bundled custom libraries |
 
 Keep this directory and `../libraries/` together when copying the project. Standard KiCad libraries are also required. Standard 3D models are optional for circuit editing but needed for a complete 3D preview.
 
-The 2026-10-30 update contains 144 schematic components and 144 PCB footprints, with 788 track segments and 193 vias. KiCad reports zero schematic/PCB parity findings and 41 unconnected PCB items; routing and design review remain.
+The 2026-11-01 update contains 144 schematic components and 144 PCB footprints, with 1,045 track segments and 248 vias. KiCad reports zero schematic/PCB parity findings and zero unconnected PCB items. The 137 DRC findings still require design-rule cleanup and review.
 
 See the [schematic previews](../../docs/schematics/README.md) and [validation baseline](../../docs/validation.md).
 

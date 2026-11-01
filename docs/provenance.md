@@ -10,7 +10,20 @@ The initial repository import was prepared on 2026-10-21 from:
 
 The report describes early requirements and plans. The supplied KiCad files are the source for the repository's hardware inventory and validation baseline; the report's milestone statuses are not presented as current test results.
 
-## Latest 2026-10-30 source update
+## Latest 2026-11-01 source update
+
+The supplied archives were imported into the existing locations: nine backplane design files and 31 custom-library files. Only `HackerfabBackplane.kicad_pcb` differs from the October 30 import after line-ending normalization. The seven schematic sheets, project settings, and libraries are unchanged. All 40 active source files match the supplied archives after line-ending normalization; the repository retains its portable library tables. No circuit, footprint, or routing edits were made during import.
+
+The PCB now contains 1,045 track segments and 248 vias. KiCad reports zero unconnected items and zero schematic/PCB parity findings. All 288 connector pins still match V6 in the schematic and PCB. The five previously documented GND-assigned AUX vias now carry their respective AUX nets. Refreshed previews and current ERC/DRC results accompany the import; see [validation](validation.md).
+
+| Input | SHA-256 |
+| --- | --- |
+| `Backplane.zip` | `412bdff52870a83ee319ff3d8ce41d47b9beed17b7ab7627fabbfc21fc4bd579` |
+| `LibraryHackerfab.zip` | `db5c3d66d2a99bcd8b0e6b4c48f858e088cf05453cb7b19b771d245ed7039d63` |
+
+The backplane archive includes `.history/` and `.history_trim/` directories with nested Git databases. Both are omitted, along with backup files, personal settings, and editor locks.
+
+## Previous 2026-10-30 source update
 
 The corrected supplied archives were imported: nine backplane design files and 31 custom-library files. The root schematic and PCB implement the V6 pin order, with J1 nearest the MCU and UART only on J1. The libraries are unchanged from the October 29 archive. All 40 active source files match the archives after line-ending normalization; the repository retains its portable library tables. History, backups, personal settings, and lock files are omitted.
 
@@ -68,7 +81,7 @@ The original footprint table used absolute desktop paths. It was replaced with r
 
 ## Omitted local state
 
-- The backplane's `.history/` directory, including its nested Git database and save snapshots.
+- The backplane's `.history/` and `.history_trim/` directories, including their nested Git databases and save snapshots.
 - The personal `.kicad_prl` settings file.
 - Editor `.lck` files.
 - Seven `.bak` library copies. Some differ from current library files; they remain available in the original archive rather than being treated as active source.

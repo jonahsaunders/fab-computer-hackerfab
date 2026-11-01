@@ -4,9 +4,9 @@ A modular control platform for HackerFab equipment: one backplane for power and 
 
 **Status: hardware in development · KiCad 10 · three expansion slots**
 
-![KiCad preview of the FAB Computer backplane](docs/images/backplane-2026-10-30.png)
+![KiCad preview of the FAB Computer backplane](docs/images/backplane-2026-11-01.png)
 
-*Preview of the imported PCB with routing in progress; this is not a manufacturing release.*
+*Preview of the imported PCB; design-rule review remains before a manufacturing release.*
 
 ## The idea
 
@@ -77,7 +77,7 @@ These previews are exported from the current KiCad files. Select a schematic ima
 
 The repository includes the **backplane hardware and its libraries**. Firmware, daughter-board designs, fabrication outputs, and bench-test results were not present in the supplied archives.
 
-The latest supplied archives were imported on **2026-10-30**. The connector assignments match the V6 arrangement: SPI0 in columns 10–12, SPI1 in 21–23, I²C centered in 16–17, and UART only on J1 in column 20. All **288 connector pins** agree between the V6 pin table, schematic, and PCB. J1 is nearest the MCU. The design contains **144 schematic components**, **144 PCB footprints**, **788 track segments**, and **193 vias**. KiCad reports **16 ERC findings**, **134 DRC findings**, **41 unconnected PCB items**, and **zero schematic/PCB parity findings**. Further routing and design review remain; see the [validation notes](docs/validation.md).
+The latest supplied archives were imported on **2026-11-01**. Only the PCB changed; the schematics, project settings, and shared libraries match the previous import. The connector assignments match the V6 arrangement: SPI0 in columns 10–12, SPI1 in 21–23, I²C centered in 16–17, and UART only on J1 in column 20. All **288 connector pins** agree between the V6 pin table, schematic, and PCB. J1 is nearest the MCU. The design contains **144 schematic components**, **144 PCB footprints**, **1,045 track segments**, and **248 vias**. KiCad reports **16 ERC findings**, **137 DRC findings**, **zero unconnected PCB items**, and **zero schematic/PCB parity findings**. Design-rule cleanup and review remain; see the [validation notes](docs/validation.md).
 
 ## Working on the project
 

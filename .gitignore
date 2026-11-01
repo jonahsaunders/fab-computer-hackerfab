@@ -8,6 +8,7 @@ _autosave-*
 ~*.lck
 *.lck
 .history/
+.history_trim/
 fp-info-cache
 
 # Generated checks and manufacturing exports
