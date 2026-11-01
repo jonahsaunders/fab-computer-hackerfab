@@ -19,7 +19,8 @@ def require(condition, message):
 
 
 for name in ("HackerfabBackplane.kicad_pro", "HackerfabBackplane.kicad_sch",
-             "HackerfabBackplane.kicad_pcb", "fp-lib-table", "sym-lib-table"):
+             "HackerfabBackplane.kicad_pcb", "HackerfabBackplane.kicad_dru",
+             "fp-lib-table", "sym-lib-table"):
     require((BOARD / name).is_file(), f"Missing project file: {name}")
 
 symbols = {}
@@ -46,7 +47,7 @@ for kind, extension in (("fp", ".pretty"), ("sym", ".kicad_sym")):
                 f"Missing or external library target: {name}")
 
 design_files = [p for p in (ROOT / "hardware").rglob("*") if p.is_file()
-                and p.suffix in {".kicad_sch", ".kicad_pcb", ".kicad_sym", ".kicad_mod", ".kicad_pro"}]
+                and p.suffix in {".kicad_sch", ".kicad_pcb", ".kicad_sym", ".kicad_mod", ".kicad_pro", ".kicad_dru"}]
 for path in design_files:
     text = path.read_text(encoding="utf-8")
     label = path.relative_to(ROOT).as_posix()

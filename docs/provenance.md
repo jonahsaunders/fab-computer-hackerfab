@@ -12,6 +12,19 @@ The report describes early requirements and plans. The supplied KiCad files are 
 
 ## Latest 2026-11-01 source update
 
+The later supplied archives were imported into the existing locations: ten backplane design files and 31 custom-library files. Compared with the earlier November 1 import, the PCB changes, the project adds net colors for `+1V1` and `+3V3`, and `HackerfabBackplane.kicad_dru` is new. The seven schematic sheets and all shared-library files are unchanged after line-ending normalization. All 41 active source files match the supplied archives after line-ending normalization; the repository retains its portable library tables. No circuit, footprint, routing, or custom-rule edits were made during import.
+
+The board contains 1,052 track segments and 248 vias. All 288 connector pins still match V6 in the schematic and PCB. KiCad 10.0.6 reports 16 ERC findings, 376 DRC findings, four unconnected PCB items, and zero schematic/PCB parity findings. The supplied custom rules are included in this baseline, so the DRC totals are not a comparison under identical rules. See [validation](validation.md) for details. The board image and all seven schematic exports were refreshed.
+
+| Input | SHA-256 |
+| --- | --- |
+| `Backplane.zip` | `d4eb044add0e31c59cb20894d9fb2f55f8f1f48e223b21bb211d692d945192b0` |
+| `LibraryHackerfab.zip` | `db5c3d66d2a99bcd8b0e6b4c48f858e088cf05453cb7b19b771d245ed7039d63` |
+
+The custom-rule header labels the supplied file as a JLCPCB 4-layer, 1 oz outer / 0.5 oz inner variant. Its references to a generator, capabilities file, and variants describe its original source; those supporting files were not included in the archives. The rule file is preserved as supplied, without independently certifying fabrication capabilities. Local history, nested Git databases, backups, personal settings, and editor locks are omitted.
+
+## Earlier 2026-11-01 source update
+
 The supplied archives were imported into the existing locations: nine backplane design files and 31 custom-library files. Only `HackerfabBackplane.kicad_pcb` differs from the October 30 import after line-ending normalization. The seven schematic sheets, project settings, and libraries are unchanged. All 40 active source files match the supplied archives after line-ending normalization; the repository retains its portable library tables. No circuit, footprint, or routing edits were made during import.
 
 The PCB now contains 1,045 track segments and 248 vias. KiCad reports zero unconnected items and zero schematic/PCB parity findings. All 288 connector pins still match V6 in the schematic and PCB. The five previously documented GND-assigned AUX vias now carry their respective AUX nets. Refreshed previews and current ERC/DRC results accompany the import; see [validation](validation.md).

@@ -41,7 +41,7 @@ AUX10 is a connector-only net with no MCU jumper in the supplied design; its iso
 
 ## Routing status
 
-The tracked PCB is the supplied layout: 1,045 track segments, 248 vias, and zero unconnected items. The imported board preserves the user’s routing. KiCad still reports 137 DRC findings requiring review.
+The tracked PCB is the supplied layout: 1,052 track segments, 248 vias, and four unconnected items. The imported board preserves the user’s routing. KiCad reports 376 DRC findings with the supplied custom rules; see the [validation baseline](validation.md) for the breakdown.
 
 The connector pitch is 2.54 mm and signal pad diameter is 1.80 mm, leaving a 0.74 mm gap. One 0.20 mm trace with 0.20 mm clearance on each side fits that local gap. Complete routes still need to satisfy the board’s clearance, return-path, and signal-integrity requirements.
 
@@ -61,7 +61,7 @@ To assign a net manually, select the via, open its properties with **E**, clear 
 
 For a new signal via, start routing from the connector-side AUX jumper pad with **X**, then press **V**. The via inherits the routed signal's net. After editing the net or routing, refill zones with **B** and run DRC. A free-standing via placed over a copper zone can initially take that zone's net. See the [KiCad 10 routing and via-property documentation](https://docs.kicad.org/10.0/en/pcbnew/pcbnew.html).
 
-The import preserves these vias as supplied. Zero unconnected items does not resolve the remaining design-rule findings.
+The import preserves these vias as supplied. The four reported unconnected items involve GND; remaining connectivity and design-rule findings require review.
 
 ## Validation
 
