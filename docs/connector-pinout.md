@@ -41,7 +41,7 @@ AUX10 is a connector-only net with no MCU jumper in the supplied design; its iso
 
 ## Routing status
 
-The tracked PCB is the supplied layout: 1,063 track segments, 248 vias, and zero unconnected items. The imported board preserves the user’s routing. KiCad reports 368 DRC findings with the supplied custom rules; see the [validation baseline](validation.md) and [thermal-relief investigation](thermal-relief.md).
+The tracked PCB is the supplied layout: 1,062 track segments, 265 vias, and zero unconnected items. The imported board preserves the user’s routing. KiCad reports 347 DRC warnings and zero DRC errors with the supplied custom rules; see the [validation baseline](validation.md). The [thermal-relief investigation](thermal-relief.md) documents the earlier November 1 source.
 
 The connector pitch is 2.54 mm and signal pad diameter is 1.80 mm, leaving a 0.74 mm gap. One 0.20 mm trace with 0.20 mm clearance on each side fits that local gap. Complete routes still need to satisfy the board’s clearance, return-path, and signal-integrity requirements.
 

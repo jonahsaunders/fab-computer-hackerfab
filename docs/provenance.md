@@ -10,7 +10,20 @@ The initial repository import was prepared on 2026-10-21 from:
 
 The report describes early requirements and plans. The supplied KiCad files are the source for the repository's hardware inventory and validation baseline; the report's milestone statuses are not presented as current test results.
 
-## Latest 2026-11-02 source update
+## Latest 2026-11-02 source update (routing and vias)
+
+The later supplied archives were imported into the existing locations: ten backplane design/rule files and 31 custom-library files. Only the PCB and project settings differ from the earlier November 2 import after line-ending normalization. The PCB updates routing, vias, copper geometry, and three silkscreen reference positions. The project changes its default pad connection from thermal relief on through-hole pads to thermal relief on all pads, and its default thermal gap from 0.40 mm to 0.20 mm. The seven schematics, custom rules, and all shared libraries are unchanged. The library ZIP is byte-for-byte identical to the previous library archive.
+
+All 41 active design/library/rule files match the supplied archives after line-ending normalization, including after validation and export. The repository retains its portable project library tables. No circuit, footprint, routing, or rule edits were made during import. Local history, nested Git databases, backups, personal settings, and locks are omitted.
+
+The supplied board has 1,062 track segments and 265 vias. KiCad 10.0.6 reports 16 ERC findings, 347 DRC warnings with zero errors, zero unconnected items, and zero schematic/PCB parity findings. The four dangling-via warnings and one silkscreen-overlap warning from the earlier November 2 import are no longer reported. All 288 connector contacts match V6 and the schematic netlist. The board image, seven schematic previews, and validation notes are refreshed. The earlier thermal-relief investigation is retained as a dated historical record.
+
+| Input | SHA-256 |
+| --- | --- |
+| `Backplane.zip` | `803252028f3126698d68c80218893741e45e915588151332f2037253920d83d4` |
+| `LibraryHackerfab.zip` | `22608c5caa803a6a3686a7baa2d7d8bc543e443ffc02595fb5ca283fdfc0c1fa` |
+
+## Earlier 2026-11-02 source update (mounting holes and copper)
 
 The supplied archives were imported into the existing locations: ten backplane design/rule files and 31 custom-library files. Only the PCB and project settings differ from the previous import after line-ending normalization. The PCB updates mounting-hole positions, copper geometry, and routing; the project changes its default pad connection to thermal relief for through-hole pads and its default thermal gap from 0.50 mm to 0.40 mm. The seven schematics, custom rules, and all shared libraries are unchanged. The library ZIP is byte-for-byte identical to the previous library archive.
 
