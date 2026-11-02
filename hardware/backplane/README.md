@@ -8,7 +8,7 @@ Open [`HackerfabBackplane.kicad_pro`](HackerfabBackplane.kicad_pro) with KiCad 1
 | `12V_Buck.kicad_sch` | 12 V supply using TPS5450DDAR |
 | `5V_Buck.kicad_sch` | 5 V supply using TPS5450DDAR |
 | `3V3_LDO.kicad_sch` | 3.3 V supply using AP2112K-3.3TRG1 |
-| `Microcontroller.kicad_sch` | RP2354B, W25Q128JVSIQ flash memory, and supporting circuitry |
+| `Microcontroller.kicad_sch` | RP2350B, W25Q128JVSIQ flash memory, and supporting circuitry |
 | `USB_Voltage_MUX.kicad_sch` | USB/supply selection using TPS2116DRL |
 | `Protection.kicad_sch` | Input protection with a fuse, DMP6023LE-13 MOSFET, TVS2700DRVR, and BZT52C12 |
 | `HackerfabBackplane.kicad_pcb` | Component placement, board outline, and routing |
@@ -17,7 +17,7 @@ Open [`HackerfabBackplane.kicad_pro`](HackerfabBackplane.kicad_pro) with KiCad 1
 
 Keep this directory and `../libraries/` together when copying the project. Standard KiCad libraries are also required. Standard 3D models are optional for circuit editing but needed for a complete 3D preview.
 
-The latest 2026-11-02 update contains 144 schematic components and 144 PCB footprints, with 1,062 track segments and 265 vias. KiCad reports zero schematic/PCB parity findings, zero unconnected PCB items, and 347 DRC warnings with zero errors under the supplied custom rules. The four dangling-via warnings and one silkscreen-overlap warning from the earlier November 2 import are no longer reported. Thermal-relief and copper-edge-clearance errors remain at zero. The [thermal-relief diagnosis](../../docs/thermal-relief.md) documents the earlier November 1 source.
+The latest 2026-11-02 update changes U5 to RP2350B, adds C42 (4.7 µF, 16 V) and R55 (33 Ω), and marks both buck-regulator enable pins as no-connects in the supplied schematics. The design contains 146 schematic components and 146 PCB footprints, with 1,073 track segments and 263 vias. KiCad reports 15 ERC findings, zero schematic/PCB parity findings, zero unconnected PCB items, and 350 DRC warnings with zero DRC errors under the supplied custom rules. Thermal-relief and copper-edge-clearance errors remain at zero. The [thermal-relief diagnosis](../../docs/thermal-relief.md) documents the earlier November 1 source.
 
 See the [schematic previews](../../docs/schematics/README.md) and [validation baseline](../../docs/validation.md).
 

@@ -9,7 +9,7 @@ This is the design intent described in the progress report. The repository curre
 ```mermaid
 flowchart LR
     Supply["24 V DC input"] --> Power["Power conversion<br/>12 V · 5 V · 3.3 V"]
-    Power --> MCU["RP2354B controller"]
+    Power --> MCU["RP2350B controller"]
     Supply --> Slots["Three DIN 41612 slots<br/>96 pins per connector"]
     Power --> Slots
     MCU <-->|"I²C · SPI · UART · GPIO"| Slots
@@ -24,7 +24,7 @@ The diagram is a functional overview, not a wiring diagram. Use the KiCad schema
 
 | Block | Present in the supplied design |
 | --- | --- |
-| Controller | RP2354B (`U5`) with W25Q128JVSIQ flash memory (`U7`), supporting crystal, decoupling, and debug signals |
+| Controller | RP2350B (`U5`) with W25Q128JVSIQ flash memory (`U7`), supporting crystal, decoupling, and debug signals |
 | Expansion | Three DIN 41612 connectors (`J1`–`J3`, `9001-12961C00A`) |
 | 12 V and 5 V rails | Two TPS5450DDAR regulators (`U1`, `U2`) |
 | 3.3 V rail | AP2112K-3.3TRG1 (`U3`) |
@@ -47,7 +47,7 @@ RS-485, RS-232, and 0–10 V analog interfaces are system requirements intended 
 
 - Complete schematic connectivity and resolve ERC findings.
 - Review the connector pinout, component symbols, and footprints.
-- Review the updated 144-footprint PCB and 144-component schematic; KiCad reports zero parity findings.
+- Review the updated 146-footprint PCB and 146-component schematic; KiCad reports zero parity findings.
 - Finish placement, routing, and design review.
 - Prepare manufacturing outputs from a reviewed revision.
 - Add daughter-board and firmware sources, then record bench validation.

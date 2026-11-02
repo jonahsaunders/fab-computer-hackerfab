@@ -5,7 +5,162 @@
 	(uuid "ecd45dc7-abc5-4c4f-a093-6f04641260fe")
 	(paper "A3")
 	(lib_symbols
-		(symbol "Hack_Chips:RP2354B"
+		(symbol "GRT188C80J475ME01D_1"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "4u7 6V3"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "4.7 µF ±20% 6.3V Ceramic Capacitor X6S 0603 (1608 Metric)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GRT188C80J475ME01D_1_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GRT188C80J475ME01D_1_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Hack_Chips:RP2350B"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -22,7 +177,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "RP2354B"
+			(property "Value" "RP2350B"
 				(at -21.59 89.916 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -99,7 +254,7 @@
 					)
 				)
 			)
-			(symbol "RP2354B_1_0"
+			(symbol "RP2350B_1_0"
 				(pin power_in line
 					(at -25.4 48.26 0)
 					(length 3.81)
@@ -587,7 +742,7 @@
 					)
 				)
 			)
-			(symbol "RP2354B_1_1"
+			(symbol "RP2350B_1_1"
 				(rectangle
 					(start -21.59 88.9)
 					(end 21.59 -53.34)
@@ -3763,6 +3918,161 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Hack_Passives:CL05A475MO5NUNC"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "4u7 16V"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "4.7 µF ±20% 16V Ceramic Capacitor X5R 0402 (1005 Metric)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "CL05A475MO5NUNC_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "CL05A475MO5NUNC_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Hack_Passives:CL31A106KBHNNNE"
 			(pin_numbers
 				(hide yes)
@@ -4180,161 +4490,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Hack_Passives:GRT188C80J475ME01D"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "4uF 6V3"
-				(at 0.635 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-				(at 0.9652 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "4.7 µF ±20% 6.3V Ceramic Capacitor X6S 0603 (1608 Metric)"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "GRT188C80J475ME01D_0_1"
-				(polyline
-					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "GRT188C80J475ME01D_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Hack_Passives:RC0402FR-0727RL"
 			(pin_numbers
 				(hide yes)
@@ -4485,6 +4640,195 @@
 				)
 			)
 			(symbol "RC0402FR-0727RL_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Hack_Passives:RC0402JR-0733RP"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "33R"
+				(at -2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+				(at 1.016 -0.254 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "33 Ohms ±5% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Thick Film"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "RC0402JR-0733RP_0_1"
+				(polyline
+					(pts
+						(xy 0 2.286) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.762) (xy 1.016 0.381) (xy 0 0) (xy -1.016 -0.381) (xy 0 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.286) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "RC0402JR-0733RP_1_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 1.27)
@@ -5558,6 +5902,12 @@
 		(uuid "45d44d06-f211-44fa-bb80-8aaf4f5178e4")
 	)
 	(junction
+		(at 231.14 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "46a34540-e42c-4783-b5e5-d2ffd2be5fc1")
+	)
+	(junction
 		(at 236.22 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5586,6 +5936,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7613cea6-8411-4f41-88b5-21f592f18e5b")
+	)
+	(junction
+		(at 234.95 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7f51448c-273b-4d34-98f6-0aae03665de5")
 	)
 	(junction
 		(at 241.3 71.12)
@@ -5813,6 +6169,16 @@
 	)
 	(wire
 		(pts
+			(xy 231.14 74.93) (xy 231.14 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03f5289c-effe-49b6-812d-9a285f2a8be3")
+	)
+	(wire
+		(pts
 			(xy 219.71 167.64) (xy 219.71 180.34)
 		)
 		(stroke
@@ -5883,7 +6249,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 53.34) (xy 241.3 53.34)
+			(xy 218.44 53.34) (xy 234.95 53.34)
 		)
 		(stroke
 			(width 0)
@@ -6033,6 +6399,16 @@
 	)
 	(wire
 		(pts
+			(xy 231.14 62.23) (xy 234.95 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21b04333-9963-4d7d-8bd6-0d0efc498ab3")
+	)
+	(wire
+		(pts
 			(xy 294.64 138.43) (xy 303.53 138.43)
 		)
 		(stroke
@@ -6173,6 +6549,26 @@
 	)
 	(wire
 		(pts
+			(xy 231.14 77.47) (xy 231.14 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3231acea-0005-483f-b4bb-bba4c0b9daa1")
+	)
+	(wire
+		(pts
+			(xy 238.76 82.55) (xy 238.76 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35d79f2f-efb3-45f1-87d1-7fe975bc282e")
+	)
+	(wire
+		(pts
 			(xy 102.87 62.23) (xy 102.87 64.77)
 		)
 		(stroke
@@ -6220,6 +6616,16 @@
 			(type default)
 		)
 		(uuid "39733947-f3d5-4d83-a314-703358ba134d")
+	)
+	(wire
+		(pts
+			(xy 238.76 77.47) (xy 231.14 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39893815-6b75-464a-a5d3-458d527717df")
 	)
 	(wire
 		(pts
@@ -7083,6 +7489,16 @@
 	)
 	(wire
 		(pts
+			(xy 231.14 67.31) (xy 231.14 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9eb90d25-60c2-4111-9c21-52c9853dadc0")
+	)
+	(wire
+		(pts
 			(xy 185.42 54.61) (xy 185.42 53.34)
 		)
 		(stroke
@@ -7250,6 +7666,16 @@
 			(type default)
 		)
 		(uuid "b1445e4b-a1b9-40bd-b786-23155a0333e6")
+	)
+	(wire
+		(pts
+			(xy 234.95 53.34) (xy 234.95 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1c23c57-8df3-4307-b69f-ff3b19ee547c")
 	)
 	(wire
 		(pts
@@ -7560,6 +7986,26 @@
 			(type default)
 		)
 		(uuid "dc2315ab-a2e2-4449-8036-a4a818f6f6ad")
+	)
+	(wire
+		(pts
+			(xy 243.84 82.55) (xy 238.76 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc8ee94b-4eb7-458c-8e2e-263959317086")
+	)
+	(wire
+		(pts
+			(xy 234.95 53.34) (xy 241.3 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dce746d6-b6e1-40b5-afc8-6bf6722c4410")
 	)
 	(wire
 		(pts
@@ -8374,6 +8820,334 @@
 		(uuid "f719237e-19f2-4372-80d8-4048d63272d3")
 	)
 	(symbol
+		(lib_id "Hack_Chips:RP2350B")
+		(at 269.24 139.7 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "02871fd8-1227-4011-9a0b-76d3c3b007b4")
+		(property "Reference" "U5"
+			(at 269.24 45.72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RP2350B"
+			(at 269.24 48.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Hack_Chips:QFN-80-1EP_10x10mm_P0.4mm_EP3.4x3.4mm"
+			(at 269.24 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheets.raspberrypi.com/rp2350/rp2350-datasheet.pdf"
+			(at 269.24 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "A microcontroller by Raspberry Pi, dual CPU architecture (ARM Cortex-M33 / RISC-V Hazard3), 150MHz, 2MB flash, 520KB SRAM, 12 PIO state machines, VQFN-80"
+			(at 269.24 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property private "KLC_S4.2_VREG_LX" "Should be placed next to DVDD."
+			(at 269.24 146.05 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "60"
+			(uuid "433fe283-8fb1-4817-9e4e-dd3659eddd57")
+		)
+		(pin "47"
+			(uuid "acf97a3f-4b04-4f53-91e3-2ba10559df9b")
+		)
+		(pin "45"
+			(uuid "4a2b6265-2262-4d3d-9051-55d8297029b3")
+		)
+		(pin "68"
+			(uuid "a5377adb-e1bc-4c3a-9421-8d8458a02805")
+		)
+		(pin "38"
+			(uuid "2e5909fb-6dbb-44f0-98e9-1c02813c19d3")
+		)
+		(pin "49"
+			(uuid "fe3a0054-2c49-43e8-a223-252aceeea61f")
+		)
+		(pin "10"
+			(uuid "620b6d00-66c1-4194-b5cb-2ecd24407b65")
+		)
+		(pin "62"
+			(uuid "94f42aa7-71bc-4eb5-803d-188762d1886c")
+		)
+		(pin "56"
+			(uuid "3ec45f77-f3c1-4043-b6b6-2b097c917c0d")
+		)
+		(pin "58"
+			(uuid "d0231404-7728-4df2-b457-546fb180dda6")
+		)
+		(pin "52"
+			(uuid "3d7b1665-3660-4d22-ae30-b34858a034d0")
+		)
+		(pin "42"
+			(uuid "e7215839-3404-4bbf-97af-c7a27a14d310")
+		)
+		(pin "53"
+			(uuid "43012488-e8d2-4721-aefb-92392031b0db")
+		)
+		(pin "46"
+			(uuid "8bcad134-9a47-4e61-aa1b-676f5e5bebbc")
+		)
+		(pin "39"
+			(uuid "a2cdb7bc-5de7-427a-a376-c0e205bcf844")
+		)
+		(pin "54"
+			(uuid "f6ac3ab9-6eb7-4980-b409-4b5445bda158")
+		)
+		(pin "55"
+			(uuid "82f8ce93-a8f8-49d8-aafc-e72078a85da0")
+		)
+		(pin "43"
+			(uuid "9b87355a-c566-4053-b0f6-e21939d15435")
+		)
+		(pin "69"
+			(uuid "80373d6a-29a8-462f-b17a-5050e636b76d")
+		)
+		(pin "44"
+			(uuid "cba748ea-1211-4f49-b8e0-5c6f83fac164")
+		)
+		(pin "50"
+			(uuid "fec2c364-42df-4e2a-9a38-39ce6ada489a")
+		)
+		(pin "57"
+			(uuid "6c0d47ab-a8d6-4aa0-9939-26a44fdf96dc")
+		)
+		(pin "61"
+			(uuid "764a69c2-386e-474b-acbc-e0bf50e71a7c")
+		)
+		(pin "48"
+			(uuid "6d67ab39-5d08-4a64-ba0c-83702fca8bf7")
+		)
+		(pin "40"
+			(uuid "93e4ad62-4f1a-48d8-8005-a50b562541f8")
+		)
+		(pin "51"
+			(uuid "196b1dff-dc0f-4786-9f60-5cbfd9abadf9")
+		)
+		(pin "13"
+			(uuid "972fe033-e7d1-4ef3-9c28-174b8d86f500")
+		)
+		(pin "19"
+			(uuid "e92c47c5-ebbe-4831-8031-5c9019217d64")
+		)
+		(pin "76"
+			(uuid "6b5fe2e7-2d5c-4de3-ae2b-995cd0f1359e")
+		)
+		(pin "25"
+			(uuid "17cd4b93-d6f0-47a8-8470-13ada5566739")
+		)
+		(pin "28"
+			(uuid "660f559b-dd35-451d-b0cf-8c43abf57fae")
+		)
+		(pin "21"
+			(uuid "766db3b9-88d9-4a04-9c53-f14efa3d548a")
+		)
+		(pin "23"
+			(uuid "e4a1f90a-e21c-4dad-aeac-c22fd8c4d5c3")
+		)
+		(pin "18"
+			(uuid "8817b97b-2888-48f0-a490-cf7851fa4265")
+		)
+		(pin "29"
+			(uuid "fe8f8f15-c560-468c-a1a3-43d05480fbfb")
+		)
+		(pin "16"
+			(uuid "5a2481c7-110f-40d1-b00b-b8d3fadf2e1a")
+		)
+		(pin "9"
+			(uuid "a6782435-d364-4a1f-8a78-b55da51a042e")
+		)
+		(pin "26"
+			(uuid "7e99e485-944b-4a06-9178-f2268c043d35")
+		)
+		(pin "3"
+			(uuid "b5170b7f-26e1-4aa0-a35c-88f998edc3f9")
+		)
+		(pin "17"
+			(uuid "18842a5d-5c69-4522-9c85-2aa9350c5572")
+		)
+		(pin "24"
+			(uuid "9d904e3c-2f26-4bf7-be56-deb7364ba6a4")
+		)
+		(pin "8"
+			(uuid "e5df1b7c-bbe1-4c18-af92-cfd687c7ed9b")
+		)
+		(pin "2"
+			(uuid "3a1f5aa1-fa29-4c14-a6a8-39ecf41295a8")
+		)
+		(pin "15"
+			(uuid "b51dc0dd-ebbf-4d68-a53f-ecff4f70f053")
+		)
+		(pin "20"
+			(uuid "146112a9-e800-481f-bc1a-0b52e409ed98")
+		)
+		(pin "22"
+			(uuid "8a64acf8-639c-4773-9f36-695c43f7a70a")
+		)
+		(pin "14"
+			(uuid "a4a37288-afe7-4dc0-a77f-c723ca3e609d")
+		)
+		(pin "5"
+			(uuid "90817b43-7307-4df8-89cc-392c4b6db37f")
+		)
+		(pin "7"
+			(uuid "9d193a20-4d04-4e82-81eb-01faa9b106d2")
+		)
+		(pin "1"
+			(uuid "76868bf7-847d-479a-b873-9cf86ab30f2d")
+		)
+		(pin "27"
+			(uuid "870c52a9-3b59-4c33-8271-ea38c43b10ad")
+		)
+		(pin "11"
+			(uuid "b079f481-7e7b-4153-9004-0b20b8ca1a90")
+		)
+		(pin "6"
+			(uuid "a1af2edb-9fad-4bbe-a3fc-6313c18a25e7")
+		)
+		(pin "12"
+			(uuid "248c81b7-878d-41c6-bbb7-309545c39312")
+		)
+		(pin "4"
+			(uuid "0a9087ca-43b4-43b1-9e59-494e06b3a6b8")
+		)
+		(pin "30"
+			(uuid "69396b0a-3ad3-4112-9e1e-f3b999de6060")
+		)
+		(pin "34"
+			(uuid "91f56673-1cb1-4d66-be7a-61d8bfc979e7")
+		)
+		(pin "63"
+			(uuid "7def604f-563f-4662-bdac-7ff9290787f3")
+		)
+		(pin "64"
+			(uuid "e7cf80af-78bc-4a84-a35a-b6a2ed90a6a5")
+		)
+		(pin "31"
+			(uuid "e321e325-90df-4bc4-b027-4b9f7b193836")
+		)
+		(pin "36"
+			(uuid "da8f12e2-f874-4da4-81bf-6358d65d3092")
+		)
+		(pin "35"
+			(uuid "22e26e12-09d7-4d34-b19c-c0b41996cc98")
+		)
+		(pin "37"
+			(uuid "3bcc1b70-4e68-4b44-8e29-38eb9bc86603")
+		)
+		(pin "66"
+			(uuid "6f6d0769-3218-48bb-ba25-ce3fe767c57e")
+		)
+		(pin "33"
+			(uuid "961ed18c-44ed-4dbc-b321-b354b8d0da5f")
+		)
+		(pin "32"
+			(uuid "99989cce-0503-41bf-938c-ec0672f4cb91")
+		)
+		(pin "59"
+			(uuid "68408062-0ce5-49af-b4d1-fe80821d64b4")
+		)
+		(pin "65"
+			(uuid "8fba6997-d493-4966-be68-023d51d6576c")
+		)
+		(pin "41"
+			(uuid "e282beee-21fc-4c4c-ab3b-7ef294d7e856")
+		)
+		(pin "71"
+			(uuid "5749c41b-2965-42c7-b497-5fe9da8081bf")
+		)
+		(pin "73"
+			(uuid "a52ba930-df36-45f8-a551-af850c903f07")
+		)
+		(pin "72"
+			(uuid "1395e04b-6cf6-442b-a70f-e902be822795")
+		)
+		(pin "67"
+			(uuid "c9170760-9aa3-4db5-b4ab-a4d2834b968d")
+		)
+		(pin "70"
+			(uuid "f08f9d89-924f-464e-bd56-5f6ea20998e7")
+		)
+		(pin "81"
+			(uuid "418c11d7-2359-48ab-880a-1846437c1eab")
+		)
+		(pin "78"
+			(uuid "5e93c64c-b974-45d2-9741-350cb292800b")
+		)
+		(pin "75"
+			(uuid "8a9da274-c800-46a0-bab3-36886978a564")
+		)
+		(pin "77"
+			(uuid "a2a11a4b-5744-4213-838b-740539b4bb21")
+		)
+		(pin "80"
+			(uuid "1a726732-2ae0-47dc-81ec-259295a68207")
+		)
+		(pin "74"
+			(uuid "b125529d-5bfd-46d7-b203-8989b7c34a64")
+		)
+		(pin "79"
+			(uuid "d90ea462-6a9e-4b05-9613-3d7eba635f58")
+		)
+		(instances
+			(project "HackerfabBackplane"
+				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d/905380e0-3eaa-45fe-b654-1e2b12266968"
+					(reference "U5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Hack_Passives:AA0402JR-070RL")
 		(at 307.34 133.35 270)
 		(unit 1)
@@ -8610,6 +9384,87 @@
 		)
 	)
 	(symbol
+		(lib_id "Hack_Passives:CL05A475MO5NUNC")
+		(at 231.14 83.82 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "095210d5-fda2-4518-b1ac-112634af427f")
+		(property "Reference" "C42"
+			(at 234.696 84.582 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4u7 16V"
+			(at 233.172 87.122 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 232.1052 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 231.14 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "4.7 µF ±20% 16V Ceramic Capacitor X5R 0402 (1005 Metric)"
+			(at 231.14 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "960d9260-f877-40f4-b2d4-805f6b35f5c1")
+		)
+		(pin "1"
+			(uuid "63bfa626-a547-490d-bb17-ce7aa2f3b787")
+		)
+		(instances
+			(project "HackerfabBackplane"
+				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d/905380e0-3eaa-45fe-b654-1e2b12266968"
+					(reference "C42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Hack_Passives:0402B104K500HI")
 		(at 102.87 58.42 0)
 		(unit 1)
@@ -8771,6 +9626,89 @@
 		)
 	)
 	(symbol
+		(lib_name "GRT188C80J475ME01D_1")
+		(lib_id "Hack_Passives:GRT188C80J475ME01D")
+		(at 205.74 115.57 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0dd176cf-613e-4a3b-84ab-4f80bb333ec4")
+		(property "Reference" "C32"
+			(at 209.55 114.2999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4u7 6V3"
+			(at 209.55 116.8399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 206.7052 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 205.74 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "4.7 µF ±20% 6.3V Ceramic Capacitor X6S 0603 (1608 Metric)"
+			(at 205.74 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "4e9750ce-aa33-41ab-8a5e-687692cd771c")
+		)
+		(pin "1"
+			(uuid "c8ba135a-1fab-4639-a964-1b8236dac129")
+		)
+		(instances
+			(project "HackerfabBackplane"
+				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d/905380e0-3eaa-45fe-b654-1e2b12266968"
+					(reference "C32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Hack_Passives:0402B104K500HI")
 		(at 185.42 58.42 0)
 		(unit 1)
@@ -8925,88 +9863,6 @@
 			(project "HackerfabBackplane"
 				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d/905380e0-3eaa-45fe-b654-1e2b12266968"
 					(reference "#PWR076")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Hack_Passives:GRT188C80J475ME01D")
-		(at 205.74 115.57 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1193afee-25ec-4fcb-8886-a2f97e4e0852")
-		(property "Reference" "C32"
-			(at 209.55 114.2999 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "4uF 6V3"
-			(at 209.55 116.8399 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 206.7052 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 205.74 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "4.7 µF ±20% 6.3V Ceramic Capacitor X6S 0603 (1608 Metric)"
-			(at 205.74 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8b3523e3-1834-4a52-b89b-c2d3b77524c0")
-		)
-		(pin "2"
-			(uuid "d883f764-b82f-498f-bcf0-78e82f3cc545")
-		)
-		(instances
-			(project "HackerfabBackplane"
-				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d/905380e0-3eaa-45fe-b654-1e2b12266968"
-					(reference "C32")
 					(unit 1)
 				)
 			)
@@ -10874,6 +11730,84 @@
 			(project "HackerfabBackplane"
 				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d/905380e0-3eaa-45fe-b654-1e2b12266968"
 					(reference "C23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 231.14 87.63 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5f44d042-a47c-45ac-a238-f61166ea0be1")
+		(property "Reference" "#PWR0145"
+			(at 231.14 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 231.14 92.71 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 231.14 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 231.14 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 231.14 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0f44f3d7-3d97-47a8-b510-ffc487e5aa90")
+		)
+		(instances
+			(project "HackerfabBackplane"
+				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d/905380e0-3eaa-45fe-b654-1e2b12266968"
+					(reference "#PWR0145")
 					(unit 1)
 				)
 			)
@@ -12996,6 +13930,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Hack_Passives:RC0402JR-0733RP")
+		(at 231.14 71.12 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8ad501ea-f7df-4e4c-90fa-bc51f4063085")
+		(property "Reference" "R55"
+			(at 233.68 69.8499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "33R"
+			(at 233.68 72.3899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 232.156 71.374 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 231.14 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "33 Ohms ±5% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Thick Film"
+			(at 231.14 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7e4f9dee-1274-43d8-a560-72de9f0637ea")
+		)
+		(pin "2"
+			(uuid "c8fa0fdd-1227-4eb6-9196-eb3a3a2fb5e6")
+		)
+		(instances
+			(project "HackerfabBackplane"
+				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d/905380e0-3eaa-45fe-b654-1e2b12266968"
+					(reference "R55")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Hack_Passives:AA0402JR-070RL")
 		(at 307.34 100.33 270)
 		(unit 1)
@@ -14111,6 +15127,88 @@
 		)
 	)
 	(symbol
+		(lib_name "GRT188C80J475ME01D_1")
+		(lib_id "Hack_Passives:GRT188C80J475ME01D")
+		(at 222.25 110.49 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b8a53705-6aea-42ab-bd8e-920538982c7c")
+		(property "Reference" "C36"
+			(at 226.06 109.2199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4u7 6V3"
+			(at 225.044 111.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 223.2152 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 222.25 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "4.7 µF ±20% 6.3V Ceramic Capacitor X6S 0603 (1608 Metric)"
+			(at 222.25 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "8bcd2299-342b-48d9-af0a-0ca393d6a6fb")
+		)
+		(pin "1"
+			(uuid "0194ac57-afc1-487c-a562-48a1472fd6ea")
+		)
+		(instances
+			(project "HackerfabBackplane"
+				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d/905380e0-3eaa-45fe-b654-1e2b12266968"
+					(reference "C36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Hack_Passives:0402B104K500HI")
 		(at 152.4 58.42 0)
 		(unit 1)
@@ -14265,333 +15363,6 @@
 			(project "HackerfabBackplane"
 				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d/905380e0-3eaa-45fe-b654-1e2b12266968"
 					(reference "#PWR097")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Hack_Chips:RP2354B")
-		(at 269.24 139.7 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "bfbaa9e0-0e4f-45b2-824c-7a8b0165320a")
-		(property "Reference" "U5"
-			(at 248.92 47.498 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "RP2354B"
-			(at 251.968 49.276 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Hack_Chips:QFN-80-1EP_10x10mm_P0.4mm_EP3.4x3.4mm"
-			(at 269.24 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://datasheets.raspberrypi.com/rp2350/rp2350-datasheet.pdf"
-			(at 269.24 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "A microcontroller by Raspberry Pi, dual CPU architecture (ARM Cortex-M33 / RISC-V Hazard3), 150MHz, 2MB flash, 520KB SRAM, 12 PIO state machines, VQFN-80"
-			(at 269.24 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property private "KLC_S4.2_VREG_LX" "Should be placed next to DVDD."
-			(at 269.24 154.94 0)
-			(hide yes)
-			(show_name yes)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "38"
-			(uuid "7d8226d7-195c-4eb6-8055-4fc3f786ac65")
-		)
-		(pin "39"
-			(uuid "b74bb3bd-da68-4792-bbba-ccee7e394ce2")
-		)
-		(pin "42"
-			(uuid "68b1508b-975b-4132-8007-50e60869023f")
-		)
-		(pin "10"
-			(uuid "547461f8-073e-4efe-9795-0519132bbbb1")
-		)
-		(pin "40"
-			(uuid "4a30a187-6a00-460d-ad6e-e14206c6ec37")
-		)
-		(pin "55"
-			(uuid "533595a8-dbc2-4b06-8583-45d12e4284d1")
-		)
-		(pin "50"
-			(uuid "c562905a-678a-48bd-bb40-ed76d1f4ed35")
-		)
-		(pin "57"
-			(uuid "242efd28-3bb5-493d-b0c1-0dc4a641ee4c")
-		)
-		(pin "58"
-			(uuid "822f3d58-b28e-453c-a931-bc6cd7348a06")
-		)
-		(pin "51"
-			(uuid "23a0f3ea-e4f2-4b56-94db-0c60c99ac5a3")
-		)
-		(pin "44"
-			(uuid "499913cd-6ded-4800-a3b5-82bc02fc9879")
-		)
-		(pin "76"
-			(uuid "a55e2921-0547-42f0-a146-4cbd1893227d")
-		)
-		(pin "48"
-			(uuid "5c47271a-7e5a-43bf-9285-67689ca0d87e")
-		)
-		(pin "49"
-			(uuid "5b18f534-a169-4dda-a5f6-fcb9ed3b50dd")
-		)
-		(pin "45"
-			(uuid "e9a13252-16ce-40c1-8d99-2d00d7bf2e70")
-		)
-		(pin "69"
-			(uuid "04a47900-c845-456b-a3b6-8ac539765c63")
-		)
-		(pin "56"
-			(uuid "09b087a6-3983-461d-b758-0472f6ea2a38")
-		)
-		(pin "61"
-			(uuid "6b3e201c-1761-4194-aa41-df38122776be")
-		)
-		(pin "2"
-			(uuid "fe940799-0368-488e-a80a-d4fc26346bb8")
-		)
-		(pin "53"
-			(uuid "e2f6acce-3a85-411a-906d-be04ac220d75")
-		)
-		(pin "47"
-			(uuid "41c82b8e-7316-4a08-a148-ec3b4e98869c")
-		)
-		(pin "1"
-			(uuid "f73937c9-d4b6-4a9c-ba25-3ecebc78eefc")
-		)
-		(pin "60"
-			(uuid "fddfae5f-7ba0-41bd-ae97-b7dd588c5966")
-		)
-		(pin "43"
-			(uuid "60c131d1-095a-4d5a-b0e3-0b49da201ea6")
-		)
-		(pin "52"
-			(uuid "0b1da971-5ed3-4a8a-a69f-1311f2cec601")
-		)
-		(pin "54"
-			(uuid "950b6a6d-bc12-4e2e-8f9b-6b0b3f848b3f")
-		)
-		(pin "62"
-			(uuid "26269999-db77-4aaa-b8db-07251a89334b")
-		)
-		(pin "46"
-			(uuid "40d07d00-e4ee-4593-90de-165a2b5dcc0b")
-		)
-		(pin "68"
-			(uuid "be66743a-0e46-4926-9471-c9401878aa06")
-		)
-		(pin "12"
-			(uuid "d464b682-b89f-436a-b88e-e8901b8c758a")
-		)
-		(pin "25"
-			(uuid "46c94f04-0bfa-4c50-a11f-194aae6084ab")
-		)
-		(pin "4"
-			(uuid "4b18738b-ab08-4be6-9a8f-34fd764b1194")
-		)
-		(pin "18"
-			(uuid "f2e44676-0a38-4161-b992-7859e6b9b7d1")
-		)
-		(pin "23"
-			(uuid "13aaa0ab-ffe6-453a-9c33-310fdf336b37")
-		)
-		(pin "8"
-			(uuid "efc0d6c3-d59c-4f58-b7b0-9af8901e21b0")
-		)
-		(pin "3"
-			(uuid "9bc29245-1b78-4dcc-b393-41719ec92f17")
-		)
-		(pin "11"
-			(uuid "db455265-435c-46e4-863b-36829dd041e2")
-		)
-		(pin "21"
-			(uuid "29d23ff0-a896-4c43-93ab-1bc4057942b8")
-		)
-		(pin "13"
-			(uuid "f70d058f-838e-42e7-87fd-edfe2bf7fc6f")
-		)
-		(pin "15"
-			(uuid "172a7ab9-f982-4e79-91da-719bb6b5aae3")
-		)
-		(pin "9"
-			(uuid "d9f6dc08-ac19-44f3-9d47-7121ed381dcd")
-		)
-		(pin "22"
-			(uuid "ca460569-6192-4c3a-8764-de0afe53dcf6")
-		)
-		(pin "24"
-			(uuid "5f2259f8-62fc-4ef5-9a3a-2e04f067d21d")
-		)
-		(pin "19"
-			(uuid "5db5aa93-7cf4-4393-86c3-98dc56e4c384")
-		)
-		(pin "26"
-			(uuid "733d38b6-2c89-4037-8974-8cf10084295d")
-		)
-		(pin "20"
-			(uuid "f48b5ff9-1f42-4efe-8cab-2d45631f4e70")
-		)
-		(pin "14"
-			(uuid "4fcc2def-b6ac-4a88-a2fc-0e388b54d0f8")
-		)
-		(pin "27"
-			(uuid "148ed5b3-e4d7-484a-8d51-e6bcbe51c6b2")
-		)
-		(pin "5"
-			(uuid "d2175f6a-042c-4eb4-b0ad-adfef9c0080e")
-		)
-		(pin "6"
-			(uuid "ec399e05-c6b7-4d6e-b7df-bdd7a0dce8ac")
-		)
-		(pin "16"
-			(uuid "99d864ee-909b-4587-a78a-3a543e95a074")
-		)
-		(pin "7"
-			(uuid "90fb20a0-f7af-4afb-a248-0076766da738")
-		)
-		(pin "17"
-			(uuid "07244e55-e56a-4f56-8c38-3a7fe9a243a2")
-		)
-		(pin "37"
-			(uuid "2194f4b5-2add-4304-84c7-be0137a92ab5")
-		)
-		(pin "74"
-			(uuid "0f0da7cc-ccb4-41d3-b03f-15f2a4c83296")
-		)
-		(pin "70"
-			(uuid "71a2fac1-e119-486f-805b-6cf4f3bb4e5f")
-		)
-		(pin "64"
-			(uuid "7969c569-ce02-4780-8852-2cdddb5bc736")
-		)
-		(pin "30"
-			(uuid "c8d05047-0bf9-438e-b446-98539b02fef2")
-		)
-		(pin "75"
-			(uuid "bf0cdb81-088c-4960-b2aa-7d88f2556851")
-		)
-		(pin "32"
-			(uuid "2011e6ec-dc10-49c6-a744-30302d140caf")
-		)
-		(pin "65"
-			(uuid "5527a03d-2f9b-485b-b246-41cf278d7402")
-		)
-		(pin "73"
-			(uuid "4fdb9e2f-1ba5-4500-a175-c297ae515968")
-		)
-		(pin "59"
-			(uuid "020f33da-332c-4b6e-b7e3-d30732e7b91d")
-		)
-		(pin "41"
-			(uuid "fab973df-2364-4c71-ad4a-93382d8e581a")
-		)
-		(pin "77"
-			(uuid "8187334b-dffb-44ac-91c5-260af8a1843c")
-		)
-		(pin "29"
-			(uuid "66867b17-5412-44d2-b0a0-a5cb92e4ec3f")
-		)
-		(pin "66"
-			(uuid "04f2ffe3-3c04-42c9-a1e5-12677a45d299")
-		)
-		(pin "33"
-			(uuid "0756462e-bce2-4809-87d0-598ab5fcfd14")
-		)
-		(pin "71"
-			(uuid "7d8ca2ab-8a0c-42ff-a1c4-d7e3b143d42c")
-		)
-		(pin "35"
-			(uuid "490bee4b-9f43-496f-acec-da01d5376443")
-		)
-		(pin "67"
-			(uuid "46038bfd-cea7-435d-b996-ee664167f746")
-		)
-		(pin "31"
-			(uuid "010973e6-9a7f-47c5-b96e-a6af9419545c")
-		)
-		(pin "63"
-			(uuid "b92e1337-4f0d-438c-8198-e981ee02136d")
-		)
-		(pin "72"
-			(uuid "faab63a6-a4e0-49f6-b70f-663a705e7374")
-		)
-		(pin "34"
-			(uuid "3a0a244e-d7cf-4735-9c61-a01a569976c6")
-		)
-		(pin "28"
-			(uuid "6eea61c9-86dc-4a37-b65f-6e8fc64813a3")
-		)
-		(pin "36"
-			(uuid "21b71adb-a529-4614-8712-5215bf6b04ee")
-		)
-		(pin "79"
-			(uuid "b63d0497-bf86-4277-a290-f928804b79b2")
-		)
-		(pin "80"
-			(uuid "b8f271f2-9a9b-4816-878e-78e4b55dd2ab")
-		)
-		(pin "81"
-			(uuid "c0420119-7122-4845-878c-9af90fa6046f")
-		)
-		(pin "78"
-			(uuid "03b2a347-bbc8-4341-b633-8ca6d66347a6")
-		)
-		(instances
-			(project "HackerfabBackplane"
-				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d/905380e0-3eaa-45fe-b654-1e2b12266968"
-					(reference "U5")
 					(unit 1)
 				)
 			)
@@ -16078,87 +16849,6 @@
 			(project "HackerfabBackplane"
 				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d/905380e0-3eaa-45fe-b654-1e2b12266968"
 					(reference "#PWR073")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Hack_Passives:GRT188C80J475ME01D")
-		(at 222.25 110.49 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e0f2b2f6-802b-4102-ad07-8bb420feedd0")
-		(property "Reference" "C36"
-			(at 223.012 108.458 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "4uF 6V3"
-			(at 223.012 113.538 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 223.2152 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 222.25 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "4.7 µF ±20% 6.3V Ceramic Capacitor X6S 0603 (1608 Metric)"
-			(at 222.25 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "37a4fad7-3a86-4ad2-b594-0acdb6be03ec")
-		)
-		(pin "2"
-			(uuid "4053b297-7e98-49eb-8b64-56ecb0b7ef87")
-		)
-		(instances
-			(project "HackerfabBackplane"
-				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d/905380e0-3eaa-45fe-b654-1e2b12266968"
-					(reference "C36")
 					(unit 1)
 				)
 			)

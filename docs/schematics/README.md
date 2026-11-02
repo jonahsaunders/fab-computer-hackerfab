@@ -8,7 +8,7 @@ Seven SVG exports of the current KiCad source, generated on 2026-11-02 with KiCa
 | 12 V buck regulator | [12 V supply](HackerfabBackplane-12V%20Buck%20Regulator.svg) |
 | 5 V buck regulator | [5 V supply](HackerfabBackplane-5V%20Buck%20Regulator.svg) |
 | 3.3 V LDO | [3.3 V supply](HackerfabBackplane-3V3%20LDO.svg) |
-| Microcontroller | [RP2354B](HackerfabBackplane-Microcontroller.svg) |
+| Microcontroller | [RP2350B](HackerfabBackplane-Microcontroller.svg) |
 | USB voltage mux | [USB power selection](HackerfabBackplane-USB%20Voltage%20MUX.svg) |
 | Input protection | [Protection](HackerfabBackplane-Protection.svg) |
 
