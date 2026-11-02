@@ -4,7 +4,7 @@ A modular control platform for HackerFab equipment: one backplane for power and 
 
 **Status: hardware in development · KiCad 10 · three expansion slots**
 
-![KiCad preview of the FAB Computer backplane](docs/images/backplane-2026-11-01.png)
+![KiCad preview of the FAB Computer backplane](docs/images/backplane-2026-11-02.png)
 
 *Preview of the imported PCB; design-rule review remains before a manufacturing release.*
 
@@ -78,7 +78,7 @@ These previews are exported from the current KiCad files. Select a schematic ima
 
 The repository includes the **backplane hardware and its libraries**. Firmware, daughter-board designs, fabrication outputs, and bench-test results were not present in the supplied archives.
 
-The latest supplied archives were imported on **2026-11-01**. This latest update changes the PCB and mounting-hole footprint, allowing the inner ground plane to connect to the mounting holes. The schematics, project settings, custom rules, and other shared libraries match the previous import. The connector assignments match the V6 arrangement: SPI0 in columns 10–12, SPI1 in 21–23, I²C centered in 16–17, and UART only on J1 in column 20. All **288 connector pins** agree between the V6 pin table, schematic, and PCB. J1 is nearest the MCU. The design contains **144 schematic components**, **144 PCB footprints**, **1,063 track segments**, and **248 vias**. KiCad reports **16 ERC findings**, **368 DRC findings**, **zero unconnected PCB items**, and **zero schematic/PCB parity findings**. The remaining findings include 11 thermal-relief errors; see the [illustrated diagnosis and tested adjustments](docs/thermal-relief.md) and [validation notes](docs/validation.md).
+The latest supplied archives were imported on **2026-11-02**. This update changes the PCB and project zone defaults, including mounting-hole placement and copper geometry. The schematics, custom rules, and all shared libraries match the previous import. The connector assignments match the V6 arrangement: SPI0 in columns 10–12, SPI1 in 21–23, I²C centered in 16–17, and UART only on J1 in column 20. All **288 connector pins** agree between the V6 pin table, schematic, and PCB. J1 is nearest the MCU. The design contains **144 schematic components**, **144 PCB footprints**, **1,065 track segments**, and **248 vias**. KiCad reports **16 ERC findings**, **352 DRC warnings with zero DRC errors**, **zero unconnected PCB items**, and **zero schematic/PCB parity findings**. The previous thermal-relief and copper-edge-clearance errors are no longer reported. See the [validation notes](docs/validation.md); the [thermal-relief investigation](docs/thermal-relief.md) is retained as a record of the November 1 source.
 
 ## Working on the project
 

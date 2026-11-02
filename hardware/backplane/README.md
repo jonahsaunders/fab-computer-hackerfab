@@ -17,7 +17,7 @@ Open [`HackerfabBackplane.kicad_pro`](HackerfabBackplane.kicad_pro) with KiCad 1
 
 Keep this directory and `../libraries/` together when copying the project. Standard KiCad libraries are also required. Standard 3D models are optional for circuit editing but needed for a complete 3D preview.
 
-The latest 2026-11-01 update contains 144 schematic components and 144 PCB footprints, with 1,063 track segments and 248 vias. KiCad reports zero schematic/PCB parity findings, zero unconnected PCB items, and 368 DRC findings with the supplied custom rules. The mounting-hole ground-plane connection is restored. See the [thermal-relief diagnosis](../../docs/thermal-relief.md) for the 11 remaining thermal findings.
+The latest 2026-11-02 update contains 144 schematic components and 144 PCB footprints, with 1,065 track segments and 248 vias. KiCad reports zero schematic/PCB parity findings, zero unconnected PCB items, and 352 DRC warnings with zero errors under the supplied custom rules. The previous thermal-relief and copper-edge-clearance errors are no longer reported. The [thermal-relief diagnosis](../../docs/thermal-relief.md) documents the earlier November 1 source.
 
 See the [schematic previews](../../docs/schematics/README.md) and [validation baseline](../../docs/validation.md).
 

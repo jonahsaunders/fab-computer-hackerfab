@@ -1,6 +1,8 @@
 # Thermal-relief findings
 
-Investigated with KiCad 10.0.6 on 2026-11-01 using the latest supplied archives. The imported source has **11 thermal-relief findings and zero unconnected items**. Refilling all zones reproduces the same findings. The mounting-hole ground-plane problem is resolved in these archives.
+**Historical investigation:** the 2026-11-02 source update now reports **zero thermal-relief findings**, zero DRC errors, and zero unconnected items. See the [current validation baseline](validation.md). The images, affected-pad list, and experiments below describe the earlier November 1 board and are not instructions to modify the current source.
+
+Investigated with KiCad 10.0.6 on 2026-11-01 using the archives supplied that day. That imported source had **11 thermal-relief findings and zero unconnected items**. Refilling all zones reproduced the same findings. The mounting-hole ground-plane problem was resolved in those archives.
 
 ![Copper details showing D7, R3, and J3 thermal connections](images/thermal-relief-2026-11-01.png)
 
