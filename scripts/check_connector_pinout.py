@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check connector power pins, A/C protocol pairing, and the adjacent UART pair."""
+"""Check connector power pins, protocol pairing, and both independent UART ports."""
 from collections import Counter
 import csv
 from pathlib import Path
@@ -45,7 +45,7 @@ def check(board_text=None, rows=None):
     common = {f'SPI{bus}_{signal}' for bus in (0, 1) for signal in ('MISO', 'MOSI', 'CLK', 'CS1', 'CS2', 'CS3')}
     common |= {f'I2C{bus}_{signal}' for bus in (0, 1) for signal in ('SDA', 'SCL')}
     local = {'J1': {'AUX1', 'AUX2', 'AUX3', 'UART_TX', 'UART_RX'},
-             'J2': {'AUX4', 'AUX5', 'AUX6'},
+             'J2': {'AUX4', 'AUX5', 'AUX6', 'UART2_TX', 'UART2_RX'},
              'J3': {'AUX7', 'AUX8', 'AUX9', 'AUX10'}}
     for row in rows:
         col = int(row['pad'][1:])
@@ -88,9 +88,27 @@ def check(board_text=None, rows=None):
                     if item['function'] != 'AUX10' and pads.get(item['jumper'], {}).get('1') != expected:
                         errors.append(f'{ref}:{pin}: source jumper output does not match signal')
         if Counter(connected) != Counter(common | local[ref]):
-            errors.append(f'{ref}: V6 signal set must be preserved without duplicates; UART belongs only to J1')
+            errors.append(f'{ref}: signal set must be preserved without duplicates; UART is on J1, UART2 on J2')
+        for pin, signal, jumper in (('A20', 'UART_RX', 'R27'), ('C20', 'UART_TX', 'R26')):
+            item = manifest[ref, pin]
+            if ref == 'J2':
+                signal = signal.replace('UART_', 'UART2_')
+                jumper = 'R57' if pin == 'A20' else 'R56'
+            if ref == 'J3':
+                if item['net'] != 'NC':
+                    errors.append(f'{ref}:{pin}: UART position must remain NC')
+            elif (item['function'], item['net'], item['jumper']) != (signal, '/' + signal, jumper):
+                errors.append(f'{ref}:{pin}: incorrect UART direction, net, or source jumper')
+    # UART2 is a board-level name for the second port (hardware UART1).
+    # Check both sides of each source jumper so a correct connector-side label
+    # cannot hide an incorrectly routed MCU pin.
+    for ref, pin, gpio in (('R26', '77', '0'), ('R27', '78', '1'),
+                           ('R56', '45', '36'), ('R57', '46', '37')):
+        expected = f'Net-(U5-GPIO{gpio})'
+        if pads.get(ref, {}).get('2') != expected or pads.get('U5', {}).get(pin) != expected:
+            errors.append(f'{ref}: UART MCU endpoint must be U5 pin {pin} / GPIO{gpio}')
     for pin in (f'{row}{col}' for row in 'AC' for col in range(10, 24)):
-        if len({manifest[ref, pin]['function'] for ref in ('J1', 'J2', 'J3')}) != 1:
+        if len({manifest[ref, pin]['function'].replace('UART2_', 'UART_') for ref in ('J1', 'J2', 'J3')}) != 1:
             errors.append(f'{pin}: reserved function must be consistent across ports')
     positions = {}
     for block in re.split(r'(?m)^\t(?=\(footprint )', board_text)[1:]:
@@ -123,6 +141,6 @@ if __name__ == '__main__':
                         problems.append(f'{ref}:{pin}: schematic and PCB nets differ')
     if problems:
         raise SystemExit('\n'.join(problems))
-    print('OK: 288 connector pads, fixed power/ground, V6 protocol columns, UART only on J1, slot order, and jumper outputs.')
+    print('OK: 288 connector pads, fixed power/ground, protocol columns, independent J1/J2 UARTs, slot order, and jumper endpoints.')
     if args.netlist:
         print('OK: all 288 connector pads agree with the supplied schematic netlist.')

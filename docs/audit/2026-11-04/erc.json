@@ -1,0 +1,311 @@
+{
+  "$schema": "https://schemas.kicad.org/erc.v1.json",
+  "coordinate_units": "mm",
+  "date": "2026-11-04T17:33:36",
+  "ignored_checks": [
+    {
+      "description": "Global label only appears once in the schematic",
+      "key": "single_global_label"
+    },
+    {
+      "description": "Four connection points are joined together",
+      "key": "four_way_junction"
+    },
+    {
+      "description": "SPICE model issue",
+      "key": "simulation_model_issue"
+    },
+    {
+      "description": "Assigned footprint doesn't match footprint filters",
+      "key": "footprint_filter"
+    }
+  ],
+  "included_severities": [
+    "error",
+    "warning",
+    "exclusion"
+  ],
+  "kicad_version": "10.0.6",
+  "sheets": [
+    {
+      "path": "/",
+      "uuid_path": "/7bc90960-5b90-438f-952d-a3f83f7f283d",
+      "violations": [
+        {
+          "description": "Input Power pin not driven by any Output Power pins",
+          "items": [
+            {
+              "description": "Symbol #PWR01 Pin 1 [Power input, Line]",
+              "pos": {
+                "x": 0.6604,
+                "y": 0.2159
+              },
+              "uuid": "46620bfa-3d95-4850-94f7-e2e60b49efdd"
+            }
+          ],
+          "severity": "error",
+          "type": "power_pin_not_driven"
+        },
+        {
+          "description": "Input Power pin not driven by any Output Power pins",
+          "items": [
+            {
+              "description": "Symbol #PWR04 Pin 1 [Power input, Line]",
+              "pos": {
+                "x": 0.7239,
+                "y": 0.2159
+              },
+              "uuid": "39ed8eb8-f32f-495b-a770-2887cb23e750"
+            }
+          ],
+          "severity": "error",
+          "type": "power_pin_not_driven"
+        },
+        {
+          "description": "Input Power pin not driven by any Output Power pins",
+          "items": [
+            {
+              "description": "Symbol #PWR019 Pin 1 [Power input, Line]",
+              "pos": {
+                "x": 1.1938,
+                "y": 1.016
+              },
+              "uuid": "a9f00eea-5233-4a11-9c78-03723bffcd96"
+            }
+          ],
+          "severity": "error",
+          "type": "power_pin_not_driven"
+        },
+        {
+          "description": "Input Power pin not driven by any Output Power pins",
+          "items": [
+            {
+              "description": "Symbol #PWR043 Pin 1 [Power input, Line]",
+              "pos": {
+                "x": 2.159,
+                "y": 0.9906
+              },
+              "uuid": "dbe00822-c616-49d4-9950-5d68bb723da2"
+            }
+          ],
+          "severity": "error",
+          "type": "power_pin_not_driven"
+        },
+        {
+          "description": "Input Power pin not driven by any Output Power pins",
+          "items": [
+            {
+              "description": "Symbol #PWR0119 Pin 1 [Power input, Line]",
+              "pos": {
+                "x": 2.6924,
+                "y": 1.1811
+              },
+              "uuid": "0f741375-1a07-4af1-9458-dc4b39962545"
+            }
+          ],
+          "severity": "error",
+          "type": "power_pin_not_driven"
+        },
+        {
+          "description": "Label connected to only one pin",
+          "items": [
+            {
+              "description": "Label 'AUX10'",
+              "pos": {
+                "x": 1.6891,
+                "y": 2.4384
+              },
+              "uuid": "5865b7d4-f873-4e7a-8a72-214d2b6e9427"
+            }
+          ],
+          "severity": "warning",
+          "type": "isolated_pin_label"
+        },
+        {
+          "description": "Symbol 'DMP6023LE-13' doesn't match copy in library 'Hack_Chips'",
+          "items": [
+            {
+              "description": "Symbol Q1 [DMP6023LE-13]",
+              "pos": {
+                "x": 0.8001,
+                "y": 0.5588
+              },
+              "uuid": "dc3bd581-be5b-41f3-8eaf-0eafe9584d5d"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_mismatch"
+        },
+        {
+          "description": "Symbol '217EC0037_C42371908' doesn't match copy in library 'Hack_Passives'",
+          "items": [
+            {
+              "description": "Symbol C6 [217EC0037_C42371908]",
+              "pos": {
+                "x": 1.9685,
+                "y": 0.9398
+              },
+              "uuid": "39564308-0418-4ca3-a5c6-3238ea2276cd"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_mismatch"
+        },
+        {
+          "description": "Symbol '217EC0037_C42371908' doesn't match copy in library 'Hack_Passives'",
+          "items": [
+            {
+              "description": "Symbol C12 [217EC0037_C42371908]",
+              "pos": {
+                "x": 1.6891,
+                "y": 0.9652
+              },
+              "uuid": "2b610af1-2335-4bf3-90e2-1887e082e143"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_mismatch"
+        },
+        {
+          "description": "Symbol '217EC0037_C42371908' doesn't match copy in library 'Hack_Passives'",
+          "items": [
+            {
+              "description": "Symbol C13 [217EC0037_C42371908]",
+              "pos": {
+                "x": 1.8669,
+                "y": 0.9652
+              },
+              "uuid": "b0c82be1-4bff-407e-96ea-bf8b37d995d4"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_mismatch"
+        }
+      ]
+    },
+    {
+      "path": "/12V Buck Regulator/",
+      "uuid_path": "/7bc90960-5b90-438f-952d-a3f83f7f283d/0f9cd62c-c6e9-4d15-904e-a31bfb9e683e",
+      "violations": []
+    },
+    {
+      "path": "/5V Buck Regulator/",
+      "uuid_path": "/7bc90960-5b90-438f-952d-a3f83f7f283d/12736e14-1926-48e7-b8ff-db0d2b07ddfb",
+      "violations": []
+    },
+    {
+      "path": "/3V3 LDO/",
+      "uuid_path": "/7bc90960-5b90-438f-952d-a3f83f7f283d/5d9d3386-867e-48d2-84d3-160df3cec080",
+      "violations": []
+    },
+    {
+      "path": "/Microcontroller/",
+      "uuid_path": "/7bc90960-5b90-438f-952d-a3f83f7f283d/905380e0-3eaa-45fe-b654-1e2b12266968",
+      "violations": [
+        {
+          "description": "Input Power pin not driven by any Output Power pins",
+          "items": [
+            {
+              "description": "Symbol #PWR082 Pin 1 [Power input, Line]",
+              "pos": {
+                "x": 1.6383,
+                "y": 0.762
+              },
+              "uuid": "c9c8d487-8c1a-490e-8543-b6cc793cee2f"
+            }
+          ],
+          "severity": "error",
+          "type": "power_pin_not_driven"
+        },
+        {
+          "description": "Input Power pin not driven by any Output Power pins",
+          "items": [
+            {
+              "description": "Symbol U5 Pin 61 [VREG_AVDD, Power input, Line]",
+              "pos": {
+                "x": 2.4384,
+                "y": 0.8255
+              },
+              "uuid": "764a69c2-386e-474b-acbc-e0bf50e71a7c"
+            }
+          ],
+          "severity": "error",
+          "type": "power_pin_not_driven"
+        },
+        {
+          "description": "Both +3V3 and 3V3 are attached to the same items; +3V3 will be used in the netlist",
+          "items": [
+            {
+              "description": "Symbol #PWR084 Pin 1 [Power input, Line]",
+              "pos": {
+                "x": 1.651,
+                "y": 1.1938
+              },
+              "uuid": "51ad4446-a007-450c-8f12-acf4ab15df55"
+            },
+            {
+              "description": "Hierarchical Label '3V3'",
+              "pos": {
+                "x": 0.3302,
+                "y": 0.5334
+              },
+              "uuid": "05be567c-3f39-412c-9d9e-5d926462c13a"
+            }
+          ],
+          "severity": "warning",
+          "type": "multiple_net_names"
+        }
+      ]
+    },
+    {
+      "path": "/USB Voltage MUX/",
+      "uuid_path": "/7bc90960-5b90-438f-952d-a3f83f7f283d/69f9e47b-f6fa-41f7-aad7-aae8138c8f46",
+      "violations": [
+        {
+          "description": "Input Power pin not driven by any Output Power pins",
+          "items": [
+            {
+              "description": "Symbol U6 Pin 3 [VIN1, Power input, Line]",
+              "pos": {
+                "x": 0.9271,
+                "y": 0.5715
+              },
+              "uuid": "66729221-f698-4fcb-99bc-e2c133c03479"
+            }
+          ],
+          "severity": "error",
+          "type": "power_pin_not_driven"
+        },
+        {
+          "description": "Pins of type Power output and Power output are connected",
+          "items": [
+            {
+              "description": "Symbol U6 Pin 2 [VOUT, Power output, Line]",
+              "pos": {
+                "x": 1.1303,
+                "y": 0.6223
+              },
+              "uuid": "62b78abf-4234-4055-992a-6810e4850c46"
+            },
+            {
+              "description": "Symbol U6 Pin 7 [VOUT, Power output, Line]",
+              "pos": {
+                "x": 1.1303,
+                "y": 0.6477
+              },
+              "uuid": "ad81cf8d-b02f-4502-aa0a-04456c54bc69"
+            }
+          ],
+          "severity": "error",
+          "type": "pin_to_pin"
+        }
+      ]
+    },
+    {
+      "path": "/Protection/",
+      "uuid_path": "/7bc90960-5b90-438f-952d-a3f83f7f283d/74051324-e9a8-4f76-9ed9-7f1cbd3b913d",
+      "violations": []
+    }
+  ],
+  "source": "HackerfabBackplane.kicad_sch"
+}

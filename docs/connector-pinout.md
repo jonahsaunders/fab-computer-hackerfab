@@ -1,8 +1,8 @@
 # Connector signal arrangement
 
-The supplied 2026-11-02 schematic and PCB preserve the V6 pin arrangement. SPI0 and SPI1 occupy opposite ends of the signal region, with I²C in the center and AUX contacts between the communication groups. UART RX/TX stay together in column 20 on J1 only.
+The 2026-11-04 schematic and PCB extend the V6 arrangement with an independent UART on J2. SPI0 and SPI1 occupy opposite ends of the signal region, with I²C in the center and AUX contacts between groups. Both UARTs use column 20: J1 is hardware UART0 and J2 is hardware UART1 (named `UART2` in the schematic). J3 remains NC at A20/C20.
 
-![Exact signal pin assignments on all three connectors](images/connector-signal-plan.png)
+The tables and CSV below are the current reference. The retained [older connector diagram](images/connector-signal-plan.png) predates J2 UART and is historical only.
 
 ## Orientation and fixed contacts
 
@@ -33,29 +33,29 @@ Both SPI buses (including CS1–CS3) and both I²C buses connect to all three po
 
 | Connector | AUX contacts | UART contacts |
 | --- | --- | --- |
-| J1 — nearest MCU | AUX1 A14; AUX2 A19; AUX3 C18 | RX A20; TX C20 |
-| J2 — middle | AUX4 C13; AUX5 A18; AUX6 C15 | A20/C20 NC |
+| J1 — nearest MCU | AUX1 A14; AUX2 A19; AUX3 C18 | UART0: RX A20 via R27/GPIO1; TX C20 via R26/GPIO0 |
+| J2 — middle | AUX4 C13; AUX5 A18; AUX6 C15 | UART1: RX A20 via R57/GPIO37; TX C20 via R56/GPIO36 |
 | J3 — farthest | AUX7 A13; AUX8 A15; AUX9 C14; AUX10 C19 | A20/C20 NC |
 
-AUX10 is a connector-only net with no MCU jumper in the supplied design; its isolated-label warning remains.
+AUX10 is a connector-only net with no MCU jumper in the supplied design; its isolated-label warning remains. Treat it as reserved, not a working GPIO. RX/TX directions are from the MCU perspective. `UART2` is a board-level name, not an RP2350 hardware peripheral number.
 
 ## Routing status
 
-The tracked PCB is the supplied layout: 1,073 track segments, 263 vias, and zero unconnected items. The imported board preserves the user’s routing. KiCad reports 350 DRC warnings and zero DRC errors with the supplied custom rules; see the [validation baseline](validation.md). The [thermal-relief investigation](thermal-relief.md) documents the earlier November 1 source.
+The tracked PCB preserves the supplied routing: 1,114 track segments, 267 vias, and zero unconnected items. The audit saved corrected copper fills and updated the UART legend. KiCad reports 362 DRC warnings and zero DRC errors with the supplied custom rules; see the [validation baseline](validation.md). The [thermal-relief investigation](thermal-relief.md) documents the earlier November 1 source.
 
 The connector pitch is 2.54 mm and signal pad diameter is 1.80 mm, leaving a 0.74 mm gap. One 0.20 mm trace with 0.20 mm clearance on each side fits that local gap. Complete routes still need to satisfy the board’s clearance, return-path, and signal-integrity requirements.
 
 ## Assigning AUX via nets in KiCad
 
-The five vias documented as `GND` in the October 30 import now carry their respective AUX nets. The November 1 source moves the two top-bank vias and disables automatic net updates on all five. The table shows their current positions and assignments.
+The five vias documented as `GND` in the October 30 import now carry their respective AUX nets. Automatic net updates remain disabled on these five vias. The table shows their current positions and assignments; the latest source moves the AUX1/4/7 group.
 
 | Via position (X, Y), mm | Current net | Automatic net update | Nearby jumper output |
 | --- | --- | --- | --- |
 | 126.75, 136.50 | `/AUX9` | Disabled | R52 pad 1: `/AUX9` |
 | 128.25, 136.25 | `/AUX8` | Disabled | R51 pad 1: `/AUX8` |
-| 116.50, 160.50 | `/AUX1` | Disabled | R44 pad 1: `/AUX1` |
-| 116.50, 162.00 | `/AUX4` | Disabled | R45 pad 1: `/AUX4` |
-| 116.50, 163.50 | `/AUX7` | Disabled | R46 pad 1: `/AUX7` |
+| 116.50, 161.20 | `/AUX1` | Disabled | R44 pad 1: `/AUX1` |
+| 116.50, 162.70 | `/AUX4` | Disabled | R45 pad 1: `/AUX4` |
+| 116.50, 164.20 | `/AUX7` | Disabled | R46 pad 1: `/AUX7` |
 
 To assign a net manually, select the via, open its properties with **E**, clear **Automatically update via nets**, and select the intended `/AUX…` net. A manually assigned net also needs a physical copper connection to the correct pad.
 
@@ -65,10 +65,11 @@ The import preserves these vias as supplied. The November 1 mounting-hole footpr
 
 ## Validation
 
-All 288 connector contacts were compared against the V6 reference in both the exported schematic netlist and PCB. Power/ground, each port’s AUX allocation, UART only on J1, and connector order match. The bundled checks also verify the source jumper nets.
+All 288 connector contacts were compared against the updated reference in both the exported schematic netlist and PCB. Power/ground, each port’s AUX allocation, both UARTs, and connector order match. The checks verify source jumper nets and the MCU endpoints of both UARTs. Five regression cases cover the current design, the obsolete J2 NC assignment, swapped UART directions, a wrong MCU endpoint, and a changed power pin.
 
 ```sh
 python scripts/check_repo.py
+python scripts/test_connector_pinout.py
 python scripts/export_design.py
 python scripts/check_connector_pinout.py --netlist build/backplane.xml
 ```

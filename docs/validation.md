@@ -1,64 +1,78 @@
 # Validation baseline
 
-Checked on **2026-11-02** with **KiCad 10.0.6** after the supplied-archive update to RP2350B and its supporting circuitry. The PCB, project settings, microcontroller sheet, both buck-regulator sheets, and two symbol libraries change. Custom design rules and all 24 custom footprints are unchanged. The import preserves active design/library/rule files with normalized line endings and retains portable project library tables.
+Checked on **2026-11-04** with **KiCad 10.0.6**. See the [full design audit](design-audit-2026-11-04.md) for electrical findings, references, and required measurements. The design remains development hardware.
 
-- All **41 active design/library/rule files** match their archive contents after line-ending normalization. Seven custom symbol libraries and 24 custom footprints are bundled.
-- All **288 connector pins** match the V6 reference in both schematic and PCB: fixed power/ground, SPI blocks 10–12 and 21–23, I²C columns 16–17, UART only on J1, and per-port AUX assignments.
-- J1 is nearest the MCU, J2 is middle, and J3 is farthest.
-- **146 schematic components**, **146 PCB footprints**, **1,073 track segments**, and **263 vias**.
-- **15 ERC findings** (9 errors, 6 warnings).
-- **350 DRC findings** (zero errors, 350 warnings), with **zero unconnected PCB items** reported separately.
-- **Zero schematic/PCB parity findings**. All seven schematic previews, board image, and XML netlist export successfully.
+## Scope and results
 
-These results use the PCB's saved zone fills and the supplied custom design rules. The imported board was not saved or refilled during validation, and all 41 imported files still match the supplied source after line-ending normalization. The custom rules and check severities are preserved as supplied; their fabrication capability claims were not independently verified.
+- Imported ten active backplane files and 31 library files. Of the 41 files, 38 still match the archives after line-ending normalization; the three deliberate exceptions are documented in [provenance](provenance.md). Portable library tables are retained.
+- **148 schematic components**, **148 PCB footprints**, **1,114 track segments**, and **267 vias**.
+- All **288 connector contacts** agree between the current reference, schematic netlist, and PCB. J1 carries hardware UART0; J2 now carries hardware UART1 through R56/R57; J3's UART positions remain NC. Power, ground, SPI, I²C, and AUX assignments retain their prior positions.
+- **15 ERC findings:** 9 errors and 6 warnings.
+- **362 DRC warnings, zero DRC errors**, **zero unconnected PCB items**, and **zero schematic/PCB parity findings** under the supplied rule settings.
+- Seven schematic SVGs, the board image, and netlist export successfully. Repository checks and five connector regression cases pass.
 
-The five previously documented GND-assigned AUX vias now carry `/AUX1`, `/AUX4`, `/AUX7`, `/AUX8`, and `/AUX9`. Their current positions and net-update settings are listed in the [via assignment notes](connector-pinout.md#assigning-aux-via-nets-in-kicad).
+## Saved copper-fill correction
 
-## Change from the prior main-branch import
+The source archive's saved fills were stale around changed routing. They produced 14 copper-clearance and 10 drill-to-copper-clearance errors. A fresh fill removed all 24, so the corrected fills were saved to the repository board. A subsequent in-memory refill gives the same finding counts as the final saved fills. No trace, via, footprint geometry, zone definition, or rule was moved or relaxed to clear those errors.
 
-| Measure | Previous import (2026-11-02 routing and vias) | Latest import (2026-11-02 RP2350B) |
-| --- | ---: | ---: |
-| Schematic components / PCB footprints | 144 / 144 | 146 / 146 |
-| Track segments / vias | 1,062 / 265 | 1,073 / 263 |
-| ERC errors / warnings | 10 / 6 | 9 / 6 |
-| DRC errors / warnings | 0 / 347 | 0 / 350 |
-| Dangling-via warnings | 0 | 0 |
-| Silkscreen-overlap warnings | 37 | 44 |
-| Unconnected PCB items | 0 | 0 |
-| Schematic/PCB parity findings | 0 | 0 |
+| Measure | Previous main import | Supplied November 4 PCB | Final audited PCB |
+| --- | ---: | ---: | ---: |
+| Schematic components / footprints | 146 / 146 | 148 / 148 | 148 / 148 |
+| Track segments / vias | 1,073 / 263 | 1,114 / 267 | 1,114 / 267 |
+| ERC errors / warnings | 9 / 6 | 9 / 6 | 9 / 6 |
+| DRC errors / warnings | 0 / 350 | 24 / 362 | 0 / 362 |
+| Unconnected PCB items | 0 | 0 | 0 |
+| Normal schematic/PCB parity findings | 0 | 0 | 0 |
 
-The new source replaces U5's RP2354B symbol with RP2350B and adds C42 (4.7 µF, 16 V) and R55 (33 Ω), together with matching library symbols. The supplied 12 V and 5 V buck-regulator sheets replace their enable-to-input connections with explicit no-connect markers. The PCB reflects the source changes, with 11 more track segments and two fewer vias. Project settings update the used-designator inventory; zone defaults and the custom-rule file are unchanged from the preceding import.
-
-The previous `pin_not_connected` ERC error is no longer reported. DRC adds seven silkscreen-overlap warnings while text-height and text-thickness warnings each fall by two. Thermal-relief and copper-edge-clearance errors remain at zero. The [thermal-relief investigation](thermal-relief.md) remains a historical record of the November 1 board; its experiments were not applied during this import.
+The earlier [thermal-relief investigation](thermal-relief.md) remains a historical record of the November 1 source.
 
 ## DRC breakdown
 
-| Finding | Count |
+| Finding | Final count |
 | --- | ---: |
 | `silk_over_copper` | 199 |
-| `text_height` | 64 |
-| `text_thickness` | 41 |
-| `silk_overlap` | 44 |
+| `text_height` | 66 |
+| `text_thickness` | 43 |
+| `silk_overlap` | 52 |
 | `silk_edge_clearance` | 2 |
+
+These warnings need assembly/fabrication review. The custom-rule header describes 0.5 oz inner copper, while the PCB stackup declares 0.035 mm copper on every layer. DRC is evaluated against supplied rules, not a verified manufacturing contract.
 
 ## ERC breakdown
 
-| Finding | Count |
-| --- | ---: |
-| `power_pin_not_driven` | 8 |
-| `lib_symbol_mismatch` | 4 |
-| `isolated_pin_label` | 1 |
-| `multiple_net_names` | 1 |
-| `pin_to_pin` | 1 |
+| Finding | Count | Interpretation |
+| --- | ---: | --- |
+| `power_pin_not_driven` | 8 | Mostly passive power-path modeling; verify sources before adding power flags |
+| `pin_to_pin` | 1 | U6's two VOUT pins are modeled as power outputs, although the datasheet joins them |
+| `lib_symbol_mismatch` | 4 | Q1 and C6/C12/C13 metadata mismatches; compared pin definitions match |
+| `isolated_pin_label` | 1 | AUX10 is only J3:C19 and has no MCU connection |
+| `multiple_net_names` | 1 | `+3V3` / `3V3` naming overlap |
 
-The board requires design-rule cleanup and review before fabrication. No bench, firmware, power-up, or crosstalk validation is implied.
+No exclusions were added. The supplied project ignores ERC `single_global_label`, `four_way_junction`, `simulation_model_issue`, and `footprint_filter`; it ignores DRC `missing_courtyard`, `track_not_centered_on_via`, `tuning_profile_track_geometries`, `footprint_filters_mismatch`, and `footprint_type_mismatch`.
+
+A temporary copy changed every ignored severity to warning, preserving all other settings. That run reports **16 ERC findings**, **365 DRC warnings**, zero unconnected items, and **one parity warning**. Additional findings are Y1's stale `RPI_COMPILED` footprint filter and three off-center via endpoints, on `+3V3`, `/UART2_TX`, and `/UART2_RX`. The normal zero-parity result must be read with this disclosed filter setting. Temporary severity changes were not applied to the tracked project.
+
+## Audit evidence
+
+These JSON files are snapshots of this audit, rather than reports automatically updated by CI:
+
+- [Archive-to-repository manifest and hashes](audit/2026-11-04/import-manifest.json)
+- [As-supplied saved-fill DRC](audit/2026-11-04/drc-as-supplied.json)
+- [Final ERC](audit/2026-11-04/erc.json)
+- [Final saved-fill DRC](audit/2026-11-04/drc.json)
+- [Final in-memory-refilled DRC](audit/2026-11-04/drc-refilled.json)
+- [ERC with ignored checks enabled](audit/2026-11-04/erc-all-checks.json)
+- [DRC with ignored checks enabled](audit/2026-11-04/drc-all-checks.json)
 
 ## Reproduce
 
 ```sh
 python scripts/check_repo.py
+python scripts/test_connector_pinout.py
 python scripts/export_design.py
 python scripts/check_connector_pinout.py --netlist build/backplane.xml
 ```
 
-The export script refreshes previews and writes reports under ignored `build/`. It does not save or refill the PCB. KiCad can return success while reporting violations; inspect the reports.
+The export script refreshes previews, creates a fresh netlist, and writes ERC, saved-fill DRC, and in-memory-refilled DRC reports under ignored `build/`. It does not save the board. KiCad can return a successful process exit while reporting violations; inspect the JSON findings. The all-checks experiment additionally requires changing each `ignore` severity to `warning` in a separate project copy.
+
+GitHub CI checks repository portability, references, documentation links, connector assignments, and the five connector regression cases. It does not install KiCad or perform bench testing. Passing CI does not establish fabrication readiness, thermal margins, regulator stability, or USB compliance.

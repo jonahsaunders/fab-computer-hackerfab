@@ -4413,16 +4413,8 @@
 		(uuid "6459db21-13f8-4c4f-a323-f3631610dc9d")
 	)
 	(no_connect
-		(at 71.12 158.75)
-		(uuid "7457d0e0-4c09-467f-8b58-5dc9c6f1883e")
-	)
-	(no_connect
 		(at 71.12 156.21)
 		(uuid "7731a321-26ab-4a51-8cd2-62a610f1f8b7")
-	)
-	(no_connect
-		(at 168.91 158.75)
-		(uuid "7aba8638-5a73-4a8b-b4ee-e8352a59e08e")
 	)
 	(no_connect
 		(at 168.91 153.67)
@@ -6589,6 +6581,16 @@
 			(type default)
 		)
 		(uuid "5a9145f2-1e25-470b-9698-f7a423b1350f")
+	)
+	(wire
+		(pts
+			(xy 346.71 213.36) (xy 356.87 213.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d1cdbba-8c6e-405f-98b8-dbaac1b61ca6")
 	)
 	(wire
 		(pts
@@ -8822,6 +8824,16 @@
 	)
 	(wire
 		(pts
+			(xy 346.71 215.9) (xy 356.87 215.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c74425d8-10fe-4a99-bd5e-ec66a67dc316")
+	)
+	(wire
+		(pts
 			(xy 158.75 88.9) (xy 163.83 88.9)
 		)
 		(stroke
@@ -10250,6 +10262,16 @@
 		)
 		(uuid "10907ad1-f9cc-4a26-8a4e-0c9e9e484308")
 	)
+	(label "UART2_RX"
+		(at 346.71 213.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "119f0d92-764f-48c7-bf2d-c62bf8486174")
+	)
 	(label "I2C0_SDA"
 		(at 168.91 236.22 180)
 		(effects
@@ -10600,6 +10622,16 @@
 		)
 		(uuid "422851b6-5d6c-4498-b50e-caea76cee459")
 	)
+	(label "UART2_RX"
+		(at 71.12 158.75 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "43ff4e52-99f3-4f7e-913d-4a03f08681f7")
+	)
 	(label "SWCLK"
 		(at 349.25 128.27 0)
 		(effects
@@ -10729,6 +10761,16 @@
 			(justify right bottom)
 		)
 		(uuid "598a40a1-64fd-4913-8cd1-cd69a5a4382f")
+	)
+	(label "UART2_TX"
+		(at 168.91 158.75 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5d6f22e0-0723-45ff-8486-65dc809a37bc")
 	)
 	(label "SPI0_CS1"
 		(at 346.71 180.34 0)
@@ -10929,6 +10971,16 @@
 			(justify right bottom)
 		)
 		(uuid "823f645f-fb06-43ac-ba5d-f46d8567edc9")
+	)
+	(label "UART2_TX"
+		(at 346.71 215.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "868e163a-8c0c-4856-879b-8a61e41c8042")
 	)
 	(label "GND"
 		(at 163.83 81.28 180)
@@ -22818,6 +22870,26 @@
 		(pin "UART_TX" output
 			(at 356.87 210.82 180)
 			(uuid "a32299de-56a6-4986-80f3-81c3913b9b27")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "UART2_RX" input
+			(at 356.87 213.36 180)
+			(uuid "6bea1581-ffe2-4b59-91db-3a0a702d3fe0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "UART2_TX" output
+			(at 356.87 215.9 180)
+			(uuid "e3b9c688-db96-40f6-9ec1-5ff6e8b1700b")
 			(effects
 				(font
 					(size 1.27 1.27)
