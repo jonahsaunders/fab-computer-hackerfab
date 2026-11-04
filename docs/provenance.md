@@ -10,13 +10,13 @@ The initial repository import was prepared on 2026-10-21 from:
 
 The report describes early requirements and plans. The supplied KiCad files are the source for the repository's hardware inventory and validation baseline; the report's milestone statuses are not presented as current test results.
 
-## Latest 2026-11-04 source update and design audit
+## Latest 2026-11-04 source update
 
-Imported ten active backplane files and 31 library files. Before audit fixes, four active files differ from the preceding main branch: the PCB, project settings, root schematic, and microcontroller schematic. The source adds R56/R57 and J2's second UART on GPIO36/37. The library archive, all 24 custom footprints, and custom rules match the prior import. The starting repository commit was `d40d956b23c39ac76a900b3c5619130a31239230`.
+Imported ten active backplane files and 31 library files. Four active files differ from the preceding import: the PCB, project settings, root schematic, and microcontroller schematic. The source adds R56/R57 and J2's second UART on GPIO36/37. The library archive, all 24 custom footprints, and custom rules match the prior import.
 
-Three imported files deliberately differ from the archives after the audit: the PCB has refreshed copper fills, a corrected UART legend, and corrected U5 flash metadata; the microcontroller schematic and `Hack_Chips.kicad_sym` have the same RP2350B description correction. Circuit topology, component values, trace/via geometry, footprint geometry, and zone definitions are preserved. The other 38 active files match after line-ending normalization. Portable library tables are retained. No archive instructions were treated as user requests.
+All 41 active design, library, and rule files match the supplied archives after line-ending normalization. Portable project library tables are retained. Copper fills, silkscreen, component metadata, circuitry, and routing are preserved as supplied. The original archives are unchanged; nested Git history, backups, personal settings, and locks are omitted.
 
-The board has 148 components/footprints, 1,114 trace segments, and 267 vias. Refilling clears the source PCB's 24 copper/drill-clearance errors. The final board has 362 DRC warnings, zero DRC errors, zero unconnected items, and zero normal parity findings; ERC has 15 findings. See the [full audit](design-audit-2026-11-04.md), [validation evidence](validation.md), and [file-by-file manifest](audit/2026-11-04/import-manifest.json). The supplied archives themselves are unchanged; nested Git history, backups, personal settings, and locks are omitted.
+The design has 148 components/footprints, 1,114 trace segments, and 267 vias. KiCad reports 15 ERC findings, 24 DRC errors and 362 warnings, zero unconnected items, and zero schematic/PCB parity findings under the supplied rule settings. See [validation](validation.md).
 
 | Input | SHA-256 |
 | --- | --- |

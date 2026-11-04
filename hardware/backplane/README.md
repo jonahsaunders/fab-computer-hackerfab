@@ -17,7 +17,7 @@ Open [`HackerfabBackplane.kicad_pro`](HackerfabBackplane.kicad_pro) with KiCad 1
 
 Keep this directory and `../libraries/` together when copying the project. Standard KiCad libraries are also required. Standard 3D models are optional for circuit editing but needed for a complete 3D preview.
 
-The 2026-11-04 import adds J2's independent UART through R56/R57. The design has 148 schematic components and 148 PCB footprints, 1,114 track segments, and 267 vias. The audit refilled stale copper, updated the UART legend, and corrected RP2350B flash metadata. Final KiCad checks report 15 ERC findings, 362 DRC warnings with zero errors, zero unconnected items, and zero normal schematic/PCB parity findings. See the [full audit](../../docs/design-audit-2026-11-04.md) for electrical gaps and the additional findings from normally ignored checks. This is development hardware.
+The 2026-11-04 import adds J2's independent UART through R56/R57. The design has 148 schematic components and 148 PCB footprints, 1,114 track segments, and 267 vias. The design files match the supplied archive after line-ending normalization. KiCad reports 15 ERC findings, 24 DRC errors and 362 warnings, zero unconnected items, and zero schematic/PCB parity findings under the supplied rule settings. This is development hardware.
 
 See the [schematic previews](../../docs/schematics/README.md) and [validation baseline](../../docs/validation.md).
 

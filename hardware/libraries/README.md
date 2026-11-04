@@ -26,4 +26,4 @@ The 2026-11-02 library archive adds `RP2350B` to `Hack_Chips` and `CL05A475MO5NU
 
 Library filenames and component identifiers are preserved from the supplied archive. An unused misspelled `Hack_Osicllators` registration in the original footprint table was removed; the actual library is `Hack_Oscillators`.
 
-The 2026-11-04 library archive matches the preceding archive. The audit corrects the RP2350B description in `Hack_Chips` to say external QSPI flash; the RP2354B description is unchanged. All other library files remain identical to the supplied archive after line-ending normalization. See the [audit](../../docs/design-audit-2026-11-04.md) for remaining metadata and procurement checks.
+The 2026-11-04 library archive matches the preceding archive. All 31 active library files are preserved as supplied after line-ending normalization.

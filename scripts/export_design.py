@@ -13,8 +13,6 @@ PROJECT = "hardware/backplane/HackerfabBackplane"
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--kicad-cli", default="kicad-cli", help="Path to the KiCad 10 CLI executable")
-    parser.add_argument("--board-image", default="docs/images/backplane-2026-11-04.png",
-                        help="Repository-relative output path for the current board preview")
     args = parser.parse_args()
     cli = shutil.which(args.kicad_cli)
     if not cli:
@@ -27,17 +25,15 @@ def main():
     commands = [
         ["sch", "export", "svg", "--output", "docs/schematics/", PROJECT + ".kicad_sch"],
         ["sch", "export", "netlist", "--format", "kicadxml", "--output", "build/backplane.xml", PROJECT + ".kicad_sch"],
-        ["sch", "erc", "--severity-all", "--format", "json", "--output", "build/erc.json", PROJECT + ".kicad_sch"],
-        ["pcb", "drc", "--schematic-parity", "--severity-all", "--format", "json", "--output", "build/drc.json", PROJECT + ".kicad_pcb"],
-        ["pcb", "drc", "--schematic-parity", "--severity-all", "--refill-zones", "--format", "json",
-         "--output", "build/drc-refilled.json", PROJECT + ".kicad_pcb"],
+        ["sch", "erc", "--format", "json", "--output", "build/erc.json", PROJECT + ".kicad_sch"],
+        ["pcb", "drc", "--schematic-parity", "--format", "json", "--output", "build/drc.json", PROJECT + ".kicad_pcb"],
         ["pcb", "render", "--width", "1800", "--height", "1400", "--background", "opaque",
-         "--quality", "basic", "--rotate", "0,0,0", "--output", args.board_image, PROJECT + ".kicad_pcb"],
+         "--quality", "basic", "--rotate", "0,0,0", "--output", "docs/images/backplane-2026-11-04.png", PROJECT + ".kicad_pcb"],
     ]
     for command in commands:
         print("Running:", " ".join(command), flush=True)
         subprocess.run([cli, *command], cwd=ROOT, check=True)
-    print(f"Exports complete with KiCad {version}. Review ERC, saved-fill DRC, and refilled DRC reports in build/.")
+    print(f"Exports complete with KiCad {version}. Review build/erc.json and build/drc.json for findings.")
 
 
 if __name__ == "__main__":

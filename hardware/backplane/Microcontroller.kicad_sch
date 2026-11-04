@@ -210,7 +210,7 @@
 					)
 				)
 			)
-			(property "Description" "A microcontroller by Raspberry Pi, dual CPU architecture (ARM Cortex-M33 / RISC-V Hazard3), 150MHz, external QSPI flash, 520KB SRAM, 12 PIO state machines, VQFN-80"
+			(property "Description" "A microcontroller by Raspberry Pi, dual CPU architecture (ARM Cortex-M33 / RISC-V Hazard3), 150MHz, 2MB flash, 520KB SRAM, 12 PIO state machines, VQFN-80"
 				(at 0 -3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -8927,7 +8927,7 @@
 				)
 			)
 		)
-		(property "Description" "A microcontroller by Raspberry Pi, dual CPU architecture (ARM Cortex-M33 / RISC-V Hazard3), 150MHz, external QSPI flash, 520KB SRAM, 12 PIO state machines, VQFN-80"
+		(property "Description" "A microcontroller by Raspberry Pi, dual CPU architecture (ARM Cortex-M33 / RISC-V Hazard3), 150MHz, 2MB flash, 520KB SRAM, 12 PIO state machines, VQFN-80"
 			(at 269.24 143.51 0)
 			(hide yes)
 			(show_name no)

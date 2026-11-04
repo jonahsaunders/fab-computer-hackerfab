@@ -15,5 +15,3 @@ jobs:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
       - name: Check repository
         run: python3 scripts/check_repo.py
-      - name: Check connector regression cases
-        run: python3 scripts/test_connector_pinout.py

@@ -41,7 +41,7 @@ AUX10 is a connector-only net with no MCU jumper in the supplied design; its iso
 
 ## Routing status
 
-The tracked PCB preserves the supplied routing: 1,114 track segments, 267 vias, and zero unconnected items. The audit saved corrected copper fills and updated the UART legend. KiCad reports 362 DRC warnings and zero DRC errors with the supplied custom rules; see the [validation baseline](validation.md). The [thermal-relief investigation](thermal-relief.md) documents the earlier November 1 source.
+The tracked PCB preserves the supplied routing: 1,114 track segments, 267 vias, and zero unconnected items. Copper fills and the UART silkscreen remain as supplied. KiCad reports 24 DRC errors and 362 warnings with the supplied custom rules; see the [validation baseline](validation.md). The [thermal-relief investigation](thermal-relief.md) documents the earlier November 1 source.
 
 The connector pitch is 2.54 mm and signal pad diameter is 1.80 mm, leaving a 0.74 mm gap. One 0.20 mm trace with 0.20 mm clearance on each side fits that local gap. Complete routes still need to satisfy the board’s clearance, return-path, and signal-integrity requirements.
 
@@ -65,11 +65,10 @@ The import preserves these vias as supplied. The November 1 mounting-hole footpr
 
 ## Validation
 
-All 288 connector contacts were compared against the updated reference in both the exported schematic netlist and PCB. Power/ground, each port’s AUX allocation, both UARTs, and connector order match. The checks verify source jumper nets and the MCU endpoints of both UARTs. Five regression cases cover the current design, the obsolete J2 NC assignment, swapped UART directions, a wrong MCU endpoint, and a changed power pin.
+All 288 connector contacts were compared against the updated reference in both the exported schematic netlist and PCB. Power/ground, each port’s AUX allocation, both UARTs, and connector order match. The checks verify source jumper nets and the MCU endpoints of both UARTs.
 
 ```sh
 python scripts/check_repo.py
-python scripts/test_connector_pinout.py
 python scripts/export_design.py
 python scripts/check_connector_pinout.py --netlist build/backplane.xml
 ```

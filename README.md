@@ -6,7 +6,7 @@ A modular control platform for HackerFab equipment: one backplane for power and 
 
 ![KiCad preview of the FAB Computer backplane](docs/images/backplane-2026-11-04.png)
 
-*Audited development PCB. See the [design audit](docs/design-audit-2026-11-04.md) for open electrical and manufacturing findings.*
+*Preview of the supplied PCB; design-rule review remains before a manufacturing release.*
 
 ## The idea
 
@@ -37,7 +37,6 @@ For a browser-only look, start with the [schematic previews](docs/schematics/REA
 | [`docs/architecture.md`](docs/architecture.md) | System concept, circuit blocks, and scope of future daughter boards |
 | [`docs/connector-pinout.md`](docs/connector-pinout.md) | Jumper-based signal order, paired protocols, pin table, and routing guide |
 | [`docs/schematics/`](docs/schematics/) | Seven SVG schematic previews exported from the source |
-| [`docs/design-audit-2026-11-04.md`](docs/design-audit-2026-11-04.md) | Electrical audit, resolved issues, remaining risks, and bring-up criteria |
 | [`docs/validation.md`](docs/validation.md) | Import checks, ERC/DRC evidence, and reproduction steps |
 | [`docs/thermal-relief.md`](docs/thermal-relief.md) | Copper-pour diagnosis, affected pads, and temporary-copy experiments |
 | [`docs/provenance.md`](docs/provenance.md) | Source archives, background reference, and cleanup details |
@@ -79,11 +78,9 @@ These previews are exported from the current KiCad files. Select a schematic ima
 
 The repository includes the **backplane hardware and its libraries**. Firmware, daughter-board designs, fabrication outputs, and bench-test results were not present in the supplied archives.
 
-The latest archives were imported and audited on **2026-11-04**. They add a second UART on J2 through R56/R57. J1 uses hardware UART0; J2 uses UART1 (named `UART2` in the schematic); J3's UART positions remain NC. All **288 connector pins** agree between the current reference, schematic, and PCB. The design has **148 components/footprints**, **1,114 track segments**, and **267 vias**.
+The latest archives were imported on **2026-11-04**. They add a second UART on J2 through R56/R57. J1 uses hardware UART0; J2 uses UART1 (named `UART2` in the schematic); J3's UART positions remain NC. All **288 connector pins** agree between the current reference, schematic, and PCB. The design has **148 components/footprints**, **1,114 track segments**, and **267 vias**.
 
-The audit corrected stale copper fills, the UART silkscreen legend, and RP2350B flash metadata. Final checks report **15 ERC findings**, **362 DRC warnings with zero DRC errors**, **zero unconnected PCB items**, and **zero normal schematic/PCB parity findings**. The [validation notes](docs/validation.md) also disclose checks normally ignored by the project.
-
-**The design is not fabrication-ready.** Open items include missing backplane I²C pull-ups, AUX10's missing MCU connection, the shared 5 V path's 2.5 A ceiling and USB fallback behavior, regulator stability/thermal validation, USB VBUS sensing, and fabrication-rule cleanup. The [full audit](docs/design-audit-2026-11-04.md) distinguishes confirmed gaps from issues requiring load information or measurements. Normal operation is assumed to use a current-limited bench supply at the 24 V input.
+All 41 active design, library, and rule files match the supplied archives after line-ending normalization. The source has **15 ERC findings**, **24 DRC errors and 362 warnings**, **zero unconnected PCB items**, and **zero schematic/PCB parity findings** under its existing rule settings. See the [validation notes](docs/validation.md). The design remains in development.
 
 ## Working on the project
 
@@ -93,7 +90,6 @@ Read [CONTRIBUTING.md](CONTRIBUTING.md) before changing hardware. Run the lightw
 
 ```sh
 python scripts/check_repo.py
-python scripts/test_connector_pinout.py
 ```
 
 To regenerate the schematic previews, board image, and local ERC/DRC reports with KiCad 10:
