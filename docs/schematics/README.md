@@ -1,6 +1,6 @@
 # Schematic previews
 
-Seven SVG exports of the current KiCad source, generated on 2026-11-04 with KiCad 10.0.6. Open an image to zoom in, or use the editable [KiCad project](../../hardware/backplane/HackerfabBackplane.kicad_pro).
+Seven SVG exports of the current KiCad source, generated on 2026-11-05 with KiCad 10.0.6. Open an image to zoom in, or use the editable [KiCad project](../../hardware/backplane/HackerfabBackplane.kicad_pro).
 
 | Sheet | Preview |
 | --- | --- |
@@ -14,4 +14,4 @@ Seven SVG exports of the current KiCad source, generated on 2026-11-04 with KiCa
 
 ![Root schematic](HackerfabBackplane.svg)
 
-These are development schematics. See the [validation baseline](../validation.md) for unresolved findings. Regenerate previews from the repository root with `python scripts/export_design.py` after changing the source.
+These are development schematics. The [validation baseline](../validation.md) records the historical November 4 revision. Regenerate previews from the repository root with `python scripts/export_design.py` after changing the source.

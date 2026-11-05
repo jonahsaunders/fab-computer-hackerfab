@@ -2118,7 +2118,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Hack_Connector:MountingHole_M3_Grounded_Corner"
+		(symbol "Hack_Connector:MountingHole_3.2mm_M3_Pad_Via"
 			(pin_names
 				(offset 0)
 			)
@@ -2137,7 +2137,7 @@
 					)
 				)
 			)
-			(property "Value" "M3 GND Corner"
+			(property "Value" "M3 GND"
 				(at 0 4.445 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2147,7 +2147,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Hack_Connector:MountingHole_3.2mm_M3_Grounded_Corner"
+			(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2169,7 +2169,7 @@
 					)
 				)
 			)
-			(property "Description" "M3 corner mounting hole; 3.2 mm PTH, 6.4 mm copper pad; passive pin 1 for an explicit ground connection"
+			(property "Description" "M3 corner mounting hole; 3.2 mm PTH, 6.4 mm copper pad"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2213,7 +2213,7 @@
 					)
 				)
 			)
-			(symbol "MountingHole_M3_Grounded_Corner_0_1"
+			(symbol "MountingHole_3.2mm_M3_Pad_Via_0_1"
 				(circle
 					(center 0 0)
 					(radius 1.5)
@@ -2226,7 +2226,7 @@
 					)
 				)
 			)
-			(symbol "MountingHole_M3_Grounded_Corner_1_1"
+			(symbol "MountingHole_3.2mm_M3_Pad_Via_1_1"
 				(pin passive line
 					(at 0 -5.08 90)
 					(length 3.81)
@@ -4403,6 +4403,10 @@
 	(no_connect
 		(at 168.91 156.21)
 		(uuid "4a9ca8e4-4b72-44a6-b05a-4daff7c9aa94")
+	)
+	(no_connect
+		(at 168.91 243.84)
+		(uuid "5b2d1b8f-1192-4394-b5d3-8c5cf359ebb5")
 	)
 	(no_connect
 		(at 71.12 241.3)
@@ -10742,16 +10746,6 @@
 		)
 		(uuid "57c1eee3-c270-47aa-b3b8-f3479f36b91e")
 	)
-	(label "AUX10"
-		(at 168.91 243.84 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "5865b7d4-f873-4e7a-8a72-214d2b6e9427")
-	)
 	(label "I2C1_SDA"
 		(at 168.91 238.76 180)
 		(effects
@@ -11855,6 +11849,96 @@
 			(project "HackerfabBackplane"
 				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d"
 					(reference "#PWR0117")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Hack_Connector:MountingHole_3.2mm_M3_Pad_Via")
+		(at 288.29 185.42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "14362515-5781-4fc4-9103-da1c87efc782")
+		(property "Reference" "H2"
+			(at 290.83 184.1499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "M3 GND"
+			(at 290.83 186.6899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+			(at 288.29 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 288.29 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "M3 corner mounting hole; 3.2 mm PTH, 6.4 mm copper pad"
+			(at 288.29 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "License" "CC0-1.0"
+			(at 288.29 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6066b19c-711d-49a0-8449-f12554bda311")
+		)
+		(instances
+			(project "HackerfabBackplane"
+				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d"
+					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -15347,6 +15431,96 @@
 		)
 	)
 	(symbol
+		(lib_id "Hack_Connector:MountingHole_3.2mm_M3_Pad_Via")
+		(at 266.7 171.45 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6441e864-e09e-4abd-bf3b-5c7ea7e10ef7")
+		(property "Reference" "H3"
+			(at 269.24 170.1799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "M3 GND"
+			(at 269.24 172.7199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+			(at 266.7 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 266.7 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "M3 corner mounting hole; 3.2 mm PTH, 6.4 mm copper pad"
+			(at 266.7 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "License" "CC0-1.0"
+			(at 266.7 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d2720442-b969-4d61-9be2-331788feb043")
+		)
+		(instances
+			(project "HackerfabBackplane"
+				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+12V")
 		(at 127 213.36 0)
 		(unit 1)
@@ -16404,96 +16578,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Hack_Connector:MountingHole_M3_Grounded_Corner")
-		(at 288.29 171.45 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files no)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "764ad1c7-ff61-407a-b516-e4f40284eedb")
-		(property "Reference" "H3"
-			(at 290.83 170.1799 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "M3 GND Corner"
-			(at 290.83 172.7199 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Hack_Connector:MountingHole_3.2mm_M3_Grounded_Corner"
-			(at 288.29 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 288.29 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "M3 corner mounting hole; 3.2 mm PTH, 6.4 mm copper pad; passive pin 1 for an explicit ground connection"
-			(at 288.29 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "License" "CC0-1.0"
-			(at 288.29 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "081be459-2bb4-4c76-9728-135fdcf87d58")
-		)
-		(instances
-			(project "HackerfabBackplane"
-				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d"
-					(reference "H3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+24V")
 		(at 73.66 257.81 0)
 		(unit 1)
@@ -16645,6 +16729,96 @@
 			(project "HackerfabBackplane"
 				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d"
 					(reference "#PWR0131")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Hack_Connector:MountingHole_3.2mm_M3_Pad_Via")
+		(at 266.7 185.42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7c34c2df-1afb-4dd3-827b-42efa5f87f48")
+		(property "Reference" "H1"
+			(at 269.24 184.1499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "M3 GND"
+			(at 269.24 186.6899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+			(at 266.7 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 266.7 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "M3 corner mounting hole; 3.2 mm PTH, 6.4 mm copper pad"
+			(at 266.7 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "License" "CC0-1.0"
+			(at 266.7 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e1b46d44-46ad-46d9-ac04-de72672c5244")
+		)
+		(instances
+			(project "HackerfabBackplane"
+				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d"
+					(reference "H1")
 					(unit 1)
 				)
 			)
@@ -17035,96 +17209,6 @@
 			(project "HackerfabBackplane"
 				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d"
 					(reference "#PWR027")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Hack_Connector:MountingHole_M3_Grounded_Corner")
-		(at 288.29 185.42 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files no)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "937245bd-7eba-4e1d-bb3d-03661625f6aa")
-		(property "Reference" "H4"
-			(at 290.83 184.1499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "M3 GND Corner"
-			(at 290.83 186.6899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Hack_Connector:MountingHole_3.2mm_M3_Grounded_Corner"
-			(at 288.29 185.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 288.29 185.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "M3 corner mounting hole; 3.2 mm PTH, 6.4 mm copper pad; passive pin 1 for an explicit ground connection"
-			(at 288.29 185.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "License" "CC0-1.0"
-			(at 288.29 185.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "043dcd71-1b64-4c0a-8be4-a7ca1b68787f")
-		)
-		(instances
-			(project "HackerfabBackplane"
-				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d"
-					(reference "H4")
 					(unit 1)
 				)
 			)
@@ -17671,96 +17755,6 @@
 			(project "HackerfabBackplane"
 				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d"
 					(reference "#PWR035")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Hack_Connector:MountingHole_M3_Grounded_Corner")
-		(at 266.7 171.45 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files no)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a4e98aaf-c6d2-4c7b-b080-e00912e6c512")
-		(property "Reference" "H1"
-			(at 269.24 170.1799 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "M3 GND Corner"
-			(at 269.24 172.7199 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Hack_Connector:MountingHole_3.2mm_M3_Grounded_Corner"
-			(at 266.7 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 266.7 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "M3 corner mounting hole; 3.2 mm PTH, 6.4 mm copper pad; passive pin 1 for an explicit ground connection"
-			(at 266.7 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "License" "CC0-1.0"
-			(at 266.7 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "12129183-0948-4041-aded-350c7ee69836")
-		)
-		(instances
-			(project "HackerfabBackplane"
-				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d"
-					(reference "H1")
 					(unit 1)
 				)
 			)
@@ -21466,6 +21460,96 @@
 		)
 	)
 	(symbol
+		(lib_id "Hack_Connector:MountingHole_3.2mm_M3_Pad_Via")
+		(at 288.29 171.45 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e92dc224-23c0-4501-8db7-47e5b2979475")
+		(property "Reference" "H4"
+			(at 290.83 170.1799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "M3 GND"
+			(at 290.83 172.7199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+			(at 288.29 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 288.29 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "M3 corner mounting hole; 3.2 mm PTH, 6.4 mm copper pad"
+			(at 288.29 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "License" "CC0-1.0"
+			(at 288.29 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "222fcd9f-e0e7-4d70-a456-421177926845")
+		)
+		(instances
+			(project "HackerfabBackplane"
+				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+24V")
 		(at 243.84 49.53 0)
 		(unit 1)
@@ -21928,96 +22012,6 @@
 			(project "HackerfabBackplane"
 				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d"
 					(reference "#PWR0116")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Hack_Connector:MountingHole_M3_Grounded_Corner")
-		(at 266.7 185.42 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files no)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fa29c02c-c0f0-4f9e-b951-1c28f0585965")
-		(property "Reference" "H2"
-			(at 269.24 184.1499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "M3 GND Corner"
-			(at 269.24 186.6899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Hack_Connector:MountingHole_3.2mm_M3_Grounded_Corner"
-			(at 266.7 185.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 266.7 185.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "M3 corner mounting hole; 3.2 mm PTH, 6.4 mm copper pad; passive pin 1 for an explicit ground connection"
-			(at 266.7 185.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "License" "CC0-1.0"
-			(at 266.7 185.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "bf397522-832b-482c-b0a1-3062582831af")
-		)
-		(instances
-			(project "HackerfabBackplane"
-				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d"
-					(reference "H2")
 					(unit 1)
 				)
 			)

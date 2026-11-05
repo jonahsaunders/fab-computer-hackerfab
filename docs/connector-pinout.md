@@ -1,6 +1,6 @@
 # Connector signal arrangement
 
-The 2026-11-04 schematic and PCB extend the V6 arrangement with an independent UART on J2. SPI0 and SPI1 occupy opposite ends of the signal region, with I²C in the center and AUX contacts between groups. Both UARTs use column 20: J1 is hardware UART0 and J2 is hardware UART1 (named `UART2` in the schematic). J3 remains NC at A20/C20.
+The 2026-11-05 schematic and PCB retain the V6 arrangement with an independent UART on J2; the former AUX10 contact J3:C19 is now NC. SPI0 and SPI1 occupy opposite ends of the signal region, with I²C in the center and AUX contacts between groups. Both UARTs use column 20: J1 is hardware UART0 and J2 is hardware UART1 (named `UART2` in the schematic). J3 remains NC at A20/C20.
 
 The tables and CSV below are the current reference. The retained [older connector diagram](images/connector-signal-plan.png) predates J2 UART and is historical only.
 
@@ -35,13 +35,13 @@ Both SPI buses (including CS1–CS3) and both I²C buses connect to all three po
 | --- | --- | --- |
 | J1 — nearest MCU | AUX1 A14; AUX2 A19; AUX3 C18 | UART0: RX A20 via R27/GPIO1; TX C20 via R26/GPIO0 |
 | J2 — middle | AUX4 C13; AUX5 A18; AUX6 C15 | UART1: RX A20 via R57/GPIO37; TX C20 via R56/GPIO36 |
-| J3 — farthest | AUX7 A13; AUX8 A15; AUX9 C14; AUX10 C19 | A20/C20 NC |
+| J3 — farthest | AUX7 A13; AUX8 A15; AUX9 C14 | A20/C20 NC |
 
-AUX10 is a connector-only net with no MCU jumper in the supplied design; its isolated-label warning remains. Treat it as reserved, not a working GPIO. RX/TX directions are from the MCU perspective. `UART2` is a board-level name, not an RP2350 hardware peripheral number.
+C19 is NC on all three connectors. AUX10 remains only a reserved position name in the table and CSV; it is not a connected net or working GPIO. RX/TX directions are from the MCU perspective. `UART2` is a board-level name, not an RP2350 hardware peripheral number.
 
 ## Routing status
 
-The tracked PCB preserves the supplied routing: 1,114 track segments, 267 vias, and zero unconnected items. Copper fills and the UART silkscreen remain as supplied. KiCad reports 24 DRC errors and 362 warnings with the supplied custom rules; see the [validation baseline](validation.md). The [thermal-relief investigation](thermal-relief.md) documents the earlier November 1 source.
+The tracked PCB preserves the supplied routing: 1,143 track segments and 271 vias. Copper fills and silkscreen remain as supplied. The [validation baseline](validation.md) describes the historical November 4 source; the [thermal-relief investigation](thermal-relief.md) describes the earlier November 1 source.
 
 The connector pitch is 2.54 mm and signal pad diameter is 1.80 mm, leaving a 0.74 mm gap. One 0.20 mm trace with 0.20 mm clearance on each side fits that local gap. Complete routes still need to satisfy the board’s clearance, return-path, and signal-integrity requirements.
 
@@ -73,4 +73,4 @@ python scripts/export_design.py
 python scripts/check_connector_pinout.py --netlist build/backplane.xml
 ```
 
-See the [validation baseline](validation.md) for remaining ERC/DRC findings.
+The [validation baseline](validation.md) is retained as a historical November 4 record.

@@ -32,7 +32,7 @@ The diagram is a functional overview, not a wiring diagram. Use the KiCad schema
 | USB-related circuitry | USB-C receptacle (`J7`), USBLC6-2SC6 protection (`U4`), and TPS2116DRL power selection (`U6`); connectivity still requires review |
 | Communication | Named nets for I²C0/1, SPI0/1 with slot chip selects, UART, and AUX signals |
 
-J1, nearest the MCU, carries `/UART_RX` at A20 and `/UART_TX` at C20 (hardware UART0). J2 carries `/UART2_RX` at A20 and `/UART2_TX` at C20 (hardware UART1, GPIO37/36). Both positions remain unconnected on J3. The [V6 connector arrangement](connector-pinout.md) places SPI0 in columns 10–12, SPI1 in 21–23, and I²C in 16–17. AUX1–3 belong to J1, AUX4–6 to J2, and AUX7–9 to J3, with AUX10 reserved on J3:C19 but not connected to the MCU. Use the current per-port pin table when designing a mating board.
+J1, nearest the MCU, carries `/UART_RX` at A20 and `/UART_TX` at C20 (hardware UART0). J2 carries `/UART2_RX` at A20 and `/UART2_TX` at C20 (hardware UART1, GPIO37/36). Both positions remain unconnected on J3. The [V6 connector arrangement](connector-pinout.md) places SPI0 in columns 10–12, SPI1 in 21–23, and I²C in 16–17. AUX1–3 belong to J1, AUX4–6 to J2, and AUX7–9 to J3, with the former AUX10 position J3:C19 now NC. Use the current per-port pin table when designing a mating board.
 
 ## Daughter-board scope
 
@@ -47,7 +47,7 @@ RS-485, RS-232, and 0–10 V analog interfaces are system requirements intended 
 
 - Complete schematic connectivity and resolve ERC findings.
 - Review the connector pinout, component symbols, and footprints.
-- Review the supplied 148-footprint PCB and 148-component schematic; KiCad reports zero schematic/PCB parity findings under the existing rule settings.
+- Review the supplied 152-footprint PCB and 152-component schematic.
 - Finish placement, routing, and design review.
 - Prepare manufacturing outputs from a reviewed revision.
 - Add daughter-board and firmware sources, then record bench validation.

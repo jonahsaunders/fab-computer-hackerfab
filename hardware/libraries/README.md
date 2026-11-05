@@ -26,4 +26,6 @@ The 2026-11-02 library archive adds `RP2350B` to `Hack_Chips` and `CL05A475MO5NU
 
 Library filenames and component identifiers are preserved from the supplied archive. An unused misspelled `Hack_Osicllators` registration in the original footprint table was removed; the actual library is `Hack_Oscillators`.
 
-The 2026-11-04 library archive matches the preceding archive. All 31 active library files are preserved as supplied after line-ending normalization.
+The 2026-11-04 library archive matches the preceding archive.
+
+The 2026-11-05 library archive adds `MountingHole_3.2mm_M3_Pad_Via` to `Hack_Connector` and `RC0402FR-132K2L` / `RC0603FR-132K2L` to `Hack_Passives`. The design uses the grounded M3 symbol for H1–H4 and the 0402 2.2 kΩ symbol for R58–R61. All 31 active library files are preserved as supplied after line-ending normalization.

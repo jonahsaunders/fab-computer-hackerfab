@@ -10,7 +10,20 @@ The initial repository import was prepared on 2026-10-21 from:
 
 The report describes early requirements and plans. The supplied KiCad files are the source for the repository's hardware inventory and validation baseline; the report's milestone statuses are not presented as current test results.
 
-## Latest 2026-11-04 source update
+## Latest 2026-11-05 source update
+
+Imported ten active backplane files and 31 library files. Six active files differ from the preceding import: the PCB, project settings, root schematic, microcontroller schematic, `Hack_Connector.kicad_sym`, and `Hack_Passives.kicad_sym`.
+
+The source adds four 0402 2.2 kΩ I²C pullups (R58–R61), replaces the four mounting holes with grounded `MountingHole_3.2mm_M3_Pad_Via` footprints, and changes J3:C19 from AUX10 to NC. The libraries add the mounting-hole symbol and 0402/0603 2.2 kΩ resistor symbols. The 24 custom footprints and custom rules are unchanged.
+
+All 41 active design, library, and rule files match the supplied archives after line-ending normalization. Portable project library tables are retained. Copper fills, silkscreen, component metadata, circuitry, and routing are preserved as supplied. Nested Git history, backups, personal settings, and locks are omitted. Previews and the connector reference reflect the imported source.
+
+| Input | SHA-256 |
+| --- | --- |
+| `Backplane.zip` | `2d32265ba806e5d6636d25c03d4a8b0cd8cbffeaa7c4cb9ce4a664522a3b36a8` |
+| `LibraryHackerfab.zip` | `0b754c95f27298f834ec86778abce35e29a8b25181f3447bfe1e8e4ebcddac7e` |
+
+## Previous 2026-11-04 source update
 
 Imported ten active backplane files and 31 library files. Four active files differ from the preceding import: the PCB, project settings, root schematic, and microcontroller schematic. The source adds R56/R57 and J2's second UART on GPIO36/37. The library archive, all 24 custom footprints, and custom rules match the prior import.
 

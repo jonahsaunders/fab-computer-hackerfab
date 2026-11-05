@@ -4,7 +4,7 @@ A modular control platform for HackerFab equipment: one backplane for power and 
 
 **Status: hardware in development · KiCad 10 · three expansion slots**
 
-![KiCad preview of the FAB Computer backplane](docs/images/backplane-2026-11-04.png)
+![KiCad preview of the FAB Computer backplane](docs/images/backplane-2026-11-05.png)
 
 *Preview of the supplied PCB; design-rule review remains before a manufacturing release.*
 
@@ -37,7 +37,7 @@ For a browser-only look, start with the [schematic previews](docs/schematics/REA
 | [`docs/architecture.md`](docs/architecture.md) | System concept, circuit blocks, and scope of future daughter boards |
 | [`docs/connector-pinout.md`](docs/connector-pinout.md) | Jumper-based signal order, paired protocols, pin table, and routing guide |
 | [`docs/schematics/`](docs/schematics/) | Seven SVG schematic previews exported from the source |
-| [`docs/validation.md`](docs/validation.md) | Import checks, ERC/DRC evidence, and reproduction steps |
+| [`docs/validation.md`](docs/validation.md) | Historical November 4 validation and reproduction steps |
 | [`docs/thermal-relief.md`](docs/thermal-relief.md) | Copper-pour diagnosis, affected pads, and temporary-copy experiments |
 | [`docs/provenance.md`](docs/provenance.md) | Source archives, background reference, and cleanup details |
 | [`scripts/`](scripts/) | Repository checks and reproducible preview/check exports |
@@ -78,13 +78,13 @@ These previews are exported from the current KiCad files. Select a schematic ima
 
 The repository includes the **backplane hardware and its libraries**. Firmware, daughter-board designs, fabrication outputs, and bench-test results were not present in the supplied archives.
 
-The latest archives were imported on **2026-11-04**. They add a second UART on J2 through R56/R57. J1 uses hardware UART0; J2 uses UART1 (named `UART2` in the schematic); J3's UART positions remain NC. All **288 connector pins** agree between the current reference, schematic, and PCB. The design has **148 components/footprints**, **1,114 track segments**, and **267 vias**.
+The latest archives were imported on **2026-11-05**. They add four **2.2 kΩ I²C pullups (R58–R61)**, mark **J3:C19 as NC**, and replace **H1–H4** with grounded `MountingHole_3.2mm_M3_Pad_Via` footprints. J1 uses hardware UART0; J2 uses UART1 (named `UART2` in the schematic); J3's UART positions remain NC. The design has **152 components/footprints**, **1,143 track segments**, and **271 vias**.
 
-All 41 active design, library, and rule files match the supplied archives after line-ending normalization. The source has **15 ERC findings**, **24 DRC errors and 362 warnings**, **zero unconnected PCB items**, and **zero schematic/PCB parity findings** under its existing rule settings. See the [validation notes](docs/validation.md). The design remains in development.
+All 41 active design, library, and rule files match the supplied archives after line-ending normalization. Circuitry, routing, copper fills, and component metadata are preserved as supplied. The [validation notes](docs/validation.md) describe the historical November 4 revision. The design remains in development.
 
 ## Working on the project
 
-The connector signal assignments use the V6 layout, with SPI buses at opposite ends and matching protocol groups across rows A/C. J1 is nearest the MCU and carries AUX1–3 plus UART; J2 carries AUX4–6 plus the second UART; J3 carries AUX7–9 with AUX10 reserved and not connected to the MCU. Use the [current pin table and diagrams](docs/connector-pinout.md) when routing or designing daughter boards. Power and ground assignments are preserved.
+The connector signal assignments use the V6 layout, with SPI buses at opposite ends and matching protocol groups across rows A/C. J1 is nearest the MCU and carries AUX1–3 plus UART; J2 carries AUX4–6 plus the second UART; J3 carries AUX7–9 with the former AUX10 position C19 now NC. Use the [current pin table and diagrams](docs/connector-pinout.md) when routing or designing daughter boards. Power and ground assignments are preserved.
 
 Read [CONTRIBUTING.md](CONTRIBUTING.md) before changing hardware. Run the lightweight repository checks with Python 3.10 or newer:
 

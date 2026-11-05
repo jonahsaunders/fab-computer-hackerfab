@@ -4679,6 +4679,195 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Hack_Passives:RC0402FR-132K2L"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "2k2"
+				(at -2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+				(at 1.016 -0.254 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "2.2 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Moisture Resistant Thick Film"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "RC0402FR-132K2L_0_1"
+				(polyline
+					(pts
+						(xy 0 2.286) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.762) (xy 1.016 0.381) (xy 0 0) (xy -1.016 -0.381) (xy 0 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.286) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "RC0402FR-132K2L_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Hack_Passives:RC0402JR-0733RP"
 			(pin_numbers
 				(hide yes)
@@ -5872,6 +6061,12 @@
 		(uuid "31afed68-b2ef-431f-ba39-4e9483e30b43")
 	)
 	(junction
+		(at 359.41 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "333e0f24-854d-4d29-bf7d-0a3549d08798")
+	)
+	(junction
 		(at 86.36 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5912,6 +6107,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4db5829e-4fe2-4c36-ba80-2aad87395e9d")
+	)
+	(junction
+		(at 337.82 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5a3f96b5-f1f0-4b5a-b0cb-975826730117")
 	)
 	(junction
 		(at 53.34 53.34)
@@ -5980,6 +6181,12 @@
 		(uuid "99c317c6-0323-4e0e-82f6-af6f2f48791c")
 	)
 	(junction
+		(at 381 100.33)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9d5aa0e7-a14b-47b4-9490-a9cff2bd30bb")
+	)
+	(junction
 		(at 222.25 105.41)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6032,6 +6239,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c53c51cd-ceb9-4261-b783-052a8398acb0")
+	)
+	(junction
+		(at 316.23 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c7aee00e-8951-4077-b99d-31222768cf58")
 	)
 	(junction
 		(at 163.83 76.2)
@@ -6231,7 +6444,7 @@
 	)
 	(wire
 		(pts
-			(xy 294.64 85.09) (xy 303.53 85.09)
+			(xy 294.64 85.09) (xy 297.18 85.09)
 		)
 		(stroke
 			(width 0)
@@ -6521,6 +6734,16 @@
 	)
 	(wire
 		(pts
+			(xy 294.64 100.33) (xy 381 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2fd25b97-aba5-4cbb-ab3d-e36a2e24f047")
+	)
+	(wire
+		(pts
 			(xy 189.23 157.48) (xy 189.23 158.75)
 		)
 		(stroke
@@ -6558,6 +6781,16 @@
 			(type default)
 		)
 		(uuid "3231acea-0005-483f-b4bb-bba4c0b9daa1")
+	)
+	(wire
+		(pts
+			(xy 316.23 90.17) (xy 316.23 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "352d113e-86d6-45b3-8d5b-6ced4d080bfc")
 	)
 	(wire
 		(pts
@@ -6648,6 +6881,16 @@
 			(type default)
 		)
 		(uuid "3aac9a70-25ba-4ac7-ade1-71ee05679438")
+	)
+	(wire
+		(pts
+			(xy 337.82 90.17) (xy 337.82 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3af2d009-d451-41b7-9299-8fe418a23789")
 	)
 	(wire
 		(pts
@@ -6801,6 +7044,16 @@
 	)
 	(wire
 		(pts
+			(xy 294.64 92.71) (xy 318.77 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4bbaf398-3828-4749-993c-c3fba1de866c")
+	)
+	(wire
+		(pts
 			(xy 185.42 62.23) (xy 185.42 64.77)
 		)
 		(stroke
@@ -6861,16 +7114,6 @@
 	)
 	(wire
 		(pts
-			(xy 311.15 100.33) (xy 321.31 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "56436b51-3a4a-4cbc-b618-e120b07a40e5")
-	)
-	(wire
-		(pts
 			(xy 102.87 53.34) (xy 119.38 53.34)
 		)
 		(stroke
@@ -6878,16 +7121,6 @@
 			(type default)
 		)
 		(uuid "56f99281-0064-4a66-9f21-93bd642cc355")
-	)
-	(wire
-		(pts
-			(xy 311.15 85.09) (xy 321.31 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "576022d2-7c19-40b5-952f-6fc12bfc4855")
 	)
 	(wire
 		(pts
@@ -6918,6 +7151,16 @@
 			(type default)
 		)
 		(uuid "5bb05689-ba87-4494-86c7-8b06503a91da")
+	)
+	(wire
+		(pts
+			(xy 294.64 97.79) (xy 361.95 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5bc74030-dc97-4e12-b7bc-46d74046efb0")
 	)
 	(wire
 		(pts
@@ -7001,16 +7244,6 @@
 	)
 	(wire
 		(pts
-			(xy 311.15 97.79) (xy 321.31 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6565f6c1-1efa-46fd-81ae-0850ebd0822d")
-	)
-	(wire
-		(pts
 			(xy 116.84 176.53) (xy 116.84 173.99)
 		)
 		(stroke
@@ -7081,6 +7314,16 @@
 	)
 	(wire
 		(pts
+			(xy 381 100.33) (xy 383.54 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c06b02a-7f76-4edc-b62e-07a8e24cabdd")
+	)
+	(wire
+		(pts
 			(xy 241.3 58.42) (xy 241.3 55.88)
 		)
 		(stroke
@@ -7131,7 +7374,7 @@
 	)
 	(wire
 		(pts
-			(xy 294.64 82.55) (xy 303.53 82.55)
+			(xy 294.64 82.55) (xy 297.18 82.55)
 		)
 		(stroke
 			(width 0)
@@ -7251,6 +7494,16 @@
 	)
 	(wire
 		(pts
+			(xy 294.64 95.25) (xy 340.36 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "827d9362-28b8-46d1-b32b-f101eea1dae9")
+	)
+	(wire
+		(pts
 			(xy 204.47 163.83) (xy 204.47 166.37)
 		)
 		(stroke
@@ -7311,16 +7564,6 @@
 	)
 	(wire
 		(pts
-			(xy 311.15 82.55) (xy 321.31 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8791d2e3-1c40-47b7-8f1f-5aaa94868bbd")
-	)
-	(wire
-		(pts
 			(xy 311.15 138.43) (xy 321.31 138.43)
 		)
 		(stroke
@@ -7338,26 +7581,6 @@
 			(type default)
 		)
 		(uuid "884e0df7-04df-4767-bd17-ae67b47ed3fa")
-	)
-	(wire
-		(pts
-			(xy 294.64 92.71) (xy 303.53 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8881ac82-8191-4d6a-810e-019d1f788ba0")
-	)
-	(wire
-		(pts
-			(xy 294.64 97.79) (xy 303.53 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "889b63e1-888e-41b2-a747-6ab600c9b589")
 	)
 	(wire
 		(pts
@@ -7471,6 +7694,16 @@
 	)
 	(wire
 		(pts
+			(xy 337.82 77.47) (xy 337.82 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9870a78e-a769-46bf-b396-6cc446b7f1bd")
+	)
+	(wire
+		(pts
 			(xy 241.3 76.2) (xy 241.3 73.66)
 		)
 		(stroke
@@ -7538,6 +7771,16 @@
 			(type default)
 		)
 		(uuid "a1907f70-6600-4c32-8f78-5e2404d3666a")
+	)
+	(wire
+		(pts
+			(xy 381 90.17) (xy 381 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1bf0374-eb43-42a6-9e2e-4a7aa2d3fcfb")
 	)
 	(wire
 		(pts
@@ -7711,6 +7954,16 @@
 	)
 	(wire
 		(pts
+			(xy 381 77.47) (xy 381 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2561b4a-ce14-4309-b285-f93c0313eb67")
+	)
+	(wire
+		(pts
 			(xy 86.36 54.61) (xy 86.36 53.34)
 		)
 		(stroke
@@ -7768,16 +8021,6 @@
 			(type default)
 		)
 		(uuid "bdc392b3-872d-4c94-8733-c708cd125d4f")
-	)
-	(wire
-		(pts
-			(xy 294.64 95.25) (xy 303.53 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "be63bba9-f05a-4562-b187-f150b2e4967e")
 	)
 	(wire
 		(pts
@@ -7941,16 +8184,6 @@
 	)
 	(wire
 		(pts
-			(xy 294.64 100.33) (xy 303.53 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d3c3d479-2d01-4345-a5f8-6dad56884a5a")
-	)
-	(wire
-		(pts
 			(xy 111.76 158.75) (xy 121.92 158.75)
 		)
 		(stroke
@@ -7958,16 +8191,6 @@
 			(type default)
 		)
 		(uuid "d5722b08-d387-476a-a0d9-549808b93fe3")
-	)
-	(wire
-		(pts
-			(xy 311.15 92.71) (xy 321.31 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d6782397-e85b-4961-ab28-9b0425f714ef")
 	)
 	(wire
 		(pts
@@ -8068,6 +8291,16 @@
 			(type default)
 		)
 		(uuid "deb73349-cc03-4695-a6ce-2041038b773a")
+	)
+	(wire
+		(pts
+			(xy 359.41 77.47) (xy 359.41 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0f4df4c-8940-4857-a70f-83978f7e8648")
 	)
 	(wire
 		(pts
@@ -8181,13 +8414,13 @@
 	)
 	(wire
 		(pts
-			(xy 311.15 95.25) (xy 321.31 95.25)
+			(xy 359.41 90.17) (xy 359.41 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e7f7a422-08c5-4cc4-a7ff-b1391c0473d1")
+		(uuid "e92869b0-002a-44fa-8537-3e57fce30c86")
 	)
 	(wire
 		(pts
@@ -8288,6 +8521,16 @@
 			(type default)
 		)
 		(uuid "f50fa333-9bb5-4245-a8c3-707a68117e82")
+	)
+	(wire
+		(pts
+			(xy 316.23 77.47) (xy 316.23 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7821fc2-7912-4600-b34c-095408bdae73")
 	)
 	(wire
 		(pts
@@ -8512,7 +8755,7 @@
 	)
 	(hierarchical_label "I2C1_SDA"
 		(shape bidirectional)
-		(at 321.31 97.79 0)
+		(at 369.57 97.79 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8655,7 +8898,7 @@
 	)
 	(hierarchical_label "UART_TX"
 		(shape output)
-		(at 321.31 82.55 0)
+		(at 304.8 82.55 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8688,7 +8931,7 @@
 	)
 	(hierarchical_label "I2C1_SCL"
 		(shape bidirectional)
-		(at 321.31 100.33 0)
+		(at 391.16 100.33 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8754,7 +8997,7 @@
 	)
 	(hierarchical_label "UART_RX"
 		(shape input)
-		(at 321.31 85.09 0)
+		(at 304.8 85.09 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8831,7 +9074,7 @@
 	)
 	(hierarchical_label "I2C0_SDA"
 		(shape bidirectional)
-		(at 321.31 92.71 0)
+		(at 326.39 92.71 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8864,7 +9107,7 @@
 	)
 	(hierarchical_label "I2C0_SCL"
 		(shape bidirectional)
-		(at 321.31 95.25 0)
+		(at 347.98 95.25 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9923,6 +10166,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Hack_Passives:RC0402FR-132K2L")
+		(at 337.82 86.36 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1016fc0d-6fff-464b-a1c3-e5c81af74c87")
+		(property "Reference" "R59"
+			(at 340.36 85.0899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2k2"
+			(at 340.36 87.6299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 338.836 86.614 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 337.82 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "2.2 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Moisture Resistant Thick Film"
+			(at 337.82 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "19dca2af-a41e-494b-ae94-8c48035af681")
+		)
+		(pin "1"
+			(uuid "ba9c0bf0-003f-4798-993c-46fae714d82f")
+		)
+		(instances
+			(project "HackerfabBackplane"
+				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d/905380e0-3eaa-45fe-b654-1e2b12266968"
+					(reference "R59")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Hack_Passives:AA0402JR-070RL")
 		(at 307.34 105.41 270)
 		(unit 1)
@@ -10553,6 +10878,162 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 337.82 77.47 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "24468df7-bfcf-456c-ae1d-ea5903968714")
+		(property "Reference" "#PWR0147"
+			(at 337.82 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 337.82 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 337.82 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 337.82 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 337.82 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a3c73370-300e-49d1-847d-38480ac125a0")
+		)
+		(instances
+			(project "HackerfabBackplane"
+				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d/905380e0-3eaa-45fe-b654-1e2b12266968"
+					(reference "#PWR0147")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 381 77.47 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "26b09b1b-b34e-47f9-9092-14e241deb04a")
+		(property "Reference" "#PWR0149"
+			(at 381 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 381 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 381 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 381 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 381 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "699925c3-b96e-4980-b0ec-88ee079b2685")
+		)
+		(instances
+			(project "HackerfabBackplane"
+				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d/905380e0-3eaa-45fe-b654-1e2b12266968"
+					(reference "#PWR0149")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Hack_Oscillators:ABM8-272-T3")
 		(at 207.01 157.48 0)
 		(unit 1)
@@ -11076,6 +11557,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 359.41 77.47 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "33533753-60ca-4d78-88ac-f8fff7a74704")
+		(property "Reference" "#PWR0148"
+			(at 359.41 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 359.41 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 359.41 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 359.41 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 359.41 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cc1a82ca-5af7-4f7e-8599-40aa909b1814")
+		)
+		(instances
+			(project "HackerfabBackplane"
+				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d/905380e0-3eaa-45fe-b654-1e2b12266968"
+					(reference "#PWR0148")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Hack_Passives:CC0603JRNPO0BN150")
 		(at 189.23 162.56 0)
 		(unit 1)
@@ -11236,6 +11795,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 316.23 77.47 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3bb790ae-7e9a-4867-9af0-4d253d2da659")
+		(property "Reference" "#PWR0146"
+			(at 316.23 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 316.23 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 316.23 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 316.23 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 316.23 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d3f7f4bc-0c8b-4e8a-9d32-d13ec401eb48")
+		)
+		(instances
+			(project "HackerfabBackplane"
+				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d/905380e0-3eaa-45fe-b654-1e2b12266968"
+					(reference "#PWR0146")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 116.84 176.53 0)
 		(unit 1)
@@ -11315,7 +11952,7 @@
 	)
 	(symbol
 		(lib_id "Hack_Passives:AA0402JR-070RL")
-		(at 307.34 97.79 270)
+		(at 365.76 97.79 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11325,7 +11962,7 @@
 		(dnp no)
 		(uuid "41e27f1a-94c7-4eeb-8be7-8383cae54941")
 		(property "Reference" "R30"
-			(at 302.768 96.52 90)
+			(at 361.188 96.52 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11335,7 +11972,7 @@
 			)
 		)
 		(property "Value" "0R"
-			(at 310.642 96.52 90)
+			(at 369.062 96.52 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11345,7 +11982,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 307.086 98.806 90)
+			(at 365.506 98.806 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11356,7 +11993,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/28773/crcwce3.pdf"
-			(at 307.34 97.79 0)
+			(at 365.76 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11367,7 +12004,7 @@
 			)
 		)
 		(property "Description" "0 Ohms Jumper Chip Resistor 0402 (1005 Metric) Anti-Sulfur, Automotive AEC-Q200, Moisture Resistant Thick Film"
-			(at 307.34 97.79 0)
+			(at 365.76 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11394,7 +12031,7 @@
 	)
 	(symbol
 		(lib_id "Hack_Passives:AA0402JR-070RL")
-		(at 307.34 82.55 270)
+		(at 300.99 82.55 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11404,7 +12041,7 @@
 		(dnp no)
 		(uuid "48a486bb-6a3c-4081-af46-b28d47d9c81e")
 		(property "Reference" "R26"
-			(at 302.768 81.28 90)
+			(at 296.418 81.28 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11414,7 +12051,7 @@
 			)
 		)
 		(property "Value" "0R"
-			(at 310.642 81.28 90)
+			(at 304.292 81.28 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11424,7 +12061,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 307.086 83.566 90)
+			(at 300.736 83.566 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11435,7 +12072,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/28773/crcwce3.pdf"
-			(at 307.34 82.55 0)
+			(at 300.99 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11446,7 +12083,7 @@
 			)
 		)
 		(property "Description" "0 Ohms Jumper Chip Resistor 0402 (1005 Metric) Anti-Sulfur, Automotive AEC-Q200, Moisture Resistant Thick Film"
-			(at 307.34 82.55 0)
+			(at 300.99 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11630,7 +12267,7 @@
 	)
 	(symbol
 		(lib_id "Hack_Passives:AA0402JR-070RL")
-		(at 307.34 95.25 270)
+		(at 344.17 95.25 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11640,7 +12277,7 @@
 		(dnp no)
 		(uuid "56beda20-6d40-447f-a0ce-44d9ab909709")
 		(property "Reference" "R29"
-			(at 302.768 93.98 90)
+			(at 339.598 93.98 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11650,7 +12287,7 @@
 			)
 		)
 		(property "Value" "0R"
-			(at 310.642 93.98 90)
+			(at 347.472 93.98 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11660,7 +12297,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 307.086 96.266 90)
+			(at 343.916 96.266 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11671,7 +12308,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/28773/crcwce3.pdf"
-			(at 307.34 95.25 0)
+			(at 344.17 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11682,7 +12319,7 @@
 			)
 		)
 		(property "Description" "0 Ohms Jumper Chip Resistor 0402 (1005 Metric) Anti-Sulfur, Automotive AEC-Q200, Moisture Resistant Thick Film"
-			(at 307.34 95.25 0)
+			(at 344.17 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12104,7 +12741,7 @@
 	)
 	(symbol
 		(lib_id "Hack_Passives:AA0402JR-070RL")
-		(at 307.34 92.71 270)
+		(at 322.58 92.71 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12114,7 +12751,7 @@
 		(dnp no)
 		(uuid "62a5ace6-3a1d-4bf9-a563-8b10f4836258")
 		(property "Reference" "R28"
-			(at 302.768 91.44 90)
+			(at 318.008 91.44 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12124,7 +12761,7 @@
 			)
 		)
 		(property "Value" "0R"
-			(at 310.642 91.44 90)
+			(at 325.882 91.44 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12134,7 +12771,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 307.086 93.726 90)
+			(at 322.326 93.726 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12145,7 +12782,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/28773/crcwce3.pdf"
-			(at 307.34 92.71 0)
+			(at 322.58 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12156,7 +12793,7 @@
 			)
 		)
 		(property "Description" "0 Ohms Jumper Chip Resistor 0402 (1005 Metric) Anti-Sulfur, Automotive AEC-Q200, Moisture Resistant Thick Film"
-			(at 307.34 92.71 0)
+			(at 322.58 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12254,6 +12891,88 @@
 			(project "HackerfabBackplane"
 				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d/905380e0-3eaa-45fe-b654-1e2b12266968"
 					(reference "#PWR082")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Hack_Passives:RC0402FR-132K2L")
+		(at 359.41 86.36 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "678fabc9-0c0b-4cb0-b439-fa4ad4588925")
+		(property "Reference" "R60"
+			(at 361.95 85.0899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2k2"
+			(at 361.95 87.6299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 360.426 86.614 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 359.41 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "2.2 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Moisture Resistant Thick Film"
+			(at 359.41 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "622de61b-135e-4ec6-ba97-78e1f36fe4cd")
+		)
+		(pin "1"
+			(uuid "0ec6a7df-b4c9-4818-b55a-5fb664f4a0c3")
+		)
+		(instances
+			(project "HackerfabBackplane"
+				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d/905380e0-3eaa-45fe-b654-1e2b12266968"
+					(reference "R60")
 					(unit 1)
 				)
 			)
@@ -13769,7 +14488,7 @@
 			)
 		)
 		(property "Value" "0R"
-			(at 310.642 101.6 90)
+			(at 310.642 101.854 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14067,7 +14786,7 @@
 	)
 	(symbol
 		(lib_id "Hack_Passives:AA0402JR-070RL")
-		(at 307.34 100.33 270)
+		(at 387.35 100.33 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14077,7 +14796,7 @@
 		(dnp no)
 		(uuid "8cc24100-24bd-4924-b501-6ccfaba51349")
 		(property "Reference" "R31"
-			(at 302.768 99.06 90)
+			(at 382.778 99.06 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14087,7 +14806,7 @@
 			)
 		)
 		(property "Value" "0R"
-			(at 310.642 99.06 90)
+			(at 390.652 99.06 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14097,7 +14816,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 307.086 101.346 90)
+			(at 387.096 101.346 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14108,7 +14827,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/28773/crcwce3.pdf"
-			(at 307.34 100.33 0)
+			(at 387.35 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14119,7 +14838,7 @@
 			)
 		)
 		(property "Description" "0 Ohms Jumper Chip Resistor 0402 (1005 Metric) Anti-Sulfur, Automotive AEC-Q200, Moisture Resistant Thick Film"
-			(at 307.34 100.33 0)
+			(at 387.35 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14854,6 +15573,88 @@
 			(project "HackerfabBackplane"
 				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d/905380e0-3eaa-45fe-b654-1e2b12266968"
 					(reference "#PWR099")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Hack_Passives:RC0402FR-132K2L")
+		(at 381 86.36 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a3e3a85e-7fc2-42ec-9688-38a64d0851fd")
+		(property "Reference" "R61"
+			(at 383.54 85.0899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2k2"
+			(at 383.54 87.6299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 382.016 86.614 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 381 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "2.2 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Moisture Resistant Thick Film"
+			(at 381 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "87ce4372-c0fd-40a3-93b9-3eafac3ec9d2")
+		)
+		(pin "1"
+			(uuid "2e4f63e5-8cab-4b49-8862-dccd63b93a65")
+		)
+		(instances
+			(project "HackerfabBackplane"
+				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d/905380e0-3eaa-45fe-b654-1e2b12266968"
+					(reference "R61")
 					(unit 1)
 				)
 			)
@@ -18022,6 +18823,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Hack_Passives:RC0402FR-132K2L")
+		(at 316.23 86.36 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f527a8ea-bbf6-424d-87c3-2bb143b4d216")
+		(property "Reference" "R58"
+			(at 318.77 85.0899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2k2"
+			(at 318.77 87.6299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 317.246 86.614 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 316.23 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "2.2 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Moisture Resistant Thick Film"
+			(at 316.23 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "decebcd1-fa1e-445c-afdd-339a1c462749")
+		)
+		(pin "1"
+			(uuid "dea8d043-fa3b-4bd8-b76d-376d4f0c2e88")
+		)
+		(instances
+			(project "HackerfabBackplane"
+				(path "/7bc90960-5b90-438f-952d-a3f83f7f283d/905380e0-3eaa-45fe-b654-1e2b12266968"
+					(reference "R58")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 205.74 109.22 0)
 		(unit 1)
@@ -18305,7 +19188,7 @@
 	)
 	(symbol
 		(lib_id "Hack_Passives:AA0402JR-070RL")
-		(at 307.34 85.09 270)
+		(at 300.99 85.09 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18315,7 +19198,7 @@
 		(dnp no)
 		(uuid "fd8bfa12-329a-470d-b9a2-418c01cc421d")
 		(property "Reference" "R27"
-			(at 302.768 83.82 90)
+			(at 296.418 83.82 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18325,7 +19208,7 @@
 			)
 		)
 		(property "Value" "0R"
-			(at 310.642 83.82 90)
+			(at 304.292 83.82 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18335,7 +19218,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 307.086 86.106 90)
+			(at 300.736 86.106 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18346,7 +19229,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/28773/crcwce3.pdf"
-			(at 307.34 85.09 0)
+			(at 300.99 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18357,7 +19240,7 @@
 			)
 		)
 		(property "Description" "0 Ohms Jumper Chip Resistor 0402 (1005 Metric) Anti-Sulfur, Automotive AEC-Q200, Moisture Resistant Thick Film"
-			(at 307.34 85.09 0)
+			(at 300.99 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

@@ -46,7 +46,7 @@ def check(board_text=None, rows=None):
     common |= {f'I2C{bus}_{signal}' for bus in (0, 1) for signal in ('SDA', 'SCL')}
     local = {'J1': {'AUX1', 'AUX2', 'AUX3', 'UART_TX', 'UART_RX'},
              'J2': {'AUX4', 'AUX5', 'AUX6', 'UART2_TX', 'UART2_RX'},
-             'J3': {'AUX7', 'AUX8', 'AUX9', 'AUX10'}}
+             'J3': {'AUX7', 'AUX8', 'AUX9'}}
     for row in rows:
         col = int(row['pad'][1:])
         expected_family = ('SPI0' if 10 <= col <= 12 else 'SPI1' if 21 <= col <= 23
@@ -85,7 +85,7 @@ def check(board_text=None, rows=None):
                     errors.append(f'{ref}:{pin}: PCB net does not match connector pinout manifest')
                 if item['net'] != 'NC':
                     connected.append(item['function'])
-                    if item['function'] != 'AUX10' and pads.get(item['jumper'], {}).get('1') != expected:
+                    if pads.get(item['jumper'], {}).get('1') != expected:
                         errors.append(f'{ref}:{pin}: source jumper output does not match signal')
         if Counter(connected) != Counter(common | local[ref]):
             errors.append(f'{ref}: signal set must be preserved without duplicates; UART is on J1, UART2 on J2')
