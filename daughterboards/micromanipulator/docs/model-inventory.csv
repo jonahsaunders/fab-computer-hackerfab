@@ -58,7 +58,7 @@ J14,Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical,${KIPRJMOD}/../libraries
 J15,Connector_JST:JST_PH_B5B-PH-K_1x05_P2.00mm_Vertical,${KIPRJMOD}/../libraries/models/Connector_JST.3dshapes/JST_PH_B5B-PH-K_1x05_P2.00mm_Vertical.step,KiCad standard STEP model
 J16,Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical,${KIPRJMOD}/../libraries/models/Connector_JST.3dshapes/JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical.step,KiCad standard STEP model
 J17,Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical,${KIPRJMOD}/../libraries/models/Connector_JST.3dshapes/JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical.step,KiCad standard STEP model
-J18,Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12,${KIPRJMOD}/../libraries/models/HRO-TYPE-C-31-M-12-envelope.wrl,Nominal low-fidelity model
+J18,Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12,${KIPRJMOD}/../libraries/models/Connector_USB.3dshapes/USB_C_Receptacle_HRO_TYPE-C-31-M-12.step,Nabu Casa Yellow / ai03 community STEP model; aligned to existing footprint
 J19,Connector_PinHeader_1.27mm:PinHeader_1x04_P1.27mm_Vertical,${KIPRJMOD}/../libraries/models/Connector_PinHeader_1.27mm.3dshapes/PinHeader_1x04_P1.27mm_Vertical.step,KiCad standard STEP model
 J2,Connector_PinHeader_1.27mm:PinHeader_1x05_P1.27mm_Vertical,${KIPRJMOD}/../libraries/models/Connector_PinHeader_1.27mm.3dshapes/PinHeader_1x05_P1.27mm_Vertical.step,KiCad standard STEP model
 J3,Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical,${KIPRJMOD}/../libraries/models/Connector_JST.3dshapes/JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical.step,KiCad standard STEP model

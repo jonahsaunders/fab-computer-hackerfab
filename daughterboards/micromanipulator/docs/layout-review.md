@@ -16,7 +16,7 @@ The principal USB connector-to-series-resistor pair runs on B.Cu with 0.26 mm wi
 
 ## Assembly and access
 
-All 30 footprint types are copied into project-local libraries without changing library names. All 116 placed components have local or embedded models. KiCad standard STEP models are used where available. RP2350B, DRV8837C and USB-C have clearly identified nominal VRML models, including an outward-facing USB opening. These models do not substitute for manufacturer tolerance drawings.
+All 30 footprint types are copied into project-local libraries without changing library names. All 116 placed components have local or embedded models. KiCad standard STEP models are used where available. RP2350B and DRV8837C have clearly identified nominal VRML models. USB-C uses the detailed Nabu Casa Yellow / ai03 STEP model, aligned to the existing HRO footprint with its opening facing off the left card edge. These models do not substitute for manufacturer tolerance drawings.
 
 The USB connector opens off the left card edge. JST PH and pin-header harnesses mate above the component face; the DIN plug faces the insertion edge. The native 3D view shows these directions and no apparent body collisions. Cable bend space between populated host slots and actual DIN mating depth remain to be checked against the host assembly.
 

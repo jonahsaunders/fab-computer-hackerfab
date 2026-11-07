@@ -51,8 +51,9 @@ KiCad libraries use CC BY-SA 4.0 with the KiCad library exception. See that
 page for terms. Standard DIN pad identifiers were uppercased to match the
 host's symbol; the standard footprint pad geometry was preserved.
 Used footprints and available STEP models are bundled in project-local libraries.
-The nominal RP2350B, DRV8837C and USB-C VRML models in models/ are newly made
-review geometry, explicitly not manufacturer models. Earlier review-models/
+The nominal RP2350B and DRV8837C VRML models in models/ are newly made
+review geometry, explicitly not manufacturer models. The former USB-C envelope
+is retained but replaced on the current board by the community STEP model below. Earlier review-models/
 files are retained for history and are not referenced by the current board.
 HRO USB-C: https://www.krhro.com/Product-Details/726.html
 JLCPCB stackups: https://jlcpcb.com/impedance
@@ -79,3 +80,9 @@ https://jlcpcb.com/partdetail/1877-CL05B104KO5NNNC/C1525
 YAGEO CC0603KRX7R9BB104, 100 nF / 50 V / X7R, 0603, JLCPCB C14663:
 https://jlcpcb.com/partdetail/Yageo-CC0603KRX7R9BB104/C14663
 Catalog identity/package checked; inventory is not guaranteed.
+
+USB-C detailed STEP model, 2026-11-07:
+https://github.com/NabuCasa/yellow-3dshapes/blob/main/USB_C_Receptacle_HRO_TYPE-C-31-M-12.step
+Original model: https://github.com/ai03-2725/Type-C.pretty
+See hardware/libraries/models/Connector_USB.3dshapes/README.txt for provenance,
+hashes, alignment and dimensional limits. The native footprint geometry is unchanged.

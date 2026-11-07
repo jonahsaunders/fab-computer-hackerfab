@@ -8,7 +8,7 @@ Bare-component adaptation of [MicroManipulatorStepper](https://github.com/hacker
 
 Open [hardware/daughterboard/FabNanoDaughterboard.kicad_pro](hardware/daughterboard/FabNanoDaughterboard.kicad_pro) in **KiCad 10**. The project contains the six-sheet schematic and the routed native PCB layout.
 
-Keep this entire folder together. All 30 used footprint types and all 116 placed models resolve locally or through embedded data. Library names are preserved. Standard STEP models are bundled; RP2350B, DRV8837C and USB-C use explicitly approximate models where the installed model was missing. See the [model inventory](docs/model-inventory.csv). Install KiCad's standard symbol libraries for editing standard symbols.
+Keep this entire folder together. All 30 used footprint types and all 116 placed models resolve locally or through embedded data. Library names are preserved. Standard STEP models are bundled; RP2350B and DRV8837C use explicitly approximate models where the installed model was missing. USB-C uses a detailed community STEP model for HRO TYPE-C-31-M-12. See the [model inventory](docs/model-inventory.csv). Install KiCad's standard symbol libraries for editing standard symbols.
 
 | File or folder | Contents |
 | --- | --- |
