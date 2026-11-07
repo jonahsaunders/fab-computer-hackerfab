@@ -1,0 +1,92 @@
+CONTROLLER DECISION — 7 NOVEMBER 2026
+
+Use one bare RP2350B for XYZ, rotation, heater and vacuum. Remove the STM32.
+The backplane master sends commands and coordinates the machine; the card
+owns encoder feedback and time-sensitive actuator control. Keeping those
+loops local avoids depending on shared-bus traffic or host scheduling.
+The former arrangement mainly preserved the two upstream firmware projects.
+No required electrical interface needs a second MCU.
+
+RESOURCE CHECK
+The current allocation uses 42 of 48 GPIOs, leaving GPIO42..47 spare.
+Dedicated USB, SWD, reset and QSPI pins are outside that GPIO count.
+
+  XYZ winding drive: 12 hardware PWM outputs, GPIO4..15, slices 2..7.
+  Rotation drive:     4 hardware PWM outputs, GPIO32..35, slices 8 and 9.
+  Heater:            1 hardware PWM output, GPIO36, slice 10A.
+  Vacuum:            1 hardware PWM output, GPIO38, slice 11A.
+  Auxiliary tools:   2 existing PIO PWM outputs, GPIO16/17.
+  XYZ encoders:      SPI0, three separate chip-select signals.
+  Rotation encoder:  SPI1, separate chip-select signal.
+  Backplane UART:    UART0, GPIO28 TX and GPIO29 RX.
+  Backplane I2C0:    RP2350 I2C1, GPIO30 SDA and GPIO31 SCL.
+  Analogue inputs:   GPIO40/ADC0 temperature; GPIO41/ADC1 12 V sensing.
+
+Both outputs within a PWM slice share a frequency. The allocation keeps
+20 kHz XYZ drive, proposed 25 kHz rotation/vacuum, and proposed 1 kHz heater
+in distinct slices. The two optional 8 kHz tool outputs remain PIO.
+See controller-pin-allocation.csv for every GPIO and physical package pin.
+
+INTERFACES AND POWER
+The DIN96 logical pin map is unchanged. No extra 3.3 V contact is introduced.
+Power comes from backplane 12 V and 5 V, with local 5 V-to-3.3 V conversion.
+The core LC network is mandatory RP2350 support. The original XYZ PH8 splitter
+cable and rotation 1x6 encoder pin order stay. USB-C is a service connection;
+USB VBUS is sensed, not tied to backplane 5 V.
+
+Preserve the UART motion protocol and I2C tool register protocol in firmware.
+They can terminate on the same MCU while retaining the existing contacts.
+Using local I2C1 does not rename or change the physical backplane I2C0 bus.
+
+WHY THIS HELPS, AND THE TRADEOFF
+Removing the STM32 removes its crystal, reset/boot support and duplicate
+programming interfaces. It leaves one firmware image and one shared view
+of motion/tool state. RP2350B's 10 x 10 mm package is larger than the A
+variant; savings come mainly from deleting supporting circuitry. The fixed
+DIN connector still sets a lower bound on board width.
+
+RP2350B has more pins, not more processing power than RP2350A. The remaining
+question is worst-case execution time, not peripheral availability. Three
+six-byte XYZ SPI reads take at least 18 us at 8 MHz. A six-byte rotation read
+takes at least 48 us at 1 MHz. These are calculated wire times, excluding
+software overhead and computation, not measured loop times. Do not simply
+add every rotation read to every XYZ iteration. Use explicit task rates
+and/or overlapping SPI DMA after measuring actual control requirements.
+
+FIRMWARE WORK REQUIRED BEFORE THIS HARDWARE CAN BE RUN
+1. Use an RP2350B target supporting GPIO32..47 and ADC GPIO40..47.
+2. Give encoder buses, PWM and ADC access clear task ownership. Use bounded
+   command queues and consistent updates of state shared between cores.
+3. Replace blocking homing/calibration in active control paths with bounded
+   state machines. Quiesce loads before flash writes, or implement and verify
+   a suitable RAM-resident control scheme that survives flash programming.
+4. Replace the motion loop's dt <=100 us clamp with real elapsed time,
+   deadline detection and a defined stop/fault policy. Review the inherited
+   JOINT_READY_OVERRIDE before running any motion.
+5. Keep logs and host callbacks out of critical control work. Measure worst
+   case timing under USB/UART/I2C traffic, homing, encoder faults and all
+   requested loads. CPU speed alone does not establish timing margin.
+6. Feed the watchdog only while control and communications tasks remain
+   healthy. Define command-loss behavior and explicit recovery/rearming.
+   Reset must leave motor enables and heater/vacuum controls off.
+7. Retain the independent thermal cutoff in the heater supply. A second
+   general-purpose MCU is not automatically a safety controller. A stopped
+   CPU can leave hardware PWM running until reset.
+8. Implement GPIO1 VBUS detection and self-powered USB behavior.
+
+CURRENT STATUS
+The single-controller schematic and PCB both contain 116 components.
+All 14 external connectors are on the root sheet. ERC and the six-page
+visual audit pass. PCB schematic parity passes. Manual routing is still
+in progress: 111 unconnected items remain in this development snapshot.
+
+Firmware has NOT yet been consolidated. Timing, connector mating, load
+current and thermal behavior require bench validation. This is not a
+fabrication or commissioning release. See validation.md for current checks.
+
+PRIMARY REFERENCES
+https://www.raspberrypi.com/documentation/pico-sdk/hardware.html
+https://www.raspberrypi.com/documentation/microcontrollers/microcontroller-chips.html
+https://pip.raspberrypi.com/categories/1214-rp2350
+https://github.com/hacker-fab/MicroManipulatorStepper
+https://github.com/jonahsaunders/fab-computer-hackerfab

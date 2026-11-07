@@ -1,0 +1,7 @@
+CURRENT DEVELOPMENT SNAPSHOT — 7 NOVEMBER 2026
+
+See validation.md for the current results and reproduction commands.
+116 components; ERC 0; visual collisions/crossings/overlaps 0;
+PCB DRC violations 0; schematic parity 0; 111 unconnected items remain.
+The schematic and PCB are synchronized. Routing and hardware review are unfinished.
+Not a manufacturing release.

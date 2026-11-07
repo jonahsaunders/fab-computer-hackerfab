@@ -1,0 +1,25 @@
+(fp_lib_table
+  (lib
+    (name "FabNano")
+    (type "KiCad")
+    (uri "${KIPRJMOD}/../libraries/FabNano.pretty")
+    (options "")
+    (descr ""))
+  (lib
+    (name "Hack_Chips")
+    (type "KiCad")
+    (uri "${KIPRJMOD}/../libraries/Hack_Chips.pretty")
+    (options "")
+    (descr ""))
+  (lib
+    (name "Hack_Passives")
+    (type "KiCad")
+    (uri "${KIPRJMOD}/../libraries/Hack_Passives.pretty")
+    (options "")
+    (descr ""))
+  (lib
+    (name "Connector_USB")
+    (type "KiCad")
+    (uri "${KIPRJMOD}/../libraries/Connector_USB.pretty")
+    (options "")
+    (descr "USB-C edge connector with silkscreen trimmed at the card edge")))

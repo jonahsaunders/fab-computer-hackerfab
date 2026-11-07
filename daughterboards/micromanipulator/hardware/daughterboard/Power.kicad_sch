@@ -1,0 +1,3080 @@
+(kicad_sch
+  (version 20250114)
+  (generator eeschema)
+  (generator_version "10.0")
+  (uuid "1d3a9153-32df-5d7c-aec7-6533e1a741b5")
+  (paper "A4")
+  (title_block
+    (title "Backplane rails and interfaces")
+    (date "2026-11-06")
+    (rev "A / DRAFT")
+    (company "HackerFab / FAB Computer")
+    (comment 1 "Bare IC daughterboard / engineering review"))
+  (lib_symbols
+    (symbol "Device:C_Polarized_Small"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0.254)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "C"
+        (at 0.254 1.778 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Value" "C_Polarized_Small"
+        (at 0.254 -2.032 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Polarized capacitor, small symbol"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "cap capacitor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "CP_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "C_Polarized_Small_0_1"
+        (rectangle
+          (start -1.524 0.6858)
+          (end 1.524 0.3048)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -1.524 -0.3048)
+          (end 1.524 -0.6858)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type outline)))
+        (polyline
+          (pts
+            (xy -1.27 1.524)
+            (xy -0.762 1.524))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -1.016 1.27)
+            (xy -1.016 1.778))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "C_Polarized_Small_1_1"
+        (pin passive line
+          (at 0 2.54 270)
+          (length 1.8542)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -2.54 90)
+          (length 1.8542)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "Device:C_Small"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0.254)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "C"
+        (at 0.254 1.778 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Value" "C_Small"
+        (at 0.254 -2.032 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Unpolarized capacitor, small symbol"
+        (at 0 -10.16 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "capacitor cap"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "C_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "C_Small_0_1"
+        (polyline
+          (pts
+            (xy -1.524 0.508)
+            (xy 1.524 0.508))
+          (stroke
+            (width 0.3048)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -1.524 -0.508)
+            (xy 1.524 -0.508))
+          (stroke
+            (width 0.3048)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "C_Small_1_1"
+        (pin passive line
+          (at 0 2.54 270)
+          (length 2.032)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -2.54 90)
+          (length 2.032)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "Device:Fuse"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "F"
+        (at 2.032 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "Fuse"
+        (at -1.905 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at -1.778 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Fuse"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "fuse"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "*Fuse*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "Fuse_0_1"
+        (rectangle
+          (start -0.762 -2.54)
+          (end 0.762 2.54)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0 -2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "Fuse_1_1"
+        (pin passive line
+          (at 0 3.81 270)
+          (length 1.27)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -3.81 90)
+          (length 1.27)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "Device:R_Small_US"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0.254)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "R"
+        (at 0.762 0.508 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Value" "R_Small_US"
+        (at 0.762 -1.016 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Resistor, small US symbol"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "r resistor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "R_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "R_Small_US_1_1"
+        (polyline
+          (pts
+            (xy 0 1.524)
+            (xy 1.016 1.143)
+            (xy 0 0.762)
+            (xy -1.016 0.381)
+            (xy 0 0))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 1.016 -0.381)
+            (xy 0 -0.762)
+            (xy -1.016 -1.143)
+            (xy 0 -1.524))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (pin passive line
+          (at 0 2.54 270)
+          (length 1.016)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -2.54 90)
+          (length 1.016)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "FabNano:PWR_+12V_BP"
+      (power global)
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "#PWR"
+        (at 0 -3.81 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "+12V_BP"
+        (at 0 3.556 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Power symbol creates a global label with name \"VDD\""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "global power"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "PWR_+12V_BP_0_1"
+        (polyline
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "PWR_+12V_BP_1_1"
+        (pin power_in line
+          (at 0 0 90)
+          (length 0)
+          (name "+12V_BP"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "FabNano:PWR_+12V_MOTOR"
+      (power global)
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "#PWR"
+        (at 0 -3.81 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "+12V_MOTOR"
+        (at 0 3.556 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Power symbol creates a global label with name \"VDD\""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "global power"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "PWR_+12V_MOTOR_0_1"
+        (polyline
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "PWR_+12V_MOTOR_1_1"
+        (pin power_in line
+          (at 0 0 90)
+          (length 0)
+          (name "+12V_MOTOR"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "FabNano:PWR_+3V3"
+      (power global)
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "#PWR"
+        (at 0 -3.81 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "+3V3"
+        (at 0 3.556 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Power symbol creates a global label with name \"VDD\""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "global power"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "PWR_+3V3_0_1"
+        (polyline
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "PWR_+3V3_1_1"
+        (pin power_in line
+          (at 0 0 90)
+          (length 0)
+          (name "+3V3"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "FabNano:PWR_+5V_BP"
+      (power global)
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "#PWR"
+        (at 0 -3.81 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "+5V_BP"
+        (at 0 3.556 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Power symbol creates a global label with name \"VDD\""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "global power"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "PWR_+5V_BP_0_1"
+        (polyline
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "PWR_+5V_BP_1_1"
+        (pin power_in line
+          (at 0 0 90)
+          (length 0)
+          (name "+5V_BP"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "FabNano:PWR_+5V_LOAD"
+      (power global)
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "#PWR"
+        (at 0 -3.81 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "+5V_LOAD"
+        (at 0 3.556 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Power symbol creates a global label with name \"VDD\""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "global power"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "PWR_+5V_LOAD_0_1"
+        (polyline
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "PWR_+5V_LOAD_1_1"
+        (pin power_in line
+          (at 0 0 90)
+          (length 0)
+          (name "+5V_LOAD"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "FabNano:PWR_GND"
+      (power global)
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "#PWR"
+        (at 0 -6.35 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "GND"
+        (at 0 -3.81 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "global power"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "PWR_GND_0_1"
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 -1.27)
+            (xy 1.27 -1.27)
+            (xy 0 -2.54)
+            (xy -1.27 -1.27)
+            (xy 0 -1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "PWR_GND_1_1"
+        (pin power_in line
+          (at 0 0 270)
+          (length 0)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "Hack_Chips:AP2112K-3.3TRG1"
+      (pin_names
+        (offset 0.254))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "U"
+        (at -5.08 5.715 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Value" "AP2112K-3.3TRG1"
+        (at 0 5.715 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Footprint" "Hack_Chips:SOT-23-5"
+        (at 0 8.255 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" "https://www.diodes.com/datasheet/download/AP2112.pdf"
+        (at 0 2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "600 mA LDO, 3.3 V fixed output, active-high enable, SOT25 / SOT-23-5"
+        (at 1.27 -8.382 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "linear regulator ldo fixed positive"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "SOT-23-5"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "AP2112K-3.3TRG1_1_1"
+        (rectangle
+          (start -5.08 4.445)
+          (end 5.08 -5.08)
+          (stroke
+            (width 0)
+            (type solid))
+          (fill
+            (type background)))
+        (pin power_in line
+          (at -7.62 2.54 0)
+          (length 2.54)
+          (name "VIN"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin power_in line
+          (at -7.62 -2.54 0)
+          (length 2.54)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin input line
+          (at -7.62 0 0)
+          (length 2.54)
+          (name "EN"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "3"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin no_connect line
+          (at 7.62 0 180)
+          (length 2.54)
+          (name "NC"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "4"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin power_out line
+          (at 7.62 2.54 180)
+          (length 2.54)
+          (name "VOUT"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "5"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "power:PWR_FLAG"
+      (power global)
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "#FLG"
+        (at 0 1.905 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "PWR_FLAG"
+        (at 0 3.81 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Special symbol for telling ERC where power comes from"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "flag power"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "PWR_FLAG_0_0"
+        (pin power_out line
+          (at 0 0 90)
+          (length 0)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (symbol "PWR_FLAG_0_1"
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 1.27)
+            (xy -1.016 1.905)
+            (xy 0 2.54)
+            (xy 1.016 1.905)
+            (xy 0 1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (embedded_fonts no)))
+  (symbol
+    (lib_id "Hack_Chips:AP2112K-3.3TRG1")
+    (at 76.2 40.64 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "524955d9-b2dd-5546-9fda-e41785e0f0dd")
+    (property "Reference" "U2"
+      (at 76.2 25.4 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "AP2112K-3.3TRG1"
+      (at 76.2 27.94 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+      (at 76.2 40.64 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" "https://www.diodes.com/datasheet/download/AP2112.pdf"
+      (at 76.2 40.64 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "AP2112K-3.3TRG1"
+      (at 76.2 40.64 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 76.2 40.64 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "524955d9-b2dd-5546-9fda-e41785e0f0dd"))
+    (pin "2"
+      (uuid "5f7f4dd3-915c-5020-91d1-c0f85f1a5bb0"))
+    (pin "3"
+      (uuid "dd2c33a5-8885-532e-a23c-507bf48192a4"))
+    (pin "4"
+      (uuid "93806225-145f-54dd-9046-20f713300de9"))
+    (pin "5"
+      (uuid "bcb80fc9-750a-5d38-bcde-ef3087cb532b"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/1d3a9153-32df-5d7c-aec7-6533e1a741b5"
+          (reference "U2")
+          (unit 1)))))
+  (no_connect
+    (at 83.82 40.64)
+    (uuid "b6d839ca-ed22-59c4-9cff-ede4de0b2af3"))
+  (symbol
+    (lib_id "Device:C_Small")
+    (at 35.56 45.72 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "701b39ae-3fdd-54a6-867d-aaa5e7095660")
+    (property "Reference" "C1"
+      (at 38.1 44.449999999999996 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "1uF 25V X7R"
+      (at 38.1 46.99 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 35.56 45.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 35.56 45.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 35.56 45.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 35.56 45.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "701b39ae-3fdd-54a6-867d-aaa5e7095660"))
+    (pin "2"
+      (uuid "0c79be23-8c54-513a-a23f-c18252d007fe"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/1d3a9153-32df-5d7c-aec7-6533e1a741b5"
+          (reference "C1")
+          (unit 1)))))
+  (symbol
+    (lib_id "Device:C_Small")
+    (at 106.68 45.72 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "a25046eb-1d8d-516c-a1b1-47b893bc2adc")
+    (property "Reference" "C2"
+      (at 109.22000000000001 44.449999999999996 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "1uF 25V X7R"
+      (at 109.22000000000001 46.99 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 106.68 45.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 106.68 45.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 106.68 45.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 106.68 45.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "a25046eb-1d8d-516c-a1b1-47b893bc2adc"))
+    (pin "2"
+      (uuid "8ba30b90-640d-55fa-9ed2-d1debf5cb8a9"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/1d3a9153-32df-5d7c-aec7-6533e1a741b5"
+          (reference "C2")
+          (unit 1)))))
+  (symbol
+    (lib_id "Device:C_Small")
+    (at 132.08 45.72 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "033069e8-df6d-5cf2-a4b7-1a0784d20684")
+    (property "Reference" "C3"
+      (at 134.62 44.449999999999996 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "10uF 10V X7R"
+      (at 134.62 46.99 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 132.08 45.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 132.08 45.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 132.08 45.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 132.08 45.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "033069e8-df6d-5cf2-a4b7-1a0784d20684"))
+    (pin "2"
+      (uuid "b7c89a6f-e8c3-554a-b2af-b4f991990fa9"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/1d3a9153-32df-5d7c-aec7-6533e1a741b5"
+          (reference "C3")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 35.56 43.18)
+      (xy 35.56 33.02))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "12573af4-0e93-5ab0-9309-e673198defca"))
+  (wire
+    (pts
+      (xy 35.56 33.02)
+      (xy 55.88 33.02))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "c0ca0c11-4081-5834-8774-371462fee1b1"))
+  (wire
+    (pts
+      (xy 55.88 33.02)
+      (xy 55.88 38.1))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "7d592348-9512-5c71-aade-917c18081a62"))
+  (wire
+    (pts
+      (xy 55.88 38.1)
+      (xy 68.58 38.1))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "28e47883-9948-5afb-827b-759c242b1489"))
+  (wire
+    (pts
+      (xy 55.88 38.1)
+      (xy 55.88 40.64))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "9e1428a5-0175-50f1-9109-20b44b30ca37"))
+  (wire
+    (pts
+      (xy 55.88 40.64)
+      (xy 68.58 40.64))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "7f6091dc-cff3-597f-a5f5-a0808ddbe234"))
+  (junction
+    (at 55.88 38.1)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "4f976d98-1791-5c84-a36d-86c1bcb679dd"))
+  (wire
+    (pts
+      (xy 68.58 43.18)
+      (xy 63.5 43.18))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "feefc725-f53f-550e-8737-3008696c473c"))
+  (wire
+    (pts
+      (xy 63.5 43.18)
+      (xy 63.5 58.42))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "d7d270b5-22de-50af-9da8-2cc24c4de1af"))
+  (wire
+    (pts
+      (xy 83.82 38.1)
+      (xy 132.08 38.1))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "4ccadc8b-5c29-51ef-9665-393cc7db065b"))
+  (wire
+    (pts
+      (xy 132.08 38.1)
+      (xy 132.08 43.18))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "5282f083-9833-5abd-80b2-18f80c789d81"))
+  (wire
+    (pts
+      (xy 106.68 43.18)
+      (xy 106.68 38.1))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "b0909b1c-a00c-51c2-b33d-4d6bbac28b29"))
+  (junction
+    (at 106.68 38.1)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "85e137bb-4390-5dcc-8caf-caf88b348873"))
+  (wire
+    (pts
+      (xy 35.56 48.26)
+      (xy 35.56 58.42))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "a29fc226-2dbb-5c60-af1b-3fbaa4c6af8a"))
+  (wire
+    (pts
+      (xy 106.68 48.26)
+      (xy 106.68 58.42))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "0494c95d-da13-5a01-bfc9-467107a02686"))
+  (wire
+    (pts
+      (xy 132.08 48.26)
+      (xy 132.08 58.42))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "d2f126d5-df24-5711-82b8-fc7f2ff9ce10"))
+  (wire
+    (pts
+      (xy 35.56 58.42)
+      (xy 63.5 58.42))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "ac343a46-f836-52d1-888d-c6f32111ef88"))
+  (wire
+    (pts
+      (xy 63.5 58.42)
+      (xy 106.68 58.42))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "efaa0254-b8a0-5721-8870-2284c445ff9c"))
+  (wire
+    (pts
+      (xy 106.68 58.42)
+      (xy 132.08 58.42))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "110fbae0-f7c5-506a-b291-232fad6d2f08"))
+  (junction
+    (at 35.56 58.42)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "840b7c04-257b-56f7-9f5f-bcba905a3263"))
+  (junction
+    (at 63.5 58.42)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "461f3f99-0e08-5a14-bd99-b749b55a9779"))
+  (junction
+    (at 106.68 58.42)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "9e263ed8-0e80-5c6a-9edb-228574ae8feb"))
+  (symbol
+    (lib_id "FabNano:PWR_GND")
+    (at 35.56 58.42 0)
+    (unit 1)
+    (in_bom no)
+    (on_board no)
+    (dnp no)
+    (uuid "e380a4b7-3bf1-5c75-8410-6babed12284c")
+    (property "Reference" "#PWR6024"
+      (at 35.56 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 35.56 62.230000000000004 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 35.56 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 35.56 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 35.56 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 35.56 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "e380a4b7-3bf1-5c75-8410-6babed12284c"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/1d3a9153-32df-5d7c-aec7-6533e1a741b5"
+          (reference "#PWR6024")
+          (unit 1)))))
+  (symbol
+    (lib_id "FabNano:PWR_+5V_BP")
+    (at 40.64 33.02 0)
+    (unit 1)
+    (in_bom no)
+    (on_board no)
+    (dnp no)
+    (uuid "e6964870-9557-588a-ae02-c2b82473c315")
+    (property "Reference" "#PWR6025"
+      (at 40.64 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Value" "+5V_BP"
+      (at 40.64 29.210000000000004 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 40.64 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 40.64 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 40.64 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 40.64 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "e6964870-9557-588a-ae02-c2b82473c315"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/1d3a9153-32df-5d7c-aec7-6533e1a741b5"
+          (reference "#PWR6025")
+          (unit 1)))))
+  (symbol
+    (lib_id "FabNano:PWR_+3V3")
+    (at 137.16 38.1 0)
+    (unit 1)
+    (in_bom no)
+    (on_board no)
+    (dnp no)
+    (uuid "0172ce7b-4a7a-52d6-8568-f10e12785b68")
+    (property "Reference" "#PWR6026"
+      (at 137.16 38.1 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Value" "+3V3"
+      (at 137.16 34.29 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 137.16 38.1 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 137.16 38.1 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 137.16 38.1 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 137.16 38.1 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "0172ce7b-4a7a-52d6-8568-f10e12785b68"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/1d3a9153-32df-5d7c-aec7-6533e1a741b5"
+          (reference "#PWR6026")
+          (unit 1)))))
+  (symbol
+    (lib_id "power:PWR_FLAG")
+    (at 48.26 33.02 0)
+    (unit 1)
+    (in_bom no)
+    (on_board no)
+    (dnp no)
+    (uuid "65fc2a71-10ef-5982-b588-1cd1245533d6")
+    (property "Reference" "#FLG01"
+      (at 48.26 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Value" "PWR_FLAG"
+      (at 48.26 29.210000000000004 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Footprint" ""
+      (at 48.26 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 48.26 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 48.26 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 48.26 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "65fc2a71-10ef-5982-b588-1cd1245533d6"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/1d3a9153-32df-5d7c-aec7-6533e1a741b5"
+          (reference "#FLG01")
+          (unit 1)))))
+  (junction
+    (at 48.26 33.02)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "cca62937-8f67-5fcf-96e0-bde0cab94151"))
+  (symbol
+    (lib_id "power:PWR_FLAG")
+    (at 48.26 58.42 0)
+    (unit 1)
+    (in_bom no)
+    (on_board no)
+    (dnp no)
+    (uuid "c333cbbe-9ef6-5394-a1cc-43661ce1b360")
+    (property "Reference" "#FLG04"
+      (at 48.26 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Value" "PWR_FLAG"
+      (at 48.26 54.61 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Footprint" ""
+      (at 48.26 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 48.26 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 48.26 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 48.26 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "c333cbbe-9ef6-5394-a1cc-43661ce1b360"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/1d3a9153-32df-5d7c-aec7-6533e1a741b5"
+          (reference "#FLG04")
+          (unit 1)))))
+  (junction
+    (at 48.26 58.42)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "e86a91a5-604b-5b4f-bf3c-2f8f325619b0"))
+  (text "Logic only. No new backplane contact."
+    (at 15.24 71.12 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "3716831f-b01a-5d1a-9ddd-fd63f4953376"))
+  (symbol
+    (lib_id "Device:Fuse")
+    (at 185.42 35.56 90)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "006a1a69-3d0d-5392-bb3e-0c505cd672c6")
+    (property "Reference" "F1"
+      (at 185.42 27.94 90)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "2A 125V"
+      (at 185.42 30.48 90)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Fuse:Fuse_1206_3216Metric"
+      (at 185.42 35.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 185.42 35.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 185.42 35.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 185.42 35.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "006a1a69-3d0d-5392-bb3e-0c505cd672c6"))
+    (pin "2"
+      (uuid "4c208d41-805c-540d-8f7c-74c720797fd7"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/1d3a9153-32df-5d7c-aec7-6533e1a741b5"
+          (reference "F1")
+          (unit 1)))))
+  (symbol
+    (lib_id "Device:C_Polarized_Small")
+    (at 215.9 48.26 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "299ff4bd-65a7-5553-95fc-f464dadd15f6")
+    (property "Reference" "C5"
+      (at 218.44 46.989999999999995 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "220uF 25V"
+      (at 218.44 49.53 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:CP_Elec_6.3x7.7"
+      (at 215.9 48.26 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 215.9 48.26 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "217EC0037"
+      (at 215.9 48.26 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "KNSCHA"
+      (at 215.9 48.26 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "299ff4bd-65a7-5553-95fc-f464dadd15f6"))
+    (pin "2"
+      (uuid "5a033d67-5578-5bba-ba30-516965f7178f"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/1d3a9153-32df-5d7c-aec7-6533e1a741b5"
+          (reference "C5")
+          (unit 1))))
+    (property "LCSC" "C42371908"
+      (at 215.9 48.26 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier_URL" "https://www.lcsc.com/product-detail/C42371908.html"
+      (at 215.9 48.26 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "C42371908"
+      (at 215.9 48.26 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier_URL" "https://www.lcsc.com/product-detail/C42371908.html"
+      (at 215.9 48.26 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "C42371908"
+      (at 215.9 48.26 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier_URL" "https://www.lcsc.com/product-detail/C42371908.html"
+      (at 215.9 48.26 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
+  (symbol
+    (lib_id "Device:C_Small")
+    (at 251.46 48.26 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "75990561-f718-59d0-8c69-0e20258a3be2")
+    (property "Reference" "C6"
+      (at 254.0 46.989999999999995 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "100nF 25V"
+      (at 254.0 49.53 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 251.46 48.26 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 251.46 48.26 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 251.46 48.26 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 251.46 48.26 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "75990561-f718-59d0-8c69-0e20258a3be2"))
+    (pin "2"
+      (uuid "d709ba8d-6e04-517b-a218-beed4301fad2"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/1d3a9153-32df-5d7c-aec7-6533e1a741b5"
+          (reference "C6")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 167.64 35.56)
+      (xy 181.61 35.56))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e0169903-d407-5b5d-a8f9-03cfc967cb9e"))
+  (symbol
+    (lib_id "FabNano:PWR_+5V_BP")
+    (at 167.64 35.56 0)
+    (unit 1)
+    (in_bom no)
+    (on_board no)
+    (dnp no)
+    (uuid "bc92d8f0-46e8-5ba8-9b26-845ebbb6a053")
+    (property "Reference" "#PWR6032"
+      (at 167.64 35.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Value" "+5V_BP"
+      (at 167.64 31.750000000000004 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 167.64 35.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 167.64 35.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 167.64 35.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 167.64 35.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "bc92d8f0-46e8-5ba8-9b26-845ebbb6a053"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/1d3a9153-32df-5d7c-aec7-6533e1a741b5"
+          (reference "#PWR6032")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 189.23 35.56)
+      (xy 274.32 35.56))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "fd56b132-9e80-5149-a804-6c2a64aa7c05"))
+  (symbol
+    (lib_id "FabNano:PWR_+5V_LOAD")
+    (at 274.32 35.56 0)
+    (unit 1)
+    (in_bom no)
+    (on_board no)
+    (dnp no)
+    (uuid "a23fcfd8-1b2e-50ca-8ec1-d8c572a92b0b")
+    (property "Reference" "#PWR6034"
+      (at 274.32 35.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Value" "+5V_LOAD"
+      (at 274.32 31.750000000000004 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 274.32 35.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 274.32 35.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 274.32 35.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 274.32 35.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "a23fcfd8-1b2e-50ca-8ec1-d8c572a92b0b"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/1d3a9153-32df-5d7c-aec7-6533e1a741b5"
+          (reference "#PWR6034")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 215.9 45.72)
+      (xy 215.9 35.56))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "651f7add-9897-5afa-8f42-25c1a39a6a56"))
+  (junction
+    (at 215.9 35.56)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "e2f51791-fd44-57d9-a255-9ffb00466d30"))
+  (wire
+    (pts
+      (xy 251.46 45.72)
+      (xy 251.46 35.56))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "137ca30d-b9b4-529f-8c27-d8bf6d35eb53"))
+  (junction
+    (at 251.46 35.56)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "99310a9c-d2bc-5494-8547-41fa0b844bc3"))
+  (wire
+    (pts
+      (xy 215.9 50.8)
+      (xy 215.9 60.96))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "6f202f86-0017-548c-a918-df8648dd199e"))
+  (wire
+    (pts
+      (xy 251.46 50.8)
+      (xy 251.46 60.96))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "fad26277-acfd-5fcc-b21a-ea34561575dd"))
+  (wire
+    (pts
+      (xy 215.9 60.96)
+      (xy 251.46 60.96))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e230604c-8a79-5ff7-9a78-b141fd281156"))
+  (junction
+    (at 215.9 60.96)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "def53193-2580-53fb-89ad-a9436933ba56"))
+  (symbol
+    (lib_id "FabNano:PWR_GND")
+    (at 215.9 60.96 0)
+    (unit 1)
+    (in_bom no)
+    (on_board no)
+    (dnp no)
+    (uuid "d1deaa67-1117-53a1-983f-faf82f67c68a")
+    (property "Reference" "#PWR6043"
+      (at 215.9 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 215.9 64.77 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 215.9 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 215.9 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 215.9 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 215.9 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "d1deaa67-1117-53a1-983f-faf82f67c68a"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/1d3a9153-32df-5d7c-aec7-6533e1a741b5"
+          (reference "#PWR6043")
+          (unit 1)))))
+  (symbol
+    (lib_id "power:PWR_FLAG")
+    (at 236.22 35.56 0)
+    (unit 1)
+    (in_bom no)
+    (on_board no)
+    (dnp no)
+    (uuid "6542650c-2d36-5784-8624-9606f3034081")
+    (property "Reference" "#FLG02"
+      (at 236.22 35.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Value" "PWR_FLAG"
+      (at 236.22 31.750000000000004 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Footprint" ""
+      (at 236.22 35.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 236.22 35.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 236.22 35.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 236.22 35.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "6542650c-2d36-5784-8624-9606f3034081"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/1d3a9153-32df-5d7c-aec7-6533e1a741b5"
+          (reference "#FLG02")
+          (unit 1)))))
+  (junction
+    (at 236.22 35.56)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "804d19ec-01df-5cd3-be30-2fd73ea3a657"))
+  (symbol
+    (lib_id "Device:Fuse")
+    (at 185.42 83.82 90)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "81d7d93a-168c-51f5-957a-d91ef782e37e")
+    (property "Reference" "F2"
+      (at 185.42 76.2 90)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "3A 125V"
+      (at 185.42 78.74 90)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Fuse:Fuse_1206_3216Metric"
+      (at 185.42 83.82 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 185.42 83.82 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 185.42 83.82 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 185.42 83.82 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "81d7d93a-168c-51f5-957a-d91ef782e37e"))
+    (pin "2"
+      (uuid "d5dea301-db2c-5c6f-8129-760600af5ab8"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/1d3a9153-32df-5d7c-aec7-6533e1a741b5"
+          (reference "F2")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 167.64 83.82)
+      (xy 181.61 83.82))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "0bec912a-ce15-5beb-af29-f00e2b4dc0de"))
+  (symbol
+    (lib_id "FabNano:PWR_+12V_BP")
+    (at 167.64 83.82 0)
+    (unit 1)
+    (in_bom no)
+    (on_board no)
+    (dnp no)
+    (uuid "d637b9a1-042f-5b16-8042-4a21801a390e")
+    (property "Reference" "#PWR6046"
+      (at 167.64 83.82 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Value" "+12V_BP"
+      (at 167.64 80.00999999999999 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 167.64 83.82 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 167.64 83.82 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 167.64 83.82 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 167.64 83.82 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "d637b9a1-042f-5b16-8042-4a21801a390e"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/1d3a9153-32df-5d7c-aec7-6533e1a741b5"
+          (reference "#PWR6046")
+          (unit 1)))))
+  (symbol
+    (lib_id "power:PWR_FLAG")
+    (at 175.26 73.66 0)
+    (unit 1)
+    (in_bom no)
+    (on_board no)
+    (dnp no)
+    (uuid "89370d8e-4ca6-5e84-8cae-c058c9d43bf4")
+    (property "Reference" "#FLG05"
+      (at 175.26 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Value" "PWR_FLAG"
+      (at 175.26 69.85 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Footprint" ""
+      (at 175.26 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 175.26 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 175.26 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 175.26 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "89370d8e-4ca6-5e84-8cae-c058c9d43bf4"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/1d3a9153-32df-5d7c-aec7-6533e1a741b5"
+          (reference "#FLG05")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 175.26 73.66)
+      (xy 175.26 83.82))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "342b4cfe-e30c-5f3e-8d50-cdd743ec9e0f"))
+  (junction
+    (at 175.26 83.82)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "222ac6f0-6b30-5715-b742-b19887c61c57"))
+  (wire
+    (pts
+      (xy 189.23 83.82)
+      (xy 274.32 83.82))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "db18c0d8-66f9-5b8a-b28a-dabe98dce5fd"))
+  (symbol
+    (lib_id "FabNano:PWR_+12V_MOTOR")
+    (at 274.32 83.82 0)
+    (unit 1)
+    (in_bom no)
+    (on_board no)
+    (dnp no)
+    (uuid "00c55f18-1143-5588-baaa-dc2a97139a2c")
+    (property "Reference" "#PWR6050"
+      (at 274.32 83.82 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Value" "+12V_MOTOR"
+      (at 274.32 80.00999999999999 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 274.32 83.82 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 274.32 83.82 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 274.32 83.82 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 274.32 83.82 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "00c55f18-1143-5588-baaa-dc2a97139a2c"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/1d3a9153-32df-5d7c-aec7-6533e1a741b5"
+          (reference "#PWR6050")
+          (unit 1)))))
+  (symbol
+    (lib_id "power:PWR_FLAG")
+    (at 236.22 83.82 0)
+    (unit 1)
+    (in_bom no)
+    (on_board no)
+    (dnp no)
+    (uuid "83134722-7f42-51dc-b6db-f4bcd36f22f4")
+    (property "Reference" "#FLG03"
+      (at 236.22 83.82 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Value" "PWR_FLAG"
+      (at 236.22 80.00999999999999 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Footprint" ""
+      (at 236.22 83.82 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 236.22 83.82 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 236.22 83.82 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 236.22 83.82 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "83134722-7f42-51dc-b6db-f4bcd36f22f4"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/1d3a9153-32df-5d7c-aec7-6533e1a741b5"
+          (reference "#FLG03")
+          (unit 1)))))
+  (junction
+    (at 236.22 83.82)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "4cfcb533-7114-5bf6-8eda-4a414a1c0aff"))
+  (symbol
+    (lib_id "Device:R_Small_US")
+    (at 215.9 101.6 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "63b5f4d9-4992-54ac-b5a0-f46a4352872f")
+    (property "Reference" "R1"
+      (at 218.44 100.33 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "100kR 1%"
+      (at 218.44 102.86999999999999 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 215.9 101.6 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 215.9 101.6 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 215.9 101.6 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 215.9 101.6 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "63b5f4d9-4992-54ac-b5a0-f46a4352872f"))
+    (pin "2"
+      (uuid "a8290a7b-af09-5abd-bb5c-4cb89adb9794"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/1d3a9153-32df-5d7c-aec7-6533e1a741b5"
+          (reference "R1")
+          (unit 1)))))
+  (symbol
+    (lib_id "Device:R_Small_US")
+    (at 215.9 129.54 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "5023f823-8a9a-52fe-9193-2dd0627de35e")
+    (property "Reference" "R2"
+      (at 218.44 128.26999999999998 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "22kR 1%"
+      (at 218.44 130.81 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 215.9 129.54 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 215.9 129.54 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 215.9 129.54 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 215.9 129.54 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "5023f823-8a9a-52fe-9193-2dd0627de35e"))
+    (pin "2"
+      (uuid "8a9e171a-2586-5ed1-8e6a-ad2e5c597eda"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/1d3a9153-32df-5d7c-aec7-6533e1a741b5"
+          (reference "R2")
+          (unit 1)))))
+  (symbol
+    (lib_id "Device:C_Small")
+    (at 251.46 129.54 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "10f0d4d9-e8f7-5c56-9374-45fdf1d67fd2")
+    (property "Reference" "C4"
+      (at 254.0 128.26999999999998 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "100nF 25V"
+      (at 254.0 130.81 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 251.46 129.54 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 251.46 129.54 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 251.46 129.54 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 251.46 129.54 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "10f0d4d9-e8f7-5c56-9374-45fdf1d67fd2"))
+    (pin "2"
+      (uuid "9d552189-8df8-59cb-80a3-a64cf45a1cc0"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/1d3a9153-32df-5d7c-aec7-6533e1a741b5"
+          (reference "C4")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 215.9 99.06)
+      (xy 215.9 83.82))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "f0b43711-46ca-5eb6-b8c3-91058eeed7eb"))
+  (junction
+    (at 215.9 83.82)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "a064eb38-0ed0-5080-9496-b37ef781b524"))
+  (wire
+    (pts
+      (xy 215.9 104.14)
+      (xy 215.9 116.84))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "bc47df31-6d96-53d2-9f11-29cd25bed430"))
+  (wire
+    (pts
+      (xy 215.9 116.84)
+      (xy 215.9 127.0))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "8ad98acc-4fcb-535e-9dff-d9356cc9676b"))
+  (wire
+    (pts
+      (xy 215.9 116.84)
+      (xy 251.46 116.84))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "b9d099c6-a59f-5f04-ae3a-14849dbca06b"))
+  (wire
+    (pts
+      (xy 251.46 116.84)
+      (xy 251.46 127.0))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e1a46c7d-ecb1-50e0-adac-90ed1ee6a48e"))
+  (junction
+    (at 215.9 116.84)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "bd577750-e99f-5a0f-98fb-7a64edc43ece"))
+  (hierarchical_label "POWER_12V_SENSE"
+    (shape bidirectional)
+    (at 251.46 116.84 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "f12b0e88-a844-5669-811e-2718a2240d30"))
+  (wire
+    (pts
+      (xy 215.9 132.08)
+      (xy 215.9 142.24))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "b5f5ce89-5a13-597f-91e9-03883613324f"))
+  (wire
+    (pts
+      (xy 251.46 132.08)
+      (xy 251.46 142.24))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e1fe1a4b-6aa6-551f-9900-d7da6ca15a6e"))
+  (wire
+    (pts
+      (xy 215.9 142.24)
+      (xy 251.46 142.24))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "a80f3eab-c727-5fea-84ca-50d03cc96c9a"))
+  (junction
+    (at 215.9 142.24)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "b9ebf441-3b76-5029-9203-2df563d09d12"))
+  (symbol
+    (lib_id "FabNano:PWR_GND")
+    (at 215.9 142.24 0)
+    (unit 1)
+    (in_bom no)
+    (on_board no)
+    (dnp no)
+    (uuid "471f1236-b868-5174-8abc-dea98edca5f0")
+    (property "Reference" "#PWR6064"
+      (at 215.9 142.24 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 215.9 146.05 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 215.9 142.24 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 215.9 142.24 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 215.9 142.24 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 215.9 142.24 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "471f1236-b868-5174-8abc-dea98edca5f0"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/1d3a9153-32df-5d7c-aec7-6533e1a741b5"
+          (reference "#PWR6064")
+          (unit 1)))))
+  (text "12 V absent: inhibit tool outputs."
+    (at 162.56 154.94 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "39695d9d-a617-5e7d-8124-842a7ce8e0b4"))
+  (wire
+    (pts
+      (xy 35.56 33.02)
+      (xy 30.480000000000004 33.02))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "c40e38e2-a9f9-56af-a778-0b6a880cb2e6"))
+  (wire
+    (pts
+      (xy 167.64 83.82)
+      (xy 162.55999999999997 83.82))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "d4b3f72b-5144-544a-8c7c-76cc29b4ec18"))
+  (hierarchical_label "+5V_BP"
+    (shape bidirectional)
+    (at 30.480000000000004 33.02 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "4255794f-c55a-56dd-a59d-ff58a0dcf055"))
+  (hierarchical_label "+12V_BP"
+    (shape bidirectional)
+    (at 162.55999999999997 83.82 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "137a5cd6-3814-5313-bd9e-7d5f1982c761"))
+  (wire
+    (pts
+      (xy 132.08 38.1)
+      (xy 149.86 38.1))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "4f747462-d726-5e02-a5bf-574d3e178682"))
+  (hierarchical_label "+3V3"
+    (shape bidirectional)
+    (at 149.86 38.1 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "3c6b883f-a8ff-5932-ae05-8e7fe9b25419"))
+  (wire
+    (pts
+      (xy 274.32 35.56)
+      (xy 274.32 43.18))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "da91d25e-397f-5efd-a888-d2b68add0a47"))
+  (hierarchical_label "+5V_LOAD"
+    (shape bidirectional)
+    (at 274.32 43.18 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "3959febc-3406-54ba-8ae3-b5d5eb7b713e"))
+  (wire
+    (pts
+      (xy 274.32 83.82)
+      (xy 274.32 91.44))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e8360527-e51e-56bf-8038-39e5edb86b88"))
+  (hierarchical_label "+12V_MOTOR"
+    (shape bidirectional)
+    (at 274.32 91.44 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "80ecdc7e-e1d4-500a-bc23-570501e2a550"))
+  (junction
+    (at 40.64 33.02)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "902d028d-bb5c-508e-b834-b3f1896b1afb"))
+  (junction
+    (at 137.16 38.1)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "f3a5082c-5d60-5444-b254-26ee6b70c2d3"))
+  (junction
+    (at 35.56 33.02)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "a212c051-500d-59b5-a286-93c85e5ab047"))
+  (junction
+    (at 132.08 38.1)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "427578a2-8675-5f94-ad6b-875e7bd96140")))
