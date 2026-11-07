@@ -11,6 +11,7 @@ This is a development snapshot, not a manufacturing release. The seven-sheet sch
 | PCB unconnected items | **0** |
 | Schematic/PCB parity | **0 issues** |
 | Components / copper layers | **116 / 4** |
+| Host interface / connector footprint audit | **288** host contacts compared; **9** PH and **3** pin-header footprints checked; full interface in host J1/J2 |
 
 The layer order is front signal / inner power / inner ground / back signal. The board contains 1492 manually routed track segments/vias, including 57 added ground-stitching vias. Eight filled zones include the inner power regions, a single connected In2 ground region and grounded outer copper. No autorouter was used. Courtyard, via-endpoint, footprint-filter and pad-type checks are enabled. A native-board comparison confirms all 14 connectors retain their placement, orientation, pad geometry and electrical connections. The two USB CC nets have descriptive names after the hierarchy change described below.
 
@@ -22,6 +23,8 @@ All 31 footprint types resolve from project-local libraries. All 116 component i
 
 The [USB routing revision](usb-routing-review.md) reduces the resistor-to-MCU stubs from 14.407/15.731 mm to 2.652/0.987 mm, with no signal vias after the resistors. Native netlist comparison verifies that only the four equivalent U12 ESD-channel pins changed net membership. All external interfaces are preserved. Both 0201 resistor footprints use manufacturer-recommended lands and bundled models. Three extra ground-transfer vias support the USB launches.
 
+The [connector review](connector-review.md) assigns exact WingTAT/JST/XUNPU/BOOMELE parts to thirteen connectors and verifies their hole patterns against manufacturer drawings. Together with the existing HRO USB-C part, all fourteen external connectors now have ordering codes. The actual host PCB confirms UART direction, I²C and power allocation; slot J3 lacks UART. This selection changes procurement fields only, with all electrical geometry and visible schematic content preserved by parsed-file comparison. Nominal host slot pitch is 26 mm; a populated assembly and cable-clearance check remains open.
+
 ## Reproduce
 
 Run from this folder, with KiCad 10 available. Create `build/` first.
@@ -32,6 +35,7 @@ kicad-cli pcb drc --format json --severity-all --schematic-parity --output build
 kicad-cli sch export svg --output docs/schematics/ hardware/daughterboard/FabNanoDaughterboard.kicad_sch
 python scripts/check_schematic_visuals.py
 python scripts/check_hierarchy.py
+python scripts/check_backplane_interface.py
 python scripts/check_usb_termination.py
 python scripts/check_decoupling.py
 python scripts/check_capacitor_returns.py

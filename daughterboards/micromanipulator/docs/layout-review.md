@@ -20,6 +20,8 @@ All 31 footprint types are copied into project-local libraries without changing 
 
 The USB connector opens off the left card edge. JST PH and pin-header harnesses mate above the component face; the DIN plug faces the insertion edge. The native 3D view shows these directions and no apparent body collisions. Cable bend space between populated host slots and actual DIN mating depth remain to be checked against the host assembly.
 
+The [connector review](connector-review.md) specifies WingTAT 9001-11961C00A for J1 and exact JST parts for all nine PH headers. Their hole patterns match manufacturer drawings. The saved host PCB has 26 mm slot pitch; J1/J2 carry the required UART and I²C interface, while J3 lacks UART. The card's existing DIN model remains nominal. No connector placement or pinout changes accompany these selections.
+
 Visible board labels use at least 1.0 mm text height and 0.15 mm stroke. The eleven thermal vias inside soldered exposed pads are explicitly marked **filled and copper-capped**; ordinary stitching vias are tented. Confirm that process and the QFN/WSON stencil apertures with the assembler. [JLCPCB capabilities](https://jlcpcb.com/capabilities/Capabilities).
 
 ## Outstanding engineering checks

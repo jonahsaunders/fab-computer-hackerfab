@@ -22,6 +22,7 @@ Keep this entire folder together. All 31 used footprint types and all 116 placed
 | [Controller decision](docs/controller-decision.txt) | Single-RP2350B resource allocation and migration requirements |
 | [Pin allocation](docs/controller-pin-allocation.csv) | Current RP2350B GPIO map |
 | [Connector table](docs/connectors.csv) and [wiring table](docs/wiring.csv) | External interfaces and original encoder harness pin order |
+| [Connector review](docs/connector-review.md) | Exact connector parts, manufacturer hole-pattern checks and host slot compatibility |
 | [Logic supply budget](docs/power-budget.md) | Regulator package choice, current allocation and thermal estimate |
 | [BOM](docs/bom.csv) | Current schematic parts; supplier selection and assembly review are incomplete |
 | [Validation](docs/validation.md) | Current ERC, DRC, parity and visual-audit results |

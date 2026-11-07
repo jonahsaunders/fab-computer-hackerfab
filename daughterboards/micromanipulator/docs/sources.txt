@@ -93,3 +93,18 @@ https://www.yageogroup.com/component-documentation/download/specsheet/RC0201FR-0
 https://yageogroup.com/content/Resource%20Library/Product%20Guide-Catalog/yageo_PYu-R_Mount_10_19050818_343.pdf
 https://www.st.com/resource/en/datasheet/usblc6-2.pdf
 The custom 0201 footprint is adapted from KiCad R_0201_0603Metric with YAGEO recommended lands and 0.15 mm courtyard margin. Its standard KiCad STEP model is bundled.
+
+Connector selection and host-interface review, 2026-11-07:
+https://www.lcsc.com/datasheet/C5173361.pdf
+WingTAT male drawing 9001D11001 R7, retrieved via LCSC.
+https://www.lcsc.com/datasheet/C5173363.pdf
+WingTAT female drawing 9001D12003 R7, retrieved via LCSC.
+https://www.jst-mfg.com/product/pdf/eng/ePH.pdf
+JST PH family: through-hole header hole patterns, body dimensions and ratings.
+JLCPCB catalog part links and checked references are in docs/connector-review.md.
+https://www.lcsc.com/datasheet/C41360740.pdf
+https://www.lcsc.com/datasheet/C41360739.pdf
+XUNPU PH1.27-01-NPZD manufacturer family drawing, revision A, retrieved via LCSC.
+https://www.lcsc.com/datasheet/C37208.pdf
+BOOMELE manufacturer drawing 2.54-1xNA-H2.5-L11.2, retrieved via LCSC.
+The BOOMELE drawing specifies a 5.7 mm mating pin, resolving the catalog's inconsistent 6 mm description.

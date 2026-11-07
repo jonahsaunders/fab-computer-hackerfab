@@ -2775,19 +2775,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/1f989fd38ab44090d0a6e74591055863.pdf?productCode=C5173363"
+    (property "Datasheet" "https://www.lcsc.com/datasheet/C5173361.pdf"
       (at 25.4 66.04 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "9001-11961C00A"
       (at 25.4 66.04 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "WingTAT"
       (at 25.4 66.04 0)
       (effects
         (font
@@ -2862,7 +2862,13 @@
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642"
           (reference "J1")
           (unit 1))))
-    (mirror y))
+    (mirror y)
+    (property "LCSC" "C5173361"
+      (at 25.4 66.04 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (no_connect
     (at 35.56 26.67)
     (uuid "11c870f4-095b-5904-9361-de0b93cb7bb4"))
@@ -3175,19 +3181,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/1f989fd38ab44090d0a6e74591055863.pdf?productCode=C5173363"
+    (property "Datasheet" "https://www.lcsc.com/datasheet/C5173361.pdf"
       (at 78.74 66.04 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "9001-11961C00A"
       (at 78.74 66.04 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "WingTAT"
       (at 78.74 66.04 0)
       (effects
         (font
@@ -3262,7 +3268,13 @@
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642"
           (reference "J1")
           (unit 2))))
-    (mirror y))
+    (mirror y)
+    (property "LCSC" "C5173361"
+      (at 78.74 66.04 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 88.9 26.67)
@@ -3767,19 +3779,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/1f989fd38ab44090d0a6e74591055863.pdf?productCode=C5173363"
+    (property "Datasheet" "https://www.lcsc.com/datasheet/C5173361.pdf"
       (at 132.08 66.04 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "9001-11961C00A"
       (at 132.08 66.04 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "WingTAT"
       (at 132.08 66.04 0)
       (effects
         (font
@@ -3854,7 +3866,13 @@
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642"
           (reference "J1")
           (unit 3))))
-    (mirror y))
+    (mirror y)
+    (property "LCSC" "C5173361"
+      (at 132.08 66.04 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (no_connect
     (at 142.24 26.67)
     (uuid "55d50959-891f-5f68-868f-9895e0693fec"))
@@ -4181,19 +4199,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf"
       (at 25.4 144.78 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "B4B-PH-K-S(LF)(SN)"
       (at 25.4 144.78 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "JST"
       (at 25.4 144.78 0)
       (effects
         (font
@@ -4212,7 +4230,13 @@
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642"
           (reference "J3")
           (unit 1))))
-    (mirror y))
+    (mirror y)
+    (property "LCSC" "C131334"
+      (at 25.4 144.78 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 30.48 142.24)
@@ -4297,19 +4321,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf"
       (at 78.74 144.78 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "B4B-PH-K-S(LF)(SN)"
       (at 78.74 144.78 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "JST"
       (at 78.74 144.78 0)
       (effects
         (font
@@ -4328,7 +4352,13 @@
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642"
           (reference "J4")
           (unit 1))))
-    (mirror y))
+    (mirror y)
+    (property "LCSC" "C131334"
+      (at 78.74 144.78 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 83.82 142.24)
@@ -4413,19 +4443,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf"
       (at 132.08 144.78 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "B4B-PH-K-S(LF)(SN)"
       (at 132.08 144.78 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "JST"
       (at 132.08 144.78 0)
       (effects
         (font
@@ -4444,7 +4474,13 @@
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642"
           (reference "J5")
           (unit 1))))
-    (mirror y))
+    (mirror y)
+    (property "LCSC" "C131334"
+      (at 132.08 144.78 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 137.16 142.24)
@@ -4529,7 +4565,7 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf"
       (at 25.4 180.34 0)
       (effects
         (font
@@ -4737,19 +4773,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.lcsc.com/datasheet/C37208.pdf"
       (at 78.74 180.34 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "2.54-1x6PStraight pin"
       (at 78.74 180.34 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "BOOMELE"
       (at 78.74 180.34 0)
       (effects
         (font
@@ -4772,7 +4808,13 @@
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642"
           (reference "J12")
           (unit 1))))
-    (mirror y))
+    (mirror y)
+    (property "LCSC" "C37208"
+      (at 78.74 180.34 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 83.82 175.26)
@@ -4887,19 +4929,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf"
       (at 132.08 180.34 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "B4B-PH-K-S(LF)(SN)"
       (at 132.08 180.34 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "JST"
       (at 132.08 180.34 0)
       (effects
         (font
@@ -4918,7 +4960,13 @@
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642"
           (reference "J14")
           (unit 1))))
-    (mirror y))
+    (mirror y)
+    (property "LCSC" "C131334"
+      (at 132.08 180.34 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 137.16 177.8)
@@ -5003,7 +5051,7 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf"
       (at 25.4 218.44 0)
       (effects
         (font
@@ -5160,7 +5208,7 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf"
       (at 78.74 215.9 0)
       (effects
         (font
@@ -5266,7 +5314,7 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf"
       (at 132.08 215.9 0)
       (effects
         (font
@@ -5372,19 +5420,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.lcsc.com/datasheet/C41360740.pdf"
       (at 25.4 254 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "PH1.27-01-05PZD"
       (at 25.4 254 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "XUNPU"
       (at 25.4 254 0)
       (effects
         (font
@@ -5405,7 +5453,13 @@
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642"
           (reference "J2")
           (unit 1))))
-    (mirror y))
+    (mirror y)
+    (property "LCSC" "C41360740"
+      (at 25.4 254 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 30.48 248.92)
@@ -5505,19 +5559,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf"
       (at 185.42 139.7 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "B3B-PH-K-S(LF)(SN)"
       (at 185.42 139.7 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "JST"
       (at 185.42 139.7 0)
       (effects
         (font
@@ -5534,7 +5588,13 @@
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642"
           (reference "J13")
           (unit 1))))
-    (mirror y))
+    (mirror y)
+    (property "LCSC" "C131339"
+      (at 185.42 139.7 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 190.5 137.16)
@@ -5604,19 +5664,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.lcsc.com/datasheet/C41360739.pdf"
       (at 185.42 185.42 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "PH1.27-01-04PZD"
       (at 185.42 185.42 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "XUNPU"
       (at 185.42 185.42 0)
       (effects
         (font
@@ -5635,7 +5695,13 @@
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642"
           (reference "J19")
           (unit 1))))
-    (mirror y))
+    (mirror y)
+    (property "LCSC" "C41360739"
+      (at 185.42 185.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 190.5 182.88)

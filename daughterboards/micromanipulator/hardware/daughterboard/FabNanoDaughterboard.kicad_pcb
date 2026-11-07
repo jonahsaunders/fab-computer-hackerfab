@@ -2430,7 +2430,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -2464,7 +2464,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "B4B-PH-K-S(LF)(SN)"
 			(at 0 0 90)
 			(layer "F.SilkS")
 			(hide yes)
@@ -2476,11 +2476,23 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "JST"
 			(at 0 0 90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "6e8a0cdf-1eec-4731-b335-c17aaa408332")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C131334"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "1e7415c6-0386-42c3-a8cf-009fb374e0f1")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5505,7 +5517,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -6785,7 +6797,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -6819,7 +6831,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "B4B-PH-K-S(LF)(SN)"
 			(at 0 0 180)
 			(layer "F.SilkS")
 			(hide yes)
@@ -6831,11 +6843,23 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "JST"
 			(at 0 0 180)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "2c0112eb-c7dc-4347-aea0-511fe9be0bf3")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C131334"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "ca4af849-cda3-4eac-ba96-ca67ddbc208c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7467,7 +7491,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7501,7 +7525,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "B3B-PH-K-S(LF)(SN)"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -7513,11 +7537,23 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "JST"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "ebed08ab-d93c-463c-a10b-ba8fab57be9f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C131339"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "136994c7-dbec-4243-a4bf-e94ef3e56648")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9643,7 +9679,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -9677,7 +9713,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "B4B-PH-K-S(LF)(SN)"
 			(at 0 0 180)
 			(layer "F.SilkS")
 			(hide yes)
@@ -9689,11 +9725,23 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "JST"
 			(at 0 0 180)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "a3a13120-7b97-46b9-8e22-d637160db74a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C131334"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "dac5a49b-1068-4e02-a729-fd4633b1e694")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14220,7 +14268,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -14254,7 +14302,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "B4B-PH-K-S(LF)(SN)"
 			(at 0 0 180)
 			(layer "F.SilkS")
 			(hide yes)
@@ -14266,11 +14314,23 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "JST"
 			(at 0 0 180)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "b78ba265-64e6-4b2e-8514-dd09afd5bd8f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C131334"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "9e46f4af-ed65-4082-99e5-2fb2087b1326")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16747,7 +16807,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -19395,7 +19455,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C41360739.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -19429,7 +19489,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "PH1.27-01-04PZD"
 			(at 0 0 90)
 			(layer "F.SilkS")
 			(hide yes)
@@ -19441,7 +19501,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "XUNPU"
 			(at 0 0 90)
 			(layer "F.SilkS")
 			(hide yes)
@@ -19450,6 +19510,17 @@
 				(font
 					(size 1.27 1.27)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C41360739"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "04dcbceb-1c6c-4b0c-aa6a-c05e8b30e91c")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -21728,7 +21799,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C37208.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -21762,7 +21833,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "2.54-1x6PStraight pin"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -21774,7 +21845,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "BOOMELE"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -21783,6 +21854,17 @@
 				(font
 					(size 1.27 1.27)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C37208"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "cdf3303b-ed4b-4d21-aeda-b4052ba99df8")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -25952,7 +26034,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -27256,7 +27338,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C41360740.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -27290,7 +27372,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "PH1.27-01-05PZD"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -27302,7 +27384,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "XUNPU"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -27311,6 +27393,17 @@
 				(font
 					(size 1.27 1.27)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C41360740"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "c463a1ae-3519-4b7d-9fcc-68886626c584")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -27558,7 +27651,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/1f989fd38ab44090d0a6e74591055863.pdf?productCode=C5173363"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C5173361.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -27592,7 +27685,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "9001-11961C00A"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -27604,11 +27697,23 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "WingTAT"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "870618ab-685c-45eb-aaaa-d46c5376edd9")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C5173361"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "495327c7-0870-4024-a572-f7672363f834")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31122,7 +31227,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
