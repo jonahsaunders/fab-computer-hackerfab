@@ -7,6 +7,16 @@ loops local avoids depending on shared-bus traffic or host scheduling.
 The former arrangement mainly preserved the two upstream firmware projects.
 No required electrical interface needs a second MCU.
 
+SILICON REVISION
+Fit RP2350B A4, specified by the schematic MPN and BOM. A4 includes the fix
+for erratum 9 (Bank 0 input leakage). This matters to weak pull-ups and the
+USB VBUS sense divider; early A2 silicon is not an approved substitution.
+JLCPCB lists A4 as assembly part C9900208890. Confirm the A4 marking and stock
+with the assembler; the catalog listing is not an inventory guarantee.
+Raspberry Pi's change notice reports no mechanical changes:
+https://pip-assets.raspberrypi.com/categories/1263-pcn/documents/RP-008771-CC-2-RP235x%20A4%20stepping%20PCN.pdf
+https://jlcpcb.com/partdetail/JLCPCBAssembly-RP2350BA4/C9900208890
+
 RESOURCE CHECK
 The current allocation uses 42 of 48 GPIOs, leaving GPIO42..47 spare.
 Dedicated USB, SWD, reset and QSPI pins are outside that GPIO count.

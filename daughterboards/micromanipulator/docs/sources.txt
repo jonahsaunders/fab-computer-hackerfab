@@ -61,3 +61,21 @@ JLCPCB manufacturing capabilities: https://jlcpcb.com/capabilities/Capabilities
 Current native-board verification used KiCad 10.0.6 and its bundled
 Python/pcbnew. The current single-RP2350B layout uses explicit manual routes,
 not an autorouter. No design was uploaded to a routing or manufacturing service.
+
+3.3 V supply and silicon review, 2026-11-07:
+AP2112 SO-8 pinout/thermal resistance and exact assembly part:
+https://www.diodes.com/assets/Datasheets/AP2112.pdf
+https://jlcpcb.com/partdetail/DiodesIncorporated-AP2112M_33TRG1/C5290219
+MT6835 maximum supply current:
+https://www.magntek.com.cn/upload/pdf/202407/MT6835_Rev.1.3.pdf
+RP2350 A4 stepping / input-leakage erratum fix and assembly listing:
+https://pip-assets.raspberrypi.com/categories/1263-pcn/documents/RP-008771-CC-2-RP235x%20A4%20stepping%20PCN.pdf
+https://jlcpcb.com/partdetail/JLCPCBAssembly-RP2350BA4/C9900208890
+Listings establish catalog identity, not available inventory.
+
+Bypass capacitor package selections, 2026-11-07:
+Samsung CL05B104KO5NNNC, 100 nF / 16 V / X7R, 0402, JLCPCB C1525:
+https://jlcpcb.com/partdetail/1877-CL05B104KO5NNNC/C1525
+YAGEO CC0603KRX7R9BB104, 100 nF / 50 V / X7R, 0603, JLCPCB C14663:
+https://jlcpcb.com/partdetail/Yageo-CC0603KRX7R9BB104/C14663
+Catalog identity/package checked; inventory is not guaranteed.

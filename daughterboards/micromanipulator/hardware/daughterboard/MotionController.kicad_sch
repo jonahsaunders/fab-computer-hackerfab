@@ -2140,7 +2140,7 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" "RP2350B"
+    (property "MPN" "RP2350B A4"
       (at 111.76 78.74 0)
       (effects
         (font
@@ -2197,25 +2197,13 @@
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
           (reference "U1")
           (unit 3))))
-    (property "LCSC" "C42415655"
+    (property "LCSC" "C9900208890"
       (at 111.76 78.74 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Supplier_URL" "https://www.lcsc.com/product-detail/C42415655.html"
-      (at 111.76 78.74 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "LCSC" "C42415655"
-      (at 111.76 78.74 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "Supplier_URL" "https://www.lcsc.com/product-detail/C42415655.html"
+    (property "Supplier_URL" "https://jlcpcb.com/partdetail/JLCPCBAssembly-RP2350BA4/C9900208890"
       (at 111.76 78.74 0)
       (effects
         (font
@@ -4600,7 +4588,7 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" "RP2350B"
+    (property "MPN" "RP2350B A4"
       (at 172.72 198.12 0)
       (effects
         (font
@@ -4643,25 +4631,13 @@
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
           (reference "U1")
           (unit 4))))
-    (property "LCSC" "C42415655"
+    (property "LCSC" "C9900208890"
       (at 172.72 198.12 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Supplier_URL" "https://www.lcsc.com/product-detail/C42415655.html"
-      (at 172.72 198.12 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "LCSC" "C42415655"
-      (at 172.72 198.12 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "Supplier_URL" "https://www.lcsc.com/product-detail/C42415655.html"
+    (property "Supplier_URL" "https://jlcpcb.com/partdetail/JLCPCBAssembly-RP2350BA4/C9900208890"
       (at 172.72 198.12 0)
       (effects
         (font

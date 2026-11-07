@@ -18,9 +18,10 @@ are present. A fuse alone does not clamp overvoltage.
 Power reuse
 12 V and 5 V come directly from their assigned DIN contacts through local
 branch fuses. There is no daughterboard 24 V converter or 5 V buck regulator.
-AP2112K supplies logic 3.3 V from existing 5 V. The preliminary 250 mA logic
-ceiling would dissipate 0.425 W in that regulator; verify actual current and
-temperature. RP2350 core inductor/capacitors are required MCU support, not a
+AP2112M-3.3TRG1 in SO-8 supplies logic 3.3 V from existing 5 V.
+The provisional 250 mA allocation gives about 0.50 W at 5.25 V input and
+3.25 V output. See power-budget.md for the package choice and thermal estimate.
+Verify actual current and temperature with the final loads and enclosure. RP2350 core inductor/capacitors are required MCU support, not a
 duplicate backplane supply. 5 V load bulk capacitance and bypass capacitors
 remain local because wiring and connector inductance cannot be eliminated.
 
@@ -53,11 +54,11 @@ The firmware is still split across the old RP and STM32 builds. Those images
 do not implement the RP2350B tool functions. The complete consolidation and
 timing requirements are recorded in controller-decision.txt.
 
-The PCB is also the old layout. Rebuild it from the current schematic while
-preserving the DIN mating geometry and every assigned backplane contact.
-Use F.Cu signal, In1.Cu power, In2.Cu ground, B.Cu signal. Recheck capacitor
-placement, current loops, return paths, stitching and connector access.
-Existing 3D previews and routing checks are not current revision evidence.
+The current PCB matches the single-controller schematic and is manually routed.
+It retains the DIN mating geometry and every assigned backplane contact.
+The layer order is F.Cu signal, In1.Cu power, In2.Cu ground, B.Cu signal.
+All 35 checked local supply paths connect directly on F.Cu. See validation.md
+and layout-review.md for the saved-board checks and current review limits.
 
 USB-C J18 has separate CC pull-downs, USBLC6 protection, VBUS sensing and
 27 ohm series resistors. VBUS does not power the board. Supply it through

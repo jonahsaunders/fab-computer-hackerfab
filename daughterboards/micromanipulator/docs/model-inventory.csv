@@ -20,33 +20,33 @@ C25,Capacitor_SMD:C_0402_1005Metric,${KIPRJMOD}/../libraries/models/Capacitor_SM
 C26,Capacitor_SMD:C_0402_1005Metric,${KIPRJMOD}/../libraries/models/Capacitor_SMD.3dshapes/C_0402_1005Metric.step,KiCad standard STEP model
 C27,Capacitor_SMD:C_0402_1005Metric,${KIPRJMOD}/../libraries/models/Capacitor_SMD.3dshapes/C_0402_1005Metric.step,KiCad standard STEP model
 C3,Capacitor_SMD:C_0603_1608Metric,${KIPRJMOD}/../libraries/models/Capacitor_SMD.3dshapes/C_0603_1608Metric.step,KiCad standard STEP model
-C30,Capacitor_SMD:C_0805_2012Metric,${KIPRJMOD}/../libraries/models/Capacitor_SMD.3dshapes/C_0805_2012Metric.step,KiCad standard STEP model
+C30,Capacitor_SMD:C_0603_1608Metric,${KIPRJMOD}/../libraries/models/Capacitor_SMD.3dshapes/C_0603_1608Metric.step,Bundled KiCad standard STEP model
 C31,Capacitor_SMD:C_0805_2012Metric,${KIPRJMOD}/../libraries/models/Capacitor_SMD.3dshapes/C_0805_2012Metric.step,KiCad standard STEP model
-C32,Capacitor_SMD:C_0603_1608Metric,${KIPRJMOD}/../libraries/models/Capacitor_SMD.3dshapes/C_0603_1608Metric.step,KiCad standard STEP model
+C32,Capacitor_SMD:C_0402_1005Metric,${KIPRJMOD}/../libraries/models/Capacitor_SMD.3dshapes/C_0402_1005Metric.step,Bundled KiCad standard STEP model
 C33,Capacitor_SMD:CP_Elec_6.3x7.7,${KIPRJMOD}/../libraries/models/Capacitor_SMD.3dshapes/CP_Elec_6.3x7.7.step,KiCad standard STEP model
-C34,Capacitor_SMD:C_0805_2012Metric,${KIPRJMOD}/../libraries/models/Capacitor_SMD.3dshapes/C_0805_2012Metric.step,KiCad standard STEP model
+C34,Capacitor_SMD:C_0603_1608Metric,${KIPRJMOD}/../libraries/models/Capacitor_SMD.3dshapes/C_0603_1608Metric.step,Bundled KiCad standard STEP model
 C35,Capacitor_SMD:C_0805_2012Metric,${KIPRJMOD}/../libraries/models/Capacitor_SMD.3dshapes/C_0805_2012Metric.step,KiCad standard STEP model
-C36,Capacitor_SMD:C_0603_1608Metric,${KIPRJMOD}/../libraries/models/Capacitor_SMD.3dshapes/C_0603_1608Metric.step,KiCad standard STEP model
+C36,Capacitor_SMD:C_0402_1005Metric,${KIPRJMOD}/../libraries/models/Capacitor_SMD.3dshapes/C_0402_1005Metric.step,Bundled KiCad standard STEP model
 C37,Capacitor_SMD:CP_Elec_6.3x7.7,${KIPRJMOD}/../libraries/models/Capacitor_SMD.3dshapes/CP_Elec_6.3x7.7.step,KiCad standard STEP model
-C38,Capacitor_SMD:C_0805_2012Metric,${KIPRJMOD}/../libraries/models/Capacitor_SMD.3dshapes/C_0805_2012Metric.step,KiCad standard STEP model
+C38,Capacitor_SMD:C_0603_1608Metric,${KIPRJMOD}/../libraries/models/Capacitor_SMD.3dshapes/C_0603_1608Metric.step,Bundled KiCad standard STEP model
 C39,Capacitor_SMD:C_0805_2012Metric,${KIPRJMOD}/../libraries/models/Capacitor_SMD.3dshapes/C_0805_2012Metric.step,KiCad standard STEP model
 C4,Capacitor_SMD:C_0603_1608Metric,${KIPRJMOD}/../libraries/models/Capacitor_SMD.3dshapes/C_0603_1608Metric.step,KiCad standard STEP model
-C40,Capacitor_SMD:C_0603_1608Metric,${KIPRJMOD}/../libraries/models/Capacitor_SMD.3dshapes/C_0603_1608Metric.step,KiCad standard STEP model
+C40,Capacitor_SMD:C_0402_1005Metric,${KIPRJMOD}/../libraries/models/Capacitor_SMD.3dshapes/C_0402_1005Metric.step,Bundled KiCad standard STEP model
 C41,Capacitor_SMD:CP_Elec_6.3x7.7,${KIPRJMOD}/../libraries/models/Capacitor_SMD.3dshapes/CP_Elec_6.3x7.7.step,KiCad standard STEP model
 C5,Capacitor_SMD:CP_Elec_6.3x7.7,${KIPRJMOD}/../libraries/models/Capacitor_SMD.3dshapes/CP_Elec_6.3x7.7.step,KiCad standard STEP model
 C53,Capacitor_SMD:C_0402_1005Metric,${KIPRJMOD}/../libraries/models/Capacitor_SMD.3dshapes/C_0402_1005Metric.step,KiCad standard STEP model
 C54,Capacitor_SMD:C_0402_1005Metric,${KIPRJMOD}/../libraries/models/Capacitor_SMD.3dshapes/C_0402_1005Metric.step,KiCad standard STEP model
 C59,Capacitor_SMD:C_0603_1608Metric,${KIPRJMOD}/../libraries/models/Capacitor_SMD.3dshapes/C_0603_1608Metric.step,KiCad standard STEP model
 C6,Capacitor_SMD:C_0603_1608Metric,${KIPRJMOD}/../libraries/models/Capacitor_SMD.3dshapes/C_0603_1608Metric.step,KiCad standard STEP model
-C60,Capacitor_SMD:C_0603_1608Metric,${KIPRJMOD}/../libraries/models/Capacitor_SMD.3dshapes/C_0603_1608Metric.step,KiCad standard STEP model
+C60,Capacitor_SMD:C_0402_1005Metric,${KIPRJMOD}/../libraries/models/Capacitor_SMD.3dshapes/C_0402_1005Metric.step,Bundled KiCad standard STEP model
 C61,Capacitor_SMD:C_0603_1608Metric,${KIPRJMOD}/../libraries/models/Capacitor_SMD.3dshapes/C_0603_1608Metric.step,KiCad standard STEP model
-C62,Capacitor_SMD:C_0603_1608Metric,${KIPRJMOD}/../libraries/models/Capacitor_SMD.3dshapes/C_0603_1608Metric.step,KiCad standard STEP model
+C62,Capacitor_SMD:C_0402_1005Metric,${KIPRJMOD}/../libraries/models/Capacitor_SMD.3dshapes/C_0402_1005Metric.step,Bundled KiCad standard STEP model
 C63,Capacitor_SMD:C_0603_1608Metric,${KIPRJMOD}/../libraries/models/Capacitor_SMD.3dshapes/C_0603_1608Metric.step,KiCad standard STEP model
-C64,Capacitor_SMD:C_0603_1608Metric,${KIPRJMOD}/../libraries/models/Capacitor_SMD.3dshapes/C_0603_1608Metric.step,KiCad standard STEP model
+C64,Capacitor_SMD:C_0402_1005Metric,${KIPRJMOD}/../libraries/models/Capacitor_SMD.3dshapes/C_0402_1005Metric.step,Bundled KiCad standard STEP model
 C65,Capacitor_SMD:C_0603_1608Metric,${KIPRJMOD}/../libraries/models/Capacitor_SMD.3dshapes/C_0603_1608Metric.step,KiCad standard STEP model
-C66,Capacitor_SMD:C_0603_1608Metric,${KIPRJMOD}/../libraries/models/Capacitor_SMD.3dshapes/C_0603_1608Metric.step,KiCad standard STEP model
-C67,Capacitor_SMD:C_0603_1608Metric,${KIPRJMOD}/../libraries/models/Capacitor_SMD.3dshapes/C_0603_1608Metric.step,KiCad standard STEP model
-C68,Capacitor_SMD:C_0603_1608Metric,${KIPRJMOD}/../libraries/models/Capacitor_SMD.3dshapes/C_0603_1608Metric.step,KiCad standard STEP model
+C66,Capacitor_SMD:C_0402_1005Metric,${KIPRJMOD}/../libraries/models/Capacitor_SMD.3dshapes/C_0402_1005Metric.step,Bundled KiCad standard STEP model
+C67,Capacitor_SMD:C_0402_1005Metric,${KIPRJMOD}/../libraries/models/Capacitor_SMD.3dshapes/C_0402_1005Metric.step,Bundled KiCad standard STEP model
+C68,Capacitor_SMD:C_0402_1005Metric,${KIPRJMOD}/../libraries/models/Capacitor_SMD.3dshapes/C_0402_1005Metric.step,Bundled KiCad standard STEP model
 D2,Diode_SMD:D_SMA,${KIPRJMOD}/../libraries/models/Diode_SMD.3dshapes/D_SMA.step,KiCad standard STEP model
 D3,LED_SMD:LED_0603_1608Metric,${KIPRJMOD}/../libraries/models/LED_SMD.3dshapes/LED_0603_1608Metric.step,KiCad standard STEP model
 F1,Fuse:Fuse_1206_3216Metric,${KIPRJMOD}/../libraries/models/Fuse.3dshapes/Fuse_1206_3216Metric.step,KiCad standard STEP model
@@ -108,7 +108,7 @@ U1,Package_DFN_QFN:QFN-80-1EP_10x10mm_P0.4mm_EP3.4x3.4mm,${KIPRJMOD}/../librarie
 U10,Package_SON:Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm,${KIPRJMOD}/../libraries/models/DRV8837C-WSON8-envelope.wrl,Nominal low-fidelity model
 U11,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,${KIPRJMOD}/../libraries/models/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step,KiCad standard STEP model
 U12,Package_TO_SOT_SMD:SOT-23-6,${KIPRJMOD}/../libraries/models/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step,KiCad standard STEP model
-U2,Package_TO_SOT_SMD:SOT-23-5,${KIPRJMOD}/../libraries/models/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step,KiCad standard STEP model
+U2,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,${KIPRJMOD}/../libraries/models/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step,Bundled KiCad standard STEP model
 U4,Package_SO:SOIC-8_5.3x5.3mm_P1.27mm,${KIPRJMOD}/../libraries/models/Package_SO.3dshapes/SOIC-8_5.3x5.3mm_P1.27mm.step,KiCad standard STEP model
 U5,Package_SO:SSOP-24_5.3x8.2mm_P0.65mm,${KIPRJMOD}/../libraries/models/Package_SO.3dshapes/SSOP-24_5.3x8.2mm_P0.65mm.step,KiCad standard STEP model
 U6,Package_SO:SSOP-24_5.3x8.2mm_P0.65mm,${KIPRJMOD}/../libraries/models/Package_SO.3dshapes/SSOP-24_5.3x8.2mm_P0.65mm.step,KiCad standard STEP model

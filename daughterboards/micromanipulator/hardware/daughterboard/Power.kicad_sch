@@ -1054,135 +1054,6 @@
               (font
                 (size 1.27 1.27))))))
       (embedded_fonts no))
-    (symbol "Hack_Chips:AP2112K-3.3TRG1"
-      (pin_names
-        (offset 0.254))
-      (exclude_from_sim no)
-      (in_bom yes)
-      (on_board yes)
-      (in_pos_files yes)
-      (duplicate_pin_numbers_are_jumpers no)
-      (property "Reference" "U"
-        (at -5.08 5.715 0)
-        (show_name no)
-        (do_not_autoplace no)
-        (effects
-          (font
-            (size 1.27 1.27))
-          (justify left)))
-      (property "Value" "AP2112K-3.3TRG1"
-        (at 0 5.715 0)
-        (show_name no)
-        (do_not_autoplace no)
-        (effects
-          (font
-            (size 1.27 1.27))
-          (justify left)))
-      (property "Footprint" "Hack_Chips:SOT-23-5"
-        (at 0 8.255 0)
-        (show_name no)
-        (do_not_autoplace no)
-        (hide yes)
-        (effects
-          (font
-            (size 1.27 1.27))))
-      (property "Datasheet" "https://www.diodes.com/datasheet/download/AP2112.pdf"
-        (at 0 2.54 0)
-        (show_name no)
-        (do_not_autoplace no)
-        (hide yes)
-        (effects
-          (font
-            (size 1.27 1.27))))
-      (property "Description" "600 mA LDO, 3.3 V fixed output, active-high enable, SOT25 / SOT-23-5"
-        (at 1.27 -8.382 0)
-        (show_name no)
-        (do_not_autoplace no)
-        (hide yes)
-        (effects
-          (font
-            (size 1.27 1.27))))
-      (property "ki_keywords" "linear regulator ldo fixed positive"
-        (at 0 0 0)
-        (show_name no)
-        (do_not_autoplace no)
-        (hide yes)
-        (effects
-          (font
-            (size 1.27 1.27))))
-      (property "ki_fp_filters" "SOT-23-5"
-        (at 0 0 0)
-        (show_name no)
-        (do_not_autoplace no)
-        (hide yes)
-        (effects
-          (font
-            (size 1.27 1.27))))
-      (symbol "AP2112K-3.3TRG1_1_1"
-        (rectangle
-          (start -5.08 4.445)
-          (end 5.08 -5.08)
-          (stroke
-            (width 0)
-            (type solid))
-          (fill
-            (type background)))
-        (pin power_in line
-          (at -7.62 2.54 0)
-          (length 2.54)
-          (name "VIN"
-            (effects
-              (font
-                (size 1.27 1.27))))
-          (number "1"
-            (effects
-              (font
-                (size 1.27 1.27)))))
-        (pin power_in line
-          (at -7.62 -2.54 0)
-          (length 2.54)
-          (name "GND"
-            (effects
-              (font
-                (size 1.27 1.27))))
-          (number "2"
-            (effects
-              (font
-                (size 1.27 1.27)))))
-        (pin input line
-          (at -7.62 0 0)
-          (length 2.54)
-          (name "EN"
-            (effects
-              (font
-                (size 1.27 1.27))))
-          (number "3"
-            (effects
-              (font
-                (size 1.27 1.27)))))
-        (pin no_connect line
-          (at 7.62 0 180)
-          (length 2.54)
-          (name "NC"
-            (effects
-              (font
-                (size 1.27 1.27))))
-          (number "4"
-            (effects
-              (font
-                (size 1.27 1.27)))))
-        (pin power_out line
-          (at 7.62 2.54 180)
-          (length 2.54)
-          (name "VOUT"
-            (effects
-              (font
-                (size 1.27 1.27))))
-          (number "5"
-            (effects
-              (font
-                (size 1.27 1.27))))))
-      (embedded_fonts no))
     (symbol "power:PWR_FLAG"
       (power global)
       (pin_numbers
@@ -1268,9 +1139,171 @@
             (type default))
           (fill
             (type none))))
+      (embedded_fonts no))
+    (symbol "FabNano:AP2112M-3.3TRG1"
+      (pin_names
+        (offset 0.254))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "U"
+        (at -5.08 5.715 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Value" "AP2112M-3.3TRG1"
+        (at 0 5.715 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+        (at 0 8.255 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP2112.pdf"
+        (at 0 2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "600 mA LDO, 3.3 V, SO-8; two ground pins, three NC pins"
+        (at 1.27 -8.382 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "linear regulator ldo fixed positive"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "SOIC-8*3.9x4.9mm*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "AP2112M-3.3TRG1_1_1"
+        (rectangle
+          (start -5.08 4.445)
+          (end 5.08 -7.62)
+          (stroke
+            (width 0)
+            (type solid))
+          (fill
+            (type background)))
+        (pin power_in line
+          (at -7.62 2.54 0)
+          (length 2.54)
+          (name "VIN"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "8"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin power_in line
+          (at -7.62 -2.54 0)
+          (length 2.54)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "6"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin input line
+          (at -7.62 0 0)
+          (length 2.54)
+          (name "EN"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "5"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin no_connect line
+          (at 7.62 0 180)
+          (length 2.54)
+          (name "NC"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin power_out line
+          (at 7.62 2.54 180)
+          (length 2.54)
+          (name "VOUT"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin power_in line
+          (at -7.62 -5.08 0)
+          (length 2.54)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "7"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin no_connect line
+          (at 7.62 -2.54 180)
+          (length 2.54)
+          (name "NC"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "3"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin no_connect line
+          (at 7.62 -5.08 180)
+          (length 2.54)
+          (name "NC"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "4"
+            (effects
+              (font
+                (size 1.27 1.27))))))
       (embedded_fonts no)))
   (symbol
-    (lib_id "Hack_Chips:AP2112K-3.3TRG1")
+    (lib_id "FabNano:AP2112M-3.3TRG1")
     (at 76.2 40.64 0)
     (unit 1)
     (in_bom yes)
@@ -1282,50 +1315,62 @@
       (effects
         (font
           (size 1.27 1.27))))
-    (property "Value" "AP2112K-3.3TRG1"
+    (property "Value" "AP2112M-3.3TRG1"
       (at 76.2 27.94 0)
       (effects
         (font
           (size 1.27 1.27))))
-    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+    (property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
       (at 76.2 40.64 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" "https://www.diodes.com/datasheet/download/AP2112.pdf"
+    (property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP2112.pdf"
       (at 76.2 40.64 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" "AP2112K-3.3TRG1"
+    (property "MPN" "AP2112M-3.3TRG1"
       (at 76.2 40.64 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Diodes Incorporated"
       (at 76.2 40.64 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (pin "1"
+    (pin "8"
       (uuid "524955d9-b2dd-5546-9fda-e41785e0f0dd"))
-    (pin "2"
+    (pin "6"
       (uuid "5f7f4dd3-915c-5020-91d1-c0f85f1a5bb0"))
-    (pin "3"
-      (uuid "dd2c33a5-8885-532e-a23c-507bf48192a4"))
-    (pin "4"
-      (uuid "93806225-145f-54dd-9046-20f713300de9"))
     (pin "5"
+      (uuid "dd2c33a5-8885-532e-a23c-507bf48192a4"))
+    (pin "2"
+      (uuid "93806225-145f-54dd-9046-20f713300de9"))
+    (pin "1"
       (uuid "bcb80fc9-750a-5d38-bcde-ef3087cb532b"))
     (instances
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/1d3a9153-32df-5d7c-aec7-6533e1a741b5"
           (reference "U2")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C5290219"
+      (at 76.2 40.64 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "3"
+      (uuid "9af9a728-6eac-50af-b7da-f06d3099e078"))
+    (pin "4"
+      (uuid "952a6071-9b70-5d45-a6c7-1587dd0becbe"))
+    (pin "7"
+      (uuid "687996c4-7a3c-56f4-a629-20270ef3f50b")))
   (no_connect
     (at 83.82 40.64)
     (uuid "b6d839ca-ed22-59c4-9cff-ede4de0b2af3"))
@@ -1552,7 +1597,7 @@
   (wire
     (pts
       (xy 63.5 43.18)
-      (xy 63.5 58.42))
+      (xy 63.5 45.72))
     (stroke
       (width 0)
       (type default))
@@ -3077,4 +3122,31 @@
     (at 132.08 38.1)
     (diameter 0)
     (color 0 0 0 0)
-    (uuid "427578a2-8675-5f94-ad6b-875e7bd96140")))
+    (uuid "427578a2-8675-5f94-ad6b-875e7bd96140"))
+  (no_connect
+    (at 83.82 43.18)
+    (uuid "cb9c2e4a-aef5-5b91-92c8-f1c48099c8ce"))
+  (no_connect
+    (at 83.82 45.72)
+    (uuid "494e68df-5cc8-5547-872e-0cc689aa1f58"))
+  (wire
+    (pts
+      (xy 63.5 45.72)
+      (xy 63.5 58.42))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "44c579eb-2a05-5374-ac63-da4f89cc0f5d"))
+  (wire
+    (pts
+      (xy 68.58 45.72)
+      (xy 63.5 45.72))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "96570898-81bb-5de9-a773-f30ea010e4e5"))
+  (junction
+    (at 63.5 45.72)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "cb16fc9c-e01f-58c2-8b34-9b26ee256fcd")))

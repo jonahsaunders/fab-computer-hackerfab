@@ -11,7 +11,7 @@ import math
 import pcbnew as p
 
 BASE = Path(__file__).resolve().parents[1]
-PAIRS = [('C1', 'U2.1'), ('C2', 'U2.5'), ('C10', 'U1.61'),
+PAIRS = [('C1', 'U2.8'), ('C2', 'U2.1'), ('C10', 'U1.61'),
          ('C11', 'L2.2'), ('C12', 'U1.64'), ('C13', 'U4.8')]
 PAIRS += [(f'C{c}', f'U1.{pin}') for c, pin in
           [(16, 5), (17, 15), (18, 24), (19, 29), (20, 41),
@@ -25,11 +25,12 @@ PAIRS += [('C60', 'U9.1'), ('C62', 'U10.1'), ('C67', 'U9.8'),
 
 
 def xy(pos):
-    return round(p.ToMM(pos.x), 6), round(p.ToMM(pos.y), 6)
+    # Normalise nanometre rounding in rotated native footprint coordinates.
+    return round(p.ToMM(pos.x), 5), round(p.ToMM(pos.y), 5)
 
 
 def on_segment(q, a, b):
-    return abs(math.dist(a, q) + math.dist(q, b) - math.dist(a, b)) < 1e-6
+    return abs(math.dist(a, q) + math.dist(q, b) - math.dist(a, b)) < 1e-5
 
 
 def inspect(path):
@@ -38,6 +39,10 @@ def inspect(path):
             for f in board.GetFootprints() for q in f.Pads()}
     results = {}
     for cap, pin in PAIRS:
+        # Historic comparison boards used the five-pin AP2112K package.
+        # Current AP2112M SO-8 uses VIN=8 and VOUT=1.
+        if 'U2.8' not in pads and pin.startswith('U2.'):
+            pin = {'C1': 'U2.1', 'C2': 'U2.5'}[cap]
         start, end = pads[cap + '.1'], pads[pin]
         assert start.GetNetCode() == end.GetNetCode(), (cap, pin)
         # Vias are deliberately absent: a route must exist entirely on F.Cu.

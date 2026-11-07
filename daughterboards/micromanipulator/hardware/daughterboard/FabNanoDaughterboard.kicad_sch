@@ -7047,13 +7047,13 @@
         (font
           (size 1.27 1.27))
         (justify left)))
-    (property "Value" "100nF 25V"
+    (property "Value" "100nF 16V"
       (at 223.51999999999998 72.39 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left)))
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
       (at 220.98 71.12 0)
       (effects
         (font
@@ -7065,13 +7065,13 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "CL05B104KO5NNNC"
       (at 220.98 71.12 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Samsung Electro-Mechanics"
       (at 220.98 71.12 0)
       (effects
         (font
@@ -7085,7 +7085,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642"
           (reference "C66")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C1525"
+      (at 220.98 71.12 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 220.98 68.58)

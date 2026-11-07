@@ -1,5 +1,5 @@
 Reference,Value,Footprint,Manufacturer part number,Manufacturer,LCSC,Quantity,Procurement status
-C66,100nF 25V,Capacitor_SMD:C_0603_1608Metric,,,,1,Exact part not yet selected
+C66,100nF 16V,Capacitor_SMD:C_0402_1005Metric,CL05B104KO5NNNC,Samsung Electro-Mechanics,C1525,1,JLCPCB catalog/package checked 2026-11-07; confirm current inventory
 J1,DIN96 / male right-angle,FabNano:DIN96_Male_Horizontal,,,,1,Exact part not yet selected
 J2,SWD / RP2350,Connector_PinHeader_1.27mm:PinHeader_1x05_P1.27mm_Vertical,,,,1,Exact part not yet selected
 J3,MOTOR 1,Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical,,,,1,Exact part not yet selected
@@ -49,20 +49,20 @@ R13,10kR,Resistor_SMD:R_0402_1005Metric,,,,1,Exact part not yet selected
 R14,1kR,Resistor_SMD:R_0402_1005Metric,,,,1,Exact part not yet selected
 SW1,RESET,Button_Switch_SMD:SW_SPST_TL3305A,,,,1,Exact part not yet selected
 SW2,BOOTSEL,Button_Switch_SMD:SW_SPST_TL3305A,,,,1,Exact part not yet selected
-U1,RP2350B,Package_DFN_QFN:QFN-80-1EP_10x10mm_P0.4mm_EP3.4x3.4mm,RP2350B,Raspberry Pi,C42415655,1,Review exact ordering code and stock
+U1,RP2350B,Package_DFN_QFN:QFN-80-1EP_10x10mm_P0.4mm_EP3.4x3.4mm,RP2350B A4,Raspberry Pi,C9900208890,1,A4 stepping required; JLCPCB assembly catalog checked 2026-11-07; stock not confirmed
 U4,W25Q32JVSSIQ / 4 MiB,Package_SO:SOIC-8_5.3x5.3mm_P1.27mm,W25Q32JVSSIQ,,,1,Review exact ordering code and stock
 Y1,12MHz / 10pF,Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm,ABM8-272-T3,,,1,Review exact ordering code and stock
-C30,100nF 25V,Capacitor_SMD:C_0805_2012Metric,,,,1,Exact part not yet selected
+C30,100nF 50V,Capacitor_SMD:C_0603_1608Metric,CC0603KRX7R9BB104,YAGEO,C14663,1,JLCPCB catalog/package checked 2026-11-07; confirm current inventory
 C31,10uF 25V X7R,Capacitor_SMD:C_0805_2012Metric,,,,1,Exact part not yet selected
-C32,100nF 25V,Capacitor_SMD:C_0603_1608Metric,,,,1,Exact part not yet selected
+C32,100nF 16V,Capacitor_SMD:C_0402_1005Metric,CL05B104KO5NNNC,Samsung Electro-Mechanics,C1525,1,JLCPCB catalog/package checked 2026-11-07; confirm current inventory
 C33,220uF 25V,Capacitor_SMD:CP_Elec_6.3x7.7,217EC0037,KNSCHA,C42371908,1,Review exact ordering code and stock
-C34,100nF 25V,Capacitor_SMD:C_0805_2012Metric,,,,1,Exact part not yet selected
+C34,100nF 50V,Capacitor_SMD:C_0603_1608Metric,CC0603KRX7R9BB104,YAGEO,C14663,1,JLCPCB catalog/package checked 2026-11-07; confirm current inventory
 C35,10uF 25V X7R,Capacitor_SMD:C_0805_2012Metric,,,,1,Exact part not yet selected
-C36,100nF 25V,Capacitor_SMD:C_0603_1608Metric,,,,1,Exact part not yet selected
+C36,100nF 16V,Capacitor_SMD:C_0402_1005Metric,CL05B104KO5NNNC,Samsung Electro-Mechanics,C1525,1,JLCPCB catalog/package checked 2026-11-07; confirm current inventory
 C37,220uF 25V,Capacitor_SMD:CP_Elec_6.3x7.7,217EC0037,KNSCHA,C42371908,1,Review exact ordering code and stock
-C38,100nF 25V,Capacitor_SMD:C_0805_2012Metric,,,,1,Exact part not yet selected
+C38,100nF 50V,Capacitor_SMD:C_0603_1608Metric,CC0603KRX7R9BB104,YAGEO,C14663,1,JLCPCB catalog/package checked 2026-11-07; confirm current inventory
 C39,10uF 25V X7R,Capacitor_SMD:C_0805_2012Metric,,,,1,Exact part not yet selected
-C40,100nF 25V,Capacitor_SMD:C_0603_1608Metric,,,,1,Exact part not yet selected
+C40,100nF 16V,Capacitor_SMD:C_0402_1005Metric,CL05B104KO5NNNC,Samsung Electro-Mechanics,C1525,1,JLCPCB catalog/package checked 2026-11-07; confirm current inventory
 C41,220uF 25V,Capacitor_SMD:CP_Elec_6.3x7.7,217EC0037,KNSCHA,C42371908,1,Review exact ordering code and stock
 R20,10kR,Resistor_SMD:R_0603_1608Metric,,,,1,Exact part not yet selected
 R21,10kR,Resistor_SMD:R_0603_1608Metric,,,,1,Exact part not yet selected
@@ -83,14 +83,14 @@ R34,10kR,Resistor_SMD:R_0603_1608Metric,,,,1,Exact part not yet selected
 R35,10kR,Resistor_SMD:R_0603_1608Metric,,,,1,Exact part not yet selected
 R36,1kR,Resistor_SMD:R_0603_1608Metric,,,,1,Exact part not yet selected
 R47,1MR,Resistor_SMD:R_0603_1608Metric,,,,1,Exact part not yet selected
-C60,100nF 25V,Capacitor_SMD:C_0603_1608Metric,,,,1,Exact part not yet selected
+C60,100nF 16V,Capacitor_SMD:C_0402_1005Metric,CL05B104KO5NNNC,Samsung Electro-Mechanics,C1525,1,JLCPCB catalog/package checked 2026-11-07; confirm current inventory
 C61,10uF 10V,Capacitor_SMD:C_0603_1608Metric,,,,1,Exact part not yet selected
-C62,100nF 25V,Capacitor_SMD:C_0603_1608Metric,,,,1,Exact part not yet selected
+C62,100nF 16V,Capacitor_SMD:C_0402_1005Metric,CL05B104KO5NNNC,Samsung Electro-Mechanics,C1525,1,JLCPCB catalog/package checked 2026-11-07; confirm current inventory
 C63,10uF 10V,Capacitor_SMD:C_0603_1608Metric,,,,1,Exact part not yet selected
-C64,100nF 25V,Capacitor_SMD:C_0603_1608Metric,,,,1,Exact part not yet selected
+C64,100nF 16V,Capacitor_SMD:C_0402_1005Metric,CL05B104KO5NNNC,Samsung Electro-Mechanics,C1525,1,JLCPCB catalog/package checked 2026-11-07; confirm current inventory
 C65,1uF 25V,Capacitor_SMD:C_0603_1608Metric,,,,1,Exact part not yet selected
-C67,100nF 25V,Capacitor_SMD:C_0603_1608Metric,,,,1,Exact part not yet selected
-C68,100nF 25V,Capacitor_SMD:C_0603_1608Metric,,,,1,Exact part not yet selected
+C67,100nF 16V,Capacitor_SMD:C_0402_1005Metric,CL05B104KO5NNNC,Samsung Electro-Mechanics,C1525,1,JLCPCB catalog/package checked 2026-11-07; confirm current inventory
+C68,100nF 16V,Capacitor_SMD:C_0402_1005Metric,CL05B104KO5NNNC,Samsung Electro-Mechanics,C1525,1,JLCPCB catalog/package checked 2026-11-07; confirm current inventory
 D2,SS34,Diode_SMD:D_SMA,SS34,,,1,Review exact ordering code and stock
 Q1,AO3400A,Package_TO_SOT_SMD:SOT-23,AO3400A,Alpha & Omega Semiconductor,C20917,1,Review exact ordering code and stock
 Q2,AO3400A,Package_TO_SOT_SMD:SOT-23,AO3400A,Alpha & Omega Semiconductor,C20917,1,Review exact ordering code and stock
@@ -114,4 +114,4 @@ F1,2A 125V,Fuse:Fuse_1206_3216Metric,,,,1,Exact part not yet selected
 F2,3A 125V,Fuse:Fuse_1206_3216Metric,,,,1,Exact part not yet selected
 R1,100kR 1%,Resistor_SMD:R_0603_1608Metric,,,,1,Exact part not yet selected
 R2,22kR 1%,Resistor_SMD:R_0603_1608Metric,,,,1,Exact part not yet selected
-U2,AP2112K-3.3TRG1,Package_TO_SOT_SMD:SOT-23-5,AP2112K-3.3TRG1,,,1,Review exact ordering code and stock
+U2,AP2112M-3.3TRG1,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,AP2112M-3.3TRG1,Diodes Incorporated,C5290219,1,JLCPCB catalog/package checked 2026-11-07; stock not confirmed

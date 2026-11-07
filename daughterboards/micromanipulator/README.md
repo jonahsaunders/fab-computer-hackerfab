@@ -8,7 +8,7 @@ Bare-component adaptation of [MicroManipulatorStepper](https://github.com/hacker
 
 Open [hardware/daughterboard/FabNanoDaughterboard.kicad_pro](hardware/daughterboard/FabNanoDaughterboard.kicad_pro) in **KiCad 10**. The project contains the six-sheet schematic and the routed native PCB layout.
 
-Keep this entire folder together. All 31 used footprint types and all 116 placed models resolve locally or through embedded data. Library names are preserved. Standard STEP models are bundled; RP2350B, DRV8837C and USB-C use explicitly approximate models where the installed model was missing. See the [model inventory](docs/model-inventory.csv). Install KiCad's standard symbol libraries for editing standard symbols.
+Keep this entire folder together. All 30 used footprint types and all 116 placed models resolve locally or through embedded data. Library names are preserved. Standard STEP models are bundled; RP2350B, DRV8837C and USB-C use explicitly approximate models where the installed model was missing. See the [model inventory](docs/model-inventory.csv). Install KiCad's standard symbol libraries for editing standard symbols.
 
 | File or folder | Contents |
 | --- | --- |
@@ -22,16 +22,17 @@ Keep this entire folder together. All 31 used footprint types and all 116 placed
 | [Controller decision](docs/controller-decision.txt) | Single-RP2350B resource allocation and migration requirements |
 | [Pin allocation](docs/controller-pin-allocation.csv) | Current RP2350B GPIO map |
 | [Connector table](docs/connectors.csv) and [wiring table](docs/wiring.csv) | External interfaces and original encoder harness pin order |
+| [Logic supply budget](docs/power-budget.md) | Regulator package choice, current allocation and thermal estimate |
 | [BOM](docs/bom.csv) | Current schematic parts; supplier selection and assembly review are incomplete |
 | [Validation](docs/validation.md) | Current ERC, DRC, parity and visual-audit results |
-| [Decoupling review](docs/decoupling-review.md) | Direct pin-to-capacitor routes, measured lengths and close-up preview |
+| [Decoupling review](docs/decoupling-review.md) | All 48 capacitor returns, direct supply paths, measured lengths and close-ups |
 | [Sources](docs/sources.txt) and [licenses](licenses/) | Upstream references and retained notices |
 
 ## Fixed interfaces and remaining work
 
 The daughterboard uses the existing DIN96 contacts and perpendicular mating arrangement, with backplane **12 V and 5 V** and local **5 V to 3.3 V** conversion. No backplane contacts are added. Use a host slot with UART: J1 or J2 in the supplied host revision. The existing XYZ PH8 and rotation encoder connector pin orders are preserved.
 
-The PCB stack is **front signal / inner power / inner ground / back signal**. The PCB has 116 components, SMD capacitors and perimeter connectors. All 35 checked local supply paths run directly to their served pins on front copper. Ground pours, 54 additional stitching vias and an unbroken inner ground region provide the returns. Eleven exposed-pad vias are specified as filled and capped. See the [stackup and layout review](docs/layout-review.md).
+The PCB stack is **front signal / inner power / inner ground / back signal**. The PCB has 116 components, SMD capacitors and perimeter connectors. All 35 checked local supply paths run directly to their served pins on front copper. All 48 capacitor ground pads have explicit local via returns; pad connections to ground pours use solid copper. Ground pours, 54 additional stitching vias and an unbroken inner ground region provide the returns. Eleven exposed-pad vias are specified as filled and capped. See the [stackup and layout review](docs/layout-review.md).
 
 The schematic has USB-C and all external connectors on its top level. Exact supplier selections, USB signal-integrity confirmation, load/thermal limits, host mating tolerances and firmware consolidation remain open. No firmware binaries or fabrication files are included.
 
