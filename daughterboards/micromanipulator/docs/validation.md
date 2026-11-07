@@ -25,6 +25,8 @@ The [USB routing revision](usb-routing-review.md) reduces the resistor-to-MCU st
 
 The [connector review](connector-review.md) assigns exact WingTAT/JST/XUNPU/BOOMELE parts to thirteen connectors and verifies their hole patterns against manufacturer drawings. Together with the existing HRO USB-C part, all fourteen external connectors now have ordering codes. The actual host PCB confirms UART direction, I²C and power allocation; slot J3 lacks UART. This selection changes procurement fields only, with all electrical geometry and visible schematic content preserved by parsed-file comparison. Nominal host slot pitch is 26 mm; a populated assembly and cable-clearance check remains open.
 
+The subsequent [regulator capacitor selection](power-budget.md#local-capacitor-selection) raises C1/C2 from 1 µF to 4.7 µF and specifies Samsung CL10A475KO8NNNC for C1/C2/C10. Native parsed comparisons permit only those values and procurement fields; pads, nets, models, placement and copper are unchanged. The Power and MotionController pages and complete schematic PDF were regenerated and visually checked. The seven-page visual audit remains clear.
+
 ## Reproduce
 
 Run from this folder, with KiCad 10 available. Create `build/` first.

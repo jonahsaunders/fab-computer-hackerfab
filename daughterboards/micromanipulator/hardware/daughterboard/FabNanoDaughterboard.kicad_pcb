@@ -4783,7 +4783,7 @@
 				)
 			)
 		)
-		(property "Value" "4.7uF 16V"
+		(property "Value" "4.7uF 16V X5R"
 			(at 0 1.43 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -4795,7 +4795,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL10A475KO8NNN.do"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -4829,7 +4829,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CL10A475KO8NNNC"
 			(at 0 0 90)
 			(layer "F.SilkS")
 			(hide yes)
@@ -4841,7 +4841,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 90)
 			(layer "F.SilkS")
 			(hide yes)
@@ -4850,6 +4850,17 @@
 				(font
 					(size 1.27 1.27)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C19666"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "38d34627-e8f6-4388-8332-d1b67086b067")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -9320,7 +9331,7 @@
 				)
 			)
 		)
-		(property "Value" "1uF 25V X7R"
+		(property "Value" "4.7uF 16V X5R"
 			(at 0 1.43 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -9332,7 +9343,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL10A475KO8NNN.do"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -9366,7 +9377,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CL10A475KO8NNNC"
 			(at 0 0 180)
 			(layer "F.SilkS")
 			(hide yes)
@@ -9378,7 +9389,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 180)
 			(layer "F.SilkS")
 			(hide yes)
@@ -9387,6 +9398,17 @@
 				(font
 					(size 1.27 1.27)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C19666"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "7417dc11-6067-4e35-a3e9-c0edd39a99ee")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -13374,7 +13396,7 @@
 				)
 			)
 		)
-		(property "Value" "1uF 25V X7R"
+		(property "Value" "4.7uF 16V X5R"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -13386,7 +13408,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL10A475KO8NNN.do"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -13420,7 +13442,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CL10A475KO8NNNC"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -13432,7 +13454,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -13441,6 +13463,17 @@
 				(font
 					(size 1.27 1.27)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C19666"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "663934db-b58f-4ff8-893e-8b9dcb02a4a1")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)

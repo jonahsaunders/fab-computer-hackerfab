@@ -25,6 +25,19 @@ For an assumed high input of 5.25 V and low output of 3.25 V, U2 dissipates appr
 
 At 250 mA the old SOT25 estimate was 142 °C. SO-8 therefore provides useful margin against a 125 °C design target. These are first-order estimates using datasheet thermal resistance, not measured board temperatures or a guaranteed ambient rating. The regulator's 600 mA electrical rating is **not** this board's continuous thermal rating. Measure the 3.3 V current and regulator temperature under the final worst-case workload, with adjacent cards and enclosure airflow represented. Revisit the package/cooling if current exceeds the allocation or local ambient exceeds 50 °C.
 
-Both U2 ground pins have short, solid copper connections to a local ground via and the filled ground network. C1 connects directly to VIN8 and C2 directly to VOUT1 on F.Cu. The SO-8 pin assignment was checked against the manufacturer: VOUT1, NC2/3/4, EN5, GND6/7, VIN8. The existing 1 µF X7R input/output capacitors are retained. Their final ordering parts must retain sufficient effective capacitance under bias.
+Both U2 ground pins have short, solid copper connections to a local ground via and the filled ground network. C1 connects directly to VIN8 and C2 directly to VOUT1 on F.Cu. The SO-8 pin assignment was checked against the manufacturer: VOUT1, NC2/3/4, EN5, GND6/7, VIN8.
+
+## Local capacitor selection
+
+C1 and C2 now use **4.7 µF / 16 V / X5R / 0603 Samsung CL10A475KO8NNNC**, replacing their unselected 1 µF values. C10 uses the same part at its existing 4.7 µF nominal value. All three footprints and their direct traces remain unchanged. The AP2112 datasheet specifies operation with a 1 µF capacitor and recommends X5R/X7R ceramics; the larger local values provide allowance for capacitance loss under bias. C3's separate output bulk capacitor remains.
+
+Samsung's [published typical bias data](https://product.samsungsem.com/mlcc/CL10A475KO8NNN.do), interpolated at the design voltages, gives:
+
+| Location | Bias | Typical biased capacitance | Engineering screening estimate |
+| --- | ---: | ---: | ---: |
+| C1, regulator input | 5.25 V | 2.25 µF | 1.23 µF |
+| C2, regulator output | 3.40 V | 3.21 µF | 1.75 µF |
+
+The screening estimate multiplies the typical biased value by 0.90 for initial tolerance, 0.85 for temperature, 0.79 for small-signal reduction and an additional 0.90 aging allowance. The latter two are engineering allowances informed by the typical data, not guaranteed combined-condition limits. This supports the selection; it does not replace startup/load-step checks on hardware. The part is listed as [JLCPCB C19666](https://jlcpcb.com/partdetail/CL10A475KO8NNNC/C19666). No arbitrary same-value substitution is approved without checking bias behavior.
 
 The exact SO-8 regulator is listed for assembly as [JLCPCB C5290219](https://jlcpcb.com/partdetail/DiodesIncorporated-AP2112M_33TRG1/C5290219). Catalog identity and package were checked on 2026-11-07; inventory and assembly availability at ordering time are not confirmed.

@@ -3577,7 +3577,7 @@
         (font
           (size 1.27 1.27))
         (justify left)))
-    (property "Value" "4.7uF 16V"
+    (property "Value" "4.7uF 16V X5R"
       (at 78.74000000000001 123.19 0)
       (effects
         (font
@@ -3589,19 +3589,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL10A475KO8NNN.do"
       (at 76.2 121.92 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "CL10A475KO8NNNC"
       (at 76.2 121.92 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Samsung Electro-Mechanics"
       (at 76.2 121.92 0)
       (effects
         (font
@@ -3615,7 +3615,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
           (reference "C10")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C19666"
+      (at 76.2 121.92 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 53.34 109.22)

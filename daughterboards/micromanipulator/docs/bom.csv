@@ -19,7 +19,7 @@ R49,5.1kR 1%,Resistor_SMD:R_0603_1608Metric,,,,1,Exact part not yet selected
 R50,100kR 1%,Resistor_SMD:R_0603_1608Metric,,,,1,Exact part not yet selected
 R51,150kR 1%,Resistor_SMD:R_0603_1608Metric,,,,1,Exact part not yet selected
 U12,USBLC6-2SC6,Package_TO_SOT_SMD:SOT-23-6,USBLC6-2SC6,STMicroelectronics,C7519,1,Review exact ordering code and stock
-C10,4.7uF 16V,Capacitor_SMD:C_0603_1608Metric,,,,1,Exact part not yet selected
+C10,4.7uF 16V X5R,Capacitor_SMD:C_0603_1608Metric,CL10A475KO8NNNC,Samsung Electro-Mechanics,C19666,1,Samsung bias data and JLCPCB catalog/package checked 2026-11-07; confirm order inventory
 C11,4.7uF 6.3V X5R,FabNano:C_0402_RP2350_Regulator,GRM155R60J475ME47D,Murata,C82453,1,Review exact ordering code and stock
 C12,4.7uF 6.3V X5R,FabNano:C_0402_RP2350_Regulator,GRM155R60J475ME47D,Murata,C82453,1,Review exact ordering code and stock
 C13,100nF 25V,Capacitor_SMD:C_0402_1005Metric,,,,1,Exact part not yet selected
@@ -104,8 +104,8 @@ R46,10kR,Resistor_SMD:R_0603_1608Metric,,,,1,Exact part not yet selected
 U9,DRV8837CDSGR,Package_SON:Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm,DRV8837CDSGR,,,1,Review exact ordering code and stock
 U10,DRV8837CDSGR,Package_SON:Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm,DRV8837CDSGR,,,1,Review exact ordering code and stock
 U11,TC4427AEOA,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,TC4427AEOA,,,1,Review exact ordering code and stock
-C1,1uF 25V X7R,Capacitor_SMD:C_0603_1608Metric,,,,1,Exact part not yet selected
-C2,1uF 25V X7R,Capacitor_SMD:C_0603_1608Metric,,,,1,Exact part not yet selected
+C1,4.7uF 16V X5R,Capacitor_SMD:C_0603_1608Metric,CL10A475KO8NNNC,Samsung Electro-Mechanics,C19666,1,Samsung bias data and JLCPCB catalog/package checked 2026-11-07; confirm order inventory
+C2,4.7uF 16V X5R,Capacitor_SMD:C_0603_1608Metric,CL10A475KO8NNNC,Samsung Electro-Mechanics,C19666,1,Samsung bias data and JLCPCB catalog/package checked 2026-11-07; confirm order inventory
 C3,10uF 10V X7R,Capacitor_SMD:C_0603_1608Metric,,,,1,Exact part not yet selected
 C4,100nF 25V,Capacitor_SMD:C_0603_1608Metric,,,,1,Exact part not yet selected
 C5,220uF 25V,Capacitor_SMD:CP_Elec_6.3x7.7,217EC0037,KNSCHA,C42371908,1,Review exact ordering code and stock

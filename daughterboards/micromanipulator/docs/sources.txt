@@ -108,3 +108,10 @@ XUNPU PH1.27-01-NPZD manufacturer family drawing, revision A, retrieved via LCSC
 https://www.lcsc.com/datasheet/C37208.pdf
 BOOMELE manufacturer drawing 2.54-1xNA-H2.5-L11.2, retrieved via LCSC.
 The BOOMELE drawing specifies a 5.7 mm mating pin, resolving the catalog's inconsistent 6 mm description.
+
+LDO local capacitor selection, 2026-11-07:
+https://product.samsungsem.com/mlcc/CL10A475KO8NNN.do
+Samsung typical DC-bias and AC-voltage data, exact CL10A475KO8NNNC ordering variant.
+https://jlcpcb.com/partdetail/CL10A475KO8NNNC/C19666
+https://www.diodes.com/datasheet/download/AP2112.pdf
+AP2112 DS39724 revision 2-2: 1 uF application capacitors, X5R/X7R recommendation.
