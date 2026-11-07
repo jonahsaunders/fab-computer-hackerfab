@@ -40,9 +40,17 @@ The actual host J1/J2 positions and its embedded WingTAT socket models were comb
 
 The card model uses a 90-degree KiCad X rotation and nominal placement offset of (0, -2.01, 17.74) mm relative to each host row-A pin-1 origin. This aligns the plug contacts and seats the modeled nose near the socket flange plane. The transform is an engineering inference from the supplied models, not a specified seated-board dimension. Actual seating stop, retention, cable housings, cable bend radii, enclosure and other daughterboard designs still need a physical fit check. Two cards in these images demonstrate geometry only; their combined electrical load is not approved by the rendering.
 
-![Nominal assembly, component faces](host-fit-front.png)
+The single-card views below use host J1 and show both the component face and backplane electronics. Adjacent J1/J2 views show the 26 mm slot pitch. USB-C opens sideways beyond the card edge. The PH headers are top-entry relative to the daughterboard, so their mating plugs project into the inter-card space, not straight above the installed assembly. Perimeter placement lets the wires turn toward an edge; actual plug housings, insertion access and bend radii are not modeled. Allow physical access to the lower SWD and reset/boot area as well as the signal connectors.
 
-![Nominal assembly, reverse view](host-fit-review.png)
+| Single card, component side | Single card, reverse side |
+| --- | --- |
+| ![Single installed card](host-single-front.png) | ![Single installed card, reverse](host-single-back.png) |
+
+| Adjacent cards, component sides | Adjacent cards, reverse sides |
+| --- | --- |
+| ![Adjacent cards](host-adjacent-front.png) | ![Adjacent cards, reverse](host-adjacent-back.png) |
+
+Reproduce these views with KiCad's Python using `scripts/export_host_assembly.py` from the repository root. It exports the actual card, aligns its DIN row-A origin with each selected host socket, and writes temporary assemblies under the daughter's ignored `build/assembly/` directory. Source PCBs and project settings are hash-checked as unchanged. The model placement remains nominal as described above.
 
 ## JST PH footprints
 

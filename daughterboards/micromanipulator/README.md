@@ -16,7 +16,8 @@ Keep this entire folder together. All 31 used footprint types and all 116 placed
 | [PCB layout](hardware/daughterboard/FabNanoDaughterboard.kicad_pcb) | Routed 100 × 60 mm, four-layer RP2350B layout |
 | [Front routing preview](docs/layout-front.svg) and [back routing](docs/layout-back.svg) | Viewed from the top; copper pours hidden to expose the routes |
 | [3D view](docs/board-3d.png) | Actual saved board with bundled component models |
-| [Power plane](docs/power-plane.svg) and [ground plane](docs/ground-plane.svg) | Filled native inner copper layers |
+| [Power domains](docs/power-domains.svg), [power plane](docs/power-plane.svg) and [ground plane](docs/ground-plane.svg) | Supply colors and filled native inner copper layers |
+| [Installed card](docs/host-single-front.png) and [reverse view](docs/host-single-back.png) | Nominal assembly in the actual backplane; see the connector review for adjacent cards |
 | [Schematic PDF](docs/schematic-review.pdf) | Current seven-page schematic review |
 | [Schematic previews](docs/schematics/) | Current SVG and PNG pages |
 | [Controller decision](docs/controller-decision.txt) | Single-RP2350B resource allocation and migration requirements |
@@ -56,4 +57,4 @@ python scripts/check_schematic_visuals.py
 python scripts/check_hierarchy.py
 ```
 
-The project was imported and converted to the single-controller design on 2026-11-07. The routed revision is available in the draft pull request; it has not been merged into the repository's main branch.
+The project was imported and converted to the single-controller design on 2026-11-07. Native design files, review images and validation notes are maintained together in this folder.
