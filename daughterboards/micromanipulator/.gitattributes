@@ -1,0 +1,2 @@
+# Preserve upstream CAD model bytes and keep geometry out of textual reviews.
+hardware/libraries/models/**/*.step -text -diff

@@ -1,0 +1,78 @@
+DESIGN NOTES — REV A
+
+Architecture
+One bare RP2350B handles motion and tools. The existing host UART and I2C0
+contacts are retained. See controller-decision.txt for the resource audit,
+software implications and firmware work still required.
+The winding-PWM H bridges are retained; changing to STEP/DIR would require
+a different control algorithm.
+
+Three TB6612FNG bridges use the backplane 12 V rail. The published 30 ohm
+windings draw 0.4 A at 12 V; six continuously energized windings would total
+2.4 A before PWM reduction. F2 uses a 4 A Littelfuse 0466004.NRHF. See load-power-review.md. Verify winding
+temperature, bridge temperature, connector ratings and supply transients.
+TB6612FNG's recommended VM maximum is 13.5 V, so the actual 12 V rail, including
+regeneration and transients, needs checking at the card. Local bulk capacitors
+are present. A fuse alone does not clamp overvoltage.
+
+Power reuse
+12 V and 5 V come directly from their assigned DIN contacts through local
+branch fuses. There is no daughterboard 24 V converter or 5 V buck regulator.
+AP2112M-3.3TRG1 in SO-8 supplies logic 3.3 V from existing 5 V.
+The provisional 250 mA allocation gives about 0.50 W at 5.25 V input and
+3.25 V output. See power-budget.md for the package choice and thermal estimate.
+Verify actual current and temperature with the final loads and enclosure. RP2350 core inductor/capacitors are required MCU support, not a
+duplicate backplane supply. 5 V load bulk capacitance and bypass capacitors
+remain local because wiring and connector inductance cannot be eliminated.
+
+The backplane's TPS2116 is a 2.5 A power mux. That is a component limit, not a
+guaranteed available current for this card. USB power has a separate source
+limit. The RP2350B senses the 12 V rail through 100k/22k on GPIO41/ADC1.
+The consolidated firmware must inhibit tool loads when that rail is absent. This prevents ordinary USB-only service power
+from starting them, but does not detect every supply fault or authorize loads
+above the host's capacity. Validate the host mux and upstream supply under
+simultaneous loads. The source heater geometry estimates 1.40 A cold at 5.25 V. Rotation and pump
+ratings are not specified in the checked source repository. The provisional tool
+allocation is at most 2 A and must be reduced to fit the shared 2.5 A host mux
+budget after logic, host and other-card consumption; see load-power-review.md.
+
+Tools
+DRV8837CDSGR uses the actual TI WSON-8 package with its exposed ground pad.
+It replaces the source schematic's TPM8837C-labelled device and mismatched
+SO-8 assignment. Its 1 A bridge capability must be checked against the rotation
+motor's stall current and the thermal layout. It is not a regulated-current
+stepper driver. Recalibrate the source motor's encoder lookup table.
+
+TC4427A buffers the two 3.3 V PWM signals into 5 V gate drive for the AO3400A
+MOSFETs. Gate pulldowns keep the switches off during reset.
+The vacuum output uses MDD SS34 and F1 uses Littelfuse 0466004.NRHF.
+Validate them against actual pump startup/stall current and transient energy.
+The heater supply passes through J17 for an independent, normally closed
+thermal cutoff attached to the heater. Select its trip temperature and
+current rating for the actual heater/process. Firmware limits alone are not
+an independent thermal cutoff.
+
+Firmware and mechanical implementation status
+The firmware is still split across the old RP and STM32 builds. Those images
+do not implement the RP2350B tool functions. The complete consolidation and
+timing requirements are recorded in controller-decision.txt.
+
+The current PCB matches the single-controller schematic and is manually routed.
+It retains the DIN mating geometry and every assigned backplane contact.
+The layer order is F.Cu signal, In1.Cu power, In2.Cu ground, B.Cu signal.
+All 35 checked local supply paths connect directly on F.Cu. See validation.md
+and layout-review.md for the saved-board checks and current review limits.
+
+USB-C J18 has separate CC pull-downs, USBLC6 protection, VBUS sensing and
+27 ohm series resistors. VBUS does not power the board. Supply it through
+the backplane before USB service. Firmware must implement self-powered USB
+and cable detection. USB/ESD behavior still requires bench verification.
+
+Release gates
+Confirm the mating DIN part, envelope/retention and sensor magnet geometry;
+finish any layout items listed in validation.txt; qualify power and thermal
+behavior with the actual loads; verify boot/debug, SPI direction/CRC, UART and
+I2C on assembled hardware; then test homing and temperature faults before
+closed-loop motion and full-power heater/pump operation. All 116 board parts
+have ordering codes and package reviews. The external thermal cutoff remains
+a process-specific selection; no fabrication or commissioned-system release is claimed.
