@@ -1337,7 +1337,7 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" "http://www.ti.com/lit/ds/symlink/drv8837c.pdf"
+    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/drv8837c.pdf"
       (at 63.5 58.42 0)
       (effects
         (font
@@ -1349,7 +1349,7 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Texas Instruments"
       (at 63.5 58.42 0)
       (effects
         (font
@@ -1377,7 +1377,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/a74e9ac8-b222-5765-a115-aa0b627c9240"
           (reference "U9")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C191000"
+      (at 63.5 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Device:C_Small")
     (at 101.6 45.72 0)
@@ -1894,7 +1900,7 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" "http://www.ti.com/lit/ds/symlink/drv8837c.pdf"
+    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/drv8837c.pdf"
       (at 63.5 129.54 0)
       (effects
         (font
@@ -1906,7 +1912,7 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Texas Instruments"
       (at 63.5 129.54 0)
       (effects
         (font
@@ -1934,7 +1940,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/a74e9ac8-b222-5765-a115-aa0b627c9240"
           (reference "U10")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C191000"
+      (at 63.5 129.54 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Device:C_Small")
     (at 101.6 116.84 0)
@@ -2574,7 +2586,7 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/20001422G.pdf"
+    (property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/20001423J.pdf"
       (at 193.04 83.82 0)
       (effects
         (font
@@ -2586,7 +2598,7 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Microchip Technology"
       (at 193.04 83.82 0)
       (effects
         (font
@@ -2612,7 +2624,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/a74e9ac8-b222-5765-a115-aa0b627c9240"
           (reference "U11")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C18690"
+      (at 193.04 83.82 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (no_connect
     (at 185.42 83.82)
     (uuid "f45c1761-5178-568a-bfcd-e25198739d94"))
@@ -3000,7 +3018,7 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
+    (property "Datasheet" "https://www.aosmd.com/sites/default/files/res/datasheets/AO3400A.pdf"
       (at 254 68.58 0)
       (effects
         (font
@@ -3363,7 +3381,7 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
+    (property "Datasheet" "https://www.aosmd.com/sites/default/files/res/datasheets/AO3400A.pdf"
       (at 254 124.46 0)
       (effects
         (font
@@ -3726,7 +3744,7 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.lcsc.com/datasheet/C8678.pdf"
       (at 274.32 101.6 0)
       (effects
         (font
@@ -3738,7 +3756,7 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "MDD (Microdiode Semiconductor)"
       (at 274.32 101.6 0)
       (effects
         (font
@@ -3752,7 +3770,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/a74e9ac8-b222-5765-a115-aa0b627c9240"
           (reference "D2")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C8678"
+      (at 274.32 101.6 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 274.32 97.79)

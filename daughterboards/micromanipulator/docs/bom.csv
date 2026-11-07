@@ -91,9 +91,9 @@ C64,100nF 16V,Capacitor_SMD:C_0402_1005Metric,CL05B104KO5NNNC,Samsung Electro-Me
 C65,1uF 25V,Capacitor_SMD:C_0603_1608Metric,,,,1,Exact part not yet selected
 C67,100nF 16V,Capacitor_SMD:C_0402_1005Metric,CL05B104KO5NNNC,Samsung Electro-Mechanics,C1525,1,JLCPCB catalog/package checked 2026-11-07; confirm current inventory
 C68,100nF 16V,Capacitor_SMD:C_0402_1005Metric,CL05B104KO5NNNC,Samsung Electro-Mechanics,C1525,1,JLCPCB catalog/package checked 2026-11-07; confirm current inventory
-D2,SS34,Diode_SMD:D_SMA,SS34,,,1,Review exact ordering code and stock
-Q1,AO3400A,Package_TO_SOT_SMD:SOT-23,AO3400A,Alpha & Omega Semiconductor,C20917,1,Review exact ordering code and stock
-Q2,AO3400A,Package_TO_SOT_SMD:SOT-23,AO3400A,Alpha & Omega Semiconductor,C20917,1,Review exact ordering code and stock
+D2,SS34,Diode_SMD:D_SMA,SS34,MDD (Microdiode Semiconductor),C8678,1,Manufacturer pinout/package and JLCPCB listing checked 2026-11-07; confirm order inventory
+Q1,AO3400A,Package_TO_SOT_SMD:SOT-23,AO3400A,Alpha & Omega Semiconductor,C20917,1,Manufacturer pinout/package and JLCPCB listing checked 2026-11-07; confirm order inventory
+Q2,AO3400A,Package_TO_SOT_SMD:SOT-23,AO3400A,Alpha & Omega Semiconductor,C20917,1,Manufacturer pinout/package and JLCPCB listing checked 2026-11-07; confirm order inventory
 R40,10kR,Resistor_SMD:R_0603_1608Metric,,,,1,Exact part not yet selected
 R41,33R,Resistor_SMD:R_0603_1608Metric,,,,1,Exact part not yet selected
 R42,100kR,Resistor_SMD:R_0603_1608Metric,,,,1,Exact part not yet selected
@@ -101,9 +101,9 @@ R43,33R,Resistor_SMD:R_0603_1608Metric,,,,1,Exact part not yet selected
 R44,100kR,Resistor_SMD:R_0603_1608Metric,,,,1,Exact part not yet selected
 R45,10kR,Resistor_SMD:R_0603_1608Metric,,,,1,Exact part not yet selected
 R46,10kR,Resistor_SMD:R_0603_1608Metric,,,,1,Exact part not yet selected
-U9,DRV8837CDSGR,Package_SON:Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm,DRV8837CDSGR,,,1,Review exact ordering code and stock
-U10,DRV8837CDSGR,Package_SON:Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm,DRV8837CDSGR,,,1,Review exact ordering code and stock
-U11,TC4427AEOA,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,TC4427AEOA,,,1,Review exact ordering code and stock
+U9,DRV8837CDSGR,Package_SON:Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm,DRV8837CDSGR,Texas Instruments,C191000,1,Manufacturer pinout/package and JLCPCB listing checked 2026-11-07; confirm order inventory
+U10,DRV8837CDSGR,Package_SON:Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm,DRV8837CDSGR,Texas Instruments,C191000,1,Manufacturer pinout/package and JLCPCB listing checked 2026-11-07; confirm order inventory
+U11,TC4427AEOA,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,TC4427AEOA,Microchip Technology,C18690,1,Manufacturer pinout/package and JLCPCB listing checked 2026-11-07; confirm order inventory
 C1,4.7uF 16V X5R,Capacitor_SMD:C_0603_1608Metric,CL10A475KO8NNNC,Samsung Electro-Mechanics,C19666,1,Samsung bias data and JLCPCB catalog/package checked 2026-11-07; confirm order inventory
 C2,4.7uF 16V X5R,Capacitor_SMD:C_0603_1608Metric,CL10A475KO8NNNC,Samsung Electro-Mechanics,C19666,1,Samsung bias data and JLCPCB catalog/package checked 2026-11-07; confirm order inventory
 C3,10uF 10V X7R,Capacitor_SMD:C_0603_1608Metric,,,,1,Exact part not yet selected

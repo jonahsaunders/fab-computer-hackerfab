@@ -6441,7 +6441,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/drv8837c.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/drv8837c.pdf"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -6487,7 +6487,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "Texas Instruments"
 			(at 0 0 180)
 			(layer "F.SilkS")
 			(hide yes)
@@ -6496,6 +6496,17 @@
 				(font
 					(size 1.27 1.27)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C191000"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "b28ecd8e-f653-4a92-ae1a-918558d67139")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -11080,7 +11091,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/20001422G.pdf"
+		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/20001423J.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -11126,7 +11137,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "Microchip Technology"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -11135,6 +11146,17 @@
 				(font
 					(size 1.27 1.27)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C18690"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "bc8935b4-4d7b-4bca-a88e-db7988a46619")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -15496,7 +15518,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
+		(property "Datasheet" "https://www.aosmd.com/sites/default/files/res/datasheets/AO3400A.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -18854,7 +18876,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C8678.pdf"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18892,7 +18914,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "MDD (Microdiode Semiconductor)"
 			(at 0 0 180)
 			(layer "F.SilkS")
 			(hide yes)
@@ -18901,6 +18923,17 @@
 				(font
 					(size 1.27 1.27)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C8678"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "aa69cd5f-eb8b-40a1-ae82-08f5980cdb30")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -20665,7 +20698,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
+		(property "Datasheet" "https://www.aosmd.com/sites/default/files/res/datasheets/AO3400A.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -29575,7 +29608,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/drv8837c.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/drv8837c.pdf"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -29621,7 +29654,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "Texas Instruments"
 			(at 0 0 180)
 			(layer "F.SilkS")
 			(hide yes)
@@ -29630,6 +29663,17 @@
 				(font
 					(size 1.27 1.27)
 					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C191000"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "9d5ec912-4dcd-429c-a18b-67e310fe6832")
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)

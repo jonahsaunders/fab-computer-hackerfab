@@ -31,6 +31,8 @@ The [gate-driver supply correction](power-budget.md#gate-driver-supply-and-an-op
 
 ## Reproduce
 
+The [tool-output part selection](tool-parts-review.md) assigns exact JLCPCB codes to U9/U10/U11/Q1/Q2/D2. Manufacturer pin functions and package drawings were checked against the saved board. Parsed comparisons permit hidden procurement fields only and prove unchanged electrical and visual geometry.
+
 Run from this folder, with KiCad 10 available. Create `build/` first.
 
 ```sh

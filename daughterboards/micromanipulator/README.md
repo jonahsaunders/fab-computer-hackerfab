@@ -24,6 +24,7 @@ Keep this entire folder together. All 31 used footprint types and all 116 placed
 | [Connector table](docs/connectors.csv) and [wiring table](docs/wiring.csv) | External interfaces and original encoder harness pin order |
 | [Connector review](docs/connector-review.md) | Exact connector parts, manufacturer hole-pattern checks and host slot compatibility |
 | [Logic supply budget](docs/power-budget.md) | Regulator package choice, current allocation and thermal estimate |
+| [Tool-output parts](docs/tool-parts-review.md) | Exact rotation-driver, gate-driver, MOSFET and diode selections with pin/land checks |
 | [BOM](docs/bom.csv) | Current schematic parts; supplier selection and assembly review are incomplete |
 | [Validation](docs/validation.md) | Current ERC, DRC, parity and visual-audit results |
 | [USB routing review](docs/usb-routing-review.md) | Local termination resistors, coupled main pair and measured source stubs |
