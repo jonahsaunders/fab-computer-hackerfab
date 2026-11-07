@@ -15,7 +15,7 @@ C26 moved beside pin 32, with the debug-clock escape moved inward to make room. 
 
 C66 now also connects directly to the USB protection device's supply pin. It was previously unrouted. All 35 checked local supply/bypass connections now have a continuous F.Cu path, without using an inner-layer shortcut. The [measured paths](decoupling-paths.csv) come from the saved native board, not from an intended route list.
 
-This check measures supply-trace connectivity and centreline length. It does not measure loop inductance, establish controlled impedance, or replace ground-return, stackup and electrical review. Ground returns use the filled In2.Cu plane. Further routing and the final return-path review remain open.
+This check measures supply-trace connectivity and centreline length. It does not measure loop inductance or establish controlled impedance. The filled In2.Cu ground plane is one connected region. Grounded front copper and 54 additional stitching vias supplement the dedicated capacitor return traces. The regulator's capacitor-to-PGND traces remain direct; its switching loop is excluded from the front ground pour. See the [layout review](layout-review.md).
 
 Run with KiCad's Python and `pcbnew` available:
 
@@ -23,7 +23,7 @@ Run with KiCad's Python and `pcbnew` available:
 python scripts/check_decoupling.py --output build/decoupling-paths.csv
 ```
 
-Native DRC at this revision reports zero violations and zero schematic-parity issues. There are 28 other unconnected items; this is still an unfinished layout. The newly opened flash routing corridor is now routed manually.
+Native DRC at this revision reports zero violations, zero unconnected items and zero schematic-parity issues. Flash, USB and the remaining control/feedback routes are complete. The preview hides copper pours so the direct pin-to-pad traces can be inspected.
 
 [![Front copper detail showing the direct bypass traces](decoupling-detail.svg)](decoupling-detail.svg)
 

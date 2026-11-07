@@ -1,0 +1,13 @@
+#VRML V2.0 utf8
+# Nominal TI DSG 2x2 mm WSON; low-fidelity review model.
+Transform { translation 0.0000000 0.0000000 0.1673228 children [ Shape { appearance Appearance { material Material { diffuseColor .09 .09 .09 } } geometry Box { size 0.7874016 0.7874016 0.2952756 } } ] }
+Transform { translation 0.0000000 0.0000000 0.0098425 children [ Shape { appearance Appearance { material Material { diffuseColor .65 .65 .65 } } geometry Box { size 0.3543307 0.6299213 0.0196850 } } ] }
+Transform { translation -0.3346457 0.2952756 0.0157480 children [ Shape { appearance Appearance { material Material { diffuseColor .65 .65 .65 } } geometry Box { size 0.1181102 0.0984252 0.0314961 } } ] }
+Transform { translation -0.3346457 0.0984252 0.0157480 children [ Shape { appearance Appearance { material Material { diffuseColor .65 .65 .65 } } geometry Box { size 0.1181102 0.0984252 0.0314961 } } ] }
+Transform { translation -0.3346457 -0.0984252 0.0157480 children [ Shape { appearance Appearance { material Material { diffuseColor .65 .65 .65 } } geometry Box { size 0.1181102 0.0984252 0.0314961 } } ] }
+Transform { translation -0.3346457 -0.2952756 0.0157480 children [ Shape { appearance Appearance { material Material { diffuseColor .65 .65 .65 } } geometry Box { size 0.1181102 0.0984252 0.0314961 } } ] }
+Transform { translation 0.3346457 0.2952756 0.0157480 children [ Shape { appearance Appearance { material Material { diffuseColor .65 .65 .65 } } geometry Box { size 0.1181102 0.0984252 0.0314961 } } ] }
+Transform { translation 0.3346457 0.0984252 0.0157480 children [ Shape { appearance Appearance { material Material { diffuseColor .65 .65 .65 } } geometry Box { size 0.1181102 0.0984252 0.0314961 } } ] }
+Transform { translation 0.3346457 -0.0984252 0.0157480 children [ Shape { appearance Appearance { material Material { diffuseColor .65 .65 .65 } } geometry Box { size 0.1181102 0.0984252 0.0314961 } } ] }
+Transform { translation 0.3346457 -0.2952756 0.0157480 children [ Shape { appearance Appearance { material Material { diffuseColor .65 .65 .65 } } geometry Box { size 0.1181102 0.0984252 0.0314961 } } ] }
+Transform { translation -0.2559055 0.2755906 0.3188976 children [ Shape { appearance Appearance { material Material { diffuseColor .7 .7 .7 } } geometry Box { size 0.0787402 0.0787402 0.0078740 } } ] }

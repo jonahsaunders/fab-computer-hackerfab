@@ -336,6 +336,14 @@
       },
       {
         "netclass": "Fine pitch escape",
+        "pattern": "/HEATER_PWM"
+      },
+      {
+        "netclass": "Fine pitch escape",
+        "pattern": "/VAC_PWM"
+      },
+      {
+        "netclass": "Fine pitch escape",
         "pattern": "/ENC*"
       },
       {

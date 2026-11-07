@@ -1113,7 +1113,7 @@
     (layers "*.Cu" "*.Mask")
     (remove_unused_layers no))
   (embedded_fonts no)
-  (model "${KICAD10_3DMODEL_DIR}/Connector_DIN.3dshapes/DIN41612_C_3x32_Male_Horizontal_THT.step"
+  (model "${KIPRJMOD}/../libraries/models/Connector_DIN.3dshapes/DIN41612_C_3x32_Male_Horizontal_THT.step"
     (offset
       (xyz 0 0 0))
     (scale

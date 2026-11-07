@@ -288,7 +288,7 @@
     (remove_unused_layers no)
     (uuid "e783dde5-f762-4528-9b55-9220820b0b1c"))
   (embedded_fonts no)
-  (model "${KICAD10_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_HRO_TYPE-C-31-M-12.step"
+  (model "${KIPRJMOD}/../libraries/models/HRO-TYPE-C-31-M-12-envelope.wrl"
     (offset
       (xyz 0 0 0))
     (scale

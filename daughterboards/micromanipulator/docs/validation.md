@@ -7,15 +7,15 @@ This is a development snapshot, not a manufacturing release. The six-sheet schem
 | Schematic ERC, including four-way junctions | **0 violations** |
 | Six-page SVG audit | **0** text/wire collisions, text/text collisions, interior wire crossings or overlapping wire segments |
 | PCB DRC violations, apart from connectivity | **0** |
-| PCB unconnected items | **28 — routing unfinished** |
+| PCB unconnected items | **0** |
 | Schematic/PCB parity | **0 issues** |
 | Components / copper layers | **116 / 4** |
 
-The layer order is front signal / inner power / inner ground / back signal. The current board contains 480 explicit routed connections, represented by 1082 track segments and vias, plus filled power and ground zones. No autorouter was used. Courtyard, via-endpoint, footprint-filter and pad-type checks are enabled.
+The layer order is front signal / inner power / inner ground / back signal. The board contains 563 explicit manual route entries and 1382 track segments/vias, including 54 added ground-stitching vias. Eight filled zones include the inner power regions, a single connected In2 ground region and grounded outer copper. No autorouter was used. Courtyard, via-endpoint, footprint-filter and pad-type checks are enabled. A native-board comparison confirms all 14 connectors retain their placement, orientation, pad geometry and nets.
 
-All 35 checked local supply/bypass connections have a continuous front-copper path to the served pin. Six MCU bypass loops previously depended on inner-layer connections; those paths are now direct. See the [decoupling review](decoupling-review.md) and [measured lengths](decoupling-paths.csv). This supply-path check is separate from the final ground-return review.
+All 35 checked local supply/bypass connections have a continuous front-copper path to the served pin. Six MCU bypass loops previously depended on inner-layer connections; those paths are now direct. See the [decoupling review](decoupling-review.md) and [measured lengths](decoupling-paths.csv). The ground-return and stackup decisions are recorded in the [layout review](layout-review.md).
 
-The PCB still needs its remaining signal routes, final return-path and power review, complete footprint and model verification, supplier selection, and final mechanical checks. Firmware consolidation and electrical/thermal bench validation remain open. The bundled body-envelope models are review aids inherited from the earlier layout; they have not all been updated for this revision.
+All 31 footprint types resolve from project-local libraries. All 116 component instances have models: 115 project-relative files and one embedded upstream STEP model. Four component instances use newly made nominal models (RP2350B, two DRV8837C devices and USB-C); these are identified in the [inventory](model-inventory.csv). The native 3D rendering was inspected for component placement and connector access. Exact procurement/package review, USB signal-integrity confirmation, host mating tolerances, load/thermal limits and firmware consolidation remain open. These checks do not establish electrical performance or manufacturing readiness.
 
 ## Reproduce
 
@@ -30,4 +30,4 @@ python scripts/check_schematic_visuals.py
 
 Inspect the DRC report: its default exit status does not fail for findings. The repository's root checker validates the host backplane; it does not replace these daughterboard checks.
 
-[![Current PCB, routing unfinished](layout-incomplete.svg)](layout-incomplete.svg)
+[![Current PCB, copper pours hidden](layout-front.svg)](layout-front.svg)

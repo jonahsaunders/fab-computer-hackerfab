@@ -1,0 +1,9 @@
+Selected footprints and STEP models copied from the installed KiCad 10 standard libraries.
+Copyright: KiCad library contributors.
+License: CC-BY-SA-4.0 WITH KiCad-libraries-exception.
+License and exception: https://www.kicad.org/libraries/license/
+Upstream footprints: https://gitlab.com/kicad/libraries/kicad-footprints
+Upstream 3D models: https://gitlab.com/kicad/libraries/kicad-packages3D
+Changes: project-relative model paths; USB shell silkscreen trimmed at card edge;
+FabNano regulator capacitor lands follow the Raspberry Pi reference design.
+The three named envelope VRML files were created for this project and are not vendor models.

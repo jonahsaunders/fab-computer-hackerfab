@@ -4,7 +4,7 @@ MicroManipulatorStepper hardware/firmware and original heater reference:
 https://github.com/hacker-fab/MicroManipulatorStepper
 Revision fa9a1f8e6d5365c6d5d5f31054d4f2c95aff8f6a
 MIT license retained in licenses/MicroManipulatorStepper-MIT.txt.
-Adapted controller firmware carries its original notices.
+No consolidated controller firmware is included in this daughterboard folder.
 
 Host backplane, fixed pinout, connector geometry and symbol presentation:
 https://github.com/jonahsaunders/fab-computer-hackerfab
@@ -34,7 +34,6 @@ Official minimal design R4-S1; MIT notice retained in licenses/.
 Component primary references:
 TB6612FNG: https://toshiba.semicon-storage.com/info/datasheet_en_20141001.pdf?did=10660
 DRV8837C: https://www.ti.com/lit/ds/symlink/drv8837c.pdf
-STM32F103C8: https://www.st.com/resource/en/datasheet/stm32f103c8.pdf
 TC4427A: https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/TC4426A-TC4427A-TC4428A-1.5A-Dual-High-Speed-Power-MOSFET-Drivers-20001423.pdf
 TPS2116 host power mux: https://www.ti.com/product/TPS2116
 MT6835: manufacturer datasheet supplied in MicroManipulatorStepper/datasheets/MT6835.pdf
@@ -51,9 +50,14 @@ https://www.kicad.org/libraries/license/
 KiCad libraries use CC BY-SA 4.0 with the KiCad library exception. See that
 page for terms. Standard DIN pad identifiers were uppercased to match the
 host's symbol; the standard footprint pad geometry was preserved.
-The approximate body-envelope VRML models in review-models are newly made
-review geometry, explicitly not manufacturer models.
+Used footprints and available STEP models are bundled in project-local libraries.
+The nominal RP2350B, DRV8837C and USB-C VRML models in models/ are newly made
+review geometry, explicitly not manufacturer models. Earlier review-models/
+files are retained for history and are not referenced by the current board.
+HRO USB-C: https://www.krhro.com/Product-Details/726.html
+JLCPCB stackups: https://jlcpcb.com/impedance
+JLCPCB manufacturing capabilities: https://jlcpcb.com/capabilities/Capabilities
 
-Verification used KiCad 10.0.6, its bundled Python/pcbnew, PlatformIO 6.2.0,
-and local Freerouting. No design was uploaded to a routing or manufacturing
-service. All build and validation artifacts are local.
+Current native-board verification used KiCad 10.0.6 and its bundled
+Python/pcbnew. The current single-RP2350B layout uses explicit manual routes,
+not an autorouter. No design was uploaded to a routing or manufacturing service.
