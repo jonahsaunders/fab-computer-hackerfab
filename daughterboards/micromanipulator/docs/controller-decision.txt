@@ -78,7 +78,7 @@ CURRENT STATUS
 The single-controller schematic and PCB both contain 116 components.
 All 14 external connectors are on the root sheet. ERC and the six-page
 visual audit pass. PCB schematic parity passes. Manual routing is still
-in progress: 39 unconnected items remain in this development snapshot.
+in progress: 28 unconnected items remain in this development snapshot.
 
 Firmware has NOT yet been consolidated. Timing, connector mating, load
 current and thermal behavior require bench validation. This is not a

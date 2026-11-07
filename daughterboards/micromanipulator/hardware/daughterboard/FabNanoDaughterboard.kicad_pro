@@ -360,6 +360,10 @@
       },
       {
         "netclass": "Fine pitch escape",
+        "pattern": "/MotionController/QSPI_*"
+      },
+      {
+        "netclass": "Fine pitch escape",
         "pattern": "/RP_SW*"
       },
       {
