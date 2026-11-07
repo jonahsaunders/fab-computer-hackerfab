@@ -8,7 +8,7 @@ Bare-component adaptation of [MicroManipulatorStepper](https://github.com/hacker
 
 Open [hardware/daughterboard/FabNanoDaughterboard.kicad_pro](hardware/daughterboard/FabNanoDaughterboard.kicad_pro) in **KiCad 10**. The project contains the seven-sheet schematic and the routed native PCB layout.
 
-Keep this entire folder together. All 31 used footprint types and all 116 placed models resolve locally or through embedded data. Library names are preserved. Standard STEP models are bundled; RP2350B and DRV8837C use explicitly approximate models where the installed model was missing. USB-C uses a detailed community STEP model for HRO TYPE-C-31-M-12. See the [model inventory](docs/model-inventory.csv). Install KiCad's standard symbol libraries for editing standard symbols.
+Keep this entire folder together. All 31 used footprint types and all 116 placed models resolve locally or through embedded data. Library names are preserved. Standard STEP models are bundled; RP2350B, DRV8837C and TB6612FNG use explicitly approximate models matched to their nominal packages. USB-C uses a detailed community STEP model for HRO TYPE-C-31-M-12. See the [model inventory](docs/model-inventory.csv). Install KiCad's standard symbol libraries for editing standard symbols.
 
 | File or folder | Contents |
 | --- | --- |
@@ -25,6 +25,8 @@ Keep this entire folder together. All 31 used footprint types and all 116 placed
 | [Connector review](docs/connector-review.md) | Exact connector parts, manufacturer hole-pattern checks and host slot compatibility |
 | [Logic supply budget](docs/power-budget.md) | Regulator package choice, current allocation and thermal estimate |
 | [Tool-output parts](docs/tool-parts-review.md) | Exact rotation-driver, gate-driver, MOSFET and diode selections with pin/land checks |
+| [Passive parts](docs/passive-parts-review.md) | Exact resistor and small-capacitor selections with package checks |
+| [Controller and axis-driver parts](docs/controller-parts-review.md) | Flash, clock, inductor, switches, LED and corrected Toshiba package |
 | [BOM](docs/bom.csv) | Current schematic parts; supplier selection and assembly review are incomplete |
 | [Validation](docs/validation.md) | Current ERC, DRC, parity and visual-audit results |
 | [USB routing review](docs/usb-routing-review.md) | Local termination resistors, coupled main pair and measured source stubs |

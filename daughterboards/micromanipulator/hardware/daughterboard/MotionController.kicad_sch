@@ -2235,19 +2235,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KA5NNN.do"
       (at 55.88 33.02 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "CL05B104KA5NNNC"
       (at 55.88 33.02 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Samsung Electro-Mechanics"
       (at 55.88 33.02 0)
       (effects
         (font
@@ -2261,7 +2261,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
           (reference "C16")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C155422"
+      (at 55.88 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 55.88 30.48)
@@ -2301,19 +2307,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KA5NNN.do"
       (at 78.74 33.02 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "CL05B104KA5NNNC"
       (at 78.74 33.02 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Samsung Electro-Mechanics"
       (at 78.74 33.02 0)
       (effects
         (font
@@ -2327,7 +2333,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
           (reference "C17")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C155422"
+      (at 78.74 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 78.74 30.48)
@@ -2367,19 +2379,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KA5NNN.do"
       (at 101.6 33.02 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "CL05B104KA5NNNC"
       (at 101.6 33.02 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Samsung Electro-Mechanics"
       (at 101.6 33.02 0)
       (effects
         (font
@@ -2393,7 +2405,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
           (reference "C18")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C155422"
+      (at 101.6 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 101.6 30.48)
@@ -2433,19 +2451,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KA5NNN.do"
       (at 124.46 33.02 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "CL05B104KA5NNNC"
       (at 124.46 33.02 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Samsung Electro-Mechanics"
       (at 124.46 33.02 0)
       (effects
         (font
@@ -2459,7 +2477,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
           (reference "C19")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C155422"
+      (at 124.46 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 124.46 30.48)
@@ -2499,19 +2523,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KA5NNN.do"
       (at 147.32 33.02 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "CL05B104KA5NNNC"
       (at 147.32 33.02 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Samsung Electro-Mechanics"
       (at 147.32 33.02 0)
       (effects
         (font
@@ -2525,7 +2549,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
           (reference "C20")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C155422"
+      (at 147.32 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 147.32 30.48)
@@ -2565,19 +2595,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KA5NNN.do"
       (at 170.18 33.02 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "CL05B104KA5NNNC"
       (at 170.18 33.02 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Samsung Electro-Mechanics"
       (at 170.18 33.02 0)
       (effects
         (font
@@ -2591,7 +2621,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
           (reference "C21")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C155422"
+      (at 170.18 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 170.18 30.48)
@@ -2631,19 +2667,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KA5NNN.do"
       (at 193.04 33.02 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "CL05B104KA5NNNC"
       (at 193.04 33.02 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Samsung Electro-Mechanics"
       (at 193.04 33.02 0)
       (effects
         (font
@@ -2657,7 +2693,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
           (reference "C22")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C155422"
+      (at 193.04 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 193.04 30.48)
@@ -2697,19 +2739,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KA5NNN.do"
       (at 215.9 33.02 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "CL05B104KA5NNNC"
       (at 215.9 33.02 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Samsung Electro-Mechanics"
       (at 215.9 33.02 0)
       (effects
         (font
@@ -2723,7 +2765,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
           (reference "C23")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C155422"
+      (at 215.9 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 215.9 30.48)
@@ -2763,19 +2811,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KA5NNN.do"
       (at 238.76 33.02 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "CL05B104KA5NNNC"
       (at 238.76 33.02 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Samsung Electro-Mechanics"
       (at 238.76 33.02 0)
       (effects
         (font
@@ -2789,7 +2837,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
           (reference "C24")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C155422"
+      (at 238.76 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 238.76 30.48)
@@ -2895,19 +2949,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KA5NNN.do"
       (at 284.48 33.02 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "CL05B104KA5NNNC"
       (at 284.48 33.02 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Samsung Electro-Mechanics"
       (at 284.48 33.02 0)
       (effects
         (font
@@ -2921,7 +2975,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
           (reference "C53")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C155422"
+      (at 284.48 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 284.48 30.48)
@@ -2961,19 +3021,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KA5NNN.do"
       (at 307.34 33.02 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "CL05B104KA5NNNC"
       (at 307.34 33.02 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Samsung Electro-Mechanics"
       (at 307.34 33.02 0)
       (effects
         (font
@@ -2987,7 +3047,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
           (reference "C54")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C155422"
+      (at 307.34 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 307.34 30.48)
@@ -3536,19 +3602,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.lcsc.com/datasheet/C25105.pdf"
       (at 55.88 109.22 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "0402WGF330JTCE"
       (at 55.88 109.22 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Uniroyal Electronics"
       (at 55.88 109.22 0)
       (effects
         (font
@@ -3562,7 +3628,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
           (reference "R10")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C25105"
+      (at 55.88 109.22 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Device:C_Small")
     (at 76.2 121.92 0)
@@ -3863,7 +3935,7 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.lcsc.com/datasheet/C2041573.pdf"
       (at 160.02 62.23 0)
       (effects
         (font
@@ -3875,7 +3947,7 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Murata"
       (at 160.02 62.23 0)
       (effects
         (font
@@ -3889,7 +3961,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
           (reference "L2")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C2041573"
+      (at 160.02 62.23 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 129.54 62.23)
@@ -4055,19 +4133,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KA5NNN.do"
       (at 233.68 81.28 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "CL05B104KA5NNNC"
       (at 233.68 81.28 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Samsung Electro-Mechanics"
       (at 233.68 81.28 0)
       (effects
         (font
@@ -4081,7 +4159,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
           (reference "C25")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C155422"
+      (at 233.68 81.28 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 233.68 78.74)
@@ -4121,19 +4205,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KA5NNN.do"
       (at 270.51 81.28 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "CL05B104KA5NNNC"
       (at 270.51 81.28 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Samsung Electro-Mechanics"
       (at 270.51 81.28 0)
       (effects
         (font
@@ -4147,7 +4231,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
           (reference "C26")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C155422"
+      (at 270.51 81.28 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 270.51 78.74)
@@ -4187,19 +4277,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KA5NNN.do"
       (at 307.34 81.28 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "CL05B104KA5NNNC"
       (at 307.34 81.28 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Samsung Electro-Mechanics"
       (at 307.34 81.28 0)
       (effects
         (font
@@ -4213,7 +4303,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
           (reference "C27")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C155422"
+      (at 307.34 81.28 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 307.34 78.74)
@@ -4673,7 +4769,7 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.lcsc.com/datasheet/C82344.pdf"
       (at 279.4 196.85 0)
       (effects
         (font
@@ -4685,7 +4781,7 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Winbond Electronics"
       (at 279.4 196.85 0)
       (effects
         (font
@@ -4711,7 +4807,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
           (reference "U4")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C82344"
+      (at 279.4 196.85 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 190.5 189.23)
@@ -4828,19 +4930,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.lcsc.com/datasheet/C25744.pdf"
       (at 228.6 170.18 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "0402WGF1002TCE"
       (at 228.6 170.18 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Uniroyal Electronics"
       (at 228.6 170.18 0)
       (effects
         (font
@@ -4854,7 +4956,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
           (reference "R11")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C25744"
+      (at 228.6 170.18 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 228.6 167.64)
@@ -4952,19 +5060,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KA5NNN.do"
       (at 309.88 180.34 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "CL05B104KA5NNNC"
       (at 309.88 180.34 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Samsung Electro-Mechanics"
       (at 309.88 180.34 0)
       (effects
         (font
@@ -4978,7 +5086,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
           (reference "C13")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C155422"
+      (at 309.88 180.34 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 279.4 184.15)
@@ -5150,19 +5264,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.lcsc.com/datasheet/C25744.pdf"
       (at 132.08 167.64 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "0402WGF1002TCE"
       (at 132.08 167.64 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Uniroyal Electronics"
       (at 132.08 167.64 0)
       (effects
         (font
@@ -5176,7 +5290,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
           (reference "R13")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C25744"
+      (at 132.08 167.64 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 132.08 165.1)
@@ -5259,19 +5379,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://configured-product-images.s3.amazonaws.com/2D/specs/TL3305AF160QG.pdf"
       (at 104.14 189.23 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "TL3305AF160QG"
       (at 104.14 189.23 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "E-Switch"
       (at 104.14 189.23 0)
       (effects
         (font
@@ -5285,7 +5405,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
           (reference "SW1")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C2886899"
+      (at 104.14 189.23 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 109.22 189.23)
@@ -5642,19 +5768,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.lcsc.com/datasheet/C11702.pdf"
       (at 248.92 154.94 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "0402WGF1001TCE"
       (at 248.92 154.94 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Uniroyal Electronics"
       (at 248.92 154.94 0)
       (effects
         (font
@@ -5668,7 +5794,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
           (reference "R14")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C11702"
+      (at 248.92 154.94 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Switch:SW_Push")
     (at 266.7 144.78 0)
@@ -5693,19 +5825,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://configured-product-images.s3.amazonaws.com/2D/specs/TL3305AF160QG.pdf"
       (at 266.7 144.78 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "TL3305AF160QG"
       (at 266.7 144.78 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "E-Switch"
       (at 266.7 144.78 0)
       (effects
         (font
@@ -5719,7 +5851,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
           (reference "SW2")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C2886899"
+      (at 266.7 144.78 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 248.92 189.23)
@@ -5848,7 +5986,7 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.lcsc.com/datasheet/C20625731.pdf"
       (at 50.8 243.84 0)
       (effects
         (font
@@ -5860,7 +5998,7 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Abracon"
       (at 50.8 243.84 0)
       (effects
         (font
@@ -5878,7 +6016,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
           (reference "Y1")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C20625731"
+      (at 50.8 243.84 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Device:R_Small_US")
     (at 83.82 243.84 270)
@@ -5903,19 +6047,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.lcsc.com/datasheet/C11702.pdf"
       (at 83.82 243.84 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "0402WGF1001TCE"
       (at 83.82 243.84 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Uniroyal Electronics"
       (at 83.82 243.84 0)
       (effects
         (font
@@ -5929,7 +6073,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
           (reference "R12")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C11702"
+      (at 83.82 243.84 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Device:C_Small")
     (at 30.48 261.62 0)
@@ -5956,19 +6106,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.fhcomp.com/en/product_info/?prod_code=0402CG150J500NT"
       (at 30.48 261.62 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "0402CG150J500NT"
       (at 30.48 261.62 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Guangdong Fenghua Advanced Technology"
       (at 30.48 261.62 0)
       (effects
         (font
@@ -5982,7 +6132,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
           (reference "C14")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C1548"
+      (at 30.48 261.62 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Device:C_Small")
     (at 71.12 261.62 0)
@@ -6009,19 +6165,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.fhcomp.com/en/product_info/?prod_code=0402CG150J500NT"
       (at 71.12 261.62 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "0402CG150J500NT"
       (at 71.12 261.62 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Guangdong Fenghua Advanced Technology"
       (at 71.12 261.62 0)
       (effects
         (font
@@ -6035,7 +6191,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
           (reference "C15")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C1548"
+      (at 71.12 261.62 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 30.48 226.06)

@@ -954,25 +954,25 @@
       (effects
         (font
           (size 1.27 1.27))))
-    (property "Footprint" "Package_SO:SSOP-24_5.3x8.2mm_P0.65mm"
+    (property "Footprint" "FabNano:SSOP-24_Toshiba_5.6x7.8mm_P0.65mm"
       (at 88.9 96.52 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://toshiba.semicon-storage.com/info/docget.jsp?did=10660&prodName=TB6612FNG"
       (at 88.9 96.52 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" "TB6612FNG"
+    (property "MPN" "TB6612FNG(O,C,8,EL"
       (at 88.9 96.52 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Toshiba"
       (at 88.9 96.52 0)
       (effects
         (font
@@ -1030,7 +1030,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/b1a61931-6afc-52ef-9a7f-656c4faf2de2"
           (reference "U5")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C88224"
+      (at 88.9 96.52 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Device:C_Small")
     (at 48.26 40.64 0)
@@ -2089,19 +2095,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.lcsc.com/datasheet/C25804.pdf"
       (at 40.64 87.63 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "0603WAF1002T5E"
       (at 40.64 87.63 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Uniroyal Electronics"
       (at 40.64 87.63 0)
       (effects
         (font
@@ -2115,7 +2121,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/b1a61931-6afc-52ef-9a7f-656c4faf2de2"
           (reference "R21")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C25804"
+      (at 40.64 87.63 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 66.04 87.63)
@@ -2237,19 +2249,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.lcsc.com/datasheet/C25804.pdf"
       (at 66.04 139.7 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "0603WAF1002T5E"
       (at 66.04 139.7 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Uniroyal Electronics"
       (at 66.04 139.7 0)
       (effects
         (font
@@ -2263,7 +2275,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/b1a61931-6afc-52ef-9a7f-656c4faf2de2"
           (reference "R20")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C25804"
+      (at 66.04 139.7 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 66.04 101.6)
@@ -2353,25 +2371,25 @@
       (effects
         (font
           (size 1.27 1.27))))
-    (property "Footprint" "Package_SO:SSOP-24_5.3x8.2mm_P0.65mm"
+    (property "Footprint" "FabNano:SSOP-24_Toshiba_5.6x7.8mm_P0.65mm"
       (at 215.9 96.52 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://toshiba.semicon-storage.com/info/docget.jsp?did=10660&prodName=TB6612FNG"
       (at 215.9 96.52 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" "TB6612FNG"
+    (property "MPN" "TB6612FNG(O,C,8,EL"
       (at 215.9 96.52 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Toshiba"
       (at 215.9 96.52 0)
       (effects
         (font
@@ -2429,7 +2447,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/b1a61931-6afc-52ef-9a7f-656c4faf2de2"
           (reference "U6")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C88224"
+      (at 215.9 96.52 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Device:C_Small")
     (at 175.26 40.64 0)
@@ -3504,25 +3528,25 @@
       (effects
         (font
           (size 1.27 1.27))))
-    (property "Footprint" "Package_SO:SSOP-24_5.3x8.2mm_P0.65mm"
+    (property "Footprint" "FabNano:SSOP-24_Toshiba_5.6x7.8mm_P0.65mm"
       (at 342.9 96.52 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://toshiba.semicon-storage.com/info/docget.jsp?did=10660&prodName=TB6612FNG"
       (at 342.9 96.52 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" "TB6612FNG"
+    (property "MPN" "TB6612FNG(O,C,8,EL"
       (at 342.9 96.52 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Toshiba"
       (at 342.9 96.52 0)
       (effects
         (font
@@ -3580,7 +3604,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/b1a61931-6afc-52ef-9a7f-656c4faf2de2"
           (reference "U7")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C88224"
+      (at 342.9 96.52 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Device:C_Small")
     (at 302.26 40.64 0)

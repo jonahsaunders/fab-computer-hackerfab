@@ -110,8 +110,8 @@ U11,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,${KIPRJMOD}/../libraries/models/Package_
 U12,Package_TO_SOT_SMD:SOT-23-6,${KIPRJMOD}/../libraries/models/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step,KiCad standard STEP model
 U2,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,${KIPRJMOD}/../libraries/models/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step,Bundled KiCad standard STEP model
 U4,Package_SO:SOIC-8_5.3x5.3mm_P1.27mm,${KIPRJMOD}/../libraries/models/Package_SO.3dshapes/SOIC-8_5.3x5.3mm_P1.27mm.step,KiCad standard STEP model
-U5,Package_SO:SSOP-24_5.3x8.2mm_P0.65mm,${KIPRJMOD}/../libraries/models/Package_SO.3dshapes/SSOP-24_5.3x8.2mm_P0.65mm.step,KiCad standard STEP model
-U6,Package_SO:SSOP-24_5.3x8.2mm_P0.65mm,${KIPRJMOD}/../libraries/models/Package_SO.3dshapes/SSOP-24_5.3x8.2mm_P0.65mm.step,KiCad standard STEP model
-U7,Package_SO:SSOP-24_5.3x8.2mm_P0.65mm,${KIPRJMOD}/../libraries/models/Package_SO.3dshapes/SSOP-24_5.3x8.2mm_P0.65mm.step,KiCad standard STEP model
+U5,FabNano:SSOP-24_Toshiba_5.6x7.8mm_P0.65mm,${KIPRJMOD}/../libraries/models/Package_SO.3dshapes/SSOP-24_Toshiba_5.6x7.8mm_P0.65mm.wrl,Nominal Toshiba SSOP24-P-300-0.65A body and leads; project review model
+U6,FabNano:SSOP-24_Toshiba_5.6x7.8mm_P0.65mm,${KIPRJMOD}/../libraries/models/Package_SO.3dshapes/SSOP-24_Toshiba_5.6x7.8mm_P0.65mm.wrl,Nominal Toshiba SSOP24-P-300-0.65A body and leads; project review model
+U7,FabNano:SSOP-24_Toshiba_5.6x7.8mm_P0.65mm,${KIPRJMOD}/../libraries/models/Package_SO.3dshapes/SSOP-24_Toshiba_5.6x7.8mm_P0.65mm.wrl,Nominal Toshiba SSOP24-P-300-0.65A body and leads; project review model
 U9,Package_SON:Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm,${KIPRJMOD}/../libraries/models/DRV8837C-WSON8-envelope.wrl,Nominal low-fidelity model
 Y1,Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm,${KIPRJMOD}/../libraries/models/Crystal.3dshapes/Crystal_SMD_3225-4Pin_3.2x2.5mm.step,KiCad standard STEP model

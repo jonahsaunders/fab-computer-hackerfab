@@ -2758,19 +2758,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.lcsc.com/datasheet/C25803.pdf"
       (at 215.9 101.6 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "0603WAF1003T5E"
       (at 215.9 101.6 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Uniroyal Electronics"
       (at 215.9 101.6 0)
       (effects
         (font
@@ -2784,7 +2784,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/1d3a9153-32df-5d7c-aec7-6533e1a741b5"
           (reference "R1")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C25803"
+      (at 215.9 101.6 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Device:R_Small_US")
     (at 215.9 129.54 0)
@@ -2811,19 +2817,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.lcsc.com/datasheet/C31850.pdf"
       (at 215.9 129.54 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "0603WAF2202T5E"
       (at 215.9 129.54 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Uniroyal Electronics"
       (at 215.9 129.54 0)
       (effects
         (font
@@ -2837,7 +2843,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/1d3a9153-32df-5d7c-aec7-6533e1a741b5"
           (reference "R2")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C31850"
+      (at 215.9 129.54 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Device:C_Small")
     (at 251.46 129.54 0)

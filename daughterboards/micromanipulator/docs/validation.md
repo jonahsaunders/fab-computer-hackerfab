@@ -19,7 +19,7 @@ USB support components U12, C66 and R48–R51 now reside in USBInterface. A comp
 
 All 35 checked local supply/bypass connections have a continuous front-copper path to the served pin. All 48 capacitor ground pads also have explicit front-copper paths to ground vias; their pad-to-pour settings use solid copper. The revised measurements include both supply traces and dedicated ground returns. See the [decoupling review](decoupling-review.md) and [measured lengths](decoupling-paths.csv). The ground-return and stackup decisions are recorded in the [layout review](layout-review.md).
 
-All 31 footprint types resolve from project-local libraries. All 116 component instances have models: 115 project-relative files and one embedded upstream STEP model. Three component instances use newly made nominal models (RP2350B and two DRV8837C devices); these are identified in the [inventory](model-inventory.csv). USB-C now uses a detailed community STEP model. Its twelve distinct contact positions and four shell-tab locations were checked against the footprint, and its model replacement preserved the footprint geometry and connector position. The native 3D rendering was inspected for component placement and connector access. Exact procurement/package review, USB signal-integrity confirmation, host mating tolerances, load/thermal limits and firmware consolidation remain open. These checks do not establish electrical performance or manufacturing readiness.
+All 31 footprint types resolve from project-local libraries. All 116 component instances have models: 115 project-relative files and one embedded upstream STEP model. Six component instances use newly made nominal models (RP2350B, two DRV8837C devices and three TB6612FNG devices); these are identified in the [inventory](model-inventory.csv). USB-C now uses a detailed community STEP model. Its twelve distinct contact positions and four shell-tab locations were checked against the footprint, and its model replacement preserved the footprint geometry and connector position. The native 3D rendering was inspected for component placement and connector access. Exact procurement/package review, USB signal-integrity confirmation, host mating tolerances, load/thermal limits and firmware consolidation remain open. These checks do not establish electrical performance or manufacturing readiness.
 
 The [USB routing revision](usb-routing-review.md) reduces the resistor-to-MCU stubs from 14.407/15.731 mm to 2.652/0.987 mm, with no signal vias after the resistors. Native netlist comparison verifies that only the four equivalent U12 ESD-channel pins changed net membership. All external interfaces are preserved. Both 0201 resistor footprints use manufacturer-recommended lands and bundled models. Three extra ground-transfer vias support the USB launches.
 
@@ -29,9 +29,11 @@ The subsequent [regulator capacitor selection](power-budget.md#local-capacitor-s
 
 The [gate-driver supply correction](power-budget.md#gate-driver-supply-and-an-open-load-fuse) moves U11 and C64/C65 to the existing backplane 5 V supply before F1. Native netlists confirm exactly three changed pin assignments. All existing track geometry and all footprint geometry remain unchanged; 16 power-track segments and four vias are added. The five inner power zones and In2 ground each retain one connected filled region. ERC, DRC, parity and all seven page audits remain clear.
 
-## Reproduce
-
 The [tool-output part selection](tool-parts-review.md) assigns exact JLCPCB codes to U9/U10/U11/Q1/Q2/D2. Manufacturer pin functions and package drawings were checked against the saved board. Parsed comparisons permit hidden procurement fields only and prove unchanged electrical and visual geometry.
+
+The [passive selections](passive-parts-review.md) and [controller/axis-driver review](controller-parts-review.md) resolve 58 more BOM entries. The three axis drivers now use a Toshiba-specific fabrication outline, courtyard and nominal model; all pads, placement and copper are unchanged. Twelve capacitor/fuse entries still require exact selection. ERC, DRC, connectivity, parity and schematic visual checks are repeated on the saved result.
+
+## Reproduce
 
 Run from this folder, with KiCad 10 available. Create `build/` first.
 

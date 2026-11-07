@@ -839,19 +839,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.lcsc.com/datasheet/C25803.pdf"
       (at 165.1 50.8 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "0603WAF1003T5E"
       (at 165.1 50.8 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Uniroyal Electronics"
       (at 165.1 50.8 0)
       (effects
         (font
@@ -865,7 +865,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/ea516d5b-17fe-5963-87d4-b0567782aa8b"
           (reference "R50")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C25803"
+      (at 165.1 50.8 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Device:R_Small_US")
     (at 165.1 76.2 0)
@@ -892,19 +898,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.lcsc.com/datasheet/C22807.pdf"
       (at 165.1 76.2 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "0603WAF1503T5E"
       (at 165.1 76.2 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Uniroyal Electronics"
       (at 165.1 76.2 0)
       (effects
         (font
@@ -918,7 +924,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/ea516d5b-17fe-5963-87d4-b0567782aa8b"
           (reference "R51")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C22807"
+      (at 165.1 76.2 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (hierarchical_label "USB_VBUS"
     (shape input)
     (at 50.8 40.64 180)
@@ -1284,19 +1296,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.lcsc.com/datasheet/C23186.pdf"
       (at 91.44 111.76 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "0603WAF5101T5E"
       (at 91.44 111.76 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Uniroyal Electronics"
       (at 91.44 111.76 0)
       (effects
         (font
@@ -1310,7 +1322,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/ea516d5b-17fe-5963-87d4-b0567782aa8b"
           (reference "R48")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C23186"
+      (at 91.44 111.76 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (hierarchical_label "USB_CC1"
     (shape input)
     (at 50.8 101.6 180)
@@ -1419,19 +1437,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.lcsc.com/datasheet/C23186.pdf"
       (at 165.1 111.76 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "0603WAF5101T5E"
       (at 165.1 111.76 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Uniroyal Electronics"
       (at 165.1 111.76 0)
       (effects
         (font
@@ -1445,7 +1463,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/ea516d5b-17fe-5963-87d4-b0567782aa8b"
           (reference "R49")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C23186"
+      (at 165.1 111.76 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (hierarchical_label "USB_CC2"
     (shape input)
     (at 124.46 101.6 180)

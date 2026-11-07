@@ -2464,19 +2464,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.lcsc.com/datasheet/C25804.pdf"
       (at 35.56 160.02 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "0603WAF1002T5E"
       (at 35.56 160.02 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Uniroyal Electronics"
       (at 35.56 160.02 0)
       (effects
         (font
@@ -2490,7 +2490,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/a74e9ac8-b222-5765-a115-aa0b627c9240"
           (reference "R40")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C25804"
+      (at 35.56 160.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 35.56 132.08)
@@ -3107,19 +3113,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.lcsc.com/datasheet/C23140.pdf"
       (at 223.52 68.58 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "0603WAF330JT5E"
       (at 223.52 68.58 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Uniroyal Electronics"
       (at 223.52 68.58 0)
       (effects
         (font
@@ -3133,7 +3139,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/a74e9ac8-b222-5765-a115-aa0b627c9240"
           (reference "R41")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C23140"
+      (at 223.52 68.58 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Device:R_Small_US")
     (at 236.22 83.82 0)
@@ -3160,19 +3172,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.lcsc.com/datasheet/C25803.pdf"
       (at 236.22 83.82 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "0603WAF1003T5E"
       (at 236.22 83.82 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Uniroyal Electronics"
       (at 236.22 83.82 0)
       (effects
         (font
@@ -3186,7 +3198,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/a74e9ac8-b222-5765-a115-aa0b627c9240"
           (reference "R42")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C25803"
+      (at 236.22 83.82 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 203.2 81.28)
@@ -3470,19 +3488,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.lcsc.com/datasheet/C23140.pdf"
       (at 223.52 124.46 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "0603WAF330JT5E"
       (at 223.52 124.46 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Uniroyal Electronics"
       (at 223.52 124.46 0)
       (effects
         (font
@@ -3496,7 +3514,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/a74e9ac8-b222-5765-a115-aa0b627c9240"
           (reference "R43")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C23140"
+      (at 223.52 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Device:R_Small_US")
     (at 236.22 139.7 0)
@@ -3523,19 +3547,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.lcsc.com/datasheet/C25803.pdf"
       (at 236.22 139.7 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "0603WAF1003T5E"
       (at 236.22 139.7 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Uniroyal Electronics"
       (at 236.22 139.7 0)
       (effects
         (font
@@ -3549,7 +3573,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/a74e9ac8-b222-5765-a115-aa0b627c9240"
           (reference "R44")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C25803"
+      (at 236.22 139.7 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 203.2 86.36)
@@ -3869,19 +3899,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.lcsc.com/datasheet/C25804.pdf"
       (at 182.88 139.7 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "0603WAF1002T5E"
       (at 182.88 139.7 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Uniroyal Electronics"
       (at 182.88 139.7 0)
       (effects
         (font
@@ -3895,7 +3925,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/a74e9ac8-b222-5765-a115-aa0b627c9240"
           (reference "R46")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C25804"
+      (at 182.88 139.7 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 175.26 86.36)
@@ -4047,19 +4083,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.lcsc.com/datasheet/C25804.pdf"
       (at 160.02 81.28 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "0603WAF1002T5E"
       (at 160.02 81.28 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Uniroyal Electronics"
       (at 160.02 81.28 0)
       (effects
         (font
@@ -4073,7 +4109,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/a74e9ac8-b222-5765-a115-aa0b627c9240"
           (reference "R45")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C25804"
+      (at 160.02 81.28 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 162.56 81.28)
