@@ -13,7 +13,7 @@ This is a development snapshot, not a manufacturing release. The seven-sheet sch
 | Components / copper layers | **116 / 4** |
 | Host interface / connector footprint audit | **288** host contacts compared; **9** PH and **3** pin-header footprints checked; full interface in host J1/J2 |
 
-The layer order is front signal / inner power / inner ground / back signal. The board contains 1492 manually routed track segments/vias, including 57 added ground-stitching vias. Eight filled zones include the inner power regions, a single connected In2 ground region and grounded outer copper. No autorouter was used. Courtyard, via-endpoint, footprint-filter and pad-type checks are enabled. A native-board comparison confirms all 14 connectors retain their placement, orientation, pad geometry and electrical connections. The two USB CC nets have descriptive names after the hierarchy change described below.
+The layer order is front signal / inner power / inner ground / back signal. The board contains 1512 manually routed track segments/vias, including 57 added ground-stitching vias. Eight filled zones include the inner power regions, a single connected In2 ground region and grounded outer copper. No autorouter was used. Courtyard, via-endpoint, footprint-filter and pad-type checks are enabled. A native-board comparison confirms all 14 connectors retain their placement, orientation, pad geometry and electrical connections. The two USB CC nets have descriptive names after the hierarchy change described below.
 
 USB support components U12, C66 and R48–R51 now reside in USBInterface. A comparison of native KiCad netlists before and after the move proves that all 145 electrical pin groups are identical. Only `Net-(J18-CC1)` and `Net-(J18-CC2)` were renamed to `/USB_CC1` and `/USB_CC2`. At the hierarchy-only revision, a full parsed-board comparison allowed only those names and the six updated schematic paths and proved unchanged PCB geometry. The later USB placement changes are checked separately below. The root and USB child were also inspected as rendered pages.
 
@@ -27,6 +27,8 @@ The [connector review](connector-review.md) assigns exact WingTAT/JST/XUNPU/BOOM
 
 The subsequent [regulator capacitor selection](power-budget.md#local-capacitor-selection) raises C1/C2 from 1 µF to 4.7 µF and specifies Samsung CL10A475KO8NNNC for C1/C2/C10. Native parsed comparisons permit only those values and procurement fields; pads, nets, models, placement and copper are unchanged. The Power and MotionController pages and complete schematic PDF were regenerated and visually checked. The seven-page visual audit remains clear.
 
+The [gate-driver supply correction](power-budget.md#gate-driver-supply-and-an-open-load-fuse) moves U11 and C64/C65 to the existing backplane 5 V supply before F1. Native netlists confirm exactly three changed pin assignments. All existing track geometry and all footprint geometry remain unchanged; 16 power-track segments and four vias are added. The five inner power zones and In2 ground each retain one connected filled region. ERC, DRC, parity and all seven page audits remain clear.
+
 ## Reproduce
 
 Run from this folder, with KiCad 10 available. Create `build/` first.
@@ -38,6 +40,7 @@ kicad-cli sch export svg --output docs/schematics/ hardware/daughterboard/FabNan
 python scripts/check_schematic_visuals.py
 python scripts/check_hierarchy.py
 python scripts/check_backplane_interface.py
+python scripts/check_power_domains.py
 python scripts/check_usb_termination.py
 python scripts/check_decoupling.py
 python scripts/check_capacitor_returns.py

@@ -1212,7 +1212,107 @@
         (hide yes)
         (effects
           (font
-            (size 1.27 1.27))))))
+            (size 1.27 1.27)))))
+    (symbol "FabNano:PWR_+5V_BP"
+      (power global)
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "#PWR"
+        (at 0 -3.81 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "+5V_BP"
+        (at 0 3.556 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Power symbol creates a global label with name \"VDD\""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "global power"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "PWR_+5V_BP_0_1"
+        (polyline
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "PWR_+5V_BP_1_1"
+        (pin power_in line
+          (at 0 0 90)
+          (length 0)
+          (name "+5V_BP"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no)))
   (symbol
     (lib_id "Driver_Motor:DRV8837C")
     (at 63.5 58.42 0)
@@ -2640,7 +2740,7 @@
       (type default))
     (uuid "6e0447d1-01b4-5a19-a880-6d16644234f5"))
   (symbol
-    (lib_id "FabNano:PWR_+5V_LOAD")
+    (lib_id "FabNano:PWR_+5V_BP")
     (at 167.64 30.48 0)
     (unit 1)
     (in_bom no)
@@ -2653,7 +2753,7 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Value" "+5V_LOAD"
+    (property "Value" "+5V_BP"
       (at 167.64 26.67 0)
       (effects
         (font
@@ -4357,4 +4457,25 @@
     (stroke
       (width 0)
       (type default))
-    (uuid "88ad1be9-6fe3-4d41-92e8-97e29b9fc99f")))
+    (uuid "88ad1be9-6fe3-4d41-92e8-97e29b9fc99f"))
+  (hierarchical_label "+5V_BP"
+    (shape bidirectional)
+    (at 223.52 30.48 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "f95a21fe-8700-4b00-9aa3-3b210a2165da"))
+  (wire
+    (pts
+      (xy 210.82 30.48)
+      (xy 223.52 30.48))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "b853fbcc-824c-4b6d-9e25-b41377c99e3b"))
+  (junction
+    (at 210.82 30.48)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "8b62fdca-8c9c-4486-be42-3f4fbd014c9f")))

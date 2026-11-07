@@ -3,7 +3,7 @@ CURRENT DEVELOPMENT SNAPSHOT — 7 NOVEMBER 2026
 See validation.md for the current results and reproduction commands.
 116 components; ERC 0; visual collisions/crossings/overlaps 0;
 PCB DRC violations 0; schematic parity 0; unconnected items 0.
-1492 track segments/vias; 57 added ground stitches.
+1512 track segments/vias; 57 added ground stitches.
 35/35 local supply paths directly connect to served pins on front copper.
 48/48 capacitor ground pads have explicit front-copper paths to ground vias.
 All 14 connectors have exact parts selected; 288 host contacts checked.

@@ -8310,7 +8310,14 @@
         (font
           (size 1.27 1.27))
         (justify left))
-      (uuid "9a6911b5-4b08-5f3e-a916-ef17c364837f")))
+      (uuid "9a6911b5-4b08-5f3e-a916-ef17c364837f"))
+    (pin "+5V_BP" bidirectional
+      (at 350.52 203.2 180)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left))
+      (uuid "1d20dadc-ecea-4a4b-b1c5-8689cc24e988")))
   (sheet_instances
     (path "/"
       (page "1")))
@@ -8498,4 +8505,19 @@
         (font
           (size 1.27 1.27))
         (justify left))
-      (uuid "8fdcf7ec-de1f-5555-90b1-2679e5a7bab5"))))
+      (uuid "8fdcf7ec-de1f-5555-90b1-2679e5a7bab5")))
+  (label "+5V_BP"
+    (at 345.44 203.2 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right bottom))
+    (uuid "66997ec4-60ce-4c14-bccd-113f4e78cabb"))
+  (wire
+    (pts
+      (xy 350.52 203.2)
+      (xy 345.44 203.2))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "8d6ef9b6-f180-4db3-bddf-64ba9e89acb6")))
