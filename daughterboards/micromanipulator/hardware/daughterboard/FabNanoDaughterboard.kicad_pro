@@ -140,7 +140,7 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.15,
+        "min_clearance": 0.125,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
@@ -152,10 +152,10 @@
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.15,
-        "min_via_annular_width": 0.15,
-        "min_via_diameter": 0.6,
+        "min_through_hole_diameter": 0.2,
+        "min_track_width": 0.1,
+        "min_via_annular_width": 0.125,
+        "min_via_diameter": 0.45,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -287,6 +287,25 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.125,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Fine pitch escape",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.15,
+        "tuning_profile": "",
+        "via_diameter": 0.45,
+        "via_drill": 0.2,
+        "wire_width": 6
       }
     ],
     "meta": {
@@ -294,7 +313,76 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "Fine pitch escape",
+        "pattern": "/M1_*"
+      },
+      {
+        "netclass": "Fine pitch escape",
+        "pattern": "/M2_*"
+      },
+      {
+        "netclass": "Fine pitch escape",
+        "pattern": "/M3_*"
+      },
+      {
+        "netclass": "Fine pitch escape",
+        "pattern": "/MOTOR_*"
+      },
+      {
+        "netclass": "Fine pitch escape",
+        "pattern": "/TOOL_PWM*"
+      },
+      {
+        "netclass": "Fine pitch escape",
+        "pattern": "/ENC*"
+      },
+      {
+        "netclass": "Fine pitch escape",
+        "pattern": "/ROT*"
+      },
+      {
+        "netclass": "Fine pitch escape",
+        "pattern": "Net-(U1A-GPIO25)"
+      },
+      {
+        "netclass": "Fine pitch escape",
+        "pattern": "+3V3"
+      },
+      {
+        "netclass": "Fine pitch escape",
+        "pattern": "+1V1"
+      },
+      {
+        "netclass": "Fine pitch escape",
+        "pattern": "/MotionController/RP_XIN"
+      },
+      {
+        "netclass": "Fine pitch escape",
+        "pattern": "/RP_SW*"
+      },
+      {
+        "netclass": "Fine pitch escape",
+        "pattern": "/RP_RUN"
+      },
+      {
+        "netclass": "Fine pitch escape",
+        "pattern": "Net-(U1A-GPIO28)"
+      },
+      {
+        "netclass": "Fine pitch escape",
+        "pattern": "Net-(U1A-GPIO29)"
+      },
+      {
+        "netclass": "Fine pitch escape",
+        "pattern": "Net-(U1B-GPIO30)"
+      },
+      {
+        "netclass": "Fine pitch escape",
+        "pattern": "Net-(U1B-GPIO31)"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {

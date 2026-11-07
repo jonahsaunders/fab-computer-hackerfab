@@ -2,7 +2,7 @@
 
 Bare-component adaptation of [MicroManipulatorStepper](https://github.com/hacker-fab/MicroManipulatorStepper) for the FAB Computer backplane. The current schematic uses one RP2350B for XYZ motion, rotation, heater and vacuum control.
 
-**Work in progress: schematic and PCB now both use one RP2350B. Manual routing is incomplete: 111 unconnected items remain. Do not manufacture this layout.**
+**Work in progress: schematic and PCB now both use one RP2350B. Manual routing is incomplete: 39 unconnected items remain. Do not manufacture this layout.**
 
 ## Open the project
 
@@ -14,7 +14,7 @@ Keep this entire folder together. Custom symbols, footprints and approximate rev
 | --- | --- |
 | [Root schematic](hardware/daughterboard/FabNanoDaughterboard.kicad_sch) | All external connectors and five hierarchical subsheets |
 | [PCB layout](hardware/daughterboard/FabNanoDaughterboard.kicad_pcb) | Current 100 × 60 mm, four-layer RP2350B layout; routing unfinished |
-| [Layout preview](docs/layout-incomplete.svg) | Current unfinished PCB, exported from the native design |
+| [Front layout preview](docs/layout-incomplete.svg) and [back copper](docs/layout-back-incomplete.svg) | Current unfinished PCB, viewed from the top |
 | [Schematic PDF](docs/schematic-review.pdf) | Current six-page schematic review |
 | [Schematic previews](docs/schematics/) | Current SVG and PNG pages |
 | [Controller decision](docs/controller-decision.txt) | Single-RP2350B resource allocation and migration requirements |

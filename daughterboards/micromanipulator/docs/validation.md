@@ -7,11 +7,11 @@ This is a development snapshot, not a manufacturing release. The six-sheet schem
 | Schematic ERC, including four-way junctions | **0 violations** |
 | Six-page SVG audit | **0** text/wire collisions, text/text collisions, interior wire crossings or overlapping wire segments |
 | PCB DRC violations, apart from connectivity | **0** |
-| PCB unconnected items | **111 — routing unfinished** |
+| PCB unconnected items | **39 — routing unfinished** |
 | Schematic/PCB parity | **0 issues** |
 | Components / copper layers | **116 / 4** |
 
-The layer order is front signal / inner power / inner ground / back signal. The current board contains 262 explicit routed connections, represented by 543 track segments and vias, plus filled power and ground zones. No autorouter was used. Courtyard, via-endpoint, footprint-filter and pad-type checks are enabled.
+The layer order is front signal / inner power / inner ground / back signal. The current board contains 450 explicit routed connections, represented by 1013 track segments and vias, plus filled power and ground zones. No autorouter was used. Courtyard, via-endpoint, footprint-filter and pad-type checks are enabled.
 
 The PCB still needs its remaining signal routes, final return-path and power review, complete footprint and model verification, supplier selection, and final mechanical checks. Firmware consolidation and electrical/thermal bench validation remain open. The bundled body-envelope models are review aids inherited from the earlier layout; they have not all been updated for this revision.
 
