@@ -1,0 +1,3 @@
+resistor,MCU pin,direct F.Cu stub mm,total stub copper mm,stub vias,previous total stub copper mm,previous stub vias
+R7,U1.67,2.652,2.652,0,14.407,2
+R8,U1.66,0.987,0.987,0,15.731,2

@@ -5468,25 +5468,25 @@
       (effects
         (font
           (size 1.27 1.27))))
-    (property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+    (property "Footprint" "FabNano:R_0201_Yageo_Reflow"
       (at 116.84 201.93 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.yageogroup.com/component-documentation/download/specsheet/RC0201FR-0727RL"
       (at 116.84 201.93 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "RC0201FR-0727RL"
       (at 116.84 201.93 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "YAGEO"
       (at 116.84 201.93 0)
       (effects
         (font
@@ -5500,7 +5500,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
           (reference "R8")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C273268"
+      (at 116.84 201.93 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 119.38 201.93)
@@ -5543,25 +5549,25 @@
       (effects
         (font
           (size 1.27 1.27))))
-    (property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+    (property "Footprint" "FabNano:R_0201_Yageo_Reflow"
       (at 86.36 204.47 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.yageogroup.com/component-documentation/download/specsheet/RC0201FR-0727RL"
       (at 86.36 204.47 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "RC0201FR-0727RL"
       (at 86.36 204.47 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "YAGEO"
       (at 86.36 204.47 0)
       (effects
         (font
@@ -5575,7 +5581,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
           (reference "R7")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C273268"
+      (at 86.36 204.47 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 88.9 204.47)

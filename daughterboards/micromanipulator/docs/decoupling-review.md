@@ -9,14 +9,16 @@ C10, C18, C19, C23, C53 and C54 move closer to their served pins. C12 gains a ne
 | Capacitor | Served pin | Supply trace before → after | Ground-via trace before → after |
 | --- | --- | ---: | ---: |
 | C10 | U1.61, VREG_AVDD | 3.011 → 1.875 mm | 1.026 → 0.667 mm |
-| C12 | U1.64, VREG_FB | 1.298 → 1.298 mm | 2.135 → 0.485 mm |
+| C12 | U1.64, VREG_VIN | 1.298 → 1.212 mm | 2.135 → 0.398 mm |
 | C18 | U1.24, IOVDD | 3.194 → 2.173 mm | 1.100 → 1.157 mm |
 | C19 | U1.29, IOVDD | 3.694 → 2.594 mm | 0.974 → 0.570 mm |
 | C26 | U1.32, DVDD | 1.253 → 1.253 mm | 2.127 → 0.608 mm |
-| C53 | U1.68, USB_VDD | 1.570 → 1.170 mm | 0.720 → 0.620 mm |
+| C53 | U1.68, USB_VDD | 1.570 → 1.174 mm | 0.720 → 0.628 mm |
 | C54 | U1.69, QSPI_IOVDD | 2.307 → 1.460 mm | 1.798 → 1.331 mm |
 
 The table shows the tradeoff for C18: its ground trace is 0.057 mm longer, while its supply path is 1.021 mm shorter. C54 still needs an angled return around nearby copper. The core-converter capacitor traces to PGND remain direct; its switching loop remains excluded from the front ground pour.
+
+The later [USB termination pass](usb-routing-review.md) moves C11/C12 by 0.1 mm upward and outward and C53 by 0.1 mm downward. The table and CSV files include those final positions; the original comparison baseline is retained.
 
 Y1 is rotated, with R12 and both load capacitors placed around its signal pads. Each load capacitor has a short local ground return, and both crystal ground pads have nearby vias. The crystal traces remain on F.Cu with no signal vias.
 

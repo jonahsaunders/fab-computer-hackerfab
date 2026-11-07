@@ -99,8 +99,8 @@ R5,Resistor_SMD:R_0603_1608Metric,${KIPRJMOD}/../libraries/models/Resistor_SMD.3
 R50,Resistor_SMD:R_0603_1608Metric,${KIPRJMOD}/../libraries/models/Resistor_SMD.3dshapes/R_0603_1608Metric.step,KiCad standard STEP model
 R51,Resistor_SMD:R_0603_1608Metric,${KIPRJMOD}/../libraries/models/Resistor_SMD.3dshapes/R_0603_1608Metric.step,KiCad standard STEP model
 R6,Resistor_SMD:R_0603_1608Metric,${KIPRJMOD}/../libraries/models/Resistor_SMD.3dshapes/R_0603_1608Metric.step,KiCad standard STEP model
-R7,Resistor_SMD:R_0402_1005Metric,${KIPRJMOD}/../libraries/models/Resistor_SMD.3dshapes/R_0402_1005Metric.step,KiCad standard STEP model
-R8,Resistor_SMD:R_0402_1005Metric,${KIPRJMOD}/../libraries/models/Resistor_SMD.3dshapes/R_0402_1005Metric.step,KiCad standard STEP model
+R7,FabNano:R_0201_Yageo_Reflow,${KIPRJMOD}/../libraries/models/Resistor_SMD.3dshapes/R_0201_0603Metric.step,Bundled KiCad standard STEP model
+R8,FabNano:R_0201_Yageo_Reflow,${KIPRJMOD}/../libraries/models/Resistor_SMD.3dshapes/R_0201_0603Metric.step,Bundled KiCad standard STEP model
 R9,Resistor_SMD:R_0603_1608Metric,${KIPRJMOD}/../libraries/models/Resistor_SMD.3dshapes/R_0603_1608Metric.step,KiCad standard STEP model
 SW1,Button_Switch_SMD:SW_SPST_TL3305A,${KIPRJMOD}/../libraries/models/Button_Switch_SMD.3dshapes/SW_SPST_TL3305A.step,KiCad standard STEP model
 SW2,Button_Switch_SMD:SW_SPST_TL3305A,${KIPRJMOD}/../libraries/models/Button_Switch_SMD.3dshapes/SW_SPST_TL3305A.step,KiCad standard STEP model

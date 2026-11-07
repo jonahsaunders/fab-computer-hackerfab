@@ -40,8 +40,8 @@ C27,100nF 25V,Capacitor_SMD:C_0402_1005Metric,,,,1,Exact part not yet selected
 C53,100nF 25V,Capacitor_SMD:C_0402_1005Metric,,,,1,Exact part not yet selected
 C54,100nF 25V,Capacitor_SMD:C_0402_1005Metric,,,,1,Exact part not yet selected
 L2,3.3uH,Hack_Passives:L_Murata_DFE252012F_2.5x2.0mm,DFE252012F-3R3M=P2,,,1,Review exact ordering code and stock
-R7,27R,Resistor_SMD:R_0402_1005Metric,,,,1,Exact part not yet selected
-R8,27R,Resistor_SMD:R_0402_1005Metric,,,,1,Exact part not yet selected
+R7,27R,FabNano:R_0201_Yageo_Reflow,RC0201FR-0727RL,YAGEO,C273268,1,JLCPCB Standard assembly catalog and manufacturer land pattern checked 2026-11-07; confirm order inventory
+R8,27R,FabNano:R_0201_Yageo_Reflow,RC0201FR-0727RL,YAGEO,C273268,1,JLCPCB Standard assembly catalog and manufacturer land pattern checked 2026-11-07; confirm order inventory
 R10,33R,Resistor_SMD:R_0402_1005Metric,,,,1,Exact part not yet selected
 R11,10kR,Resistor_SMD:R_0402_1005Metric,,,,1,Exact part not yet selected
 R12,1kR,Resistor_SMD:R_0402_1005Metric,,,,1,Exact part not yet selected

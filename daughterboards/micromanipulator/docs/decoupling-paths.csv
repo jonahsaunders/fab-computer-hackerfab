@@ -2,8 +2,8 @@ Capacitor,Supply pad,Served pin,Front copper length mm,Previous front copper len
 C1,1,U2.8,2.05,2.338,F.Cu only
 C2,1,U2.1,1.856,2.087,F.Cu only
 C10,1,U1.61,1.875,3.011,F.Cu only
-C11,1,L2.2,2.401,2.446,F.Cu only
-C12,1,U1.64,1.298,1.298,F.Cu only
+C11,1,L2.2,2.342,2.446,F.Cu only
+C12,1,U1.64,1.212,1.298,F.Cu only
 C13,1,U4.8,1.815,1.815,F.Cu only
 C16,1,U1.5,1.17,1.17,F.Cu only
 C17,1,U1.15,1.17,1.17,F.Cu only
@@ -17,7 +17,7 @@ C24,1,U1.59,1.441,1.441,F.Cu only
 C25,1,U1.10,1.17,1.17,F.Cu only
 C26,1,U1.32,1.253,1.253,F.Cu only
 C27,1,U1.51,1.907,1.907,F.Cu only
-C53,1,U1.68,1.17,1.57,F.Cu only
+C53,1,U1.68,1.174,1.57,F.Cu only
 C54,1,U1.69,1.46,2.307,F.Cu only
 C30,1,U5.24,2.083,2.25,F.Cu only
 C31,1,U5.13,1.987,2.25,F.Cu only

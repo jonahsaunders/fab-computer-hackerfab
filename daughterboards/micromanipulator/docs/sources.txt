@@ -86,3 +86,10 @@ https://github.com/NabuCasa/yellow-3dshapes/blob/main/USB_C_Receptacle_HRO_TYPE-
 Original model: https://github.com/ai03-2725/Type-C.pretty
 See hardware/libraries/models/Connector_USB.3dshapes/README.txt for provenance,
 hashes, alignment and dimensional limits. The native footprint geometry is unchanged.
+
+USB source-termination revision, 2026-11-07:
+https://jlcpcb.com/partdetail/YAGEO-RC0201FR0727RL/C273268
+https://www.yageogroup.com/component-documentation/download/specsheet/RC0201FR-0727RL
+https://yageogroup.com/content/Resource%20Library/Product%20Guide-Catalog/yageo_PYu-R_Mount_10_19050818_343.pdf
+https://www.st.com/resource/en/datasheet/usblc6-2.pdf
+The custom 0201 footprint is adapted from KiCad R_0201_0603Metric with YAGEO recommended lands and 0.15 mm courtyard margin. Its standard KiCad STEP model is bundled.

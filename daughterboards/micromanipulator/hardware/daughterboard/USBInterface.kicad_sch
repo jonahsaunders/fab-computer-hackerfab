@@ -985,7 +985,7 @@
       (width 0)
       (type default))
     (uuid "63899308-e62d-52b2-84c3-51f96710465f"))
-  (hierarchical_label "USB_D+"
+  (hierarchical_label "USB_D-"
     (shape bidirectional)
     (at 50.8 66.04 180)
     (effects
@@ -1009,14 +1009,14 @@
       (width 0)
       (type default))
     (uuid "c7371a37-0408-50e3-813d-6b2f7d670312"))
-  (label "USB_D+"
+  (label "USB_D-"
     (at 111.76 66.04 0)
     (effects
       (font
         (size 1.27 1.27))
       (justify left bottom))
     (uuid "9976b3d6-7227-54e7-8346-f803f5c94f0e"))
-  (hierarchical_label "USB_D-"
+  (hierarchical_label "USB_D+"
     (shape bidirectional)
     (at 50.8 68.58 180)
     (effects
@@ -1040,7 +1040,7 @@
       (width 0)
       (type default))
     (uuid "326d301d-f0fc-5511-9f76-d1e2f09eb40b"))
-  (label "USB_D-"
+  (label "USB_D+"
     (at 111.76 68.58 0)
     (effects
       (font
