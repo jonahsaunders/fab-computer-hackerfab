@@ -6,18 +6,18 @@ Bare-component adaptation of [MicroManipulatorStepper](https://github.com/hacker
 
 ## Open the project
 
-Open [hardware/daughterboard/FabNanoDaughterboard.kicad_pro](hardware/daughterboard/FabNanoDaughterboard.kicad_pro) in **KiCad 10**. The project contains the six-sheet schematic and the routed native PCB layout.
+Open [hardware/daughterboard/FabNanoDaughterboard.kicad_pro](hardware/daughterboard/FabNanoDaughterboard.kicad_pro) in **KiCad 10**. The project contains the seven-sheet schematic and the routed native PCB layout.
 
 Keep this entire folder together. All 30 used footprint types and all 116 placed models resolve locally or through embedded data. Library names are preserved. Standard STEP models are bundled; RP2350B and DRV8837C use explicitly approximate models where the installed model was missing. USB-C uses a detailed community STEP model for HRO TYPE-C-31-M-12. See the [model inventory](docs/model-inventory.csv). Install KiCad's standard symbol libraries for editing standard symbols.
 
 | File or folder | Contents |
 | --- | --- |
-| [Root schematic](hardware/daughterboard/FabNanoDaughterboard.kicad_sch) | All external connectors and five hierarchical subsheets |
+| [Root schematic](hardware/daughterboard/FabNanoDaughterboard.kicad_sch) | Only external connectors, ground symbols and six hierarchical subsheets |
 | [PCB layout](hardware/daughterboard/FabNanoDaughterboard.kicad_pcb) | Routed 100 × 60 mm, four-layer RP2350B layout |
 | [Front routing preview](docs/layout-front.svg) and [back routing](docs/layout-back.svg) | Viewed from the top; copper pours hidden to expose the routes |
 | [3D view](docs/board-3d.png) | Actual saved board with bundled component models |
 | [Power plane](docs/power-plane.svg) and [ground plane](docs/ground-plane.svg) | Filled native inner copper layers |
-| [Schematic PDF](docs/schematic-review.pdf) | Current six-page schematic review |
+| [Schematic PDF](docs/schematic-review.pdf) | Current seven-page schematic review |
 | [Schematic previews](docs/schematics/) | Current SVG and PNG pages |
 | [Controller decision](docs/controller-decision.txt) | Single-RP2350B resource allocation and migration requirements |
 | [Pin allocation](docs/controller-pin-allocation.csv) | Current RP2350B GPIO map |
@@ -34,17 +34,18 @@ The daughterboard uses the existing DIN96 contacts and perpendicular mating arra
 
 The PCB stack is **front signal / inner power / inner ground / back signal**. The PCB has 116 components, SMD capacitors and perimeter connectors. All 35 checked local supply paths run directly to their served pins on front copper. All 48 capacitor ground pads have explicit local via returns; pad connections to ground pours use solid copper. Ground pours, 54 additional stitching vias and an unbroken inner ground region provide the returns. Eleven exposed-pad vias are specified as filled and capped. See the [stackup and layout review](docs/layout-review.md).
 
-The schematic has USB-C and all external connectors on its top level. Exact supplier selections, USB signal-integrity confirmation, load/thermal limits, host mating tolerances and firmware consolidation remain open. No firmware binaries or fabrication files are included.
+The schematic has USB-C and all external connectors on its top level. USB protection, CC termination and VBUS sensing are in the USBInterface child sheet; the remaining circuitry is in Power, MotionController, MotionGPIO, MotionDrivers and ToolOutputs. Exact supplier selections, USB signal-integrity confirmation, load/thermal limits, host mating tolerances and firmware consolidation remain open. No firmware binaries or fabrication files are included.
 
 ## Checks
 
-The current schematic passes KiCad 10.0.6 ERC with four-way-junction checking enabled. The board matches the current 116-component schematic with zero schematic-parity findings. All six rendered pages passed the text/wire, text/text, wire-crossing and overlapping-segment checks. See the [validation notes](docs/validation.md) for the current checks.
+The current schematic passes KiCad 10.0.6 ERC with four-way-junction checking enabled. The board matches the current 116-component schematic with zero schematic-parity findings. All seven rendered pages passed the text/wire, text/text, wire-crossing and overlapping-segment checks. A separate hierarchy check enforces the connector-only top page. See the [validation notes](docs/validation.md) for the current checks.
 
 Local machine-readable reports belong in the ignored `build/` folder. To repeat the schematic visual audit from this folder:
 
 ```sh
 mkdir -p build
 python scripts/check_schematic_visuals.py
+python scripts/check_hierarchy.py
 ```
 
 The project was imported and converted to the single-controller design on 2026-11-07. The routed revision is available in the draft pull request; it has not been merged into the repository's main branch.

@@ -3030,7 +3030,9 @@
 				)
 			)
 		)
-		(path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/f95e6495-b30e-53f7-b5a0-b08ee13ef400")
+		(path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/ea516d5b-17fe-5963-87d4-b0567782aa8b/f95e6495-b30e-53f7-b5a0-b08ee13ef400")
+		(sheetname "USBInterface")
+		(sheetfile "USBInterface.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5025,7 +5027,9 @@
 				)
 			)
 		)
-		(path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/04675e33-7959-5a16-b2d3-13d920008c4f")
+		(path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/ea516d5b-17fe-5963-87d4-b0567782aa8b/04675e33-7959-5a16-b2d3-13d920008c4f")
+		(sheetname "USBInterface")
+		(sheetfile "USBInterface.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8314,7 +8318,9 @@
 				)
 			)
 		)
-		(path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/24720365-d4c1-5aaa-a679-3a2cda9c4036")
+		(path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/ea516d5b-17fe-5963-87d4-b0567782aa8b/24720365-d4c1-5aaa-a679-3a2cda9c4036")
+		(sheetname "USBInterface")
+		(sheetfile "USBInterface.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11626,7 +11632,9 @@
 				)
 			)
 		)
-		(path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/6f3f3025-2953-5a3d-a714-6d2a6c65224f")
+		(path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/ea516d5b-17fe-5963-87d4-b0567782aa8b/6f3f3025-2953-5a3d-a714-6d2a6c65224f")
+		(sheetname "USBInterface")
+		(sheetfile "USBInterface.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11687,7 +11695,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(J18-CC2)")
+			(net "/USB_CC2")
 			(uuid "ba20e1ae-7b78-41e1-a653-b3750a3d0714")
 		)
 		(pad "2" smd roundrect
@@ -13921,7 +13929,9 @@
 				)
 			)
 		)
-		(path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/4205ac79-f0c5-5fbe-a7dc-87efab5ba708")
+		(path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/ea516d5b-17fe-5963-87d4-b0567782aa8b/4205ac79-f0c5-5fbe-a7dc-87efab5ba708")
+		(sheetname "USBInterface")
+		(sheetfile "USBInterface.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -17426,7 +17436,9 @@
 				)
 			)
 		)
-		(path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/48003e31-25c1-5db9-8d29-b29e285de048")
+		(path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/ea516d5b-17fe-5963-87d4-b0567782aa8b/48003e31-25c1-5db9-8d29-b29e285de048")
+		(sheetname "USBInterface")
+		(sheetfile "USBInterface.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -17487,7 +17499,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(J18-CC1)")
+			(net "/USB_CC1")
 			(uuid "295d0dc7-623c-448e-bfdc-b40a9a478611")
 		)
 		(pad "2" smd roundrect
@@ -30945,7 +30957,7 @@
 			(size 0.3 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(J18-CC1)")
+			(net "/USB_CC1")
 			(uuid "92d23d1a-9d1a-487f-90d8-9c57f7f14775")
 		)
 		(pad "A6" smd roundrect
@@ -31009,7 +31021,7 @@
 			(size 0.3 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net "Net-(J18-CC2)")
+			(net "/USB_CC2")
 			(uuid "cf5ca26b-563f-4a16-b706-846f8bb934ad")
 		)
 		(pad "B6" smd roundrect
@@ -41751,7 +41763,7 @@
 		(end 58.75 77.75)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(J18-CC2)")
+		(net "/USB_CC2")
 		(uuid "2081abb6-41b1-4b0e-b49f-a1bff5612212")
 	)
 	(segment
@@ -41759,7 +41771,7 @@
 		(end 59.1 78.1)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(J18-CC2)")
+		(net "/USB_CC2")
 		(uuid "337328b4-1403-40a8-8313-2c75e9e4c5b9")
 	)
 	(segment
@@ -41767,7 +41779,7 @@
 		(end 59.1 81)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(J18-CC2)")
+		(net "/USB_CC2")
 		(uuid "9055d9c2-4085-467b-afa6-4edbf0c631e9")
 	)
 	(segment
@@ -41775,7 +41787,7 @@
 		(end 61 82.325)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(J18-CC2)")
+		(net "/USB_CC2")
 		(uuid "93f406d0-625a-4a17-aa28-356bbad6b831")
 	)
 	(segment
@@ -41783,7 +41795,7 @@
 		(end 60.425 82.325)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(J18-CC2)")
+		(net "/USB_CC2")
 		(uuid "c89dc080-60cc-4ea3-96bb-a2f84bf8f084")
 	)
 	(segment
@@ -42159,7 +42171,7 @@
 		(end 60.025 73.625)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(J18-CC1)")
+		(net "/USB_CC1")
 		(uuid "2b4d74b9-47fa-480a-9627-69e1ae770994")
 	)
 	(segment
@@ -42167,7 +42179,7 @@
 		(end 58.9 74.75)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(J18-CC1)")
+		(net "/USB_CC1")
 		(uuid "99e079d2-57e6-47d5-b6ac-0db4ca679a35")
 	)
 	(segment
@@ -42175,7 +42187,7 @@
 		(end 61 73.625)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(J18-CC1)")
+		(net "/USB_CC1")
 		(uuid "c2b699e9-e438-4e84-a631-20cb234a0335")
 	)
 	(segment
@@ -42183,7 +42195,7 @@
 		(end 59.05 74.6)
 		(width 0.2)
 		(layer "F.Cu")
-		(net "Net-(J18-CC1)")
+		(net "/USB_CC1")
 		(uuid "e6c7d34b-f4bd-4ae1-a27d-d2de5a470bbd")
 	)
 	(segment

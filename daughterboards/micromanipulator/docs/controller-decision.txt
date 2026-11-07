@@ -86,7 +86,8 @@ FIRMWARE WORK REQUIRED BEFORE THIS HARDWARE CAN BE RUN
 
 CURRENT STATUS
 The single-controller schematic and PCB both contain 116 components.
-All 14 external connectors are on the root sheet. ERC and the six-page
+All 14 external connectors are on the root sheet; support circuitry is on
+the six child sheets, including USBInterface. ERC and the seven-page
 visual audit pass. PCB schematic parity passes. Manual routing is complete:
 zero unconnected items and zero DRC violations in the saved native board.
 
