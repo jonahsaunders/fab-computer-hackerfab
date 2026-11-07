@@ -1,0 +1,8 @@
+#VRML V2.0 utf8
+# HRO USB-C nominal 8.94 x 7.3 x 3.26 mm shell; approximate opening toward local +Y.
+Transform { translation 0.0000000 0.0000000 0.0590551 children [ Shape { appearance Appearance { material Material { diffuseColor .7 .72 .73 } } geometry Box { size 3.5196850 2.8740157 0.1181102 } } ] }
+Transform { translation 0.0000000 0.0000000 1.2244094 children [ Shape { appearance Appearance { material Material { diffuseColor .7 .72 .73 } } geometry Box { size 3.5196850 2.8740157 0.1181102 } } ] }
+Transform { translation -1.7007874 0.0000000 0.6417323 children [ Shape { appearance Appearance { material Material { diffuseColor .7 .72 .73 } } geometry Box { size 0.1181102 2.8740157 1.1653543 } } ] }
+Transform { translation 1.7007874 0.0000000 0.6417323 children [ Shape { appearance Appearance { material Material { diffuseColor .7 .72 .73 } } geometry Box { size 0.1181102 2.8740157 1.1653543 } } ] }
+Transform { translation 0.0000000 1.3779528 0.6417323 children [ Shape { appearance Appearance { material Material { diffuseColor .7 .72 .73 } } geometry Box { size 3.2834646 0.1181102 1.1653543 } } ] }
+Transform { translation 0.0000000 0.1377953 0.6417323 children [ Shape { appearance Appearance { material Material { diffuseColor .12 .12 .12 } } geometry Box { size 2.6377953 2.3622047 0.2362205 } } ] }

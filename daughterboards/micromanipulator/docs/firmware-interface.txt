@@ -1,0 +1,55 @@
+MIGRATION STATUS: the protocols below are to be preserved on one RP2350B.
+Existing firmware sources/images remain the old two-controller implementation.
+No consolidated firmware has been compiled or hardware-tested yet.
+See controller-decision.txt for required work.
+
+HOST INTERFACE AND BUILD NOTES
+
+Backplane J1: host UART0 TX GPIO0 -> C20 -> daughter RP2350 GPIO29 RX.
+              host UART0 RX GPIO1 <- A20 <- daughter RP2350 GPIO28 TX.
+Backplane J2: host UART1 TX GPIO36 -> C20; RX GPIO37 <- A20.
+Backplane J3: A20/C20 are NC; use J1 or J2 for this card.
+Protocol: existing motion G-code and replies, 921600 baud, 8N1, 3.3 V logic.
+The host must forward or generate the motion command stream. The pending
+consolidated image is daughterboard firmware; host firmware remains separate.
+
+Backplane I2C0: GPIO4 SDA -> C16; GPIO5 SCL -> A16.
+The host already supplies pull-ups. Start commissioning at 100 kHz.
+RP2350B planned I2C slave address: 0x10. Only one card at this address may be on the shared
+bus unless firmware addresses are changed. J2 gives a second UART, not an
+isolated I2C bus. The single MCU must retain both host protocols.
+
+Tool register transactions
+Write the register index first, followed by data bytes. Multi-byte values
+are little-endian. Write setpoint bytes, then write a command mask to 0xFF.
+Set the index with a write, then request up to 8 bytes to read telemetry.
+The pointer wraps at 256; each read returns from the current index.
+
+0x00   Protocol version = 1
+0x01   Homing state: 0 init, 1 homing, 2 ready, 3 stopped, 4 homing error
+0x10   Rotation target, uint32: millidegrees (360000 = one revolution)
+0x14   Rotation measurement, uint32: millidegrees, wrapped to one revolution
+0x20   Temperature target, uint32: degrees C multiplied by 50000
+0x24   Temperature measurement, uint32: degrees C multiplied by 50000
+0x30   Vacuum target, uint8: 0..100 percent
+0xFF   Command mask: 0x01 rotation; 0x02 temperature; 0x04 vacuum;
+       0x08 home; 0x80 stop tools. Stop takes precedence over home and targets.
+
+Example: a 40 C request writes [0x20, 0x80, 0x84, 0x1E, 0x00], then
+[0xFF, 0x02] to address 0x10. Heater remains off if a temperature fault or
+power interlock applies. Registers 0x10/0x20/0x30 store host staging values,
+not proof that a load is enabled or the requested value is accepted.
+0x01 describes homing state; it does not report every thermal/power fault.
+The unsigned temperature telemetry clamps negative temperatures to zero.
+Send [0xFF, 0x80] to stop tools. Motion-axis stopping uses the motion protocol
+separately. This is not a hardware emergency-stop circuit.
+
+Programming
+RP2350B SWD J2: 1=3V3 sense, 2=SWDIO, 3=GND, 4=SWCLK, 5=RUN.
+Power the board from its backplane; USB-C VBUS is only sensed. The old STM32
+SWD/UART/boot headers are removed. The new firmware target must select the
+80-pin RP2350B and the fitted 4 MiB external flash; the old rpipico2 target
+does not by itself establish support for GPIO32..47 and the new ADC pins.
+
+The two source directories and compiled-review binaries are retained as
+migration inputs only. They are not firmware for the current schematic.

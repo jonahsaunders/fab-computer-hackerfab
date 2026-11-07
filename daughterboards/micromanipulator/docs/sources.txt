@@ -1,0 +1,117 @@
+SOURCE REFERENCES AND ATTRIBUTION
+
+MicroManipulatorStepper hardware/firmware and original heater reference:
+https://github.com/hacker-fab/MicroManipulatorStepper
+Revision fa9a1f8e6d5365c6d5d5f31054d4f2c95aff8f6a
+MIT license retained in licenses/MicroManipulatorStepper-MIT.txt.
+No consolidated controller firmware is included in this daughterboard folder.
+
+Host backplane, fixed pinout, connector geometry and symbol presentation:
+https://github.com/jonahsaunders/fab-computer-hackerfab
+Revision e3d6b3925d450a5ba3030a4b755d4f48dba609a4
+Project-specific Hack_Chips/Hack_Passives assets retain their upstream
+provenance. No repository-wide license was found; no new license grant for
+those upstream assets is implied by this private adaptation.
+
+User-specified workflow/style references (I2CJak / BackplaneWorks):
+https://github.com/BackplaneWorks/kistack
+https://github.com/BackplaneWorks/Backplane
+KiStack schematic, symbol, footprint, PCB, placement and export instructions
+informed this work. The Backplane repository supplies software/workflow
+reference; the actual mating hardware and schematic style come from the
+user's fab-computer-hackerfab project.
+
+Published mechanics and axis-motor ratings:
+https://docs.hackerfab.org/home/fab-toolkit/nanopositioner/micromanipulator#pcb-2
+The page specifies 12 V / 0.4 A / 30 ohm axis motors. It did not establish
+this card's maximum height or the electrical ratings of all tool loads.
+
+RP2350 support circuit and reference:
+https://datasheets.raspberrypi.com/rp2350/Minimal-KiCAD.zip
+https://pip-assets.raspberrypi.com/categories/1214-rp2350/documents/RP-008280-DS-1-hardware-design-with-rp2350.pdf?disposition=inline
+Official minimal design R4-S1; MIT notice retained in licenses/.
+
+Component primary references:
+TB6612FNG: https://toshiba.semicon-storage.com/info/datasheet_en_20141001.pdf?did=10660
+DRV8837C: https://www.ti.com/lit/ds/symlink/drv8837c.pdf
+TC4427A: https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/TC4426A-TC4427A-TC4428A-1.5A-Dual-High-Speed-Power-MOSFET-Drivers-20001423.pdf
+TPS2116 host power mux: https://www.ti.com/product/TPS2116
+MT6835: manufacturer datasheet supplied in MicroManipulatorStepper/datasheets/MT6835.pdf
+MT6835 newer primary reference: https://www.magntek.com.cn/upload/pdf/202407/MT6835_Rev.1.3.pdf
+
+MT6835 symbol source:
+https://github.com/maruta/Compact-SimpleFOC-Board/blob/2cae3f52c267065e2711685add55a4cc107c0d36/MT6835GT-STD.kicad_sym
+Copyright 2023 Ichiro Maruta, MIT. Pin 11 TEST was corrected from output to
+input using the manufacturer pin table. Pins/numbers otherwise retained;
+symbol rearranged to the backplane-inspired presentation.
+
+Standard symbols, footprints and installed 3D models: KiCad libraries.
+https://www.kicad.org/libraries/license/
+KiCad libraries use CC BY-SA 4.0 with the KiCad library exception. See that
+page for terms. Standard DIN pad identifiers were uppercased to match the
+host's symbol; the standard footprint pad geometry was preserved.
+Used footprints and available STEP models are bundled in project-local libraries.
+The nominal RP2350B and DRV8837C VRML models in models/ are newly made
+review geometry, explicitly not manufacturer models. The former USB-C envelope
+is retained but replaced on the current board by the community STEP model below. Earlier review-models/
+files are retained for history and are not referenced by the current board.
+HRO USB-C: https://www.krhro.com/Product-Details/726.html
+JLCPCB stackups: https://jlcpcb.com/impedance
+JLCPCB manufacturing capabilities: https://jlcpcb.com/capabilities/Capabilities
+
+Current native-board verification used KiCad 10.0.6 and its bundled
+Python/pcbnew. The current single-RP2350B layout uses explicit manual routes,
+not an autorouter. No design was uploaded to a routing or manufacturing service.
+
+3.3 V supply and silicon review, 2026-11-07:
+AP2112 SO-8 pinout/thermal resistance and exact assembly part:
+https://www.diodes.com/assets/Datasheets/AP2112.pdf
+https://jlcpcb.com/partdetail/DiodesIncorporated-AP2112M_33TRG1/C5290219
+MT6835 maximum supply current:
+https://www.magntek.com.cn/upload/pdf/202407/MT6835_Rev.1.3.pdf
+RP2350 A4 stepping / input-leakage erratum fix and assembly listing:
+https://pip-assets.raspberrypi.com/categories/1263-pcn/documents/RP-008771-CC-2-RP235x%20A4%20stepping%20PCN.pdf
+https://jlcpcb.com/partdetail/JLCPCBAssembly-RP2350BA4/C9900208890
+Listings establish catalog identity, not available inventory.
+
+Bypass capacitor package selections, 2026-11-07:
+Samsung CL05B104KO5NNNC, 100 nF / 16 V / X7R, 0402, JLCPCB C1525:
+https://jlcpcb.com/partdetail/1877-CL05B104KO5NNNC/C1525
+YAGEO CC0603KRX7R9BB104, 100 nF / 50 V / X7R, 0603, JLCPCB C14663:
+https://jlcpcb.com/partdetail/Yageo-CC0603KRX7R9BB104/C14663
+Catalog identity/package checked; inventory is not guaranteed.
+
+USB-C detailed STEP model, 2026-11-07:
+https://github.com/NabuCasa/yellow-3dshapes/blob/main/USB_C_Receptacle_HRO_TYPE-C-31-M-12.step
+Original model: https://github.com/ai03-2725/Type-C.pretty
+See hardware/libraries/models/Connector_USB.3dshapes/README.txt for provenance,
+hashes, alignment and dimensional limits. The native footprint geometry is unchanged.
+
+USB source-termination revision, 2026-11-07:
+https://jlcpcb.com/partdetail/YAGEO-RC0201FR0727RL/C273268
+https://www.yageogroup.com/component-documentation/download/specsheet/RC0201FR-0727RL
+https://yageogroup.com/content/Resource%20Library/Product%20Guide-Catalog/yageo_PYu-R_Mount_10_19050818_343.pdf
+https://www.st.com/resource/en/datasheet/usblc6-2.pdf
+The custom 0201 footprint is adapted from KiCad R_0201_0603Metric with YAGEO recommended lands and 0.15 mm courtyard margin. Its standard KiCad STEP model is bundled.
+
+Connector selection and host-interface review, 2026-11-07:
+https://www.lcsc.com/datasheet/C5173361.pdf
+WingTAT male drawing 9001D11001 R7, retrieved via LCSC.
+https://www.lcsc.com/datasheet/C5173363.pdf
+WingTAT female drawing 9001D12003 R7, retrieved via LCSC.
+https://www.jst-mfg.com/product/pdf/eng/ePH.pdf
+JST PH family: through-hole header hole patterns, body dimensions and ratings.
+JLCPCB catalog part links and checked references are in docs/connector-review.md.
+https://www.lcsc.com/datasheet/C41360740.pdf
+https://www.lcsc.com/datasheet/C41360739.pdf
+XUNPU PH1.27-01-NPZD manufacturer family drawing, revision A, retrieved via LCSC.
+https://www.lcsc.com/datasheet/C37208.pdf
+BOOMELE manufacturer drawing 2.54-1xNA-H2.5-L11.2, retrieved via LCSC.
+The BOOMELE drawing specifies a 5.7 mm mating pin, resolving the catalog's inconsistent 6 mm description.
+
+LDO local capacitor selection, 2026-11-07:
+https://product.samsungsem.com/mlcc/CL10A475KO8NNN.do
+Samsung typical DC-bias and AC-voltage data, exact CL10A475KO8NNNC ordering variant.
+https://jlcpcb.com/partdetail/CL10A475KO8NNNC/C19666
+https://www.diodes.com/datasheet/download/AP2112.pdf
+AP2112 DS39724 revision 2-2: 1 uF application capacitors, X5R/X7R recommendation.

@@ -1,0 +1,47 @@
+Harness,Card connector,Card pin,Signal,Destination,Destination pin,Note
+XYZ encoder splitter,J6,1,GND,Existing upstream EncoderBoard J4,1,Existing PH8 pin order retained
+XYZ encoder splitter,J6,2,+3V3,Existing upstream EncoderBoard J4,2,Existing PH8 pin order retained
+XYZ encoder splitter,J6,3,ENC_MOSI,Existing upstream EncoderBoard J4,3,Existing PH8 pin order retained
+XYZ encoder splitter,J6,4,ENC_MISO,Existing upstream EncoderBoard J4,4,Existing PH8 pin order retained
+XYZ encoder splitter,J6,5,ENC_SCK,Existing upstream EncoderBoard J4,5,Existing PH8 pin order retained
+XYZ encoder splitter,J6,6,ENC1_CS,Existing upstream EncoderBoard J4,6,Existing PH8 pin order retained
+XYZ encoder splitter,J6,7,ENC2_CS,Existing upstream EncoderBoard J4,7,Existing PH8 pin order retained
+XYZ encoder splitter,J6,8,ENC3_CS,Existing upstream EncoderBoard J4,8,Existing PH8 pin order retained
+Rotation encoder,J12,1,+3V3,Existing rotation encoder harness,1,Original 1x6 2.54 mm interface retained
+Rotation encoder,J12,2,ROT_MISO,Existing rotation encoder harness,2,Original 1x6 2.54 mm interface retained
+Rotation encoder,J12,3,ROT_MOSI,Existing rotation encoder harness,3,Original 1x6 2.54 mm interface retained
+Rotation encoder,J12,4,ROT_SCK,Existing rotation encoder harness,4,Original 1x6 2.54 mm interface retained
+Rotation encoder,J12,5,ROT_CS,Existing rotation encoder harness,5,Original 1x6 2.54 mm interface retained
+Rotation encoder,J12,6,GND,Existing rotation encoder harness,6,Original 1x6 2.54 mm interface retained
+MOTOR 1,J3,1,M1_BO1,Existing load/sensor harness,Verify actual mating pin,Use connector table; mating termination not yet qualified
+MOTOR 1,J3,2,M1_BO2,Existing load/sensor harness,Verify actual mating pin,Use connector table; mating termination not yet qualified
+MOTOR 1,J3,3,M1_AO2,Existing load/sensor harness,Verify actual mating pin,Use connector table; mating termination not yet qualified
+MOTOR 1,J3,4,M1_AO1,Existing load/sensor harness,Verify actual mating pin,Use connector table; mating termination not yet qualified
+MOTOR 2,J4,1,M2_BO1,Existing load/sensor harness,Verify actual mating pin,Use connector table; mating termination not yet qualified
+MOTOR 2,J4,2,M2_BO2,Existing load/sensor harness,Verify actual mating pin,Use connector table; mating termination not yet qualified
+MOTOR 2,J4,3,M2_AO2,Existing load/sensor harness,Verify actual mating pin,Use connector table; mating termination not yet qualified
+MOTOR 2,J4,4,M2_AO1,Existing load/sensor harness,Verify actual mating pin,Use connector table; mating termination not yet qualified
+MOTOR 3,J5,1,M3_BO1,Existing load/sensor harness,Verify actual mating pin,Use connector table; mating termination not yet qualified
+MOTOR 3,J5,2,M3_BO2,Existing load/sensor harness,Verify actual mating pin,Use connector table; mating termination not yet qualified
+MOTOR 3,J5,3,M3_AO2,Existing load/sensor harness,Verify actual mating pin,Use connector table; mating termination not yet qualified
+MOTOR 3,J5,4,M3_AO1,Existing load/sensor harness,Verify actual mating pin,Use connector table; mating termination not yet qualified
+ENDSTOP,J13,1,ROT_ENDSTOP,Existing load/sensor harness,Verify actual mating pin,Use connector table; mating termination not yet qualified
+ENDSTOP,J13,2,+3V3,Existing load/sensor harness,Verify actual mating pin,Use connector table; mating termination not yet qualified
+ENDSTOP,J13,3,GND,Existing load/sensor harness,Verify actual mating pin,Use connector table; mating termination not yet qualified
+ROTATION MOTOR,J14,1,ROT_OUT1,Existing load/sensor harness,Verify actual mating pin,Use connector table; mating termination not yet qualified
+ROTATION MOTOR,J14,2,ROT_OUT2,Existing load/sensor harness,Verify actual mating pin,Use connector table; mating termination not yet qualified
+ROTATION MOTOR,J14,3,ROT_OUT3,Existing load/sensor harness,Verify actual mating pin,Use connector table; mating termination not yet qualified
+ROTATION MOTOR,J14,4,ROT_OUT4,Existing load/sensor harness,Verify actual mating pin,Use connector table; mating termination not yet qualified
+HEATER + TEMP,J15,1,HEATER_5V,Existing load/sensor harness,Verify actual mating pin,Use connector table; mating termination not yet qualified
+HEATER + TEMP,J15,2,HEAT_LOW,Existing load/sensor harness,Verify actual mating pin,Use connector table; mating termination not yet qualified
+HEATER + TEMP,J15,3,+3V3,Existing load/sensor harness,Verify actual mating pin,Use connector table; mating termination not yet qualified
+HEATER + TEMP,J15,4,GND,Existing load/sensor harness,Verify actual mating pin,Use connector table; mating termination not yet qualified
+HEATER + TEMP,J15,5,TEMP_IN,Existing load/sensor harness,Verify actual mating pin,Use connector table; mating termination not yet qualified
+VACUUM / 5 V,J16,1,+5V_LOAD,Existing load/sensor harness,Verify actual mating pin,Use connector table; mating termination not yet qualified
+VACUUM / 5 V,J16,2,VAC_LOW,Existing load/sensor harness,Verify actual mating pin,Use connector table; mating termination not yet qualified
+THERMAL CUTOFF,J17,1,+5V_LOAD,Existing load/sensor harness,Verify actual mating pin,Use connector table; mating termination not yet qualified
+THERMAL CUTOFF,J17,2,HEATER_5V,Existing load/sensor harness,Verify actual mating pin,Use connector table; mating termination not yet qualified
+TOOL PWM,J19,1,GND,Existing load/sensor harness,Verify actual mating pin,Use connector table; mating termination not yet qualified
+TOOL PWM,J19,2,TOOL_PWM1,Existing load/sensor harness,Verify actual mating pin,Use connector table; mating termination not yet qualified
+TOOL PWM,J19,3,TOOL_PWM2,Existing load/sensor harness,Verify actual mating pin,Use connector table; mating termination not yet qualified
+TOOL PWM,J19,4,+3V3,Existing load/sensor harness,Verify actual mating pin,Use connector table; mating termination not yet qualified

@@ -1,0 +1,5 @@
+{
+  "project": "hardware/daughterboard/FabNanoDaughterboard.kicad_pro",
+  "pcb": "hardware/daughterboard/FabNanoDaughterboard.kicad_pcb",
+  "schematic": "hardware/daughterboard/FabNanoDaughterboard.kicad_sch"
+}

@@ -1,0 +1,6272 @@
+(kicad_sch
+  (version 20250114)
+  (generator eeschema)
+  (generator_version "10.0")
+  (uuid "7a60ca31-a126-5303-b0e3-52848dc2947c")
+  (paper "A3")
+  (title_block
+    (title "RP2350B")
+    (date "2026-11-06")
+    (rev "A / DRAFT")
+    (company "HackerFab / FAB Computer")
+    (comment 1 "Bare IC daughterboard / engineering review"))
+  (lib_symbols
+    (symbol "Device:C_Small"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0.254)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "C"
+        (at 0.254 1.778 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Value" "C_Small"
+        (at 0.254 -2.032 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Unpolarized capacitor, small symbol"
+        (at 0 -10.16 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "capacitor cap"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "C_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "C_Small_0_1"
+        (polyline
+          (pts
+            (xy -1.524 0.508)
+            (xy 1.524 0.508))
+          (stroke
+            (width 0.3048)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -1.524 -0.508)
+            (xy 1.524 -0.508))
+          (stroke
+            (width 0.3048)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "C_Small_1_1"
+        (pin passive line
+          (at 0 2.54 270)
+          (length 2.032)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -2.54 90)
+          (length 2.032)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "Device:Crystal_GND24"
+      (pin_names
+        (offset 1.016)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "Y"
+        (at 3.175 5.08 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Value" "Crystal_GND24"
+        (at 3.175 3.175 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Four pin crystal, GND on pins 2 and 4"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property private "KLC_S3.3" "The rectangle is not a symbol body but a graphical element"
+        (at 0 -12.7 0)
+        (show_name yes)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property private "KLC_S4.1" "Some pins are on 50mil grid to make the symbol small"
+        (at 0 -15.24 0)
+        (show_name yes)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "quartz ceramic resonator oscillator"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "Crystal*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "Crystal_GND24_0_1"
+        (polyline
+          (pts
+            (xy -2.54 2.286)
+            (xy -2.54 3.556)
+            (xy 2.54 3.556)
+            (xy 2.54 2.286))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -2.54 0)
+            (xy -2.032 0))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -2.54 -2.286)
+            (xy -2.54 -3.556)
+            (xy 2.54 -3.556)
+            (xy 2.54 -2.286))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -2.032 -1.27)
+            (xy -2.032 1.27))
+          (stroke
+            (width 0.508)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -1.143 2.54)
+          (end 1.143 -2.54)
+          (stroke
+            (width 0.3048)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 -3.81)
+            (xy 0 -3.556))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 2.032 0)
+            (xy 2.54 0))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 2.032 -1.27)
+            (xy 2.032 1.27))
+          (stroke
+            (width 0.508)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "Crystal_GND24_1_1"
+        (pin passive line
+          (at -3.81 0 0)
+          (length 1.27)
+          (name "1"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -5.08 90)
+          (length 1.27)
+          (name "G"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 3.81 0 180)
+          (length 1.27)
+          (name "3"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "3"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -5.08 90)
+          (length 1.27)
+          (hide yes)
+          (name "G"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "4"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "Device:L_Small"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0.254)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "L"
+        (at 0.762 1.016 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Value" "L_Small"
+        (at 0.762 -1.016 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Inductor, small symbol"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "inductor choke coil reactor magnetic"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "L_Small_0_1"
+        (arc
+          (start 0 2.032)
+          (mid 0.5058 1.524)
+          (end 0 1.016)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (arc
+          (start 0 1.016)
+          (mid 0.5058 0.508)
+          (end 0 0)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (arc
+          (start 0 0)
+          (mid 0.5058 -0.508)
+          (end 0 -1.016)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (arc
+          (start 0 -1.016)
+          (mid 0.5058 -1.524)
+          (end 0 -2.032)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "L_Small_1_1"
+        (pin passive line
+          (at 0 2.54 270)
+          (length 0.508)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -2.54 90)
+          (length 0.508)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "Device:R_Small_US"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0.254)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "R"
+        (at 0.762 0.508 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Value" "R_Small_US"
+        (at 0.762 -1.016 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Resistor, small US symbol"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "r resistor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "R_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "R_Small_US_1_1"
+        (polyline
+          (pts
+            (xy 0 1.524)
+            (xy 1.016 1.143)
+            (xy 0 0.762)
+            (xy -1.016 0.381)
+            (xy 0 0))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 1.016 -0.381)
+            (xy 0 -0.762)
+            (xy -1.016 -1.143)
+            (xy 0 -1.524))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (pin passive line
+          (at 0 2.54 270)
+          (length 1.016)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -2.54 90)
+          (length 1.016)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "FabNano:PWR_+1V1"
+      (power global)
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "#PWR"
+        (at 0 -3.81 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "+1V1"
+        (at 0 3.556 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Power symbol creates a global label with name \"VDD\""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "global power"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "PWR_+1V1_0_1"
+        (polyline
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "PWR_+1V1_1_1"
+        (pin power_in line
+          (at 0 0 90)
+          (length 0)
+          (name "+1V1"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "FabNano:PWR_+3V3"
+      (power global)
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "#PWR"
+        (at 0 -3.81 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "+3V3"
+        (at 0 3.556 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Power symbol creates a global label with name \"VDD\""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "global power"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "PWR_+3V3_0_1"
+        (polyline
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "PWR_+3V3_1_1"
+        (pin power_in line
+          (at 0 0 90)
+          (length 0)
+          (name "+3V3"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "FabNano:PWR_GND"
+      (power global)
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "#PWR"
+        (at 0 -6.35 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "GND"
+        (at 0 -3.81 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "global power"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "PWR_GND_0_1"
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 -1.27)
+            (xy 1.27 -1.27)
+            (xy 0 -2.54)
+            (xy -1.27 -1.27)
+            (xy 0 -1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "PWR_GND_1_1"
+        (pin power_in line
+          (at 0 0 270)
+          (length 0)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "FabNano:RP2350B"
+      (pin_names
+        (offset 0.508))
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "U"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "RP2350B"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "RP2350B_1_1"
+        (rectangle
+          (start -15.24 -20.32)
+          (end 15.24 20.32)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (pin bidirectional line
+          (at -17.78 17.78 0)
+          (length 2.54)
+          (name "GPIO20"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "20"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at -17.78 15.240000000000002 0)
+          (length 2.54)
+          (name "GPIO21"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "21"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at -17.78 12.700000000000001 0)
+          (length 2.54)
+          (name "GPIO22"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "22"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at -17.78 10.16 0)
+          (length 2.54)
+          (name "GPIO0"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "77"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at -17.78 7.620000000000001 0)
+          (length 2.54)
+          (name "GPIO2"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "79"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at -17.78 5.080000000000002 0)
+          (length 2.54)
+          (name "GPIO3"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "80"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at -17.78 2.540000000000001 0)
+          (length 2.54)
+          (name "GPIO1"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "78"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at -17.78 0.0 0)
+          (length 2.54)
+          (name "GPIO28"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "36"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at -17.78 -2.539999999999999 0)
+          (length 2.54)
+          (name "GPIO29"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "37"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at -17.78 -5.079999999999998 0)
+          (length 2.54)
+          (name "GPIO16"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "16"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at -17.78 -7.619999999999997 0)
+          (length 2.54)
+          (name "GPIO17"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "17"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at -17.78 -10.16 0)
+          (length 2.54)
+          (name "GPIO25"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "26"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at 17.78 17.78 180)
+          (length 2.54)
+          (name "GPIO4"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "1"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at 17.78 15.240000000000002 180)
+          (length 2.54)
+          (name "GPIO5"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "2"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at 17.78 12.700000000000001 180)
+          (length 2.54)
+          (name "GPIO6"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "3"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at 17.78 10.16 180)
+          (length 2.54)
+          (name "GPIO7"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "4"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at 17.78 7.620000000000001 180)
+          (length 2.54)
+          (name "GPIO8"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "6"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at 17.78 5.080000000000002 180)
+          (length 2.54)
+          (name "GPIO9"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "7"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at 17.78 2.540000000000001 180)
+          (length 2.54)
+          (name "GPIO10"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "8"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at 17.78 0.0 180)
+          (length 2.54)
+          (name "GPIO11"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "9"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at 17.78 -2.539999999999999 180)
+          (length 2.54)
+          (name "GPIO12"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "11"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at 17.78 -5.079999999999998 180)
+          (length 2.54)
+          (name "GPIO13"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "12"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at 17.78 -7.619999999999997 180)
+          (length 2.54)
+          (name "GPIO14"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "13"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at 17.78 -10.16 180)
+          (length 2.54)
+          (name "GPIO15"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "14"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at 17.78 -12.7 180)
+          (length 2.54)
+          (name "GPIO18"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "18"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at 17.78 -15.240000000000002 180)
+          (length 2.54)
+          (name "GPIO19"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "19"
+            (effects
+              (font
+                (size 1.016 1.016))))))
+      (symbol "RP2350B_2_1"
+        (rectangle
+          (start -15.24 -20.32)
+          (end 15.24 20.32)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (pin bidirectional line
+          (at -17.78 17.78 0)
+          (length 2.54)
+          (name "GPIO30"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "38"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at -17.78 15.240000000000002 0)
+          (length 2.54)
+          (name "GPIO31"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "39"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at -17.78 12.700000000000001 0)
+          (length 2.54)
+          (name "GPIO41/ADC1"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "52"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at -17.78 10.16 0)
+          (length 2.54)
+          (name "GPIO24"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "25"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at -17.78 7.620000000000001 0)
+          (length 2.54)
+          (name "GPIO26"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "27"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at -17.78 5.080000000000002 0)
+          (length 2.54)
+          (name "GPIO27"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "28"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at -17.78 2.540000000000001 0)
+          (length 2.54)
+          (name "GPIO23"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "23"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at -17.78 0.0 0)
+          (length 2.54)
+          (name "GPIO40/ADC0"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "49"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at 17.78 17.78 180)
+          (length 2.54)
+          (name "GPIO32"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "40"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at 17.78 15.240000000000002 180)
+          (length 2.54)
+          (name "GPIO33"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "42"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at 17.78 12.700000000000001 180)
+          (length 2.54)
+          (name "GPIO34"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "43"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at 17.78 10.16 180)
+          (length 2.54)
+          (name "GPIO35"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "44"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at 17.78 7.620000000000001 180)
+          (length 2.54)
+          (name "GPIO36"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "45"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at 17.78 5.080000000000002 180)
+          (length 2.54)
+          (name "GPIO38"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "47"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at 17.78 2.540000000000001 180)
+          (length 2.54)
+          (name "GPIO37"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "46"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at 17.78 0.0 180)
+          (length 2.54)
+          (name "GPIO39"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "48"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at 17.78 -2.539999999999999 180)
+          (length 2.54)
+          (name "GPIO42/ADC2"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "53"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at 17.78 -5.079999999999998 180)
+          (length 2.54)
+          (name "GPIO43/ADC3"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "54"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at 17.78 -7.619999999999997 180)
+          (length 2.54)
+          (name "GPIO44/ADC4"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "55"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at 17.78 -10.16 180)
+          (length 2.54)
+          (name "GPIO45/ADC5"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "56"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at 17.78 -12.7 180)
+          (length 2.54)
+          (name "GPIO46/ADC6"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "57"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at 17.78 -15.240000000000002 180)
+          (length 2.54)
+          (name "GPIO47/ADC7"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "58"
+            (effects
+              (font
+                (size 1.016 1.016))))))
+      (symbol "RP2350B_3_1"
+        (rectangle
+          (start -15.24 -19.05)
+          (end 15.24 19.05)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (pin power_in line
+          (at -17.78 16.51 0)
+          (length 2.54)
+          (name "IOVDD"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "5"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin passive line
+          (at -17.78 13.970000000000002 0)
+          (length 2.54)
+          (name "IOVDD"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "15"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin passive line
+          (at -17.78 11.430000000000001 0)
+          (length 2.54)
+          (name "IOVDD"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "24"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin passive line
+          (at -17.78 8.89 0)
+          (length 2.54)
+          (name "IOVDD"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "29"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin passive line
+          (at -17.78 6.350000000000001 0)
+          (length 2.54)
+          (name "IOVDD"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "41"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin passive line
+          (at -17.78 3.8100000000000023 0)
+          (length 2.54)
+          (name "IOVDD"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "50"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin passive line
+          (at -17.78 1.2700000000000014 0)
+          (length 2.54)
+          (name "IOVDD"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "60"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin passive line
+          (at -17.78 -1.2699999999999996 0)
+          (length 2.54)
+          (name "IOVDD"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "76"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin power_in line
+          (at -17.78 -3.8099999999999987 0)
+          (length 2.54)
+          (name "ADC_AVDD"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "59"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin power_in line
+          (at -17.78 -6.349999999999998 0)
+          (length 2.54)
+          (name "USB_OTP_VDD"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "68"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin power_in line
+          (at -17.78 -8.889999999999997 0)
+          (length 2.54)
+          (name "QSPI_IOVDD"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "69"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin power_in line
+          (at -17.78 -11.43 0)
+          (length 2.54)
+          (name "VREG_VIN"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "64"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin power_in line
+          (at -17.78 -13.969999999999999 0)
+          (length 2.54)
+          (name "VREG_AVDD"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "61"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin power_out line
+          (at 17.78 16.51 180)
+          (length 2.54)
+          (name "VREG_LX"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "63"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin passive line
+          (at 17.78 13.970000000000002 180)
+          (length 2.54)
+          (name "VREG_FB"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "65"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin power_in line
+          (at 17.78 11.430000000000001 180)
+          (length 2.54)
+          (name "DVDD"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "10"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin passive line
+          (at 17.78 8.89 180)
+          (length 2.54)
+          (name "DVDD"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "32"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin passive line
+          (at 17.78 6.350000000000001 180)
+          (length 2.54)
+          (name "DVDD"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "51"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin power_in line
+          (at -2.54 -21.59 90)
+          (length 2.54)
+          (name "VREG_PGND"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "62"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin power_in line
+          (at 2.54 -21.59 90)
+          (length 2.54)
+          (name "GND"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "81"
+            (effects
+              (font
+                (size 1.016 1.016))))))
+      (symbol "RP2350B_4_1"
+        (rectangle
+          (start -15.24 -11.43)
+          (end 15.24 11.43)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (pin input line
+          (at -17.78 8.89 0)
+          (length 2.54)
+          (name "RUN"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "35"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin input line
+          (at -17.78 6.3500000000000005 0)
+          (length 2.54)
+          (name "XIN"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "30"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin output line
+          (at -17.78 3.8100000000000005 0)
+          (length 2.54)
+          (name "XOUT"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "31"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin input line
+          (at -17.78 1.2700000000000005 0)
+          (length 2.54)
+          (name "SWCLK"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "33"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at -17.78 -1.2699999999999996 0)
+          (length 2.54)
+          (name "SWDIO"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "34"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at -17.78 -3.8099999999999987 0)
+          (length 2.54)
+          (name "USB_DM"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "66"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at -17.78 -6.35 0)
+          (length 2.54)
+          (name "USB_DP"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "67"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin output line
+          (at 17.78 8.89 180)
+          (length 2.54)
+          (name "~{QSPI_SS}"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "75"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin output line
+          (at 17.78 6.3500000000000005 180)
+          (length 2.54)
+          (name "QSPI_SCLK"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "71"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at 17.78 3.8100000000000005 180)
+          (length 2.54)
+          (name "QSPI_SD0"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "72"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at 17.78 1.2700000000000005 180)
+          (length 2.54)
+          (name "QSPI_SD1"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "74"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at 17.78 -1.2699999999999996 180)
+          (length 2.54)
+          (name "QSPI_SD2"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "73"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at 17.78 -3.8099999999999987 180)
+          (length 2.54)
+          (name "QSPI_SD3"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "70"
+            (effects
+              (font
+                (size 1.016 1.016)))))))
+    (symbol "FabNano:W25Q32JVSS_Clean"
+      (pin_names
+        (offset 0.508))
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "U"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "W25Q32JVSS_Clean"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "W25Q32JVSS_Clean_1_1"
+        (rectangle
+          (start -15.24 -10.16)
+          (end 15.24 10.16)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (pin input line
+          (at -17.78 7.62 0)
+          (length 2.54)
+          (name "~{CS}"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "1"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin input line
+          (at -17.78 5.08 0)
+          (length 2.54)
+          (name "CLK"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "6"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at -17.78 2.54 0)
+          (length 2.54)
+          (name "DI/IO_{0}"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "5"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at -17.78 0.0 0)
+          (length 2.54)
+          (name "DO/IO_{1}"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "2"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at -17.78 -2.54 0)
+          (length 2.54)
+          (name "~{WP}/IO_{2}"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "3"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin bidirectional line
+          (at -17.78 -5.079999999999999 0)
+          (length 2.54)
+          (name "~{HOLD}/~{RESET}/IO_{3}"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "7"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin power_in line
+          (at 0.0 12.7 270)
+          (length 2.54)
+          (name "VCC"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "8"
+            (effects
+              (font
+                (size 1.016 1.016)))))
+        (pin power_in line
+          (at 0.0 -12.7 90)
+          (length 2.54)
+          (name "GND"
+            (effects
+              (font
+                (size 1.016 1.016))))
+          (number "4"
+            (effects
+              (font
+                (size 1.016 1.016)))))))
+    (symbol "Switch:SW_Push"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 1.016)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "SW"
+        (at 1.27 2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Value" "SW_Push"
+        (at 0 -1.524 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 5.08 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 5.08 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Push button switch, generic, two pins"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "switch normally-open pushbutton push-button"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "SW_Push_0_1"
+        (circle
+          (center -2.032 0)
+          (radius 0.508)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 3.048))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (circle
+          (center 2.032 0)
+          (radius 0.508)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 2.54 1.27)
+            (xy -2.54 1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (pin passive line
+          (at -5.08 0 0)
+          (length 2.54)
+          (name "1"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 5.08 0 180)
+          (length 2.54)
+          (name "2"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "power:PWR_FLAG"
+      (power global)
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "#FLG"
+        (at 0 1.905 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "PWR_FLAG"
+        (at 0 3.81 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Special symbol for telling ERC where power comes from"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "flag power"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "PWR_FLAG_0_0"
+        (pin power_out line
+          (at 0 0 90)
+          (length 0)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (symbol "PWR_FLAG_0_1"
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 1.27)
+            (xy -1.016 1.905)
+            (xy 0 2.54)
+            (xy 1.016 1.905)
+            (xy 0 1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (embedded_fonts no)))
+  (symbol
+    (lib_id "FabNano:RP2350B")
+    (at 111.76 78.74 0)
+    (unit 3)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "80a4341e-2a37-5c4b-a249-1e70e48770e0")
+    (property "Reference" "U1"
+      (at 111.76 48.26 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "RP2350B"
+      (at 111.76 50.8 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Package_DFN_QFN:QFN-80-1EP_10x10mm_P0.4mm_EP3.4x3.4mm"
+      (at 111.76 78.74 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 111.76 78.74 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "RP2350B A4"
+      (at 111.76 78.74 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "Raspberry Pi"
+      (at 111.76 78.74 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "5"
+      (uuid "1f2c8fed-7d85-5a37-9c99-6e562d2a7f1f"))
+    (pin "15"
+      (uuid "7ae2b904-05fc-5e6a-848a-f833ed0fcfa3"))
+    (pin "24"
+      (uuid "5fa1444e-883c-506b-9210-aebde35e39be"))
+    (pin "29"
+      (uuid "0a8ddab8-7d94-5b91-b66d-0a009eb13bc8"))
+    (pin "41"
+      (uuid "6e66af61-16b6-55ef-96eb-faabe1c6bec6"))
+    (pin "50"
+      (uuid "c455b3cb-1a0c-5f52-b2c6-45a43a690914"))
+    (pin "60"
+      (uuid "337170df-bc8b-5668-b365-9917d3221114"))
+    (pin "76"
+      (uuid "384b1a80-4556-520c-9d64-0707ce46a5ec"))
+    (pin "59"
+      (uuid "2a185b19-5688-5a88-9668-12aa24c039bf"))
+    (pin "68"
+      (uuid "bc44c981-871a-5e07-82b0-00161eb77614"))
+    (pin "69"
+      (uuid "ee8e4794-d7ed-5f78-bb03-bf1f4e3d553e"))
+    (pin "64"
+      (uuid "132562ac-be59-5c4d-90e0-fab1563692c5"))
+    (pin "61"
+      (uuid "a222af48-7548-56fb-b17d-a82c7bbb7251"))
+    (pin "63"
+      (uuid "86efdcc3-9c11-5ac4-a453-3e63c15f0efa"))
+    (pin "65"
+      (uuid "1f01e88c-74e8-5f98-bbf3-53e5a81be995"))
+    (pin "10"
+      (uuid "ef23f156-8ba0-596e-a47b-f1bf975addec"))
+    (pin "32"
+      (uuid "1770f186-2e6e-51fa-bf60-cba908daf22c"))
+    (pin "51"
+      (uuid "c18b8bf6-b440-5bb9-badd-5b0db455cd21"))
+    (pin "62"
+      (uuid "18277b72-94c4-5e04-bfb0-a3182e6a0f67"))
+    (pin "81"
+      (uuid "5d354b08-3865-5b92-8376-9ef4d3072a0d"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "U1")
+          (unit 3))))
+    (property "LCSC" "C9900208890"
+      (at 111.76 78.74 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier_URL" "https://jlcpcb.com/partdetail/JLCPCBAssembly-RP2350BA4/C9900208890"
+      (at 111.76 78.74 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
+  (symbol
+    (lib_id "Device:C_Small")
+    (at 55.88 33.02 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "43966204-6213-5124-8680-8c9bde599665")
+    (property "Reference" "C16"
+      (at 58.42 31.750000000000004 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "100nF 25V"
+      (at 58.42 34.290000000000006 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+      (at 55.88 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 55.88 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 55.88 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 55.88 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "43966204-6213-5124-8680-8c9bde599665"))
+    (pin "2"
+      (uuid "579adc45-458d-5b2e-bb00-18b83e4b5b2b"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "C16")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 55.88 30.48)
+      (xy 55.88 22.86))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "d9787bf8-1453-5b53-850e-2c58bd0cdb1f"))
+  (junction
+    (at 55.88 22.86)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "8b1757f4-814f-5895-897a-d26e745991f7"))
+  (symbol
+    (lib_id "Device:C_Small")
+    (at 78.74 33.02 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "7808e020-58fb-5c00-8c61-4f06e74a071d")
+    (property "Reference" "C17"
+      (at 81.28 31.750000000000004 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "100nF 25V"
+      (at 81.28 34.290000000000006 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+      (at 78.74 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 78.74 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 78.74 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 78.74 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "7808e020-58fb-5c00-8c61-4f06e74a071d"))
+    (pin "2"
+      (uuid "5fd8cedd-f7ca-5440-98dc-441a080be04a"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "C17")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 78.74 30.48)
+      (xy 78.74000000000001 22.86))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "29d5a327-1ce5-5e2d-970c-2a179e62f108"))
+  (junction
+    (at 78.74000000000001 22.86)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "16a61fe7-e6fe-5273-be5c-d49be83baacc"))
+  (symbol
+    (lib_id "Device:C_Small")
+    (at 101.6 33.02 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "b393d755-0df2-56b4-a53a-44ffa1b04d41")
+    (property "Reference" "C18"
+      (at 104.14 31.750000000000004 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "100nF 25V"
+      (at 104.14 34.290000000000006 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+      (at 101.6 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 101.6 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 101.6 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 101.6 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "b393d755-0df2-56b4-a53a-44ffa1b04d41"))
+    (pin "2"
+      (uuid "786cc5cc-23b3-594c-913b-083c83f4a326"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "C18")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 101.6 30.48)
+      (xy 101.6 22.86))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "aa1dae04-98fc-540f-a992-cd81f68d386a"))
+  (junction
+    (at 101.6 22.86)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "fd249bea-dd84-5c00-84fc-431e4773dbb4"))
+  (symbol
+    (lib_id "Device:C_Small")
+    (at 124.46 33.02 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "636dbef5-360c-5295-b3ae-55dad827e069")
+    (property "Reference" "C19"
+      (at 127.0 31.750000000000004 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "100nF 25V"
+      (at 127.0 34.290000000000006 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+      (at 124.46 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 124.46 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 124.46 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 124.46 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "636dbef5-360c-5295-b3ae-55dad827e069"))
+    (pin "2"
+      (uuid "49be6e4b-d56d-5435-b419-178041f430cc"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "C19")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 124.46 30.48)
+      (xy 124.46000000000001 22.86))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "5153411a-6823-55b9-a40b-3b2b87d24a02"))
+  (junction
+    (at 124.46000000000001 22.86)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "370e4844-1d6f-5914-9815-3c13e073f2b9"))
+  (symbol
+    (lib_id "Device:C_Small")
+    (at 147.32 33.02 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "188acd74-c832-51aa-9be6-717dec958d06")
+    (property "Reference" "C20"
+      (at 149.85999999999999 31.750000000000004 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "100nF 25V"
+      (at 149.85999999999999 34.290000000000006 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+      (at 147.32 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 147.32 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 147.32 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 147.32 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "188acd74-c832-51aa-9be6-717dec958d06"))
+    (pin "2"
+      (uuid "4abe7771-aebe-5d8f-a58c-1764726c928b"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "C20")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 147.32 30.48)
+      (xy 147.32 22.86))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "4f490831-02e8-51f1-8d58-8d0224edc4d0"))
+  (junction
+    (at 147.32 22.86)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "3f3ccfee-18dc-5080-b896-7d9292d614d7"))
+  (symbol
+    (lib_id "Device:C_Small")
+    (at 170.18 33.02 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "ddb3128e-9471-50ff-bbc6-9410e49bf618")
+    (property "Reference" "C21"
+      (at 172.72 31.750000000000004 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "100nF 25V"
+      (at 172.72 34.290000000000006 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+      (at 170.18 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 170.18 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 170.18 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 170.18 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "ddb3128e-9471-50ff-bbc6-9410e49bf618"))
+    (pin "2"
+      (uuid "5ea138fe-a6cb-5801-bada-1438b6941fec"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "C21")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 170.18 30.48)
+      (xy 170.18 22.86))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "149aef88-da11-57e3-9648-239fb183e75c"))
+  (junction
+    (at 170.18 22.86)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "1876ccad-c3f2-5d96-b8f1-19ff812c4858"))
+  (symbol
+    (lib_id "Device:C_Small")
+    (at 193.04 33.02 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "59176469-a1c3-5136-841c-4112787157e6")
+    (property "Reference" "C22"
+      (at 195.57999999999998 31.750000000000004 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "100nF 25V"
+      (at 195.57999999999998 34.290000000000006 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+      (at 193.04 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 193.04 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 193.04 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 193.04 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "59176469-a1c3-5136-841c-4112787157e6"))
+    (pin "2"
+      (uuid "9a1a13c1-d595-50ed-a931-24189c0967d8"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "C22")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 193.04 30.48)
+      (xy 193.04 22.86))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "2ef2001e-6006-5b7e-a5a2-23a9ae5fc1b2"))
+  (junction
+    (at 193.04 22.86)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "adbc4ec9-9ce0-5f3f-8c0f-c08871a10d7b"))
+  (symbol
+    (lib_id "Device:C_Small")
+    (at 215.9 33.02 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "2886c3da-16bf-58c8-bbad-e631cadcf226")
+    (property "Reference" "C23"
+      (at 218.44 31.750000000000004 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "100nF 25V"
+      (at 218.44 34.290000000000006 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+      (at 215.9 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 215.9 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 215.9 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 215.9 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "2886c3da-16bf-58c8-bbad-e631cadcf226"))
+    (pin "2"
+      (uuid "d10e2a2c-13c4-519f-b4a3-4a6e7019189c"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "C23")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 215.9 30.48)
+      (xy 215.89999999999998 22.86))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "badc8889-fd2b-5b1b-8676-1727ef996dab"))
+  (junction
+    (at 215.89999999999998 22.86)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "942d0d1d-1de4-58ba-a0c4-643661c61943"))
+  (symbol
+    (lib_id "Device:C_Small")
+    (at 238.76 33.02 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "f5977978-33df-5704-bf2b-c9e8759b0552")
+    (property "Reference" "C24"
+      (at 241.29999999999998 31.750000000000004 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "100nF 25V"
+      (at 241.29999999999998 34.290000000000006 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+      (at 238.76 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 238.76 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 238.76 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 238.76 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "f5977978-33df-5704-bf2b-c9e8759b0552"))
+    (pin "2"
+      (uuid "b918e3aa-4bf1-5a0a-b4c2-d267a34f7a2f"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "C24")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 238.76 30.48)
+      (xy 238.76 22.86))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "0a2cb6e0-bf2a-5d28-a21b-2074775813ea"))
+  (junction
+    (at 238.76 22.86)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "01028f86-fa6c-5972-8fac-a99e9c28b523"))
+  (symbol
+    (lib_id "Device:C_Small")
+    (at 261.62 33.02 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "d57872e2-0117-54f9-a507-18b518b3e396")
+    (property "Reference" "C12"
+      (at 264.16 31.750000000000004 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "4.7uF 6.3V X5R"
+      (at 264.16 34.290000000000006 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "FabNano:C_0402_RP2350_Regulator"
+      (at 261.62 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 261.62 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "GRM155R60J475ME47D"
+      (at 261.62 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "Murata"
+      (at 261.62 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "d57872e2-0117-54f9-a507-18b518b3e396"))
+    (pin "2"
+      (uuid "d1e45391-cdcc-5fdb-bc7d-86eef0166a96"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "C12")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 261.62 30.48)
+      (xy 261.62 22.86))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "ed52e90c-3d65-5c7e-bbe0-6f0fec91ac85"))
+  (junction
+    (at 261.62 22.86)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "b629f2c6-0716-54e5-bffb-065a9482f051"))
+  (symbol
+    (lib_id "Device:C_Small")
+    (at 284.48 33.02 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "10162e46-aee4-59b5-bee0-1f53db956cfb")
+    (property "Reference" "C53"
+      (at 287.02000000000004 31.750000000000004 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "100nF 25V"
+      (at 287.02000000000004 34.290000000000006 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+      (at 284.48 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 284.48 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 284.48 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 284.48 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "10162e46-aee4-59b5-bee0-1f53db956cfb"))
+    (pin "2"
+      (uuid "3b79ec1f-983a-5d64-9195-af47c157cf7b"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "C53")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 284.48 30.48)
+      (xy 284.48 22.86))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "9f231c4a-7040-5e40-81e3-da8563b4e379"))
+  (junction
+    (at 284.48 22.86)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "defd11f0-ccd6-5295-a308-e4d8814bc645"))
+  (symbol
+    (lib_id "Device:C_Small")
+    (at 307.34 33.02 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "560874cc-598e-56ab-8acb-e638dd4c5fac")
+    (property "Reference" "C54"
+      (at 309.88 31.750000000000004 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "100nF 25V"
+      (at 309.88 34.290000000000006 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+      (at 307.34 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 307.34 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 307.34 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 307.34 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "560874cc-598e-56ab-8acb-e638dd4c5fac"))
+    (pin "2"
+      (uuid "5de90da6-87ff-5874-8fa4-05802e717fd2"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "C54")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 307.34 30.48)
+      (xy 307.34 22.86))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "6f8d6496-f8ae-5e1c-b9ca-eb26dcb164d0"))
+  (junction
+    (at 307.34 22.86)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "d4ce6446-0417-5530-b716-652d0ef0fb55"))
+  (wire
+    (pts
+      (xy 35.56 22.86)
+      (xy 307.34 22.86))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "07f6be5c-d325-5ab7-9d9c-9476f4bc1159"))
+  (symbol
+    (lib_id "FabNano:PWR_+3V3")
+    (at 40.64 22.86 0)
+    (unit 1)
+    (in_bom no)
+    (on_board no)
+    (dnp no)
+    (uuid "e491235e-fbc7-57a9-a8c6-ea173be972d2")
+    (property "Reference" "#PWR2026"
+      (at 40.64 22.86 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Value" "+3V3"
+      (at 40.64 19.05 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 40.64 22.86 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 40.64 22.86 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 40.64 22.86 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 40.64 22.86 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "e491235e-fbc7-57a9-a8c6-ea173be972d2"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "#PWR2026")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 55.88 35.56)
+      (xy 55.88 43.18))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "805f3985-92b4-5cfb-aeb3-7c6e8032ae4f"))
+  (wire
+    (pts
+      (xy 78.74 35.56)
+      (xy 78.74 43.18))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "63b45ff0-8d25-5f94-a49c-bb16c3f72632"))
+  (wire
+    (pts
+      (xy 101.6 35.56)
+      (xy 101.6 43.18))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "a9c0dc60-9015-53a5-bb42-f7fb47614e96"))
+  (wire
+    (pts
+      (xy 124.46 35.56)
+      (xy 124.46 43.18))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e6aa1c8c-3072-5625-9ebb-98b845218128"))
+  (wire
+    (pts
+      (xy 147.32 35.56)
+      (xy 147.32 43.18))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "b04fc268-8988-54c5-a381-04187e34b45e"))
+  (wire
+    (pts
+      (xy 170.18 35.56)
+      (xy 170.18 43.18))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "39c88afa-7afb-5142-bcc6-2130d38cd601"))
+  (wire
+    (pts
+      (xy 193.04 35.56)
+      (xy 193.04 43.18))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "7151cf9f-2d0e-5d0b-ad12-c5815dd0c275"))
+  (wire
+    (pts
+      (xy 215.9 35.56)
+      (xy 215.9 43.18))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "7ca4c56c-60fe-598e-b494-683b4f29279f"))
+  (wire
+    (pts
+      (xy 238.76 35.56)
+      (xy 238.76 43.18))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "40e24003-75a8-54b9-a9c7-0ecbe965a460"))
+  (wire
+    (pts
+      (xy 261.62 35.56)
+      (xy 261.62 43.18))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "ac3f5ff4-ec36-56fc-8580-0ae6b4785a65"))
+  (wire
+    (pts
+      (xy 284.48 35.56)
+      (xy 284.48 43.18))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "8babb5dc-87d2-5a59-8719-b8089c8312b8"))
+  (wire
+    (pts
+      (xy 307.34 35.56)
+      (xy 307.34 43.18))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "05196637-257a-50c4-bee5-640ff70ac08b"))
+  (wire
+    (pts
+      (xy 55.88 43.18)
+      (xy 78.74 43.18))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "9a4e3963-cc59-58c4-a0c6-a0c645a1016e"))
+  (wire
+    (pts
+      (xy 78.74 43.18)
+      (xy 101.6 43.18))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "88933922-ed25-50b8-ba89-70cc27dbc0e9"))
+  (wire
+    (pts
+      (xy 101.6 43.18)
+      (xy 124.46 43.18))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "35375548-bf95-5514-98ce-dfdd6a0cf5b9"))
+  (wire
+    (pts
+      (xy 124.46 43.18)
+      (xy 147.32 43.18))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "adeeb611-4b80-54df-ae92-d8eabf397902"))
+  (wire
+    (pts
+      (xy 147.32 43.18)
+      (xy 170.18 43.18))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "2a285219-6801-5126-b722-80e986a6c781"))
+  (wire
+    (pts
+      (xy 170.18 43.18)
+      (xy 193.04 43.18))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "96ed5917-be37-5fa3-b344-b9c8583f6d22"))
+  (wire
+    (pts
+      (xy 193.04 43.18)
+      (xy 215.9 43.18))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "72c38c3b-33f5-5b4b-a168-abd4d76ce0d0"))
+  (wire
+    (pts
+      (xy 215.9 43.18)
+      (xy 238.76 43.18))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "fb4b2356-1cc5-5e1e-b606-b6c507486bee"))
+  (wire
+    (pts
+      (xy 238.76 43.18)
+      (xy 261.62 43.18))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "a26c33e8-678a-56e5-a27d-438bc1ddfa93"))
+  (wire
+    (pts
+      (xy 261.62 43.18)
+      (xy 284.48 43.18))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "d4be49dd-0b17-5da3-b370-ac05decf27f8"))
+  (wire
+    (pts
+      (xy 284.48 43.18)
+      (xy 307.34 43.18))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "dc673632-326a-5625-920b-ef36ac5235e0"))
+  (junction
+    (at 55.88 43.18)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "61945bc6-9574-5498-96b3-ef0b5a995f73"))
+  (junction
+    (at 78.74 43.18)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "8f419b0e-2534-5eee-9030-d60de4578aed"))
+  (junction
+    (at 101.6 43.18)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "bdcd5d8c-db56-5f29-abee-d2ffa77a8174"))
+  (junction
+    (at 124.46 43.18)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "188e4cb1-750e-53ce-ba95-6ac30b9568a6"))
+  (junction
+    (at 147.32 43.18)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "2086fdf2-c92d-59e9-9816-ff4a665605a1"))
+  (junction
+    (at 170.18 43.18)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "57ec8932-4ec6-55d7-aa05-1b60e742e05b"))
+  (junction
+    (at 193.04 43.18)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "6d533357-b461-504d-aa1f-34e0222458cd"))
+  (junction
+    (at 215.9 43.18)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "835aa547-dfea-5a53-9314-f6fb3cb9778c"))
+  (junction
+    (at 238.76 43.18)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "30c3b70f-7376-5b49-8939-0287462f20ab"))
+  (junction
+    (at 261.62 43.18)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "a5dcca18-a443-54c2-b8f3-90600d4fde2c"))
+  (junction
+    (at 284.48 43.18)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "8ee04b2a-00de-58dd-9143-d140c2f09a75"))
+  (symbol
+    (lib_id "FabNano:PWR_GND")
+    (at 55.88 43.18 0)
+    (unit 1)
+    (in_bom no)
+    (on_board no)
+    (dnp no)
+    (uuid "78721e65-38f2-5971-b685-3cd912f76dfc")
+    (property "Reference" "#PWR2061"
+      (at 55.88 43.18 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 55.88 46.99 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 55.88 43.18 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 55.88 43.18 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 55.88 43.18 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 55.88 43.18 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "78721e65-38f2-5971-b685-3cd912f76dfc"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "#PWR2061")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 35.56 22.86)
+      (xy 35.56 90.17))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "6f208138-4fd6-5d90-9b42-c1fa719c215f"))
+  (wire
+    (pts
+      (xy 93.98 62.23)
+      (xy 35.56 62.23))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "6808fed0-0845-58e1-8d4e-904a5019f78b"))
+  (junction
+    (at 35.56 62.23)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "2e1a642c-6194-58db-a0a1-fec63b7474d2"))
+  (wire
+    (pts
+      (xy 93.98 64.77)
+      (xy 35.56 64.77))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "f7382a1c-1535-52b4-813e-cb3aa9a2aca1"))
+  (junction
+    (at 35.56 64.77)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "69535d9e-7ad0-5298-a645-c8b59a80b95c"))
+  (wire
+    (pts
+      (xy 93.98 67.31)
+      (xy 35.56 67.31))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "dc38ebeb-411e-5a2a-bbac-df459ada9e4a"))
+  (junction
+    (at 35.56 67.31)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "1704ff93-d699-5a41-bfdc-7d9ecc7c4be3"))
+  (wire
+    (pts
+      (xy 93.98 69.85)
+      (xy 35.56 69.85))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "0c5ef8da-4521-5d63-892d-47298abbd086"))
+  (junction
+    (at 35.56 69.85)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "c6388842-6b08-568d-a7ab-e599e4814e55"))
+  (wire
+    (pts
+      (xy 93.98 72.39)
+      (xy 35.56 72.39))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "41271c91-d93b-5f09-8b22-8e6fd6c9cbc1"))
+  (junction
+    (at 35.56 72.39)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "a43016a5-efdf-5af1-b852-5fa001ac94cf"))
+  (wire
+    (pts
+      (xy 93.98 74.93)
+      (xy 35.56 74.93))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "7674cdc6-89a5-5d51-803b-88d8bfa52c09"))
+  (junction
+    (at 35.56 74.93)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "da730fde-4c6c-522d-a82e-bee850d32bfa"))
+  (wire
+    (pts
+      (xy 93.98 77.47)
+      (xy 35.56 77.47))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "a598d282-88f7-5da2-ab77-e02e24c06452"))
+  (junction
+    (at 35.56 77.47)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "8df8c132-965b-58bd-a965-f858c02ac073"))
+  (wire
+    (pts
+      (xy 93.98 80.01)
+      (xy 35.56 80.01))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "6be719e0-55a1-5025-90c4-f38ced948689"))
+  (junction
+    (at 35.56 80.01)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "7ed9742d-c4a2-576c-a69a-208c58c6fbf6"))
+  (wire
+    (pts
+      (xy 93.98 82.55)
+      (xy 35.56 82.55))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "1be8e3ae-076e-5c78-92dd-68e1fd4f9640"))
+  (junction
+    (at 35.56 82.55)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "885a1936-a640-5d70-8368-b54f02b63906"))
+  (wire
+    (pts
+      (xy 93.98 85.09)
+      (xy 35.56 85.09))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "d0c63d47-b8a4-5dad-92bb-5ed3cbf3a938"))
+  (junction
+    (at 35.56 85.09)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "1d3a3d3a-b81f-5998-b9a2-24d58bc46fc5"))
+  (wire
+    (pts
+      (xy 93.98 87.63)
+      (xy 35.56 87.63))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "f4fc0abe-4bae-57e4-8c8c-6816fb37a81f"))
+  (junction
+    (at 35.56 87.63)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "1e768e9d-cd80-5198-a572-6f6a30a5ae2b"))
+  (wire
+    (pts
+      (xy 93.98 90.17)
+      (xy 35.56 90.17))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e26e7cc6-5d2c-5386-9f9e-e6567898a0d7"))
+  (junction
+    (at 35.56 90.17)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "b38f6824-4e3e-59d6-a5b5-882798dc5fa8"))
+  (symbol
+    (lib_id "Device:R_Small_US")
+    (at 55.88 109.22 90)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "bb544538-79fb-52bf-b769-5080a6cf94d5")
+    (property "Reference" "R10"
+      (at 55.88 101.6 90)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "33R"
+      (at 55.88 104.14 90)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+      (at 55.88 109.22 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 55.88 109.22 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 55.88 109.22 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 55.88 109.22 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "bb544538-79fb-52bf-b769-5080a6cf94d5"))
+    (pin "2"
+      (uuid "336291f8-b9c9-5ea2-b893-3c2e7703007e"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "R10")
+          (unit 1)))))
+  (symbol
+    (lib_id "Device:C_Small")
+    (at 76.2 121.92 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "a0053600-aa31-5506-a36e-37a8cf95a4f8")
+    (property "Reference" "C10"
+      (at 78.74000000000001 120.65 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "4.7uF 16V X5R"
+      (at 78.74000000000001 123.19 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 76.2 121.92 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL10A475KO8NNN.do"
+      (at 76.2 121.92 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "CL10A475KO8NNNC"
+      (at 76.2 121.92 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 76.2 121.92 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "a0053600-aa31-5506-a36e-37a8cf95a4f8"))
+    (pin "2"
+      (uuid "f301f5ad-888a-5905-ae64-068ba80ee70b"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "C10")
+          (unit 1))))
+    (property "LCSC" "C19666"
+      (at 76.2 121.92 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 53.34 109.22)
+      (xy 40.64 109.22))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "9223b3e4-6262-5002-b1b4-3cfab46e98ea"))
+  (symbol
+    (lib_id "FabNano:PWR_+3V3")
+    (at 40.64 109.22 0)
+    (unit 1)
+    (in_bom no)
+    (on_board no)
+    (dnp no)
+    (uuid "0a17317d-3928-58af-843b-5f9aad15baec")
+    (property "Reference" "#PWR2088"
+      (at 40.64 109.22 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Value" "+3V3"
+      (at 40.64 105.41 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 40.64 109.22 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 40.64 109.22 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 40.64 109.22 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 40.64 109.22 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "0a17317d-3928-58af-843b-5f9aad15baec"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "#PWR2088")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 58.42 109.22)
+      (xy 76.2 109.22))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "dafee533-6004-54d1-9126-1c8896eb627e"))
+  (wire
+    (pts
+      (xy 76.2 109.22)
+      (xy 76.2 119.38))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "f28c8e4e-d564-5609-9324-9c0e286b04c8"))
+  (wire
+    (pts
+      (xy 76.2 109.22)
+      (xy 76.2 92.71))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "972d287a-486a-50f8-ab79-bcbe92cc7908"))
+  (wire
+    (pts
+      (xy 76.2 92.71)
+      (xy 93.98 92.71))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "7470059a-c3ba-5f1f-9ce0-bf0dcf7fcedf"))
+  (junction
+    (at 76.2 109.22)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "e6f1af57-a3cc-5d26-aa40-738e2230fa70"))
+  (wire
+    (pts
+      (xy 76.2 124.46)
+      (xy 76.2 132.08))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "c7b86931-dd4d-5f14-b4e2-a7e18baf7dde"))
+  (symbol
+    (lib_id "FabNano:PWR_GND")
+    (at 76.2 132.08 0)
+    (unit 1)
+    (in_bom no)
+    (on_board no)
+    (dnp no)
+    (uuid "70ad431b-a515-54e5-8338-6873ba3eb121")
+    (property "Reference" "#PWR2095"
+      (at 76.2 132.08 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 76.2 135.89000000000001 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 76.2 132.08 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 76.2 132.08 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 76.2 132.08 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 76.2 132.08 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "70ad431b-a515-54e5-8338-6873ba3eb121"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "#PWR2095")
+          (unit 1)))))
+  (symbol
+    (lib_id "power:PWR_FLAG")
+    (at 68.58 114.3 0)
+    (unit 1)
+    (in_bom no)
+    (on_board no)
+    (dnp no)
+    (uuid "d57b1302-60c2-5892-a661-21ac61c29e94")
+    (property "Reference" "#FLG08"
+      (at 68.58 114.3 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Value" "PWR_FLAG"
+      (at 68.58 110.49 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Footprint" ""
+      (at 68.58 114.3 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 68.58 114.3 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 68.58 114.3 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 68.58 114.3 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "d57b1302-60c2-5892-a661-21ac61c29e94"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "#FLG08")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 68.58 114.3)
+      (xy 68.58 109.22))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "6ec2d8ae-3c38-59d6-b21e-14d6bf9b1383"))
+  (junction
+    (at 68.58 109.22)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "267e29b9-d2e8-5033-b342-78ca88b739eb"))
+  (symbol
+    (lib_id "Device:L_Small")
+    (at 160.02 62.23 90)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "9190e293-bdb1-5c9c-952e-13be38b40297")
+    (property "Reference" "L2"
+      (at 160.02 52.07 90)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "3.3uH"
+      (at 160.02 54.61 90)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Hack_Passives:L_Murata_DFE252012F_2.5x2.0mm"
+      (at 160.02 62.23 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 160.02 62.23 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "DFE252012F-3R3M=P2"
+      (at 160.02 62.23 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 160.02 62.23 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "9190e293-bdb1-5c9c-952e-13be38b40297"))
+    (pin "2"
+      (uuid "a50f9e62-8005-5e5a-8bbc-a82070c8e427"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "L2")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 129.54 62.23)
+      (xy 157.48 62.23))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "17a6d2c3-c43b-58d7-959a-72a116c00d36"))
+  (label "RP_LX"
+    (at 137.16 62.23 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left bottom))
+    (uuid "bd3c45c5-eb11-505d-92c3-a9525254da14"))
+  (wire
+    (pts
+      (xy 162.56 62.23)
+      (xy 307.34 62.23))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "9208c029-364e-55b2-a20c-911b915cc6cd"))
+  (symbol
+    (lib_id "FabNano:PWR_+1V1")
+    (at 307.34 62.23 0)
+    (unit 1)
+    (in_bom no)
+    (on_board no)
+    (dnp no)
+    (uuid "d7bdee5a-4cb1-5fee-a858-f835d1edc2bd")
+    (property "Reference" "#PWR2101"
+      (at 307.34 62.23 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Value" "+1V1"
+      (at 307.34 58.419999999999995 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 307.34 62.23 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 307.34 62.23 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 307.34 62.23 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 307.34 62.23 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "d7bdee5a-4cb1-5fee-a858-f835d1edc2bd"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "#PWR2101")
+          (unit 1)))))
+  (symbol
+    (lib_id "Device:C_Small")
+    (at 196.85 81.28 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "d8a7a6b9-2f79-5f91-90d7-beae9c62652d")
+    (property "Reference" "C11"
+      (at 199.39 80.01 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "4.7uF 6.3V X5R"
+      (at 199.39 82.55 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "FabNano:C_0402_RP2350_Regulator"
+      (at 196.85 81.28 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 196.85 81.28 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "GRM155R60J475ME47D"
+      (at 196.85 81.28 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "Murata"
+      (at 196.85 81.28 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "d8a7a6b9-2f79-5f91-90d7-beae9c62652d"))
+    (pin "2"
+      (uuid "dd1303e3-f46f-5e5e-ba92-a1aaf17bc998"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "C11")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 196.85 78.74)
+      (xy 196.85 62.23))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "3583a403-e6b7-5cf7-be47-4c71b155f9ca"))
+  (junction
+    (at 196.85 62.23)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "4044a33f-e189-5c14-83ce-23d7c58dd5ac"))
+  (symbol
+    (lib_id "Device:C_Small")
+    (at 233.68 81.28 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "ecdd0b32-b654-59ac-8bd4-437c2e6fe47f")
+    (property "Reference" "C25"
+      (at 236.22 80.01 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "100nF 25V"
+      (at 236.22 82.55 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+      (at 233.68 81.28 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 233.68 81.28 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 233.68 81.28 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 233.68 81.28 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "ecdd0b32-b654-59ac-8bd4-437c2e6fe47f"))
+    (pin "2"
+      (uuid "a3d5c9c7-0f8c-59ca-837f-8eec10377084"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "C25")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 233.68 78.74)
+      (xy 233.68 62.23))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "3d4bc90d-9f64-506a-a508-cbf2d3184684"))
+  (junction
+    (at 233.68 62.23)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "43d8fc77-22ab-5ce2-8ba2-2e7661859c19"))
+  (symbol
+    (lib_id "Device:C_Small")
+    (at 270.51 81.28 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "787dca7b-cbbe-5aae-ab3f-11c12e3dbef1")
+    (property "Reference" "C26"
+      (at 273.05 80.01 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "100nF 25V"
+      (at 273.05 82.55 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+      (at 270.51 81.28 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 270.51 81.28 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 270.51 81.28 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 270.51 81.28 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "787dca7b-cbbe-5aae-ab3f-11c12e3dbef1"))
+    (pin "2"
+      (uuid "24206087-b311-5dc5-b7cd-4457fd9b03a7"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "C26")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 270.51 78.74)
+      (xy 270.51 62.23))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e08ea36d-2ff0-5597-9c8c-756c8dd87551"))
+  (junction
+    (at 270.51 62.23)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "c413affc-67aa-5a5f-ba2f-2a0251ad894a"))
+  (symbol
+    (lib_id "Device:C_Small")
+    (at 307.34 81.28 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "4b137b7f-939c-5b5e-8457-8e44a6917a3c")
+    (property "Reference" "C27"
+      (at 309.88 80.01 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "100nF 25V"
+      (at 309.88 82.55 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+      (at 307.34 81.28 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 307.34 81.28 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 307.34 81.28 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 307.34 81.28 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "4b137b7f-939c-5b5e-8457-8e44a6917a3c"))
+    (pin "2"
+      (uuid "02bc5c83-84fb-571c-a8b5-305bc5b61c62"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "C27")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 307.34 78.74)
+      (xy 307.34 62.23))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "143a3df8-cd86-578e-a6ed-761cc44643fc"))
+  (junction
+    (at 307.34 62.23)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "9cd15989-886b-504e-84a3-efeff636b9e1"))
+  (wire
+    (pts
+      (xy 196.85 83.82)
+      (xy 196.85 96.52))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "9ec7b392-b6a5-5eaa-bebb-7684a40d7c48"))
+  (wire
+    (pts
+      (xy 233.68 83.82)
+      (xy 233.68 96.52))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "629185ed-2d99-5118-a007-f35b2da6e924"))
+  (wire
+    (pts
+      (xy 270.51 83.82)
+      (xy 270.51 96.52))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "817fe769-0806-500f-979b-d13b3a81422f"))
+  (wire
+    (pts
+      (xy 307.34 83.82)
+      (xy 307.34 96.52))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "78b78611-6f56-552d-bc8b-fbb2a1db6efe"))
+  (wire
+    (pts
+      (xy 196.85 96.52)
+      (xy 233.68 96.52))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "1c3f7488-ab8b-5b38-9ec0-47f28fbb621b"))
+  (wire
+    (pts
+      (xy 233.68 96.52)
+      (xy 270.51 96.52))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "21fda1d7-5e26-5e2c-8c36-be1e59285803"))
+  (wire
+    (pts
+      (xy 270.51 96.52)
+      (xy 307.34 96.52))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "30988527-5ba2-5a96-a4f5-0d891d028159"))
+  (junction
+    (at 196.85 96.52)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "8fc3437e-f5b5-5c86-9888-6cd012470cf1"))
+  (junction
+    (at 233.68 96.52)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "c4ba32f3-1926-5f9f-8a59-d5bdd9fdca00"))
+  (junction
+    (at 270.51 96.52)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "d1224e9e-364a-5bec-89ea-447f4d151e96"))
+  (symbol
+    (lib_id "FabNano:PWR_GND")
+    (at 196.85 96.52 0)
+    (unit 1)
+    (in_bom no)
+    (on_board no)
+    (dnp no)
+    (uuid "329adf12-fa9f-508c-9c52-846e91b637e6")
+    (property "Reference" "#PWR2120"
+      (at 196.85 96.52 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 196.85 100.33 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 196.85 96.52 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 196.85 96.52 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 196.85 96.52 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 196.85 96.52 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "329adf12-fa9f-508c-9c52-846e91b637e6"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "#PWR2120")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 129.54 64.77)
+      (xy 139.7 64.77))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "fd560c3d-7217-5de0-b5fc-3e44f9f3855d"))
+  (junction
+    (at 139.7 64.77)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "252f10a7-fa59-58ce-88eb-c7f0a687664d"))
+  (wire
+    (pts
+      (xy 129.54 67.31)
+      (xy 139.7 67.31))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "2f24c283-a7ae-5cde-aae4-3ff4e4478bf6"))
+  (junction
+    (at 139.7 67.31)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "8d89c752-c4d1-5c37-bcad-7bccf96843c5"))
+  (wire
+    (pts
+      (xy 129.54 69.85)
+      (xy 139.7 69.85))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "cfe6021c-4979-5c60-b24b-36d2128cb647"))
+  (junction
+    (at 139.7 69.85)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "ef02514f-6554-5385-ab6f-21091207f2fc"))
+  (wire
+    (pts
+      (xy 129.54 72.39)
+      (xy 139.7 72.39))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "cba8bfeb-3a0b-5c54-a27e-87b74755f558"))
+  (junction
+    (at 139.7 72.39)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "0eb74e30-4071-56b2-8030-abfa73141510"))
+  (wire
+    (pts
+      (xy 139.7 64.77)
+      (xy 139.7 109.22))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "6104a5eb-eb9a-5b1a-9404-f002ddcccbff"))
+  (wire
+    (pts
+      (xy 139.7 109.22)
+      (xy 177.8 109.22))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "69c66e65-e28b-5be2-a4e5-81a1330467b7"))
+  (wire
+    (pts
+      (xy 177.8 109.22)
+      (xy 177.8 62.23))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "711ed58c-4b20-5960-97e8-780d05355bdf"))
+  (junction
+    (at 177.8 62.23)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "cbdc28e2-21df-588e-a00b-98eeac877a71"))
+  (symbol
+    (lib_id "power:PWR_FLAG")
+    (at 165.1 109.22 0)
+    (unit 1)
+    (in_bom no)
+    (on_board no)
+    (dnp no)
+    (uuid "6ac2ef4d-06b8-58ca-88b7-62fde159d0db")
+    (property "Reference" "#FLG09"
+      (at 165.1 109.22 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Value" "PWR_FLAG"
+      (at 165.1 105.41 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Footprint" ""
+      (at 165.1 109.22 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 165.1 109.22 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 165.1 109.22 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 165.1 109.22 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "6ac2ef4d-06b8-58ca-88b7-62fde159d0db"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "#FLG09")
+          (unit 1)))))
+  (junction
+    (at 165.1 109.22)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "7bb9cc11-ee59-5f17-b917-39a6a9ae2b25"))
+  (wire
+    (pts
+      (xy 109.22 100.33)
+      (xy 109.22 124.46))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "26dc63ec-70b1-5399-a026-a8f73c69101d"))
+  (wire
+    (pts
+      (xy 114.3 100.33)
+      (xy 114.3 124.46))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "ed1536f6-085b-597e-9900-d5ec6bb6ecec"))
+  (wire
+    (pts
+      (xy 109.22 124.46)
+      (xy 114.3 124.46))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "eeaa3266-6876-54e8-828e-8cd077c259eb"))
+  (junction
+    (at 109.22 124.46)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "6efac0ff-f396-5f2d-8bc6-40d7f70121a5"))
+  (symbol
+    (lib_id "FabNano:PWR_GND")
+    (at 109.22 124.46 0)
+    (unit 1)
+    (in_bom no)
+    (on_board no)
+    (dnp no)
+    (uuid "67744ef0-0975-5f7b-9730-2f3063f12584")
+    (property "Reference" "#PWR2138"
+      (at 109.22 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 109.22 128.26999999999998 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 109.22 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 109.22 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 109.22 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 109.22 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "67744ef0-0975-5f7b-9730-2f3063f12584"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "#PWR2138")
+          (unit 1)))))
+  (symbol
+    (lib_id "FabNano:RP2350B")
+    (at 172.72 198.12 0)
+    (unit 4)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "cf71cb19-9ed1-51f3-9181-8621cc4ab1cd")
+    (property "Reference" "U1"
+      (at 172.72 170.18 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "RP2350B"
+      (at 172.72 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Package_DFN_QFN:QFN-80-1EP_10x10mm_P0.4mm_EP3.4x3.4mm"
+      (at 172.72 198.12 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 172.72 198.12 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "RP2350B A4"
+      (at 172.72 198.12 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "Raspberry Pi"
+      (at 172.72 198.12 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "35"
+      (uuid "50d2ca58-7d8f-5fe4-b8a7-16e87a95e9cb"))
+    (pin "30"
+      (uuid "1a383579-f7be-5302-9bf2-1edd8824c5e5"))
+    (pin "31"
+      (uuid "473af07c-e51a-5ff7-9bd0-a3328422bbd8"))
+    (pin "33"
+      (uuid "f3c0a4f2-231a-5e73-b928-a3cf4572017f"))
+    (pin "34"
+      (uuid "c329d85d-422d-5e31-8dc7-1bb52c967a43"))
+    (pin "66"
+      (uuid "d4ed178a-f1c4-5d71-b51d-bda26d7c7bfb"))
+    (pin "67"
+      (uuid "e338f612-27e2-5dd3-b717-d4a7282b0f77"))
+    (pin "75"
+      (uuid "bed72eef-e92a-5ef4-9066-24eaa3906cbd"))
+    (pin "71"
+      (uuid "a55fc14c-e61e-5a68-8da5-16da3da0ba3a"))
+    (pin "72"
+      (uuid "af9d4d06-c64b-539e-8a68-438acc3906e6"))
+    (pin "74"
+      (uuid "de3c5cf8-c7ab-5185-8598-34c7bf8320b0"))
+    (pin "73"
+      (uuid "4e57bbac-ff77-512d-a44c-6ea0c45cf406"))
+    (pin "70"
+      (uuid "ba56a485-488d-5901-b804-137b003d4a9e"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "U1")
+          (unit 4))))
+    (property "LCSC" "C9900208890"
+      (at 172.72 198.12 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier_URL" "https://jlcpcb.com/partdetail/JLCPCBAssembly-RP2350BA4/C9900208890"
+      (at 172.72 198.12 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
+  (symbol
+    (lib_id "FabNano:W25Q32JVSS_Clean")
+    (at 279.4 196.85 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "6aa5d3f8-779c-57c1-abc4-4e808e75e280")
+    (property "Reference" "U4"
+      (at 279.4 165.1 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "W25Q32JVSSIQ / 4 MiB"
+      (at 279.4 167.64 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Package_SO:SOIC-8_5.3x5.3mm_P1.27mm"
+      (at 279.4 196.85 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 279.4 196.85 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "W25Q32JVSSIQ"
+      (at 279.4 196.85 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 279.4 196.85 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "6aa5d3f8-779c-57c1-abc4-4e808e75e280"))
+    (pin "6"
+      (uuid "c5031083-996f-5932-bb4f-da0a1fd70957"))
+    (pin "5"
+      (uuid "4b093291-9d81-57e1-819b-3ac9d42c99cf"))
+    (pin "2"
+      (uuid "24c84fed-ca4c-57e1-88d5-ebb2964ad1ef"))
+    (pin "3"
+      (uuid "75392b12-3f31-5fc5-a4d0-dd917227552d"))
+    (pin "7"
+      (uuid "6a7048de-e32c-5f48-b213-f073ca1a9ae4"))
+    (pin "8"
+      (uuid "8f35a000-92af-5cbf-98cb-ee7d94ca5dd8"))
+    (pin "4"
+      (uuid "0d2919ec-5a2c-506a-bea1-bdebe1b04a35"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "U4")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 190.5 189.23)
+      (xy 261.62 189.23))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "274287a5-1c1f-5211-ac65-5a62bf017007"))
+  (label "QSPI_CS"
+    (at 198.12 189.23 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left bottom))
+    (uuid "3ecb78ec-0d92-5ef5-96dc-374a299a69ac"))
+  (wire
+    (pts
+      (xy 190.5 191.77)
+      (xy 261.62 191.77))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "cba9654c-ccfc-5820-b113-d5d65e1e87cc"))
+  (label "QSPI_CLK"
+    (at 198.12 191.77 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left bottom))
+    (uuid "bb90656e-54b0-5838-a1f7-dbd2ac386306"))
+  (wire
+    (pts
+      (xy 190.5 194.31)
+      (xy 261.62 194.31))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "5088854e-4fd8-5abf-9ec6-bc8cf72222b0"))
+  (label "QSPI_D0"
+    (at 198.12 194.31 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left bottom))
+    (uuid "4132ab02-5008-5db3-ab4b-a455b77f5e81"))
+  (wire
+    (pts
+      (xy 190.5 196.85)
+      (xy 261.62 196.85))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "ae1dbc7d-b361-5460-9fb9-eec6466afdbd"))
+  (label "QSPI_D1"
+    (at 198.12 196.85 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left bottom))
+    (uuid "42a79691-0461-5c8e-afe1-042aa61a67d7"))
+  (wire
+    (pts
+      (xy 190.5 199.39)
+      (xy 261.62 199.39))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "00d57ad4-d2cc-5c43-9785-4ced6cf80355"))
+  (label "QSPI_D2"
+    (at 198.12 199.39 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left bottom))
+    (uuid "4df696ea-8cbb-5dcd-bb67-ed9dd89043dd"))
+  (wire
+    (pts
+      (xy 190.5 201.93)
+      (xy 261.62 201.93))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "72f88419-fb7b-5a36-bccf-765543f4890f"))
+  (label "QSPI_D3"
+    (at 198.12 201.93 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left bottom))
+    (uuid "79773c14-a793-5e42-80ef-53d30a3f9edf"))
+  (symbol
+    (lib_id "Device:R_Small_US")
+    (at 228.6 170.18 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "42c0bfab-931b-5238-a901-2fc4408f0b80")
+    (property "Reference" "R11"
+      (at 231.14 168.91 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "10kR"
+      (at 231.14 171.45000000000002 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+      (at 228.6 170.18 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 228.6 170.18 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 228.6 170.18 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 228.6 170.18 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "42c0bfab-931b-5238-a901-2fc4408f0b80"))
+    (pin "2"
+      (uuid "2b084b1b-a4e5-554a-873b-3cca15de5cf5"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "R11")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 228.6 167.64)
+      (xy 228.6 157.48))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "b64cdadd-0f44-57a8-aaa6-d003e3662187"))
+  (symbol
+    (lib_id "FabNano:PWR_+3V3")
+    (at 228.6 157.48 0)
+    (unit 1)
+    (in_bom no)
+    (on_board no)
+    (dnp no)
+    (uuid "3dc4c5b2-a89a-536d-9105-b15f1c09a78a")
+    (property "Reference" "#PWR2152"
+      (at 228.6 157.48 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Value" "+3V3"
+      (at 228.6 153.67 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 228.6 157.48 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 228.6 157.48 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 228.6 157.48 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 228.6 157.48 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "3dc4c5b2-a89a-536d-9105-b15f1c09a78a"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "#PWR2152")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 228.6 172.72)
+      (xy 228.6 189.23))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "ce90c0df-30eb-5658-877e-826a9405209d"))
+  (junction
+    (at 228.6 189.23)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "17f10f4b-e0ea-57ed-a0a0-d939e11105b1"))
+  (symbol
+    (lib_id "Device:C_Small")
+    (at 309.88 180.34 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "c68c9502-757c-56eb-b982-982a31af45a0")
+    (property "Reference" "C13"
+      (at 312.42 179.07 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "100nF 25V"
+      (at 312.42 181.61 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+      (at 309.88 180.34 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 309.88 180.34 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 309.88 180.34 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 309.88 180.34 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "c68c9502-757c-56eb-b982-982a31af45a0"))
+    (pin "2"
+      (uuid "8dd04f9b-ff7f-5bd3-86ed-da34395f64c9"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "C13")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 279.4 184.15)
+      (xy 279.4 177.8))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "00d69c66-2a1a-5d87-9248-7b2a0fb63762"))
+  (wire
+    (pts
+      (xy 279.4 177.8)
+      (xy 309.88 177.8))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "f9e2861b-f7dd-5301-9709-b914ffa4368d"))
+  (symbol
+    (lib_id "FabNano:PWR_+3V3")
+    (at 309.88 177.8 0)
+    (unit 1)
+    (in_bom no)
+    (on_board no)
+    (dnp no)
+    (uuid "3b36be23-1da2-58b0-b0c1-32e2c19d7a59")
+    (property "Reference" "#PWR2157"
+      (at 309.88 177.8 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Value" "+3V3"
+      (at 309.88 173.99 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 309.88 177.8 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 309.88 177.8 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 309.88 177.8 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 309.88 177.8 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "3b36be23-1da2-58b0-b0c1-32e2c19d7a59"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "#PWR2157")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 279.4 209.55)
+      (xy 279.4 220.98))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "eeaf5dbc-f373-5477-a266-0812f3c62fa4"))
+  (wire
+    (pts
+      (xy 309.88 182.88)
+      (xy 309.88 220.98))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e43e3443-61d5-5787-8a91-e7fba7f3ee63"))
+  (wire
+    (pts
+      (xy 279.4 220.98)
+      (xy 309.88 220.98))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "d4c97dc7-3b43-5610-9bad-5a0e8f140108"))
+  (junction
+    (at 279.4 220.98)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "ca033d49-598c-5384-8bb9-891247b6a1d9"))
+  (symbol
+    (lib_id "FabNano:PWR_GND")
+    (at 279.4 220.98 0)
+    (unit 1)
+    (in_bom no)
+    (on_board no)
+    (dnp no)
+    (uuid "6de805e3-abb9-5959-8939-a5c7724c58c5")
+    (property "Reference" "#PWR2162"
+      (at 279.4 220.98 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 279.4 224.79 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 279.4 220.98 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 279.4 220.98 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 279.4 220.98 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 279.4 220.98 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "6de805e3-abb9-5959-8939-a5c7724c58c5"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "#PWR2162")
+          (unit 1)))))
+  (symbol
+    (lib_id "Device:R_Small_US")
+    (at 132.08 167.64 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "f99c5ed1-be77-5a4b-942c-9f849bc15700")
+    (property "Reference" "R13"
+      (at 134.62 166.36999999999998 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "10kR"
+      (at 134.62 168.91 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+      (at 132.08 167.64 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 132.08 167.64 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 132.08 167.64 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 132.08 167.64 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "f99c5ed1-be77-5a4b-942c-9f849bc15700"))
+    (pin "2"
+      (uuid "c096558f-eef2-526c-981b-38da48a0253c"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "R13")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 132.08 165.1)
+      (xy 132.08 157.48))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "aa3b3dbe-3701-50e6-8fc6-582e5144fd54"))
+  (symbol
+    (lib_id "FabNano:PWR_+3V3")
+    (at 132.08 157.48 0)
+    (unit 1)
+    (in_bom no)
+    (on_board no)
+    (dnp no)
+    (uuid "d0c1cd09-76d7-53d5-8529-3160523298ee")
+    (property "Reference" "#PWR2164"
+      (at 132.08 157.48 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Value" "+3V3"
+      (at 132.08 153.67 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 132.08 157.48 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 132.08 157.48 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 132.08 157.48 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 132.08 157.48 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "d0c1cd09-76d7-53d5-8529-3160523298ee"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "#PWR2164")
+          (unit 1)))))
+  (symbol
+    (lib_id "Switch:SW_Push")
+    (at 104.14 189.23 180)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "8c0b5a44-62d1-5748-93ba-ee86adebb736")
+    (property "Reference" "SW1"
+      (at 104.14 181.61 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "RESET"
+      (at 104.14 184.15 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Button_Switch_SMD:SW_SPST_TL3305A"
+      (at 104.14 189.23 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 104.14 189.23 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 104.14 189.23 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 104.14 189.23 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "8c0b5a44-62d1-5748-93ba-ee86adebb736"))
+    (pin "2"
+      (uuid "2578cb88-cb57-52a3-bf10-ff9dc7fce0d2"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "SW1")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 109.22 189.23)
+      (xy 154.94 189.23))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "9992e023-bba4-5d5c-bd53-b2ee8c751946"))
+  (wire
+    (pts
+      (xy 132.08 170.18)
+      (xy 132.08 189.23))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "9cc757fd-8ac2-526a-9961-0faeea836e48"))
+  (junction
+    (at 132.08 189.23)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "44336790-dac2-5b46-a49c-67b079e43d7e"))
+  (wire
+    (pts
+      (xy 137.16 189.23)
+      (xy 137.16 179.07))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "43ec93e0-94a0-5b84-ac64-685f58814924"))
+  (junction
+    (at 137.16 189.23)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "b18825be-db7a-5248-9d14-c04bcc6e6258"))
+  (hierarchical_label "RP_RUN"
+    (shape bidirectional)
+    (at 137.16 179.07 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "2c636143-38d4-5c81-a3a7-5de8a09db54f"))
+  (wire
+    (pts
+      (xy 99.06 189.23)
+      (xy 91.44 189.23))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "5d133110-cdbb-53b6-bafc-dddb50351e67"))
+  (wire
+    (pts
+      (xy 91.44 189.23)
+      (xy 91.44 196.85))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "9d208426-330d-5db4-b945-54fd3ecb0c40"))
+  (symbol
+    (lib_id "FabNano:PWR_GND")
+    (at 91.44 196.85 0)
+    (unit 1)
+    (in_bom no)
+    (on_board no)
+    (dnp no)
+    (uuid "50fba392-1a25-56df-b318-da34791cc14a")
+    (property "Reference" "#PWR2173"
+      (at 91.44 196.85 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 91.44 200.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 91.44 196.85 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 91.44 196.85 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 91.44 196.85 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 91.44 196.85 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "50fba392-1a25-56df-b318-da34791cc14a"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "#PWR2173")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 154.94 191.77)
+      (xy 147.32 191.77))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "f8105114-60fe-5f57-a5f7-f74420e18a5c"))
+  (label "RP_XIN"
+    (at 147.32 191.77 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right bottom))
+    (uuid "d228e9df-9857-52b9-8de9-00f248aa107b"))
+  (wire
+    (pts
+      (xy 154.94 194.31)
+      (xy 147.32 194.31))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "db387eee-c916-5d18-b1d1-1544b6774747"))
+  (label "RP_XOUT"
+    (at 147.32 194.31 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right bottom))
+    (uuid "5d104fa8-4e60-5db3-acdc-fe52601593ab"))
+  (wire
+    (pts
+      (xy 154.94 196.85)
+      (xy 147.32 196.85))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "1ec753cf-68d9-50b3-9104-dad5e1533beb"))
+  (hierarchical_label "RP_SWCLK"
+    (shape bidirectional)
+    (at 147.32 196.85 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "75e0ee41-bae1-5a1a-947d-1d241cf28d20"))
+  (wire
+    (pts
+      (xy 154.94 199.39)
+      (xy 147.32 199.39))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e7b70390-c6c8-505b-bcca-ed804e1e9299"))
+  (hierarchical_label "RP_SWDIO"
+    (shape bidirectional)
+    (at 147.32 199.39 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "d19bb8ad-01b2-5e03-8c91-913c3668de02"))
+  (symbol
+    (lib_id "Device:R_Small_US")
+    (at 116.84 201.93 270)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "29eecf42-fa45-5cfc-b5dd-3e422563231d")
+    (property "Reference" "R8"
+      (at 116.84 196.85 90)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "27R"
+      (at 116.84 199.39000000000001 90)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "FabNano:R_0201_Yageo_Reflow"
+      (at 116.84 201.93 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" "https://www.yageogroup.com/component-documentation/download/specsheet/RC0201FR-0727RL"
+      (at 116.84 201.93 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "RC0201FR-0727RL"
+      (at 116.84 201.93 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "YAGEO"
+      (at 116.84 201.93 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "29eecf42-fa45-5cfc-b5dd-3e422563231d"))
+    (pin "2"
+      (uuid "87cc730d-fa4a-573c-a397-f7c158a6da8a"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "R8")
+          (unit 1))))
+    (property "LCSC" "C273268"
+      (at 116.84 201.93 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 119.38 201.93)
+      (xy 154.94 201.93))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "945fcd77-8100-5c45-a1b6-161aa2032505"))
+  (wire
+    (pts
+      (xy 114.3 201.93)
+      (xy 109.22 201.93))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "5c0e412c-ca33-52f4-96c8-087efa63e56a"))
+  (hierarchical_label "USB_D-"
+    (shape bidirectional)
+    (at 109.22 201.93 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "db290719-cd64-50fa-93d5-2671bb3c637d"))
+  (symbol
+    (lib_id "Device:R_Small_US")
+    (at 86.36 204.47 270)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "060b1054-9cbf-5ff2-b19d-51bfc2b48d0e")
+    (property "Reference" "R7"
+      (at 86.36 199.39 90)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "27R"
+      (at 86.36 201.93 90)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "FabNano:R_0201_Yageo_Reflow"
+      (at 86.36 204.47 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" "https://www.yageogroup.com/component-documentation/download/specsheet/RC0201FR-0727RL"
+      (at 86.36 204.47 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "RC0201FR-0727RL"
+      (at 86.36 204.47 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "YAGEO"
+      (at 86.36 204.47 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "060b1054-9cbf-5ff2-b19d-51bfc2b48d0e"))
+    (pin "2"
+      (uuid "c0b1a49a-abe6-562e-9cdd-d3832a4bbbff"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "R7")
+          (unit 1))))
+    (property "LCSC" "C273268"
+      (at 86.36 204.47 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 88.9 204.47)
+      (xy 154.94 204.47))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "dba922ce-e3a2-5689-b772-0258a858d0c0"))
+  (wire
+    (pts
+      (xy 83.82 204.47)
+      (xy 78.74 204.47))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e7080f58-a202-5266-a2f0-1b8cdbcf4739"))
+  (hierarchical_label "USB_D+"
+    (shape bidirectional)
+    (at 78.74 204.47 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "6aca7838-2c10-5457-8a8e-eadf49b11762"))
+  (symbol
+    (lib_id "Device:R_Small_US")
+    (at 248.92 154.94 180)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "eb7b0190-d364-5171-be03-2a1c0a0e495e")
+    (property "Reference" "R14"
+      (at 257.81 154.94 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "1kR"
+      (at 257.81 157.48 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+      (at 248.92 154.94 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 248.92 154.94 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 248.92 154.94 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 248.92 154.94 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "eb7b0190-d364-5171-be03-2a1c0a0e495e"))
+    (pin "2"
+      (uuid "ac750129-745f-59a8-8937-354fdb25a467"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "R14")
+          (unit 1)))))
+  (symbol
+    (lib_id "Switch:SW_Push")
+    (at 266.7 144.78 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "01860d1c-5c85-5dc6-8d9e-af34e4475f24")
+    (property "Reference" "SW2"
+      (at 266.7 137.16 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "BOOTSEL"
+      (at 266.7 139.7 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Button_Switch_SMD:SW_SPST_TL3305A"
+      (at 266.7 144.78 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 266.7 144.78 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 266.7 144.78 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 266.7 144.78 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "01860d1c-5c85-5dc6-8d9e-af34e4475f24"))
+    (pin "2"
+      (uuid "69f4dade-61af-5165-9447-72b8bd6d72bd"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "SW2")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 248.92 189.23)
+      (xy 248.92 157.48))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "8182f800-4b88-5869-93d5-34cf7aa093bc"))
+  (junction
+    (at 248.92 189.23)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "f89e91bc-84d0-5303-aab1-03d341080764"))
+  (wire
+    (pts
+      (xy 248.92 152.4)
+      (xy 248.92 144.78))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "b7d83614-b523-5e78-9b61-50a07b2faba6"))
+  (wire
+    (pts
+      (xy 248.92 144.78)
+      (xy 261.62 144.78))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "4ef29549-66af-5f01-8e8f-9d02c1090967"))
+  (label "BOOT_SW"
+    (at 248.92 144.78 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left bottom))
+    (uuid "f9ac400c-e0c6-585d-8862-e59261013885"))
+  (wire
+    (pts
+      (xy 271.78 144.78)
+      (xy 279.4 144.78))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "d01627c8-dda9-5891-bacd-f13d89098c7c"))
+  (wire
+    (pts
+      (xy 279.4 144.78)
+      (xy 279.4 152.4))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "bc330f05-a2c3-5071-ad4a-a0e062562dc1"))
+  (symbol
+    (lib_id "FabNano:PWR_GND")
+    (at 279.4 152.4 0)
+    (unit 1)
+    (in_bom no)
+    (on_board no)
+    (dnp no)
+    (uuid "ffe4b09a-3374-5544-b1ed-c777e75eaabe")
+    (property "Reference" "#PWR2195"
+      (at 279.4 152.4 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 279.4 156.21 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 279.4 152.4 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 279.4 152.4 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 279.4 152.4 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 279.4 152.4 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "ffe4b09a-3374-5544-b1ed-c777e75eaabe"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "#PWR2195")
+          (unit 1)))))
+  (symbol
+    (lib_id "Device:Crystal_GND24")
+    (at 50.8 243.84 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "f4c12dcd-5005-5506-8d97-182aa74fe058")
+    (property "Reference" "Y1"
+      (at 50.8 233.68 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "12MHz / 10pF"
+      (at 50.8 236.22 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm"
+      (at 50.8 243.84 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 50.8 243.84 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "ABM8-272-T3"
+      (at 50.8 243.84 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 50.8 243.84 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "f4c12dcd-5005-5506-8d97-182aa74fe058"))
+    (pin "2"
+      (uuid "020b66ee-3bd2-5632-8422-ea29f08db71d"))
+    (pin "3"
+      (uuid "ad4d7dda-a3f4-5dea-a769-022cce5832b3"))
+    (pin "4"
+      (uuid "11bedaab-305f-558e-b5a4-9a4713feff8f"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "Y1")
+          (unit 1)))))
+  (symbol
+    (lib_id "Device:R_Small_US")
+    (at 83.82 243.84 270)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "0d5e725a-0fca-54b0-b79d-1061c87af2c9")
+    (property "Reference" "R12"
+      (at 83.82 236.22 90)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "1kR"
+      (at 83.82 238.76 90)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+      (at 83.82 243.84 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 83.82 243.84 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 83.82 243.84 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 83.82 243.84 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "0d5e725a-0fca-54b0-b79d-1061c87af2c9"))
+    (pin "2"
+      (uuid "0f2236b6-0ea1-554d-a30f-b4a511b5c4e2"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "R12")
+          (unit 1)))))
+  (symbol
+    (lib_id "Device:C_Small")
+    (at 30.48 261.62 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "3aeff9d5-d5bd-5c89-84bf-39358685a6f5")
+    (property "Reference" "C14"
+      (at 33.02 260.35 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "15pF C0G"
+      (at 33.02 262.89 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+      (at 30.48 261.62 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 30.48 261.62 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 30.48 261.62 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 30.48 261.62 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "3aeff9d5-d5bd-5c89-84bf-39358685a6f5"))
+    (pin "2"
+      (uuid "2dc2617e-f8cd-58a5-9dfd-6879bbacec77"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "C14")
+          (unit 1)))))
+  (symbol
+    (lib_id "Device:C_Small")
+    (at 71.12 261.62 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "eb6fa68b-be83-5846-90ec-588b8c8c33c5")
+    (property "Reference" "C15"
+      (at 73.66000000000001 260.35 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "15pF C0G"
+      (at 73.66000000000001 262.89 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+      (at 71.12 261.62 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 71.12 261.62 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 71.12 261.62 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 71.12 261.62 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "eb6fa68b-be83-5846-90ec-588b8c8c33c5"))
+    (pin "2"
+      (uuid "21e064c9-d583-5d7e-b31d-6dceb0f50a7e"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "C15")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 30.48 226.06)
+      (xy 30.48 259.08))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "dff58301-439f-56aa-8276-fa3ea75f62e5"))
+  (wire
+    (pts
+      (xy 30.48 243.84)
+      (xy 46.99 243.84))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e9f3c4d0-5e07-5d8e-a5c9-5571f858314a"))
+  (junction
+    (at 30.48 243.84)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "5dde7a93-58af-54fe-a4d9-089f77a04c72"))
+  (label "RP_XIN"
+    (at 30.48 226.06 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left bottom))
+    (uuid "6c47f31f-9f28-5047-9e27-ab2e68009914"))
+  (wire
+    (pts
+      (xy 54.61 243.84)
+      (xy 81.28 243.84))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "2f37ef52-9f65-5374-b94a-abd3e7b93ffc"))
+  (wire
+    (pts
+      (xy 71.12 259.08)
+      (xy 71.12 243.84))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "4540d51c-7c1e-527c-b9fc-be8396efb411"))
+  (junction
+    (at 71.12 243.84)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "efc6eeeb-225e-5afb-ad0e-5f70ae16743b"))
+  (wire
+    (pts
+      (xy 86.36 243.84)
+      (xy 106.68 243.84))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "ed28024e-52ab-5a15-94a9-d71266b124ce"))
+  (label "RP_XOUT"
+    (at 106.68 243.84 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left bottom))
+    (uuid "684571f8-a5d7-5ca4-8d8a-d4528e938d8d"))
+  (label "XTAL_OUT"
+    (at 71.12 251.46 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left bottom))
+    (uuid "b6e76838-28f0-5445-aa73-0d4279f99251"))
+  (wire
+    (pts
+      (xy 50.8 248.92)
+      (xy 50.8 251.46))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e6face84-325d-598a-81c6-4e271cf206bd"))
+  (junction
+    (at 50.8 251.46)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "2016df4a-0678-5acf-889e-553105d974df"))
+  (symbol
+    (lib_id "FabNano:PWR_GND")
+    (at 50.8 251.46 0)
+    (unit 1)
+    (in_bom no)
+    (on_board no)
+    (dnp no)
+    (uuid "9ae2d711-d01a-5fb1-b51e-da40dde714f1")
+    (property "Reference" "#PWR2209"
+      (at 50.8 251.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 50.8 255.27 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 50.8 251.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 50.8 251.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 50.8 251.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 50.8 251.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "9ae2d711-d01a-5fb1-b51e-da40dde714f1"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "#PWR2209")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 30.48 264.16)
+      (xy 30.48 271.78))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "068a35bc-a98b-5ac1-9bd7-83f94fcc124d"))
+  (wire
+    (pts
+      (xy 71.12 264.16)
+      (xy 71.12 271.78))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "270c85d0-98bb-5cc3-b134-b8feb3cf1a40"))
+  (wire
+    (pts
+      (xy 30.48 271.78)
+      (xy 71.12 271.78))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "7fd33aed-5562-509e-9c16-c823efa7d756"))
+  (junction
+    (at 30.48 271.78)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "fd841892-e405-5d01-abd0-32bd4cf82881"))
+  (symbol
+    (lib_id "FabNano:PWR_GND")
+    (at 30.48 271.78 0)
+    (unit 1)
+    (in_bom no)
+    (on_board no)
+    (dnp no)
+    (uuid "71dcdc98-d6a7-57da-b4a1-9a6e7f53c8a4")
+    (property "Reference" "#PWR2214"
+      (at 30.48 271.78 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 30.48 275.59 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 30.48 271.78 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 30.48 271.78 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 30.48 271.78 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 30.48 271.78 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "71dcdc98-d6a7-57da-b4a1-9a6e7f53c8a4"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
+          (reference "#PWR2214")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 35.56 22.86)
+      (xy 30.480000000000004 22.86))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "39343169-ea83-53e5-ac43-2edb277cbcab"))
+  (hierarchical_label "+3V3"
+    (shape bidirectional)
+    (at 30.480000000000004 22.86 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "c3e45eb5-ab48-5609-8c4e-ce907da248c2"))
+  (junction
+    (at 40.64 22.86)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "ae9a7a97-a1a6-5e60-b6b4-9f1fbb9f9013")))

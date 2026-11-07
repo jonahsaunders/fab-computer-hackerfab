@@ -34,6 +34,7 @@ For a browser-only look, start with the [schematic previews](docs/schematics/REA
 | --- | --- |
 | [`hardware/backplane/`](hardware/backplane/) | KiCad project, root schematic, six subsheets, PCB, custom design rules, and project library tables |
 | [`hardware/libraries/`](hardware/libraries/) | Seven custom symbol libraries and 24 custom footprints, including embedded models where supplied |
+| [`daughterboards/micromanipulator/`](daughterboards/micromanipulator/) | Single-RP2350B daughterboard: seven-sheet schematic, manually routed four-layer PCB, local libraries and review previews |
 | [`docs/architecture.md`](docs/architecture.md) | System concept, circuit blocks, and scope of future daughter boards |
 | [`docs/connector-pinout.md`](docs/connector-pinout.md) | Jumper-based signal order, paired protocols, pin table, and routing guide |
 | [`docs/schematics/`](docs/schematics/) | Seven SVG schematic previews exported from the source |
@@ -76,11 +77,11 @@ These previews are exported from the current KiCad files. Select a schematic ima
 
 ## Current state
 
-The repository includes the **backplane hardware and its libraries**. Firmware, daughter-board designs, fabrication outputs, and bench-test results were not present in the supplied archives.
+The repository includes the **backplane hardware and its libraries**, plus the [micromanipulator daughterboard](daughterboards/micromanipulator/). The daughterboard has a seven-sheet schematic and manually routed 100 × 60 mm PCB using one RP2350B. ERC, DRC, connectivity and schematic/PCB parity checks pass; component selection and electrical/mechanical review remain in progress. Firmware, fabrication outputs and bench-test results are not included.
 
 The latest archives were imported on **2026-11-05**. They add four **2.2 kΩ I²C pullups (R58–R61)**, mark **J3:C19 as NC**, and replace **H1–H4** with grounded `MountingHole_3.2mm_M3_Pad_Via` footprints. J1 uses hardware UART0; J2 uses UART1 (named `UART2` in the schematic); J3's UART positions remain NC. The design has **152 components/footprints**, **1,143 track segments**, and **271 vias**.
 
-All 41 active design, library, and rule files match the supplied archives after line-ending normalization. Circuitry, routing, copper fills, and component metadata are preserved as supplied. The [validation notes](docs/validation.md) describe the historical November 4 revision. The design remains in development.
+All 41 backplane design, library, and rule files match the supplied archives after line-ending normalization. Backplane circuitry, routing, copper fills, and component metadata are preserved as supplied. The [validation notes](docs/validation.md) describe the historical November 4 revision. The design remains in development.
 
 ## Working on the project
 
