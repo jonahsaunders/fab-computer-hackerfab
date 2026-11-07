@@ -1457,7 +1457,7 @@
         (font
           (size 1.27 1.27))
         (justify left)))
-    (property "Value" "10uF 10V"
+    (property "Value" "10uF 10V X5R"
       (at 129.54 46.99 0)
       (effects
         (font
@@ -1469,19 +1469,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL10A106KP8NNN.do"
       (at 127 45.72 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "CL10A106KP8NNNC"
       (at 127 45.72 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Samsung Electro-Mechanics"
       (at 127 45.72 0)
       (effects
         (font
@@ -1495,7 +1495,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/a74e9ac8-b222-5765-a115-aa0b627c9240"
           (reference "C61")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C19702"
+      (at 127 45.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 63.5 45.72)
@@ -2020,7 +2026,7 @@
         (font
           (size 1.27 1.27))
         (justify left)))
-    (property "Value" "10uF 10V"
+    (property "Value" "10uF 10V X5R"
       (at 129.54 118.11 0)
       (effects
         (font
@@ -2032,19 +2038,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL10A106KP8NNN.do"
       (at 127 116.84 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "CL10A106KP8NNNC"
       (at 127 116.84 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Samsung Electro-Mechanics"
       (at 127 116.84 0)
       (effects
         (font
@@ -2058,7 +2064,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/a74e9ac8-b222-5765-a115-aa0b627c9240"
           (reference "C63")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C19702"
+      (at 127 116.84 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 63.5 116.84)
@@ -2716,7 +2728,7 @@
         (font
           (size 1.27 1.27))
         (justify left)))
-    (property "Value" "1uF 25V"
+    (property "Value" "1uF 50V X5R"
       (at 213.35999999999999 44.45 0)
       (effects
         (font
@@ -2728,19 +2740,19 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.samsungsem.com/mlcc/CL10A105KB8NNN.do"
       (at 210.82 43.18 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" ""
+    (property "MPN" "CL10A105KB8NNNC"
       (at 210.82 43.18 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Manufacturer" ""
+    (property "Manufacturer" "Samsung Electro-Mechanics"
       (at 210.82 43.18 0)
       (effects
         (font
@@ -2754,7 +2766,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/a74e9ac8-b222-5765-a115-aa0b627c9240"
           (reference "C65")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C15849"
+      (at 210.82 43.18 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 167.64 30.48)

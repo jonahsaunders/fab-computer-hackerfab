@@ -1113,7 +1113,7 @@
     (layers "*.Cu" "*.Mask")
     (remove_unused_layers no))
   (embedded_fonts no)
-  (model "${KIPRJMOD}/../libraries/models/Connector_DIN.3dshapes/DIN41612_C_3x32_Male_Horizontal_THT.step"
+  (model "${KIPRJMOD}/../libraries/models/Connector_DIN.3dshapes/WingTAT_9001-11961C00A_DIN41612_C_3x32_RightAngle.step"
     (offset
       (xyz 0 0 0))
     (scale

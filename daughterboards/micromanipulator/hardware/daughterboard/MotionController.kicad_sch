@@ -2909,7 +2909,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
           (reference "C12")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C82453"
+      (at 261.62 33.02 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 261.62 30.48)
@@ -4093,7 +4099,13 @@
       (project "FabNanoDaughterboard"
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
           (reference "C11")
-          (unit 1)))))
+          (unit 1))))
+    (property "LCSC" "C82453"
+      (at 196.85 81.28 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 196.85 78.74)

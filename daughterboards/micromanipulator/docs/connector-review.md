@@ -21,7 +21,7 @@ Catalog identity and assembly listings were checked on 2026-11-07. Inventory is 
 
 The host uses WingTAT 9001-12961C00A female sockets. The selected male plug has the corresponding Type C mating arrangement. Its [manufacturer drawing 9001D11001 R7](https://www.lcsc.com/datasheet/C5173361.pdf) specifies 2.54 mm row/column pitch, 78.74 mm pin span, 1.00 mm signal holes and 88.90 mm mounting-hole spacing. These match the saved card. Its 2.85 mm mounting drills lie within the drawing's 2.8 ± 0.1 mm range. The card retains 1.55 mm signal lands.
 
-The board edge is 5.08 mm ahead of row A, 0.22 mm recessed from the drawing's 5.30 mm recommendation. This leaves more of the connector overhanging the PCB. The existing KiCad DIN model remains a nominal representation, not an exact WingTAT tolerance model. Final seating depth, retention and enclosure clearance still need an assembly check. The [female drawing 9001D12003 R7](https://www.lcsc.com/datasheet/C5173363.pdf) defines the host mating geometry.
+The board edge is 5.08 mm ahead of row A, 0.22 mm recessed from the drawing's 5.30 mm recommendation. This leaves more of the connector overhanging the PCB. The card now uses the WingTAT-specific STEP already embedded in the supplied backplane library. All 96 solder-tail centers match the saved footprint to within 0.000001 mm. Extraction preserves the original STEP geometry; it does not certify manufacturing tolerances. The [female drawing 9001D12003 R7](https://www.lcsc.com/datasheet/C5173363.pdf) defines the host mating geometry.
 
 ## Host electrical allocation
 
@@ -33,6 +33,16 @@ Run it from the repository checkout with KiCad's Python. For a standalone daught
 - Host J3 has no UART at A20/C20; it cannot provide the full current interface.
 - The card uses 12 contacts each for 12 V and 5 V, 36 grounds and four signals. Its other 32 contacts, including every 24 V position, remain unused.
 - Actual host slot pitch is 26 mm. This measurement alone does not verify populated-card or cable clearance.
+
+## Populated host review
+
+The actual host J1/J2 positions and its embedded WingTAT socket models were combined with two exports of the populated daughterboard for a nominal assembly review. Both cards stand perpendicular to the host, with the component faces oriented alike. The reviewed views show no apparent component-body interference between these two cards. USB opens beyond the side edge; the PH connectors face the space between cards, near their perimeter, so their leads can turn toward the card edges.
+
+The card model uses a 90-degree KiCad X rotation and nominal placement offset of (0, -2.01, 17.74) mm relative to each host row-A pin-1 origin. This aligns the plug contacts and seats the modeled nose near the socket flange plane. The transform is an engineering inference from the supplied models, not a specified seated-board dimension. Actual seating stop, retention, cable housings, cable bend radii, enclosure and other daughterboard designs still need a physical fit check. Two cards in these images demonstrate geometry only; their combined electrical load is not approved by the rendering.
+
+![Nominal assembly, component faces](host-fit-front.png)
+
+![Nominal assembly, reverse view](host-fit-review.png)
 
 ## JST PH footprints
 

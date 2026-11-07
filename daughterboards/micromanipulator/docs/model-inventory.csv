@@ -49,9 +49,9 @@ C67,Capacitor_SMD:C_0402_1005Metric,${KIPRJMOD}/../libraries/models/Capacitor_SM
 C68,Capacitor_SMD:C_0402_1005Metric,${KIPRJMOD}/../libraries/models/Capacitor_SMD.3dshapes/C_0402_1005Metric.step,Bundled KiCad standard STEP model
 D2,Diode_SMD:D_SMA,${KIPRJMOD}/../libraries/models/Diode_SMD.3dshapes/D_SMA.step,KiCad standard STEP model
 D3,LED_SMD:LED_0603_1608Metric,${KIPRJMOD}/../libraries/models/LED_SMD.3dshapes/LED_0603_1608Metric.step,KiCad standard STEP model
-F1,Fuse:Fuse_1206_3216Metric,${KIPRJMOD}/../libraries/models/Fuse.3dshapes/Fuse_1206_3216Metric.step,KiCad standard STEP model
-F2,Fuse:Fuse_1206_3216Metric,${KIPRJMOD}/../libraries/models/Fuse.3dshapes/Fuse_1206_3216Metric.step,KiCad standard STEP model
-J1,FabNano:DIN96_Male_Horizontal,${KIPRJMOD}/../libraries/models/Connector_DIN.3dshapes/DIN41612_C_3x32_Male_Horizontal_THT.step,KiCad standard STEP model
+F1,FabNano:Fuse_Littelfuse_0466_1206,${KIPRJMOD}/../libraries/models/Fuse.3dshapes/Fuse_1206_3216Metric.step,KiCad nominal 1206 model; Littelfuse 466 body 3.175x1.524x0.584mm
+F2,FabNano:Fuse_Littelfuse_0466_1206,${KIPRJMOD}/../libraries/models/Fuse.3dshapes/Fuse_1206_3216Metric.step,KiCad nominal 1206 model; Littelfuse 466 body 3.175x1.524x0.584mm
+J1,FabNano:DIN96_Male_Horizontal,${KIPRJMOD}/../libraries/models/Connector_DIN.3dshapes/WingTAT_9001-11961C00A_DIN41612_C_3x32_RightAngle.step,WingTAT-specific STEP extracted unchanged from supplied backplane footprint; all 96 solder-tail centers checked
 J12,Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical,${KIPRJMOD}/../libraries/models/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x06_P2.54mm_Vertical.step,KiCad standard STEP model
 J13,Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical,${KIPRJMOD}/../libraries/models/Connector_JST.3dshapes/JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical.step,KiCad standard STEP model
 J14,Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical,${KIPRJMOD}/../libraries/models/Connector_JST.3dshapes/JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical.step,KiCad standard STEP model

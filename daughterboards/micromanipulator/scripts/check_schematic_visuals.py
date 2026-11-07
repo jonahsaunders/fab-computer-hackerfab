@@ -20,6 +20,7 @@ for f in H.glob('*.kicad_sch'):
         if xy:ts.append((name,(min(x for x,y in xy)-.0762,min(y for x,y in xy)-.0762,max(x for x,y in xy)+.0762,max(y for x,y in xy)+.0762)))
     ts=list(dict.fromkeys(ts)) # Identical overprinted glyphs are visually one text.
     tw=[];tt=[];wc=[];ol=[]
+    zero=[a for a,b in wires if a==b]
     for text,bb in ts:
         for a,b in wires:
             wb=(min(a[0],b[0])-.0762,min(a[1],b[1])-.0762,max(a[0],b[0])+.0762,max(a[1],b[1])+.0762)
@@ -39,8 +40,8 @@ for f in H.glob('*.kicad_sch'):
                 if max(abs(a[o]-b[o]),abs(a[o]-c[o]),abs(a[o]-e[o]))<.0001:
                     overlap=min(max(a[axis],b[axis]),max(c[axis],e[axis]))-max(min(a[axis],b[axis]),min(c[axis],e[axis]))
                     if overlap>.001:ol.append([[a,b],[c,e]])
-    result[f.stem]={'text_wire':tw,'text_text':tt,'wire_crossings':wc,'wire_overlaps':ol}
-    print(f.stem,':',len(tw),'text/wire,',len(tt),'text/text,',len(wc),'crossings,',len(ol),'overlaps')
+    result[f.stem]={'text_wire':tw,'text_text':tt,'wire_crossings':wc,'wire_overlaps':ol,'zero_length_wires':zero}
+    print(f.stem,':',len(tw),'text/wire,',len(tt),'text/text,',len(wc),'crossings,',len(ol),'overlaps,',len(zero),'zero-length wires')
     for issue in tw:print('  text/wire',issue)
     for issue in tt:print('  text/text',issue)
     for issue in wc:print('  crossing',issue)
