@@ -1,0 +1,12 @@
+Reference,Footprint,Model,Provenance
+J1,JST_PH_B6B-PH-K_1x06_P2.00mm_Vertical,${KIPRJMOD}/../libraries/3dmodels/Connector_JST.3dshapes/JST_PH_B6B-PH-K_1x06_P2.00mm_Vertical.step,Bundled KiCad nominal model; DIN uses host WingTAT model
+R3,R_0603_1608Metric,${KIPRJMOD}/../libraries/models/Resistor_SMD.3dshapes/R_0603_1608Metric.step,Bundled KiCad nominal model; DIN uses host WingTAT model
+C2,C_0603_1608Metric,${KIPRJMOD}/../libraries/models/Capacitor_SMD.3dshapes/C_0603_1608Metric.step,Bundled KiCad nominal model; DIN uses host WingTAT model
+U1,SOIC-8_3.9x4.9mm_P1.27mm,${KIPRJMOD}/../libraries/models/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step,Bundled KiCad nominal model; DIN uses host WingTAT model
+J3,JST_PH_B6B-PH-K_1x06_P2.00mm_Vertical,${KIPRJMOD}/../libraries/3dmodels/Connector_JST.3dshapes/JST_PH_B6B-PH-K_1x06_P2.00mm_Vertical.step,Bundled KiCad nominal model; DIN uses host WingTAT model
+R1,R_0603_1608Metric,${KIPRJMOD}/../libraries/models/Resistor_SMD.3dshapes/R_0603_1608Metric.step,Bundled KiCad nominal model; DIN uses host WingTAT model
+R2,R_0603_1608Metric,${KIPRJMOD}/../libraries/models/Resistor_SMD.3dshapes/R_0603_1608Metric.step,Bundled KiCad nominal model; DIN uses host WingTAT model
+J2,JST_PH_B6B-PH-K_1x06_P2.00mm_Vertical,${KIPRJMOD}/../libraries/3dmodels/Connector_JST.3dshapes/JST_PH_B6B-PH-K_1x06_P2.00mm_Vertical.step,Bundled KiCad nominal model; DIN uses host WingTAT model
+J4,DIN96_Male_Horizontal,${KIPRJMOD}/../libraries/models/Connector_DIN.3dshapes/WingTAT_DIN96.step,Bundled KiCad nominal model; DIN uses host WingTAT model
+C1,C_0603_1608Metric,${KIPRJMOD}/../libraries/models/Capacitor_SMD.3dshapes/C_0603_1608Metric.step,Bundled KiCad nominal model; DIN uses host WingTAT model
+C3,C_0603_1608Metric,${KIPRJMOD}/../libraries/models/Capacitor_SMD.3dshapes/C_0603_1608Metric.step,Bundled KiCad nominal model; DIN uses host WingTAT model

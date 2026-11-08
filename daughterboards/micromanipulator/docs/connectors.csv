@@ -1,45 +1,45 @@
 Reference,Function,Pin number,Signal
-J1,DIN96 / male right-angle,A1,NC
-J1,DIN96 / male right-angle,A2,NC
-J1,DIN96 / male right-angle,A3,GND
-J1,DIN96 / male right-angle,A4,+12V_BP
-J1,DIN96 / male right-angle,A5,+12V_BP
-J1,DIN96 / male right-angle,A6,GND
-J1,DIN96 / male right-angle,A7,+5V_BP
-J1,DIN96 / male right-angle,A8,+5V_BP
-J1,DIN96 / male right-angle,A9,GND
-J1,DIN96 / male right-angle,A10,NC
-J1,DIN96 / male right-angle,A11,NC
-J1,DIN96 / male right-angle,A12,NC
-J1,DIN96 / male right-angle,A13,NC
-J1,DIN96 / male right-angle,A14,NC
-J1,DIN96 / male right-angle,A15,NC
-J1,DIN96 / male right-angle,A16,HOST_SCL
-J1,DIN96 / male right-angle,A17,NC
-J1,DIN96 / male right-angle,A18,NC
-J1,DIN96 / male right-angle,A19,NC
-J1,DIN96 / male right-angle,A20,HOST_RX
-J1,DIN96 / male right-angle,A21,NC
-J1,DIN96 / male right-angle,A22,NC
-J1,DIN96 / male right-angle,A23,NC
-J1,DIN96 / male right-angle,A24,GND
 J1,DIN96 / male right-angle,A25,+5V_BP
 J1,DIN96 / male right-angle,A26,+5V_BP
-J1,DIN96 / male right-angle,A27,GND
-J1,DIN96 / male right-angle,A28,+12V_BP
-J1,DIN96 / male right-angle,A29,+12V_BP
-J1,DIN96 / male right-angle,A30,GND
-J1,DIN96 / male right-angle,A31,NC
-J1,DIN96 / male right-angle,A32,NC
-J1,DIN96 / male right-angle,B1,GND
-J1,DIN96 / male right-angle,B2,GND
-J1,DIN96 / male right-angle,B3,GND
-J1,DIN96 / male right-angle,B4,+12V_BP
-J1,DIN96 / male right-angle,B5,+12V_BP
-J1,DIN96 / male right-angle,B6,GND
+J1,DIN96 / male right-angle,A7,+5V_BP
+J1,DIN96 / male right-angle,A8,+5V_BP
+J1,DIN96 / male right-angle,B25,+5V_BP
+J1,DIN96 / male right-angle,B26,+5V_BP
 J1,DIN96 / male right-angle,B7,+5V_BP
 J1,DIN96 / male right-angle,B8,+5V_BP
-J1,DIN96 / male right-angle,B9,GND
+J1,DIN96 / male right-angle,C25,+5V_BP
+J1,DIN96 / male right-angle,C26,+5V_BP
+J1,DIN96 / male right-angle,C7,+5V_BP
+J1,DIN96 / male right-angle,C8,+5V_BP
+J1,DIN96 / male right-angle,A28,+12V_BP
+J1,DIN96 / male right-angle,A29,+12V_BP
+J1,DIN96 / male right-angle,A4,+12V_BP
+J1,DIN96 / male right-angle,A5,+12V_BP
+J1,DIN96 / male right-angle,B28,+12V_BP
+J1,DIN96 / male right-angle,B29,+12V_BP
+J1,DIN96 / male right-angle,B4,+12V_BP
+J1,DIN96 / male right-angle,B5,+12V_BP
+J1,DIN96 / male right-angle,C28,+12V_BP
+J1,DIN96 / male right-angle,C29,+12V_BP
+J1,DIN96 / male right-angle,C4,+12V_BP
+J1,DIN96 / male right-angle,C5,+12V_BP
+J1,DIN96 / male right-angle,A12,ENC1_CS
+J1,DIN96 / male right-angle,C10,ENC2_CS
+J1,DIN96 / male right-angle,A10,ENC3_CS
+J1,DIN96 / male right-angle,C12,ENC_MISO
+J1,DIN96 / male right-angle,A11,ENC_MOSI
+J1,DIN96 / male right-angle,C11,ENC_SCK
+J1,DIN96 / male right-angle,A20,HOST_RX
+J1,DIN96 / male right-angle,A16,HOST_SCL
+J1,DIN96 / male right-angle,C16,HOST_SDA
+J1,DIN96 / male right-angle,C20,HOST_TX
+J1,DIN96 / male right-angle,A24,GND
+J1,DIN96 / male right-angle,A27,GND
+J1,DIN96 / male right-angle,A3,GND
+J1,DIN96 / male right-angle,A30,GND
+J1,DIN96 / male right-angle,A6,GND
+J1,DIN96 / male right-angle,A9,GND
+J1,DIN96 / male right-angle,B1,GND
 J1,DIN96 / male right-angle,B10,GND
 J1,DIN96 / male right-angle,B11,GND
 J1,DIN96 / male right-angle,B12,GND
@@ -50,116 +50,108 @@ J1,DIN96 / male right-angle,B16,GND
 J1,DIN96 / male right-angle,B17,GND
 J1,DIN96 / male right-angle,B18,GND
 J1,DIN96 / male right-angle,B19,GND
+J1,DIN96 / male right-angle,B2,GND
 J1,DIN96 / male right-angle,B20,GND
 J1,DIN96 / male right-angle,B21,GND
 J1,DIN96 / male right-angle,B22,GND
 J1,DIN96 / male right-angle,B23,GND
 J1,DIN96 / male right-angle,B24,GND
-J1,DIN96 / male right-angle,B25,+5V_BP
-J1,DIN96 / male right-angle,B26,+5V_BP
 J1,DIN96 / male right-angle,B27,GND
-J1,DIN96 / male right-angle,B28,+12V_BP
-J1,DIN96 / male right-angle,B29,+12V_BP
+J1,DIN96 / male right-angle,B3,GND
 J1,DIN96 / male right-angle,B30,GND
 J1,DIN96 / male right-angle,B31,GND
 J1,DIN96 / male right-angle,B32,GND
+J1,DIN96 / male right-angle,B6,GND
+J1,DIN96 / male right-angle,B9,GND
+J1,DIN96 / male right-angle,C24,GND
+J1,DIN96 / male right-angle,C27,GND
+J1,DIN96 / male right-angle,C3,GND
+J1,DIN96 / male right-angle,C30,GND
+J1,DIN96 / male right-angle,C6,GND
+J1,DIN96 / male right-angle,C9,GND
+J1,DIN96 / male right-angle,A1,NC
+J1,DIN96 / male right-angle,A2,NC
+J1,DIN96 / male right-angle,A13,NC
+J1,DIN96 / male right-angle,A14,NC
+J1,DIN96 / male right-angle,A15,NC
+J1,DIN96 / male right-angle,A17,NC
+J1,DIN96 / male right-angle,A18,NC
+J1,DIN96 / male right-angle,A19,NC
+J1,DIN96 / male right-angle,A21,NC
+J1,DIN96 / male right-angle,A22,NC
+J1,DIN96 / male right-angle,A23,NC
+J1,DIN96 / male right-angle,A31,NC
+J1,DIN96 / male right-angle,A32,NC
 J1,DIN96 / male right-angle,C1,NC
 J1,DIN96 / male right-angle,C2,NC
-J1,DIN96 / male right-angle,C3,GND
-J1,DIN96 / male right-angle,C4,+12V_BP
-J1,DIN96 / male right-angle,C5,+12V_BP
-J1,DIN96 / male right-angle,C6,GND
-J1,DIN96 / male right-angle,C7,+5V_BP
-J1,DIN96 / male right-angle,C8,+5V_BP
-J1,DIN96 / male right-angle,C9,GND
-J1,DIN96 / male right-angle,C10,NC
-J1,DIN96 / male right-angle,C11,NC
-J1,DIN96 / male right-angle,C12,NC
 J1,DIN96 / male right-angle,C13,NC
 J1,DIN96 / male right-angle,C14,NC
 J1,DIN96 / male right-angle,C15,NC
-J1,DIN96 / male right-angle,C16,HOST_SDA
 J1,DIN96 / male right-angle,C17,NC
 J1,DIN96 / male right-angle,C18,NC
 J1,DIN96 / male right-angle,C19,NC
-J1,DIN96 / male right-angle,C20,HOST_TX
 J1,DIN96 / male right-angle,C21,NC
 J1,DIN96 / male right-angle,C22,NC
 J1,DIN96 / male right-angle,C23,NC
-J1,DIN96 / male right-angle,C24,GND
-J1,DIN96 / male right-angle,C25,+5V_BP
-J1,DIN96 / male right-angle,C26,+5V_BP
-J1,DIN96 / male right-angle,C27,GND
-J1,DIN96 / male right-angle,C28,+12V_BP
-J1,DIN96 / male right-angle,C29,+12V_BP
-J1,DIN96 / male right-angle,C30,GND
 J1,DIN96 / male right-angle,C31,NC
 J1,DIN96 / male right-angle,C32,NC
 J2,SWD / RP2350,1,+3V3
+J2,SWD / RP2350,5,RP_RUN
+J2,SWD / RP2350,4,RP_SWCLK
 J2,SWD / RP2350,2,RP_SWDIO
 J2,SWD / RP2350,3,GND
-J2,SWD / RP2350,4,RP_SWCLK
-J2,SWD / RP2350,5,RP_RUN
+J3,MOTOR 1,4,M1_AO1
+J3,MOTOR 1,3,M1_AO2
 J3,MOTOR 1,1,M1_BO1
 J3,MOTOR 1,2,M1_BO2
-J3,MOTOR 1,3,M1_AO2
-J3,MOTOR 1,4,M1_AO1
+J4,MOTOR 2,4,M2_AO1
+J4,MOTOR 2,3,M2_AO2
 J4,MOTOR 2,1,M2_BO1
 J4,MOTOR 2,2,M2_BO2
-J4,MOTOR 2,3,M2_AO2
-J4,MOTOR 2,4,M2_AO1
+J5,MOTOR 3,4,M3_AO1
+J5,MOTOR 3,3,M3_AO2
 J5,MOTOR 3,1,M3_BO1
 J5,MOTOR 3,2,M3_BO2
-J5,MOTOR 3,3,M3_AO2
-J5,MOTOR 3,4,M3_AO1
-J6,MOTION ENCODERS,1,GND
-J6,MOTION ENCODERS,2,+3V3
-J6,MOTION ENCODERS,3,ENC_MOSI
-J6,MOTION ENCODERS,4,ENC_MISO
-J6,MOTION ENCODERS,5,ENC_SCK
-J6,MOTION ENCODERS,6,ENC1_CS
-J6,MOTION ENCODERS,7,ENC2_CS
-J6,MOTION ENCODERS,8,ENC3_CS
 J12,ROTATION ENCODER,1,+3V3
+J12,ROTATION ENCODER,5,ROT_CS
 J12,ROTATION ENCODER,2,ROT_MISO
 J12,ROTATION ENCODER,3,ROT_MOSI
 J12,ROTATION ENCODER,4,ROT_SCK
-J12,ROTATION ENCODER,5,ROT_CS
 J12,ROTATION ENCODER,6,GND
-J13,ENDSTOP,1,ROT_ENDSTOP
 J13,ENDSTOP,2,+3V3
+J13,ENDSTOP,1,ROT_ENDSTOP
 J13,ENDSTOP,3,GND
 J14,ROTATION MOTOR,1,ROT_OUT1
 J14,ROTATION MOTOR,2,ROT_OUT2
 J14,ROTATION MOTOR,3,ROT_OUT3
 J14,ROTATION MOTOR,4,ROT_OUT4
+J15,HEATER + TEMP,3,+3V3
 J15,HEATER + TEMP,1,HEATER_5V
 J15,HEATER + TEMP,2,HEAT_LOW
-J15,HEATER + TEMP,3,+3V3
-J15,HEATER + TEMP,4,GND
 J15,HEATER + TEMP,5,TEMP_IN
+J15,HEATER + TEMP,4,GND
 J16,VACUUM / 5 V,1,+5V_LOAD
 J16,VACUUM / 5 V,2,VAC_LOW
 J17,THERMAL CUTOFF,1,+5V_LOAD
 J17,THERMAL CUTOFF,2,HEATER_5V
-J18,USB-C / SERVICE,A1,GND
-J18,USB-C / SERVICE,A12,GND
-J18,USB-C / SERVICE,B1,GND
-J18,USB-C / SERVICE,B12,GND
-J18,USB-C / SERVICE,SH,GND
-J18,USB-C / SERVICE,A4,USB_VBUS
-J18,USB-C / SERVICE,A9,USB_VBUS
-J18,USB-C / SERVICE,B4,USB_VBUS
-J18,USB-C / SERVICE,B9,USB_VBUS
 J18,USB-C / SERVICE,A5,USB_CC1
 J18,USB-C / SERVICE,B5,USB_CC2
 J18,USB-C / SERVICE,A6,USB_D+
 J18,USB-C / SERVICE,B6,USB_D+
 J18,USB-C / SERVICE,A7,USB_D-
 J18,USB-C / SERVICE,B7,USB_D-
+J18,USB-C / SERVICE,A4,USB_VBUS
+J18,USB-C / SERVICE,A9,USB_VBUS
+J18,USB-C / SERVICE,B4,USB_VBUS
+J18,USB-C / SERVICE,B9,USB_VBUS
+J18,USB-C / SERVICE,A1,GND
+J18,USB-C / SERVICE,A12,GND
+J18,USB-C / SERVICE,B1,GND
+J18,USB-C / SERVICE,B12,GND
+J18,USB-C / SERVICE,SH,GND
 J18,USB-C / SERVICE,A8,NC
 J18,USB-C / SERVICE,B8,NC
-J19,TOOL PWM,1,GND
+J19,TOOL PWM,4,+3V3
 J19,TOOL PWM,2,TOOL_PWM1
 J19,TOOL PWM,3,TOOL_PWM2
-J19,TOOL PWM,4,+3V3
+J19,TOOL PWM,1,GND

@@ -47,8 +47,8 @@ def inspect(path, top=False):
 inspect(root.resolve(), True)
 unreachable = {p.resolve() for p in H.glob('*.kicad_sch')} - seen
 issues.extend(f'Unreachable sheet: {p.name}' for p in sorted(unreachable))
-if len(connectors) != 14:
-    issues.append(f'Expected 14 fixed external connectors; found {len(connectors)}')
+if len(connectors) != 13:
+    issues.append(f'Expected 13 external connectors after removing the PH8 cable; found {len(connectors)}')
 result = {'sheets': len(seen), 'root_connectors': sorted(connectors),
           'component_count': len(components), 'issues': issues}
 (B / 'build').mkdir(exist_ok=True)

@@ -1,4 +1,4 @@
-﻿Daughterboard contact,Assigned net,Backplane interface change
+Daughterboard contact,Assigned net,Backplane interface change
 A1,NC,None
 A2,NC,None
 A3,GND,None
@@ -8,9 +8,9 @@ A6,GND,None
 A7,+5V_BP,None
 A8,+5V_BP,None
 A9,GND,None
-A10,NC,None
-A11,NC,None
-A12,NC,None
+A10,ENC3_CS,None
+A11,ENC_MOSI,None
+A12,ENC1_CS,None
 A13,NC,None
 A14,NC,None
 A15,NC,None
@@ -72,9 +72,9 @@ C6,GND,None
 C7,+5V_BP,None
 C8,+5V_BP,None
 C9,GND,None
-C10,NC,None
-C11,NC,None
-C12,NC,None
+C10,ENC2_CS,None
+C11,ENC_SCK,None
+C12,ENC_MISO,None
 C13,NC,None
 C14,NC,None
 C15,NC,None

@@ -1,13 +1,9 @@
-CURRENT DEVELOPMENT SNAPSHOT — 7 NOVEMBER 2026
-
-See validation.md for the current results and reproduction commands.
-116 components; ERC 0; visual collisions/crossings/overlaps 0;
-PCB DRC violations 0; schematic parity 0; unconnected items 0.
-1533 track segments/vias; 57 added ground stitches.
-35/35 local supply paths directly connect to served pins on front copper.
-48/48 capacitor ground pads have explicit front-copper paths to ground vias.
-All 116 components have ordering codes; 288 host contacts checked.
-Uniform USB pair: 89.96 ohm engineering estimate; nominal host assembly reviewed.
-5 V tool allocation is conditional on the host's shared 2.5 A mux limit.
-The schematic and PCB are synchronized. Routing is complete; engineering review remains open.
-Not a manufacturing release.
+Current validation: 2026-11-08, KiCad 10.0.6.
+Motion: 117 fitted parts + 4 bare pads; 100 x 60 mm; 4 layers.
+Encoder: 11 fitted parts + 4 bare pads; 100 x 26 mm; 4 layers.
+Both: ERC 0; DRC 0; unconnected 0; schematic parity 0.
+Nine rendered schematic pages: text/wire/text/crossing/overlap audit 0.
+35 direct supply paths and 48 local capacitor ground returns checked.
+Backplane SPI0 reserved for motion; host GPIO16-21 input/no pulls required.
+Physical fit, signal integrity, loads/thermal and firmware integration remain open.
+See validation.md for scope and reproduction.

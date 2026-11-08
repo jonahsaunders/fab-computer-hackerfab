@@ -15,3 +15,6 @@ notices remain in the repository. The former generic DIN model is retained
 for library history but is not used by the current card.
 
 See docs/connector-review.md for the nominal host assembly and its limits.
+
+The current file is WingTAT_DIN96.step (shortened for Windows path limits).
+Its bytes and SHA-256 are unchanged.

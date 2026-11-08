@@ -115,3 +115,8 @@ Samsung typical DC-bias and AC-voltage data, exact CL10A475KO8NNNC ordering vari
 https://jlcpcb.com/partdetail/CL10A475KO8NNNC/C19666
 https://www.diodes.com/datasheet/download/AP2112.pdf
 AP2112 DS39724 revision 2-2: 1 uF application capacitors, X5R/X7R recommendation.
+
+Slot encoder card / SPI ownership, checked 2026-11-08:
+JST PH6 B6B-PH-K-S(LF)(SN), C131342: https://www.lcsc.com/product-image/C131342.html
+Pico SDK GPIO API: https://www.raspberrypi.com/documentation/pico-sdk/hardware.html#hardware_gpio
+Original SPI rate: firmware/MotionControllerRP/src/hw_config.h at upstream fa9a1f8e6d5365c6d5d5f31054d4f2c95aff8f6a, 8 MHz.

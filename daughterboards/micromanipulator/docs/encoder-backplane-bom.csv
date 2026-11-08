@@ -1,0 +1,12 @@
+Reference,Value,Footprint,Manufacturer part number,Manufacturer,LCSC,Quantity,Procurement status
+J1,ENCODER 1,Connector_JST:JST_PH_B6B-PH-K_1x06_P2.00mm_Vertical,B6B-PH-K-S(LF)(SN),JST,C131342,1,Catalog part identified; confirm assembly availability when ordering
+J2,ENCODER 2,Connector_JST:JST_PH_B6B-PH-K_1x06_P2.00mm_Vertical,B6B-PH-K-S(LF)(SN),JST,C131342,1,Catalog part identified; confirm assembly availability when ordering
+J3,ENCODER 3,Connector_JST:JST_PH_B6B-PH-K_1x06_P2.00mm_Vertical,B6B-PH-K-S(LF)(SN),JST,C131342,1,Catalog part identified; confirm assembly availability when ordering
+J4,DIN96 / male right-angle,FabNano:DIN96_Male_Horizontal,9001-11961C00A,WingTAT,C5173361,1,Catalog part identified; confirm assembly availability when ordering
+C1,4.7uF 16V X5R,Capacitor_SMD:C_0603_1608Metric,CL10A475KO8NNNC,Samsung Electro-Mechanics,C19666,1,Catalog part identified; confirm assembly availability when ordering
+C2,4.7uF 16V X5R,Capacitor_SMD:C_0603_1608Metric,CL10A475KO8NNNC,Samsung Electro-Mechanics,C19666,1,Catalog part identified; confirm assembly availability when ordering
+C3,10uF 10V X5R,Capacitor_SMD:C_0603_1608Metric,CL10A106KP8NNNC,Samsung Electro-Mechanics,C19702,1,Catalog part identified; confirm assembly availability when ordering
+R1,10kR,Resistor_SMD:R_0603_1608Metric,0603WAF1002T5E,Uniroyal Electronics,C25804,1,Catalog part identified; confirm assembly availability when ordering
+R2,10kR,Resistor_SMD:R_0603_1608Metric,0603WAF1002T5E,Uniroyal Electronics,C25804,1,Catalog part identified; confirm assembly availability when ordering
+R3,10kR,Resistor_SMD:R_0603_1608Metric,0603WAF1002T5E,Uniroyal Electronics,C25804,1,Catalog part identified; confirm assembly availability when ordering
+U1,AP2112M-3.3TRG1,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,AP2112M-3.3TRG1,Diodes Incorporated,C5290219,1,Catalog part identified; confirm assembly availability when ordering

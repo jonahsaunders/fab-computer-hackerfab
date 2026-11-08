@@ -1,0 +1,13 @@
+(fp_lib_table
+  (lib
+    (name "Connector_JST")
+    (type "KiCad")
+    (uri "${KIPRJMOD}/../libraries/encoder-splitter/Connector_JST.pretty")
+    (options "")
+    (descr "Project-local upstream encoder splitter footprint"))
+  (lib
+    (name "MountingHole")
+    (type "KiCad")
+    (uri "${KIPRJMOD}/../libraries/encoder-splitter/MountingHole.pretty")
+    (options "")
+    (descr "Project-local upstream encoder splitter footprint")))

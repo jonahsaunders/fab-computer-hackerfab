@@ -1,3 +1,7 @@
+CURRENT SPI REVISION: motion GPIO44/45/46 select XYZ through backplane SPI0.
+The old PH8 connector is removed; all three PH6 sensor pinouts remain unchanged.
+Host GPIO16-21 must be inputs without pulls. See backplane-encoder-bus.md.
+
 CONTROLLER DECISION — 7 NOVEMBER 2026
 
 Use one bare RP2350B for XYZ, rotation, heater and vacuum. Remove the STM32.
@@ -40,8 +44,8 @@ See controller-pin-allocation.csv for every GPIO and physical package pin.
 INTERFACES AND POWER
 The DIN96 logical pin map is unchanged. No extra 3.3 V contact is introduced.
 Power comes from backplane 12 V and 5 V, with local 5 V-to-3.3 V conversion.
-The core LC network is mandatory RP2350 support. The original XYZ PH8 splitter
-cable and rotation 1x6 encoder pin order stay. USB-C is a service connection;
+The core LC network is mandatory RP2350 support. The XYZ splitter uses existing backplane SPI0 with three original-pinout PH6 ports.
+The rotation 1x6 encoder pin order stays. USB-C is a service connection;
 USB VBUS is sensed, not tied to backplane 5 V.
 
 Preserve the UART motion protocol and I2C tool register protocol in firmware.
@@ -85,7 +89,7 @@ FIRMWARE WORK REQUIRED BEFORE THIS HARDWARE CAN BE RUN
 8. Implement GPIO1 VBUS detection and self-powered USB behavior.
 
 CURRENT STATUS
-The single-controller schematic and PCB both contain 116 components.
+The single-controller schematic and PCB both contain 117 components.
 All 14 external connectors are on the root sheet; support circuitry is on
 the six child sheets, including USBInterface. ERC and the seven-page
 visual audit pass. PCB schematic parity passes. Manual routing is complete:

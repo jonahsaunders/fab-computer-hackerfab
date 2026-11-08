@@ -1,0 +1,165 @@
+{
+  "current": {
+    "data_nets": [
+      {
+        "net": "/USB_D+",
+        "signal_vias": 2,
+        "copper_inventory_mm": 28.804,
+        "connector_to_termination": {
+          "A6 to R7.2": {
+            "copper_mm": 26.949,
+            "signal_layer_changes": 2
+          },
+          "B6 to R7.2": {
+            "copper_mm": 26.183,
+            "signal_layer_changes": 2
+          }
+        },
+        "ground_reference_samples": {
+          "F.Cu": 414,
+          "B.Cu": 1062
+        },
+        "skipped_via_launch_samples": 90,
+        "missing_ground_samples": 0
+      },
+      {
+        "net": "/USB_D-",
+        "signal_vias": 3,
+        "copper_inventory_mm": 34.133,
+        "connector_to_termination": {
+          "A7 to R8.2": {
+            "copper_mm": 28.458,
+            "signal_layer_changes": 2
+          },
+          "B7 to R8.2": {
+            "copper_mm": 27.897,
+            "signal_layer_changes": 2
+          }
+        },
+        "ground_reference_samples": {
+          "F.Cu": 312,
+          "B.Cu": 1473
+        },
+        "skipped_via_launch_samples": 96,
+        "missing_ground_samples": 0
+      }
+    ],
+    "inner_zones": [
+      {
+        "net": "+5V_BP",
+        "layer": "In1.Cu",
+        "regions": 1
+      },
+      {
+        "net": "GND",
+        "layer": "In1.Cu",
+        "regions": 1
+      },
+      {
+        "net": "+12V_BP",
+        "layer": "In1.Cu",
+        "regions": 1
+      },
+      {
+        "net": "+12V_MOTOR",
+        "layer": "In1.Cu",
+        "regions": 1
+      },
+      {
+        "net": "+5V_LOAD",
+        "layer": "In1.Cu",
+        "regions": 1
+      },
+      {
+        "net": "+3V3",
+        "layer": "In1.Cu",
+        "regions": 1
+      },
+      {
+        "net": "GND",
+        "layer": "In2.Cu",
+        "regions": 1
+      }
+    ],
+    "reference_check_enabled": true
+  },
+  "previous": {
+    "data_nets": [
+      {
+        "net": "/USB_D+",
+        "signal_vias": 5,
+        "copper_inventory_mm": 31.242,
+        "connector_to_termination": {
+          "A6 to R7.2": {
+            "copper_mm": 29.487,
+            "signal_layer_changes": 4
+          },
+          "B6 to R7.2": {
+            "copper_mm": 28.487,
+            "signal_layer_changes": 4
+          }
+        },
+        "ground_reference_samples": {
+          "F.Cu": 300,
+          "B.Cu": 1155
+        },
+        "skipped_via_launch_samples": 145,
+        "missing_ground_samples": 300
+      },
+      {
+        "net": "/USB_D-",
+        "signal_vias": 5,
+        "copper_inventory_mm": 30.562,
+        "connector_to_termination": {
+          "A7 to R8.2": {
+            "copper_mm": 29.407,
+            "signal_layer_changes": 4
+          },
+          "B7 to R8.2": {
+            "copper_mm": 28.407,
+            "signal_layer_changes": 4
+          }
+        },
+        "ground_reference_samples": {
+          "F.Cu": 273,
+          "B.Cu": 1182
+        },
+        "skipped_via_launch_samples": 137,
+        "missing_ground_samples": 273
+      }
+    ],
+    "inner_zones": [
+      {
+        "net": "+5V_BP",
+        "layer": "In1.Cu",
+        "regions": 1
+      },
+      {
+        "net": "+12V_BP",
+        "layer": "In1.Cu",
+        "regions": 1
+      },
+      {
+        "net": "+12V_MOTOR",
+        "layer": "In1.Cu",
+        "regions": 1
+      },
+      {
+        "net": "+5V_LOAD",
+        "layer": "In1.Cu",
+        "regions": 1
+      },
+      {
+        "net": "+3V3",
+        "layer": "In1.Cu",
+        "regions": 1
+      },
+      {
+        "net": "GND",
+        "layer": "In2.Cu",
+        "regions": 1
+      }
+    ],
+    "reference_check_enabled": false
+  }
+}

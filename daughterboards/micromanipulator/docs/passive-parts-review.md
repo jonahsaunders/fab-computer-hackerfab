@@ -47,7 +47,7 @@ The SANYEAR manufacturer drawing linked from its catalog gives a 2.00 +/-0.20 by
 
 C3 is supplementary output bulk; C2 independently provides the regulator's required local capacitance. C61/C63 supplement the direct C60/C62 bypasses and shared 220 uF load-rail bulk. C65 supplements C64 at the gate driver. X5R's 85 C temperature limit applies to these parts; it must be respected during thermal bring-up. C3's old unselected X7R label has therefore been corrected explicitly, rather than assigning an X5R part under an X7R description.
 
-F1/F2 are selected separately in the [load-power review](load-power-review.md). All 116 BOM entries now carry manufacturer and supplier codes.
+F1/F2 are selected separately in the [load-power review](load-power-review.md). All 117 BOM entries now carry manufacturer and supplier codes.
 
 ## Existing bulk and core capacitors
 

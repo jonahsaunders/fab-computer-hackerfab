@@ -1,0 +1,115 @@
+Reference,Function,Pin number,Signal
+J1,ENCODER 1,6,+3V3
+J1,ENCODER 1,2,ENC1_CS
+J1,ENCODER 1,5,ENC_MISO
+J1,ENCODER 1,4,ENC_MOSI
+J1,ENCODER 1,3,ENC_SCK
+J1,ENCODER 1,1,GND
+J2,ENCODER 2,6,+3V3
+J2,ENCODER 2,2,ENC2_CS
+J2,ENCODER 2,5,ENC_MISO
+J2,ENCODER 2,4,ENC_MOSI
+J2,ENCODER 2,3,ENC_SCK
+J2,ENCODER 2,1,GND
+J3,ENCODER 3,6,+3V3
+J3,ENCODER 3,2,ENC3_CS
+J3,ENCODER 3,5,ENC_MISO
+J3,ENCODER 3,4,ENC_MOSI
+J3,ENCODER 3,3,ENC_SCK
+J3,ENCODER 3,1,GND
+J4,DIN96 / male right-angle,A25,+5V_BP
+J4,DIN96 / male right-angle,A26,+5V_BP
+J4,DIN96 / male right-angle,A7,+5V_BP
+J4,DIN96 / male right-angle,A8,+5V_BP
+J4,DIN96 / male right-angle,B25,+5V_BP
+J4,DIN96 / male right-angle,B26,+5V_BP
+J4,DIN96 / male right-angle,B7,+5V_BP
+J4,DIN96 / male right-angle,B8,+5V_BP
+J4,DIN96 / male right-angle,C25,+5V_BP
+J4,DIN96 / male right-angle,C26,+5V_BP
+J4,DIN96 / male right-angle,C7,+5V_BP
+J4,DIN96 / male right-angle,C8,+5V_BP
+J4,DIN96 / male right-angle,A12,ENC1_CS
+J4,DIN96 / male right-angle,C10,ENC2_CS
+J4,DIN96 / male right-angle,A10,ENC3_CS
+J4,DIN96 / male right-angle,C12,ENC_MISO
+J4,DIN96 / male right-angle,A11,ENC_MOSI
+J4,DIN96 / male right-angle,C11,ENC_SCK
+J4,DIN96 / male right-angle,A24,GND
+J4,DIN96 / male right-angle,A27,GND
+J4,DIN96 / male right-angle,A3,GND
+J4,DIN96 / male right-angle,A30,GND
+J4,DIN96 / male right-angle,A6,GND
+J4,DIN96 / male right-angle,A9,GND
+J4,DIN96 / male right-angle,B1,GND
+J4,DIN96 / male right-angle,B10,GND
+J4,DIN96 / male right-angle,B11,GND
+J4,DIN96 / male right-angle,B12,GND
+J4,DIN96 / male right-angle,B13,GND
+J4,DIN96 / male right-angle,B14,GND
+J4,DIN96 / male right-angle,B15,GND
+J4,DIN96 / male right-angle,B16,GND
+J4,DIN96 / male right-angle,B17,GND
+J4,DIN96 / male right-angle,B18,GND
+J4,DIN96 / male right-angle,B19,GND
+J4,DIN96 / male right-angle,B2,GND
+J4,DIN96 / male right-angle,B20,GND
+J4,DIN96 / male right-angle,B21,GND
+J4,DIN96 / male right-angle,B22,GND
+J4,DIN96 / male right-angle,B23,GND
+J4,DIN96 / male right-angle,B24,GND
+J4,DIN96 / male right-angle,B27,GND
+J4,DIN96 / male right-angle,B3,GND
+J4,DIN96 / male right-angle,B30,GND
+J4,DIN96 / male right-angle,B31,GND
+J4,DIN96 / male right-angle,B32,GND
+J4,DIN96 / male right-angle,B6,GND
+J4,DIN96 / male right-angle,B9,GND
+J4,DIN96 / male right-angle,C24,GND
+J4,DIN96 / male right-angle,C27,GND
+J4,DIN96 / male right-angle,C3,GND
+J4,DIN96 / male right-angle,C30,GND
+J4,DIN96 / male right-angle,C6,GND
+J4,DIN96 / male right-angle,C9,GND
+J4,DIN96 / male right-angle,A1,NC
+J4,DIN96 / male right-angle,A2,NC
+J4,DIN96 / male right-angle,A4,NC
+J4,DIN96 / male right-angle,A5,NC
+J4,DIN96 / male right-angle,A13,NC
+J4,DIN96 / male right-angle,A14,NC
+J4,DIN96 / male right-angle,A15,NC
+J4,DIN96 / male right-angle,A16,NC
+J4,DIN96 / male right-angle,A17,NC
+J4,DIN96 / male right-angle,A18,NC
+J4,DIN96 / male right-angle,A19,NC
+J4,DIN96 / male right-angle,A20,NC
+J4,DIN96 / male right-angle,A21,NC
+J4,DIN96 / male right-angle,A22,NC
+J4,DIN96 / male right-angle,A23,NC
+J4,DIN96 / male right-angle,A28,NC
+J4,DIN96 / male right-angle,A29,NC
+J4,DIN96 / male right-angle,A31,NC
+J4,DIN96 / male right-angle,A32,NC
+J4,DIN96 / male right-angle,B4,NC
+J4,DIN96 / male right-angle,B5,NC
+J4,DIN96 / male right-angle,B28,NC
+J4,DIN96 / male right-angle,B29,NC
+J4,DIN96 / male right-angle,C1,NC
+J4,DIN96 / male right-angle,C2,NC
+J4,DIN96 / male right-angle,C4,NC
+J4,DIN96 / male right-angle,C5,NC
+J4,DIN96 / male right-angle,C13,NC
+J4,DIN96 / male right-angle,C14,NC
+J4,DIN96 / male right-angle,C15,NC
+J4,DIN96 / male right-angle,C16,NC
+J4,DIN96 / male right-angle,C17,NC
+J4,DIN96 / male right-angle,C18,NC
+J4,DIN96 / male right-angle,C19,NC
+J4,DIN96 / male right-angle,C20,NC
+J4,DIN96 / male right-angle,C21,NC
+J4,DIN96 / male right-angle,C22,NC
+J4,DIN96 / male right-angle,C23,NC
+J4,DIN96 / male right-angle,C28,NC
+J4,DIN96 / male right-angle,C29,NC
+J4,DIN96 / male right-angle,C31,NC
+J4,DIN96 / male right-angle,C32,NC
