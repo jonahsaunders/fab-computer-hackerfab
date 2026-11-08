@@ -63,7 +63,9 @@ def inspect(file,reference_check=True):
                 for other,d,v in graph[node]:
                     if other not in seen:heapq.heappush(queue,(distance+d,transitions+v,other))
             assert answer,(net,contact);paths[contact+' to '+r+'.2']=answer
-        if reference_check:assert not missing,(net,missing[:12])
+        if reference_check:
+            assert not missing,(net,missing[:12])
+            assert all(q['signal_layer_changes']<=2 for q in paths.values()),(net,paths)
         rows.append({'net':net,'signal_vias':len(vias),'copper_inventory_mm':round(sum(p.ToMM(t.GetLength()) for t in tracks),3),
                      'connector_to_termination':paths,'ground_reference_samples':counts,'skipped_via_launch_samples':skipped,'missing_ground_samples':len(missing)})
     zones=[{'net':z.GetNetname(),'layer':b.GetLayerName(z.GetLayer()),'regions':z.GetFilledPolysList(z.GetLayer()).OutlineCount()} for z in b.Zones() if z.GetLayer() in [p.In1_Cu,p.In2_Cu]]

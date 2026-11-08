@@ -4,20 +4,22 @@ The connector-end routing has been simplified while preserving the USB-C positio
 
 ## Connector and ESD launch
 
-U12 is aligned with the connector's data contacts. D+ joins its two reversible USB-C contacts directly on front copper; D− uses one short back-layer jumper for the unavoidable crossing. Each protection-channel output then makes one transition to the paired back-layer route. New bends are 45 degrees.
+U12 is aligned with the connector's data contacts. D+ joins its two reversible USB-C contacts on front copper, passes the protection pads and transitions to the back-layer pair. D− combines its reversible-contact crossing with the transition to B.Cu beside the protection input, then stays on B.Cu until the MCU resistor. Every connector-contact-to-MCU path now uses **two signal vias**, with no vias after the resistors. There are **five physical data vias** overall: two on D+ and three shared across the two D− branches. New bends are 45 degrees.
 
 | Saved-board measurement | Before | Current |
 | --- | ---: | ---: |
 | D+ signal vias | 5 | **2** |
-| D− signal vias | 5 | **4** |
+| D− signal vias, both connector branches | 5 | **3** |
 | Total data-net copper inventory, D+ | 31.242 mm | **28.804 mm** |
-| Total data-net copper inventory, D− | 30.562 mm | **30.052 mm** |
+| Total data-net copper inventory, D− | 30.562 mm | **34.133 mm** |
 | J18.A6 → R7.2 copper / layer changes | 29.487 mm / 4 | **26.949 mm / 2** |
 | J18.B6 → R7.2 copper / layer changes | 28.487 mm / 4 | **26.183 mm / 2** |
-| J18.A7 → R8.2 copper / layer changes | 29.407 mm / 4 | **28.897 mm / 4** |
+| J18.A7 → R8.2 copper / layer changes | 29.407 mm / 4 | **28.458 mm / 2** |
 | J18.B7 → R8.2 copper / layer changes | 28.407 mm / 4 | **27.897 mm / 2** |
 
-Copper inventory includes branches. Endpoint measurements follow the shortest connected PCB route and count layer changes separately; they exclude via-barrel length, packages and cable contacts. They are not propagation-delay estimates. The D− crossover accounts for the two remaining extra vias; no length-matching meander was added to compensate this short full-speed launch.
+Copper inventory includes branches. Endpoint measurements follow the shortest connected PCB route and count layer changes separately; they exclude via-barrel length, packages and cable contacts. They are not propagation-delay estimates. The two D− connector branches each have an entry via and share the MCU-side exit via; neither path traverses all three vias. D− copper inventory increases because the nearby ESD connection is now a branch, although each connector-to-resistor path is shorter than the original. No length-matching meander was added for this short full-speed launch.
+
+The D− junction-to-U12 pin-1 pad-center connection is **1.013 mm**, with a 0.30 mm wide trace; the gap between the via land and pad edge is 0.125 mm. Pin 6 remains tied to pin 1 by a short trace under U12. This is a short shunt connection rather than a flow-through output at pin 6, a deliberate tradeoff to remove the additional layer transition. Its ESD performance is not established by DRC and needs prototype testing. D+ retains the flow-through geometry.
 
 The front-layer connector/ESD tracks now have a **9.3 × 3.6 mm local In1 ground region** directly underneath, tied to the continuous In2 ground plane through nearby ground vias. The five surrounding supply regions each remain connected. The main pair stays on B.Cu over In2 ground; B.Cu coplanar ground remains excluded from this corridor. MCU fanout is unchanged. Short launches and component pads are not uniform controlled-impedance transmission lines.
 
@@ -45,7 +47,7 @@ The uniform back-layer pair remains **0.26 mm wide with a 0.15 mm edge gap**. Fo
 
 Varying dielectric height from 0.19 to 0.23 mm and Er from 4.2 to 4.6 gives approximately 84.9–94.7 Ω with unchanged copper. This is a sensitivity example, not a fabrication tolerance or field-solver result. Mask, copper shape, connector/ESD loading, launches and vias are omitted. The short front-layer launch does not inherit this impedance estimate.
 
-`scripts/check_usb_launch.py` samples the center and both trace edges every 0.05 mm: **3,000 points** across the connector-side F.Cu routes and all USB B.Cu routes have adjacent-layer ground underneath. Samples within 0.6 mm of either data net's signal vias are counted separately because of their antipads. The MCU-side front fanout is outside this reference check. Each inner supply region, the new local ground region and In2 ground remains one connected region.
+`scripts/check_usb_launch.py` samples the center and both trace edges every 0.05 mm: **3,261 points** across the connector-side F.Cu routes and all USB B.Cu routes have adjacent-layer ground underneath. Samples within 0.6 mm of either data net's signal vias are counted separately because of their antipads. The MCU-side front fanout is outside this reference check. The checker also enforces at most two layer changes on each of the four connector-contact paths. Each inner supply region, the new local ground region and In2 ground remains one connected region.
 
 Native DRC, connectivity and schematic parity report zero findings. The schematic and ERC result are unchanged. Native comparison verifies that only U12/C66 moved; all pad nets, the connector position, MCU decouplers, unrelated signal routes, board outline and project rules are preserved. All 35 direct capacitor-to-pin supply paths and all 48 explicit capacitor ground returns remain present.
 

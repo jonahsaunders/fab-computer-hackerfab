@@ -24,12 +24,12 @@
       },
       {
         "net": "/USB_D-",
-        "signal_vias": 4,
-        "copper_inventory_mm": 30.052,
+        "signal_vias": 3,
+        "copper_inventory_mm": 34.133,
         "connector_to_termination": {
           "A7 to R8.2": {
-            "copper_mm": 28.897,
-            "signal_layer_changes": 4
+            "copper_mm": 28.458,
+            "signal_layer_changes": 2
           },
           "B7 to R8.2": {
             "copper_mm": 27.897,
@@ -37,10 +37,10 @@
           }
         },
         "ground_reference_samples": {
-          "F.Cu": 345,
-          "B.Cu": 1179
+          "F.Cu": 312,
+          "B.Cu": 1473
         },
-        "skipped_via_launch_samples": 101,
+        "skipped_via_launch_samples": 96,
         "missing_ground_samples": 0
       }
     ],

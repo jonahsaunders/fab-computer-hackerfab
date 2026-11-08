@@ -26,7 +26,7 @@ Four-way-junction checking is enabled. The only ignored PCB check is the existin
 
 The native assembled views now contain motion in host J1 and the actual encoder card in J2. Both mating DIN models are visible and the component bodies show no apparent collision. Sensor headers are on the shallow card's exposed edge, and USB-C opens sideways from the motion card. These are nominal model placements: seating tolerance, cable housings, insertion access and cable bend radii require physical checks.
 
-The subsequent USB launch cleanup moves only U12 and C66, removes four of ten data vias, and adds a local In1 ground reference beneath the connector/ESD traces. All pad nets, schematics, MCU decouplers, connector placement, outline and project rules remain unchanged. Three thousand sampled trace-center/edge points have adjacent ground outside the declared signal-via antipad exclusions. Each inner copper region remains connected. DRC, unconnected and parity counts remain zero; see the [USB measurements](usb-routing-review.md).
+The subsequent USB launch cleanup moves only U12 and C66, reduces ten physical data vias to five, with two layer changes on every connector-to-MCU path, and adds a local In1 ground reference beneath the connector/ESD traces. All pad nets, schematics, MCU decouplers, connector placement, outline and project rules remain unchanged. A total of 3,261 sampled trace-center/edge points have adjacent ground outside the declared signal-via antipad exclusions. Each inner copper region remains connected. DRC, unconnected and parity counts remain zero; see the [USB measurements](usb-routing-review.md).
 
 ## Remaining validation
 
