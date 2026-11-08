@@ -19,12 +19,14 @@ Four-way-junction checking is enabled. The only ignored PCB check is the existin
 - The six SPI0 contacts match across both cards and all three host slots. The five 33 Ω source resistors and new GPIO44/45/46 chip selects match the schematic, board and configuration header. Host R32–R37 connect these signals to GPIO16–21: firmware must keep them inputs with no pulls.
 - All three encoder PH6 pin orders match the retained upstream splitter. The old PH8 cable and motion J6 are removed. The established backplane contact assignments are retained.
 - All 35 measured direct capacitor-to-served-pin supply paths remain on front copper; all 48 capacitor grounds retain explicit local via returns and solid pour settings. The USB source stubs remain 2.652/0.987 mm without vias.
-- Native comparison preserves the motion outline, the position/orientation of all retained components except slow supply-sense filter C4, and every retained track's net assignment. MCU decouplers are unmoved. C24's plane-feed via changes sides; its direct pin connection is retained.
+- The slot-card revision preserves the motion outline, the position/orientation of all retained components except slow supply-sense filter C4, and every retained track's net assignment. MCU decouplers are unmoved. C24's plane-feed via changes sides; its direct pin connection is retained.
 - Every inner power region and the motion In2 ground plane remains one connected filled region. The gate buffer remains on unfused backplane 5 V while tool loads remain fused.
 - Each active card has only two 0.8 mm SMD rail probes and two nearby ground pads, no drill or paste. Ground centers are within 2 mm. Probe pads are excluded from BOM and placement files.
 - All 128 fitted component instances across the two active boards have local or embedded model references. The DIN model path was shortened to avoid a Windows path-length rendering failure; its geometry and transforms are unchanged.
 
 The native assembled views now contain motion in host J1 and the actual encoder card in J2. Both mating DIN models are visible and the component bodies show no apparent collision. Sensor headers are on the shallow card's exposed edge, and USB-C opens sideways from the motion card. These are nominal model placements: seating tolerance, cable housings, insertion access and cable bend radii require physical checks.
+
+The subsequent USB launch cleanup moves only U12 and C66, removes four of ten data vias, and adds a local In1 ground reference beneath the connector/ESD traces. All pad nets, schematics, MCU decouplers, connector placement, outline and project rules remain unchanged. Three thousand sampled trace-center/edge points have adjacent ground outside the declared signal-via antipad exclusions. Each inner copper region remains connected. DRC, unconnected and parity counts remain zero; see the [USB measurements](usb-routing-review.md).
 
 ## Remaining validation
 
@@ -51,6 +53,7 @@ python scripts/check_decoupling.py
 python scripts/check_capacitor_returns.py
 python scripts/check_power_domains.py
 python scripts/check_usb_termination.py
+python scripts/check_usb_launch.py
 ```
 
 Re-export SVGs from current schematics before auditing edited pages. The root repository checker checks host libraries and links; it does not replace these daughtercard checks. The original 36 × 36 mm splitter is retained only as a historical reference.

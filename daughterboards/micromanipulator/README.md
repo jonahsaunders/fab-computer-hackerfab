@@ -19,7 +19,7 @@ The three PH6 sensor ports preserve their original pin order. The old PH8 cable 
 
 ## Review status
 
-Both active boards pass native ERC, DRC, connectivity and schematic parity; all nine schematic pages pass the geometric text/wire audit. The 35 checked direct decoupling paths and all 48 local capacitor ground returns on the motion card remain intact. See [validation](docs/validation.md), [routing](docs/layout-front.svg), [power plane](docs/power-plane.svg), [decoupling](docs/decoupling-review.md), and [reverse assembly view](docs/host-adjacent-back.png).
+Both active boards pass native ERC, DRC, connectivity and schematic parity; all nine schematic pages pass the geometric text/wire audit. The 35 checked direct decoupling paths and all 48 local capacitor ground returns on the motion card remain intact. USB routing now uses six data vias with a local ground reference beneath its connector/ESD launch; see the [USB review](docs/usb-routing-review.md). See [validation](docs/validation.md), [routing](docs/layout-front.svg), [power plane](docs/power-plane.svg), [decoupling](docs/decoupling-review.md), and [reverse assembly view](docs/host-adjacent-back.png).
 
 These are development designs. The assembly uses nominal mating-model placement; physical seating, plugs and cable access need verification. Begin encoder SPI at 1 MHz and validate the actual harness before using the original 8 MHz rate. Firmware consolidation is outstanding; configuration headers are included, not binaries.
 
