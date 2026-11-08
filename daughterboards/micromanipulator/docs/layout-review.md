@@ -26,13 +26,15 @@ The principal USB connector-to-series-resistor pair runs on B.Cu with 0.26 mm wi
 
 ## Assembly and access
 
-All 31 footprint types are copied into project-local libraries without changing library names. All 116 placed components have local or embedded models. KiCad standard STEP models are used where available. RP2350B, DRV8837C and TB6612FNG have clearly identified nominal VRML models. The three axis drivers use a project-local Toshiba footprint with corrected body/courtyard geometry; their original pads and copper are preserved. USB-C uses the detailed Nabu Casa Yellow / ai03 STEP model, aligned to the existing HRO footprint with its opening facing off the left card edge. These models do not substitute for manufacturer tolerance drawings.
+All 32 daughterboard footprint types are copied into project-local libraries without changing library names. All 116 fitted components have local or embedded models; the four bare probe pads have no body models. KiCad standard STEP models are used where available. RP2350B, DRV8837C and TB6612FNG have clearly identified nominal VRML models. The three axis drivers use a project-local Toshiba footprint with corrected body/courtyard geometry; their original pads and copper are preserved. USB-C uses the detailed Nabu Casa Yellow / ai03 STEP model, aligned to the existing HRO footprint with its opening facing off the left card edge. These models do not substitute for manufacturer tolerance drawings.
 
 The USB connector opens off the left card edge. JST PH and pin-header harnesses mate above the component face; the DIN plug faces the insertion edge. The native 3D view shows these directions and no apparent body collisions. Two populated cards were rendered in the actual host J1/J2 slots with no apparent body interference. Cable bend space and exact seating/retention still require the actual harness and hardware.
 
 The [connector review](connector-review.md) specifies WingTAT 9001-11961C00A for J1 and exact JST parts for all nine PH headers. Their hole patterns match manufacturer drawings. The saved host PCB has 26 mm slot pitch; J1/J2 carry the required UART and I²C interface, while J3 lacks UART. The card uses the WingTAT-specific STEP extracted from the host library; all 96 tail centers match the saved footprint. No connector placement or pinout changes accompany these selections.
 
-Visible board labels use at least 1.0 mm text height and 0.15 mm stroke. The eleven thermal vias inside soldered exposed pads are explicitly marked **filled and copper-capped**; ordinary stitching vias are tented. Confirm that process and the QFN/WSON stencil apertures with the assembler. [JLCPCB capabilities](https://jlcpcb.com/capabilities/Capabilities).
+The added pin/probe legends use 0.8 mm text and 0.12 mm strokes; the existing larger labels remain. The back face carries pad-aligned connector legends and a DIN contact table. Front silkscreen reuses the host's FAB/HackerFab vector artwork. The eleven thermal vias inside soldered exposed pads are explicitly marked **filled and copper-capped**; ordinary stitching vias are tented. Confirm that process and the QFN/WSON stencil apertures with the assembler. [JLCPCB capabilities](https://jlcpcb.com/capabilities/Capabilities).
+
+Only 5 V and 3.3 V have added rail probes, each with an adjacent ground pad. All four are 0.8 mm front-surface copper spots without drills or paste apertures. See the [probe and splitter review](probe-and-label-review.md). The daughterboard outline and original routing remain unchanged.
 
 ## Outstanding engineering checks
 

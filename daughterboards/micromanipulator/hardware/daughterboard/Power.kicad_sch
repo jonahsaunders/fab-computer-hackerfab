@@ -1301,6 +1301,93 @@
             (effects
               (font
                 (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "FabNano:ProbePad"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0.762)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom no)
+      (on_board yes)
+      (in_pos_files no)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "TP"
+        (at 0 6.858 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "TestPoint"
+        (at 0 5.08 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" "FabNano:TestPoint_Pad_D0.8mm"
+        (at 5.08 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 5.08 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "test point"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "test point tp"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "TestPoint_Pad_D0.8mm"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "ProbePad_0_1"
+        (circle
+          (center 0 3.302)
+          (radius 0.762)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "ProbePad_1_1"
+        (pin passive line
+          (at 0 0 90)
+          (length 2.54)
+          (name "1"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27))))))
       (embedded_fonts no)))
   (symbol
     (lib_id "FabNano:AP2112M-3.3TRG1")
@@ -1623,7 +1710,7 @@
   (wire
     (pts
       (xy 83.82 38.1)
-      (xy 132.08 38.1))
+      (xy 119.38 38.1))
     (stroke
       (width 0)
       (type default))
@@ -1676,7 +1763,7 @@
   (wire
     (pts
       (xy 35.56 58.42)
-      (xy 63.5 58.42))
+      (xy 55.88 58.42))
     (stroke
       (width 0)
       (type default))
@@ -1692,7 +1779,7 @@
   (wire
     (pts
       (xy 106.68 58.42)
-      (xy 132.08 58.42))
+      (xy 119.38 58.42))
     (stroke
       (width 0)
       (type default))
@@ -3203,4 +3290,268 @@
     (at 63.5 45.72)
     (diameter 0)
     (color 0 0 0 0)
-    (uuid "cb16fc9c-e01f-58c2-8b34-9b26ee256fcd")))
+    (uuid "cb16fc9c-e01f-58c2-8b34-9b26ee256fcd"))
+  (symbol
+    (lib_id "FabNano:ProbePad")
+    (at 55.88 30.48 0)
+    (unit 1)
+    (exclude_from_sim yes)
+    (in_bom no)
+    (on_board yes)
+    (in_pos_files no)
+    (dnp no)
+    (uuid "14af680a-ad8b-5113-ab33-8ecde95472aa")
+    (property "Reference" "TP1"
+      (at 60.96 27.178 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "5V"
+      (at 55.88 30.48 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Footprint" "FabNano:TestPoint_Pad_D0.8mm"
+      (at 55.88 30.48 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 55.88 30.48 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Description" "0.8 mm exposed copper probe pad; no drill or paste"
+      (at 55.88 30.48 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "98ded94c-bc50-5c6f-8170-5325b2480f11"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/1d3a9153-32df-5d7c-aec7-6533e1a741b5"
+          (reference "TP1")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 55.88 30.48)
+      (xy 55.88 33.02))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "7de55c96-d92d-5ec1-95b0-fd90bde478a6"))
+  (junction
+    (at 55.88 33.02)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "1f9a8fc2-e3fb-5b62-be07-0143ece9c25a"))
+  (symbol
+    (lib_id "FabNano:ProbePad")
+    (at 119.38 35.56 0)
+    (unit 1)
+    (exclude_from_sim yes)
+    (in_bom no)
+    (on_board yes)
+    (in_pos_files no)
+    (dnp no)
+    (uuid "8eb15f45-55e4-51d6-80f8-41689992a7d6")
+    (property "Reference" "TP2"
+      (at 124.46 32.258 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "3V3"
+      (at 119.38 35.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Footprint" "FabNano:TestPoint_Pad_D0.8mm"
+      (at 119.38 35.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 119.38 35.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Description" "0.8 mm exposed copper probe pad; no drill or paste"
+      (at 119.38 35.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "2547c5c0-7448-5acd-bf6a-fbc2f61dedcd"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/1d3a9153-32df-5d7c-aec7-6533e1a741b5"
+          (reference "TP2")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 119.38 38.1)
+      (xy 132.08 38.1))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "32c29048-386c-53f6-9001-d1e046ceddff"))
+  (wire
+    (pts
+      (xy 119.38 35.56)
+      (xy 119.38 38.1))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "a37caaa3-7559-556e-9ac0-bddbfcc23a79"))
+  (junction
+    (at 119.38 38.1)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "2f359d62-264f-502c-a253-c101bc6ec003"))
+  (symbol
+    (lib_id "FabNano:ProbePad")
+    (at 55.88 55.88 0)
+    (unit 1)
+    (exclude_from_sim yes)
+    (in_bom no)
+    (on_board yes)
+    (in_pos_files no)
+    (dnp no)
+    (uuid "7a3798f7-f99d-5f74-bea2-ad745c8cf017")
+    (property "Reference" "TP3"
+      (at 50.8 52.578 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify right)))
+    (property "Value" "GND"
+      (at 55.88 55.88 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Footprint" "FabNano:TestPoint_Pad_D0.8mm"
+      (at 55.88 55.88 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 55.88 55.88 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Description" "0.8 mm exposed copper probe pad; no drill or paste"
+      (at 55.88 55.88 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "26f08ac2-a8bb-5cf9-b0dd-651731f6f47b"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/1d3a9153-32df-5d7c-aec7-6533e1a741b5"
+          (reference "TP3")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 55.88 58.42)
+      (xy 63.5 58.42))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "ecb6c1ca-12ba-5606-a3d0-23f96d9d61bc"))
+  (wire
+    (pts
+      (xy 55.88 55.88)
+      (xy 55.88 58.42))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "1ab56b23-3c08-5938-b817-a3c6227391fb"))
+  (junction
+    (at 55.88 58.42)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "da2f6447-7ec2-567c-b479-e6a750b025e1"))
+  (symbol
+    (lib_id "FabNano:ProbePad")
+    (at 119.38 55.88 0)
+    (unit 1)
+    (exclude_from_sim yes)
+    (in_bom no)
+    (on_board yes)
+    (in_pos_files no)
+    (dnp no)
+    (uuid "995c2523-6aca-52b3-a59e-c40c09313787")
+    (property "Reference" "TP4"
+      (at 124.46 52.578 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "GND"
+      (at 119.38 55.88 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Footprint" "FabNano:TestPoint_Pad_D0.8mm"
+      (at 119.38 55.88 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 119.38 55.88 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Description" "0.8 mm exposed copper probe pad; no drill or paste"
+      (at 119.38 55.88 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "cc30f4db-c08b-5dd6-9782-3365b1a67f90"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/1d3a9153-32df-5d7c-aec7-6533e1a741b5"
+          (reference "TP4")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 119.38 58.42)
+      (xy 132.08 58.42))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "cbf1d1cf-f365-56fa-b162-b3b51c1006e1"))
+  (wire
+    (pts
+      (xy 119.38 55.88)
+      (xy 119.38 58.42))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "df7d2492-8759-5cb0-ada0-dcd8267a6eba"))
+  (junction
+    (at 119.38 58.42)
+    (diameter 0)
+    (color 0 0 0 0)
+    (uuid "9cd84e42-8c1f-5380-9900-67afaf8aeeb0")))

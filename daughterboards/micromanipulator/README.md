@@ -8,12 +8,14 @@ Bare-component adaptation of [MicroManipulatorStepper](https://github.com/hacker
 
 Open [hardware/daughterboard/FabNanoDaughterboard.kicad_pro](hardware/daughterboard/FabNanoDaughterboard.kicad_pro) in **KiCad 10**. The project contains the seven-sheet schematic and the routed native PCB layout.
 
-Keep this entire folder together. All 31 used footprint types and all 116 placed models resolve locally or through embedded data. Library names are preserved. Standard STEP models are bundled; RP2350B, DRV8837C and TB6612FNG use explicitly approximate models matched to their nominal packages. USB-C uses a detailed community STEP model for HRO TYPE-C-31-M-12. The DIN plug uses the WingTAT-specific STEP supplied with the host library. See the [model inventory](docs/model-inventory.csv). Install KiCad's standard symbol libraries for editing standard symbols.
+Keep this entire folder together. All 32 daughterboard footprint types and all 116 component models resolve locally or through embedded data. Four bare copper probe pads need no body models or purchased parts. Library names are preserved. Standard STEP models are bundled; RP2350B, DRV8837C and TB6612FNG use explicitly approximate models matched to their nominal packages. USB-C uses a detailed community STEP model for HRO TYPE-C-31-M-12. The DIN plug uses the WingTAT-specific STEP supplied with the host library. See the [model inventory](docs/model-inventory.csv). Install KiCad's standard symbol libraries for editing standard symbols.
 
 | File or folder | Contents |
 | --- | --- |
 | [Root schematic](hardware/daughterboard/FabNanoDaughterboard.kicad_sch) | Only external connectors, ground symbols and six hierarchical subsheets |
 | [PCB layout](hardware/daughterboard/FabNanoDaughterboard.kicad_pcb) | Routed 100 × 60 mm, four-layer RP2350B layout |
+| [Rail probes and pin legends](docs/probe-and-label-review.md) | 0.8 mm surface pads for 5 V / 3.3 V and ground; logo and back-face connector labels |
+| [Original encoder splitter](hardware/encoder-splitter/) | Separate passive PH8-to-three-PH6 board; original geometry and harness pinout |
 | [Front routing preview](docs/layout-front.svg) and [back routing](docs/layout-back.svg) | Viewed from the top; copper pours hidden to expose the routes |
 | [3D view](docs/board-3d.png) | Actual saved board with bundled component models |
 | [Power domains](docs/power-domains.svg), [power plane](docs/power-plane.svg) and [ground plane](docs/ground-plane.svg) | Supply colors and filled native inner copper layers |
@@ -47,7 +49,7 @@ The schematic has USB-C and all external connectors on its top level. USB protec
 
 ## Checks
 
-The current schematic passes KiCad 10.0.6 ERC with four-way-junction checking enabled. The board matches the current 116-component schematic with zero schematic-parity findings. All seven rendered pages passed the text/wire, text/text, wire-crossing and overlapping-segment checks. A separate hierarchy check enforces the connector-only top page. See the [validation notes](docs/validation.md) for the current checks.
+The current schematic passes KiCad 10.0.6 ERC with four-way-junction checking enabled. The board's 116 fitted components and four bare probe pads match the schematic with zero schematic-parity findings. All seven rendered pages passed the text/wire, text/text, wire-crossing and overlapping-segment checks. A separate hierarchy check enforces the connector-only top page. The included original splitter also passes ERC and DRC/parity. See the [validation notes](docs/validation.md) for the current checks.
 
 Local machine-readable reports belong in the ignored `build/` folder. To repeat the schematic visual audit from this folder:
 

@@ -1,4 +1,4 @@
-# Design validation — 2026-11-07
+# Design validation — 2026-11-08
 
 This is a development snapshot, not a manufacturing release. The seven-sheet schematic and 100 × 60 mm PCB both use one RP2350B. The root schematic contains only the 14 external connectors, a ground symbol and six hierarchical blocks. The fixed DIN96 interface and encoder harness pin maps are retained.
 
@@ -10,16 +10,16 @@ This is a development snapshot, not a manufacturing release. The seven-sheet sch
 | PCB DRC violations, apart from connectivity | **0** |
 | PCB unconnected items | **0** |
 | Schematic/PCB parity | **0 issues** |
-| Components / copper layers | **116 / 4** |
+| Fitted components + bare probe pads / copper layers | **116 + 4 / 4** |
 | Host interface / connector footprint audit | **288** host contacts compared; **9** PH and **3** pin-header footprints checked; full interface in host J1/J2 |
 
-The layer order is front signal / inner power / inner ground / back signal. The board contains 1533 manually routed track segments/vias, including 57 added ground-stitching vias. Eight filled zones include the inner power regions, a single connected In2 ground region and grounded outer copper. No autorouter was used. Courtyard, via-endpoint, footprint-filter and pad-type checks are enabled. A native-board comparison confirms all 14 connectors retain their placement, orientation, pad geometry and electrical connections. The two USB CC nets have descriptive names after the hierarchy change described below.
+The layer order is front signal / inner power / inner ground / back signal. The board contains 1542 manually routed track segments/vias, including 57 ground-stitching vias from the previous revision and three new probe-connection vias. Eight filled zones include the inner power regions, a single connected In2 ground region and grounded outer copper. No autorouter was used. Courtyard, via-endpoint, footprint-filter and pad-type checks are enabled. A native-board comparison confirms all 14 connectors retain their placement, orientation, pad geometry and electrical connections. The two USB CC nets have descriptive names after the hierarchy change described below.
 
 USB support components U12, C66 and R48–R51 now reside in USBInterface. A comparison of native KiCad netlists before and after the move proves that all 145 electrical pin groups are identical. Only `Net-(J18-CC1)` and `Net-(J18-CC2)` were renamed to `/USB_CC1` and `/USB_CC2`. At the hierarchy-only revision, a full parsed-board comparison allowed only those names and the six updated schematic paths and proved unchanged PCB geometry. The later USB placement changes are checked separately below. The root and USB child were also inspected as rendered pages.
 
 All 35 checked local supply/bypass connections have a continuous front-copper path to the served pin. All 48 capacitor ground pads also have explicit front-copper paths to ground vias; their pad-to-pour settings use solid copper. The revised measurements include both supply traces and dedicated ground returns. See the [decoupling review](decoupling-review.md) and [measured lengths](decoupling-paths.csv). The ground-return and stackup decisions are recorded in the [layout review](layout-review.md).
 
-All 31 footprint types resolve from project-local libraries. All 116 component instances have models: 115 project-relative files and one embedded upstream STEP model. Six component instances use newly made nominal models (RP2350B, two DRV8837C devices and three TB6612FNG devices); these are identified in the [inventory](model-inventory.csv). USB-C now uses a detailed community STEP model. Its twelve distinct contact positions and four shell-tab locations were checked against the footprint, and its model replacement preserved the footprint geometry and connector position. The native 3D rendering was inspected for component placement and connector access. All 116 procurement entries and package reviews are recorded. Fabricated USB impedance, host mating tolerances, actual load/thermal performance and firmware consolidation remain open. These checks do not establish electrical performance or manufacturing readiness.
+All 32 daughterboard footprint types resolve from project-local libraries. All 116 component instances have models: 115 project-relative files and one embedded upstream STEP model. Six component instances use newly made nominal models (RP2350B, two DRV8837C devices and three TB6612FNG devices); these are identified in the [inventory](model-inventory.csv). USB-C now uses a detailed community STEP model. Its twelve distinct contact positions and four shell-tab locations were checked against the footprint, and its model replacement preserved the footprint geometry and connector position. The native 3D rendering was inspected for component placement and connector access. All 116 procurement entries and package reviews are recorded. Fabricated USB impedance, host mating tolerances, actual load/thermal performance and firmware consolidation remain open. These checks do not establish electrical performance or manufacturing readiness.
 
 The [USB routing revision](usb-routing-review.md) reduces the resistor-to-MCU stubs from 14.407/15.731 mm to 2.652/0.987 mm, with no signal vias after the resistors. Native netlist comparison verifies that only the four equivalent U12 ESD-channel pins changed net membership. All external interfaces are preserved. Both 0201 resistor footprints use manufacturer-recommended lands and bundled models. Three extra ground-transfer vias support the USB launches.
 
@@ -39,6 +39,10 @@ The DIN model now comes from the host library's WingTAT plug footprint. All 96 s
 
 The right-side power cleanup moves long 3.3 V and unfused 5 V feeds onto the outer signal layers. The inner-layer length of these feeds within x >= 123.5 mm falls from 90.053 to 6.212 mm. All component/pad geometry, net assignments, other-net tracks, capacitor ground returns and project rules are unchanged. All five supply zones and the ground plane each have one connected filled region. DRC, connectivity, parity, host-interface, supply-domain and decoupling checks pass on the saved result. New single-card and adjacent-card assembly views come from the native boards; the root README now presents both designs. See the [power map](power-domains.svg) and [connector review](connector-review.md).
 
+The rail-probe revision adds four 0.8 mm SMD pads (5 V, 3.3 V and two grounds), six short tracks and three vias. Native comparison preserves every original component, pad and track, the 100 × 60 mm outline and project rules. All five supply regions and the inner ground region remain connected. The Power sheet adds direct T branches with no four-way junctions or visual-audit findings. The host logo artwork and back-face pin legends pass the unchanged silkscreen rules. The 32 footprint types include the new model-free copper pad; the existing 116-component BOM and model inventory are unchanged.
+
+The original upstream passive 8-to-three-6-pin SPI splitter is included as a separate project with local footprints/models and explicit power/no-connect annotations. A native comparison preserves its connectors, pads, tracks, filled zone geometry and outline. Its ERC, DRC, connectivity and schematic parity all pass. `scripts/check_probe_access.py` verifies all four probe pads and the complete daughterboard-to-splitter pin mapping. See the [revision review](probe-and-label-review.md).
+
 ## Reproduce
 
 Run from this folder, with KiCad 10 available. Create `build/` first.
@@ -54,6 +58,7 @@ python scripts/check_power_domains.py
 python scripts/check_usb_termination.py
 python scripts/check_decoupling.py
 python scripts/check_capacitor_returns.py
+python scripts/check_probe_access.py
 ```
 
 Inspect the DRC report: its default exit status does not fail for findings. The repository's root checker validates the host backplane; it does not replace these daughterboard checks.

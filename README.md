@@ -14,6 +14,8 @@ A reusable power and control backplane with plug-in boards for HackerFab tools.
 | Shared power, RP2350B master and three DIN96 slots. Intended 24 V input; regulated 12 V and 5 V distribution. | Bare RP2350B, XYZ motion, rotation, heater and vacuum. 100 × 60 mm, four layers, USB-C and the original encoder interfaces. |
 | [KiCad project](hardware/backplane/HackerfabBackplane.kicad_pro) · [Schematics](docs/schematics/README.md) | [KiCad project](daughterboards/micromanipulator/hardware/daughterboard/FabNanoDaughterboard.kicad_pro) · [Schematic PDF](daughterboards/micromanipulator/docs/schematic-review.pdf) · [Board details](daughterboards/micromanipulator/README.md) |
 
+The micromanipulator also includes the original [8-pin-to-three-6-pin encoder splitter](daughterboards/micromanipulator/hardware/encoder-splitter/), plus [rail probes and connector pin legends](daughterboards/micromanipulator/docs/probe-and-label-review.md).
+
 ## Open and review
 
 Clone the entire repository and open either project above in **KiCad 10**. Keep its local libraries with it; standard KiCad symbol libraries are also required.
