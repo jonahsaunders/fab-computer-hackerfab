@@ -62,6 +62,8 @@ def main():
                 else:
                     expected = {'GND':'GND','+12V_BP':'+12V','+5V_BP':'+5V',
                                 '/HOST_SCL':'/I2C0_SCL','/HOST_SDA':'/I2C0_SDA',
+                                '/ENC1_CS':'/SPI0_CS1','/ENC2_CS':'/SPI0_CS2','/ENC3_CS':'/SPI0_CS3',
+                                '/ENC_MOSI':'/SPI0_MOSI','/ENC_MISO':'/SPI0_MISO','/ENC_SCK':'/SPI0_CLK',
                                 '/HOST_TX':'/UART_TX' if ref=='J1' else '/UART2_TX',
                                 '/HOST_RX':'/UART_RX' if ref=='J1' else '/UART2_RX'}[an]
                     if ref=='J3' and an in ('/HOST_TX','/HOST_RX'):
@@ -86,7 +88,7 @@ def main():
     mount=sorted(local(cf['J1'],q) for q in cf['J1'].Pads() if not q.GetNumber())
     assert mount == [(-5.08,-2.54),(83.82,-2.54)]
     assert all(2.7 <= mm(q.GetDrillSize().x) <= 2.9 for q in cf['J1'].Pads() if not q.GetNumber())
-    ph={'J3':4,'J4':4,'J5':4,'J6':8,'J13':3,'J14':4,'J15':5,'J16':2,'J17':2}
+    ph={'J3':4,'J4':4,'J5':4,'J13':3,'J14':4,'J15':5,'J16':2,'J17':2}
     for ref,n in ph.items():
         q=pads(cf[ref]); assert set(q)=={str(i) for i in range(1,n+1)}
         for i in range(1,n):

@@ -1,13 +1,12 @@
 # Connector selection and host-interface review
 
-All fourteen external connectors now have exact ordering parts in the schematic and PCB. This revision selects the thirteen DIN/JST/pin headers; J18 retains its previously selected USB-C part. It changes procurement fields only: all pads, nets, routing, placement, models and visible schematic content are unchanged, verified by parsed-file comparison.
+The current motion card has thirteen external connectors. The old PH8 J6 is removed; the new slot card has a DIN96 plug and three original-pinout PH6 sensor headers. All parts have ordering codes; confirm current assembly inventory when ordering.
 
 | References | Manufacturer part | JLCPCB assembly catalog |
 | --- | --- | --- |
 | J1 | WingTAT 9001-11961C00A | [C5173361](https://jlcpcb.com/partdetail/WingTAT-900111961C00A/C5173361) |
 | J2 | XUNPU PH1.27-01-05PZD | [C41360740](https://jlcpcb.com/partdetail/XUNPU-PH1_27_0105PZD/C41360740) |
 | J3, J4, J5, J14 | JST B4B-PH-K-S(LF)(SN) | [C131334](https://jlcpcb.com/partdetail/B4B-PH-K-S%28LF%29%28SN%29/C131334) |
-| J6 | JST B8B-PH-K-S(LF)(SN) | [C157974](https://jlcpcb.com/partdetail/JST-B8B_PH_K_S_LF_SN/C157974) |
 | J12 | BOOMELE 2.54-1x6PStraight pin | [C37208](https://jlcpcb.com/partdetail/38187-2_54_1x6PStraightpin/C37208) |
 | J13 | JST B3B-PH-K-S(LF)(SN) | [C131339](https://jlcpcb.com/partdetail/B3B-PH-K-S%28LF%29%28SN%29/C131339) |
 | J15 | JST B5B-PH-K-S(LF)(SN) | [C157993](https://jlcpcb.com/partdetail/JST-B5B_PH_K_S_LF_SN/C157993) |
@@ -15,7 +14,7 @@ All fourteen external connectors now have exact ordering parts in the schematic 
 | J18 | HRO TYPE-C-31-M-12 | [C165948](https://jlcpcb.com/partdetail/HRO_TYPE-C-31-M-12/C165948) |
 | J19 | XUNPU PH1.27-01-04PZD | [C41360739](https://jlcpcb.com/partdetail/XUNPU-PH1_27_0104PZD/C41360739) |
 
-Catalog identity and assembly listings were checked on 2026-11-07. Inventory is order-dependent. The encoder harness connectors and pin assignments are retained.
+Motion catalog identities were checked on 2026-11-07. Splitter J1/J2/J3 use JST B6B-PH-K-S(LF)(SN), [C131342](https://www.lcsc.com/product-image/C131342.html), checked 2026-11-08. Its J4 uses the same WingTAT male plug. Inventory is order-dependent; the three sensor harness pin assignments are retained.
 
 ## DIN connector
 
@@ -31,14 +30,14 @@ Run it from the repository checkout with KiCad's Python. For a standalone daught
 
 - J1 and J2 provide both UART and I²C. Host TX reaches daughter GPIO29/RX; daughter GPIO28/TX reaches host RX. I²C reaches GPIO30/SDA and GPIO31/SCL.
 - Host J3 has no UART at A20/C20; it cannot provide the full current interface.
-- The card uses 12 contacts each for 12 V and 5 V, 36 grounds and four signals. Its other 32 contacts, including every 24 V position, remain unused.
+- The card uses 12 contacts each for 12 V and 5 V, 36 grounds and ten signals (UART, I²C and SPI0). Its other 26 contacts, including every 24 V position, remain unused.
 - Actual host slot pitch is 26 mm. This measurement alone does not verify populated-card or cable clearance.
 
 ## Populated host review
 
-The actual host J1/J2 positions and its embedded WingTAT socket models were combined with two exports of the populated daughterboard for a nominal assembly review. Both cards stand perpendicular to the host, with the component faces oriented alike. The reviewed views show no apparent component-body interference between these two cards. USB opens beyond the side edge; the PH connectors face the space between cards, near their perimeter, so their leads can turn toward the card edges.
+The actual host J1/J2 positions and its embedded WingTAT socket models were combined with exports of the motion card in J1 and the actual shallow encoder card in J2 for a nominal assembly review. Both cards stand perpendicular to the host, with the component faces oriented alike. The reviewed views show no apparent component-body interference between these two cards. USB opens beyond the side edge; the PH connectors face the space between cards, near their perimeter, so their leads can turn toward the card edges.
 
-The card model uses a 90-degree KiCad X rotation and nominal placement offset of (0, -2.01, 17.74) mm relative to each host row-A pin-1 origin. This aligns the plug contacts and seats the modeled nose near the socket flange plane. The transform is an engineering inference from the supplied models, not a specified seated-board dimension. Actual seating stop, retention, cable housings, cable bend radii, enclosure and other daughterboard designs still need a physical fit check. Two cards in these images demonstrate geometry only; their combined electrical load is not approved by the rendering.
+The card model uses a 90-degree KiCad X rotation and nominal placement offset of (0, -2.01, 17.74) mm relative to each host row-A pin-1 origin. This aligns the plug contacts and seats the modeled nose near the socket flange plane. The transform is an engineering inference from the supplied models, not a specified seated-board dimension. Actual seating stop, retention, cable housings, cable bend radii, enclosure and other daughterboard designs still need a physical fit check. These images demonstrate nominal geometry; they do not establish an approved electrical load or cable envelope.
 
 The single-card views below use host J1 and show both the component face and backplane electronics. Adjacent J1/J2 views show the 26 mm slot pitch. USB-C opens sideways beyond the card edge. The PH headers are top-entry relative to the daughterboard, so their mating plugs project into the inter-card space, not straight above the installed assembly. Perimeter placement lets the wires turn toward an edge; actual plug housings, insertion access and bend radii are not modeled. Allow physical access to the lower SWD and reset/boot area as well as the signal connectors.
 
@@ -54,10 +53,10 @@ Reproduce these views with KiCad's Python using `scripts/export_host_assembly.py
 
 ## JST PH footprints
 
-The nine PH headers have the [JST-recommended](https://www.jst-mfg.com/product/pdf/eng/ePH.pdf) 2.00 mm pitch and 0.75 mm drills within its 0.70–0.80 mm guideline. The nominal 1.6 mm board is within the specified board-thickness range. These top-entry connectors mate above the component face; matching housings are PHR-2/3/4/5/8 with contacts chosen for the actual wire gauge. JST's 2 A rating assumes AWG24 and is not a blanket rating for every harness or load. Final heater/pump load and cable specifications remain open.
+The eight motion-card PH headers and three encoder-card PH6 headers have the [JST-recommended](https://www.jst-mfg.com/product/pdf/eng/ePH.pdf) 2.00 mm pitch and 0.75 mm drills within its 0.70–0.80 mm guideline. The nominal 1.6 mm board is within the specified board-thickness range. These top-entry connectors mate above the component face; matching housings are PHR-2/3/4/5/6 with contacts chosen for the actual wire gauge. JST's 2 A rating assumes AWG24 and is not a blanket rating for every harness or load. Final heater/pump load and cable specifications remain open.
 
 ## Unshrouded headers
 
 J2 and J19 use XUNPU's [PH1.27-01-NPZD family](https://www.lcsc.com/datasheet/C41360740.pdf). Its recommended 1.27 mm pitch and 0.65 mm holes match the existing footprints. The 0.40 mm square pins extend 3.9 mm above the 1.0 mm insulator; the solder tails are 2.3 mm long. J12 uses BOOMELE's [2.54-1xNA-H2.5-L11.2 family](https://www.lcsc.com/datasheet/C37208.pdf), with the existing 2.54 mm pitch and 1.0 mm holes. Its 0.64 mm square pins extend 5.7 mm above the 2.5 mm insulator, with 3.0 mm solder tails. The manufacturer's drawing resolves the catalog description's inconsistent 6.0 mm mating-pin value.
 
-The header pitch/drill checks are included in `check_backplane_interface.py`. These pins mate above the component face, and all signal assignments remain unchanged. Their bundled KiCad models remain nominal library representations; use the dimensions above for exact cable and socket engagement. The two 1.27 mm headers are rated 1 A; J12 is rated 3 A, subject to the mating contact and wire limits. All three parts have JLCPCB wave-solder assembly listings. J18 retains its reviewed STEP model.
+The header pitch/drill checks are included in `check_backplane_interface.py`. These pins mate above the component face, and their signal assignments remain unchanged. The separate XYZ SPI interface now uses the existing backplane bus as described in the [bus review](backplane-encoder-bus.md). Their bundled KiCad models remain nominal library representations; use the dimensions above for exact cable and socket engagement. The two 1.27 mm headers are rated 1 A; J12 is rated 3 A, subject to the mating contact and wire limits. All three parts have JLCPCB wave-solder assembly listings. J18 retains its reviewed STEP model.

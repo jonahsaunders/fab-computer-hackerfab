@@ -1,11 +1,9 @@
 Reference,Value,Footprint,Manufacturer part number,Manufacturer,LCSC,Quantity,Procurement status
-C66,100nF 16V,Capacitor_SMD:C_0402_1005Metric,CL05B104KO5NNNC,Samsung Electro-Mechanics,C1525,1,JLCPCB catalog/package checked 2026-11-07; confirm current inventory
 J1,DIN96 / male right-angle,FabNano:DIN96_Male_Horizontal,9001-11961C00A,WingTAT,C5173361,1,Manufacturer hole pattern and JLCPCB assembly catalog checked 2026-11-07; confirm order inventory
 J2,SWD / RP2350,Connector_PinHeader_1.27mm:PinHeader_1x05_P1.27mm_Vertical,PH1.27-01-05PZD,XUNPU,C41360740,1,Manufacturer hole pattern and JLCPCB assembly catalog checked 2026-11-07; confirm order inventory
 J3,MOTOR 1,Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical,B4B-PH-K-S(LF)(SN),JST,C131334,1,Manufacturer hole pattern and JLCPCB assembly catalog checked 2026-11-07; confirm order inventory
 J4,MOTOR 2,Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical,B4B-PH-K-S(LF)(SN),JST,C131334,1,Manufacturer hole pattern and JLCPCB assembly catalog checked 2026-11-07; confirm order inventory
 J5,MOTOR 3,Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical,B4B-PH-K-S(LF)(SN),JST,C131334,1,Manufacturer hole pattern and JLCPCB assembly catalog checked 2026-11-07; confirm order inventory
-J6,MOTION ENCODERS,Connector_JST:JST_PH_B8B-PH-K_1x08_P2.00mm_Vertical,B8B-PH-K-S(LF)(SN),JST,C157974,1,Manufacturer hole pattern and JLCPCB assembly catalog checked 2026-11-07; confirm order inventory
 J12,ROTATION ENCODER,Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical,2.54-1x6PStraight pin,BOOMELE,C37208,1,Manufacturer hole pattern and JLCPCB assembly catalog checked 2026-11-07; confirm order inventory
 J13,ENDSTOP,Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical,B3B-PH-K-S(LF)(SN),JST,C131339,1,Manufacturer hole pattern and JLCPCB assembly catalog checked 2026-11-07; confirm order inventory
 J14,ROTATION MOTOR,Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical,B4B-PH-K-S(LF)(SN),JST,C131334,1,Manufacturer hole pattern and JLCPCB assembly catalog checked 2026-11-07; confirm order inventory
@@ -14,11 +12,6 @@ J16,VACUUM / 5 V,Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical,B2B-PH-K-S(
 J17,THERMAL CUTOFF,Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical,B2B-PH-K-S(LF)(SN),JST,C131337,1,Manufacturer hole pattern and JLCPCB assembly catalog checked 2026-11-07; confirm order inventory
 J18,USB-C / SERVICE,Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12,TYPE-C-31-M-12,HRO,C165948,1,"Exact part, package/model and JLCPCB catalog checked 2026-11-07; confirm inventory"
 J19,TOOL PWM,Connector_PinHeader_1.27mm:PinHeader_1x04_P1.27mm_Vertical,PH1.27-01-04PZD,XUNPU,C41360739,1,Manufacturer hole pattern and JLCPCB assembly catalog checked 2026-11-07; confirm order inventory
-R48,5.1kR 1%,Resistor_SMD:R_0603_1608Metric,0603WAF5101T5E,Uniroyal Electronics,C23186,1,Manufacturer dimensions/ratings and JLCPCB catalog checked 2026-11-07; confirm order inventory
-R49,5.1kR 1%,Resistor_SMD:R_0603_1608Metric,0603WAF5101T5E,Uniroyal Electronics,C23186,1,Manufacturer dimensions/ratings and JLCPCB catalog checked 2026-11-07; confirm order inventory
-R50,100kR 1%,Resistor_SMD:R_0603_1608Metric,0603WAF1003T5E,Uniroyal Electronics,C25803,1,Manufacturer dimensions/ratings and JLCPCB catalog checked 2026-11-07; confirm order inventory
-R51,150kR 1%,Resistor_SMD:R_0603_1608Metric,0603WAF1503T5E,Uniroyal Electronics,C22807,1,Manufacturer dimensions/ratings and JLCPCB catalog checked 2026-11-07; confirm order inventory
-U12,USBLC6-2SC6,Package_TO_SOT_SMD:SOT-23-6,USBLC6-2SC6,STMicroelectronics,C7519,1,"Exact part, package/model and JLCPCB catalog checked 2026-11-07; confirm inventory"
 C10,4.7uF 16V X5R,Capacitor_SMD:C_0603_1608Metric,CL10A475KO8NNNC,Samsung Electro-Mechanics,C19666,1,Samsung bias data and JLCPCB catalog/package checked 2026-11-07; confirm order inventory
 C11,4.7uF 6.3V X5R,FabNano:C_0402_RP2350_Regulator,GRM155R60J475ME47D,Murata,C82453,1,Exact existing part and JLCPCB code checked 2026-11-07; confirm inventory
 C12,4.7uF 6.3V X5R,FabNano:C_0402_RP2350_Regulator,GRM155R60J475ME47D,Murata,C82453,1,Exact existing part and JLCPCB code checked 2026-11-07; confirm inventory
@@ -76,13 +69,15 @@ R4,100R,Resistor_SMD:R_0603_1608Metric,0603WAF1000T5E,Uniroyal Electronics,C2277
 R5,0R,Resistor_SMD:R_0603_1608Metric,0603WAF0000T5E,Uniroyal Electronics,C21189,1,Manufacturer dimensions/ratings and JLCPCB catalog checked 2026-11-07; confirm order inventory
 R6,0R,Resistor_SMD:R_0603_1608Metric,0603WAF0000T5E,Uniroyal Electronics,C21189,1,Manufacturer dimensions/ratings and JLCPCB catalog checked 2026-11-07; confirm order inventory
 R9,1kR,Resistor_SMD:R_0603_1608Metric,0603WAF1001T5E,Uniroyal Electronics,C21190,1,Manufacturer dimensions/ratings and JLCPCB catalog checked 2026-11-07; confirm order inventory
-R22,10kR,Resistor_SMD:R_0603_1608Metric,0603WAF1002T5E,Uniroyal Electronics,C25804,1,Manufacturer dimensions/ratings and JLCPCB catalog checked 2026-11-07; confirm order inventory
-R23,10kR,Resistor_SMD:R_0603_1608Metric,0603WAF1002T5E,Uniroyal Electronics,C25804,1,Manufacturer dimensions/ratings and JLCPCB catalog checked 2026-11-07; confirm order inventory
-R24,10kR,Resistor_SMD:R_0603_1608Metric,0603WAF1002T5E,Uniroyal Electronics,C25804,1,Manufacturer dimensions/ratings and JLCPCB catalog checked 2026-11-07; confirm order inventory
 R34,10kR,Resistor_SMD:R_0603_1608Metric,0603WAF1002T5E,Uniroyal Electronics,C25804,1,Manufacturer dimensions/ratings and JLCPCB catalog checked 2026-11-07; confirm order inventory
 R35,10kR,Resistor_SMD:R_0603_1608Metric,0603WAF1002T5E,Uniroyal Electronics,C25804,1,Manufacturer dimensions/ratings and JLCPCB catalog checked 2026-11-07; confirm order inventory
 R36,1kR,Resistor_SMD:R_0603_1608Metric,0603WAF1001T5E,Uniroyal Electronics,C21190,1,Manufacturer dimensions/ratings and JLCPCB catalog checked 2026-11-07; confirm order inventory
 R47,1MR,Resistor_SMD:R_0603_1608Metric,0603WAF1004T5E,Uniroyal Electronics,C22935,1,Manufacturer dimensions/ratings and JLCPCB catalog checked 2026-11-07; confirm order inventory
+R52,33R,Resistor_SMD:R_0402_1005Metric,0402WGF330JTCE,Uniroyal Electronics,C25105,1,Catalog part identified; confirm assembly availability when ordering
+R53,33R,Resistor_SMD:R_0402_1005Metric,0402WGF330JTCE,Uniroyal Electronics,C25105,1,Catalog part identified; confirm assembly availability when ordering
+R54,33R,Resistor_SMD:R_0402_1005Metric,0402WGF330JTCE,Uniroyal Electronics,C25105,1,Catalog part identified; confirm assembly availability when ordering
+R55,33R,Resistor_SMD:R_0402_1005Metric,0402WGF330JTCE,Uniroyal Electronics,C25105,1,Catalog part identified; confirm assembly availability when ordering
+R56,33R,Resistor_SMD:R_0402_1005Metric,0402WGF330JTCE,Uniroyal Electronics,C25105,1,Catalog part identified; confirm assembly availability when ordering
 C60,100nF 16V,Capacitor_SMD:C_0402_1005Metric,CL05B104KO5NNNC,Samsung Electro-Mechanics,C1525,1,JLCPCB catalog/package checked 2026-11-07; confirm current inventory
 C61,10uF 10V X5R,Capacitor_SMD:C_0603_1608Metric,CL10A106KP8NNNC,Samsung Electro-Mechanics,C19702,1,Manufacturer dimensions/ratings and JLCPCB catalog checked 2026-11-07; confirm order inventory
 C62,100nF 16V,Capacitor_SMD:C_0402_1005Metric,CL05B104KO5NNNC,Samsung Electro-Mechanics,C1525,1,JLCPCB catalog/package checked 2026-11-07; confirm current inventory
@@ -115,3 +110,9 @@ F2,4A 32V,FabNano:Fuse_Littelfuse_0466_1206,0466004.NRHF,Littelfuse,C187596,1,Ma
 R1,100kR 1%,Resistor_SMD:R_0603_1608Metric,0603WAF1003T5E,Uniroyal Electronics,C25803,1,Manufacturer dimensions/ratings and JLCPCB catalog checked 2026-11-07; confirm order inventory
 R2,22kR 1%,Resistor_SMD:R_0603_1608Metric,0603WAF2202T5E,Uniroyal Electronics,C31850,1,Manufacturer dimensions/ratings and JLCPCB catalog checked 2026-11-07; confirm order inventory
 U2,AP2112M-3.3TRG1,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,AP2112M-3.3TRG1,Diodes Incorporated,C5290219,1,JLCPCB catalog/package checked 2026-11-07; stock not confirmed
+C66,100nF 16V,Capacitor_SMD:C_0402_1005Metric,CL05B104KO5NNNC,Samsung Electro-Mechanics,C1525,1,JLCPCB catalog/package checked 2026-11-07; confirm current inventory
+R48,5.1kR 1%,Resistor_SMD:R_0603_1608Metric,0603WAF5101T5E,Uniroyal Electronics,C23186,1,Manufacturer dimensions/ratings and JLCPCB catalog checked 2026-11-07; confirm order inventory
+R49,5.1kR 1%,Resistor_SMD:R_0603_1608Metric,0603WAF5101T5E,Uniroyal Electronics,C23186,1,Manufacturer dimensions/ratings and JLCPCB catalog checked 2026-11-07; confirm order inventory
+R50,100kR 1%,Resistor_SMD:R_0603_1608Metric,0603WAF1003T5E,Uniroyal Electronics,C25803,1,Manufacturer dimensions/ratings and JLCPCB catalog checked 2026-11-07; confirm order inventory
+R51,150kR 1%,Resistor_SMD:R_0603_1608Metric,0603WAF1503T5E,Uniroyal Electronics,C22807,1,Manufacturer dimensions/ratings and JLCPCB catalog checked 2026-11-07; confirm order inventory
+U12,USBLC6-2SC6,Package_TO_SOT_SMD:SOT-23-6,USBLC6-2SC6,STMicroelectronics,C7519,1,"Exact part, package/model and JLCPCB catalog checked 2026-11-07; confirm inventory"

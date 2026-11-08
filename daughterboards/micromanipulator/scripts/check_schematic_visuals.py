@@ -1,13 +1,19 @@
 """Audit actual plotted text bounds against schematic wires, plus crossings."""
 from pathlib import Path
-import re,json,xml.etree.ElementTree as ET
+import re,json,xml.etree.ElementTree as ET, argparse
 from sexp import *
 B=Path(__file__).resolve().parent.parent;H=B/'hardware/daughterboard'
+parser=argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--encoder',action='store_true',help='Audit the slot-mounted encoder project')
+args=parser.parse_args()
+stem='EncoderBackplane' if args.encoder else 'FabNanoDaughterboard'
+svg_dir=B/('docs/encoder-backplane-schematics' if args.encoder else 'docs/schematics')
+if args.encoder:H=B/'hardware/encoder-backplane'
 ns={'s':'http://www.w3.org/2000/svg'}
 result={}
 def cross(b,c,pad=0):return b[0]<c[2]+pad and c[0]<b[2]+pad and b[1]<c[3]+pad and c[1]<b[3]+pad
 for f in H.glob('*.kicad_sch'):
-    svg=B/'docs/schematics'/('FabNanoDaughterboard'+('' if f.stem=='FabNanoDaughterboard' else '-'+f.stem)+'.svg')
+    svg=svg_dir/(stem+('' if f.stem==stem else '-'+f.stem)+'.svg')
     root=ET.parse(svg).getroot();d=parse(f.read_text(encoding='utf8'))
     wires=[tuple(tuple(q[1:]) for q in allof(get(w,'pts'),'xy')) for w in allof(d,'wire')]
     ts=[]
@@ -46,6 +52,6 @@ for f in H.glob('*.kicad_sch'):
     for issue in tt:print('  text/text',issue)
     for issue in wc:print('  crossing',issue)
     for issue in ol:print('  overlap',issue)
-(B/'build/schematic-visual-audit.json').write_text(json.dumps(result,indent=2)+'\n')
+(B/'build'/('encoder-visual-audit.json' if args.encoder else 'schematic-visual-audit.json')).write_text(json.dumps(result,indent=2)+'\n')
 
 raise SystemExit(any(any(v.values()) for v in result.values()))

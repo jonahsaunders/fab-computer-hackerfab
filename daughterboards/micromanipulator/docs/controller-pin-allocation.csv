@@ -19,9 +19,9 @@ gpio,package_pin,net,function
 17,17,TOOL_PWM2,PIO / auxiliary PWM 8 kHz
 18,18,MOTOR_EN,GPIO
 19,19,MOTOR_PWM,GPIO
-20,20,ENC1_CS,GPIO
-21,21,ENC2_CS,GPIO
-22,22,ENC3_CS,GPIO
+20,20,NC,Unused
+21,21,NC,Unused
+22,22,NC,Unused
 23,23,ROT_CS,GPIO
 24,25,ROT_MISO,SPI1 RX
 25,26,STATUS_LED,GPIO
@@ -41,3 +41,9 @@ gpio,package_pin,net,function
 39,48,ROT_ENDSTOP,GPIO
 40,49,TEMP_ADC,ADC0
 41,52,POWER_12V_SENSE,ADC1
+42,53,NC,Unused
+43,54,NC,Unused
+44,55,ENC1_CS,GPIO through 33R to backplane SPI0 select
+45,56,ENC2_CS,GPIO through 33R to backplane SPI0 select
+46,57,ENC3_CS,GPIO through 33R to backplane SPI0 select
+47,58,NC,Unused

@@ -1,12 +1,4 @@
 Harness,Card connector,Card pin,Signal,Destination,Destination pin,Note
-XYZ encoder splitter,J6,1,GND,Existing upstream EncoderBoard J4,1,Existing PH8 pin order retained
-XYZ encoder splitter,J6,2,+3V3,Existing upstream EncoderBoard J4,2,Existing PH8 pin order retained
-XYZ encoder splitter,J6,3,ENC_MOSI,Existing upstream EncoderBoard J4,3,Existing PH8 pin order retained
-XYZ encoder splitter,J6,4,ENC_MISO,Existing upstream EncoderBoard J4,4,Existing PH8 pin order retained
-XYZ encoder splitter,J6,5,ENC_SCK,Existing upstream EncoderBoard J4,5,Existing PH8 pin order retained
-XYZ encoder splitter,J6,6,ENC1_CS,Existing upstream EncoderBoard J4,6,Existing PH8 pin order retained
-XYZ encoder splitter,J6,7,ENC2_CS,Existing upstream EncoderBoard J4,7,Existing PH8 pin order retained
-XYZ encoder splitter,J6,8,ENC3_CS,Existing upstream EncoderBoard J4,8,Existing PH8 pin order retained
 Rotation encoder,J12,1,+3V3,Existing rotation encoder harness,1,Original 1x6 2.54 mm interface retained
 Rotation encoder,J12,2,ROT_MISO,Existing rotation encoder harness,2,Original 1x6 2.54 mm interface retained
 Rotation encoder,J12,3,ROT_MOSI,Existing rotation encoder harness,3,Original 1x6 2.54 mm interface retained
@@ -45,3 +37,9 @@ TOOL PWM,J19,1,GND,Existing load/sensor harness,Verify actual mating pin,Use con
 TOOL PWM,J19,2,TOOL_PWM1,Existing load/sensor harness,Verify actual mating pin,Use connector table; mating termination not yet qualified
 TOOL PWM,J19,3,TOOL_PWM2,Existing load/sensor harness,Verify actual mating pin,Use connector table; mating termination not yet qualified
 TOOL PWM,J19,4,+3V3,Existing load/sensor harness,Verify actual mating pin,Use connector table; mating termination not yet qualified
+Backplane SPI0,J1,A12,ENC1_CS,Encoder slot card J4,A12,Existing shared bus; motion master; host inputs/no pulls
+Backplane SPI0,J1,C10,ENC2_CS,Encoder slot card J4,C10,Existing shared bus; motion master; host inputs/no pulls
+Backplane SPI0,J1,A10,ENC3_CS,Encoder slot card J4,A10,Existing shared bus; motion master; host inputs/no pulls
+Backplane SPI0,J1,C11,ENC_SCK,Encoder slot card J4,C11,Existing shared bus; motion master; host inputs/no pulls
+Backplane SPI0,J1,A11,ENC_MOSI,Encoder slot card J4,A11,Existing shared bus; motion master; host inputs/no pulls
+Backplane SPI0,J1,C12,ENC_MISO,Encoder slot card J4,C12,Existing shared bus; motion master; host inputs/no pulls

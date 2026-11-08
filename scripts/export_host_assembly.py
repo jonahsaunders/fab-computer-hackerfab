@@ -15,6 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 CARD = ROOT / 'daughterboards/micromanipulator'
 HOST_PCB = ROOT / 'hardware/backplane/HackerfabBackplane.kicad_pcb'
 CARD_PCB = CARD / 'hardware/daughterboard/FabNanoDaughterboard.kicad_pcb'
+ENCODER_PCB = CARD / 'hardware/encoder-backplane/EncoderBackplane.kicad_pcb'
 
 
 def main():
@@ -23,7 +24,7 @@ def main():
     args = parser.parse_args()
     build = CARD / 'build/assembly'
     build.mkdir(parents=True, exist_ok=True)
-    watched = [HOST_PCB, CARD_PCB, HOST_PCB.with_suffix('.kicad_pro'), CARD_PCB.with_suffix('.kicad_pro')]
+    watched = [f for source in (HOST_PCB, CARD_PCB, ENCODER_PCB) for f in (source, source.with_suffix('.kicad_pro'))]
     hashes = {f: hashlib.sha256(f.read_bytes()).digest() for f in watched}
 
     def run(arguments, name):
@@ -32,12 +33,15 @@ def main():
         if result.returncode:
             raise RuntimeError(f'{name} failed; see {build / (name + ".log")}')
 
-    card = pcb.LoadBoard(str(CARD_PCB))
-    plug = next(f for f in card.GetFootprints() if f.GetReference() == 'J1')
-    a1 = next(p for p in plug.Pads() if p.GetNumber() == 'A1').GetPosition()
-    origin = f'{pcb.ToMM(a1.x)}x{pcb.ToMM(a1.y)}mm'
-    model = build / 'daughterboard.wrl'
-    run(['pcb', 'export', 'vrml', '--force', '--units', 'tenths', '--user-origin', origin, '--output', model, CARD_PCB], 'card-model')
+    models_by_slot = {}
+    for source, ref, slot, name in [(CARD_PCB, 'J1', 'J1', 'daughterboard'), (ENCODER_PCB, 'J4', 'J2', 'encoder-backplane')]:
+        card = pcb.LoadBoard(str(source))
+        plug = next(f for f in card.GetFootprints() if f.GetReference() == ref)
+        a1 = next(p for p in plug.Pads() if p.GetNumber() == 'A1').GetPosition()
+        origin = f'{pcb.ToMM(a1.x)}x{pcb.ToMM(a1.y)}mm'
+        model = build / (name + '.wrl')
+        run(['pcb', 'export', 'vrml', '--force', '--units', 'tenths', '--user-origin', origin, '--output', model, source], name + '-model')
+        models_by_slot[slot] = model
 
     for slots, name in [(('J1',), 'single'), (('J1', 'J2'), 'adjacent')]:
         board = pcb.LoadBoard(str(HOST_PCB))
@@ -59,7 +63,7 @@ def main():
             fp.Reference().SetVisible(False)
             fp.Value().SetVisible(False)
             item = pcb.FP_3DMODEL()
-            item.m_Filename = model.as_posix()
+            item.m_Filename = models_by_slot[slot].as_posix()
             item.m_Rotation = pcb.VECTOR3D(90, 0, 0)
             # Inferred from supplied mating models; not a vendor seating datum.
             item.m_Offset = pcb.VECTOR3D(0, -2.01, 17.74)

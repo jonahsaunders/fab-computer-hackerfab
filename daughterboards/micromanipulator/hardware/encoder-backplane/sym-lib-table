@@ -1,0 +1,5 @@
+(sym_lib_table
+ (lib (name "FabNano")(type "KiCad")(uri "${KIPRJMOD}/../libraries/FabNano.kicad_sym")(options "")(descr ""))
+ (lib (name "Hack_Chips")(type "KiCad")(uri "${KIPRJMOD}/../libraries/Hack_Chips.kicad_sym")(options "")(descr ""))
+ (lib (name "Hack_Passives")(type "KiCad")(uri "${KIPRJMOD}/../libraries/Hack_Passives.kicad_sym")(options "")(descr ""))
+)

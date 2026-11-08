@@ -2876,15 +2876,6 @@
     (at 35.56 29.21)
     (uuid "22b3cf08-d711-5e8b-be59-e2c8f1b7dfc7"))
   (no_connect
-    (at 35.56 49.53)
-    (uuid "d4315ed9-4e2b-5dea-b702-651396d2f50b"))
-  (no_connect
-    (at 35.56 52.07)
-    (uuid "64c103ca-8e29-508b-a3d1-864867908a7b"))
-  (no_connect
-    (at 35.56 54.61)
-    (uuid "651bd638-ab5c-5b18-97f2-84ddf604b203"))
-  (no_connect
     (at 35.56 57.15)
     (uuid "e686996c-bf55-5a57-8a70-3fb0078631ba"))
   (no_connect
@@ -3880,15 +3871,6 @@
     (at 142.24 29.21)
     (uuid "bedb3f43-7a73-5687-ba50-273f320162c1"))
   (no_connect
-    (at 142.24 49.53)
-    (uuid "551e7384-5ac3-5906-8d1f-f7b23c224f40"))
-  (no_connect
-    (at 142.24 52.07)
-    (uuid "7cdb8c74-5ebd-5920-b4a6-06f59e241406"))
-  (no_connect
-    (at 142.24 54.61)
-    (uuid "8c0acbbf-2123-5603-8332-60b896421fe4"))
-  (no_connect
     (at 142.24 57.15)
     (uuid "0c8790f4-ac50-514a-bc77-3ddb4a9b3b3e"))
   (no_connect
@@ -4161,7 +4143,7 @@
         (size 1.27 1.27))
       (justify left bottom))
     (uuid "d2f4550b-c7fd-570a-a962-887582b316b5"))
-  (text "Existing backplane interface: 12 V, 5 V, UART and I2C0."
+  (text "Existing backplane: 12 V, 5 V, UART, I2C0 and dedicated SPI0."
     (at 17.78 119.38 0)
     (effects
       (font
@@ -4541,214 +4523,6 @@
         (size 1.27 1.27))
       (justify left bottom))
     (uuid "4b9145de-6686-5f2b-ac5e-ab853983400a"))
-  (symbol
-    (lib_id "Connector_Generic:Conn_01x08")
-    (at 25.4 180.34 0)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "dfed8001-2f57-57ad-b05d-e3303f7bb935")
-    (property "Reference" "J6"
-      (at 25.4 167.64000000000001 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Value" "MOTION ENCODERS"
-      (at 25.4 170.18 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Footprint" "Connector_JST:JST_PH_B8B-PH-K_1x08_P2.00mm_Vertical"
-      (at 25.4 180.34 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf"
-      (at 25.4 180.34 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "MPN" "B8B-PH-K-S(LF)(SN)"
-      (at 25.4 180.34 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "Manufacturer" "JST"
-      (at 25.4 180.34 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (pin "1"
-      (uuid "dfed8001-2f57-57ad-b05d-e3303f7bb935"))
-    (pin "2"
-      (uuid "76c818e8-665a-5d6e-b0f5-e9ecc8ecd85c"))
-    (pin "3"
-      (uuid "6f2a8448-ef5f-5e80-91d8-0390ad705712"))
-    (pin "4"
-      (uuid "a6a1ba2f-0404-5d96-a931-78fabab4f6d7"))
-    (pin "5"
-      (uuid "2ff1c077-1e35-5b33-b8e7-aad699c6648a"))
-    (pin "6"
-      (uuid "ee8f1b02-37a0-506f-b3a6-00b19de85e7a"))
-    (pin "7"
-      (uuid "90711b62-d7bf-5d82-a9b5-38550dc4ec44"))
-    (pin "8"
-      (uuid "bed78356-1c05-54e2-afb3-09afd1309e1e"))
-    (instances
-      (project "FabNanoDaughterboard"
-        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642"
-          (reference "J6")
-          (unit 1))))
-    (mirror y)
-    (property "LCSC" "C157974"
-      (at 25.4 180.34 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "Supplier_URL" "https://www.lcsc.com/product-detail/C157974.html"
-      (at 25.4 180.34 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "LCSC" "C157974"
-      (at 25.4 180.34 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "Supplier_URL" "https://www.lcsc.com/product-detail/C157974.html"
-      (at 25.4 180.34 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes))))
-  (wire
-    (pts
-      (xy 30.48 172.72)
-      (xy 35.56 172.72))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "8e19b65f-f488-5585-81b3-521a8a7e690c"))
-  (label "GND"
-    (at 35.56 172.72 0)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify left bottom))
-    (uuid "2ca2b45d-050e-5b51-b24e-357cf12309e8"))
-  (wire
-    (pts
-      (xy 30.48 175.26)
-      (xy 35.56 175.26))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "86e73a87-de84-5cfc-a5f8-dc2ba9a9343a"))
-  (label "+3V3"
-    (at 35.56 175.26 0)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify left bottom))
-    (uuid "b8b10152-30e3-5754-b730-8ffcff34bd4e"))
-  (wire
-    (pts
-      (xy 30.48 177.8)
-      (xy 35.56 177.8))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "7cae2983-5d29-5e90-8a9f-8842e9326efe"))
-  (label "ENC_MOSI"
-    (at 35.56 177.8 0)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify left bottom))
-    (uuid "5b7a3c68-74f6-5590-bc8a-382a62502537"))
-  (wire
-    (pts
-      (xy 30.48 180.34)
-      (xy 35.56 180.34))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "622752a7-9ba8-543c-af62-4018b52380e3"))
-  (label "ENC_MISO"
-    (at 35.56 180.34 0)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify left bottom))
-    (uuid "82615a22-408f-59e9-9694-f64a971465d6"))
-  (wire
-    (pts
-      (xy 30.48 182.88)
-      (xy 35.56 182.88))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "90274ed0-d7c1-5a56-aae6-7334beab1944"))
-  (label "ENC_SCK"
-    (at 35.56 182.88 0)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify left bottom))
-    (uuid "29368805-f0f2-52bf-adc9-c8b1a2013bd9"))
-  (wire
-    (pts
-      (xy 30.48 185.42)
-      (xy 35.56 185.42))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "43267ea8-4ea3-57f6-aceb-098f2a24e2a8"))
-  (label "ENC1_CS"
-    (at 35.56 185.42 0)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify left bottom))
-    (uuid "2e834924-5b89-5817-b53c-9d69625b5702"))
-  (wire
-    (pts
-      (xy 30.48 187.96)
-      (xy 35.56 187.96))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "60ac9770-1f95-59a6-812f-47bde76f2ab5"))
-  (label "ENC2_CS"
-    (at 35.56 187.96 0)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify left bottom))
-    (uuid "77b534ba-ae85-572f-91d5-8f312cf22501"))
-  (wire
-    (pts
-      (xy 30.48 190.5)
-      (xy 35.56 190.5))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "7f3f8247-2a9c-540d-8db2-fe3a8695b7a2"))
-  (label "ENC3_CS"
-    (at 35.56 190.5 0)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify left bottom))
-    (uuid "7a73907c-7438-5a93-a68a-76bd4031379c"))
   (symbol
     (lib_id "Connector_Generic:Conn_01x06")
     (at 78.74 180.34 0)
@@ -8520,4 +8294,115 @@
     (stroke
       (width 0)
       (type default))
-    (uuid "8d6ef9b6-f180-4db3-bddf-64ba9e89acb6")))
+    (uuid "8d6ef9b6-f180-4db3-bddf-64ba9e89acb6"))
+  (wire
+    (pts
+      (xy 35.56 49.53)
+      (xy 43.18 49.53))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "fd3d50a3-53dd-59f2-b63d-26489ef7dbe2"))
+  (label "ENC3_CS"
+    (at 43.18 49.53 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left bottom))
+    (uuid "5c602bc5-26a2-5887-adb9-032b13ed232a"))
+  (wire
+    (pts
+      (xy 35.56 52.07)
+      (xy 43.18 52.07))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "cb6e2402-1dc7-573e-aac8-27580ad07d8a"))
+  (label "ENC_MOSI"
+    (at 43.18 52.07 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left bottom))
+    (uuid "d8b72711-3ac3-5e39-b2ff-5c12f29c51d5"))
+  (wire
+    (pts
+      (xy 35.56 54.61)
+      (xy 43.18 54.61))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "40832464-3015-5480-bf01-6e6fd03459cf"))
+  (label "ENC1_CS"
+    (at 43.18 54.61 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left bottom))
+    (uuid "372a6cf0-254c-5c88-9176-54656e8490ae"))
+  (wire
+    (pts
+      (xy 142.24 49.53)
+      (xy 149.86 49.53))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "c0cc01ab-4be4-5f7b-9de5-e22102755cf8"))
+  (label "ENC2_CS"
+    (at 149.86 49.53 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left bottom))
+    (uuid "24b8c260-4ea0-52b3-9a7f-9e9f393c16dc"))
+  (wire
+    (pts
+      (xy 142.24 52.07)
+      (xy 149.86 52.07))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "dd355362-1dd7-544b-82b2-02b8f08f516d"))
+  (label "ENC_SCK"
+    (at 149.86 52.07 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left bottom))
+    (uuid "d618228d-c2a3-5ab3-9fd1-70854b844c01"))
+  (wire
+    (pts
+      (xy 142.24 54.61)
+      (xy 149.86 54.61))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "4d73d104-5ee8-59bc-bbbd-acddb617f263"))
+  (label "ENC_MISO"
+    (at 149.86 54.61 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left bottom))
+    (uuid "54fa6ef8-2afc-526f-968f-ef5e2827f720"))
+  (text "XYZ encoder splitter uses another DIN slot."
+    (at 17.78 175.26 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "7270ce3d-8047-5a98-a5bd-5b174c7a3e8c"))
+  (text "SPI0 is reserved for this motion controller."
+    (at 17.78 180.34 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "737e6f09-537b-54bf-a52e-8fe041ad5a27"))
+  (text "Host GPIO16-21: inputs, no pulls; never drive."
+    (at 17.78 185.42 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "e66f1853-6d03-53a6-86fb-eb4c955c6445")))

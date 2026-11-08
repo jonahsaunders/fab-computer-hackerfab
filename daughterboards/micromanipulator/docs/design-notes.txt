@@ -25,7 +25,7 @@ Verify actual current and temperature with the final loads and enclosure. RP2350
 duplicate backplane supply. 5 V load bulk capacitance and bypass capacitors
 remain local because wiring and connector inductance cannot be eliminated.
 
-The backplane's TPS2116 is a 2.5 A power mux. That is a component limit, not a
+The backplane's TPS2117 is a 2.5 A power mux. That is a component limit, not a
 guaranteed available current for this card. USB power has a separate source
 limit. The RP2350B senses the 12 V rail through 100k/22k on GPIO41/ADC1.
 The consolidated firmware must inhibit tool loads when that rail is absent. This prevents ordinary USB-only service power
@@ -73,6 +73,6 @@ Confirm the mating DIN part, envelope/retention and sensor magnet geometry;
 finish any layout items listed in validation.txt; qualify power and thermal
 behavior with the actual loads; verify boot/debug, SPI direction/CRC, UART and
 I2C on assembled hardware; then test homing and temperature faults before
-closed-loop motion and full-power heater/pump operation. All 116 board parts
+closed-loop motion and full-power heater/pump operation. All 117 board parts
 have ordering codes and package reviews. The external thermal cutoff remains
 a process-specific selection; no fabrication or commissioned-system release is claimed.

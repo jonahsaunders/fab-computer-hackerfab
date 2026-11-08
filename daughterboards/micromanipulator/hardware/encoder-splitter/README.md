@@ -1,3 +1,7 @@
+# Original splitter — source reference only
+
+The active design is now the [slot-mounted encoder card](../encoder-backplane/). This original 36 × 36 mm PH8-to-three-PH6 project is retained for provenance and sensor pinout comparison. Its PH8 connector is not used by the current motion card, which no longer has J6.
+
 # Original XYZ SPI splitter
 
 Open `EncoderBoard.kicad_pro` in KiCad 10. This is HackerFab's existing 36 × 36 mm passive breakout: one PH8 input (J4) and three PH6 outputs (J1–J3). Connect daughterboard J6 to J4 pin-for-pin. The board carries no encoder ICs or development modules.

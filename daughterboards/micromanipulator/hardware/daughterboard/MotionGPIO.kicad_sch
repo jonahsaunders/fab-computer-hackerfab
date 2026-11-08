@@ -602,33 +602,33 @@
         (pin bidirectional line
           (at -17.78 17.78 0)
           (length 2.54)
-          (name "GPIO20"
+          (name "GPIO44/ADC4"
             (effects
               (font
                 (size 1.016 1.016))))
-          (number "20"
+          (number "55"
             (effects
               (font
                 (size 1.016 1.016)))))
         (pin bidirectional line
           (at -17.78 15.240000000000002 0)
           (length 2.54)
-          (name "GPIO21"
+          (name "GPIO45/ADC5"
             (effects
               (font
                 (size 1.016 1.016))))
-          (number "21"
+          (number "56"
             (effects
               (font
                 (size 1.016 1.016)))))
         (pin bidirectional line
           (at -17.78 12.700000000000001 0)
           (length 2.54)
-          (name "GPIO22"
+          (name "GPIO46/ADC6"
             (effects
               (font
                 (size 1.016 1.016))))
-          (number "22"
+          (number "57"
             (effects
               (font
                 (size 1.016 1.016)))))
@@ -1095,33 +1095,33 @@
         (pin bidirectional line
           (at 17.78 -7.619999999999997 180)
           (length 2.54)
-          (name "GPIO44/ADC4"
+          (name "GPIO20"
             (effects
               (font
                 (size 1.016 1.016))))
-          (number "55"
+          (number "20"
             (effects
               (font
                 (size 1.016 1.016)))))
         (pin bidirectional line
           (at 17.78 -10.16 180)
           (length 2.54)
-          (name "GPIO45/ADC5"
+          (name "GPIO21"
             (effects
               (font
                 (size 1.016 1.016))))
-          (number "56"
+          (number "21"
             (effects
               (font
                 (size 1.016 1.016)))))
         (pin bidirectional line
           (at 17.78 -12.7 180)
           (length 2.54)
-          (name "GPIO46/ADC6"
+          (name "GPIO22"
             (effects
               (font
                 (size 1.016 1.016))))
-          (number "57"
+          (number "22"
             (effects
               (font
                 (size 1.016 1.016)))))
@@ -1559,11 +1559,11 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (pin "20"
+    (pin "55"
       (uuid "dc1c0956-21ba-5a88-884f-dac6b1af11d3"))
-    (pin "21"
+    (pin "56"
       (uuid "d2419382-4b64-5b33-aa49-a318647e75ee"))
-    (pin "22"
+    (pin "57"
       (uuid "c69b4272-d81d-57b4-bf51-83bd10e7e422"))
     (pin "77"
       (uuid "69115738-b47a-57fd-88d7-2fe25d6dfe30"))
@@ -1706,11 +1706,11 @@
       (uuid "53ab00ea-ad96-59bf-8f6e-86ae28b70f74"))
     (pin "54"
       (uuid "b680a0f0-e096-5fed-bfb9-1c2a963cba05"))
-    (pin "55"
+    (pin "20"
       (uuid "aa0c72cf-e171-59f4-8088-c288b0ec5568"))
-    (pin "56"
+    (pin "21"
       (uuid "bc4946f9-b664-55db-b889-3e55854b672d"))
-    (pin "57"
+    (pin "22"
       (uuid "6728b5aa-85d3-56d0-be75-3a0da2977bab"))
     (pin "58"
       (uuid "ac57a585-412b-516b-92ab-49e876c5e672"))
@@ -1749,54 +1749,6 @@
   (no_connect
     (at 149.86 185.42)
     (uuid "8ec8cad3-71ae-5d9a-9a2b-0f37b55d3079"))
-  (wire
-    (pts
-      (xy 104.14 71.12)
-      (xy 93.98 71.12))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "9a8a245c-3406-5c43-b915-31bc9ef56559"))
-  (hierarchical_label "ENC_MISO"
-    (shape bidirectional)
-    (at 93.98 71.12 180)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify right))
-    (uuid "c2a66abc-6163-5a13-9c2d-01666719104a"))
-  (wire
-    (pts
-      (xy 104.14 73.66)
-      (xy 93.98 73.66))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "8f355443-bdec-5ad9-8dda-e8d912021683"))
-  (hierarchical_label "ENC_SCK"
-    (shape bidirectional)
-    (at 93.98 73.66 180)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify right))
-    (uuid "47f17c0f-232c-544f-a5c4-bbf8beb6ec7f"))
-  (wire
-    (pts
-      (xy 104.14 76.2)
-      (xy 93.98 76.2))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "161e9588-7b24-5fb4-b333-f4396dd665d9"))
-  (hierarchical_label "ENC_MOSI"
-    (shape bidirectional)
-    (at 93.98 76.2 180)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify right))
-    (uuid "8b9e1f33-0017-5f96-a1d2-9c4b4071171c"))
   (wire
     (pts
       (xy 104.14 78.74)
@@ -2245,462 +2197,6 @@
         (size 1.27 1.27))
       (justify left))
     (uuid "3687ce25-3a02-50a4-8065-0a2d48e4375c"))
-  (symbol
-    (lib_id "Device:R_Small_US")
-    (at 91.44 55.88 180)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "e93a6b1c-3a73-5b12-998b-31277db60f4e")
-    (property "Reference" "R22"
-      (at 96.52 54.61 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Value" "10kR"
-      (at 96.52 57.15 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-      (at 91.44 55.88 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "Datasheet" "https://www.lcsc.com/datasheet/C25804.pdf"
-      (at 91.44 55.88 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "MPN" "0603WAF1002T5E"
-      (at 91.44 55.88 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "Manufacturer" "Uniroyal Electronics"
-      (at 91.44 55.88 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (pin "1"
-      (uuid "e93a6b1c-3a73-5b12-998b-31277db60f4e"))
-    (pin "2"
-      (uuid "f114af2d-a697-5d00-8516-fd11b6b9ec96"))
-    (instances
-      (project "FabNanoDaughterboard"
-        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/6a93690a-9bca-5b53-940b-cfbca49dbca1"
-          (reference "R22")
-          (unit 1))))
-    (property "LCSC" "C25804"
-      (at 91.44 55.88 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes))))
-  (wire
-    (pts
-      (xy 104.14 63.5)
-      (xy 91.44 63.5))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "fed5a755-d274-5a61-b150-3fcd66c5f57f"))
-  (wire
-    (pts
-      (xy 91.44 63.5)
-      (xy 91.44 58.42))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "457067ba-404e-5f4d-931c-90b2eda023d2"))
-  (wire
-    (pts
-      (xy 91.44 53.34)
-      (xy 91.44 45.72))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "18df1b5b-0069-5223-b294-8d41ee9a0602"))
-  (symbol
-    (lib_id "FabNano:PWR_+3V3")
-    (at 91.44 45.72 0)
-    (unit 1)
-    (in_bom no)
-    (on_board no)
-    (dnp no)
-    (uuid "78c0c1c5-112e-59ce-8254-7381c5a88373")
-    (property "Reference" "#PWR4072"
-      (at 91.44 45.72 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "Value" "+3V3"
-      (at 91.44 41.91 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Footprint" ""
-      (at 91.44 45.72 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "Datasheet" ""
-      (at 91.44 45.72 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "MPN" ""
-      (at 91.44 45.72 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "Manufacturer" ""
-      (at 91.44 45.72 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (pin "1"
-      (uuid "78c0c1c5-112e-59ce-8254-7381c5a88373"))
-    (instances
-      (project "FabNanoDaughterboard"
-        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/6a93690a-9bca-5b53-940b-cfbca49dbca1"
-          (reference "#PWR4072")
-          (unit 1)))))
-  (wire
-    (pts
-      (xy 91.44 63.5)
-      (xy 86.36 63.5))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "67a5d6b2-8cb7-55c4-a71a-63f692ee2332"))
-  (junction
-    (at 91.44 63.5)
-    (diameter 0)
-    (color 0 0 0 0)
-    (uuid "dd7ca639-849f-5f77-9878-1a59566d4c75"))
-  (hierarchical_label "ENC1_CS"
-    (shape bidirectional)
-    (at 86.36 63.5 180)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify right))
-    (uuid "c83d29b3-3938-5bda-8c48-403e8997d988"))
-  (symbol
-    (lib_id "Device:R_Small_US")
-    (at 71.12 55.88 180)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "0bc5e0d6-2dfa-518c-8f39-ba73339ca8ee")
-    (property "Reference" "R23"
-      (at 76.2 54.61 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Value" "10kR"
-      (at 76.2 57.15 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-      (at 71.12 55.88 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "Datasheet" "https://www.lcsc.com/datasheet/C25804.pdf"
-      (at 71.12 55.88 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "MPN" "0603WAF1002T5E"
-      (at 71.12 55.88 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "Manufacturer" "Uniroyal Electronics"
-      (at 71.12 55.88 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (pin "1"
-      (uuid "0bc5e0d6-2dfa-518c-8f39-ba73339ca8ee"))
-    (pin "2"
-      (uuid "27b51de2-167b-55aa-88a7-598d5baf3e3a"))
-    (instances
-      (project "FabNanoDaughterboard"
-        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/6a93690a-9bca-5b53-940b-cfbca49dbca1"
-          (reference "R23")
-          (unit 1))))
-    (property "LCSC" "C25804"
-      (at 71.12 55.88 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes))))
-  (wire
-    (pts
-      (xy 104.14 66.04)
-      (xy 71.12 66.04))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "83363175-2e34-5845-9ad8-c104311408e3"))
-  (wire
-    (pts
-      (xy 71.12 66.04)
-      (xy 71.12 58.42))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "87523eab-2c88-5687-b853-be47e68b3259"))
-  (wire
-    (pts
-      (xy 71.12 53.34)
-      (xy 71.12 45.72))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "9a8f123b-3bdc-5e1b-8202-bfc3e80192f5"))
-  (symbol
-    (lib_id "FabNano:PWR_+3V3")
-    (at 71.12 45.72 0)
-    (unit 1)
-    (in_bom no)
-    (on_board no)
-    (dnp no)
-    (uuid "d4668227-3b09-5bd2-beac-23067a859b13")
-    (property "Reference" "#PWR4079"
-      (at 71.12 45.72 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "Value" "+3V3"
-      (at 71.12 41.91 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Footprint" ""
-      (at 71.12 45.72 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "Datasheet" ""
-      (at 71.12 45.72 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "MPN" ""
-      (at 71.12 45.72 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "Manufacturer" ""
-      (at 71.12 45.72 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (pin "1"
-      (uuid "d4668227-3b09-5bd2-beac-23067a859b13"))
-    (instances
-      (project "FabNanoDaughterboard"
-        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/6a93690a-9bca-5b53-940b-cfbca49dbca1"
-          (reference "#PWR4079")
-          (unit 1)))))
-  (wire
-    (pts
-      (xy 71.12 66.04)
-      (xy 66.04 66.04))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "6cb2c823-5c6f-5d2b-8a30-025874b606bd"))
-  (junction
-    (at 71.12 66.04)
-    (diameter 0)
-    (color 0 0 0 0)
-    (uuid "95c80ef8-f225-5638-afe6-ced53ad4b810"))
-  (hierarchical_label "ENC2_CS"
-    (shape bidirectional)
-    (at 66.04 66.04 180)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify right))
-    (uuid "759c655d-d176-5342-b362-33fa1606f7b8"))
-  (symbol
-    (lib_id "Device:R_Small_US")
-    (at 50.8 55.88 180)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "6f862a1a-c7de-5e40-86bb-e425e4699bd7")
-    (property "Reference" "R24"
-      (at 55.88 54.61 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Value" "10kR"
-      (at 55.88 57.15 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-      (at 50.8 55.88 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "Datasheet" "https://www.lcsc.com/datasheet/C25804.pdf"
-      (at 50.8 55.88 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "MPN" "0603WAF1002T5E"
-      (at 50.8 55.88 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "Manufacturer" "Uniroyal Electronics"
-      (at 50.8 55.88 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (pin "1"
-      (uuid "6f862a1a-c7de-5e40-86bb-e425e4699bd7"))
-    (pin "2"
-      (uuid "53d5dbdd-a2dc-560d-b6c3-24073fd8cc7b"))
-    (instances
-      (project "FabNanoDaughterboard"
-        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/6a93690a-9bca-5b53-940b-cfbca49dbca1"
-          (reference "R24")
-          (unit 1))))
-    (property "LCSC" "C25804"
-      (at 50.8 55.88 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes))))
-  (wire
-    (pts
-      (xy 104.14 68.58)
-      (xy 50.8 68.58))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "8b746e90-180c-5ac4-b9d3-d9adfcd5faa8"))
-  (wire
-    (pts
-      (xy 50.8 68.58)
-      (xy 50.8 58.42))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "1746a95d-9d5a-5cbd-93d8-e5e6b3600846"))
-  (wire
-    (pts
-      (xy 50.8 53.34)
-      (xy 50.8 45.72))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "39f72eca-c1bd-58d3-b488-363fa6c43702"))
-  (symbol
-    (lib_id "FabNano:PWR_+3V3")
-    (at 50.8 45.72 0)
-    (unit 1)
-    (in_bom no)
-    (on_board no)
-    (dnp no)
-    (uuid "935c3d12-cc4f-57a4-a0b4-820862a01eed")
-    (property "Reference" "#PWR4086"
-      (at 50.8 45.72 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "Value" "+3V3"
-      (at 50.8 41.91 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Footprint" ""
-      (at 50.8 45.72 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "Datasheet" ""
-      (at 50.8 45.72 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "MPN" ""
-      (at 50.8 45.72 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "Manufacturer" ""
-      (at 50.8 45.72 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (pin "1"
-      (uuid "935c3d12-cc4f-57a4-a0b4-820862a01eed"))
-    (instances
-      (project "FabNanoDaughterboard"
-        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/6a93690a-9bca-5b53-940b-cfbca49dbca1"
-          (reference "#PWR4086")
-          (unit 1)))))
-  (wire
-    (pts
-      (xy 50.8 68.58)
-      (xy 45.72 68.58))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "58ff334c-543e-5ad7-8935-c8626fc27f06"))
-  (junction
-    (at 50.8 68.58)
-    (diameter 0)
-    (color 0 0 0 0)
-    (uuid "3db53ee1-218a-5739-8099-711776629889"))
-  (hierarchical_label "ENC3_CS"
-    (shape bidirectional)
-    (at 45.72 68.58 180)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify right))
-    (uuid "b6ae9d5a-b072-5c38-a7c9-0092ddf30d34"))
   (symbol
     (lib_id "Device:R_Small_US")
     (at 78.74 81.28 270)
@@ -3875,22 +3371,6 @@
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/6a93690a-9bca-5b53-940b-cfbca49dbca1"
           (reference "#PWR4138")
           (unit 1)))))
-  (wire
-    (pts
-      (xy 91.44 45.72)
-      (xy 86.36 45.72))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "79f14997-9d99-5c1f-83b0-836023ea1525"))
-  (hierarchical_label "+3V3"
-    (shape bidirectional)
-    (at 86.36 45.72 180)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify right))
-    (uuid "cde82af2-f9cc-51ec-8212-0f82b01fcd4a"))
   (text "MCU GPIO / XYZ MOTION AND ENCODERS"
     (at 20.32 15.24 0)
     (effects
@@ -3904,4 +3384,533 @@
       (font
         (size 1.524 1.524))
       (justify left))
-    (uuid "cd33bf38-d767-4eda-93c0-95904e1c31ab")))
+    (uuid "cd33bf38-d767-4eda-93c0-95904e1c31ab"))
+  (symbol
+    (lib_id "Device:R_Small_US")
+    (at 96.52 63.5 270)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "67a288f9-48b8-5b13-a73e-8438a8021ca6")
+    (property "Reference" "R52"
+      (at 94.72 60.96 90)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Value" "33R"
+      (at 98.32 60.96 90)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+      (at 96.52 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" "https://www.lcsc.com/datasheet/C25105.pdf"
+      (at 96.52 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "0402WGF330JTCE"
+      (at 96.52 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "Uniroyal Electronics"
+      (at 96.52 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "335d9fd6-bc85-5f4a-84cf-b8c51f0179b9"))
+    (pin "2"
+      (uuid "94591a1e-34a0-5daf-8504-001e9a6e489e"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/6a93690a-9bca-5b53-940b-cfbca49dbca1"
+          (reference "R52")
+          (unit 1))))
+    (property "LCSC" "C25105"
+      (at 96.52 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 104.14 63.5)
+      (xy 99.06 63.5))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "84eb21c4-40dc-5e8a-9692-4f23dfe1c77b"))
+  (wire
+    (pts
+      (xy 93.97999999999999 63.5)
+      (xy 86.36 63.5))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "444792fb-5aec-58f1-a241-4b45d0a420b2"))
+  (hierarchical_label "ENC1_CS"
+    (shape bidirectional)
+    (at 86.36 63.5 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "ef905227-45c2-5c06-bd80-24529a6eae7c"))
+  (label "CS1_D"
+    (at 103 63.5 180)
+    (effects
+      (font
+        (size 0.9 0.9))
+      (justify right bottom))
+    (uuid "a4e7f4e8-88f1-5229-ba66-19a42354f455"))
+  (symbol
+    (lib_id "Device:R_Small_US")
+    (at 76.2 66.04 270)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "19def6f0-9746-5e1b-81c7-e403275a9854")
+    (property "Reference" "R53"
+      (at 74.4 65.1 90)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Value" "33R"
+      (at 78.0 65.1 90)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+      (at 76.2 66.04 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" "https://www.lcsc.com/datasheet/C25105.pdf"
+      (at 76.2 66.04 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "0402WGF330JTCE"
+      (at 76.2 66.04 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "Uniroyal Electronics"
+      (at 76.2 66.04 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "5952d81a-509a-51ae-8f24-b9dcdbd35add"))
+    (pin "2"
+      (uuid "a2731cb6-5c3f-56f8-aaf1-f82c28516f3f"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/6a93690a-9bca-5b53-940b-cfbca49dbca1"
+          (reference "R53")
+          (unit 1))))
+    (property "LCSC" "C25105"
+      (at 76.2 66.04 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 104.14 66.04)
+      (xy 78.74000000000001 66.04))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e7372ebe-7a10-545a-95fd-2a3a9338d468"))
+  (wire
+    (pts
+      (xy 73.66 66.04)
+      (xy 66.04 66.04))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "1cec6a1a-b3ff-5ce4-87d8-75b92e0250f3"))
+  (hierarchical_label "ENC2_CS"
+    (shape bidirectional)
+    (at 66.04 66.04 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "f7f17b42-66a3-5fca-ab01-0d918ccb31b7"))
+  (label "CS2_D"
+    (at 103 66.04 180)
+    (effects
+      (font
+        (size 0.9 0.9))
+      (justify right bottom))
+    (uuid "25ad970e-f70e-51c5-8995-5b5d509b7edf"))
+  (symbol
+    (lib_id "Device:R_Small_US")
+    (at 55.88 68.58 270)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "a0cac41f-a054-5e47-bd66-1a705e5d41f2")
+    (property "Reference" "R54"
+      (at 54.080000000000005 69.6 90)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Value" "33R"
+      (at 57.68 69.6 90)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+      (at 55.88 68.58 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" "https://www.lcsc.com/datasheet/C25105.pdf"
+      (at 55.88 68.58 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "0402WGF330JTCE"
+      (at 55.88 68.58 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "Uniroyal Electronics"
+      (at 55.88 68.58 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "c097dd22-ccb9-5e24-9291-930b65e38d83"))
+    (pin "2"
+      (uuid "93fea739-acca-5b5d-84c5-dd00cfa4bfd1"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/6a93690a-9bca-5b53-940b-cfbca49dbca1"
+          (reference "R54")
+          (unit 1))))
+    (property "LCSC" "C25105"
+      (at 55.88 68.58 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 104.14 68.58)
+      (xy 58.42 68.58))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "20b6c567-283f-5e07-957b-b09e4f795c73"))
+  (wire
+    (pts
+      (xy 53.34 68.58)
+      (xy 45.72 68.58))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "adcc0336-62ac-5a0a-9e48-d9fa3cb28de2"))
+  (hierarchical_label "ENC3_CS"
+    (shape bidirectional)
+    (at 45.72 68.58 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "6a91bb32-2f26-504d-a808-e0c1b7ef45ca"))
+  (label "CS3_D"
+    (at 103 68.58 180)
+    (effects
+      (font
+        (size 0.9 0.9))
+      (justify right bottom))
+    (uuid "53b2680b-e632-573c-8ad6-1f89c442b8e1"))
+  (symbol
+    (lib_id "Device:R_Small_US")
+    (at 76.2 73.66 270)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "7f630c34-707c-5eea-8205-0e2c49360478")
+    (property "Reference" "R55"
+      (at 74.4 72.3 90)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Value" "33R"
+      (at 78.0 72.3 90)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+      (at 76.2 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" "https://www.lcsc.com/datasheet/C25105.pdf"
+      (at 76.2 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "0402WGF330JTCE"
+      (at 76.2 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "Uniroyal Electronics"
+      (at 76.2 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "dbb30c70-5ffc-54b4-8404-fa1dd4f3f4ba"))
+    (pin "2"
+      (uuid "c243a80d-1c9e-5175-9d09-167f55a90244"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/6a93690a-9bca-5b53-940b-cfbca49dbca1"
+          (reference "R55")
+          (unit 1))))
+    (property "LCSC" "C25105"
+      (at 76.2 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 104.14 73.66)
+      (xy 78.74000000000001 73.66))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "957cf46b-2f75-57ba-bff0-6b030df8494c"))
+  (wire
+    (pts
+      (xy 73.66 73.66)
+      (xy 66.04 73.66))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "a3ebe94e-6a29-5b84-8f0b-1ce3a0c30ea8"))
+  (hierarchical_label "ENC_SCK"
+    (shape bidirectional)
+    (at 66.04 73.66 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "34a984ef-893d-5034-8ebd-240f12b7d3c0"))
+  (label "SCK_D"
+    (at 103 73.66 180)
+    (effects
+      (font
+        (size 0.9 0.9))
+      (justify right bottom))
+    (uuid "ff5187b5-3c3a-54be-88df-8d0ef7e4e867"))
+  (symbol
+    (lib_id "Device:R_Small_US")
+    (at 55.88 76.2 270)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "ebb50adb-dbd7-5983-b904-58e80dde908e")
+    (property "Reference" "R56"
+      (at 54.080000000000005 77.6 90)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Value" "33R"
+      (at 57.68 77.6 90)
+      (effects
+        (font
+          (size 0.9 0.9))))
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+      (at 55.88 76.2 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" "https://www.lcsc.com/datasheet/C25105.pdf"
+      (at 55.88 76.2 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "0402WGF330JTCE"
+      (at 55.88 76.2 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "Uniroyal Electronics"
+      (at 55.88 76.2 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "9e36d42f-1e68-5b14-8803-09ee272c4272"))
+    (pin "2"
+      (uuid "7c9570ed-67ba-5ac2-be5e-26ea6cf0028e"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/6a93690a-9bca-5b53-940b-cfbca49dbca1"
+          (reference "R56")
+          (unit 1))))
+    (property "LCSC" "C25105"
+      (at 55.88 76.2 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 104.14 76.2)
+      (xy 58.42 76.2))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "fd2eb890-f3f4-5f28-bbc9-e9eb9f488b9c"))
+  (wire
+    (pts
+      (xy 53.34 76.2)
+      (xy 45.72 76.2))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "37343aa7-5b16-513a-b588-e1655c3f362e"))
+  (hierarchical_label "ENC_MOSI"
+    (shape bidirectional)
+    (at 45.72 76.2 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "640be247-7db3-5109-9c22-f8e265dbcccd"))
+  (label "MOSI_D"
+    (at 103 76.2 180)
+    (effects
+      (font
+        (size 0.9 0.9))
+      (justify right bottom))
+    (uuid "2b1eba17-548f-50e2-a693-a05af2719019"))
+  (wire
+    (pts
+      (xy 104.14 71.12)
+      (xy 93.98 71.12))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "fed79b54-ac21-563c-9236-8163ab21e03d"))
+  (hierarchical_label "ENC_MISO"
+    (shape bidirectional)
+    (at 93.98 71.12 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "3c631b88-35ac-5a89-a027-e50eb44945f8"))
+  (symbol
+    (lib_id "FabNano:PWR_+3V3")
+    (at 91.44 38.1 0)
+    (unit 1)
+    (in_bom no)
+    (on_board no)
+    (dnp no)
+    (uuid "29205436-439f-59b1-8ce4-83398d49845b")
+    (property "Reference" "#PWR4072"
+      (at 91.44 38.1 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Value" "+3V3"
+      (at 91.44 34.29 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 91.44 38.1 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 91.44 38.1 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" ""
+      (at 91.44 38.1 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" ""
+      (at 91.44 38.1 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "4fa5d00b-d32c-50d5-86d1-983241424cf6"))
+    (instances
+      (project "FabNanoDaughterboard"
+        (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/6a93690a-9bca-5b53-940b-cfbca49dbca1"
+          (reference "#PWR4072")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 91.44 38.1)
+      (xy 86.36 38.1))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "1d9f3ece-3096-539a-928d-44aab9012187"))
+  (hierarchical_label "+3V3"
+    (shape bidirectional)
+    (at 86.36 38.1 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "4c2a9fc5-8858-50f7-bfe4-e9f8a5a0b941"))
+  (text "33R at driving pins. Sensor card supplies CS pull-ups."
+    (at 20.32 25.4 0)
+    (effects
+      (font
+        (size 1.1 1.1))
+      (justify left))
+    (uuid "9d4a78d3-760c-5a4e-a213-3fa222b3d4be")))

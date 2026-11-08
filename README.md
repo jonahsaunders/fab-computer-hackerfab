@@ -2,37 +2,22 @@
 
 A reusable power and control backplane with plug-in boards for HackerFab tools.
 
-![Micromanipulator daughterboard installed in the backplane](daughterboards/micromanipulator/docs/host-single-front.png)
+![Motion controller and encoder splitter plugged into the backplane](daughterboards/micromanipulator/docs/host-adjacent-front.png)
 
-*Nominal KiCad assembly in slot J1. [Reverse view](daughterboards/micromanipulator/docs/host-single-back.png) · [Adjacent-card clearance](daughterboards/micromanipulator/docs/host-adjacent-front.png). Mating plugs, cable bends and retention hardware are not modeled.*
+*Actual KiCad boards, nominal mating placement. [Reverse view](daughterboards/micromanipulator/docs/host-adjacent-back.png). Cable housings, bends and retention hardware are not modeled.*
 
-## The boards
+| Board | Purpose | Open in KiCad 10 |
+| --- | --- | --- |
+| Backplane | RP2350B host, three DIN96 slots, shared power and buses | [Project](hardware/backplane/HackerfabBackplane.kicad_pro) · [Schematics](docs/schematics/README.md) |
+| Motion controller | Bare RP2350B; XYZ motion, rotation, heater, vacuum and USB-C; 100 × 60 mm | [Project](daughterboards/micromanipulator/hardware/daughterboard/FabNanoDaughterboard.kicad_pro) · [Schematic](daughterboards/micromanipulator/docs/schematic-review.pdf) |
+| Encoder splitter | Existing backplane SPI0 to three original PH6 sensor interfaces; 100 × 26 mm | [Project](daughterboards/micromanipulator/hardware/encoder-backplane/EncoderBackplane.kicad_pro) · [Schematic](daughterboards/micromanipulator/docs/encoder-backplane-schematic.pdf) |
 
-| Backplane | Micromanipulator daughterboard |
-| --- | --- |
-| ![Backplane PCB](docs/images/backplane-2026-11-05.png) | ![Micromanipulator PCB](daughterboards/micromanipulator/docs/board-3d.png) |
-| Shared power, RP2350B master and three DIN96 slots. Intended 24 V input; regulated 12 V and 5 V distribution. | Bare RP2350B, XYZ motion, rotation, heater and vacuum. 100 × 60 mm, four layers, USB-C and the original encoder interfaces. |
-| [KiCad project](hardware/backplane/HackerfabBackplane.kicad_pro) · [Schematics](docs/schematics/README.md) | [KiCad project](daughterboards/micromanipulator/hardware/daughterboard/FabNanoDaughterboard.kicad_pro) · [Schematic PDF](daughterboards/micromanipulator/docs/schematic-review.pdf) · [Board details](daughterboards/micromanipulator/README.md) |
+Clone the entire repository and keep the local libraries together. Both daughtercards are four-layer designs with no development modules. The original backplane hardware is preserved.
 
-The micromanipulator also includes the original [8-pin-to-three-6-pin encoder splitter](daughterboards/micromanipulator/hardware/encoder-splitter/), plus [rail probes and connector pin legends](daughterboards/micromanipulator/docs/probe-and-label-review.md).
+Use host **J1 or J2 for motion**, and another slot for the splitter. **The motion controller owns SPI0; host GPIO16–21 must remain inputs with no pulls.** Other cards must leave SPI0 undriven. See the [bus map and firmware requirements](daughterboards/micromanipulator/docs/backplane-encoder-bus.md).
 
-## Open and review
+The two daughtercards pass ERC, DRC, connectivity and schematic parity. Physical fit, actual load/thermal measurements, encoder signal integrity and firmware integration remain open. The backplane has its [separate validation record](docs/validation.md). All 5 V loads share the host's **2.5 A power-mux limit**; see [load limits](daughterboards/micromanipulator/docs/load-power-review.md).
 
-Clone the entire repository and open either project above in **KiCad 10**. Keep its local libraries with it; standard KiCad symbol libraries are also required.
+[Card details and renders](daughterboards/micromanipulator/README.md) · [Card validation](daughterboards/micromanipulator/docs/validation.md) · [Architecture](docs/architecture.md) · [Connector pinout](docs/connector-pinout.md) · [Contributing](CONTRIBUTING.md)
 
-```sh
-git clone https://github.com/jonahsaunders/fab-computer-hackerfab.git
-```
-
-Both boards remain development hardware. The daughterboard is manually routed with zero ERC, DRC, unconnected or schematic-parity findings; physical fit, load/thermal measurements and firmware migration remain open. The backplane is preserved as supplied, with its separate historical validation record. No fabrication release or firmware binaries are included.
-
-Use host **J1 or J2** for the micromanipulator; J3 lacks UART. The host's **5 V supply is limited by a shared 2.5 A power mux**, so tool loads must fit the remaining system budget. See the [interface table](docs/connector-pinout.md) and [load limits](daughterboards/micromanipulator/docs/load-power-review.md).
-
-## Design references
-
-- [System architecture](docs/architecture.md) and [backplane validation](docs/validation.md)
-- [Daughterboard validation](daughterboards/micromanipulator/docs/validation.md), [connector fit](daughterboards/micromanipulator/docs/connector-review.md) and [power-layer map](daughterboards/micromanipulator/docs/power-domains.svg)
-- [Contributing and checks](CONTRIBUTING.md); run `python scripts/check_repo.py` before submitting changes
-- [Source history](docs/provenance.md) and [upstream micromanipulator](https://github.com/hacker-fab/MicroManipulatorStepper)
-
-Backplane sources: **Jonah Saunders**. Project background: **Jonah Saunders and Jacob Rohozen**. No overall project license has been specified; existing notices and [upstream daughterboard licenses](daughterboards/micromanipulator/licenses/) are retained.
+Backplane sources: **Jonah Saunders**. Project background: **Jonah Saunders and Jacob Rohozen**. [Source history](docs/provenance.md) and [upstream licenses](daughterboards/micromanipulator/licenses/) are retained; no overall project license has been specified.
