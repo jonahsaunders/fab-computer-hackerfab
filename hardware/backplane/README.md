@@ -2,6 +2,8 @@
 
 Open [`HackerfabBackplane.kicad_pro`](HackerfabBackplane.kicad_pro) with KiCad 10.
 
+[Full-size board render](../../docs/images/backplane.png) · [L3 inductor close-up](../../docs/images/backplane-regulator.png)
+
 | File | Role |
 | --- | --- |
 | `HackerfabBackplane.kicad_sch` | Root sheet, expansion connectors, and connections between circuit blocks |

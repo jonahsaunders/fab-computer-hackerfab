@@ -27,8 +27,12 @@ def main():
         ["sch", "export", "netlist", "--format", "kicadxml", "--output", "build/backplane.xml", PROJECT + ".kicad_sch"],
         ["sch", "erc", "--format", "json", "--output", "build/erc.json", PROJECT + ".kicad_sch"],
         ["pcb", "drc", "--schematic-parity", "--format", "json", "--output", "build/drc.json", PROJECT + ".kicad_pcb"],
-        ["pcb", "render", "--width", "1800", "--height", "1400", "--background", "opaque",
-         "--quality", "basic", "--rotate", "0,0,0", "--output", "docs/images/backplane-2026-11-05.png", PROJECT + ".kicad_pcb"],
+        ["pcb", "render", "--width", "1720", "--height", "1840", "--background", "opaque",
+         "--quality", "high", "--rotate", "345,0,8", "--zoom", "0.91",
+         "--output", "docs/images/backplane.png", PROJECT + ".kicad_pcb"],
+        ["pcb", "render", "--width", "1440", "--height", "1080", "--background", "opaque",
+         "--quality", "high", "--zoom", "5.4", "--pan", "-2.25,5.02,0",
+         "--output", "docs/images/backplane-regulator.png", PROJECT + ".kicad_pcb"],
     ]
     for command in commands:
         print("Running:", " ".join(command), flush=True)
