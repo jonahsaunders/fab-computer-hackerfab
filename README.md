@@ -21,3 +21,7 @@ The two daughtercards pass ERC, DRC, connectivity and schematic parity. Physical
 [Card details and renders](daughterboards/micromanipulator/README.md) · [Card validation](daughterboards/micromanipulator/docs/validation.md) · [Architecture](docs/architecture.md) · [Connector pinout](docs/connector-pinout.md) · [Contributing](CONTRIBUTING.md)
 
 Backplane sources: **Jonah Saunders**. Project background: **Jonah Saunders and Jacob Rohozen**. [Source history](docs/provenance.md) and [upstream licenses](daughterboards/micromanipulator/licenses/) are retained; no overall project license has been specified.
+
+## Enclosure
+
+[![Wired enclosure cutaway with both harness exits and the connected DC and USB ports](docs/enclosure/images/wired-case.webp)](docs/enclosure/README.md)
