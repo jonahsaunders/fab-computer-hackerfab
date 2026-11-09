@@ -1,0 +1,18 @@
+item,quantity_per_case,unit,component,part_number,source,link,model_or_fit
+01,1,each,Base,01-base,Print in PETG,FAB-Computer-Enclosure-CAD.zip,STL/01-base.stl
+02,1,each,Vented lid,02-lid,Print in PETG,FAB-Computer-Enclosure-CAD.zip,STL/02-lid.stl
+03,1,each,Tool gate,03-tools-gate,Print in PETG,FAB-Computer-Enclosure-CAD.zip,STL/03-tools-gate.stl
+04,1,each,Encoder gate,04-encoder-gate,Print in PETG,FAB-Computer-Enclosure-CAD.zip,STL/04-encoder-gate.stl
+05,1,each,Left motion keeper,05-motion-keeper-left,Print in PETG,FAB-Computer-Enclosure-CAD.zip,STL/05-motion-keeper-left.stl
+06,1,each,Right motion keeper,06-motion-keeper-right,Print in PETG,FAB-Computer-Enclosure-CAD.zip,STL/06-motion-keeper-right.stl
+07,1,each,Left encoder keeper,07-encoder-keeper-left,Print in PETG,FAB-Computer-Enclosure-CAD.zip,STL/07-encoder-keeper-left.stl
+08,1,each,Right encoder keeper,08-encoder-keeper-right,Print in PETG,FAB-Computer-Enclosure-CAD.zip,STL/08-encoder-keeper-right.stl
+09,1,spool,PETG filament example,Prusament PETG Jet Black 1 kg,Prusa,https://www.prusa3d.com/product/prusament-petg-jet-black-1kg/,1.75 mm filament for the eight printed parts
+10,16,each,M3 x 0.5 heat-set insert,94459A821,McMaster-Carr,https://www.mcmaster.com/94459A821/,3.4 mm installed length and 4.1 mm pilot
+11,4,each,M3 x 6 mm button-head screw,92095A179,McMaster-Carr,https://www.mcmaster.com/92095A179/,Backplane mounts
+12,4,each,M3 nylon washer,MFW030A,DigiKey,https://www.digikey.com/en/products/detail/essentra-components/MFW030A/4105389,3.2 mm ID x 7 mm OD x 0.5 mm
+13,12,each,M3 x 8 mm button-head screw,94500A222,McMaster-Carr,https://www.mcmaster.com/94500A222,Four each for lid gates and keepers
+14,1,kit,M12 x 1.5 gland with gasket and locknut,PMS12 BK080,DigiKey,https://www.digikey.com/en/products/detail/alpha-wire/PMS12-BK080/8552671,8 mm thread and 3–6.5 mm round cable jacket
+15,2,each,Cable tie,PLT1M-C0,DigiKey,https://www.digikey.com/en/products/detail/panduit-corp/PLT1M-C0/280053,2.5 mm wide x 99 mm long
+16,1,cut length,Tool split sleeve,F6N0.50BK,Techflex / Willy's Electronics,https://willyselectronics.com/collections/cable-sleeve/products/f6n0-50-bulk,1/2 in nominal ID for 17 mm gate
+17,1,cut length,Encoder split sleeve,F6N0.38BK,Techflex / Willy's Electronics,https://willyselectronics.com/collections/cable-sleeve/products/f6n0-38-bulk,3/8 in nominal ID for 13 mm gate
