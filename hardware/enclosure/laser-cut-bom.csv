@@ -1,0 +1,13 @@
+item,quantity_per_case,component,part_or_size,link
+01,1,Cast acrylic sheet,3 mm nominal x 18 x 24 in,https://www.onlinemetals.com/buy/1-8-3mm-cast-acrylic-sheet-matte-black/pid/mp-00030271
+02,1,Set of twelve laser-cut panels,Individual DXF and SVG files plus fit coupon,FAB-Computer-Laser-Cut.zip
+03,16,M3 through-threaded blocks on all three axes,TOMA 12 mm assembly cube,https://www.tomafabrications.com/products/assembly-cubes
+04,4,M3 female-female backplane standoff,Würth 970100354 x 10 mm,https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/970100354/9488551
+05,44,M3 x 6 button-head screw,McMaster-Carr 92095A179,https://www.mcmaster.com/92095A179/
+06,4,M3 x 10 button-head screw,McMaster-Carr 92095A182,https://www.mcmaster.com/92095A182/
+07,48,M3 nylon washer,Essentra MFW030A x 0.5 mm,https://www.digikey.com/en/products/detail/essentra-components/MFW030A/4105389
+08,4,Adhesive foot,Hammond 1421T2 x 3.5 mm,https://www.newark.com/hammond/1421t2/feet-rubber-12-7x3-5-black-pk24/dp/41T0969
+09,1,M12 x 1.5 DC gland kit,Alpha Wire PMS12 BK080,https://www.digikey.com/en/products/detail/alpha-wire/PMS12-BK080/8552671
+10,2,Cable tie,Panduit PLT1M-C0,https://www.digikey.com/en/products/detail/panduit-corp/PLT1M-C0/280053
+11,1 cut length,Tool split sleeve,Techflex F6N0.50BK,https://willyselectronics.com/collections/cable-sleeve/products/f6n0-50-bulk
+12,1 cut length,Encoder split sleeve,Techflex F6N0.38BK,https://willyselectronics.com/collections/cable-sleeve/products/f6n0-38-bulk
