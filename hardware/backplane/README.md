@@ -19,8 +19,8 @@ Open [`HackerfabBackplane.kicad_pro`](HackerfabBackplane.kicad_pro) with KiCad 1
 
 Keep this directory and `../libraries/` together when copying the project. Standard KiCad libraries are also required. Standard 3D models are optional for circuit editing but needed for a complete 3D preview.
 
-The 2026-11-05 import adds four 2.2 kΩ I²C pullups (R58–R61), replaces H1–H4 with grounded M3 pad-and-via footprints, and marks J3:C19 as NC. The design has 152 schematic components and 152 PCB footprints, 1,143 track segments, and 271 vias. The design files match the supplied archive after line-ending normalization. This is development hardware.
+The 2026-11-10 layout revises component placement and routing in the 12 V and 5 V buck regulator sections. The board has 152 footprints, 1,151 track segments, and 264 vias. This is development hardware.
 
-See the [schematic previews](../../docs/schematics/README.md) and [historical November 4 validation baseline](../../docs/validation.md).
+See the [schematic previews](../../docs/schematics/README.md) and [validation results](../../docs/validation.md).
 
 The [connector signal arrangement](../../docs/connector-pinout.md) uses the V6 layout, with SPI at opposite ends, UART0 on J1 nearest the MCU, and UART1 on J2 (schematic name `UART2`). J3 UART positions remain NC. Use the [per-port pin table](../../docs/connector-pinout.csv) for exact signal/NC assignments.

@@ -12,7 +12,7 @@ A reusable power and control backplane with plug-in boards for HackerFab tools.
 
 <a href="docs/images/backplane.png"><img src="docs/images/backplane.png" width="620" alt="Component side of the updated FAB Computer backplane with three DIN96 slots"></a>
 
-*KiCad 3D render of the backplane with the Abracon AOTA-B201610S3R3-101-T inductor at L3.*
+*KiCad 3D render of the November 10 backplane layout with revised 12 V and 5 V buck regulator placement.*
 
 ### Motion controller
 

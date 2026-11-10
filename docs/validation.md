@@ -1,4 +1,14 @@
-# Validation baseline
+# Backplane validation
+
+## November 10 layout
+
+Checked with **KiCad 10.0.6** using the supplied PCB's saved copper fills and the repository's rule settings. The PCB has **152 footprints**, **1,151 track segments**, and **264 vias**.
+
+- DRC reported **zero errors**, **zero unconnected items**, and **zero schematic/PCB parity findings**. It reported **390 warnings**, compared with 389 on the preceding GitHub layout. The additional warning is a front-copper sliver.
+- ERC reported **9 errors and 5 warnings** on the existing schematics.
+- All **288 connector contacts** agree with the schematic netlist and the repository pinout. Repository checks pass.
+
+## November 4 baseline
 
 Checked on **2026-11-04** with **KiCad 10.0.6**, using the supplied design files and saved copper fills without modifying the design.
 
@@ -9,7 +19,7 @@ Checked on **2026-11-04** with **KiCad 10.0.6**, using the supplied design files
 - **386 DRC findings:** 24 errors and 362 warnings, with **zero unconnected items** and **zero schematic/PCB parity findings** under the supplied rule settings.
 - Seven schematic previews, the board image, and the netlist export successfully. Repository checks pass.
 
-## DRC breakdown
+### DRC breakdown
 
 | Finding | Count |
 | --- | ---: |
@@ -21,7 +31,7 @@ Checked on **2026-11-04** with **KiCad 10.0.6**, using the supplied design files
 | `silk_overlap` | 52 |
 | `silk_edge_clearance` | 2 |
 
-## ERC breakdown
+### ERC breakdown
 
 | Finding | Count |
 | --- | ---: |

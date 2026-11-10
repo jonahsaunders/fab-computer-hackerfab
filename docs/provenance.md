@@ -10,7 +10,13 @@ The initial repository import was prepared on 2026-10-21 from:
 
 The report describes early requirements and plans. The supplied KiCad files are the source for the repository's hardware inventory and validation baseline; the report's milestone statuses are not presented as current test results.
 
-## Latest 2026-11-05 source update
+## 2026-11-10 layout update
+
+Imported the supplied `HackerfabBackplane.kicad_pcb` with line endings normalized for Git. The layout moves L1/L2, D2/D4, C7/C14, and TP1–TP4 and revises copper in the two buck regulator sections. The saved copper fills are from the supplied board. The schematics, connector net assignments, and project rules match the preceding revision.
+
+The board, plug-in assembly, and enclosure images were regenerated from the imported layout. See the [validation results](validation.md).
+
+## 2026-11-05 source update
 
 Imported ten active backplane files and 31 library files. Six active files differ from the preceding import: the PCB, project settings, root schematic, microcontroller schematic, `Hack_Connector.kicad_sym`, and `Hack_Passives.kicad_sym`.
 
