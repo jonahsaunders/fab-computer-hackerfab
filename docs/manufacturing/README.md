@@ -21,6 +21,7 @@ The CPL uses absolute coordinates in millimetres on the same origin as the Gerbe
 
 - Confirm the inner copper weight before ordering. The saved KiCad stackup shows 35 µm on each inner layer, while the supplied custom rules describe a 0.5 oz inner-copper process. Confirm the intended construction with the designer and JLCPCB. [Backplane project notes](../../hardware/backplane/README.md)
 - Populate the three vertical female DIN96 sockets J1–J3 and the terminal blocks J4–J6. The plug-in cards use the mating right-angle male connector.
+- Use the supplied backplane CPL for the JLCPCB catalog parts. It includes the DIN96 socket centers, the USB-C position and the part-specific rotations. After replacing an earlier CPL, select **Process BOM&CPL**, recheck your part selections and compare the preview with the [backplane placement guide](backplane/placement.md).
 - The RP2350B uses Y1 Abracon **ABM8-272-T3** (`C20625731`) and L3 Abracon **AOTA-B201610S3R3-101-T** (`C42411119`). In the assembly preview, L3's winding mark faces pad 1 on `+1V1`. L1 and L2 are the separate 15 µH Sumida inductors for the external buck regulators. [Raspberry Pi's JLCPCB guidance](https://www.raspberrypi.com/news/rp2350-now-available-at-jlcpcb/)
 - Review the prototype findings before ordering. The layout check reported zero errors and zero unconnected items, with 390 warnings including one front-copper sliver. The schematic check reported nine errors and five warnings. [Backplane validation](../validation.md)
 
