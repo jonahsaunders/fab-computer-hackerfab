@@ -4,6 +4,8 @@ A reusable power and control backplane with plug-in boards for HackerFab tools.
 
 [Backplane](#backplane) · [Motion controller](#motion-controller) · [Encoder splitter](#encoder-splitter) · [Plug-in assembly](#plug-in-assembly)
 
+[Manufacturing guide, JLCPCB files, and part alternatives](docs/manufacturing/README.md)
+
 ## Boards
 
 ### Backplane
