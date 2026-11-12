@@ -4,9 +4,9 @@ These files cover the three active HackerFab boards at [design revision `1876353
 
 | Board | Outline | Copper layers | Smallest via drill | Fabrication | Assembly |
 | --- | --- | ---: | ---: | --- | --- |
-| [HackerFab backplane](../../hardware/backplane/README.md) | 111.5 × 154 mm | 4 | 0.20 mm | [Gerbers and drills](backplane/Gerbers.zip) | [BOM](backplane/BOM.csv) · [CPL](backplane/CPL.csv) |
-| [Motion controller](../../daughterboards/micromanipulator/README.md) | 100 × 60 mm | 4 | 0.20 mm | [Gerbers and drills](motion-controller/Gerbers.zip) · [Via-fill map](motion-controller/Via-Fill-Map.png) | [BOM](motion-controller/BOM.csv) · [CPL](motion-controller/CPL.csv) |
-| [Slot-mounted encoder splitter](../../daughterboards/micromanipulator/hardware/encoder-backplane/README.md) | 100 × 26 mm | 4 | 0.25 mm | [Gerbers and drills](encoder-splitter/Gerbers.zip) | [BOM](encoder-splitter/BOM.csv) · [CPL](encoder-splitter/CPL.csv) |
+| [HackerFab backplane](../../hardware/backplane/README.md) | 111.5 × 154 mm | 4 | 0.20 mm | [Gerbers and drills](backplane/Gerbers.zip) | [BOM](backplane/BOM.csv) · [CPL](backplane/CPL.csv) · [Stock and replacements](parts-sourcing.md#backplane) |
+| [Motion controller](../../daughterboards/micromanipulator/README.md) | 100 × 60 mm | 4 | 0.20 mm | [Gerbers and drills](motion-controller/Gerbers.zip) · [Via-fill map](motion-controller/Via-Fill-Map.png) | [BOM](motion-controller/BOM.csv) · [CPL](motion-controller/CPL.csv) · [Stock and replacements](parts-sourcing.md#motion-controller) |
+| [Slot-mounted encoder splitter](../../daughterboards/micromanipulator/hardware/encoder-backplane/README.md) | 100 × 26 mm | 4 | 0.25 mm | [Gerbers and drills](encoder-splitter/Gerbers.zip) | [BOM](encoder-splitter/BOM.csv) · [CPL](encoder-splitter/CPL.csv) · [Stock and replacements](parts-sourcing.md#slot-mounted-encoder-splitter) |
 
 ## Place the PCB order
 
