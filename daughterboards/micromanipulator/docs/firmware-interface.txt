@@ -48,8 +48,8 @@ Programming
 RP2350B SWD J2: 1=3V3 sense, 2=SWDIO, 3=GND, 4=SWCLK, 5=RUN.
 Power the board from its backplane; USB-C VBUS is only sensed. The old STM32
 SWD/UART/boot headers are removed. The new firmware target must select the
-80-pin RP2350B and the fitted 4 MiB external flash; the old rpipico2 target
-does not by itself establish support for GPIO32..47 and the new ADC pins.
+80-pin RP2350B and the fitted W25Q128JVSIQ 16 MiB external flash. The firmware
+target also needs support for GPIO32..47 and the new ADC pins.
 
 The two source directories and compiled-review binaries are retained as
 migration inputs only. They are not firmware for the current schematic.

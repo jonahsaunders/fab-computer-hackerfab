@@ -4763,7 +4763,7 @@
           (effects
             (font
               (size 1.016 1.016)))))))
-  (symbol "W25Q32JVSS_Clean"
+  (symbol "W25Q128JVSIQ"
     (pin_names
       (offset 0.508))
     (in_bom yes)
@@ -4773,12 +4773,12 @@
       (effects
         (font
           (size 1.27 1.27))))
-    (property "Value" "W25Q32JVSS_Clean"
+    (property "Value" "W25Q128JVSIQ"
       (at 0 0 0)
       (effects
         (font
           (size 1.27 1.27))))
-    (symbol "W25Q32JVSS_Clean_1_1"
+    (symbol "W25Q128JVSIQ_1_1"
       (rectangle
         (start -15.24 -10.16)
         (end 15.24 10.16)

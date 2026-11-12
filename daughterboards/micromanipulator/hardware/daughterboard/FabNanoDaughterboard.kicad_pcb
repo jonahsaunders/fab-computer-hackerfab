@@ -25535,7 +25535,7 @@
 				)
 			)
 		)
-		(property "Value" "W25Q32JVSSIQ / 4 MiB"
+		(property "Value" "W25Q128JVSIQ / 16 MiB"
 			(at 0 3.6 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -25547,7 +25547,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C82344.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C97521.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -25581,7 +25581,7 @@
 				)
 			)
 		)
-		(property "MPN" "W25Q32JVSSIQ"
+		(property "MPN" "W25Q128JVSIQ"
 			(at 0 0 90)
 			(layer "F.SilkS")
 			(hide yes)
@@ -25605,7 +25605,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C82344"
+		(property "LCSC" "C97521"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
