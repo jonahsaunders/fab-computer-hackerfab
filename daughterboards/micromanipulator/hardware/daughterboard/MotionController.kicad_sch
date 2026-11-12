@@ -1796,7 +1796,7 @@
             (effects
               (font
                 (size 1.016 1.016)))))))
-    (symbol "FabNano:W25Q32JVSS_Clean"
+    (symbol "FabNano:W25Q128JVSIQ"
       (pin_names
         (offset 0.508))
       (in_bom yes)
@@ -1806,12 +1806,12 @@
         (effects
           (font
             (size 1.27 1.27))))
-      (property "Value" "W25Q32JVSS_Clean"
+      (property "Value" "W25Q128JVSIQ"
         (at 0 0 0)
         (effects
           (font
             (size 1.27 1.27))))
-      (symbol "W25Q32JVSS_Clean_1_1"
+      (symbol "W25Q128JVSIQ_1_1"
         (rectangle
           (start -15.24 -10.16)
           (end 15.24 10.16)
@@ -4758,7 +4758,7 @@
           (size 1.27 1.27))
         (hide yes))))
   (symbol
-    (lib_id "FabNano:W25Q32JVSS_Clean")
+    (lib_id "FabNano:W25Q128JVSIQ")
     (at 279.4 196.85 0)
     (unit 1)
     (in_bom yes)
@@ -4770,7 +4770,7 @@
       (effects
         (font
           (size 1.27 1.27))))
-    (property "Value" "W25Q32JVSSIQ / 4 MiB"
+    (property "Value" "W25Q128JVSIQ / 16 MiB"
       (at 279.4 167.64 0)
       (effects
         (font
@@ -4781,13 +4781,13 @@
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Datasheet" "https://www.lcsc.com/datasheet/C82344.pdf"
+    (property "Datasheet" "https://www.lcsc.com/datasheet/C97521.pdf"
       (at 279.4 196.85 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "MPN" "W25Q32JVSSIQ"
+    (property "MPN" "W25Q128JVSIQ"
       (at 279.4 196.85 0)
       (effects
         (font
@@ -4820,7 +4820,7 @@
         (path "/9dbf43c7-e8ee-5f83-8a2d-228488726642/7a60ca31-a126-5303-b0e3-52848dc2947c"
           (reference "U4")
           (unit 1))))
-    (property "LCSC" "C82344"
+    (property "LCSC" "C97521"
       (at 279.4 196.85 0)
       (effects
         (font

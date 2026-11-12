@@ -1,6 +1,6 @@
 # Manufacturing guide
 
-These files cover the three active HackerFab boards at [design revision `1876353`](https://github.com/jonahsaunders/fab-computer-hackerfab/tree/1876353af80357d221325e103f67ee17cebcaeb5). The Gerbers, Excellon drills, and placement coordinates were exported with KiCad 10.0.6. The BOMs use the fitted parts in the corresponding KiCad schematics. See the [JLCPCB parts audit and replacement table](parts-sourcing.md) for catalog matches, stock, and separately reviewed alternatives.
+These files cover the three active HackerFab boards. KiCad 10.0.6 generated the Gerbers and Excellon drills from the board geometry at [design revision `1876353`](https://github.com/jonahsaunders/fab-computer-hackerfab/tree/1876353af80357d221325e103f67ee17cebcaeb5). The BOMs follow the current KiCad schematics, including the motion card’s 16 MiB flash. See the [JLCPCB parts audit and replacement table](parts-sourcing.md) for catalog matches, stock, and reviewed alternatives.
 
 | Board | Outline | Copper layers | Smallest via drill | Fabrication | Assembly |
 | --- | --- | ---: | ---: | --- | --- |
@@ -29,12 +29,12 @@ The CPL uses absolute coordinates in millimetres on the same origin as the Gerbe
 - Select **ENIG** and **JLC04161H-7628** to match the saved stackup. The USB geometry was designed for this stackup. Confirm construction and impedance requirements with JLCPCB. [Layout and stackup](../../daughterboards/micromanipulator/docs/layout-review.md)
 - Use **Standard PCBA** for the 0201 resistors R7 and R8. Ask JLCPCB to add rails or panelize the board to meet the 70 × 70 mm Standard PCBA minimum. Have it check fixture clearance at the overhanging right-angle DIN96 connector J1. [JLCPCB Standard PCBA requirements](https://jlcpcb.com/blog/reduce-pcb-assembly-cost-prototype)
 - Request epoxy fill and copper capping for the **11 marked Ø0.30 mm vias** at U1, U9 and U10. Attach the [via-fill map](motion-controller/Via-Fill-Map.png) and identify `FabNanoDaughterboard-via-fill-and-cap.sk` in the order notes. Follow the supplied mask artwork for the other vias. [JLCPCB via-covering guide](https://jlcpcb.com/help/article/pcb-via-covering)
-- Verify U1's A4 stepping and QFN orientation, plus the switch-side and polarity markings around the motor drivers and the polymer capacitor. [Motion card BOM and validation](../../daughterboards/micromanipulator/docs/validation.md)
+- Confirm J1 is selected as WingTAT `9001-11961C00A` (`C5173361`) and U4 as Winbond `W25Q128JVSIQ` (`C97521`). Check the overhanging DIN plug, the header rows and the IC pin 1 locations using the [card placement guide](card-placement.md#motion-controller). Verify U1's A4 stepping against the [parts audit](parts-sourcing.md#motion-controller).
 
 ## Slot-mounted encoder splitter
 
 - Select **ENIG** and **JLC04161H-7628**. Quote top-side Economic PCBA if the selected parts and finish qualify. Confirm fixture clearance at the overhanging male DIN96 connector J4.
-- Populate three top-entry JST PH6 headers J1–J3 and the DIN96 plug J4. Check the JST key direction and DIN96 orientation in the preview. [Encoder card and pinout](../../daughterboards/micromanipulator/hardware/encoder-backplane/README.md)
+- Populate three top-entry JST PH6 headers J1–J3 and the DIN96 plug J4. Use the [card placement guide](card-placement.md#slot-mounted-encoder-splitter) to check the JST key direction, J4's A1 contact and the regulator's pin 1. [Encoder card and pinout](../../daughterboards/micromanipulator/hardware/encoder-backplane/README.md)
 
 ## Source BOMs and order substitutions
 

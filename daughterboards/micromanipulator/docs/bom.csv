@@ -43,7 +43,7 @@ R14,1kR,Resistor_SMD:R_0402_1005Metric,0402WGF1001TCE,Uniroyal Electronics,C1170
 SW1,RESET,Button_Switch_SMD:SW_SPST_TL3305A,TL3305AF160QG,E-Switch,C2886899,1,Manufacturer dimensions/ratings and JLCPCB catalog checked 2026-11-07; confirm order inventory
 SW2,BOOTSEL,Button_Switch_SMD:SW_SPST_TL3305A,TL3305AF160QG,E-Switch,C2886899,1,Manufacturer dimensions/ratings and JLCPCB catalog checked 2026-11-07; confirm order inventory
 U1,RP2350B,Package_DFN_QFN:QFN-80-1EP_10x10mm_P0.4mm_EP3.4x3.4mm,RP2350B A4,Raspberry Pi,C9900208890,1,A4 stepping required; JLCPCB assembly catalog checked 2026-11-07; stock not confirmed
-U4,W25Q32JVSSIQ / 4 MiB,Package_SO:SOIC-8_5.3x5.3mm_P1.27mm,W25Q32JVSSIQ,Winbond Electronics,C82344,1,Manufacturer dimensions/ratings and JLCPCB catalog checked 2026-11-07; confirm order inventory
+U4,W25Q128JVSIQ / 16 MiB,Package_SO:SOIC-8_5.3x5.3mm_P1.27mm,W25Q128JVSIQ,Winbond Electronics,C97521,1,Manufacturer dimensions and JLCPCB catalog checked 2026-11-12
 Y1,12MHz / 10pF,Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm,ABM8-272-T3,Abracon,C20625731,1,Manufacturer dimensions/ratings and JLCPCB catalog checked 2026-11-07; confirm order inventory
 C30,100nF 50V,Capacitor_SMD:C_0603_1608Metric,CC0603KRX7R9BB104,YAGEO,C14663,1,JLCPCB catalog/package checked 2026-11-07; confirm current inventory
 C31,10uF 25V X7R,Capacitor_SMD:C_0805_2012Metric,C0805X7R106K250NT,SANYEAR,C2835529,1,Manufacturer dimensions/ratings and JLCPCB catalog checked 2026-11-07; confirm order inventory

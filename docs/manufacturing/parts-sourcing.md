@@ -2,6 +2,8 @@
 
 **Stock snapshot November 12, 2026, 11:39:43–11:40:05 EST.** Counts came from JLCPCB’s public assembly catalog. The three BOMs share this inventory pool. Confirm the current quantities in your quote. [JLCPCB matching guidance](https://jlcpcb.com/help/article/component-matching-guidelines-for-pcba-orders)
 
+The shared DIN96 plug `C5173361` and flash `C97521` were rechecked at 12:32:43 EST on November 12.
+
 **Need for 5** estimates one five-PCB order per board. It is the greater of the catalog minimum or the fitted quantity plus the catalog spare count. The quote determines the final quantity. The checked listing uses the project’s C-code when specified, or an exact catalog match for the original part. The TPS2116DRL listing uses TI’s orderable tape-and-reel suffix `TPS2116DRLR`. [TI ordering information](https://www.ti.com/product/TPS2116/part-details/TPS2116DRLR)
 
 For JLCPCB assembly, use the search icon on the matching row and enter the C-code listed for that designator. For parts you plan to solder yourself, leave those rows unselected in the assembly quote and buy the exact MPN shown. The [manufacturing guide](README.md) links to the original KiCad BOMs and placement files.
@@ -72,7 +74,7 @@ For JLCPCB assembly, use the search icon on the matching row and enter the C-cod
 | U4 | `USBLC6-2SC6` | USBLC6-2SC6 | `SOT-23-6` | 1 | [`C7519`](https://jlcpcb.com/partdetail/C7519) | 45,081 | 7 |
 | U5 | `RP2350B` | RP2350B | `QFN-80-1EP_10x10mm_P0.4mm_EP3.4x3.4mm` | 1 | [`C42415655`](https://jlcpcb.com/partdetail/C42415655) | 1,523 | 5 |
 | U6 | `TPS2116DRL` | TPS2116DRL | `SOT-583-8` | 1 | [`C3235557`](https://jlcpcb.com/partdetail/C3235557) | 65,135 | 5 |
-| U7 | `W25Q128JVSIQ` | W25Q128JVSIQ | `W25Q128JVSIQ_SOIC-8_5.3x5.3mm_P1.27mm` | 1 | [`C97521`](https://jlcpcb.com/partdetail/C97521) | 70,824 | 5 |
+| U7 | `W25Q128JVSIQ` | W25Q128JVSIQ | `W25Q128JVSIQ_SOIC-8_5.3x5.3mm_P1.27mm` | 1 | [`C97521`](https://jlcpcb.com/partdetail/C97521) | 70,815 | 5 |
 | Y1 | `ABM8-272-T3` | 12MHz | `generic_xtalcc320x250x80-4` | 1 | [`C20625731`](https://jlcpcb.com/partdetail/C20625731) | 1 | 5 |
 
 ## Motion controller
@@ -85,16 +87,15 @@ For JLCPCB assembly, use the search icon on the matching row and enter the C-cod
 | --- | --- | --- | --- | ---: | --- |
 | C31, C35, C39 | `C0805X7R106K250NT` [`C2835529`](https://jlcpcb.com/partdetail/C2835529) | 0 / 17 | [`C237493`](https://jlcpcb.com/partdetail/C237493) · Murata Electronics `GRM21BZ71E106KE15L` | 74,524 / 17 | Same two-terminal 0805, 10 µF, 25 V, X7R, ±10%. Check effective capacitance at 12 V for the motor-driver bypass positions. [Murata data via its distributor](https://www.lcsc.com/product-detail/C237493.html) |
 | U1 | `RP2350B A4` [`C9900208890`](https://jlcpcb.com/partdetail/C9900208890) | 0 / 5 | [`C42415655`](https://jlcpcb.com/partdetail/C42415655) · Raspberry Pi `RP2350B` · confirm A4 lot first | 1,523 / 5 | Conditional sourcing option. This listing has the RP2350B QFN-80 pinout and 10 × 10 mm footprint. Ask JLCPCB to confirm an A4 lot before selecting it for motion U1. The explicitly named A4 listing [C50090805](https://jlcpcb.com/partdetail/C50090805) also reported zero. The exact Raspberry Pi ordering code SC1510-A4 can be quoted for [Global Sourcing](https://jlcpcb.com/help/article/pcba-parts-sourcing-instruction) or consigned. [Raspberry Pi stepping guidance](https://www.raspberrypi.com/news/rp2350-a4-rp2354-and-a-new-hacking-challenge/) |
-| U4 | `W25Q32JVSSIQ` [`C82344`](https://jlcpcb.com/partdetail/C82344) | 0 / 5 | [`C97521`](https://jlcpcb.com/partdetail/C97521) · Winbond Elec `W25Q128JVSIQ` | 70,824 / 5 | Same part used at backplane U7. [See the U4 pin and footprint comparison](#motion-controller-u4-flash). |
 | Y1 | `ABM8-272-T3` [`C20625731`](https://jlcpcb.com/partdetail/C20625731) | 1 / 5 | Preorder or hand-fit the exact `ABM8-272-T3` | — | Raspberry Pi recommends this exact 12 MHz, 10 pF crystal for the oscillator. Source the exact part to keep the reference design’s specified crystal and load capacitance. [RP2350 hardware design guide](https://pip-assets.raspberrypi.com/categories/1214-rp2350/documents/RP-008280-DS-1-hardware-design-with-rp2350.pdf?disposition=inline) |
 
 ### Motion controller U4 flash
 
-**Use the same Winbond `W25Q128JVSIQ` as backplane U7.** [`C97521`](https://jlcpcb.com/partdetail/C97521) showed **70,824** in JLCPCB assembly stock. It fits the motion controller’s existing U4 footprint and matches all eight connections on the original `W25Q32JVSSIQ`.
+Motion U4 now specifies Winbond `W25Q128JVSIQ` (`C97521`) in KiCad and the assembly BOM. It is the same part as backplane U7. JLCPCB showed **70,815** in assembly stock at the recheck. [JLCPCB listing](https://jlcpcb.com/partdetail/C97521)
 
-Both parts use the wide 208-mil SOIC-8 body, 1.27 mm lead pitch, a 2.7–3.6 V supply, and a Q suffix with quad enable fixed to 1. In KiCad, motion U4 and backplane U7 have identical pad sizes, pad coordinates and numbering. Their signal names resolve to the same connections.
+The device uses a wide 208-mil SOIC-8 body, 1.27 mm lead pitch and a 2.7–3.6 V supply. It fits the existing motion-card lands and preserves all eight signal connections. [Winbond specifications](https://www.winbond.com/hq/product/code-storage-flash/qspi-nor/w25q-jv/?__locale=en&partNo=W25Q128JVSIQ)
 
-| Pin | Both Winbond parts | Motion U4 and backplane U7 |
+| Pin | Winbond function | Motion U4 and backplane U7 |
 | ---: | --- | --- |
 | 1 | `/CS` | QSPI chip select |
 | 2 | `IO1` | QSPI data 1 |
@@ -105,7 +106,7 @@ Both parts use the wide 208-mil SOIC-8 body, 1.27 mm lead pitch, a 2.7–3.6 V s
 | 7 | `IO3` | QSPI data 3 |
 | 8 | `VCC` | 3.3 V |
 
-The backplane part provides **16 MiB** and reports JEDEC ID `EF 40 18`. The motion BOM part provides **4 MiB** and reports `EF 40 16`. Keep the existing image and partition layout inside the first 4 MiB. Verify that the programmer recognizes the new ID and that the first board boots. [Winbond 32 Mbit datasheet](https://www.mouser.com/datasheet/2/949/w25q32jv_revg_03272018_plus-1489806.pdf) · [Winbond 128 Mbit datasheet](https://www.mouser.com/datasheet/2/949/Winbond_Electronics_Corporation_09_06_2024_W25Q128-3501276.pdf) · [Winbond quad-enable guidance](https://www.winbond.com/hq/support/faq/technical/index.html)
+The device provides **16 MiB** and reports JEDEC ID `EF 40 18`. Configure the target for 16 MiB before using the full address space. Verify that the programmer recognizes the ID and that the first board boots. [Winbond W25Q128JV documentation](https://www.winbond.com/hq/support/documentation/?__locale=en&category=%2F.categories%2Fresources%2Fdatasheet%2F&family=%2Fproduct%2Fcode-storage-flash%2Fserial-nor-flash%2Findex.html&line=%2Fproduct%2Fcode-storage-flash%2Findex.html&pno=W25Q128JV)
 
 ### Detailed BOM and assembly stock
 
@@ -152,7 +153,7 @@ The backplane part provides **16 MiB** and reports JEDEC ID `EF 40 18`. The moti
 | SW1, SW2 | `TL3305AF160QG` | RESET / BOOTSEL | `SW_SPST_TL3305A` | 2 | [`C2886899`](https://jlcpcb.com/partdetail/C2886899) | 128 | 10 |
 | U1 | `RP2350B A4` | RP2350B | `QFN-80-1EP_10x10mm_P0.4mm_EP3.4x3.4mm` | 1 | [`C9900208890`](https://jlcpcb.com/partdetail/C9900208890) | 0 | 5 |
 | U2 | `AP2112M-3.3TRG1` | AP2112M-3.3TRG1 | `SOIC-8_3.9x4.9mm_P1.27mm` | 1 | [`C5290219`](https://jlcpcb.com/partdetail/C5290219) | 2,486 | 5 |
-| U4 | `W25Q32JVSSIQ` | W25Q32JVSSIQ / 4 MiB | `SOIC-8_5.3x5.3mm_P1.27mm` | 1 | [`C82344`](https://jlcpcb.com/partdetail/C82344) | 0 | 5 |
+| U4 | `W25Q128JVSIQ` | W25Q128JVSIQ / 16 MiB | `SOIC-8_5.3x5.3mm_P1.27mm` | 1 | [`C97521`](https://jlcpcb.com/partdetail/C97521) | 70,815 | 5 |
 | U5, U6, U7 | `TB6612FNG(O,C,8,EL` | TB6612FNG | `SSOP-24_Toshiba_5.6x7.8mm_P0.65mm` | 3 | [`C88224`](https://jlcpcb.com/partdetail/C88224) | 2,893 | 15 |
 | U9, U10 | `DRV8837CDSGR` | DRV8837CDSGR | `Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm` | 2 | [`C191000`](https://jlcpcb.com/partdetail/C191000) | 56,230 | 14 |
 | U11 | `TC4427AEOA` | TC4427AEOA | `SOIC-8_3.9x4.9mm_P1.27mm` | 1 | [`C18690`](https://jlcpcb.com/partdetail/C18690) | 160 | 5 |
