@@ -1,12 +1,14 @@
 # Manufacturing guide
 
-These files cover the three active HackerFab boards. KiCad 10.0.6 generated the Gerbers and Excellon drills from the board geometry at [design revision `1876353`](https://github.com/jonahsaunders/fab-computer-hackerfab/tree/1876353af80357d221325e103f67ee17cebcaeb5). The BOMs follow the current KiCad schematics, including the motion card’s 16 MiB flash. See the [JLCPCB parts audit and replacement table](parts-sourcing.md) for catalog matches, stock, and reviewed alternatives.
+These files cover the active HackerFab boards. For the backplane and micromanipulator cards, KiCad 10.0.6 generated the Gerbers and Excellon drills from the board geometry at [design revision `1876353`](https://github.com/jonahsaunders/fab-computer-hackerfab/tree/1876353af80357d221325e103f67ee17cebcaeb5). The BOMs follow the current KiCad schematics, including the motion card’s 16 MiB flash. See the [JLCPCB parts audit and replacement table](parts-sourcing.md) for catalog matches, stock, and reviewed alternatives.
 
 | Board | Outline | Copper layers | Smallest via drill | Fabrication | Assembly |
 | --- | --- | ---: | ---: | --- | --- |
 | [HackerFab backplane](../../hardware/backplane/README.md) | 111.5 × 154 mm | 4 | 0.20 mm | [Gerbers and drills](backplane/Gerbers.zip) | [BOM](backplane/BOM.csv) · [CPL](backplane/CPL.csv) · [Stock and replacements](parts-sourcing.md#backplane) |
 | [Motion controller](../../daughterboards/micromanipulator/README.md) | 100 × 60 mm | 4 | 0.20 mm | [Gerbers and drills](motion-controller/Gerbers.zip) · [Via-fill map](motion-controller/Via-Fill-Map.png) | [BOM](motion-controller/BOM.csv) · [CPL](motion-controller/CPL.csv) · [Stock and replacements](parts-sourcing.md#motion-controller) |
 | [Slot-mounted encoder splitter](../../daughterboards/micromanipulator/hardware/encoder-backplane/README.md) | 100 × 26 mm | 4 | 0.25 mm | [Gerbers and drills](encoder-splitter/Gerbers.zip) | [BOM](encoder-splitter/BOM.csv) · [CPL](encoder-splitter/CPL.csv) · [Stock and replacements](parts-sourcing.md#slot-mounted-encoder-splitter) |
+| [Sputtering pump + gauge + USB](../../daughterboards/sputtering/README.md) | 100 × 65 mm | 2 | 0.30 mm | [Gerbers and drills](sputtering-pump-gauge-usb/Gerbers.zip) | [BOM](sputtering-pump-gauge-usb/BOM.csv) · [CPL](sputtering-pump-gauge-usb/CPL.csv) |
+| [Sputtering Alicat](../../daughterboards/sputtering/README.md) | 100 × 85 mm | 2 | 0.30 mm | [Gerbers and drills](sputtering-alicat/Gerbers.zip) | [BOM](sputtering-alicat/BOM.csv) · [CPL](sputtering-alicat/CPL.csv) |
 
 ## Place the PCB order
 
@@ -36,6 +38,11 @@ The CPL uses absolute coordinates in millimetres on the same origin as the Gerbe
 
 - Select **ENIG** and **JLC04161H-7628**. Quote top-side Economic PCBA if the selected parts and finish qualify. Confirm fixture clearance at the overhanging male DIN96 connector J4.
 - Populate three top-entry JST PH6 headers J1–J3 and the DIN96 plug J4. Use the [card placement guide](card-placement.md#slot-mounted-encoder-splitter) to check the JST key direction, J4's A1 contact and the regulator's pin 1. [Encoder card and pinout](../../daughterboards/micromanipulator/hardware/encoder-backplane/README.md)
+
+## Sputtering cards
+
+- Two layers, FR-4, 1.6 mm.
+- Exported with KiCad 10.0.6 and the Fabrication Toolkit plugin from the design files added in the same commit. CPL uses the Gerbers' origin.
 
 ## Source BOMs and order substitutions
 
