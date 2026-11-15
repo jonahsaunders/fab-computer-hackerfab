@@ -26,7 +26,15 @@ A reusable power and control backplane with plug-in boards for HackerFab tools.
 
 ### Sputtering cards
 
+Two host-controlled cards: pump, gauge and USB in **J1**, and dual Alicat RS-232 in **J2**. Both are two-layer designs.
+
+[Sputtering section: projects, schematics and manufacturing files](daughterboards/sputtering/README.md) · [Review and validation](daughterboards/sputtering/docs/validation.md)
+
 <a href="daughterboards/sputtering/docs/sputtering-pump-gauge-usb-3d.png"><img src="daughterboards/sputtering/docs/sputtering-pump-gauge-usb-3d.png" width="620" alt="Sputtering pump, gauge and USB card with its DIN96 connector, two pluggable headers and a USB-C port"></a>
+
+<a href="daughterboards/sputtering/docs/sputtering-alicat-3d.png"><img src="daughterboards/sputtering/docs/sputtering-alicat-3d.png" width="620" alt="Sputtering Alicat card with a DIN96 connector and two RS-232 ports"></a>
+
+Prototype designs: automated checks found no electrical-rule, layout-rule, connectivity or schematic-parity errors. Layout warnings and remaining bench checks are recorded in the [sputtering validation notes](daughterboards/sputtering/docs/validation.md).
 
 ## Plug-in assembly
 
