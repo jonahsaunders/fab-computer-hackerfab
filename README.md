@@ -26,7 +26,7 @@ A reusable power and control backplane with plug-in boards for HackerFab tools.
 
 ### Sputtering cards
 
-<a href="daughterboards/sputtering/docs/sputtering-pump-gauge-usb-3d.png"><img src="daughterboards/sputtering/docs/sputtering-pump-gauge-usb-3d.png" width="620" alt="Sputtering pump, gauge and USB card with its DIN96 connector, two pluggable headers and a USB-C port"></a>
+<a href="daughterboards/sputtering/docs/sputtering-pump-gauge-usb-3d.png"><img src="daughterboards/sputtering/docs/sputtering-pump-gauge-usb-3d.png" width="620" alt="Sputtering pump, gauge and USB card with its DIN96 connector, two screw terminals and a USB-C port"></a>
 
 <a href="daughterboards/sputtering/docs/sputtering-alicat-3d.png"><img src="daughterboards/sputtering/docs/sputtering-alicat-3d.png" width="620" alt="Sputtering Alicat card with a DIN96 connector and two RS-232 ports"></a>
 

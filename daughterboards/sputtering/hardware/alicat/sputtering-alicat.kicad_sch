@@ -8,7 +8,7 @@
 		(title "Sputtering Alicat card: 2x RS-232 (slot 2)")
 	)
 	(lib_symbols
-		(symbol "Connector:DE9_Socket_MountingHoles"
+		(symbol "Connector:DE9_Pins_MountingHoles"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -28,7 +28,7 @@
 					)
 				)
 			)
-			(property "Value" "DE9_Socket_MountingHoles"
+			(property "Value" "DE9_Pins_MountingHoles"
 				(at 0 14.605 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -60,7 +60,7 @@
 					)
 				)
 			)
-			(property "Description" "9-pin D-SUB connector, socket (female), Mounting Hole"
+			(property "Description" "9-pin D-SUB connector, pins (male), Mounting Hole"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -82,7 +82,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "DSUB*Socket*"
+			(property "ki_fp_filters" "DSUB*Pins*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -93,19 +93,7 @@
 					)
 				)
 			)
-			(symbol "DE9_Socket_MountingHoles_0_1"
-				(polyline
-					(pts
-						(xy -3.81 13.335) (xy -3.81 -13.335) (xy 3.81 -9.525) (xy 3.81 9.525) (xy -3.81 13.335)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
+			(symbol "DE9_Pins_MountingHoles_0_1"
 				(polyline
 					(pts
 						(xy -3.81 10.16) (xy -2.54 10.16)
@@ -214,6 +202,18 @@
 						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy -3.81 -13.335) (xy -3.81 13.335) (xy 3.81 9.525) (xy 3.81 -9.525) (xy -3.81 -13.335)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
 				(circle
 					(center -1.778 10.16)
 					(radius 0.762)
@@ -222,7 +222,7 @@
 						(type default)
 					)
 					(fill
-						(type none)
+						(type outline)
 					)
 				)
 				(circle
@@ -233,7 +233,7 @@
 						(type default)
 					)
 					(fill
-						(type none)
+						(type outline)
 					)
 				)
 				(circle
@@ -244,7 +244,7 @@
 						(type default)
 					)
 					(fill
-						(type none)
+						(type outline)
 					)
 				)
 				(circle
@@ -255,7 +255,7 @@
 						(type default)
 					)
 					(fill
-						(type none)
+						(type outline)
 					)
 				)
 				(circle
@@ -266,7 +266,7 @@
 						(type default)
 					)
 					(fill
-						(type none)
+						(type outline)
 					)
 				)
 				(circle
@@ -277,7 +277,7 @@
 						(type default)
 					)
 					(fill
-						(type none)
+						(type outline)
 					)
 				)
 				(circle
@@ -288,7 +288,7 @@
 						(type default)
 					)
 					(fill
-						(type none)
+						(type outline)
 					)
 				)
 				(circle
@@ -299,7 +299,7 @@
 						(type default)
 					)
 					(fill
-						(type none)
+						(type outline)
 					)
 				)
 				(circle
@@ -310,13 +310,13 @@
 						(type default)
 					)
 					(fill
-						(type none)
+						(type outline)
 					)
 				)
 			)
-			(symbol "DE9_Socket_MountingHoles_1_1"
+			(symbol "DE9_Pins_MountingHoles_1_1"
 				(pin passive line
-					(at -7.62 10.16 0)
+					(at -7.62 -10.16 0)
 					(length 3.81)
 					(name "1"
 						(effects
@@ -334,7 +334,7 @@
 					)
 				)
 				(pin passive line
-					(at -7.62 5.08 0)
+					(at -7.62 -5.08 0)
 					(length 3.81)
 					(name "2"
 						(effects
@@ -370,7 +370,7 @@
 					)
 				)
 				(pin passive line
-					(at -7.62 -5.08 0)
+					(at -7.62 5.08 0)
 					(length 3.81)
 					(name "4"
 						(effects
@@ -388,7 +388,7 @@
 					)
 				)
 				(pin passive line
-					(at -7.62 -10.16 0)
+					(at -7.62 10.16 0)
 					(length 3.81)
 					(name "5"
 						(effects
@@ -406,7 +406,7 @@
 					)
 				)
 				(pin passive line
-					(at -7.62 7.62 0)
+					(at -7.62 -7.62 0)
 					(length 3.81)
 					(name "6"
 						(effects
@@ -424,7 +424,7 @@
 					)
 				)
 				(pin passive line
-					(at -7.62 2.54 0)
+					(at -7.62 -2.54 0)
 					(length 3.81)
 					(name "7"
 						(effects
@@ -442,7 +442,7 @@
 					)
 				)
 				(pin passive line
-					(at -7.62 -2.54 0)
+					(at -7.62 2.54 0)
 					(length 3.81)
 					(name "8"
 						(effects
@@ -460,7 +460,7 @@
 					)
 				)
 				(pin passive line
-					(at -7.62 -7.62 0)
+					(at -7.62 7.62 0)
 					(length 3.81)
 					(name "9"
 						(effects
@@ -5959,7 +5959,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 295.91 222.25 0)
+		(at 295.91 191.77 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5969,7 +5969,7 @@
 		(dnp no)
 		(uuid "6664a4ab-b278-4721-b129-518b57261bb1")
 		(property "Reference" "#PWR38"
-			(at 295.91 228.6 0)
+			(at 295.91 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5980,7 +5980,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 295.91 227.33 0)
+			(at 295.91 186.69 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5990,7 +5990,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 295.91 222.25 0)
+			(at 295.91 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6001,7 +6001,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 295.91 222.25 0)
+			(at 295.91 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6012,7 +6012,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 295.91 222.25 0)
+			(at 295.91 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6565,8 +6565,9 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:DE9_Socket_MountingHoles")
+		(lib_id "Connector:DE9_Pins_MountingHoles")
 		(at 295.91 171.45 0)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6587,7 +6588,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "DE9_Socket_MountingHoles"
+		(property "Value" "DE9_Pins_MountingHoles"
 			(at 300.99 172.7199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6598,7 +6599,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Dsub:DSUB-9_Socket_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm"
+		(property "Footprint" "Connector_Dsub:DSUB-9_Pins_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm"
 			(at 295.91 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -6620,7 +6621,7 @@
 				)
 			)
 		)
-		(property "Description" "9-pin D-SUB connector, socket (female), Mounting Hole"
+		(property "Description" "9-pin D-SUB connector, pins (male), Mounting Hole"
 			(at 295.91 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -6631,7 +6632,7 @@
 				)
 			)
 		)
-		(property "MPN" "CONNFLY DS1037-09FNAKT74-0CC"
+		(property "MPN" "CONNFLY DS1037-09MNAKT74-0CC"
 			(at 295.91 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -6642,7 +6643,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C75749"
+		(property "LCSC" "C75750"
 			(at 295.91 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -6653,7 +6654,7 @@
 				)
 			)
 		)
-		(property "FT Rotation Offset" "-90"
+		(property "FT Rotation Offset" "0"
 			(at 295.91 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -7392,7 +7393,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 295.91 186.69 0)
+		(at 295.91 156.21 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7402,7 +7403,7 @@
 		(dnp no)
 		(uuid "99d8c2fd-3a68-4140-a66c-815923055212")
 		(property "Reference" "#PWR35"
-			(at 295.91 193.04 0)
+			(at 295.91 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7413,7 +7414,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 295.91 191.77 0)
+			(at 295.91 151.13 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7423,7 +7424,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 295.91 186.69 0)
+			(at 295.91 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7434,7 +7435,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 295.91 186.69 0)
+			(at 295.91 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7445,7 +7446,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 295.91 186.69 0)
+			(at 295.91 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8953,8 +8954,9 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:DE9_Socket_MountingHoles")
+		(lib_id "Connector:DE9_Pins_MountingHoles")
 		(at 295.91 207.01 0)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8975,7 +8977,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "DE9_Socket_MountingHoles"
+		(property "Value" "DE9_Pins_MountingHoles"
 			(at 300.99 208.2799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8986,7 +8988,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Dsub:DSUB-9_Socket_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm"
+		(property "Footprint" "Connector_Dsub:DSUB-9_Pins_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm"
 			(at 295.91 207.01 0)
 			(hide yes)
 			(show_name no)
@@ -9008,7 +9010,7 @@
 				)
 			)
 		)
-		(property "Description" "9-pin D-SUB connector, socket (female), Mounting Hole"
+		(property "Description" "9-pin D-SUB connector, pins (male), Mounting Hole"
 			(at 295.91 207.01 0)
 			(hide yes)
 			(show_name no)
@@ -9019,7 +9021,7 @@
 				)
 			)
 		)
-		(property "MPN" "CONNFLY DS1037-09FNAKT74-0CC"
+		(property "MPN" "CONNFLY DS1037-09MNAKT74-0CC"
 			(at 295.91 207.01 0)
 			(hide yes)
 			(show_name no)
@@ -9030,7 +9032,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C75749"
+		(property "LCSC" "C75750"
 			(at 295.91 207.01 0)
 			(hide yes)
 			(show_name no)
@@ -9041,7 +9043,7 @@
 				)
 			)
 		)
-		(property "FT Rotation Offset" "-90"
+		(property "FT Rotation Offset" "0"
 			(at 295.91 207.01 0)
 			(hide yes)
 			(show_name no)
