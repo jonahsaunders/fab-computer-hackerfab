@@ -1,0 +1,5 @@
+{
+  "project": "hardware/pump-gauge-usb/sputtering-pump-gauge-usb.kicad_pro",
+  "pcb": "hardware/pump-gauge-usb/sputtering-pump-gauge-usb.kicad_pcb",
+  "schematic": "hardware/pump-gauge-usb/sputtering-pump-gauge-usb.kicad_sch"
+}
