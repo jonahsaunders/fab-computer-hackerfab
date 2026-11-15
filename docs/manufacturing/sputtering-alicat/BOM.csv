@@ -3,7 +3,7 @@ Comment,Designator,Footprint,JLCPCB Part #,Quantity
 100n 50V,"C3,C4,C5,C6,C7",0402,C307331,5
 KT-0603R,D1,0603,C2286,1
 9001-11961C00A,J1,WingTAT_9001-11961C00A_DIN41612_C_3x32_RightAngle,C5173361,1
-DE9_Socket_MountingHoles,"J2,J3",DSUB-9_Socket_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm,C75749,2
+DE9_Pins_MountingHoles,"J2,J3",DSUB-9_Pins_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm,C75750,2
 1k1,R1,0603,C22764,1
 0R,"R2,R3,R4,R5,R6,R7,R8,R9",0603,C21189,8
 AP2112K-3.3TRG1,U1,SOT-23-5,C51118,1

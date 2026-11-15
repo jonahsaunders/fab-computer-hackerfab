@@ -9654,7 +9654,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "15EDGRC-3.81-4P"
+		(property "Value" "WJ124-3.81-4P"
 			(at 213.36 219.71 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9665,7 +9665,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Sputtering:Kangnex_WJ15EDGRC-3.81_1x04_P3.81mm_Horizontal"
+		(property "Footprint" "Sputtering:Kangnex_WJ124-3.81_1x04_P3.81mm_Horizontal"
 			(at 213.36 231.14 0)
 			(hide yes)
 			(show_name no)
@@ -9687,7 +9687,7 @@
 				)
 			)
 		)
-		(property "Description" "Pluggable terminal block header, 3.81 mm pitch, right angle, 4 positions"
+		(property "Description" "Screw terminal block, 3.81 mm pitch, 4 positions"
 			(at 213.36 231.14 0)
 			(hide yes)
 			(show_name no)
@@ -9698,7 +9698,7 @@
 				)
 			)
 		)
-		(property "MPN" "Kangnex WJ15EDGRC-3.81-04P-14-00A"
+		(property "MPN" "Kangnex WJ124-3.81-04P-14-00A"
 			(at 213.36 231.14 0)
 			(hide yes)
 			(show_name no)
@@ -9709,7 +9709,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C7245"
+		(property "LCSC" "C69809"
 			(at 213.36 231.14 0)
 			(hide yes)
 			(show_name no)
@@ -9720,7 +9720,7 @@
 				)
 			)
 		)
-		(property "Plug" "Kangnex WJ15EDGK-3.81-04P-14-00A (LCSC C7244)"
+		(property "FT Rotation Offset" "-90"
 			(at 213.36 231.14 0)
 			(hide yes)
 			(show_name no)
@@ -10556,7 +10556,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "15EDGRC-3.81-4P"
+		(property "Value" "WJ124-3.81-4P"
 			(at 215.9 191.77 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10567,7 +10567,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Sputtering:Kangnex_WJ15EDGRC-3.81_1x04_P3.81mm_Horizontal"
+		(property "Footprint" "Sputtering:Kangnex_WJ124-3.81_1x04_P3.81mm_Horizontal"
 			(at 213.36 189.23 0)
 			(hide yes)
 			(show_name no)
@@ -10589,7 +10589,7 @@
 				)
 			)
 		)
-		(property "Description" "Pluggable terminal block header, 3.81 mm pitch, right angle, 4 positions"
+		(property "Description" "Screw terminal block, 3.81 mm pitch, 4 positions"
 			(at 213.36 189.23 0)
 			(hide yes)
 			(show_name no)
@@ -10600,7 +10600,7 @@
 				)
 			)
 		)
-		(property "MPN" "Kangnex WJ15EDGRC-3.81-04P-14-00A"
+		(property "MPN" "Kangnex WJ124-3.81-04P-14-00A"
 			(at 213.36 189.23 0)
 			(hide yes)
 			(show_name no)
@@ -10611,7 +10611,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C7245"
+		(property "LCSC" "C69809"
 			(at 213.36 189.23 0)
 			(hide yes)
 			(show_name no)
@@ -10622,7 +10622,7 @@
 				)
 			)
 		)
-		(property "Plug" "Kangnex WJ15EDGK-3.81-04P-14-00A (LCSC C7244)"
+		(property "FT Rotation Offset" "-90"
 			(at 213.36 189.23 0)
 			(hide yes)
 			(show_name no)
