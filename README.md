@@ -26,21 +26,21 @@ A reusable power and control backplane with plug-in boards for HackerFab tools.
 
 ### Sputtering cards
 
-Two host-controlled cards: pump, gauge and USB in **J1**, and dual Alicat RS-232 in **J2**. Both are two-layer designs.
-
-[Sputtering section: projects, schematics and manufacturing files](daughterboards/sputtering/README.md) · [Review and validation](daughterboards/sputtering/docs/validation.md)
-
 <a href="daughterboards/sputtering/docs/sputtering-pump-gauge-usb-3d.png"><img src="daughterboards/sputtering/docs/sputtering-pump-gauge-usb-3d.png" width="620" alt="Sputtering pump, gauge and USB card with its DIN96 connector, two pluggable headers and a USB-C port"></a>
 
 <a href="daughterboards/sputtering/docs/sputtering-alicat-3d.png"><img src="daughterboards/sputtering/docs/sputtering-alicat-3d.png" width="620" alt="Sputtering Alicat card with a DIN96 connector and two RS-232 ports"></a>
 
-Prototype designs: automated checks found no electrical-rule, layout-rule, connectivity or schematic-parity errors. Layout warnings and remaining bench checks are recorded in the [sputtering validation notes](daughterboards/sputtering/docs/validation.md).
+[Card details and renders](daughterboards/sputtering/README.md) · [Card validation](daughterboards/sputtering/docs/validation.md)
 
 ## Plug-in assembly
 
 <a href="daughterboards/micromanipulator/docs/host-adjacent-front.png"><img src="daughterboards/micromanipulator/docs/host-adjacent-front.png" width="700" alt="The motion controller and encoder splitter plugged into the backplane"></a>
 
 *KiCad render with the motion controller in J1 and the encoder splitter in J2.* [Reverse view](daughterboards/micromanipulator/docs/host-adjacent-back.png)
+
+<a href="daughterboards/sputtering/docs/host-adjacent-front.png"><img src="daughterboards/sputtering/docs/host-adjacent-front.png" width="700" alt="The sputtering pump, gauge and USB card in J1 and the Alicat card in J2 on the backplane, with J3 empty"></a>
+
+*KiCad render with the pump, gauge and USB card in J1 and the Alicat card in J2.* [Reverse view](daughterboards/sputtering/docs/host-adjacent-back.png)
 
 ## Design files
 
@@ -52,7 +52,7 @@ Prototype designs: automated checks found no electrical-rule, layout-rule, conne
 | Sputtering pump + gauge + USB | Pump, gauge and impedance-matcher USB; 100 × 65 mm | [Project](daughterboards/sputtering/hardware/pump-gauge-usb/sputtering-pump-gauge-usb.kicad_pro) · [Schematic](daughterboards/sputtering/docs/sputtering-pump-gauge-usb-schematic.pdf) |
 | Sputtering Alicat | Two Alicat flow controllers; 100 × 85 mm | [Project](daughterboards/sputtering/hardware/alicat/sputtering-alicat.kicad_pro) · [Schematic](daughterboards/sputtering/docs/sputtering-alicat-schematic.pdf) |
 
-Clone the entire repository and keep the local libraries together. The motion and encoder cards are four-layer designs with no development modules.
+Clone the entire repository and keep the local libraries together. The motion and encoder cards are four-layer designs with no development modules. The sputtering cards are two-layer designs controlled by the host.
 
 Use host **J1 or J2 for motion**, and another slot for the splitter. **The motion controller owns SPI0; host GPIO16–21 must remain inputs with no pulls.** Other cards must leave SPI0 undriven. See the [bus map and firmware requirements](daughterboards/micromanipulator/docs/backplane-encoder-bus.md).
 
