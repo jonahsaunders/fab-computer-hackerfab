@@ -43,8 +43,8 @@ The CPL uses absolute coordinates in millimetres on the same origin as the Gerbe
 
 - Two layers, FR-4, 1.6 mm.
 - [Dedicated section](../../daughterboards/sputtering/README.md) with both projects, schematics, renders and assembly downloads.
-- Supplied exports were made with KiCad 10.0.6 and the Fabrication Toolkit plugin at [design revision `0e1bde4`](https://github.com/jonahsaunders/fab-computer-hackerfab/tree/0e1bde4b7395913e4f0aeb449eee29cf7ff73e59). CPL uses the Gerbers' origin; confirm connector center offsets and rotations in the assembly preview.
-- The [independent review](../../daughterboards/sputtering/docs/validation.md) found zero ERC errors or warnings, zero DRC errors, zero unconnected items and zero schematic-parity findings. It also recorded 22 pump-card and 24 Alicat-card DRC warnings. Review these before fabrication; catalog matching, physical fit and bench operation remain open.
+- The supplied exports accompany [connector revision `0c6d404`](https://github.com/jonahsaunders/fab-computer-hackerfab/tree/0c6d404d303cf7dc25ea720b2cbbe8fff10cb81f), with pump-card screw terminals and male Alicat DB9 connectors. CPL uses the Gerbers' origin; confirm connector center offsets and rotations in the assembly preview.
+- The [independent review](../../daughterboards/sputtering/docs/validation.md) found zero ERC errors or warnings, zero DRC errors, zero unconnected items and zero schematic-parity findings. It also recorded 9 pump-card and 24 Alicat-card DRC warnings. Review these before fabrication; catalog matching, physical fit and bench operation remain open.
 
 ## Source BOMs and order substitutions
 

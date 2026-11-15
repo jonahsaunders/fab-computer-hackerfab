@@ -33,4 +33,4 @@ Slot names below refer to the host: use **J1 for pump + gauge + USB** and **J2 f
 
 ## Review status
 
-Reviewed at [PR #15](https://github.com/jonahsaunders/fab-computer-hackerfab/pull/15), submitted by [jacobro100](https://github.com/jacobro100). KiCad 10.0.6 reported no ERC errors or warnings and no DRC errors, unconnected items or schematic-parity findings. DRC reported **22 warnings on pump + gauge + USB** and **24 warnings on Alicat**. See the [review record](docs/validation.md) for categories, reproduction commands and remaining manufacturing and bench checks.
+The [PR #16 connector update](https://github.com/jonahsaunders/fab-computer-hackerfab/pull/16), submitted by [jacobro100](https://github.com/jacobro100), adds pump-card screw terminals and male Alicat DB9 connectors. KiCad 10.0.6 reported no ERC errors or warnings and no DRC errors, unconnected items or schematic-parity findings. DRC reported **9 warnings on pump + gauge + USB** and **24 warnings on Alicat**. See the [review record](docs/validation.md) for categories, reproduction commands and remaining manufacturing and bench checks.

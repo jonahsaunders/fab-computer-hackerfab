@@ -1,6 +1,14 @@
 # Sputtering cards: PR review and validation
 
-Reviewed November 14, 2026 using KiCad **10.0.6** on Windows. Source: [PR #15](https://github.com/jonahsaunders/fab-computer-hackerfab/pull/15), commit [`0e1bde4b7395913e4f0aeb449eee29cf7ff73e59`](https://github.com/jonahsaunders/fab-computer-hackerfab/commit/0e1bde4b7395913e4f0aeb449eee29cf7ff73e59). The integration adds navigation and review documentation; the submitted hardware and manufacturing exports are retained unchanged.
+Reviewed November 15, 2026 using KiCad **10.0.6** on Windows. Current source: [PR #16](https://github.com/jonahsaunders/fab-computer-hackerfab/pull/16), commit [`0c6d404d303cf7dc25ea720b2cbbe8fff10cb81f`](https://github.com/jonahsaunders/fab-computer-hackerfab/commit/0c6d404d303cf7dc25ea720b2cbbe8fff10cb81f). The submitted hardware, schematic PDFs and manufacturing exports are retained unchanged. The two standalone renders and both installed assembly views were regenerated from this revision using the repository's established view and lighting settings.
+
+## Connector update
+
+PR #16 replaces pump-card J2/J3 with Kangnex WJ124-3.81-04P-14-00A screw terminals (`C69809`) and Alicat J2/J3 with CONNFLY DS1037-09MNAKT74-0CC male DB9 connectors (`C75750`) for the lab's female-to-female cables. The supplied BOMs and placement files reflect these changes.
+
+Comparing exported schematic netlists with the PR #15 revision found identical electrical connectivity on all 72 nets of each card. The DIN96 plug and external connector pad numbers also retain their PCB net assignments. Actual cable wiring and mechanical fit still require verification. The screw-terminal render uses the supplied nominal Phoenix model; it is not an exact Kangnex mechanical model.
+
+The [initial PR #15 review](https://github.com/jonahsaunders/fab-computer-hackerfab/blob/b2cfac5ee008dcd296017fc3f7fbc75bfcf77d37/daughterboards/sputtering/docs/validation.md) recorded 22 pump-card warnings and 24 Alicat-card warnings. The table below records the current connector revision.
 
 ## Automated design checks
 
@@ -8,7 +16,7 @@ Reviewed November 14, 2026 using KiCad **10.0.6** on Windows. Source: [PR #15](h
 | --- | ---: | ---: |
 | ERC errors / warnings | 0 / 0 | 0 / 0 |
 | DRC errors | 0 | 0 |
-| DRC warnings | 22 | 24 |
+| DRC warnings | 9 | 24 |
 | Unconnected items | 0 | 0 |
 | Schematic/PCB parity findings | 0 | 0 |
 | BOM designators / CPL entries | 43 / 43 | 22 / 22 |
@@ -16,9 +24,9 @@ Reviewed November 14, 2026 using KiCad **10.0.6** on Windows. Source: [PR #15](h
 
 DRC was run with zone refill, schematic parity and all severities enabled. ERC was run with all severities enabled. Neither project lists ERC or DRC exclusions.
 
-The pump card's warnings are 10 footprint/library mismatches, 10 silkscreen-over-copper warnings and 2 silkscreen-to-edge clearance warnings. The Alicat card has 22 silkscreen-over-copper warnings and 2 silkscreen-to-edge clearance warnings. Warning counts may depend on the installed standard KiCad libraries.
+The pump card's warnings are 9 footprint/library mismatches. The Alicat card has 22 silkscreen-over-copper warnings and 2 silkscreen-to-edge clearance warnings. Warning counts may depend on the installed standard KiCad libraries.
 
-Pump-card footprint mismatches affect C4, C5, C6, C7, C9, J1, J3, J4, R18 and R20. Compare the embedded board footprints against their library definitions before updating footprints or releasing fabrication. These findings have been recorded, not suppressed or treated as resolved. Resolve or justify the silkscreen findings against the actual assembly and fabrication process.
+Pump-card footprint mismatches affect C4, C5, C6, C7, C9, J1, J4, R18 and R20. Compare the embedded board footprints against their library definitions before updating footprints or releasing fabrication. These findings have been recorded, not suppressed or treated as resolved. Resolve or justify the silkscreen findings against the actual assembly and fabrication process.
 
 BOM quantities and designators match the PCB footprint inventory and the CPL designator sets. Both Gerber ZIPs pass archive integrity checks and contain front/back copper, mask, paste, silkscreen, outline and drill outputs. This does not certify catalog part equivalence, placement rotations or Gerber-to-source geometry.
 
@@ -37,7 +45,7 @@ All 192 DIN96 contacts were checked for host-slot compatibility, including each 
 
 The ADC address selection is grounded (0x48). Both cards leave SPI0 and SPI1 unconnected. Slot-specific connections mean the pump card belongs in host J1 and the Alicat card in host J2. Firmware must configure these interfaces; this PR supplies no sputtering firmware or bench results.
 
-## Documentation findings addressed during integration
+## Initial integration notes (PR #15)
 
 - The shared ordering instructions previously told readers to choose four layers for every board, contradicting these two-layer designs. The instructions now use each board's listed layer count.
 - The shared guide's statement about zero findings on "both plug-in cards" referred to the earlier motion and encoder cards. Their validation is now explicitly separated from this sputtering review, including the warnings above.
