@@ -265,8 +265,8 @@
     (uuid "69c3dc88-a37e-49ef-ae4d-497d3191ad5b"))
   (pad "SH" thru_hole oval
     (at -4.32 1.05)
-    (size 1 1.6)
-    (drill oval 0.6 1.2)
+    (size 1 1.8)
+    (drill oval 0.6 1.4)
     (property pad_prop_mechanical)
     (layers "*.Cu" "*.Mask")
     (remove_unused_layers no)
@@ -281,8 +281,8 @@
     (uuid "af5ae63f-ef36-487e-a6b8-831b84890f25"))
   (pad "SH" thru_hole oval
     (at 4.32 1.05)
-    (size 1 1.6)
-    (drill oval 0.6 1.2)
+    (size 1 1.8)
+    (drill oval 0.6 1.4)
     (property pad_prop_mechanical)
     (layers "*.Cu" "*.Mask")
     (remove_unused_layers no)

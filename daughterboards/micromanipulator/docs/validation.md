@@ -1,6 +1,6 @@
-# Design validation — 2026-11-08
+# Design validation
 
-Two active projects: the 100 × 60 mm motion card and the new 100 × 26 mm encoder card. Both use four layers (signal / power / ground / signal), project-local footprints and models, and manually routed copper. These are development designs, not a manufacturing release.
+The baseline review below is from 2026-11-08; the motion-card USB-C correction was checked again on 2026-11-16. Two active projects: the 100 × 60 mm motion card and the new 100 × 26 mm encoder card. Both use four layers (signal / power / ground / signal), project-local footprints and models, and manually routed copper. These are development designs, not a manufacturing release.
 
 | KiCad 10.0.6 check | Motion | Encoder |
 | --- | --- | --- |
@@ -12,6 +12,18 @@ Two active projects: the 100 × 60 mm motion card and the new 100 × 26 mm encod
 | Fitted parts + bare probe pads | 117 + 4 | 11 + 4 |
 
 Four-way-junction checking is enabled. The only ignored PCB check is the existing tuning-profile track-geometry check; these boards contain no length-tuning profiles. No new electrical or silkscreen exclusions were added. The motion root contains 13 external connectors and six hierarchical sheets; the encoder root contains its four connectors and one power/pull-up sheet. All support parts remain in subsheets.
+
+## USB-C mounting-slot correction — 2026-11-16
+
+J18's two shell slots nearest the connector opening now match the **0.60 × 1.40 mm** holes in the [HRO TYPE-C-31-M-12 drawing](https://datasheet.lcsc.com/datasheet/pdf/9e56b777c022540fcce7c7f67825f55e.pdf?productCode=C165948). Their copper lands grew from 1.00 × 1.60 mm to **1.00 × 1.80 mm**, retaining a 0.20 mm nominal annular ring. The project-local footprint and its placed PCB instance both have this correction at local coordinates `(±4.32, 1.05)` mm. The rear 0.60 × 1.70 mm slots are unchanged.
+
+All nine copper zones were refilled. Comparison with the preceding PCB confirms that only those two pad sizes/drills and the resulting filled copper changed: component positions, tracks, pad nets, and the board outline are preserved. Library and placed-pad dimensions match. Updated front/back and inner-plane previews accompany the change; the close-up below includes filled front copper.
+
+[![Corrected USB-C mounting slots and surrounding copper](usb-mounting-slots.png)](usb-mounting-slots.png)
+
+KiCad **10.0.6** reports **0 ERC findings, 0 DRC errors/warnings/exclusions, 0 unconnected items, and 0 schematic/PCB parity findings**. DRC was clean before and after the edit. Existing ignored checks are unchanged. The repository check and all ten motion-card audit scripts listed below pass, including power-domain continuity, USB launch/reference coverage, decoupling, and connector interfaces.
+
+The regenerated Excellon file has two 0.60 mm cutter slots with 0.80 mm center travel, giving the required 1.40 mm overall length. The copper Gerbers contain the enlarged lands. Native filling/capping exports select the same eleven 0.30 mm vias as the existing via-fill map. The schematic BOM still has 117 fitted parts; the CPL retains the existing catalog-specific centers and rotations. See the [manufacturing files](../../../docs/manufacturing/README.md#motion-controller) for export provenance. Physical fit and prototype electrical/thermal validation remain open as described below.
 
 ## Electrical and mechanical audits
 
