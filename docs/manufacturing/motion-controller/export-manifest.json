@@ -1,0 +1,108 @@
+{
+  "board": "Motion controller / FabNanoDaughterboard",
+  "export_date": "2026-11-16",
+  "source_commit": "80c463b1d982d297ff567c6c719a85b999f92b67",
+  "source_url": "https://github.com/jonahsaunders/fab-computer-hackerfab/tree/80c463b1d982d297ff567c6c719a85b999f92b67",
+  "kicad_version": "10.0.6",
+  "source_git_blobs": {
+    "daughterboards/micromanipulator/hardware/daughterboard/FabNanoDaughterboard.kicad_pcb": "1393deb209108d1990b459fce19f1ba4ef51a13a",
+    "daughterboards/micromanipulator/hardware/libraries/Connector_USB.pretty/USB_C_Receptacle_HRO_TYPE-C-31-M-12.kicad_mod": "8dee6448e1d5b6a41cf7d25f79f00388580b80df"
+  },
+  "change": "J18 front shell slots: 0.60 x 1.40 mm drills, 1.00 x 1.80 mm lands in both library and PCB; all nine zones refilled.",
+  "validation": {
+    "erc_findings": 0,
+    "drc_findings": 0,
+    "unconnected_items": 0,
+    "schematic_parity_findings": 0,
+    "included_severities": [
+      "error",
+      "warning",
+      "exclusion"
+    ],
+    "erc_ignored_checks": [
+      {
+        "description": "Global label only appears once in the schematic",
+        "key": "single_global_label"
+      },
+      {
+        "description": "SPICE model issue",
+        "key": "simulation_model_issue"
+      },
+      {
+        "description": "Assigned footprint doesn't match footprint filters",
+        "key": "footprint_filter"
+      }
+    ],
+    "drc_ignored_checks": [
+      {
+        "description": "Tuning profile track geometries",
+        "key": "tuning_profile_track_geometries"
+      }
+    ],
+    "rules_changed": false,
+    "passed_scripts": [
+      "check_repo.py",
+      "check_schematic_visuals.py",
+      "check_hierarchy.py",
+      "check_backplane_interface.py",
+      "check_encoder_bus.py",
+      "check_probe_access.py",
+      "check_decoupling.py",
+      "check_capacitor_returns.py",
+      "check_power_domains.py",
+      "check_usb_termination.py",
+      "check_usb_launch.py"
+    ],
+    "export_checks": [
+      "Correct slot cutter diameter and endpoint separation verified in the Excellon output.",
+      "Both enlarged lands verified at the correct coordinates on all four copper layers and both masks.",
+      "Only two drill routes changed from the previous package; outline, NPTH, paste, silkscreen and via treatment artwork match apart from dates.",
+      "All 117 fitted BOM entries and PCB placements verified; existing catalog-specific CPL center and rotation corrections preserved.",
+      "Filling and capping Gerbers select the same eleven 0.30 mm vias; existing Via-Fill-Map.png remains valid.",
+      "ZIP CRC and every archived file verified against the exports."
+    ]
+  },
+  "export_settings": {
+    "gerber_layers": [
+      "F.Cu",
+      "In1.Cu",
+      "In2.Cu",
+      "B.Cu",
+      "F.Mask",
+      "B.Mask",
+      "F.Paste",
+      "B.Paste",
+      "F.Silkscreen",
+      "B.Silkscreen",
+      "Edge.Cuts"
+    ],
+    "drill_format": "Excellon, absolute origin, millimetres, separate PTH/NPTH, G85 alternate slot format",
+    "via_treatment": "Native KiCad Gerber filling export renamed to FabNanoDaughterboard-via-fill-and-cap.sk; FileFunction attribute delimiter normalized to TF.FileFunction. Capping export independently checked for identical coordinates and diameters.",
+    "assembly_data": "BOM and CPL verified against fresh schematic/position exports; existing catalog center/rotation corrections retained. CSV files unchanged."
+  },
+  "files_sha256": {
+    "Gerbers.zip": "8f249e6343ffdb65bee849bf0d80d38076223077cbe75a799a1dce6073bc19ca",
+    "BOM.csv": "ff36d179e4f64946a51f8cd8d2cf54e91e8189923b34f1c919bed90516802b89",
+    "CPL.csv": "a4a54bc584333a25ab23eb2e99d0ead841208953fe64c5b111bb8e972acf43e0",
+    "Via-Fill-Map.png": "cadfa87ea4fe12b26de4943c58d7a42408683cbb8a8e5634690dcdbdd3543de5"
+  },
+  "gerber_members_sha256": {
+    "FabNanoDaughterboard-B_Cu.gbl": "109b2479d9d5ce5e3f9ae2b5c7a122e6eeae581733a25ac759a9bd31e796aa50",
+    "FabNanoDaughterboard-B_Mask.gbs": "476dde659a9589e215405c8b1c852608734e4ba3e8629f232493127c7709d3b0",
+    "FabNanoDaughterboard-B_Paste.gbp": "5b5f7fd404e5c371c17dbb65fa4eff06fb8ba88fd5c6cb91654db7c7a15a6cd2",
+    "FabNanoDaughterboard-B_Silkscreen.gbo": "25b16b90d5f00cd5754851f7ceb25cbbdfdd7fd9d73cab9b980c640364cb9a57",
+    "FabNanoDaughterboard-Edge_Cuts.gm1": "f9b95b77b66e10fad09c829f8bdb524bba76f8bf3be2b10c3e4ecdfde9d35910",
+    "FabNanoDaughterboard-F_Cu.gtl": "e8442b512d9f38ada103b6f9eda372485690403e751b2328e2ebebb233ff2248",
+    "FabNanoDaughterboard-F_Mask.gts": "e2f8f7a2271d4dd9a50953837f750dc8effefcc55fd9a011c0fb18208cb05ad5",
+    "FabNanoDaughterboard-F_Paste.gtp": "28e6e3dafdaf368994d8b1c92616d1c62f2154c31f27160b19a0bab36ed142e0",
+    "FabNanoDaughterboard-F_Silkscreen.gto": "95e911073443149ed1786de19499f2613bdacb6c35d96440607c40bf67a3d165",
+    "FabNanoDaughterboard-In1_Cu.g1": "c92c6fdda1ec5a63ac4e3c8f2cca164386990370511c1942c9f281d1e8eb509d",
+    "FabNanoDaughterboard-In2_Cu.g2": "913afe65a3f239bd97bb94a5c458681ccabe58dbba8ed83b9fa1eae405f0bec8",
+    "FabNanoDaughterboard-job.gbrjob": "8b565013eb2cdc8a0114fd706162bd54a44412c8c1a8b7b66ed134d0a4b6802e",
+    "FabNanoDaughterboard-NPTH.drl": "f476d48fdda749750de79c6e78595af6618c595be96c9147a45af99247ecbd7e",
+    "FabNanoDaughterboard-PTH.drl": "4142128138e2d61370f27fce16d5d1728911a1d53622d446aec223afeb825733",
+    "FabNanoDaughterboard-via-fill-and-cap.sk": "39751128de9bd4290c50090570a726c8ef3b7a808c73cb4d4b8615085571ba6a"
+  },
+  "validation_notes": "../../../daughterboards/micromanipulator/docs/validation.md",
+  "status": "Prototype fabrication files; existing physical-fit and electrical/thermal validation limits still apply."
+}

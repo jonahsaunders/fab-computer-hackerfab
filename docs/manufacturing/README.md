@@ -1,6 +1,6 @@
 # Manufacturing guide
 
-These files cover the active HackerFab boards. For the backplane and micromanipulator cards, KiCad 10.0.6 generated the Gerbers and Excellon drills from the board geometry at [design revision `1876353`](https://github.com/jonahsaunders/fab-computer-hackerfab/tree/1876353af80357d221325e103f67ee17cebcaeb5). The BOMs follow the current KiCad schematics, including the motion card’s 16 MiB flash. See the [JLCPCB parts audit and replacement table](parts-sourcing.md) for catalog matches, stock, and reviewed alternatives.
+These files cover the active HackerFab boards. KiCad 10.0.6 generated the backplane and encoder-splitter Gerbers and Excellon drills from the board geometry at [design revision `1876353`](https://github.com/jonahsaunders/fab-computer-hackerfab/tree/1876353af80357d221325e103f67ee17cebcaeb5). The motion-card exports were refreshed on **2026-11-16** from [corrected USB-C design revision `80c463b`](https://github.com/jonahsaunders/fab-computer-hackerfab/tree/80c463b1d982d297ff567c6c719a85b999f92b67), also using KiCad 10.0.6; the [export manifest](motion-controller/export-manifest.json) records source identities, checks, and file hashes. The BOMs follow the current KiCad schematics, including the motion card’s 16 MiB flash. See the [JLCPCB parts audit and replacement table](parts-sourcing.md) for catalog matches, stock, and reviewed alternatives.
 
 | Board | Outline | Copper layers | Smallest via drill | Fabrication | Assembly |
 | --- | --- | ---: | ---: | --- | --- |
@@ -29,6 +29,7 @@ The CPL uses absolute coordinates in millimetres on the same origin as the Gerbe
 
 ## Motion controller
 
+- Use the refreshed **2026-11-16** Gerber ZIP. J18's two front shell slots are **0.60 × 1.40 mm**, with **1.00 × 1.80 mm** copper lands and refilled surrounding copper. ERC, DRC, connectivity, and schematic/PCB parity have zero findings under the existing rules. The BOM and CPL still contain 117 fitted parts, with the catalog placement corrections preserved. [Validation and slot preview](../../daughterboards/micromanipulator/docs/validation.md#usb-c-mounting-slot-correction--2026-11-16) · [Export manifest](motion-controller/export-manifest.json)
 - Select **ENIG** and **JLC04161H-7628** to match the saved stackup. The USB geometry was designed for this stackup. Confirm construction and impedance requirements with JLCPCB. [Layout and stackup](../../daughterboards/micromanipulator/docs/layout-review.md)
 - Use **Standard PCBA** for the 0201 resistors R7 and R8. Ask JLCPCB to add rails or panelize the board to meet the 70 × 70 mm Standard PCBA minimum. Have it check fixture clearance at the overhanging right-angle DIN96 connector J1. [JLCPCB Standard PCBA requirements](https://jlcpcb.com/blog/reduce-pcb-assembly-cost-prototype)
 - Request epoxy fill and copper capping for the **11 marked Ø0.30 mm vias** at U1, U9 and U10. Attach the [via-fill map](motion-controller/Via-Fill-Map.png) and identify `FabNanoDaughterboard-via-fill-and-cap.sk` in the order notes. Follow the supplied mask artwork for the other vias. [JLCPCB via-covering guide](https://jlcpcb.com/help/article/pcb-via-covering)
